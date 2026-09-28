@@ -112,3 +112,8 @@ _downloads/
 
 # === 飞书脑图归档(不进仓库) ===
 飞书脑图_*/
+
+# === 自建部署配置(Nginx/Apache · 含真实域名/SSL 路径/服务器结构) ===
+# deploy/ 是玉哥自己写的反向代理配置,含 manju.tuanpiao.work + /var/www/manju/current
+# + /etc/letsencrypt 路径,GitHub 公开仓库不能暴露
+deploy/

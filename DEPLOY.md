@@ -3,7 +3,7 @@
 > 玉哥 · 2026-09-14(初版)· 2026-09-24(同步 Netlify 配置 + cache-bust)
 > 阿白你按这个文档走,5 分钟把网站部署到公网。
 
-> **2026-09-27 体检更新**:加 `manju.tuanpiao.work` 域名部署指引 · sitemap.xml · favicon · 404.html 重写 · .gitignore + netlify.toml 双层 ignore 排除 N 专题 1.2 GB 仓库 + M 专题 2.6 GB 视频。
+> **2026-09-27 体检更新**:加 自定义域名部署指引 · sitemap.xml · favicon · 404.html 重写 · .gitignore + netlify.toml 双层 ignore 排除 N 专题 1.2 GB 仓库 + M 专题 2.6 GB 视频。
 
 ---
 
@@ -13,7 +13,7 @@
 |---|---|---|---|
 | **GitHub 账号** | 存代码 + 触发 Actions | 免费 | 已有就用 |
 | **Netlify 账号** | 部署 + 域名 | 免费层够用 | 5 分钟注册 |
-| **域名**(可选) | 绑定 `yourname.com` | ¥30-80/年 | 10 分钟买 |
+| **域名**(可选) | 绑定 `<你的域名>.com` | ¥30-80/年 | 10 分钟买 |
 
 **本地预览**(可选)· 端口 **18080**:
 ```powershell
@@ -83,29 +83,29 @@ https://manju-tutorial-abc123.netlify.app
 
 ## 第 3 步 · 绑定自己的域名(2 分钟,可选)
 
-如果你买了自己的域名(`manju.tuanpiao.work` 之类):
+如果你买了自己的域名(`<你的域名>` 之类):
 
 1. 在 Netlify 控制台 → 你的 site → **`Domain settings`**
-2. 点 **`Add custom domain`** → 输入 `manju.tuanpiao.work` → `Verify`
-3. Netlify 给你 4 个 NS 记录(类似 `dns1.p01.nsone.net`)
-4. 去你买域名的服务商(阿里云/腾讯云/Cloudflare)→ DNS 设置 → 改 NS 记录为 Netlify 提供的
+2. 点 **`Add custom domain`** → 输入 `<你的域名>` → `Verify`
+3. Netlify 给你 4 个 NS 记录(类似 `<Netlify 提供的 NS 1>` ~ `<NS 4>`)
+4. 去你买域名的服务商(国内 / Cloudflare)→ DNS 设置 → 改 NS 记录为 Netlify 提供的
 5. 等 5-30 分钟(全球 DNS 生效)
 6. Netlify 自动签发 HTTPS 证书(Let's Encrypt 免费)
 
-**完成后**:`https://manju.tuanpiao.work` 全网可访问,带 https 锁标。
+**完成后**:`https://<你的域名>` 全网可访问,带 https 锁标。
 
-### 3.1 绑子域名(如 `manju.tuanpiao.work` 主域 / `www.tuanpiao.work` 别名)
+### 3.1 绑子域名(如 `<你的主域>` 主域 / `<www 别名>` 别名)
 
-`.work` 是国际 TLD,Let's Encrypt 全支持,Netlify 自动签发证书不用额外操作。
+任何国际 TLD (`.com` `.work` `.top` 等) Let's Encrypt 全支持,Netlify 自动签发证书不用额外操作。
 
-**DNS 在阿里云/腾讯云设置**(以 `tuanpiao.work` 域名为例):
-- 类型 `CNAME` · 主机记录 `manju` · 记录值 `<你的站点>.netlify.app` · TTL 600
+**DNS 在国内服务商设置**(以 `<你的主域>` 域名为例):
+- 类型 `CNAME` · 主机记录 `<子域前缀>` · 记录值 `<你的站点>.netlify.app` · TTL 600
 - 类型 `CNAME` · 主机记录 `www` · 记录值 `<你的站点>.netlify.app` · TTL 600
 
 **DNS 在 Cloudflare 设置**(推荐,免备案 + CDN 加速):
-- 类型 `CNAME` · 名称 `manju` · 目标 `<你的站点>.netlify.app` · 代理开启(橙色云朵)
+- 类型 `CNAME` · 名称 `<子域前缀>` · 目标 `<你的站点>.netlify.app` · 代理开启(橙色云朵)
 
-> Cloudflare 走代理后,玉哥站走 Cloudflare CDN 国内访问速度更快,无需备案。
+> Cloudflare 走代理后,网站走 Cloudflare CDN 国内访问速度更快,无需备案。
 
 ---
 
@@ -149,7 +149,7 @@ https://manju-tutorial-abc123.netlify.app
 
 ### Q2. 国内要备案吗?
 **A**:海外服务器(Netlify 默认美国)不需备案。国内服务器(阿里云/腾讯云)要 ICP 备案(7-20 天)。
-- 玉哥建议:先用 Netlify 海外 → 访问够用,等流量大了再迁国内备案。
+- 建议:先用 Netlify 海外 → 访问够用,等流量大了再迁国内备案。
 
 ### Q3. 域名要多少钱?
 **A**:
