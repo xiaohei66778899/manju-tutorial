@@ -1,0 +1,370 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>短剧补给站 · 师傅/课程/工具/验真 v8.0</title>
+<style>
+:root{
+  --bg:#0b0d12;--bg2:#11141b;--bg3:#161a23;--line:#222837;--text:#e6e9f2;--muted:#8a93a6;
+  --acc:#5ee0a7;--acc2:#ffb142;--acc3:#7aa2ff;--acc4:#c084fc;--acc5:#ff5b6e;--warn:#f87171;
+  --shadow:0 6px 30px rgba(0,0,0,.45);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Helvetica,Arial,sans-serif;line-height:1.7;font-size:15px;-webkit-font-smoothing:antialiased}
+a{color:var(--acc3);text-decoration:none}
+a:hover{text-decoration:underline}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(11,13,18,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:12px 24px;display:flex;align-items:center;gap:16px}
+.logo{font-weight:800;font-size:18px;background:linear-gradient(90deg,var(--acc),var(--acc3));-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:.5px}
+.logo small{color:var(--muted);font-weight:400;margin-left:8px;font-size:12px}
+.toc-btn{margin-left:auto;background:var(--bg3);border:1px solid var(--line);color:var(--text);padding:6px 12px;border-radius:6px;cursor:pointer;font-size:13px}
+.toc-btn:hover{border-color:var(--acc)}
+.layout{display:grid;grid-template-columns:240px 1fr;max-width:1400px;margin:0 auto}
+aside{position:sticky;top:60px;height:calc(100vh - 60px);overflow-y:auto;padding:24px 16px;border-right:1px solid var(--line);background:var(--bg2)}
+aside h3{color:var(--muted);font-size:12px;letter-spacing:1px;margin:16px 0 8px;text-transform:uppercase}
+aside ul{list-style:none}
+aside li{margin:2px 0}
+aside a{color:#c5cae0;font-size:13px;display:block;padding:5px 10px;border-radius:5px;border-left:2px solid transparent}
+aside a:hover{background:var(--bg3);color:var(--text);text-decoration:none;border-left-color:var(--acc)}
+main{padding:32px 40px 80px;min-width:0}
+h1{font-size:32px;margin-bottom:8px;letter-spacing:.5px}
+h2{font-size:24px;margin:48px 0 16px;padding-bottom:8px;border-bottom:1px solid var(--line);position:relative}
+h2::before{content:"";position:absolute;left:-20px;top:8px;width:4px;height:22px;background:var(--acc);border-radius:2px}
+h3{font-size:18px;margin:28px 0 10px;color:var(--acc2)}
+h4{font-size:15px;margin:14px 0 6px;color:#fff}
+p{margin:10px 0;color:#cfd4e0}
+ul,ol{margin:8px 0 12px 24px;color:#cfd4e0}
+li{margin:4px 0}
+strong{color:#fff}
+em{color:var(--acc2);font-style:normal}
+.hero{background:linear-gradient(135deg,#0a0d1f 0%,#0b0d12 60%,#0d111c 100%);border:1px solid var(--acc);border-radius:14px;padding:36px 32px;margin-bottom:32px;box-shadow:0 0 40px rgba(94,224,167,.15);position:relative;overflow:hidden}
+.hero h1{background:linear-gradient(90deg,var(--acc),var(--acc3));-webkit-background-clip:text;background-clip:text;color:transparent;display:inline-block;font-size:38px}
+.hero .sub{color:var(--muted);margin-top:6px;font-size:14px}
+.hero p{margin-top:14px;max-width:780px}
+.meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.tag{background:rgba(255,255,255,.06);border:1px solid var(--line);padding:4px 10px;border-radius:99px;font-size:12px;color:#cdd3e1}
+.callout{display:flex;gap:12px;padding:14px 16px;border-radius:8px;margin:14px 0;border:1px solid var(--line);background:var(--bg2)}
+.callout .ico{font-size:20px;flex-shrink:0;line-height:1}
+.callout.tip{border-color:rgba(94,224,167,.4);background:rgba(94,224,167,.06)}
+.callout.warn{border-color:rgba(248,113,113,.4);background:rgba(248,113,113,.06)}
+.callout.info{border-color:rgba(122,162,255,.4);background:rgba(122,162,255,.06)}
+.callout.purple{border-color:rgba(192,132,252,.4);background:rgba(192,132,252,.06)}
+.callout p{font-size:13.5px;color:#dde0ec;margin:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:20px 0}
+.card{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:18px;transition:all .2s}
+.card:hover{border-color:var(--acc);transform:translateY(-2px)}
+.card .ico{font-size:28px;display:block;margin-bottom:6px}
+.card h3{margin:0 0 6px;font-size:16px;color:#fff}
+.card p{font-size:12.5px;color:var(--muted);margin:0}
+.card .count{color:var(--acc2);font-weight:800;font-size:18px;display:block;margin-top:4px}
+.tbl-wrap{overflow-x:auto;margin:14px 0;border:1px solid var(--line);border-radius:8px}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line)}
+th{background:#0d1018;color:#fff;font-weight:700;font-size:12.5px;letter-spacing:.5px}
+tr:last-child td{border-bottom:0}
+tr:hover{background:#0d1018}
+.badge{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600}
+.badge.ok{background:rgba(94,224,167,.18);color:#7defc0}
+.badge.fix{background:rgba(255,177,66,.18);color:#ffc777}
+.badge.warn{background:rgba(248,113,113,.18);color:#ffa0a0}
+footer{margin-top:60px;padding:24px 40px;color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);text-align:center}
+@media (max-width:900px){.layout{grid-template-columns:1fr}aside{position:relative;top:0;height:auto;border-right:0;border-bottom:1px solid var(--line)}main{padding:24px 20px 60px}h1{font-size:26px}h2{font-size:20px}.hero h1{font-size:28px}}
+@media print{aside,.topbar{display:none}.layout{grid-template-columns:1fr}body{background:#fff;color:#000}h2::before{display:none}}
+</style>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg?v=fix20260927-2215">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="logo">🛒 短剧补给站 <small>v8.0 · 师傅/课程/工具/验真 · 2026-09-11</small></div>
+  <button class="toc-btn" onclick="window.print()">🖨 打印 / PDF</button>
+</div>
+
+<div class="layout">
+
+<aside>
+<h3>补给</h3>
+<ul>
+  <li><a href="#hero">概览</a></li>
+  <li><a href="#teacher">👤 师傅补给</a></li>
+  <li><a href="#course">🎓 课程补给</a></li>
+  <li><a href="#tool">🛠 工具补给</a></li>
+  <li><a href="#verify">✅ 验真补给</a></li>
+</ul>
+</aside>
+
+<main>
+
+<section id="hero" class="hero">
+  <h1>🛒 短剧补给站</h1>
+  <p class="sub">不是教程,是工具箱 · 按需查,不要从头读</p>
+  <p>学员 90% 时间看主课件,10% 时间来这里。<strong>补给 4 类东西</strong>:跟谁学(师傅)、学啥课(课程)、用啥工具、链接真不真。<strong>所有外链</strong>(蓝色字)<strong>点过去都能开</strong> — 平台官网/工具 GitHub 给具体 URL,博主/课程给"平台内搜账号"格式。</p>
+  <div class="meta">
+    <span class="tag">👤 师傅 22 位</span>
+    <span class="tag">🎓 课程 12 门</span>
+    <span class="tag">🛠 工具 12 个</span>
+    <span class="tag">✅ 验真 1 跳转</span>
+  </div>
+</section>
+
+<!-- ========== 4 大模块卡片 ========== -->
+<div class="grid">
+  <div class="card">
+    <span class="ico">👤</span>
+    <h3>师傅补给</h3>
+    <span class="count">22 位</span>
+    <p>抖音 8 + B 站 6 + 小红书 5 + YouTube 3</p>
+  </div>
+  <div class="card">
+    <span class="ico">🎓</span>
+    <h3>课程补给</h3>
+    <span class="count">12 门</span>
+    <p>免费 / 低价 / 系统 / 创业 4 档</p>
+  </div>
+  <div class="card">
+    <span class="ico">🛠</span>
+    <h3>工具补给</h3>
+    <span class="count">12 个</span>
+    <p>AI 工具 / 数据 / 下载 / 投流</p>
+  </div>
+  <div class="card">
+    <span class="ico">✅</span>
+    <h3>验真补给</h3>
+    <span class="count">1 跳转</span>
+    <p>平台官网 + 链接状态 → 见 v19.0</p>
+  </div>
+</div>
+
+<div class="callout info">
+  <span class="ico">💡</span>
+  <p><strong>使用建议</strong>:进来先看顶部 4 卡片,知道自己要啥 → 跳到对应区块 → 点蓝色链接跳转。不用顺序读。找不到的 = 删了,不要问"是不是漏了"。</p>
+</div>
+
+<!-- ========== 1. 师傅补给 ========== -->
+<h2 id="teacher">👤 1. 师傅补给 · 22 位头部</h2>
+
+<p>22 位行业头部博主 / UP 主 / 老师。点蓝色链接跳到平台,搜账号关注。<strong>粉丝数据来自飞瓜数据 2026-08-16 日榜 + 蝉妈妈公开数据</strong>。</p>
+
+<h3>1.1 抖音头部(8 位)</h3>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>账号</th><th>粉丝</th><th>风格</th><th>代表作</th><th>跳转</th></tr></thead>
+<tbody>
+<tr><td><strong>小呆</strong> ⭐⭐⭐⭐⭐</td><td>200w</td><td>古装 / 悬疑 / 拉片</td><td>《七侠五义》《龙凤肚兜》</td><td><a href="https://www.douyin.com/search/%E5%B0%8F%E5%91%86?type=user" target="_blank">抖音搜"小呆"</a></td></tr>
+<tr><td><strong>阿杰说剧</strong></td><td>180w</td><td>95 后编剧 / 短剧解密</td><td>单条爆款 2300w</td><td><a href="https://www.douyin.com/search/%E9%98%BF%E6%9D%B0%E8%AF%B4%E5%89%A7?type=user" target="_blank">抖音搜"阿杰说剧"</a></td></tr>
+<tr><td><strong>剧哥说短剧</strong></td><td>85w</td><td>00 后剪辑 / 短剧混剪</td><td>爆款 1.2 亿</td><td><a href="https://www.douyin.com/search/%E5%89%A7%E5%93%A5%E8%AF%B4%E7%9F%AD%E5%89%A7?type=user" target="_blank">抖音搜"剧哥说短剧"</a></td></tr>
+<tr><td><strong>阿纯说剧</strong></td><td>—</td><td>剧情切片 / 深度解析</td><td>广告报价 15-30 万/条</td><td><a href="https://www.douyin.com/search/%E9%98%BF%E7%BA%AF%E8%AF%B4%E5%89%A7?type=user" target="_blank">抖音搜"阿纯说剧"</a></td></tr>
+<tr><td><strong>剧情小丑</strong></td><td>—</td><td>剧情向</td><td>单条爆款破亿</td><td><a href="https://www.douyin.com/search/%E5%89%A7%E6%83%85%E5%B0%8F%E4%B8%91?type=user" target="_blank">抖音搜"剧情小丑"</a></td></tr>
+<tr><td><strong>深夜剧抛脸</strong></td><td>65w</td><td>情感向 / 深夜档</td><td>粉丝粘性 9.2/10</td><td><a href="https://www.douyin.com/search/%E6%B7%B1%E5%A4%9C%E5%89%A7%E6%8A%9B%E8%84%B8?type=user" target="_blank">抖音搜"深夜剧抛脸"</a></td></tr>
+<tr><td><strong>地铁剧评人</strong></td><td>48w</td><td>通勤向 / 职场</td><td>完播率 62%</td><td><a href="https://www.douyin.com/search/%E5%9C%B0%E9%93%81%E5%89%A7%E8%AF%84%E4%BA%BA?type=user" target="_blank">抖音搜"地铁剧评人"</a></td></tr>
+<tr><td><strong>选择吧小剧场</strong></td><td>—</td><td>互动剧(AI 分支)</td><td>日均互动 50w+</td><td><a href="https://www.douyin.com/search/%E9%80%89%E6%8B%A9%E5%90%A7%E5%B0%8F%E5%89%A7%E5%9C%BA?type=user" target="_blank">抖音搜"选择吧小剧场"</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>1.2 B 站头部(6 位)</h3>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>UP 主 / 频道</th><th>类型</th><th>内容</th><th>跳转</th></tr></thead>
+<tbody>
+<tr><td><strong>七秒工场</strong></td><td>精英导师团</td><td>从剧本到成片全流程</td><td><a href="https://search.bilibili.com/all?keyword=%E4%B8%83%E7%A7%92%E5%B7%A5%E5%9C%BA" target="_blank">B 站搜"七秒工场"</a></td></tr>
+<tr><td><strong>短剧编剧 / 拉片拆解合集</strong></td><td>UP 主合集</td><td>爆款短剧逐帧拆解</td><td><a href="https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%E6%8B%BC%E7%89%87" target="_blank">B 站搜"短剧拉片"</a></td></tr>
+<tr><td><strong>AI 漫剧制作系列</strong></td><td>教程合集</td><td>即梦/可灵/Runway 全流程</td><td><a href="https://search.bilibili.com/all?keyword=AI%E6%BC%AB%E5%89%A7" target="_blank">B 站搜"AI 漫剧"</a></td></tr>
+<tr><td><strong>短剧拆解爆款公式</strong></td><td>数据向</td><td>用 Excel 拆 30 部找规律</td><td><a href="https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%E6%8B%86%E8%A7%A3" target="_blank">B 站搜"短剧拆解"</a></td></tr>
+<tr><td><strong>0xsline / short-drama</strong></td><td>GitHub 高星项目</td><td>短剧 6 步专业编剧流程</td><td><a href="https://github.com/0xsline/short-drama" target="_blank">github.com/0xsline/short-drama</a></td></tr>
+<tr><td><strong>中央戏剧学院公开课</strong></td><td>官方</td><td>编剧/表演/导演系统课</td><td><a href="https://search.bilibili.com/all?keyword=%E4%B8%AD%E5%A4%AE%E6%88%8F%E5%89%A7%E5%AD%A6%E9%99%A2" target="_blank">B 站搜"中戏"</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>1.3 小红书头部(5 位)</h3>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>账号</th><th>类型</th><th>内容</th><th>跳转</th></tr></thead>
+<tbody>
+<tr><td><strong>短剧拉新大佬</strong></td><td>实操派</td><td>稳定日入几 k 秘籍</td><td><a href="https://www.xiaohongshu.com/search_result?keyword=%E7%9F%AD%E5%89%A7%E6%8B%89%E6%96%B0" target="_blank">小红书搜"短剧拉新"</a></td></tr>
+<tr><td><strong>AI 漫剧教程</strong></td><td>教程合集</td><td>ComfyUI + 剪映实操</td><td><a href="https://www.xiaohongshu.com/search_result?keyword=AI%E6%BC%AB%E5%89%A7%E6%95%99%E7%A8%8B" target="_blank">小红书搜"AI 漫剧教程"</a></td></tr>
+<tr><td><strong>短剧推广 5 套路</strong></td><td>运营派</td><td>钩子 / 标签 / 涨粉 / 转化</td><td><a href="https://www.xiaohongshu.com/search_result?keyword=%E7%9F%AD%E5%89%A7%E6%8E%A8%E5%B9%BF" target="_blank">小红书搜"短剧推广"</a></td></tr>
+<tr><td><strong>短剧私域变现</strong></td><td>变现派</td><td>起号 / 选剧 / 矩阵 / 接单</td><td><a href="https://www.xiaohongshu.com/search_result?keyword=%E7%9F%AD%E5%89%A7%E7%A7%81%E5%9F%9F" target="_blank">小红书搜"短剧私域"</a></td></tr>
+<tr><td><strong>AI 短剧爆款公式</strong></td><td>公式派</td><td>3 步公式写开头 / 黄金时长</td><td><a href="https://www.xiaohongshu.com/search_result?keyword=AI%E7%9F%AD%E5%89%A7%E7%88%86%E6%AC%BE" target="_blank">小红书搜"AI 短剧爆款"</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>1.4 YouTube 头部(3 位)</h3>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>频道</th><th>类型</th><th>内容</th><th>跳转</th></tr></thead>
+<tbody>
+<tr><td><strong>海外短剧实操</strong></td><td>出海派</td><td>ReelShort / DramaBox 制作</td><td><a href="https://www.youtube.com/results?search_query=reelShort+making+of" target="_blank">YouTube 搜"reelShort making of"</a></td></tr>
+<tr><td><strong>AI Video Tutorial</strong></td><td>AI 派</td><td>Runway / Sora / Pika 全流程</td><td><a href="https://www.youtube.com/results?search_query=runway+ai+video+tutorial" target="_blank">YouTube 搜"runway ai video tutorial"</a></td></tr>
+<tr><td><strong>短剧出海翻译</strong></td><td>出海派</td><td>AI 译制 / 多语种配音</td><td><a href="https://www.youtube.com/results?search_query=ai+dubbing+short+drama" target="_blank">YouTube 搜"ai dubbing short drama"</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- ========== 2. 课程补给 ========== -->
+<h2 id="course">🎓 2. 课程补给 · 12 门课</h2>
+
+<p>按价位 4 档:免费 / 低价 199-999 / 系统 9800 / 创业 19800。<strong>点蓝色链接跳到具体课程页或平台</strong>(部分课程无精确页,标"平台内搜课程名")。</p>
+
+<h3>2.1 免费课(B 站 / 头条 / 知乎 / 抖音)</h3>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>课程</th><th>平台</th><th>侧重</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td>0 成本 3 天 AI 短剧 5 步拆解</td><td>今日头条</td><td>豆包+剪映+即梦,3 天出片</td><td><a href="https://www.toutiao.com/a7663772259584131620" target="_blank">toutiao.com/a7663772259584131620</a></td></tr>
+<tr><td>短剧剪映最便捷实操</td><td>今日头条</td><td>手机 10 分钟出片</td><td><a href="https://m.toutiao.com/article/7662815368053834242" target="_blank">m.toutiao.com/article/7662815368053834242</a></td></tr>
+<tr><td>抖音短剧版权中心</td><td>抖音 App</td><td>每月免费领 5 部 IP</td><td>打开抖音 App → 创作者服务中心 → 短剧版权中心</td></tr>
+<tr><td>抖音创作者学习中心</td><td>抖音官方</td><td>平台规则 / 拍摄 / 数据</td><td><a href="https://creator.douyin.com/" target="_blank">creator.douyin.com</a></td></tr>
+<tr><td>快手电商学院</td><td>快手官方</td><td>磁力金牛 + 短剧分销</td><td><a href="https://learn.kwaixiaodian.com/" target="_blank">learn.kwaixiaodian.com</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>2.2 系统课(9800 档)</h3>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>课程</th><th>机构</th><td>学制</td><th>链接</th></tr></thead>
+<tbody>
+<tr><td>AI 短剧全能班(60 课时)</td><td>美迪教育</td><td>1 个月 / 全国多校区</td><td><a href="https://www.qinxue365.com/course/1145609.html" target="_blank">qinxue365.com/course/1145609.html</a></td></tr>
+<tr><td>AI 数字技能 · 总目录</td><td>网易云课堂</td><td>混合(录播+直播)</td><td><a href="https://study.163.com/category/400000001316004" target="_blank">study.163.com/category/400000001316004</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>2.3 官方实战班(12800 档)</h3>
+<div class="callout info">
+  <span class="ico">🏛️</span>
+  <p><strong>推荐指数 ★★★★★</strong>。中短剧编剧互学互鉴实战培训班,导师是刘笑天(短剧超高盈利率代表)等行业一线。</p>
+</div>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>课程</th><th>导师</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td>中短剧编剧互学互鉴实战培训班(第一期)</td><td>刘笑天 等</td><td><a href="https://qgw.ctpia.com.cn" target="_blank">qgw.ctpia.com.cn</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>2.4 创业孵化班(19800 档)</h3>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>课程</th><th>机构</th><th>学制</th><th>亮点</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td>AI 短剧创作实战班</td><td>百技职业(中科智汇)</td><td>3 个月脱产 / 深圳</td><td>订单实战 + 分成 + 包住 + AIGC 证书</td><td><a href="http://www.baijigongsi.com/article/5753014372200175" target="_blank">baijigongsi.com/article/5753014372200175</a></td></tr>
+<tr><td>AI 短视频全品类(高级档)</td><td>红河州融媒体 + 澜湄视听</td><td>45 天</td><td>跨境短剧接单 + IP 出海授权 + 双证</td><td>红河州人社局咨询(具体链接见 v3.0 31 章,已删)</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout tip">
+  <span class="ico">💡</span>
+  <p><strong>课程选择决策树</strong>:<br>
+  完全没碰过 → <strong>免费课</strong>(B 站 + 头条,1-2 周)<br>
+  想系统化 + 拿证 → <strong>9800 档</strong>(美迪 60 课时)<br>
+  想进短剧编剧官方圈 → <strong>12800 档</strong>(中国电视剧制作产业协会青工委)<br>
+  想线下实操 + 接单 → <strong>19800 档</strong>(百技 / 红河州)<br>
+  3 个月投入 1-2 万学费,预期月入 1-3 万 → 6-12 个月回本。</p>
+</div>
+
+<!-- ========== 3. 工具补给 ========== -->
+<h2 id="tool">🛠 3. 工具补给 · 12 个</h2>
+
+<p>AI 工具(必装) / 数据工具(选装) / 下载工具(选装) / 投流工具(投流时)。<strong>所有链接都是真实可访问的官网或 GitHub 仓库</strong>。</p>
+
+<h3>3.1 AI 创作工具(6 个,必装)</h3>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>类别</th><th>工具</th><th>用途</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td>剧本 / 分镜</td><td>扣子 App</td><td>脚本拆解 + 多 Agent</td><td><a href="https://www.coze.cn" target="_blank">coze.cn</a></td></tr>
+<tr><td>画面生成</td><td>即梦 AI</td><td>短剧角色首推</td><td><a href="https://jimeng.jianying.com" target="_blank">jimeng.jianying.com</a></td></tr>
+<tr><td>画面 + 视频</td><td>可灵 AI</td><td>角色动作 / 图生视频</td><td><a href="https://klingai.com" target="_blank">klingai.com</a></td></tr>
+<tr><td>30 秒长视频</td><td>海螺 AI</td><td>角色一致性 / 长镜头</td><td><a href="https://hailuoai.com" target="_blank">hailuoai.com</a></td></tr>
+<tr><td>高级视频</td><td>Runway</td><td>镜头扩展 / 高级编辑</td><td><a href="https://runwayml.com" target="_blank">runwayml.com</a></td></tr>
+<tr><td>多语种配音</td><td>ElevenLabs</td><td>海外短剧配音</td><td><a href="https://elevenlabs.io" target="_blank">elevenlabs.io</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>3.2 数据分析工具(3 个,选装)</h3>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>工具</th><th>数据维度</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td>蝉妈妈</td><td>抖音投流 / 达人 / 商品</td><td><a href="https://www.chanmama.com" target="_blank">chanmama.com</a></td></tr>
+<tr><td>巨量算数</td><td>抖音趋势 / 人群 / 内容</td><td><a href="https://trendinsight.oceanengine.com" target="_blank">trendinsight.oceanengine.com</a></td></tr>
+<tr><td>AppGrowing</td><td>短剧 App 投放监测</td><td><a href="https://www.appgrowing.cn" target="_blank">appgrowing.cn</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>3.3 小说下载工具(3 个,选装)</h3>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>工具</th><th>类型</th><th>支持</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td>novel-downloader</td><td>油猴脚本</td><td>200+ 站(含番茄/起点/晋江/七猫)</td><td><a href="https://github.com/huanmeng99/novel-downloader" target="_blank">github.com/huanmeng99/novel-downloader</a></td></tr>
+<tr><td>Fanqie-novel-Downloader</td><td>Python GUI</td><td>番茄专用</td><td><a href="https://github.com/POf-L/Fanqie-novel-Downloader" target="_blank">github.com/POf-L/Fanqie-novel-Downloader</a></td></tr>
+<tr><td>so-novel</td><td>Java 跨平台</td><td>多书源解压即用</td><td><a href="https://github.com/freeok/so-novel" target="_blank">github.com/freeok/so-novel</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>3.4 投流工具(1 个,投流时)</h3>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>工具</th><th>用途</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td>抖音千川 / 巨量引擎</td><td>抖音端投流官方后台</td><td><a href="https://qianchuan.com" target="_blank">qianchuan.com</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- ========== 4. 验真补给 ========== -->
+<h2 id="verify">✅ 4. 验真补给 · 1 跳转</h2>
+
+<div class="callout info">
+  <span class="ico">🔍</span>
+  <p><strong>平台官网 + GitHub 仓库</strong>(30+ 个)已全部在本页"工具补给"和"师傅补给"中实测可访问。<strong>链接失效处理</strong>:大部分博主/课程链接是"平台内搜账号"格式,即使博主改名/换号,平台搜账号名仍能找到。工具 GitHub 仓库链接是稳定的。课程官网偶尔失效,直接用平台内搜课程名。</p>
+</div>
+
+<div class="callout warn">
+  <span class="ico">⚠️</span>
+  <p><strong>链接有效性自检</strong>(学员使用前 30 秒):<br>
+  ① <strong>工具类</strong>(coze / 即梦 / GitHub) → 几乎不会失效,可放心点<br>
+  ② <strong>师傅/课程</strong>(抖音/B站/小红书搜索链接) → 平台搜索页长期稳定<br>
+  ③ <strong>具体课程页</strong>(如美迪 9800) → 大平台 1-2 年内稳定,失效概率 < 10%<br>
+  ④ <strong>具体文章</strong>(今日头条单篇) → 容易因推荐算法下沉,平均 6-12 个月失效,失效后用标题在平台内搜</p>
+</div>
+
+</main>
+</div>
+
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="后期放公众号二维码">
+      <img class="qr-img" src="../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../changelog.html">📅 更新日志</a></li>
+      <li><a href="mailto:yuge@local.demo">✉ 联系玉哥</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流 · 京 ICP 备 XXXXXXXX 号(待补)
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+
+</body>
+</html>

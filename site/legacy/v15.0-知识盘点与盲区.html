@@ -1,0 +1,501 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>短剧创业 · 28 条行业盲区(学员必读避坑指南) v15.0</title>
+<style>
+:root{
+  --bg:#0b0d12;--bg2:#11141b;--bg3:#161a23;--line:#222837;--text:#e6e9f2;--muted:#8a93a6;
+  --acc:#7aa2ff;--acc2:#5ee0a7;--acc3:#ffb142;--acc4:#c084fc;--acc5:#ff5b6e;
+  --shadow:0 6px 30px rgba(0,0,0,.45);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Helvetica,Arial,sans-serif;line-height:1.7;font-size:15px;-webkit-font-smoothing:antialiased}
+a{color:var(--acc);text-decoration:none}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(11,13,18,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:12px 24px;display:flex;align-items:center;gap:16px}
+.logo{font-weight:800;font-size:18px;background:linear-gradient(90deg,var(--acc),var(--acc3));-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:.5px}
+.toc-btn{margin-left:auto;background:var(--bg3);border:1px solid var(--line);color:var(--text);padding:6px 12px;border-radius:6px;cursor:pointer;font-size:13px}
+.layout{display:grid;grid-template-columns:240px 1fr;max-width:1400px;margin:0 auto}
+aside{position:sticky;top:60px;height:calc(100vh - 60px);overflow-y:auto;padding:24px 16px;border-right:1px solid var(--line);background:var(--bg2)}
+aside h3{color:var(--muted);font-size:12px;letter-spacing:1px;margin:16px 0 8px;text-transform:uppercase}
+aside ul{list-style:none}
+aside li{margin:2px 0}
+aside a{color:#c5cae0;font-size:13px;display:block;padding:5px 10px;border-radius:5px;border-left:2px solid transparent}
+aside a:hover{background:var(--bg3);color:var(--text);text-decoration:none;border-left-color:var(--acc)}
+main{padding:32px 40px 80px;min-width:0}
+h1{font-size:32px;margin-bottom:8px;letter-spacing:.5px}
+h2{font-size:24px;margin:48px 0 16px;padding-bottom:8px;border-bottom:1px solid var(--line);position:relative}
+h2::before{content:"";position:absolute;left:-20px;top:8px;width:4px;height:22px;background:var(--acc);border-radius:2px}
+h3{font-size:18px;margin:28px 0 10px;color:var(--acc2)}
+p{margin:10px 0;color:#cfd4e0}
+ul,ol{margin:8px 0 12px 24px;color:#cfd4e0}
+li{margin:4px 0}
+strong{color:#fff}
+em{color:var(--acc2);font-style:normal}
+.hero{background:linear-gradient(135deg,#0a0d1f 0%,#0b0d12 60%,#0d111c 100%);border:1px solid var(--acc);border-radius:14px;padding:36px 32px;margin-bottom:32px;box-shadow:0 0 40px rgba(122,162,255,.2);position:relative;overflow:hidden}
+.hero h1{background:linear-gradient(90deg,var(--acc),var(--acc3));-webkit-background-clip:text;background-clip:text;color:transparent;display:inline-block}
+.hero .sub{color:var(--muted);margin-top:6px;font-size:14px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.tag{background:rgba(255,255,255,.06);border:1px solid var(--line);padding:4px 10px;border-radius:99px;font-size:12px;color:#cdd3e1}
+.callout{display:flex;gap:12px;padding:14px 16px;border-radius:8px;margin:14px 0;border:1px solid var(--line);background:var(--bg2)}
+.callout .ico{font-size:20px;flex-shrink:0;line-height:1}
+.callout.tip{border-color:rgba(94,224,167,.4);background:rgba(94,224,167,.06)}
+.callout.warn{border-color:rgba(248,113,113,.4);background:rgba(248,113,113,.06)}
+.callout.info{border-color:rgba(122,162,255,.4);background:rgba(122,162,255,.06)}
+.callout.purple{border-color:rgba(192,132,252,.4);background:rgba(192,132,252,.06)}
+.callout p{font-size:13.5px;color:#dde0ec;margin:0}
+.quad{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:18px;margin:14px 0}
+.quad h3{margin:0 0 8px;font-size:15.5px;display:flex;align-items:center;gap:8px}
+.quad .badge{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600;background:rgba(122,162,255,.18);color:#a8c0ff}
+.quad.ai h3{color:var(--acc)}
+.quad.you h3{color:var(--acc2)}
+.quad.both h3{color:var(--acc4)}
+.quad.gap h3{color:var(--acc5)}
+.quad p{font-size:13.5px;margin:6px 0}
+.quad ul{margin:6px 0 0 20px;font-size:13px}
+.quad li{margin:3px 0;color:#cfd4e0}
+.gap-section{background:linear-gradient(135deg,rgba(255,91,110,.05),rgba(122,162,255,.05));border:1px solid var(--acc5);border-radius:12px;padding:24px;margin:20px 0}
+.gap-section h2{color:var(--acc5);border-bottom-color:var(--acc5)}
+.gap-section h2::before{background:var(--acc5)}
+.gap-item{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:8px;padding:14px;margin:10px 0}
+.gap-item h4{color:#fff;margin-bottom:6px;font-size:15px}
+.gap-item p{font-size:13px;margin:4px 0;color:#cfd4e0}
+.gap-item .impact{color:var(--acc5);font-weight:600;font-size:12.5px;margin-top:4px}
+.venn{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:24px;margin:20px 0;text-align:center}
+.venn svg{width:100%;max-width:600px;height:auto}
+footer{margin-top:60px;padding:24px 40px;color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);text-align:center}
+@media (max-width:900px){.layout{grid-template-columns:1fr}aside{position:relative;top:0;height:auto;border-right:0;border-bottom:1px solid var(--line)}main{padding:24px 20px 60px}h1{font-size:26px}h2{font-size:20px}}
+@media print{aside,.topbar{display:none}.layout{grid-template-columns:1fr}body{background:#fff;color:#000}h2::before{display:none}}
+</style>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg?v=fix20260927-2215">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="logo">⚠️ 短剧创业 · 28 条行业盲区 <small>v15.0 · 学员必读避坑指南 · 2026-09-11</small></div>
+  <button class="toc-btn" onclick="window.print()">🖨 打印</button>
+</div>
+
+<div class="layout">
+
+<aside>
+<h3>盲区</h3>
+<ul>
+  <li><a href="#hero">概览</a></li>
+  <li><a href="#gap-industry">① 行业底层(10)</a></li>
+  <li><a href="#gap-you">② 关于你自己(8)</a></li>
+  <li><a href="#gap-future">③ 未来变量(6)</a></li>
+  <li><a href="#gap-blackbox">④ 黑箱(4)</a></li>
+  <li><a href="#next">⑤ 如何发现盲区</a></li>
+  <li><a href="#summary">一句话总结</a></li>
+</ul>
+</aside>
+
+<main>
+
+<section id="hero" class="hero">
+  <h1>短剧创业 · 28 条行业盲区</h1>
+  <p class="sub">学员必读避坑指南 · 28 条过来人才知道的真相 · 2026-09-11</p>
+  <div class="meta">
+    <span class="tag">🏭 行业底层 10</span>
+    <span class="tag">🪞 自检 8</span>
+    <span class="tag">🔮 未来变量 6</span>
+    <span class="tag">🕳 黑箱 4</span>
+    <span class="tag">✅ 实操建议</span>
+    <span class="tag">✍️ 整理人:玉哥</span>
+  </div>
+</section>
+
+<div class="callout warn">
+  <span class="ico">⚠️</span>
+  <p><strong>使用建议</strong>:① <strong>做项目前</strong>先通读一遍,在心里标记自己最薄弱的 3-5 条;② <strong>做完 1 部</strong>回来看一遍,看你踩中了哪几条;③ <strong>每 3 个月</strong>回来读一次,看新盲区是否出现。</p>
+</div>
+
+<!-- ================== 行业底层 ================== -->
+
+<div class="gap-section">
+
+<h2 id="gap-industry">一、行业底层 · 10 条老兵才知道的事</h2>
+<p>这部分是<strong>水下看不见的部分</strong>——平台内部规则、头部从业者的真实收入结构、投流方的分账细节。公开资料查不到,只有深耕者才知道。</p>
+
+<div class="gap-item">
+<h4>① 平台内部审核逻辑</h4>
+<p>红果/九州/七猫等平台,"什么能过、什么不能过"的具体规则不公开。知道的人不会说,只有编辑内部知道。新人只能靠"试 5-10 次"摸出来。</p>
+<p>✅ <strong>应对</strong>:不要靠"通用模板",每个平台各发 2-3 部试水,把反馈整理成自己的"过稿清单"。</p>
+<div class="impact">影响:每次投稿 60% 失败率,大部分因"不知道这条线在哪"。</div>
+</div>
+
+<div class="gap-item">
+<h4>② 头部编剧的真实收入结构</h4>
+<p>"头部编剧年薪 200 万"——但具体怎么拿?是保底+分成+爆款奖+IP 续作?比例多少?有没有"低于 5 万保底"的陷阱条款?数据没公开。</p>
+<p>✅ <strong>应对</strong>:谈合作时问清四块——保底(签合同即给)/ 分成(播出后分账)/ 爆款奖(达成 KPI 加奖)/ IP 续作(系列化分成)。</p>
+<div class="impact">影响:看到"200 万"想入行,但不知道能否拿到,以及怎么拿。</div>
+</div>
+
+<div class="gap-item">
+<h4>③ 投流方的真实分成比例</h4>
+<p>公开数据写"投流方 40-60%",但实际是 50%?55%?60%?纯靠谈判,不同项目差很大。</p>
+<p>✅ <strong>应对</strong>:谈合作时直接问"你们的标准分账比例是多少",不接受"看项目定"。拿不到 50% 至少谈到 45%。</p>
+<div class="impact">影响:谈合作时可能少拿 5-10% 利润。</div>
+</div>
+
+<div class="gap-item">
+<h4>④ AI 漫剧的成本-质量平衡点</h4>
+<p>LoRA 训练 20 张图 vs 50 张图,质量差多少?ComfyUI 工作流 5 步 vs 15 步,质量差多少?没有公开的"性价比曲线"。</p>
+<p>✅ <strong>应对</strong>:别追 15 步精致工作流,5 步稳定版先出 3 部——质量够过稿就停,别在 80 分追 95 分的路上耗光预算。</p>
+<div class="impact">影响:可能多花 3 倍时间,效果只多 10%。</div>
+</div>
+
+<div class="gap-item">
+<h4>⑤ 短剧的真实失败率</h4>
+<p>100 部里爆几部?5 部?10 部?20 部?各家保密。</p>
+<p>✅ <strong>应对</strong>:别赌"1 部爆",准备"3 部里 1 部爆"的心理预算。1 万预算 ÷ 3 = 每部 3000 元,输了不肉疼。</p>
+<div class="impact">影响:评估"做 1 部能不能爆"时,缺少基础概率。</div>
+</div>
+
+<div class="gap-item">
+<h4>⑥ AI 漫剧投流分成与平台抽成</h4>
+<p>AI 漫剧的"分账"不是给演员,而是给<strong>投流方 + 平台</strong>。投流方拿 40-60%,平台抽 20-30%(红果/抖音/快手),原创者最后能拿 10-30%。具体比例纯靠谈,公开数据没区分。</p>
+<p>✅ <strong>应对</strong>:谈合作时直接问"投流方分账比例"+"平台抽成比例",不接受"看项目定"。同时算清自己的"底线分账比"——<1 块/千次播放就走,>2 块才算有赚头。</p>
+<div class="impact">影响:谈合作时少拿 5-10% 利润,或接了一个注定亏本的项目。</div>
+</div>
+
+<div class="gap-item">
+<h4>⑦ 编辑的真实偏好</h4>
+<p>编辑喜欢"被打动"的提案,还是"看数据"的提案?每家编辑偏好不同,没有"通用完美模板"。</p>
+<p>✅ <strong>应对</strong>:被拒 3 次后换编辑/平台,别死磕。每位编辑有 3-5 个"风格偏好",匹配上才过得了。</p>
+<div class="impact">影响:过稿率提升靠"研究每个编辑的偏好",而不是"通用模板"。</div>
+</div>
+
+<div class="gap-item">
+<h4>⑧ 短剧的生命周期</h4>
+<p>一部短剧上线后,分账曲线长什么样?1 个月峰值?3 个月长尾?1 年还有收益?不同剧差异极大。</p>
+<p>✅ <strong>应对</strong>:做"系列化"准备,别指望 1 部吃 3 年。爆款 3 个月内开规划第 2 部,长尾最多吃 6-12 个月。</p>
+<div class="impact">影响:评估"长尾收益"时,缺少基础数据。</div>
+</div>
+
+<div class="gap-item">
+<h4>⑨ 续作 IP 的真实成功率</h4>
+<p>《家里家外 1/2/3》验证了系列化能成功。但 5% 还是 50% 的短剧能出续作?未知。</p>
+<p>✅ <strong>应对</strong>:首部爆款后,立刻规划第 2 部(别等长尾)。第 2 部是"新用户入口",不是"老用户收割"。</p>
+<div class="impact">影响:评估"系列化策略"的价值时,缺少基础概率。</div>
+</div>
+
+<div class="gap-item">
+<h4>⑩ 编剧中心制是否可持续</h4>
+<p>2025 H2 头部编剧 200 万年薪,但 2027 / 2028 / 2030 还会持续吗?AI 是否会"吃掉"头部编剧?没有未来数据。</p>
+<p>✅ <strong>应对</strong>:长期价值是"IP 孵化能力",不是"一次性写剧本"。把自己定位为"IP 操盘手",不是"接单编剧"。</p>
+<div class="impact">影响:长期职业规划的不确定性。</div>
+</div>
+
+</div>
+
+<!-- ================== 关于你自己 ================== -->
+
+<div class="gap-section">
+
+<h2 id="gap-you">二、关于你自己 · 8 个自检问题</h2>
+<p>这部分<strong>别人帮不了你</strong>。你必须自己回答清楚。答不清楚,后面 90% 的努力都是浪费。</p>
+
+<div class="gap-item">
+<h4>① 你的真实目标</h4>
+<p>你做这件事是为了:① 自己学?② 给团队用?③ 给学员用?④ 投资决策?</p>
+<p>📢 <strong>玉哥说</strong>:目标不同,补的内容完全不同。这门课按 4 类目标拆解,你先定一个主目标。</p>
+<div class="impact">影响:目标不清,行动就是"东一榔头西一棒槌"。</div>
+</div>
+
+<div class="gap-item">
+<h4>② 你的预算上限</h4>
+<p>1 万 = AI 漫剧路线;3 万 = AI 漫剧 + 小投流;10 万 = 真人短剧 + 千川;30 万+ = 完整剧组。</p>
+<p>📢 <strong>玉哥说</strong>:用 1 万预算去做 10 万的项目,大概率血本无归。先把"你能亏多少"写下来,再开始。</p>
+<div class="impact">影响:决定走"AI 漫剧"还是"真人短剧"路线。</div>
+</div>
+
+<div class="gap-item">
+<h4>③ 你的时间投入</h4>
+<p>兼职还是全职?每天几小时?能坚持多久?</p>
+<p>📢 <strong>玉哥说</strong>:兼职 2h/天 = 6 个月出 1 部;全职 8h/天 = 8 周出 1 部,节奏差 3 倍。先算清你能投多少小时。</p>
+<div class="impact">影响:时间表定制,影响整个项目排期。</div>
+</div>
+
+<div class="gap-item">
+<h4>④ 你的团队</h4>
+<p>1 人干,还是已经有团队?有编剧/制作/投流?</p>
+<p>📢 <strong>玉哥说</strong>:1 人 = 慢但成本低;3 人(编剧+制作+投流)= 平衡;完整剧组 = 快但要 30 万+。别被"团队越大越好"忽悠。</p>
+<div class="impact">影响:补什么素材——个人 SOP 还是团队协作 SOP。</div>
+</div>
+
+<div class="gap-item">
+<h4>⑤ 你的技术能力</h4>
+<p>ComfyUI 会用吗?会写 prompt 吗?会做图生视频吗?</p>
+<p>📢 <strong>玉哥说</strong>:0 基础 = 走"网剧/小程序短剧"路线(投流为主);ComfyUI 入门 = 走 AI 漫剧路线;ComfyUI 熟练 = 走精品 AI 漫剧 + IP 矩阵。技术栈决定赛道。</p>
+<div class="impact">影响:技术章节深度——是入门还是进阶。</div>
+</div>
+
+<div class="gap-item">
+<h4>⑥ 你的网络/IP 库</h4>
+<p>有没有熟悉的番茄作者?有没有合作的演员/团队?有没有内部选书渠道?</p>
+<p>📢 <strong>玉哥说</strong>:有 = 启动快、选书准;没有 = 必须先花 1-2 月建关系,或直接用番茄公开榜单。关系网是真实护城河。</p>
+<div class="impact">影响:实战可行性与启动速度。</div>
+</div>
+
+<div class="gap-item">
+<h4>⑦ 你的失败经验</h4>
+<p>之前有没有做过短剧/漫剧?失败原因是什么?</p>
+<p>📢 <strong>玉哥说</strong>:失败过 = 知道自己最常踩的坑,可以提前规避;没失败过 = 第一次必踩坑,准备 1 部"学费"预算(建议 3000-5000 元)。</p>
+<div class="impact">影响:避免重复踩坑,或为"学费"留预算。</div>
+</div>
+
+<div class="gap-item">
+<h4>⑧ 你的时间窗口</h4>
+<p>什么时候开始做?做完要交付给谁?有没有 deadline?</p>
+<p>📢 <strong>玉哥说</strong>:无 deadline = 容易拖延,必须设 90 天小目标;有 deadline = 倒推节奏,哪周该完成什么。先定"90 天交 1 部成品"的死线。</p>
+<div class="impact">影响:节奏规划,避免"做着做着没动力"。</div>
+</div>
+
+</div>
+
+<!-- ================== 未来变量 ================== -->
+
+<div class="gap-section">
+
+<h2 id="gap-future">三、未来变量 · 6 条 2026 H2 黑天鹅</h2>
+<p>这部分<strong>没人能预测</strong>。但承认它们存在,本身就是元认知。提前想清楚"如果发生了怎么办",比"赌它不会发生"安全 10 倍。</p>
+
+<div class="gap-item">
+<h4>⑪ AI 是否会"吃掉"基础编剧</h4>
+<p>2025 H2 头部编剧溢价,但 2026-2027 AI 是否会替代"30 万年薪以下"的基础编剧?不知道。</p>
+<p>✅ <strong>应对</strong>:把自己定位在"30 万+"梯队,而不是"3 万+"梯队。前者 AI 难替代,后者 2-3 年内可能消失。</p>
+<div class="impact">影响:长期职业定位,不要在注定被替代的路上浪费时间。</div>
+</div>
+
+<div class="gap-item">
+<h4>⑫ 监管是否再"杀"一波</h4>
+<p>2024 下架《黑莲花》/《特助》;2025 严打"霸总虐恋"。2026 H2 会不会又一波"题材清洗"?不知道。</p>
+<p>✅ <strong>应对</strong>:选题材时避开"高危品类"(霸总/虐恋/出轨/复仇过度血腥),优先"温情/成长/职业/轻喜剧"——后者被禁概率低 80%。</p>
+<div class="impact">影响:已做项目可能直接被下架,投入打水漂。</div>
+</div>
+
+<div class="gap-item">
+<h4>⑬ 海外市场是否持续增长</h4>
+<p>2024-2025 海外短剧增长 30%+,但 90% 中国公司亏损。2026 H2 是否还是蓝海?还是变成红海?</p>
+<p>✅ <strong>应对</strong>:海外不是"主战场",而是"国内爆款后的第二曲线"。先用国内 1-2 部爆款验证 IP,再 AI 译制出海。</p>
+<div class="impact">影响:出海策略的可行性,避免"国内做不出,直接赌海外"。</div>
+</div>
+
+<div class="gap-item">
+<h4>⑭ 番茄是否让 IP 改编权更严</h4>
+<p>番茄现在 20 亿加码 IP。未来是否"独家化"?是否让"非头部编剧"拿不到好 IP?</p>
+<p>✅ <strong>应对</strong>:用 3 条腿走路——番茄公开榜单 + 7猫/九州/书旗 + 自己写原创(爆款率低但 IP 100% 拥有)。</p>
+<div class="impact">影响:IP 门槛升高后,原创能力是护城河。</div>
+</div>
+
+<div class="gap-item">
+<h4>⑮ AIGC 漫剧是否再爆发</h4>
+<p>现在日产 1000 部,产能过剩。2026 H2-2027 是否有新爆点(如 30 秒长视频、角色一致性技术突破)?</p>
+<p>✅ <strong>应对</strong>:技术追新别追满——每季度花 5 小时看新工具,真能省 50% 时间才换,否则维持原流程。</p>
+<div class="impact">影响:技术投入的回报,避免"为追新而追新"。</div>
+</div>
+
+<div class="gap-item">
+<h4>⑯ 短剧+X 的可能性</h4>
+<p>短剧+电商?短剧+游戏?短剧+教育?可能性很多,但变现路径不清晰。</p>
+<p>✅ <strong>应对</strong>:主业做稳前,别碰"+X"。第 1 部爆款变现后再试,资金回收是底线。</p>
+<div class="impact">影响:商业化扩展的优先级,避免"主业没做成就想副业"。</div>
+</div>
+
+</div>
+
+<!-- ================== 黑箱 ================== -->
+
+<div class="gap-section">
+
+<h2 id="gap-blackbox">四、黑箱 · 4 条没人能说清的事</h2>
+<p>这些是<strong>无论怎么努力都很难知道</strong>的事。承认它们的存在,本身就是元认知。</p>
+
+<div class="gap-item">
+<h4>⑰ 短剧的"玄学"</h4>
+<p>为什么同样质量,有的剧爆有的不爆?是"运气"还是"算法"?没人真的知道。我们写的"公式"都是事后归纳。</p>
+<p>✅ <strong>应对</strong>:接受"做再多准备也不能保证爆"。把目标设为"做出不差的作品"而不是"做爆款",心态更健康。</p>
+<div class="impact">影响:心理预期管理,避免"明明做了很多为什么没爆"的崩溃。</div>
+</div>
+
+<div class="gap-item">
+<h4>⑱ 平台的推荐算法</h4>
+<p>红果/抖音/快手推荐算法的具体逻辑?不公开。我们只能"通过现象猜逻辑"。</p>
+<p>✅ <strong>应对</strong>:盯 3 个公开数据点——前 3 秒完播率 / 1 分钟留存率 / 转发率,这 3 个指标平台都公开。优化这 3 个,就是优化算法。</p>
+<div class="impact">影响:用"算法承认的指标"代替"猜算法"。</div>
+</div>
+
+<div class="gap-item">
+<h4>⑲ 编辑的"红与黑"</h4>
+<p>哪个编辑喜欢哪种剧?不公开。只能靠积累关系。</p>
+<p>✅ <strong>应对</strong>:被拒 3 次就换编辑,而不是"再试 1 次"。编辑偏好 6 个月内不会变,死磕浪费时间。</p>
+<div class="impact">影响:过稿效率,避免"赌一个编辑的偏好"。</div>
+</div>
+
+<div class="gap-item">
+<h4>⑳ 短剧的"文化趋势"</h4>
+<p>今年流行什么?明年的爆款是什么?没人能预测。</p>
+<p>✅ <strong>应对</strong>:做"3 类通用题材"(温情/成长/职业)而不是"1 类风口题材"。风口变了你全盘皆输,通用题材穿越周期。</p>
+<div class="impact">影响:做出来时可能已经过时,通用题材更安全。</div>
+</div>
+
+</div>
+
+<!-- ================== 如何发现盲区 ================== -->
+
+<h2 id="next">五、如何发现这些盲区 · 5 种方法</h2>
+
+<p>既然盲区存在,如何<strong>主动发现</strong>它们?5 种方法:</p>
+
+<div class="callout tip">
+  <span class="ico">🔍</span>
+  <p><strong>方法 1:小规模试错</strong>。先做 1 部短剧投出去,看反馈——反馈里藏着 80% 的盲区。</p>
+</div>
+
+<div class="callout tip">
+  <span class="ico">🤝</span>
+  <p><strong>方法 2:进入圈子</strong>。加 5 大演员圈子/编剧圈子,直接和一线从业者聊——他们口里说出的"潜规则"才是真盲区。</p>
+</div>
+
+<div class="callout tip">
+  <span class="ico">📊</span>
+  <p><strong>方法 3:自己做"数据复盘"</strong>。每做完 1 部短剧,记录所有数据,你会发现"我以为的"和"实际发生的"差距巨大。</p>
+</div>
+
+<div class="callout tip">
+  <span class="ico">🌐</span>
+  <p><strong>方法 4:盯紧行业新闻</strong>。红果/番茄/抖音/中国电视剧制作产业协会的公众号,每月看 1-2 篇行业报告。</p>
+</div>
+
+<div class="callout tip">
+  <span class="ico">🔄</span>
+  <p><strong>方法 5:周期性回到这个清单</strong>。每 3 个月回来读一遍,标记"已知的盲区是否被填补""新盲区是否出现"。</p>
+</div>
+
+<!-- ================== 总结 ================== -->
+
+<h2 id="summary">六、一句话总结</h2>
+
+<div class="callout info">
+  <span class="ico">📌</span>
+  <p><strong>看完这页你应该带走 3 件事</strong>:① 承认 28 条盲区的存在,不要假装"我懂";② 每条盲区都有应对方案,不是"知道又不知道";③ <strong>盲区清单是动态的</strong>,每 3 个月回来看一次,你会发现自己已经填补了 5-10 条,又会冒出 3-5 条新的。</p>
+</div>
+
+<div class="callout purple">
+  <span class="ico">💎</span>
+  <p><strong>学员最后 1 个问题</strong>:"看完这 28 条,我下一步该做什么?"<br>
+  → <strong>答</strong>:打开 <a href="../tutorial/H-publish/短剧创业SOP.html">短剧创业 SOP</a>,按"6 阶段路径"挑 1 个最小行动,90 天内做出来。</p>
+</div>
+
+
+<h2 id="d4">§ 10 · 全网顶级短剧创业视频课路径(2026-09 校验)</h2>
+
+<div class='callout purple'>
+  <span class='ico'>💎</span>
+  <p><strong>学员看完 28 条盲区后</strong> = 知道'自己不知道什么'。<strong>下一步</strong> = 配合 16 课顶级视频课,知道'怎么学'。</p>
+</div>
+
+<h3>🐣 10.1 小白(从没做过短剧) · 4 课</h3>
+<p>目标:<strong>30 分钟搞懂短剧是什么 + 起步</strong>。</p>
+<div class='tbl-wrap'>
+<table>
+<thead><tr><th>课程</th><th>UP / 频道</th><th>时长</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td>短剧是什么 · 一节课搞懂</td><td>短剧入门 (B 站)</td><td>1 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%E6%98%AF%E4%BB%80%E4%B9%88' target='_blank'>B 站搜'短剧是什么'</a></td></tr>
+<tr><td>番茄改编短剧 30 天</td><td>短剧改编 30 天 (B 站)</td><td>3-5 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%95%AA%E8%8C%84%E6%94%B9%E7%BC%96' target='_blank'>B 站搜'番茄改编'</a></td></tr>
+<tr><td>AI 漫剧 1 个月出 1 部</td><td>AI 漫剧 1 个月 (B 站)</td><td>2-3 小时</td><td><a href='https://search.bilibili.com/all?keyword=AI%20%E6%BC%AB%E5%89%A7%20%E5%87%BA%E5%89%A7' target='_blank'>B 站搜'AI 漫剧 出剧'</a></td></tr>
+<tr><td>短剧 1 万预算版</td><td>短剧 1 万 (B 站)</td><td>1-2 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%20%E4%B8%9A%E4%B8%9A' target='_blank'>B 站搜'短剧 1 万'</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>🌱 10.2 入门(想投稿) · 4 课</h3>
+<p>目标:<strong>30 天投 1 部过稿</strong>。</p>
+<div class='tbl-wrap'>
+<table>
+<thead><tr><th>课程</th><th>UP / 频道</th><th>时长</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td>短剧投稿 12 家平台</td><td>短剧投稿 (B 站)</td><td>2-3 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%E6%8A%95%E7%A8%BF' target='_blank'>B 站搜'短剧投稿'</a></td></tr>
+<tr><td>红果 / 九州 收稿风格</td><td>红果 九州 (B 站)</td><td>2-3 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%BA%A2%E6%9E%9C%20%E5%8D%83%E5%B7%9D' target='_blank'>B 站搜'红果 千川'</a></td></tr>
+<tr><td>短剧合同 5 大必备条款</td><td>短剧合同 (B 站)</td><td>1-2 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%20%E5%90%88%E5%90%8C' target='_blank'>B 站搜'短剧 合同'</a></td></tr>
+<tr><td>编剧中心制 1 万 6 个月</td><td>编剧中心制 (B 站)</td><td>2-3 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%BC%96%E5%89%A7%E4%B8%AD%E5%BF%83%E5%88%B6' target='_blank'>B 站搜'编剧中心制'</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>🚀 10.3 进阶(投过稿,想稳定月入 1-3 万) · 4 课</h3>
+<p>目标:<strong>30 天出 1 部 + 60 天月入 1 万</strong>。</p>
+<div class='tbl-wrap'>
+<table>
+<thead><tr><th>课程</th><th>UP / 频道</th><th>时长</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td>短剧千川 4 阶段 SOP</td><td>短剧投流 (B 站)</td><td>3-5 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%20%E5%8D%83%E5%B7%9D' target='_blank'>B 站搜'短剧 千川'</a></td></tr>
+<tr><td>AI 漫剧 ComfyUI 实战</td><td>ComfyUI 漫剧 (B 站)</td><td>5-8 小时</td><td><a href='https://search.bilibili.com/all?keyword=ComfyUI%20%E6%BC%AB%E5%89%A7' target='_blank'>B 站搜'ComfyUI 漫剧'</a></td></tr>
+<tr><td>短剧 ROI 5 大杠杆</td><td>短剧 ROI (B 站)</td><td>2-3 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%20ROI' target='_blank'>B 站搜'短剧 ROI'</a></td></tr>
+<tr><td>短剧复盘 + 续作策略</td><td>短剧复盘 (B 站)</td><td>2-3 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%20%E5%A4%8D%E7%9B%98' target='_blank'>B 站搜'短剧 复盘'</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>👑 10.4 大神(想年入 30 万+,矩阵化) · 4 课</h3>
+<p>目标:<strong>3-5 部剧同时跑 + 海外矩阵</strong>。</p>
+<div class='tbl-wrap'>
+<table>
+<thead><tr><th>课程</th><th>UP / 频道</th><th>时长</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td>短剧矩阵化 5 平台投流</td><td>短剧矩阵 (B 站)</td><td>5-10 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%20%E7%9F%A9%E9%98%B5' target='_blank'>B 站搜'短剧 矩阵'</a></td></tr>
+<tr><td>爆款编剧中心制 · 月入 10 万</td><td>爆款编剧 (B 站)</td><td>3-5 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%88%86%E6%AC%BE%20%E7%BC%96%E5%89%A7' target='_blank'>B 站搜'爆款 编剧'</a></td></tr>
+<tr><td>海外短剧 4 平台运营</td><td>海外短剧运营 (B 站)</td><td>5-10 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E6%B5%B7%E5%A4%96%E7%9F%AD%E5%89%A7%20%E8%BF%90%E8%90%A5' target='_blank'>B 站搜'海外短剧 运营'</a></td></tr>
+<tr><td>短剧头部操盘手案例</td><td>短剧操盘手 (B 站)</td><td>3-5 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%20%E6%93%8D%E7%9B%98%E6%89%8B' target='_blank'>B 站搜'短剧 操盘手'</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<div class='callout info'>
+  <span class='ico'>📌</span>
+  <p><strong>学完 28 条盲区 + 这 16 课视频课</strong> = 学员从'知道自己不知道'到'知道怎么学'。</p>
+</div>
+</main>
+</div>
+
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="后期放公众号二维码">
+      <img class="qr-img" src="../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../changelog.html">📅 更新日志</a></li>
+      <li><a href="mailto:yuge@local.demo">✉ 联系玉哥</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流 · 京 ICP 备 XXXXXXXX 号(待补)
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('aside a').forEach(function(a){
+    a.addEventListener('click',function(){
+      document.querySelectorAll('aside a').forEach(function(x){
+        x.style.color='';x.style.background='';x.style.borderLeftColor='transparent';
+      });
+      a.style.color='#7aa2ff';a.style.background='#161a23';a.style.borderLeftColor='#7aa2ff';
+    });
+  });
+});
+</script>
+</body>
+</html>

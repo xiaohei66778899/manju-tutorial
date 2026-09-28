@@ -1,0 +1,9 @@
+来源URL: https://civitai.com/articles/16740/vidu-q1-reference-to-video-r2v-launch-new-pricing
+作者: kftiger (Civitai团队)
+日期: 2025-07-15
+所用模型: Vidu Q1
+
+核心内容摘要:
+Civitai平台官方文章，宣布Vidu Q1 Reference to Video (R2V)模型上线。R2V功能允许上传最多7张参考图，配合文本提示词引导视频生成。文章同时宣布了T2V和I2V的降价。由于Civitai是Next.js客户端渲染应用，完整正文（含示例提示词和截图）无法通过HTTP直接抓取，仅能获取页面元数据和操作步骤摘要。
+
+推荐教学点: 适合"多参考图视频生成"章节——介绍Vidu Q1 R2V功能作为参考图驱动视频生成的案例。注意：完整正文需浏览器登录访问，本文仅保留可获取的操作步骤和元信息。

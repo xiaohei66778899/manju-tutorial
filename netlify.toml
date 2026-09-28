@@ -1,0 +1,102 @@
+# Netlify 部署配置 · 漫剧教程站
+# 阿白 5 分钟上线:把代码 push 到 GitHub → Netlify 自动部署
+
+[build]
+  # Netlify 跑构建的目录(本项目是纯 HTML,无需构建)
+  publish = "site"
+  # 不需要 build command,直接发布
+
+# ============== 部署排除 · 大文件保护 ==============
+# Netlify 单文件 50 MB 硬限制,超过会部署失败
+# Cloudflare Pages 单文件 25 MB 限制
+# 以下规则把这些大文件排除,部署后页面仍可访问(404 时降级为说明)
+
+[[build.ignore]]
+  # N 专题 GitHub 仓库合集(1.2 GB 含 .git + 大 pack 文件)
+  path = "site/tutorial/N-aixiexiaoshuo/repos/**"
+
+[[build.ignore]]
+  # M 专题海外教程视频(每个 60-90 MB)
+  path = "site/tutorial/M-seedance/tutorials/*.mp4"
+
+[[build.ignore]]
+  path = "site/tutorial/M-seedance/workflows/*.mp4"
+
+[[build.ignore]]
+  path = "site/tutorial/M-seedance/official-demos/*.mp4"
+
+[[build.ignore]]
+  # 学员作品视频(本地数据,部署时排除,页面可能显示空状态)
+  path = "site/works/videos/**"
+
+[[build.ignore]]
+  # A 教程示例视频
+  path = "site/tutorial/A-manju-basic/videos/**"
+
+[[build.ignore]]
+  # 视频类文件全站排除(双重防护)
+  path = "**/*.mp4"
+  path = "**/*.mov"
+  path = "**/*.m4v"
+
+[[build.ignore]]
+  # 玉哥私人资料
+  path = "视频直链清单.txt"
+  path = "_downloads/**"
+  path = "飞书脑图_*/**"
+  path = "_*.py"
+  path = "_*.txt"
+  path = "check*.py"
+  path = "check*.ps1"
+  path = "1080p"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# ============== URL 重定向 ==============
+
+# 404 跳到玉哥暖色兜底页(与 DEPLOY.md 一致)
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
+
+# ============== 缓存策略 ==============
+
+# HTML 不缓存,保证每次看到最新版
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# CSS / JS 缓存 1 年
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# JSON 数据缓存 1 小时(行业新闻每日更新,缓存 1 小时合理)
+[[headers]]
+  for = "/news/*.json"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+# ============== 安全头 ==============
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+# ============== 域名配置 ==============
+
+# 阿白在 Netlify 控制台绑定域名(免费自动 HTTPS)
+# 控制台路径:Site settings → Domain management → Add custom domain

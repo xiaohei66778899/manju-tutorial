@@ -1,0 +1,318 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="F-13 角色为什么会漂移 · 漫剧制作教程站。玉哥整理的 AI 漫剧与短剧制作实用教程，包含步骤、案例和练习。">
+<title>F-13 角色为什么会漂移 · 漫剧制作教程站</title>
+<link rel="stylesheet" href="../../assets/site.css?v=fix20260927-2215">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg?v=fix20260927-2215">
+<link rel="stylesheet" href="../../assets/tutorial.css?v=fix20260927-2215">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="logo">🎬 漫剧教程站 <small>v3 · 玉哥</small></div>
+  <nav>
+    <a href="../../index.html">首页</a>
+    <a href="../all-courses.html" class="active">漫剧教程</a>
+    <a href="../../prompts/image-prompts.html">图片作品</a>
+    <a href="../../works/index.html">视频作品</a>
+    <a href="../../prompts/prompts.html">prompt 模板</a>
+    <a href="../../tools/toolkit.html">工具箱</a>
+    <a href="../../qa/troubleshooting.html">问题库</a>
+    <a href="../../news/industry.html">行业新闻</a>
+    </nav>
+  <div class="search"><input type="search" placeholder="🔍 搜…"></div>
+  <button class="theme-toggle" title="深浅主题切换" onclick="document.documentElement.classList.toggle('dark')">🌙</button>
+</header>
+
+<div class="layout-3col">
+  <aside class="sidebar-left" id="sidebar-left"></aside>
+
+  <main class="content">
+    <div class="breadcrumb">
+      <a href="../../index.html">首页</a> <span>›</span>
+      <a href="../all-courses.html">F AI 视频</a> <span>›</span>
+      F-13 角色为什么会漂移
+    </div>
+
+    <h1>F-13 · 角色为什么会漂移</h1>
+    <h2 id="sec-1">1. 学员小陈的第 1 集:观众说"看着怪"</h2>
+
+    <div class="example">
+      <span class="label">学员实操 · 玉哥整理</span>
+      <h4>👨‍💻 小陈 · 2026 年 7 月 · 《龙王归来》第 1 集</h4>
+      <p>小陈用可灵跑了 80 个镜头,出片后:<strong>技术没问题(没变形、没崩坏),但评论两极</strong>:</p>
+      <ul>
+        <li>👍 "剧情爽""节奏快"</li>
+        <li>👎 "看着怪""不像同一个人演的""换演员了?"</li>
+      </ul>
+      <p>玉哥 review 后指出来:<strong>角色漂移</strong>。<strong>脸型慢慢在变</strong>(从国字脸 → 鹅蛋脸),<strong>眼睛颜色慢慢变</strong>(黑 → 棕),<strong>身高比例也有微调</strong>。每镜头单独看都对,连起来看就"怪"。</p>
+      <p class="src">📌 <strong>血泪教训</strong>:<strong>变形看得见,漂移看不见</strong>。<strong>80% 学员翻车在漂移而不是变形</strong>。</p>
+    </div>
+
+    <h2 id="sec-2">2. 漂移 vs 变形(必须分清)</h2>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th>维度</th><th>变形</th><th>漂移</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>表现</strong></td><td>局部畸形(6 指 / 半张脸)</td><td>整体身份渐变(脸型慢慢变)</td></tr>
+          <tr><td><strong>可见性</strong></td><td>一眼看出</td><td>说不出哪不对</td></tr>
+          <tr><td><strong>出片返工率</strong></td><td>看得见 → 必返工</td><td>看不见 → 80% 直接过</td></tr>
+          <tr><td><strong>观众反馈</strong></td><td>"手指怪""脸崩"</td><td>"看着怪""不像同一个人"</td></tr>
+          <tr><td><strong>修复成本</strong></td><td>低(单镜头修)</td><td>高(整集返工)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout warn">
+      <span class="ico">💡</span>
+      <p><strong>玉哥金句</strong>:<strong>"变形是痛,漂移是病"</strong>。痛能治,病看不出来。<strong>会识别漂移 = 学员第一道分水岭</strong>。</p>
+    </div>
+
+    <h2 id="sec-3">3. 5 大漂移原因</h2>
+
+    <div class="example">
+      <span class="label">玉哥拆解</span>
+      <h4>🔍 漂移 5 大原因</h4>
+
+      <p><strong>1. 没用参考图锁</strong>(占比 60%):每个镜头都是 AI"重新画",自然就漂。</p>
+      <p><strong>2. 提示词不一致</strong>(占比 15%):"30 岁男性" → 第 5 集变成"青年男性" → 漂。</p>
+      <p><strong>3. 模型混用</strong>(占比 10%):前 10 镜可灵,后 10 镜 Sora → 模型风格不同就漂。</p>
+      <p><strong>4. 时长太长</strong>(占比 10%):可灵 10s 视频比 6s 漂移率高 30%。</p>
+      <p><strong>5. 角色 LoRA 权重变化</strong>(占比 5%):不同镜头权重 0.6/0.7/0.8 → 漂。</p>
+
+      <p class="src">📌 <strong>核心</strong>:<strong>60% 漂移 = 没用参考图锁</strong>。<strong>学员必修</strong> = E-14 IP-Adapter。</p>
+    </div>
+
+    <h2 id="sec-4">4. 修法 1 · IP-Adapter 锁参考图(必做)</h2>
+
+    <div class="example">
+      <span class="label">玉哥主力修法</span>
+      <h4>🎯 IP-Adapter = 解决 60% 漂移</h4>
+      <p>E-14 已经讲过 IP-Adapter。<strong>漫剧应用</strong>:</p>
+      <ol>
+        <li>准备 1 张主角<strong>正面参考图</strong>(512x512 起步,纯色背景)</li>
+        <li>所有镜头都<strong>喂这张参考图</strong></li>
+        <li>设置 Weight = 0.6-0.7(漫剧甜区)</li>
+        <li>Start/End = 0.0 → 0.8</li>
+      </ol>
+
+      <p><strong>玉哥数据</strong>:用 IP-Adapter 后,80 镜头漂移率从 <strong>40%</strong> → <strong>5%</strong>。<strong>剩下 5%</strong> 是边角镜头,人工挑出重做即可。</p>
+    </div>
+
+    <h2 id="sec-5">5. 修法 2 · 提示词 100% 一致</h2>
+
+    <div class="example">
+      <span class="label">玉哥 SOP</span>
+      <h4>📋 主角外貌描述锁死模板</h4>
+      <p>写一个<strong>主角外貌锁定块</strong>(15 字),<strong>所有镜头 prompt 第一行都是同一句话</strong>。</p>
+
+      <pre class="codebox">【主角锁定块】
+30 岁亚洲男性,国字脸,黑短发,白衬衫,黑西裤,身高 180cm
+
+【第 1 集 80 个镜头 prompt 模板】
+【主角锁定块】+ 动作 + 场景 + 景别 + 光线</pre>
+
+      <p><strong>玉哥数据</strong>:学员<strong>不锁定</strong> → 漂移率 <strong>30%</strong>;<strong>锁定</strong> → 漂移率 <strong>5%</strong>。</p>
+      <p class="src">📌 <strong>关键</strong>:<strong>连顺序都一样</strong>。"黑短发,国字脸"和"国字脸,黑短发"AI 抓重点不同。<strong>复制粘贴不要改</strong>。</p>
+    </div>
+
+    <h2 id="sec-6">6. 修法 3 · 单模型一致性</h2>
+
+    <div class="example">
+      <span class="label">玉哥规则</span>
+      <h4>🔧 1 集用 1 个模型</h4>
+      <p><strong>混用模型 = 必漂</strong>(不同模型的"男主"长得不一样)。</p>
+
+      <div class="tbl-wrap" style="margin-top: 12px;">
+        <table>
+          <thead>
+            <tr><th>策略</th><th>做法</th><th>学员首选</th></tr>
+            </thead>
+          <tbody>
+            <tr><td><strong>保守</strong></td><td>80 镜头全用 1 个模型</td><td>✅ 优先推荐</td></tr>
+            <tr><td><strong>分级</strong></td><td>80% 可灵 + 20% Sora</td><td>✅ 性价比方案</td></tr>
+            <tr><td><strong>激进</strong></td><td>5 个模型混用</td><td>❌ 必漂</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="src">📌 <strong>玉哥血泪</strong>:有学员为了"省时间"前 40 镜可灵 + 后 40 镜 Sora,出片后观众说"前后不像同一个人"。<strong>重做花 2 天</strong>。</p>
+    </div>
+
+    <h2 id="sec-7">7. 修法 4 · 拆短镜头</h2>
+
+    <div class="example">
+      <span class="label">玉哥技巧</span>
+      <h4>⏱️ 长镜头拆短镜头</h4>
+      <p>可灵 6s 视频漂移率 <strong>5%</strong>,10s 视频漂移率 <strong>15%</strong>。<strong>时长翻倍,漂移率翻 3 倍</strong>。</p>
+
+      <p><strong>学员做法</strong>:</p>
+      <ul>
+        <li>1 个 10s 镜头拆成 <strong>2 个 6s 镜头</strong>(中间切 1 刀)</li>
+        <li>镜头之间加 <strong>同 IP-Adapter 参考图</strong> 锁住</li>
+        <li>剪辑时拼起来 = 看起来是 1 个 10s,实际是 2 个 6s</li>
+      </ul>
+
+      <p><strong>漂移率</strong>:10s 一次过 <strong>15%</strong> → 拆 2 个 6s 后 <strong>8%</strong>。</p>
+    </div>
+
+    <h2 id="sec-8">8. 修法 5 · 后期统一(兜底)</h2>
+
+    <div class="example">
+      <span class="label">玉哥兜底</span>
+      <h4>🎨 后期 = 最终兜底</h4>
+      <p>即使前 4 步都做了,仍有 2-5% 边角镜头漂移。<strong>学员兜底方案</strong>:</p>
+      <ol>
+        <li><strong>剪映"统一滤镜"</strong>:全片用同一滤镜(色温 / 饱和度一致)→ 漂移感降低 50%</li>
+        <li><strong>剪映"调色"</strong>:所有镜头拉到同一曝光 / 对比度</li>
+        <li><strong>剪映"画幅"</strong>:全片统一画幅(9:16 / 16:9)</li>
+        <li><strong>关键帧修图</strong>:用 PS AI 局部换脸(只修 1-2 个最明显的)</li>
+      </ol>
+
+      <p class="src">📌 <strong>玉哥经验</strong>:<strong>统一滤镜 = 漂移救星</strong>。一个滤镜全片一致,观众大脑会自动"脑补"角色一致。<strong>比修脸省 10 倍时间</strong>。</p>
+    </div>
+
+    <h2 id="sec-9">9. 4 模型漂移率横评</h2>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th>模型</th><th>6s 漂移率</th><th>10s 漂移率</th><th>15s 漂移率</th><th>学员首选</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Sora 2</strong></td><td>3%</td><td>8%</td><td>15%</td><td>✅ 关键镜头</td></tr>
+          <tr><td><strong>Hailuo</strong></td><td>5%</td><td>12%</td><td>20%</td><td>✅ <strong>综合首选</strong></td></tr>
+          <tr><td><strong>可灵 2.x</strong></td><td>5%</td><td>15%</td><td>25%</td><td>✅ 性价比</td></tr>
+          <tr><td><strong>Runway Gen-4</strong></td><td>8%</td><td>18%</td><td>30%</td><td>🟡 中等</td></tr>
+          <tr><td><strong>Veo 3</strong></td><td>10%</td><td>22%</td><td>35%</td><td>🟡 偏弱</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout warn">
+      <span class="ico">💡</span>
+      <p><strong>玉哥组合拳</strong>:<strong>6s 镜头</strong>漂移可控(<5%),<strong>10s 镜头</strong>要拆,<strong>15s 镜头</strong>几乎必漂。<strong>漫剧单镜头 6s 最佳</strong>,长剧情用剪辑衔接。</p>
+    </div>
+
+    <h2 id="sec-10">10. 数字和时间</h2>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th>环节</th><th>耗时</th><th>漂移率</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>不锁参考图直接跑</td><td>4 小时</td><td>40%</td></tr>
+          <tr><td>加 IP-Adapter 锁参考</td><td>+1 小时准备</td><td>5%</td></tr>
+          <tr><td>+ 提示词锁定块</td><td>+0.5 小时</td><td>2%</td></tr>
+          <tr><td>+ 后期统一滤镜</td><td>+0.5 小时</td><td>1%</td></tr>
+          <tr><td><strong>学员最终</strong></td><td><strong>6 小时</strong></td><td><strong>&lt;1%</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="sec-11">11. 学完这节能做啥</h2>
+
+    <ul class="checklist">
+      <li>分清漂移 vs 变形(漂移是病,变形是痛)</li>
+      <li>用 IP-Adapter 锁参考图(解决 60% 漂移)</li>
+      <li>写主角外貌锁定块,所有镜头复制</li>
+      <li>1 集用 1 个模型,不混用</li>
+      <li>把 10s 镜头拆成 2 个 6s 镜头</li>
+      <li>用统一滤镜做兜底</li>
+    </ul>
+
+    <h2 id="sec-12">12. 常见误解</h2>
+
+    <div class="callout bad">
+      <span class="ico">❌</span>
+      <p><strong>"变形修好了,漂移自然好"</strong> · 错。<strong>变形和漂移是两个独立问题</strong>。<strong>没变形不等于没漂移</strong>。</p>
+    </div>
+
+    <div class="callout bad">
+      <span class="ico">❌</span>
+      <p><strong>"提示词写详细点就行"</strong> · 部分对。<strong>提示词详细能减少漂移</strong>(从 40% → 20%),<strong>但 IP-Adapter 能降到 5%</strong>。<strong>提示词 + 参考图双锁</strong>是玉哥标准。</p>
+    </div>
+
+    <div class="callout warn">
+      <span class="ico">⚠️</span>
+      <p><strong>"Sora 不漂"</strong> · 错。Sora <strong>15s 镜头漂移率 15%</strong>(依然漂)。<strong>时长是漂移的根因之一</strong>,模型不是万能解。</p>
+    </div>
+
+    <div class="callout warn">
+      <span class="ico">⚠️</span>
+      <p><strong>"漂移是 AI 进步问题"</strong> · 部分对。<strong>2026 年 AI 仍会漂</strong>(可灵 6s 5%)。<strong>学员做法</strong> = 学会<strong>在分镜阶段</strong>就设计好"漂移免疫"剧本,不指望模型一步到位。</p>
+    </div>
+
+    <h2 id="sec-13">13. 本节小练习</h2>
+
+    <ol>
+      <li>准备 1 张主角正面参考图(512x512 纯色背景)</li>
+      <li>写 1 个"主角锁定块"(15 字外貌描述)</li>
+      <li>用锁定块 + 5 个不同动作(站 / 坐 / 走 / 跑 / 看)跑 5 个镜头</li>
+      <li>对比加 IP-Adapter vs 不加 IP-Adapter 的漂移差异</li>
+      <li>把 5 个镜头拼成 30s 短片,用统一滤镜</li>
+      <li>让 3 个朋友盲测,问"是不是同一个人"——记录反馈</li>
+    </ol>
+
+    <h2 id="sec-14">14. 玉哥说</h2>
+
+    <div class="callout warn">
+      <span class="ico">📢</span>
+      <p><strong>📢 玉哥说</strong>:<br>
+      1. <strong>变形是痛,漂移是病</strong> · 病看不出来但更致命<br>
+      2. <strong>60% 漂移是因为没锁参考图</strong> · IP-Adapter 是必修<br>
+      3. <strong>提示词 100% 一致</strong> · 主角锁定块所有镜头复制,不改 1 个字<br>
+      4. <strong>1 集 1 模型</strong> · 混用模型 = 必漂<br>
+      5. <strong>10s 拆 6s</strong> · 长镜头漂移率翻 3 倍<br>
+      6. <strong>统一滤镜兜底</strong> · 全片一个滤镜 = 漂移感降低 50%</p>
+    </div>
+
+    <nav class="bottom-nav">
+      <a class="prev" href="F-12.html">
+        <span class="label">← 上一节</span>
+        <span class="title">F-12 人物变形</span>
+      </a>
+      <a class="next" href="../G-audio-edit/G-3.html">
+        <span class="label">下一节 →</span>
+        <span class="title">G-3 AI 配音 4 工具</span>
+      </a>
+    </nav>
+  </main>
+
+  <aside class="sidebar-right" id="sidebar-right"></aside>
+</div>
+
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="扫码关注玉哥">
+      <img class="qr-img" src="../../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../../changelog.html">📅 更新日志</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+
+<script src="../../assets/tutorial.js?v=fix20260927-2215"></script>
+<script src="../../assets/site-enhance.js?v=fix20260927-2215" defer></script>
+</body>
+</html>

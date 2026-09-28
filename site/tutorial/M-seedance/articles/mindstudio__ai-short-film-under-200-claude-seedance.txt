@@ -1,0 +1,8 @@
+来源URL: https://www.mindstudio.ai/blog/how-to-make-ai-short-film-under-200-claude-seedance
+作者: Luis Chavez-Mattos (Director of Product, MindStudio)
+日期: 2026-03-29
+
+核心内容摘要:
+一篇预算导向的AI短片制作全流程指南，总预算控制在$200以内。工具栈为Claude（剧本与制作规划）→ Luma Canvas（视觉风格板）→ Nano Banana Pro（角色一致性图像）→ Seedance 2.0（图生视频）→ DaVinci Resolve（剪辑调色）。文章强调"预制作阶段决定成片质量"——先建视觉圣经（Visual Bible）和分镜表，再花昂贵的视频生成额度。提供了详细的预算分解表和五大烧钱错误清单。
+
+推荐教学点: 适合"低成本AI短片制作"和"工具链选择"章节——展示如何用AI工具链在$200预算内完成2-3分钟短片，重点讲"视觉圣经"概念和预制作阶段的重要性，以及各工具的分工边界。

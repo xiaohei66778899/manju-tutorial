@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="E-26 LoRA 训练 · 漫剧制作教程站。玉哥整理的 AI 漫剧与短剧制作实用教程，包含步骤、案例和练习。">
+<title>E-26 LoRA 训练 · 漫剧制作教程站</title>
+<link rel="stylesheet" href="../../assets/site.css?v=fix20260927-2215">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg?v=fix20260927-2215">
+<link rel="stylesheet" href="../../assets/tutorial.css?v=fix20260927-2215">
+</head>
+<body>
+<header class="topbar">
+  <div class="logo">🎬 漫剧教程站 <small>v3 · 玉哥</small></div>
+  <nav>
+    <a href="../../index.html">首页</a>
+    <a href="../all-courses.html" class="active">漫剧教程</a>
+    <a href="../../prompts/image-prompts.html">图片作品</a>
+    <a href="../../works/index.html">视频作品</a>
+    <a href="../../prompts/prompts.html">prompt 模板</a>
+    <a href="../../tools/toolkit.html">工具箱</a>
+    <a href="../../qa/troubleshooting.html">问题库</a>
+    <a href="../../news/industry.html">行业新闻</a>
+    </nav>
+  <div class="search"><input type="search" placeholder="🔍 搜…"></div>
+  <button class="theme-toggle" title="深浅主题切换" onclick="document.documentElement.classList.toggle('dark')">🌙</button>
+</header>
+<div class="layout-3col">
+  <aside class="sidebar-left" id="sidebar-left"></aside>
+  <main class="content">
+    <div class="breadcrumb"><a href="../../index.html">首页</a> <span>›</span> <a href="../all-courses.html">E AI 出图</a> <span>›</span> E-26 LoRA 训练</div>
+    <h1>E-26 · LoRA 训练(自训角色一致性)</h1>
+    <h2 id="sec-1">1. LoRA 是什么</h2>
+    <p>LoRA = Low-Rank Adaptation。给主模型"打补丁",不修改原模型权重。</p>
+    <ul>
+      <li>原模型 6 GB → LoRA 50-200 MB</li>
+      <li>训练快(1 小时)</li>
+      <li>可叠加多 LoRA(角色 + 风格)</li>
+    </ul>
+
+    <h2 id="sec-2">2. 学员训 LoRA 流程(6 步)</h2>
+    <ol>
+      <li>收集 10-30 张角色图</li>
+      <li>裁剪到统一尺寸(512×512 / 1024×1024)</li>
+      <li>打触发词标签(如 "xiaoli_girl")</li>
+      <li>选训练工具(kohya_ss / ai-toolkit)</li>
+      <li>训练 1500-3000 步</li>
+      <li>出图测试 + 调整权重</li>
+    </ol>
+
+    <h2 id="sec-3">3. 训练数据要求</h2>
+    <div class="tbl-wrap"><table><thead><tr><th>指标</th><th>学员标准</th></tr></thead><tbody>
+    <tr><td>图片数</td><td>10-30 张</td></tr>
+    <tr><td>分辨率</td><td>512×512 / 1024×1024</td></tr>
+    <tr><td>角度</td><td>正 / 侧 / 背 / 仰 / 俯 都要</td></tr>
+    <tr><td>表情</td><td>笑 / 怒 / 哭 / 惊 都要</td></tr>
+    <tr><td>服装</td><td>至少 3 套</td></tr>
+    <tr><td>背景</td><td>尽量干净</td></tr>
+    </tbody></table></div>
+
+    <h2 id="sec-4">4. LoRA 训练参数(玉哥推荐)</h2>
+    <div class="tbl-wrap"><table><thead><tr><th>参数</th><th>玉哥推荐</th></tr></thead><tbody>
+    <tr><td>network_rank / dim</td><td>32(SD 1.5)/64(SDXL/Flux)</td></tr>
+    <tr><td>network_alpha</td><td>16 / 32</td></tr>
+    <tr><td>learning_rate</td><td>1e-4</td></tr>
+    <tr><td>steps</td><td>1500-3000</td></tr>
+    <tr><td>batch_size</td><td>1-2</td></tr>
+    <tr><td>resolution</td><td>512 / 1024</td></tr>
+    </tbody></table></div>
+
+    <h2 id="sec-5">5. 学员 LoRA 类型</h2>
+    <ul>
+      <li><strong>角色 LoRA</strong>:单个角色(学员人手 5-10 个)</li>
+      <li><strong>风格 LoRA</strong>:画风 / 滤镜</li>
+      <li><strong>概念 LoRA</strong>:服装 / 道具</li>
+      <li><strong>面部 LoRA</strong>:仅脸(降低过拟合)</li>
+    </ul>
+
+    <h2 id="sec-6">6. LoRA 测试</h2>
+    <ol>
+      <li>放进 models/loras/</li>
+      <li>本地加  Load LoRA 节点</li>
+      <li>触发词写提示词</li>
+      <li>model_strength 0.7-0.9</li>
+      <li>出图对比</li>
+    </ol>
+
+    <h2 id="sec-7">7. 数字时间</h2>
+    <div class="tbl-wrap"><table><thead><tr><th>训练项</th><th>SD 1.5</th><th>SDXL</th></tr></thead><tbody>
+    <tr><td>10 张图 / 1500 步</td><td>30 分钟</td><td>90 分钟</td></tr>
+    <tr><td>30 张图 / 3000 步</td><td>60 分钟</td><td>180 分钟</td></tr>
+    <tr><td>显卡</td><td>RTX 3060 12G</td><td>RTX 4070 12G</td></tr>
+    </tbody></table></div>
+
+    <h2 id="sec-8">8. 常见误解</h2>
+    <div class="callout bad"><span class="ico">❌</span><p><strong>误解</strong>:图越多越好 —— 错。15-20 张是学员黄金数,太多过拟合。</p></div>
+    <div class="callout bad"><span class="ico">❌</span><p><strong>误解</strong>:训练步数越高越好 —— 错。超过 3000 步会过拟合,角色变呆。</p></div>
+
+    <h2 id="sec-9">9. 本节小练习</h2>
+    <ol>
+      <li>收集 15 张角色图(学员"小红"为例)</li>
+      <li>裁剪 + 打触发词 "xiaohong_girl"</li>
+      <li>用 kohya_ss 训 1500 步</li>
+      <li>本地测试 LoRA</li>
+    </ol>
+
+    <h2 id="sec-10">10. 学完能做啥</h2>
+    <ul class="checklist"><li>能自训角色 LoRA</li><li>会准备训练数据</li><li>懂训练参数</li></ul>
+
+    <h2 id="sec-11">11. 玉哥说</h2>
+    <div class="callout warn"><span class="ico">📢</span><p><strong>📢 玉哥说</strong>:<br>
+    1. <strong>学员人均训 5 个角色 LoRA</strong><br>
+    2. <strong>15 张图 + 1500 步</strong> · 黄金组合<br>
+    3. <strong>触发词要唯一</strong> · 别用常用词<br>
+    4. <strong>LoRA 训坏就重新训</strong> · 不丢人</p></div>
+
+    <nav class="bottom-nav">
+      <a class="prev" href="E-25.html"><span class="label">← 上一节</span><span class="title">E-25 在线工具横评</span></a>
+      <a class="next" href="E-27.html"><span class="label">下一节 →</span><span class="title">E-27 LoRA 训练工具</span></a>
+    </nav>
+  </main>
+  <aside class="sidebar-right" id="sidebar-right"></aside>
+</div>
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="扫码关注玉哥">
+      <img class="qr-img" src="../../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../../changelog.html">📅 更新日志</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+<script src="../../assets/tutorial.js?v=fix20260927-2215"></script>
+<script src="../../assets/site-enhance.js?v=fix20260927-2215" defer></script>
+</body>
+</html>

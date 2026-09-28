@@ -1,0 +1,755 @@
+1
+00:00:00,080 --> 00:00:06,400
+So, big news. Blackmagic Design released Da\h
+Vinci Resolve 21.1. Today, I'm going to cover\h\h
+
+2
+00:00:06,400 --> 00:00:14,080
+some of the new AI assistant features while using\h
+GPT6 Astra and the new H3 Max reference to video,\h\h
+
+3
+00:00:14,080 --> 00:00:19,280
+which is super super fast for generating video\h
+with an Omni model. So, here we are in a fresh\h\h
+
+4
+00:00:19,280 --> 00:00:24,560
+Resolve project and I've imported a character\h
+sheet of myself and a voice sample of me talking.\h\h
+
+5
+00:00:24,560 --> 00:00:28,560
+So, if you want to get your AI assistant set up,\h
+you're going to go down here and click set up AI\h\h
+
+6
+00:00:28,560 --> 00:00:32,320
+assistance. And if you're using cloud code,\h
+it like installs an extension. And if you're\h\h
+
+7
+00:00:32,320 --> 00:00:36,720
+using codecs like I am today, it just installs\h
+something and then you restart codecs and it\h\h
+
+8
+00:00:36,720 --> 00:00:43,920
+works. So what I did before this video was make a\h
+plugin for resolve using GPT6 Astra that's going\h\h
+
+9
+00:00:43,920 --> 00:00:49,200
+to allow me to generate videos with H3 Max via\h
+fal right here in Resolve. So I go to workspace\h\h
+
+10
+00:00:49,200 --> 00:00:54,400
+workflow integrations work resolve. This is my\h
+plugin for settings. All I have up here is this\h\h
+
+11
+00:00:54,400 --> 00:00:59,600
+is where the files are going to get downloaded,\h
+the videos. And I pasted my fal API key here. And\h\h
+
+12
+00:00:59,600 --> 00:01:04,160
+I'm able to generate videos and they're just\h
+automatically imported into into Resolve into\h\h
+
+13
+00:01:04,160 --> 00:01:07,600
+the project. It's very nice. Let me know if you\h
+want access to this in the comments. Otherwise,\h\h
+
+14
+00:01:07,600 --> 00:01:12,960
+you just ask Astra to write it and it'll do it.\h
+So, I'm going to bring in my character reference\h\h
+
+15
+00:01:12,960 --> 00:01:19,680
+of me and my audio reference there. So, I'm going\h
+to head over to Codex right now and we're going to\h\h
+
+16
+00:01:19,680 --> 00:01:25,440
+do some stuff. Hi there. What's on your mind? Can\h
+you verify that we're talking and connected to Da\h\h
+
+17
+00:01:25,440 --> 00:01:29,920
+Vinci Resolve right now? Let me take a look. Yep,\h
+I can hear you. And Resolve says it's connected\h\h
+
+18
+00:01:29,920 --> 00:01:34,800
+and responding. Can you also see the work resolve\h
+plugin for Resolve that we're going to be using?\h\h
+
+19
+00:01:34,800 --> 00:01:39,120
+Let me check that. I see the Work Resolve\h
+plug-in window. Yes, it's on the generate\h\h
+
+20
+00:01:39,120 --> 00:01:45,600
+page with H3 Max selected. Great. So even though\h
+this isn't part of like actual stock Resolve cuz\h\h
+
+21
+00:01:45,600 --> 00:01:50,880
+I just wrote this plugin for Resolve, it can take\h
+a screenshot and do pictureand picture and it can\h\h
+
+22
+00:01:50,880 --> 00:01:56,960
+operate an app or a plugin that it wrote itself.\h
+So kind of confusing but anyway it's it's pretty\h\h
+
+23
+00:01:56,960 --> 00:02:03,680
+cool. You'll see it. So let's go to um prompts\h
+sama.ai. I'm going to write this in the chat\h\h
+
+24
+00:02:03,680 --> 00:02:11,440
+and download the H3 Max ref to video prompt scale.\h
+Let me check that out. Okay, I'm pulling up the H3\h\h
+
+25
+00:02:11,440 --> 00:02:16,160
+Max reference to video skill. Prompts Summit is\h
+my website where I put skills that I'm going to\h\h
+
+26
+00:02:16,160 --> 00:02:21,040
+need to give to different agents so that it's sort\h
+of centralized. All set. I downloaded and verified\h\h
+
+27
+00:02:21,040 --> 00:02:25,200
+it and we'll use that for your H3 Max prompts\h
+in Work Resolve. Okay, so now I'm going to put\h\h
+
+28
+00:02:25,200 --> 00:02:29,360
+Codeex on my other window and we're just going to\h
+look at Resolve. And you're going to see that chat\h\h
+
+29
+00:02:29,360 --> 00:02:34,960
+GPT/Codex is actually using like its own cursor\h
+and mouse to do this. This isn't through the new\h\h
+
+30
+00:02:34,960 --> 00:02:40,400
+AI assistant yet. This is like just straight\h
+Codeex Astra. Great. So, let's make an H3 Max\h\h
+
+31
+00:02:40,400 --> 00:02:46,720
+prompt using the new skill that we downloaded.\h
+And the first image is a reference of Matt and the\h\h
+
+32
+00:02:46,720 --> 00:02:54,400
+first audio file is Matt's voice sample. So, the\h
+scene is Matt is in a cafe that's sunny and bright\h\h
+
+33
+00:02:54,400 --> 00:03:00,320
+in San Francisco and he's working on a MacBook\h
+Pro and then looks up at the camera, smiles,\h\h
+
+34
+00:03:00,320 --> 00:03:05,360
+and then he says, "Today, Da Vinci Resolve." So,\h
+make that prompt and put it in the work resolve\h\h
+
+35
+00:03:05,360 --> 00:03:09,920
+prompt box and let's check it out before we send\h
+it. The references are set. So, I'm drafting the\h\h
+
+36
+00:03:09,920 --> 00:03:15,920
+prompt for you. So, you took a screenshot to see\h
+what was going on. So, at the top right is the\h\h
+
+37
+00:03:15,920 --> 00:03:20,800
+um GPT voice agent, and it's kind of showing you\h
+like what the status of like what it's trying to\h\h
+
+38
+00:03:20,800 --> 00:03:27,040
+do is right there. Uh and the actual GPT/codex is\h
+on my other screen. Okay. So, you see this little\h\h
+
+39
+00:03:27,040 --> 00:03:31,280
+this cursor here? That's the Codex cursor.\h
+That's not my cursor. This is my cursor. All\h\h
+
+40
+00:03:31,280 --> 00:03:36,400
+set. The full prompt is in the work resolve box\h
+and verified. And so I'm just going to manually\h\h
+
+41
+00:03:36,400 --> 00:03:41,440
+send this off. We're going to generate video and\h
+we will see how long it takes cuz this is again\h\h
+
+42
+00:03:41,440 --> 00:03:49,200
+the post train version of H3 that fal made H3 Max\h
+reference to video and very recently added 1080p\h\h
+
+43
+00:03:49,200 --> 00:03:56,000
+mode. So pretty high quality settings but still H3\h
+Max if you do this without or if you do regular H3\h\h
+
+44
+00:03:56,000 --> 00:04:00,640
+uh even on one of the fal servers it's probably\h
+going to take you 10 to 12 minutes something\h\h
+
+45
+00:04:00,640 --> 00:04:06,880
+like that. But H3 Max much faster. We'll see soon\h
+here. But I think it's done already. There's it.\h\h
+
+46
+00:04:06,880 --> 00:04:12,000
+It's downloading, I guess. Um, and there it is.\h
+So, really fast. I didn't count, but it was like\h\h
+
+47
+00:04:12,000 --> 00:04:17,920
+less than a minute surely. And now this should be,\h
+if things are set up correctly. Let's see here.\h\h
+
+48
+00:04:17,920 --> 00:04:25,520
+This should have been imported as it is into my\h
+project. So, we'll watch this back really quickly.
+
+49
+00:04:25,520 --> 00:04:32,160
+Today, Da Vinci Resolve 21.1 was released and it\h
+gives AI assistance an even better integration\h\h
+
+50
+00:04:32,160 --> 00:04:38,080
+than before. Pretty good. Pretty good voice clone,\h
+pretty good likeness overall. The first video that\h\h
+
+51
+00:04:38,080 --> 00:04:44,320
+we generated I have in Resolve right now on like\h
+the source view I think it's called. And I have it\h\h
+
+52
+00:04:44,320 --> 00:04:50,000
+I have the timeline where I want it. Could we\h
+take a still frame from that that's that's on\h\h
+
+53
+00:04:50,000 --> 00:04:55,280
+the screen right now and import it in back into\h
+the project into the gen media or just into the\h\h
+
+54
+00:04:55,280 --> 00:04:59,040
+media folder. Let's see about that. Going to have\h
+to take a screenshot. I've got the frame you're\h\h
+
+55
+00:04:59,040 --> 00:05:04,480
+looking at. The still export and gen media import\h
+already succeeded. You're all set. Cool. So,\h\h
+
+56
+00:05:04,480 --> 00:05:07,680
+it pulled the still here and showed me in\h
+the chat window. That's nice. Okay. So,\h\h
+
+57
+00:05:07,680 --> 00:05:11,840
+I asked for it to be in the media thing and\h
+it's not. Maybe it put it in here. Is this\h\h
+
+58
+00:05:11,840 --> 00:05:15,680
+the new still? It's this, right? Okay. So, I'm\h
+going to put this in here. So, we want to bring\h\h
+
+59
+00:05:15,680 --> 00:05:21,440
+this in as our source. So, I'm going to switch\h
+the order here. And that last prompt we made,\h\h
+
+60
+00:05:21,440 --> 00:05:28,400
+use that same prompt again. Okay. Let me take\h
+care of that. You can see it's little cursor\h\h
+
+61
+00:05:28,400 --> 00:05:33,440
+right there. That's not my cursor. The revised\h
+prompt is in work resolve and verified with the\h\h
+
+62
+00:05:33,440 --> 00:05:38,720
+cafe still and Matt's character sheet. We'll\h
+see. So, we're sending this generation off.\h\h
+
+63
+00:05:38,720 --> 00:05:46,960
+And based on our last test, 1080p, 15 seconds, H3\h
+max ref to video takes roughly 30 seconds. And so,\h\h
+
+64
+00:05:46,960 --> 00:05:52,800
+it's already done. It's downloading pretty quick.\h
+Probably at 30 seconds again. And um you know,\h\h
+
+65
+00:05:52,800 --> 00:05:57,840
+I'll pop this into a timeline and let's let's\h
+look at the footage we have so far. Great. So,\h\h
+
+66
+00:05:57,840 --> 00:06:04,640
+let's take the three video clips that are in the\h
+gen media folder and make a new timeline and put\h\h
+
+67
+00:06:04,640 --> 00:06:10,080
+uh all three of them in there end to end. Let's\h
+take a look. Order the three gen media videos by\h\h
+
+68
+00:06:10,080 --> 00:06:18,560
+generation and keep their audio. There it is. Jim\h
+Media has exactly three videos with stereo audio\h\h
+
+69
+00:06:18,560 --> 00:06:25,520
+and the sequence will run just over 40 seconds.\h
+Great. So, in the current timeline is a video of\h\h
+
+70
+00:06:25,520 --> 00:06:33,440
+a man talking. Let's go ahead and cut out all of\h
+the blank spaces uh in this video. Got it. I'll\h\h
+
+71
+00:06:33,440 --> 00:06:42,720
+take a look. The transcript shows a roughly 3se\h
+second lead in and a short pause mid-sentence.
+
+72
+00:06:42,720 --> 00:06:47,360
+Okay, so the edit just happened like instantly.\h
+Looks like got rid of the space between them.\h\h
+
+73
+00:06:47,360 --> 00:06:53,600
+This process takes a lot longer than if I just did\h
+it myself. Done. I trimmed the opening silence and\h\h
+
+74
+00:06:53,600 --> 00:07:00,240
+the pause between phrases. Today, Da Vinci Resolve\h
+21.1 was released and it gives AI assistance an\h\h
+
+75
+00:07:00,240 --> 00:07:04,960
+even better integration than before. Cut out all\h
+the spaces. Very nice. You can even see the little\h\h
+
+76
+00:07:04,960 --> 00:07:09,360
+chat up here of what got done. So, let's keep\h
+doing some testing. Great. So, let's take the\h\h
+
+77
+00:07:09,360 --> 00:07:15,840
+audio from this timeline now, normalize it, and\h
+then give it like a parametric equalizer that's\h\h
+
+78
+00:07:15,840 --> 00:07:20,800
+good for voice overs that makes the man's voice\h
+sound good. Uh, you'll see its cursor come out.\h\h
+
+79
+00:07:20,800 --> 00:07:24,800
+I'm not doing any of this. This is my cursor up\h
+here. You'll see it's kind of magical cursor come\h\h
+
+80
+00:07:24,800 --> 00:07:33,760
+in and start to Is this AGI? So, this is it. I'm\h
+not doing anything. This is Astra cursor done. I\h\h
+
+81
+00:07:33,760 --> 00:07:39,520
+normalized both speech sections consistently and\h
+used the native parametric EQ to clean up rumble\h\h
+
+82
+00:07:39,520 --> 00:07:44,560
+and muddiness. It's pretty good. Now, the the bass\h
+generation is not necessarily as studio quality as\h\h
+
+83
+00:07:44,560 --> 00:07:49,040
+like my mic or something like that, but pretty\h
+good it did that. So, next next let's move on to\h\h
+
+84
+00:07:49,040 --> 00:07:54,560
+color grading. So, could you look at the image\h
+and then you tell me what would you do to make\h\h
+
+85
+00:07:54,560 --> 00:08:00,240
+this as as to make the person look as appealing as\h
+possible? Take a screenshot. You tell me what you\h\h
+
+86
+00:08:00,240 --> 00:08:04,720
+would do to the color grade, but don't do it yet.\h
+We'll decide together. Okay, I'll take a look, but\h\h
+
+87
+00:08:04,720 --> 00:08:10,560
+we won't change anything yet. Took a screenshot.\h
+I've put a proposed grade in the shared timeline.\h\h
+
+88
+00:08:10,560 --> 00:08:15,760
+His face is a bit dim against the bright windows.\h
+So, I gently lift the face, paint that yellow\h\h
+
+89
+00:08:15,760 --> 00:08:20,480
+cast, and soften the background highlights while\h
+keeping skin texture natural. Do you want that\h\h
+
+90
+00:08:20,480 --> 00:08:25,680
+natural polished approach or a warmer cinematic\h
+feel? Let's go for the warmer cinematic feel.\h\h
+
+91
+00:08:25,680 --> 00:08:33,120
+Okay, I'll work through that. Astra is going to\h
+color grade my movie. Oh, there it goes. Oh my\h\h
+
+92
+00:08:33,120 --> 00:08:42,160
+goodness. He just made a new node. He just made a\h
+new node. Oh, look at it zipping around. Oh, first\h\h
+
+93
+00:08:42,160 --> 00:08:48,320
+pass has the face lifted, jacket shadows opened,\h
+highlights softened, and I'm correcting the yellow\h\h
+
+94
+00:08:48,320 --> 00:08:52,160
+cast before adding the golden warmth. It's like\h
+I'm just going to add a quick little mask on the\h\h
+
+95
+00:08:52,160 --> 00:08:56,720
+face and track it. And it's I'm sure it can do all\h
+that stuff to be honest. I'm sure it could. No,\h\h
+
+96
+00:08:56,720 --> 00:09:03,920
+it is not making a mask. I was joking. I was\h
+joking. It's what's think of the children. Oh,\h\h
+
+97
+00:09:03,920 --> 00:09:09,840
+interesting. Interesting. Oh, it's kind of like\h
+gonna it's it's masking out the left side. So,\h\h
+
+98
+00:09:09,840 --> 00:09:14,080
+uh, we can control like the inside of the room\h
+separately from the outside. Nice. The warmer\h\h
+
+99
+00:09:14,080 --> 00:09:19,840
+cinematic pass is applied and saved. The face\h
+is gently brighter, highlight softer, background\h\h
+
+100
+00:09:19,840 --> 00:09:25,200
+a touch more subdued. Okay, cool. So, that's\h
+what it did. It showed um little temp change,\h\h
+
+101
+00:09:25,200 --> 00:09:29,120
+a little tint, highlights and shadows got changed\h
+a little bit. So, I would usually go curves,\h\h
+
+102
+00:09:29,120 --> 00:09:33,440
+but like it's a very programmatic way to do it.\h
+And this is like the final grade. It's fine.\h\h
+
+103
+00:09:33,440 --> 00:09:37,200
+We definitely could window the face and do lots\h
+of stuff, but it's for like a simple grade that\h\h
+
+104
+00:09:37,200 --> 00:09:41,760
+we like kind of decided on together, so to speak.\h
+I mean, I mean, I'm impressed. I'm impressed.\h\h
+
+105
+00:09:41,760 --> 00:09:48,320
+Codeex, great. So, the color is good and the audio\h
+is good. Let's go ahead and add white subtitles to\h\h
+
+106
+00:09:48,320 --> 00:09:55,680
+the bottom of what the man is saying. And the as\h
+the word is being said, highlight it in orange\h\h
+
+107
+00:09:55,680 --> 00:10:01,760
+and give the text a drop shadow and put this\h
+text on another video layer above this one. So,\h\h
+
+108
+00:10:01,760 --> 00:10:08,320
+on V2. Got it. I'll set that up. And I believe Da\h
+Vinci Resolve Studio has uh transcription built\h\h
+
+109
+00:10:08,320 --> 00:10:13,280
+in. You don't have to like transcribe it with like\h
+parakeet or something like in codec. It like does\h\h
+
+110
+00:10:13,280 --> 00:10:18,560
+it in Resolve, I believe. So, it looks like it's\h
+going to lock the video and audio so we don't like\h\h
+
+111
+00:10:18,560 --> 00:10:24,080
+overwrite anything. It's safe. Oh, look. It's\h
+going to make one one by one. What? I I saw\h\h
+
+112
+00:10:24,080 --> 00:10:28,000
+that. I can also see on the top left it's making\h
+like all these like backup timelines which is a\h\h
+
+113
+00:10:28,000 --> 00:10:33,360
+safe approach for sure. I've requested a concrete\h
+caption update. It's doing something. I don't know\h\h
+
+114
+00:10:33,360 --> 00:10:40,560
+what. And now the captions are on V2, grouped\h
+into five short phrases with white text, orange\h\h
+
+115
+00:10:40,560 --> 00:10:45,760
+word highlights, and soft black shadows. Um, the\h
+spacing looks a little crazy already, but it's\h\h
+
+116
+00:10:45,760 --> 00:10:50,880
+fine for now. So, we'll watch it back in a second.\h
+Finding text spacing. Oh, it Hey, it fixed it. It\h\h
+
+117
+00:10:50,880 --> 00:10:56,880
+fixed it. So, I'm going to sneak in real quick\h
+here and look at this uh GPT. It does say used\h\h
+
+118
+00:10:56,880 --> 00:11:02,320
+com.blackmagicesign Vinci Resolve integration.\h
+So, it looks like it is using it and it looks\h\h
+
+119
+00:11:02,320 --> 00:11:07,200
+like it disconnected or something like that. Put\h
+the updated preview in the shared timeline. It's\h\h
+
+120
+00:11:07,200 --> 00:11:13,280
+saved on V2 with the white captions, orange word\h
+highlights, and drop shadow. Full playback still\h\h
+
+121
+00:11:13,280 --> 00:11:16,960
+needs a look, though. That's the human in the\h
+loop. That's me. I'm the one that's going to\h\h
+
+122
+00:11:16,960 --> 00:11:22,640
+play it back. Okay, let's see how it did here.\h
+Today, Da Vinci Resolve 21.1 was released,\h\h
+
+123
+00:11:22,640 --> 00:11:27,760
+and it gives AI assistance an even better\h
+integration than before. Pretty good. Now it said\h\h
+
+124
+00:11:27,760 --> 00:11:36,800
+assistance instead of assistance like multiple\h
+assistants. That was perfect. The only thing
+
+125
+00:11:36,800 --> 00:11:44,560
+at around 3 seconds and nine frames it says and\h
+it gives AI assistance with a CE. Can we change\h\h
+
+126
+00:11:44,560 --> 00:11:50,000
+that to assistance like multiple assistance? Let's\h
+make that text. Got it. I'll check that. Yep. I've\h\h
+
+127
+00:11:50,000 --> 00:11:56,080
+sent that single word correction through. Done.\h
+It now reads AI assistance and everything else is\h\h
+
+128
+00:11:56,080 --> 00:12:01,840
+preserved. Well done. Well done. Cool. So, I'm\h
+going to call it there for our voice assistant\h\h
+
+129
+00:12:01,840 --> 00:12:07,440
+or our AI assistant here. Uh, let me turn this\h
+off. Don't say that I'm not ever trying to keep\h\h
+
+130
+00:12:07,440 --> 00:12:14,880
+the human in the loop here. I'm going to do one\h
+little edit by hand the oldfashioned way. Call me\h\h
+
+131
+00:12:14,880 --> 00:12:18,880
+a loaded if you want. Going to go to Gen Media\h
+here and I'll take some of my B-roll. I'm just\h\h
+
+132
+00:12:18,880 --> 00:12:25,600
+going to chuck it in the um today Da Vinci Resolve\h
+21.1 was released and it gives AI assistance an\h\h
+
+133
+00:12:25,600 --> 00:12:32,000
+even better integration than before. Today Da\h
+Vinci Resolve 21.1 was released and it gives AI\h\h
+
+134
+00:12:32,000 --> 00:12:39,120
+assistance an even better integration than before.\h
+It's beautiful. Okay, so that wraps it up for our\h\h
+
+135
+00:12:39,120 --> 00:12:48,560
+look at Da Vinci Resolve 21.1 combined with GPT6\h
+Astra. Again, we we looked at the AI assistance.\h\h
+
+136
+00:12:48,560 --> 00:12:53,200
+I wrote a plugin that I didn't show, but I wrote\h
+a plugin that allows us to generate video directly\h\h
+
+137
+00:12:53,200 --> 00:12:59,280
+in Resolve. And we saw a decent amount of just\h
+straight Astra computer use. What was what,\h\h
+
+138
+00:12:59,280 --> 00:13:04,240
+you know, what was AI assistant? What was computer\h
+use? What's the plug-in? It it basically doesn't\h\h
+
+139
+00:13:04,240 --> 00:13:10,160
+matter anymore at this point. But we can start\h
+to rely on more and more the chat agents,\h\h
+
+140
+00:13:10,160 --> 00:13:15,280
+and we'll just say GPT in this case. the GPT can\h
+look at your image, have some thoughts about how\h\h
+
+141
+00:13:15,280 --> 00:13:20,000
+to fix it. You can work on it together, and\h
+it can just straight drive the color process,\h\h
+
+142
+00:13:20,000 --> 00:13:24,080
+the audio process. And I know this clip\h
+is like 10 seconds long. So, it's like,\h\h
+
+143
+00:13:24,080 --> 00:13:28,480
+why would you ever do that? The thing is,\h
+this can scale over a much longer project,\h\h
+
+144
+00:13:28,480 --> 00:13:32,160
+like let's say like a 30-minute YouTube video\h
+like this is probably going to end up being or\h\h
+
+145
+00:13:32,160 --> 00:13:37,440
+a podcast with multi-clip stuff that I I didn't\h
+show is possible. But think about this at scale.\h\h
+
+146
+00:13:37,440 --> 00:13:41,040
+Think about this for many many projects being\h
+shot with like 50 video layers or something\h\h
+
+147
+00:13:41,040 --> 00:13:45,360
+like that. That's sort of where the scale and\h
+the economics I think come in. So that wraps it\h\h
+
+148
+00:13:45,360 --> 00:13:51,440
+up for this video. Hope you enjoyed looking at\h
+this. Go check out H3 Max ref to video 1080p.\h\h
+
+149
+00:13:51,440 --> 00:13:56,320
+It's 30 seconds for the full clip. That is fast.\h
+Let me tell you that is super fast. It's very fun\h\h
+
+150
+00:13:56,320 --> 00:14:01,680
+to work that quickly. Have an idea, generate\h
+it, and then edit it by hand or with Astra.\h\h
+
+151
+00:14:01,680 --> 00:14:05,840
+It's up to you. But I had fun making this. Hope\h
+you did, too. I'll see you on the next video.
+

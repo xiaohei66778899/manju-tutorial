@@ -1,0 +1,11 @@
+﻿How to Finally Make Long Videos with VEO 3.1 (Create Consistent Videos of Any Length)
+
+Google has just answered the release of SORA 2 with its latest update, VEO 3.1. In this tutorial, I show you step by step how to create long, consistent videos that go far beyond the old 8-second limit of VEO 3.
+
+With VEO 3.1, you can now generate extended videos with the same characters, smooth scene transitions, and stable environments that bring your stories to life.
+
+Inside this video, you'll learn:
+- How to prepare your prompts for multiple scenes
+- How to maintain character consistency across long sequences
+- How to chain prompts for continuous narrative
+- How to use scene transition prompts

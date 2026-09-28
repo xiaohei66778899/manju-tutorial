@@ -1,0 +1,3865 @@
+1
+00:00:00,080 --> 00:00:02,070
+
+Every shot you're watching right now was
+
+2
+00:00:02,070 --> 00:00:02,080
+Every shot you're watching right now was
+ 
+
+3
+00:00:02,080 --> 00:00:04,309
+Every shot you're watching right now was
+directed from a single image using AI.
+
+4
+00:00:04,309 --> 00:00:04,319
+directed from a single image using AI.
+ 
+
+5
+00:00:04,319 --> 00:00:06,470
+directed from a single image using AI.
+I'll show you the 29 prompts I used, so
+
+6
+00:00:06,470 --> 00:00:06,480
+I'll show you the 29 prompts I used, so
+ 
+
+7
+00:00:06,480 --> 00:00:08,070
+I'll show you the 29 prompts I used, so
+you can create your own versions. The
+
+8
+00:00:08,070 --> 00:00:08,080
+you can create your own versions. The
+ 
+
+9
+00:00:08,080 --> 00:00:09,910
+you can create your own versions. The
+tool we'll be using for this is Higfield
+
+10
+00:00:09,910 --> 00:00:09,920
+tool we'll be using for this is Higfield
+ 
+
+11
+00:00:09,920 --> 00:00:11,910
+tool we'll be using for this is Higfield
+Cinema Studio. I chose this over other
+
+12
+00:00:11,910 --> 00:00:11,920
+Cinema Studio. I chose this over other
+ 
+
+13
+00:00:11,920 --> 00:00:13,830
+Cinema Studio. I chose this over other
+AI video generators because it's built
+
+14
+00:00:13,830 --> 00:00:13,840
+AI video generators because it's built
+ 
+
+15
+00:00:13,840 --> 00:00:15,829
+AI video generators because it's built
+around professional film making, making
+
+16
+00:00:15,829 --> 00:00:15,839
+around professional film making, making
+ 
+
+17
+00:00:15,839 --> 00:00:17,830
+around professional film making, making
+it ideal for the shots we're about to
+
+18
+00:00:17,830 --> 00:00:17,840
+it ideal for the shots we're about to
+ 
+
+19
+00:00:17,840 --> 00:00:19,510
+it ideal for the shots we're about to
+create. When you open Higsfield, the
+
+20
+00:00:19,510 --> 00:00:19,520
+create. When you open Higsfield, the
+ 
+
+21
+00:00:19,520 --> 00:00:21,429
+create. When you open Higsfield, the
+first step is creating your hero frame.
+
+22
+00:00:21,429 --> 00:00:21,439
+first step is creating your hero frame.
+ 
+
+23
+00:00:21,439 --> 00:00:23,349
+first step is creating your hero frame.
+This is the master image that defines
+
+24
+00:00:23,349 --> 00:00:23,359
+This is the master image that defines
+ 
+
+25
+00:00:23,359 --> 00:00:24,790
+This is the master image that defines
+your character, lighting, and
+
+26
+00:00:24,790 --> 00:00:24,800
+your character, lighting, and
+ 
+
+27
+00:00:24,800 --> 00:00:26,710
+your character, lighting, and
+environment. Once that's set, every
+
+28
+00:00:26,710 --> 00:00:26,720
+environment. Once that's set, every
+ 
+
+29
+00:00:26,720 --> 00:00:28,390
+environment. Once that's set, every
+video you generate stays visually
+
+30
+00:00:28,390 --> 00:00:28,400
+video you generate stays visually
+ 
+
+31
+00:00:28,400 --> 00:00:29,750
+video you generate stays visually
+consistent. I'll go to the image
+
+32
+00:00:29,750 --> 00:00:29,760
+consistent. I'll go to the image
+ 
+
+33
+00:00:29,760 --> 00:00:31,589
+consistent. I'll go to the image
+section, select create image, choose
+
+34
+00:00:31,589 --> 00:00:31,599
+section, select create image, choose
+ 
+
+35
+00:00:31,599 --> 00:00:33,590
+section, select create image, choose
+Nano Banana Pro as the model, and I'll
+
+36
+00:00:33,590 --> 00:00:33,600
+Nano Banana Pro as the model, and I'll
+ 
+
+37
+00:00:33,600 --> 00:00:35,110
+Nano Banana Pro as the model, and I'll
+paste in this prompt for my hero
+
+38
+00:00:35,110 --> 00:00:35,120
+paste in this prompt for my hero
+ 
+
+39
+00:00:35,120 --> 00:00:36,870
+paste in this prompt for my hero
+character. And here's our hero frame. As
+
+40
+00:00:36,870 --> 00:00:36,880
+character. And here's our hero frame. As
+ 
+
+41
+00:00:36,880 --> 00:00:39,350
+character. And here's our hero frame. As
+the camera moves, the frozen fragments
+
+42
+00:00:39,350 --> 00:00:39,360
+the camera moves, the frozen fragments
+ 
+
+43
+00:00:39,360 --> 00:00:41,190
+the camera moves, the frozen fragments
+shift at different speeds, creating
+
+44
+00:00:41,190 --> 00:00:41,200
+shift at different speeds, creating
+ 
+
+45
+00:00:41,200 --> 00:00:42,950
+shift at different speeds, creating
+parallax that enhances the sense of
+
+46
+00:00:42,950 --> 00:00:42,960
+parallax that enhances the sense of
+ 
+
+47
+00:00:42,960 --> 00:00:44,790
+parallax that enhances the sense of
+scale. From here, it's simple. You load
+
+48
+00:00:44,790 --> 00:00:44,800
+scale. From here, it's simple. You load
+ 
+
+49
+00:00:44,800 --> 00:00:46,790
+scale. From here, it's simple. You load
+your hero frame into Cinema Studio and
+
+50
+00:00:46,790 --> 00:00:46,800
+your hero frame into Cinema Studio and
+ 
+
+51
+00:00:46,800 --> 00:00:48,549
+your hero frame into Cinema Studio and
+decide how you want the camera to move.
+
+52
+00:00:48,549 --> 00:00:48,559
+decide how you want the camera to move.
+ 
+
+53
+00:00:48,559 --> 00:00:50,470
+decide how you want the camera to move.
+You can choose a built-in preset or
+
+54
+00:00:50,470 --> 00:00:50,480
+You can choose a built-in preset or
+ 
+
+55
+00:00:50,480 --> 00:00:52,150
+You can choose a built-in preset or
+create your own prompt. We'll cover the
+
+56
+00:00:52,150 --> 00:00:52,160
+create your own prompt. We'll cover the
+ 
+
+57
+00:00:52,160 --> 00:00:54,069
+create your own prompt. We'll cover the
+presets first, then get into the custom
+
+58
+00:00:54,069 --> 00:00:54,079
+presets first, then get into the custom
+ 
+
+59
+00:00:54,079 --> 00:00:55,590
+presets first, then get into the custom
+prompts that give you total creative
+
+60
+00:00:55,590 --> 00:00:55,600
+prompts that give you total creative
+ 
+
+61
+00:00:55,600 --> 00:00:57,830
+prompts that give you total creative
+control. Every cinematic sequence starts
+
+62
+00:00:57,830 --> 00:00:57,840
+control. Every cinematic sequence starts
+ 
+
+63
+00:00:57,840 --> 00:00:59,510
+control. Every cinematic sequence starts
+with the straight line moves. These are
+
+64
+00:00:59,510 --> 00:00:59,520
+with the straight line moves. These are
+ 
+
+65
+00:00:59,520 --> 00:01:01,189
+with the straight line moves. These are
+the simplest camera directions and
+
+66
+00:01:01,189 --> 00:01:01,199
+the simplest camera directions and
+ 
+
+67
+00:01:01,199 --> 00:01:03,110
+the simplest camera directions and
+almost all of them are available as
+
+68
+00:01:03,110 --> 00:01:03,120
+almost all of them are available as
+ 
+
+69
+00:01:03,120 --> 00:01:05,670
+almost all of them are available as
+one-click presets inside Cinema Studio,
+
+70
+00:01:05,670 --> 00:01:05,680
+one-click presets inside Cinema Studio,
+ 
+
+71
+00:01:05,680 --> 00:01:07,510
+one-click presets inside Cinema Studio,
+which means you just click the movement,
+
+72
+00:01:07,510 --> 00:01:07,520
+which means you just click the movement,
+ 
+
+73
+00:01:07,520 --> 00:01:08,870
+which means you just click the movement,
+describe your scene, and let it
+
+74
+00:01:08,870 --> 00:01:08,880
+describe your scene, and let it
+ 
+
+75
+00:01:08,880 --> 00:01:10,710
+describe your scene, and let it
+generate. Our first power prompt is the
+
+76
+00:01:10,710 --> 00:01:10,720
+generate. Our first power prompt is the
+ 
+
+77
+00:01:10,720 --> 00:01:12,710
+generate. Our first power prompt is the
+dollian. I'll open the movements panel,
+
+78
+00:01:12,710 --> 00:01:12,720
+dollian. I'll open the movements panel,
+ 
+
+79
+00:01:12,720 --> 00:01:14,630
+dollian. I'll open the movements panel,
+select dollian, and describe the scene
+
+80
+00:01:14,630 --> 00:01:14,640
+select dollian, and describe the scene
+ 
+
+81
+00:01:14,640 --> 00:01:17,030
+select dollian, and describe the scene
+in the prompt field. In film, a dollian
+
+82
+00:01:17,030 --> 00:01:17,040
+in the prompt field. In film, a dollian
+ 
+
+83
+00:01:17,040 --> 00:01:19,030
+in the prompt field. In film, a dollian
+is how you bring the audience closer to
+
+84
+00:01:19,030 --> 00:01:19,040
+is how you bring the audience closer to
+ 
+
+85
+00:01:19,040 --> 00:01:20,950
+is how you bring the audience closer to
+a character without them realizing it's
+
+86
+00:01:20,950 --> 00:01:20,960
+a character without them realizing it's
+ 
+
+87
+00:01:20,960 --> 00:01:22,950
+a character without them realizing it's
+happening. the viewer feels drawn in and
+
+88
+00:01:22,950 --> 00:01:22,960
+happening. the viewer feels drawn in and
+ 
+
+89
+00:01:22,960 --> 00:01:24,710
+happening. the viewer feels drawn in and
+in our case, the floating glass passing
+
+90
+00:01:24,710 --> 00:01:24,720
+in our case, the floating glass passing
+ 
+
+91
+00:01:24,720 --> 00:01:26,789
+in our case, the floating glass passing
+by at different speeds sells the depth
+
+92
+00:01:26,789 --> 00:01:26,799
+by at different speeds sells the depth
+ 
+
+93
+00:01:26,799 --> 00:01:28,870
+by at different speeds sells the depth
+immediately. For number two, we're using
+
+94
+00:01:28,870 --> 00:01:28,880
+immediately. For number two, we're using
+ 
+
+95
+00:01:28,880 --> 00:01:30,710
+immediately. For number two, we're using
+dolly out. I'll select the preset and
+
+96
+00:01:30,710 --> 00:01:30,720
+dolly out. I'll select the preset and
+ 
+
+97
+00:01:30,720 --> 00:01:32,230
+dolly out. I'll select the preset and
+paste in the prompt. And this does the
+
+98
+00:01:32,230 --> 00:01:32,240
+paste in the prompt. And this does the
+ 
+
+99
+00:01:32,240 --> 00:01:34,149
+paste in the prompt. And this does the
+exact opposite. A dolly out creates a
+
+100
+00:01:34,149 --> 00:01:34,159
+exact opposite. A dolly out creates a
+ 
+
+101
+00:01:34,159 --> 00:01:35,990
+exact opposite. A dolly out creates a
+feeling of isolation. The character gets
+
+102
+00:01:35,990 --> 00:01:36,000
+feeling of isolation. The character gets
+ 
+
+103
+00:01:36,000 --> 00:01:37,990
+feeling of isolation. The character gets
+smaller, the war gets bigger, and the
+
+104
+00:01:37,990 --> 00:01:38,000
+smaller, the war gets bigger, and the
+ 
+
+105
+00:01:38,000 --> 00:01:39,910
+smaller, the war gets bigger, and the
+focus shifts from the person to the
+
+106
+00:01:39,910 --> 00:01:39,920
+focus shifts from the person to the
+ 
+
+107
+00:01:39,920 --> 00:01:42,149
+focus shifts from the person to the
+environment. Filmmakers use this to make
+
+108
+00:01:42,149 --> 00:01:42,159
+environment. Filmmakers use this to make
+ 
+
+109
+00:01:42,159 --> 00:01:43,590
+environment. Filmmakers use this to make
+you feel the weight of what's happening
+
+110
+00:01:43,590 --> 00:01:43,600
+you feel the weight of what's happening
+ 
+
+111
+00:01:43,600 --> 00:01:45,190
+you feel the weight of what's happening
+around the character. Third is the fast
+
+112
+00:01:45,190 --> 00:01:45,200
+around the character. Third is the fast
+ 
+
+113
+00:01:45,200 --> 00:01:47,350
+around the character. Third is the fast
+doll in sometimes called a rush. And
+
+114
+00:01:47,350 --> 00:01:47,360
+doll in sometimes called a rush. And
+ 
+
+115
+00:01:47,360 --> 00:01:49,190
+doll in sometimes called a rush. And
+this one doesn't have a preset because
+
+116
+00:01:49,190 --> 00:01:49,200
+this one doesn't have a preset because
+ 
+
+117
+00:01:49,200 --> 00:01:51,190
+this one doesn't have a preset because
+the presets don't let you control speed.
+
+118
+00:01:51,190 --> 00:01:51,200
+the presets don't let you control speed.
+ 
+
+119
+00:01:51,200 --> 00:01:53,030
+the presets don't let you control speed.
+So this is our first custom power prompt
+
+120
+00:01:53,030 --> 00:01:53,040
+So this is our first custom power prompt
+ 
+
+121
+00:01:53,040 --> 00:01:54,950
+So this is our first custom power prompt
+where instead of clicking a preset, I
+
+122
+00:01:54,950 --> 00:01:54,960
+where instead of clicking a preset, I
+ 
+
+123
+00:01:54,960 --> 00:01:57,030
+where instead of clicking a preset, I
+paste the full camera direction into the
+
+124
+00:01:57,030 --> 00:01:57,040
+paste the full camera direction into the
+ 
+
+125
+00:01:57,040 --> 00:01:58,870
+paste the full camera direction into the
+prompt field and the speed changes the
+
+126
+00:01:58,870 --> 00:01:58,880
+prompt field and the speed changes the
+ 
+
+127
+00:01:58,880 --> 00:02:00,630
+prompt field and the speed changes the
+meaning entirely. Directors use this
+
+128
+00:02:00,630 --> 00:02:00,640
+meaning entirely. Directors use this
+ 
+
+129
+00:02:00,640 --> 00:02:02,870
+meaning entirely. Directors use this
+during moments of realization or shock
+
+130
+00:02:02,870 --> 00:02:02,880
+during moments of realization or shock
+ 
+
+131
+00:02:02,880 --> 00:02:04,310
+during moments of realization or shock
+because you can physically feel the
+
+132
+00:02:04,310 --> 00:02:04,320
+because you can physically feel the
+ 
+
+133
+00:02:04,320 --> 00:02:06,310
+because you can physically feel the
+acceleration even while sitting still.
+
+134
+00:02:06,310 --> 00:02:06,320
+acceleration even while sitting still.
+ 
+
+135
+00:02:06,320 --> 00:02:08,150
+acceleration even while sitting still.
+Pan left and pan right keep the camera
+
+136
+00:02:08,150 --> 00:02:08,160
+Pan left and pan right keep the camera
+ 
+
+137
+00:02:08,160 --> 00:02:10,229
+Pan left and pan right keep the camera
+in one position while rotating it side
+
+138
+00:02:10,229 --> 00:02:10,239
+in one position while rotating it side
+ 
+
+139
+00:02:10,239 --> 00:02:11,990
+in one position while rotating it side
+to side like turning your head. Since
+
+140
+00:02:11,990 --> 00:02:12,000
+to side like turning your head. Since
+ 
+
+141
+00:02:12,000 --> 00:02:13,990
+to side like turning your head. Since
+both are available as presets, I'll just
+
+142
+00:02:13,990 --> 00:02:14,000
+both are available as presets, I'll just
+ 
+
+143
+00:02:14,000 --> 00:02:15,670
+both are available as presets, I'll just
+select them and paste in the prompts.
+
+144
+00:02:15,670 --> 00:02:15,680
+select them and paste in the prompts.
+ 
+
+145
+00:02:15,680 --> 00:02:17,589
+select them and paste in the prompts.
+Pens are how we reveal the environment.
+
+146
+00:02:17,589 --> 00:02:17,599
+Pens are how we reveal the environment.
+ 
+
+147
+00:02:17,599 --> 00:02:19,270
+Pens are how we reveal the environment.
+Instead of moving through the world, a
+
+148
+00:02:19,270 --> 00:02:19,280
+Instead of moving through the world, a
+ 
+
+149
+00:02:19,280 --> 00:02:21,030
+Instead of moving through the world, a
+pen lets us observe it from a fixed
+
+150
+00:02:21,030 --> 00:02:21,040
+pen lets us observe it from a fixed
+ 
+
+151
+00:02:21,040 --> 00:02:23,190
+pen lets us observe it from a fixed
+spot. It helps the viewer understand the
+
+152
+00:02:23,190 --> 00:02:23,200
+spot. It helps the viewer understand the
+ 
+
+153
+00:02:23,200 --> 00:02:25,110
+spot. It helps the viewer understand the
+layout of the scene. Tilt up and tilt
+
+154
+00:02:25,110 --> 00:02:25,120
+layout of the scene. Tilt up and tilt
+ 
+
+155
+00:02:25,120 --> 00:02:27,190
+layout of the scene. Tilt up and tilt
+down are the vertical versions rotating
+
+156
+00:02:27,190 --> 00:02:27,200
+down are the vertical versions rotating
+ 
+
+157
+00:02:27,200 --> 00:02:29,110
+down are the vertical versions rotating
+the camera up or down from a fixed
+
+158
+00:02:29,110 --> 00:02:29,120
+the camera up or down from a fixed
+ 
+
+159
+00:02:29,120 --> 00:02:31,030
+the camera up or down from a fixed
+point. A tilt up is a reveal. You're
+
+160
+00:02:31,030 --> 00:02:31,040
+point. A tilt up is a reveal. You're
+ 
+
+161
+00:02:31,040 --> 00:02:32,470
+point. A tilt up is a reveal. You're
+meeting the character for the first
+
+162
+00:02:32,470 --> 00:02:32,480
+meeting the character for the first
+ 
+
+163
+00:02:32,480 --> 00:02:34,390
+meeting the character for the first
+time, building from the bottom to the
+
+164
+00:02:34,390 --> 00:02:34,400
+time, building from the bottom to the
+ 
+
+165
+00:02:34,400 --> 00:02:36,229
+time, building from the bottom to the
+top, which creates a sense of stature
+
+166
+00:02:36,229 --> 00:02:36,239
+top, which creates a sense of stature
+ 
+
+167
+00:02:36,239 --> 00:02:38,869
+top, which creates a sense of stature
+and presence. A tilt down is an arrival,
+
+168
+00:02:38,869 --> 00:02:38,879
+and presence. A tilt down is an arrival,
+ 
+
+169
+00:02:38,879 --> 00:02:41,030
+and presence. A tilt down is an arrival,
+like descending into a scene. Dolly left
+
+170
+00:02:41,030 --> 00:02:41,040
+like descending into a scene. Dolly left
+ 
+
+171
+00:02:41,040 --> 00:02:42,949
+like descending into a scene. Dolly left
+and dolly right move the camera sideways
+
+172
+00:02:42,949 --> 00:02:42,959
+and dolly right move the camera sideways
+ 
+
+173
+00:02:42,959 --> 00:02:45,030
+and dolly right move the camera sideways
+and the frozen debris creates strong
+
+174
+00:02:45,030 --> 00:02:45,040
+and the frozen debris creates strong
+ 
+
+175
+00:02:45,040 --> 00:02:46,390
+and the frozen debris creates strong
+depth between the foreground and
+
+176
+00:02:46,390 --> 00:02:46,400
+depth between the foreground and
+ 
+
+177
+00:02:46,400 --> 00:02:48,309
+depth between the foreground and
+background. I'll select the preset and
+
+178
+00:02:48,309 --> 00:02:48,319
+background. I'll select the preset and
+ 
+
+179
+00:02:48,319 --> 00:02:50,070
+background. I'll select the preset and
+paste this for the prompt. This lateral
+
+180
+00:02:50,070 --> 00:02:50,080
+paste this for the prompt. This lateral
+ 
+
+181
+00:02:50,080 --> 00:02:51,670
+paste this for the prompt. This lateral
+slide is one of the most underrated
+
+182
+00:02:51,670 --> 00:02:51,680
+slide is one of the most underrated
+ 
+
+183
+00:02:51,680 --> 00:02:53,350
+slide is one of the most underrated
+moves in film. It reveals depth
+
+184
+00:02:53,350 --> 00:02:53,360
+moves in film. It reveals depth
+ 
+
+185
+00:02:53,360 --> 00:02:55,110
+moves in film. It reveals depth
+instantly because objects at different
+
+186
+00:02:55,110 --> 00:02:55,120
+instantly because objects at different
+ 
+
+187
+00:02:55,120 --> 00:02:57,270
+instantly because objects at different
+distances move at different speeds.
+
+188
+00:02:57,270 --> 00:02:57,280
+distances move at different speeds.
+ 
+
+189
+00:02:57,280 --> 00:02:59,110
+distances move at different speeds.
+That's parallax and it's what makes a
+
+190
+00:02:59,110 --> 00:02:59,120
+That's parallax and it's what makes a
+ 
+
+191
+00:02:59,120 --> 00:03:01,270
+That's parallax and it's what makes a
+flat image feel like it has real depth.
+
+192
+00:03:01,270 --> 00:03:01,280
+flat image feel like it has real depth.
+ 
+
+193
+00:03:01,280 --> 00:03:03,270
+flat image feel like it has real depth.
+With our frozen debris, every shard
+
+194
+00:03:03,270 --> 00:03:03,280
+With our frozen debris, every shard
+ 
+
+195
+00:03:03,280 --> 00:03:05,190
+With our frozen debris, every shard
+becomes a marker that tells the brain
+
+196
+00:03:05,190 --> 00:03:05,200
+becomes a marker that tells the brain
+ 
+
+197
+00:03:05,200 --> 00:03:07,190
+becomes a marker that tells the brain
+exactly how deep the scene is. Our 10th
+
+198
+00:03:07,190 --> 00:03:07,200
+exactly how deep the scene is. Our 10th
+ 
+
+199
+00:03:07,200 --> 00:03:09,110
+exactly how deep the scene is. Our 10th
+move is the over the shoulder. There's
+
+200
+00:03:09,110 --> 00:03:09,120
+move is the over the shoulder. There's
+ 
+
+201
+00:03:09,120 --> 00:03:10,949
+move is the over the shoulder. There's
+no preset for this, so I'll paste it in
+
+202
+00:03:10,949 --> 00:03:10,959
+no preset for this, so I'll paste it in
+ 
+
+203
+00:03:10,959 --> 00:03:12,869
+no preset for this, so I'll paste it in
+as a custom prompt. This shot anchors
+
+204
+00:03:12,869 --> 00:03:12,879
+as a custom prompt. This shot anchors
+ 
+
+205
+00:03:12,879 --> 00:03:15,030
+as a custom prompt. This shot anchors
+the viewer to a character's perspective
+
+206
+00:03:15,030 --> 00:03:15,040
+the viewer to a character's perspective
+ 
+
+207
+00:03:15,040 --> 00:03:16,710
+the viewer to a character's perspective
+without going first person. You feel
+
+208
+00:03:16,710 --> 00:03:16,720
+without going first person. You feel
+ 
+
+209
+00:03:16,720 --> 00:03:18,470
+without going first person. You feel
+like you're standing right behind them,
+
+210
+00:03:18,470 --> 00:03:18,480
+like you're standing right behind them,
+ 
+
+211
+00:03:18,480 --> 00:03:20,229
+like you're standing right behind them,
+seeing what they see, and that shared
+
+212
+00:03:20,229 --> 00:03:20,239
+seeing what they see, and that shared
+ 
+
+213
+00:03:20,239 --> 00:03:22,390
+seeing what they see, and that shared
+viewpoint creates an instant emotional
+
+214
+00:03:22,390 --> 00:03:22,400
+viewpoint creates an instant emotional
+ 
+
+215
+00:03:22,400 --> 00:03:24,550
+viewpoint creates an instant emotional
+connection. 10 moves done, and eight of
+
+216
+00:03:24,550 --> 00:03:24,560
+connection. 10 moves done, and eight of
+ 
+
+217
+00:03:24,560 --> 00:03:26,309
+connection. 10 moves done, and eight of
+them were one-click presets. These are
+
+218
+00:03:26,309 --> 00:03:26,319
+them were one-click presets. These are
+ 
+
+219
+00:03:26,319 --> 00:03:27,830
+them were one-click presets. These are
+the building blocks that establish a
+
+220
+00:03:27,830 --> 00:03:27,840
+the building blocks that establish a
+ 
+
+221
+00:03:27,840 --> 00:03:29,990
+the building blocks that establish a
+scene. However, all 10 of these move the
+
+222
+00:03:29,990 --> 00:03:30,000
+scene. However, all 10 of these move the
+ 
+
+223
+00:03:30,000 --> 00:03:31,990
+scene. However, all 10 of these move the
+camera in a straight line. And once you
+
+224
+00:03:31,990 --> 00:03:32,000
+camera in a straight line. And once you
+ 
+
+225
+00:03:32,000 --> 00:03:33,750
+camera in a straight line. And once you
+start curving the path while lifting the
+
+226
+00:03:33,750 --> 00:03:33,760
+start curving the path while lifting the
+ 
+
+227
+00:03:33,760 --> 00:03:35,750
+start curving the path while lifting the
+camera, the shots instantly look more
+
+228
+00:03:35,750 --> 00:03:35,760
+camera, the shots instantly look more
+ 
+
+229
+00:03:35,760 --> 00:03:37,190
+camera, the shots instantly look more
+professional. If you'd like to follow
+
+230
+00:03:37,190 --> 00:03:37,200
+professional. If you'd like to follow
+ 
+
+231
+00:03:37,200 --> 00:03:39,030
+professional. If you'd like to follow
+along, you'll find a Higsfield link in
+
+232
+00:03:39,030 --> 00:03:39,040
+along, you'll find a Higsfield link in
+ 
+
+233
+00:03:39,040 --> 00:03:40,789
+along, you'll find a Higsfield link in
+the description, plus the template with
+
+234
+00:03:40,789 --> 00:03:40,799
+the description, plus the template with
+ 
+
+235
+00:03:40,799 --> 00:03:42,869
+the description, plus the template with
+all 29 power prompts. Orbital moves
+
+236
+00:03:42,869 --> 00:03:42,879
+all 29 power prompts. Orbital moves
+ 
+
+237
+00:03:42,879 --> 00:03:44,789
+all 29 power prompts. Orbital moves
+curve the camera around the subject, and
+
+238
+00:03:44,789 --> 00:03:44,799
+curve the camera around the subject, and
+ 
+
+239
+00:03:44,799 --> 00:03:46,789
+curve the camera around the subject, and
+crane moves lift it vertically while
+
+240
+00:03:46,789 --> 00:03:46,799
+crane moves lift it vertically while
+ 
+
+241
+00:03:46,799 --> 00:03:48,949
+crane moves lift it vertically while
+keeping the subject in frame. In cinema,
+
+242
+00:03:48,949 --> 00:03:48,959
+keeping the subject in frame. In cinema,
+ 
+
+243
+00:03:48,959 --> 00:03:51,030
+keeping the subject in frame. In cinema,
+these require expensive physical rigs
+
+244
+00:03:51,030 --> 00:03:51,040
+these require expensive physical rigs
+ 
+
+245
+00:03:51,040 --> 00:03:52,710
+these require expensive physical rigs
+and full crews to operate, and they
+
+246
+00:03:52,710 --> 00:03:52,720
+and full crews to operate, and they
+ 
+
+247
+00:03:52,720 --> 00:03:54,550
+and full crews to operate, and they
+create the most visual impact, which is
+
+248
+00:03:54,550 --> 00:03:54,560
+create the most visual impact, which is
+ 
+
+249
+00:03:54,560 --> 00:03:56,630
+create the most visual impact, which is
+why every movie trailer uses one of
+
+250
+00:03:56,630 --> 00:03:56,640
+why every movie trailer uses one of
+ 
+
+251
+00:03:56,640 --> 00:03:59,509
+why every movie trailer uses one of
+these. Move 11 is the orbit 180, a half
+
+252
+00:03:59,509 --> 00:03:59,519
+these. Move 11 is the orbit 180, a half
+ 
+
+253
+00:03:59,519 --> 00:04:01,509
+these. Move 11 is the orbit 180, a half
+circle around the subject that ends at
+
+254
+00:04:01,509 --> 00:04:01,519
+circle around the subject that ends at
+ 
+
+255
+00:04:01,519 --> 00:04:03,589
+circle around the subject that ends at
+the side profile. Cinema Studio includes
+
+256
+00:04:03,589 --> 00:04:03,599
+the side profile. Cinema Studio includes
+ 
+
+257
+00:04:03,599 --> 00:04:05,429
+the side profile. Cinema Studio includes
+an orbit around preset, but that creates
+
+258
+00:04:05,429 --> 00:04:05,439
+an orbit around preset, but that creates
+ 
+
+259
+00:04:05,439 --> 00:04:07,429
+an orbit around preset, but that creates
+one continuous rotation. If I want a
+
+260
+00:04:07,429 --> 00:04:07,439
+one continuous rotation. If I want a
+ 
+
+261
+00:04:07,439 --> 00:04:09,350
+one continuous rotation. If I want a
+specific half orbit that stops at the
+
+262
+00:04:09,350 --> 00:04:09,360
+specific half orbit that stops at the
+ 
+
+263
+00:04:09,360 --> 00:04:11,429
+specific half orbit that stops at the
+side profile, I'll paste it in as a
+
+264
+00:04:11,429 --> 00:04:11,439
+side profile, I'll paste it in as a
+ 
+
+265
+00:04:11,439 --> 00:04:12,869
+side profile, I'll paste it in as a
+custom prompt because that gives me
+
+266
+00:04:12,869 --> 00:04:12,879
+custom prompt because that gives me
+ 
+
+267
+00:04:12,879 --> 00:04:14,710
+custom prompt because that gives me
+exact control over where the camera
+
+268
+00:04:14,710 --> 00:04:14,720
+exact control over where the camera
+ 
+
+269
+00:04:14,720 --> 00:04:16,710
+exact control over where the camera
+starts and stops. The half orbit
+
+270
+00:04:16,710 --> 00:04:16,720
+starts and stops. The half orbit
+ 
+
+271
+00:04:16,720 --> 00:04:18,710
+starts and stops. The half orbit
+introduces the character perfectly as
+
+272
+00:04:18,710 --> 00:04:18,720
+introduces the character perfectly as
+ 
+
+273
+00:04:18,720 --> 00:04:20,390
+introduces the character perfectly as
+the camera moves from the front to the
+
+274
+00:04:20,390 --> 00:04:20,400
+the camera moves from the front to the
+ 
+
+275
+00:04:20,400 --> 00:04:21,909
+the camera moves from the front to the
+side. It gives you time to really look
+
+276
+00:04:21,909 --> 00:04:21,919
+side. It gives you time to really look
+ 
+
+277
+00:04:21,919 --> 00:04:23,990
+side. It gives you time to really look
+at them. With our frozen debris, every
+
+278
+00:04:23,990 --> 00:04:24,000
+at them. With our frozen debris, every
+ 
+
+279
+00:04:24,000 --> 00:04:25,990
+at them. With our frozen debris, every
+shard catches light differently as the
+
+280
+00:04:25,990 --> 00:04:26,000
+shard catches light differently as the
+ 
+
+281
+00:04:26,000 --> 00:04:28,070
+shard catches light differently as the
+angle changes, revealing the full depth
+
+282
+00:04:28,070 --> 00:04:28,080
+angle changes, revealing the full depth
+ 
+
+283
+00:04:28,080 --> 00:04:30,070
+angle changes, revealing the full depth
+of the destruction field rotating around
+
+284
+00:04:30,070 --> 00:04:30,080
+of the destruction field rotating around
+ 
+
+285
+00:04:30,080 --> 00:04:32,870
+of the destruction field rotating around
+him. 12 is the full 360 spin, and I'll
+
+286
+00:04:32,870 --> 00:04:32,880
+him. 12 is the full 360 spin, and I'll
+ 
+
+287
+00:04:32,880 --> 00:04:35,030
+him. 12 is the full 360 spin, and I'll
+use the orbit around preset for this one
+
+288
+00:04:35,030 --> 00:04:35,040
+use the orbit around preset for this one
+ 
+
+289
+00:04:35,040 --> 00:04:37,110
+use the orbit around preset for this one
+and let it run the full rotation. A full
+
+290
+00:04:37,110 --> 00:04:37,120
+and let it run the full rotation. A full
+ 
+
+291
+00:04:37,120 --> 00:04:39,590
+and let it run the full rotation. A full
+360 is all about context. It delivers
+
+292
+00:04:39,590 --> 00:04:39,600
+360 is all about context. It delivers
+ 
+
+293
+00:04:39,600 --> 00:04:41,350
+360 is all about context. It delivers
+the full picture of the scene in a
+
+294
+00:04:41,350 --> 00:04:41,360
+the full picture of the scene in a
+ 
+
+295
+00:04:41,360 --> 00:04:43,270
+the full picture of the scene in a
+single continuous move. It's perfect for
+
+296
+00:04:43,270 --> 00:04:43,280
+single continuous move. It's perfect for
+ 
+
+297
+00:04:43,280 --> 00:04:45,270
+single continuous move. It's perfect for
+action sequences or product reveals
+
+298
+00:04:45,270 --> 00:04:45,280
+action sequences or product reveals
+ 
+
+299
+00:04:45,280 --> 00:04:47,110
+action sequences or product reveals
+where the goal is to show off every
+
+300
+00:04:47,110 --> 00:04:47,120
+where the goal is to show off every
+ 
+
+301
+00:04:47,120 --> 00:04:49,670
+where the goal is to show off every
+single angle. 13 is the slow cinematic
+
+302
+00:04:49,670 --> 00:04:49,680
+single angle. 13 is the slow cinematic
+ 
+
+303
+00:04:49,680 --> 00:04:52,230
+single angle. 13 is the slow cinematic
+arc, a wider and softer curve that feels
+
+304
+00:04:52,230 --> 00:04:52,240
+arc, a wider and softer curve that feels
+ 
+
+305
+00:04:52,240 --> 00:04:54,230
+arc, a wider and softer curve that feels
+more like a gentle sweep than a tight
+
+306
+00:04:54,230 --> 00:04:54,240
+more like a gentle sweep than a tight
+ 
+
+307
+00:04:54,240 --> 00:04:55,990
+more like a gentle sweep than a tight
+orbit. For this one, I'll paste in a
+
+308
+00:04:55,990 --> 00:04:56,000
+orbit. For this one, I'll paste in a
+ 
+
+309
+00:04:56,000 --> 00:04:57,909
+orbit. For this one, I'll paste in a
+custom prompt. The ark is the emotional
+
+310
+00:04:57,909 --> 00:04:57,919
+custom prompt. The ark is the emotional
+ 
+
+311
+00:04:57,919 --> 00:04:59,670
+custom prompt. The ark is the emotional
+version of the orbit. Where an orbit
+
+312
+00:04:59,670 --> 00:04:59,680
+version of the orbit. Where an orbit
+ 
+
+313
+00:04:59,680 --> 00:05:01,749
+version of the orbit. Where an orbit
+feels mechanical, an arc feels gentle
+
+314
+00:05:01,749 --> 00:05:01,759
+feels mechanical, an arc feels gentle
+ 
+
+315
+00:05:01,759 --> 00:05:03,830
+feels mechanical, an arc feels gentle
+and selective. It gives the viewer a
+
+316
+00:05:03,830 --> 00:05:03,840
+and selective. It gives the viewer a
+ 
+
+317
+00:05:03,840 --> 00:05:05,749
+and selective. It gives the viewer a
+sense that time is passing slowly,
+
+318
+00:05:05,749 --> 00:05:05,759
+sense that time is passing slowly,
+ 
+
+319
+00:05:05,759 --> 00:05:07,990
+sense that time is passing slowly,
+making the moment matter. Cinema Studio
+
+320
+00:05:07,990 --> 00:05:08,000
+making the moment matter. Cinema Studio
+ 
+
+321
+00:05:08,000 --> 00:05:10,230
+making the moment matter. Cinema Studio
+calls its vertical lifts jib up and jib
+
+322
+00:05:10,230 --> 00:05:10,240
+calls its vertical lifts jib up and jib
+ 
+
+323
+00:05:10,240 --> 00:05:12,469
+calls its vertical lifts jib up and jib
+down. What filmmakers usually call crane
+
+324
+00:05:12,469 --> 00:05:12,479
+down. What filmmakers usually call crane
+ 
+
+325
+00:05:12,479 --> 00:05:14,070
+down. What filmmakers usually call crane
+up and crane down. You'll find both of
+
+326
+00:05:14,070 --> 00:05:14,080
+up and crane down. You'll find both of
+ 
+
+327
+00:05:14,080 --> 00:05:15,909
+up and crane down. You'll find both of
+these in the presets menu. So, I'll
+
+328
+00:05:15,909 --> 00:05:15,919
+these in the presets menu. So, I'll
+ 
+
+329
+00:05:15,919 --> 00:05:18,390
+these in the presets menu. So, I'll
+select jib up for number 14. Jib up
+
+330
+00:05:18,390 --> 00:05:18,400
+select jib up for number 14. Jib up
+ 
+
+331
+00:05:18,400 --> 00:05:20,390
+select jib up for number 14. Jib up
+simultaneously shrinks the character and
+
+332
+00:05:20,390 --> 00:05:20,400
+simultaneously shrinks the character and
+ 
+
+333
+00:05:20,400 --> 00:05:22,230
+simultaneously shrinks the character and
+reveals the environment. It pulls you
+
+334
+00:05:22,230 --> 00:05:22,240
+reveals the environment. It pulls you
+ 
+
+335
+00:05:22,240 --> 00:05:24,310
+reveals the environment. It pulls you
+out of the moment to remind the audience
+
+336
+00:05:24,310 --> 00:05:24,320
+out of the moment to remind the audience
+ 
+
+337
+00:05:24,320 --> 00:05:26,469
+out of the moment to remind the audience
+of the larger context. It's the perfect
+
+338
+00:05:26,469 --> 00:05:26,479
+of the larger context. It's the perfect
+ 
+
+339
+00:05:26,479 --> 00:05:28,550
+of the larger context. It's the perfect
+way to end a sequence, pulling back to
+
+340
+00:05:28,550 --> 00:05:28,560
+way to end a sequence, pulling back to
+ 
+
+341
+00:05:28,560 --> 00:05:30,390
+way to end a sequence, pulling back to
+show just how massive this situation
+
+342
+00:05:30,390 --> 00:05:30,400
+show just how massive this situation
+ 
+
+343
+00:05:30,400 --> 00:05:32,070
+show just how massive this situation
+really is. Now, every one of these four
+
+344
+00:05:32,070 --> 00:05:32,080
+really is. Now, every one of these four
+ 
+
+345
+00:05:32,080 --> 00:05:34,230
+really is. Now, every one of these four
+moves adds weight and dimension that
+
+346
+00:05:34,230 --> 00:05:34,240
+moves adds weight and dimension that
+ 
+
+347
+00:05:34,240 --> 00:05:35,830
+moves adds weight and dimension that
+straight line moves can't match.
+
+348
+00:05:35,830 --> 00:05:35,840
+straight line moves can't match.
+ 
+
+349
+00:05:35,840 --> 00:05:37,990
+straight line moves can't match.
+However, all of these involve the camera
+
+350
+00:05:37,990 --> 00:05:38,000
+However, all of these involve the camera
+ 
+
+351
+00:05:38,000 --> 00:05:39,749
+However, all of these involve the camera
+physically traveling through the scene.
+
+352
+00:05:39,749 --> 00:05:39,759
+physically traveling through the scene.
+ 
+
+353
+00:05:39,759 --> 00:05:41,350
+physically traveling through the scene.
+The next category doesn't move the
+
+354
+00:05:41,350 --> 00:05:41,360
+The next category doesn't move the
+ 
+
+355
+00:05:41,360 --> 00:05:43,189
+The next category doesn't move the
+camera at all. A dolly physically moves
+
+356
+00:05:43,189 --> 00:05:43,199
+camera at all. A dolly physically moves
+ 
+
+357
+00:05:43,199 --> 00:05:45,110
+camera at all. A dolly physically moves
+the whole camera forward, while a zoom
+
+358
+00:05:45,110 --> 00:05:45,120
+the whole camera forward, while a zoom
+ 
+
+359
+00:05:45,120 --> 00:05:46,950
+the whole camera forward, while a zoom
+keeps the camera still and just changes
+
+360
+00:05:46,950 --> 00:05:46,960
+keeps the camera still and just changes
+ 
+
+361
+00:05:46,960 --> 00:05:48,550
+keeps the camera still and just changes
+the lens. It sounds like a small
+
+362
+00:05:48,550 --> 00:05:48,560
+the lens. It sounds like a small
+ 
+
+363
+00:05:48,560 --> 00:05:49,990
+the lens. It sounds like a small
+difference, but with a zoom, the
+
+364
+00:05:49,990 --> 00:05:50,000
+difference, but with a zoom, the
+ 
+
+365
+00:05:50,000 --> 00:05:51,670
+difference, but with a zoom, the
+background gets compressed, giving it
+
+366
+00:05:51,670 --> 00:05:51,680
+background gets compressed, giving it
+ 
+
+367
+00:05:51,680 --> 00:05:53,510
+background gets compressed, giving it
+that classic flat look you recognize
+
+368
+00:05:53,510 --> 00:05:53,520
+that classic flat look you recognize
+ 
+
+369
+00:05:53,520 --> 00:05:55,350
+that classic flat look you recognize
+from older movies. For this one, I'm
+
+370
+00:05:55,350 --> 00:05:55,360
+from older movies. For this one, I'm
+ 
+
+371
+00:05:55,360 --> 00:05:56,790
+from older movies. For this one, I'm
+going to swap to a different starting
+
+372
+00:05:56,790 --> 00:05:56,800
+going to swap to a different starting
+ 
+
+373
+00:05:56,800 --> 00:05:58,710
+going to swap to a different starting
+image to keep things visually fresh.
+
+374
+00:05:58,710 --> 00:05:58,720
+image to keep things visually fresh.
+ 
+
+375
+00:05:58,720 --> 00:06:00,629
+image to keep things visually fresh.
+I'll go to create image and generate a
+
+376
+00:06:00,629 --> 00:06:00,639
+I'll go to create image and generate a
+ 
+
+377
+00:06:00,639 --> 00:06:02,950
+I'll go to create image and generate a
+close-up of a champagne glass frozen in
+
+378
+00:06:02,950 --> 00:06:02,960
+close-up of a champagne glass frozen in
+ 
+
+379
+00:06:02,960 --> 00:06:05,270
+close-up of a champagne glass frozen in
+mid shatter. Cinema Studio has zoom in
+
+380
+00:06:05,270 --> 00:06:05,280
+mid shatter. Cinema Studio has zoom in
+ 
+
+381
+00:06:05,280 --> 00:06:07,430
+mid shatter. Cinema Studio has zoom in
+and zoom out as presets. I'll select
+
+382
+00:06:07,430 --> 00:06:07,440
+and zoom out as presets. I'll select
+ 
+
+383
+00:06:07,440 --> 00:06:10,150
+and zoom out as presets. I'll select
+zoom in for 15. A slow zoom in creates
+
+384
+00:06:10,150 --> 00:06:10,160
+zoom in for 15. A slow zoom in creates
+ 
+
+385
+00:06:10,160 --> 00:06:11,909
+zoom in for 15. A slow zoom in creates
+instant obsession. Without physical
+
+386
+00:06:11,909 --> 00:06:11,919
+instant obsession. Without physical
+ 
+
+387
+00:06:11,919 --> 00:06:13,830
+instant obsession. Without physical
+movement or parallax, the eye has
+
+388
+00:06:13,830 --> 00:06:13,840
+movement or parallax, the eye has
+ 
+
+389
+00:06:13,840 --> 00:06:15,510
+movement or parallax, the eye has
+nowhere else to look. It forces the
+
+390
+00:06:15,510 --> 00:06:15,520
+nowhere else to look. It forces the
+ 
+
+391
+00:06:15,520 --> 00:06:17,830
+nowhere else to look. It forces the
+viewer to focus, making the moment feel
+
+392
+00:06:17,830 --> 00:06:17,840
+viewer to focus, making the moment feel
+ 
+
+393
+00:06:17,840 --> 00:06:19,990
+viewer to focus, making the moment feel
+incredibly intense. Number 16 is the
+
+394
+00:06:19,990 --> 00:06:20,000
+incredibly intense. Number 16 is the
+ 
+
+395
+00:06:20,000 --> 00:06:21,909
+incredibly intense. Number 16 is the
+zoom out. I'll select the preset and
+
+396
+00:06:21,909 --> 00:06:21,919
+zoom out. I'll select the preset and
+ 
+
+397
+00:06:21,919 --> 00:06:23,510
+zoom out. I'll select the preset and
+describe the scene in the prompt. The
+
+398
+00:06:23,510 --> 00:06:23,520
+describe the scene in the prompt. The
+ 
+
+399
+00:06:23,520 --> 00:06:25,350
+describe the scene in the prompt. The
+zoom out does the opposite. As the frame
+
+400
+00:06:25,350 --> 00:06:25,360
+zoom out does the opposite. As the frame
+ 
+
+401
+00:06:25,360 --> 00:06:27,670
+zoom out does the opposite. As the frame
+pulls back, one chaotic moment hangs in
+
+402
+00:06:27,670 --> 00:06:27,680
+pulls back, one chaotic moment hangs in
+ 
+
+403
+00:06:27,680 --> 00:06:29,510
+pulls back, one chaotic moment hangs in
+the air, revealing the true scale of the
+
+404
+00:06:29,510 --> 00:06:29,520
+the air, revealing the true scale of the
+ 
+
+405
+00:06:29,520 --> 00:06:31,350
+the air, revealing the true scale of the
+impact in sharp detail. It's the go-to
+
+406
+00:06:31,350 --> 00:06:31,360
+impact in sharp detail. It's the go-to
+ 
+
+407
+00:06:31,360 --> 00:06:33,029
+impact in sharp detail. It's the go-to
+move when you want to break apart a
+
+408
+00:06:33,029 --> 00:06:33,039
+move when you want to break apart a
+ 
+
+409
+00:06:33,039 --> 00:06:35,430
+move when you want to break apart a
+crisis and make the audience truly see
+
+410
+00:06:35,430 --> 00:06:35,440
+crisis and make the audience truly see
+ 
+
+411
+00:06:35,440 --> 00:06:37,110
+crisis and make the audience truly see
+every quiet detail of what's left
+
+412
+00:06:37,110 --> 00:06:37,120
+every quiet detail of what's left
+ 
+
+413
+00:06:37,120 --> 00:06:39,430
+every quiet detail of what's left
+behind. Number 17 is the crash zoom.
+
+414
+00:06:39,430 --> 00:06:39,440
+behind. Number 17 is the crash zoom.
+ 
+
+415
+00:06:39,440 --> 00:06:41,430
+behind. Number 17 is the crash zoom.
+It's a sudden snap. So, for this one,
+
+416
+00:06:41,430 --> 00:06:41,440
+It's a sudden snap. So, for this one,
+ 
+
+417
+00:06:41,440 --> 00:06:43,189
+It's a sudden snap. So, for this one,
+I'm going to paste in a custom prompt.
+
+418
+00:06:43,189 --> 00:06:43,199
+I'm going to paste in a custom prompt.
+ 
+
+419
+00:06:43,199 --> 00:06:45,189
+I'm going to paste in a custom prompt.
+The crash zoom is that instant close-up
+
+420
+00:06:45,189 --> 00:06:45,199
+The crash zoom is that instant close-up
+ 
+
+421
+00:06:45,199 --> 00:06:47,430
+The crash zoom is that instant close-up
+you see in Tarantino films for drama or
+
+422
+00:06:47,430 --> 00:06:47,440
+you see in Tarantino films for drama or
+ 
+
+423
+00:06:47,440 --> 00:06:49,510
+you see in Tarantino films for drama or
+Edgar Wright movies for comedy. It works
+
+424
+00:06:49,510 --> 00:06:49,520
+Edgar Wright movies for comedy. It works
+ 
+
+425
+00:06:49,520 --> 00:06:51,510
+Edgar Wright movies for comedy. It works
+because it forces the viewer to pay
+
+426
+00:06:51,510 --> 00:06:51,520
+because it forces the viewer to pay
+ 
+
+427
+00:06:51,520 --> 00:06:53,670
+because it forces the viewer to pay
+attention. In our sequence, pushing the
+
+428
+00:06:53,670 --> 00:06:53,680
+attention. In our sequence, pushing the
+ 
+
+429
+00:06:53,680 --> 00:06:55,830
+attention. In our sequence, pushing the
+camera into the champagne glass makes
+
+430
+00:06:55,830 --> 00:06:55,840
+camera into the champagne glass makes
+ 
+
+431
+00:06:55,840 --> 00:06:58,469
+camera into the champagne glass makes
+the frozen frame feel like an explosion.
+
+432
+00:06:58,469 --> 00:06:58,479
+the frozen frame feel like an explosion.
+ 
+
+433
+00:06:58,479 --> 00:07:00,790
+the frozen frame feel like an explosion.
+Number 18 is rack focus, and I'll paste
+
+434
+00:07:00,790 --> 00:07:00,800
+Number 18 is rack focus, and I'll paste
+ 
+
+435
+00:07:00,800 --> 00:07:02,710
+Number 18 is rack focus, and I'll paste
+this one in since it requires a prompt
+
+436
+00:07:02,710 --> 00:07:02,720
+this one in since it requires a prompt
+ 
+
+437
+00:07:02,720 --> 00:07:05,110
+this one in since it requires a prompt
+describing two focus states in a single
+
+438
+00:07:05,110 --> 00:07:05,120
+describing two focus states in a single
+ 
+
+439
+00:07:05,120 --> 00:07:07,589
+describing two focus states in a single
+shot. Rack focus shifts attention from
+
+440
+00:07:07,589 --> 00:07:07,599
+shot. Rack focus shifts attention from
+ 
+
+441
+00:07:07,599 --> 00:07:09,430
+shot. Rack focus shifts attention from
+one subject to another without altering
+
+442
+00:07:09,430 --> 00:07:09,440
+one subject to another without altering
+ 
+
+443
+00:07:09,440 --> 00:07:11,510
+one subject to another without altering
+the shot. The eye follows the sharpness,
+
+444
+00:07:11,510 --> 00:07:11,520
+the shot. The eye follows the sharpness,
+ 
+
+445
+00:07:11,520 --> 00:07:13,510
+the shot. The eye follows the sharpness,
+so as the focus shifts from the glass to
+
+446
+00:07:13,510 --> 00:07:13,520
+so as the focus shifts from the glass to
+ 
+
+447
+00:07:13,520 --> 00:07:15,510
+so as the focus shifts from the glass to
+the destruction, the viewer's attention
+
+448
+00:07:15,510 --> 00:07:15,520
+the destruction, the viewer's attention
+ 
+
+449
+00:07:15,520 --> 00:07:17,189
+the destruction, the viewer's attention
+goes with it. For the last one, I'll
+
+450
+00:07:17,189 --> 00:07:17,199
+goes with it. For the last one, I'll
+ 
+
+451
+00:07:17,199 --> 00:07:19,430
+goes with it. For the last one, I'll
+switch back to our main hero frame. 19
+
+452
+00:07:19,430 --> 00:07:19,440
+switch back to our main hero frame. 19
+ 
+
+453
+00:07:19,440 --> 00:07:21,270
+switch back to our main hero frame. 19
+is the fisheye, which stretches the
+
+454
+00:07:21,270 --> 00:07:21,280
+is the fisheye, which stretches the
+ 
+
+455
+00:07:21,280 --> 00:07:23,430
+is the fisheye, which stretches the
+entire frame with an extreme wide-angle
+
+456
+00:07:23,430 --> 00:07:23,440
+entire frame with an extreme wide-angle
+ 
+
+457
+00:07:23,440 --> 00:07:25,430
+entire frame with an extreme wide-angle
+shot. I'll paste this prompt in. Fisheye
+
+458
+00:07:25,430 --> 00:07:25,440
+shot. I'll paste this prompt in. Fisheye
+ 
+
+459
+00:07:25,440 --> 00:07:27,029
+shot. I'll paste this prompt in. Fisheye
+bends straight lines and exaggerates
+
+460
+00:07:27,029 --> 00:07:27,039
+bends straight lines and exaggerates
+ 
+
+461
+00:07:27,039 --> 00:07:28,950
+bends straight lines and exaggerates
+depth, making everything look slightly
+
+462
+00:07:28,950 --> 00:07:28,960
+depth, making everything look slightly
+ 
+
+463
+00:07:28,960 --> 00:07:31,189
+depth, making everything look slightly
+unhinged. Skate videos and horror films
+
+464
+00:07:31,189 --> 00:07:31,199
+unhinged. Skate videos and horror films
+ 
+
+465
+00:07:31,199 --> 00:07:32,950
+unhinged. Skate videos and horror films
+use it to show a world that isn't quite
+
+466
+00:07:32,950 --> 00:07:32,960
+use it to show a world that isn't quite
+ 
+
+467
+00:07:32,960 --> 00:07:34,950
+use it to show a world that isn't quite
+right. It stretches the perspective,
+
+468
+00:07:34,950 --> 00:07:34,960
+right. It stretches the perspective,
+ 
+
+469
+00:07:34,960 --> 00:07:37,029
+right. It stretches the perspective,
+giving the frozen debris field a much
+
+470
+00:07:37,029 --> 00:07:37,039
+giving the frozen debris field a much
+ 
+
+471
+00:07:37,039 --> 00:07:38,870
+giving the frozen debris field a much
+larger and more intense presence.
+
+472
+00:07:38,870 --> 00:07:38,880
+larger and more intense presence.
+ 
+
+473
+00:07:38,880 --> 00:07:40,790
+larger and more intense presence.
+Everything so far has been shot from
+
+474
+00:07:40,790 --> 00:07:40,800
+Everything so far has been shot from
+ 
+
+475
+00:07:40,800 --> 00:07:42,230
+Everything so far has been shot from
+roughly eye level, though, and once you
+
+476
+00:07:42,230 --> 00:07:42,240
+roughly eye level, though, and once you
+ 
+
+477
+00:07:42,240 --> 00:07:44,309
+roughly eye level, though, and once you
+take the camera into the sky, the entire
+
+478
+00:07:44,309 --> 00:07:44,319
+take the camera into the sky, the entire
+ 
+
+479
+00:07:44,319 --> 00:07:46,469
+take the camera into the sky, the entire
+scale transforms. Aerial moves are how
+
+480
+00:07:46,469 --> 00:07:46,479
+scale transforms. Aerial moves are how
+ 
+
+481
+00:07:46,479 --> 00:07:48,550
+scale transforms. Aerial moves are how
+directors show scale, which is why every
+
+482
+00:07:48,550 --> 00:07:48,560
+directors show scale, which is why every
+ 
+
+483
+00:07:48,560 --> 00:07:50,870
+directors show scale, which is why every
+war or disaster movie starts from the
+
+484
+00:07:50,870 --> 00:07:50,880
+war or disaster movie starts from the
+ 
+
+485
+00:07:50,880 --> 00:07:53,110
+war or disaster movie starts from the
+sky. For this section, I need a wider
+
+486
+00:07:53,110 --> 00:07:53,120
+sky. For this section, I need a wider
+ 
+
+487
+00:07:53,120 --> 00:07:54,950
+sky. For this section, I need a wider
+perspective. So, I'll generate a new
+
+488
+00:07:54,950 --> 00:07:54,960
+perspective. So, I'll generate a new
+ 
+
+489
+00:07:54,960 --> 00:07:57,110
+perspective. So, I'll generate a new
+starting image in Nano Banana Pro.
+
+490
+00:07:57,110 --> 00:07:57,120
+starting image in Nano Banana Pro.
+ 
+
+491
+00:07:57,120 --> 00:07:59,029
+starting image in Nano Banana Pro.
+Cinema Studio has drone shot as a
+
+492
+00:07:59,029 --> 00:07:59,039
+Cinema Studio has drone shot as a
+ 
+
+493
+00:07:59,039 --> 00:08:01,029
+Cinema Studio has drone shot as a
+preset, which gives you a basic aerial
+
+494
+00:08:01,029 --> 00:08:01,039
+preset, which gives you a basic aerial
+ 
+
+495
+00:08:01,039 --> 00:08:03,110
+preset, which gives you a basic aerial
+flyover. I'll select that for the 20th
+
+496
+00:08:03,110 --> 00:08:03,120
+flyover. I'll select that for the 20th
+ 
+
+497
+00:08:03,120 --> 00:08:04,710
+flyover. I'll select that for the 20th
+and paste in the scene prompt. The
+
+498
+00:08:04,710 --> 00:08:04,720
+and paste in the scene prompt. The
+ 
+
+499
+00:08:04,720 --> 00:08:07,029
+and paste in the scene prompt. The
+flyover is the modern establishing shot.
+
+500
+00:08:07,029 --> 00:08:07,039
+flyover is the modern establishing shot.
+ 
+
+501
+00:08:07,039 --> 00:08:08,950
+flyover is the modern establishing shot.
+Seeing a location from above helps the
+
+502
+00:08:08,950 --> 00:08:08,960
+Seeing a location from above helps the
+ 
+
+503
+00:08:08,960 --> 00:08:11,189
+Seeing a location from above helps the
+brain understand scale in a way ground
+
+504
+00:08:11,189 --> 00:08:11,199
+brain understand scale in a way ground
+ 
+
+505
+00:08:11,199 --> 00:08:13,270
+brain understand scale in a way ground
+level shots never do. In our case,
+
+506
+00:08:13,270 --> 00:08:13,280
+level shots never do. In our case,
+ 
+
+507
+00:08:13,280 --> 00:08:15,270
+level shots never do. In our case,
+seeing the blast wave from above makes
+
+508
+00:08:15,270 --> 00:08:15,280
+seeing the blast wave from above makes
+ 
+
+509
+00:08:15,280 --> 00:08:17,029
+seeing the blast wave from above makes
+it feel like a real event instead of a
+
+510
+00:08:17,029 --> 00:08:17,039
+it feel like a real event instead of a
+ 
+
+511
+00:08:17,039 --> 00:08:19,589
+it feel like a real event instead of a
+room-sized effect. 21 is a large-s scale
+
+512
+00:08:19,589 --> 00:08:19,599
+room-sized effect. 21 is a large-s scale
+ 
+
+513
+00:08:19,599 --> 00:08:21,670
+room-sized effect. 21 is a large-s scale
+drone orbit where a ground level orbit
+
+514
+00:08:21,670 --> 00:08:21,680
+drone orbit where a ground level orbit
+ 
+
+515
+00:08:21,680 --> 00:08:23,670
+drone orbit where a ground level orbit
+reveals a character, an aerial orbit
+
+516
+00:08:23,670 --> 00:08:23,680
+reveals a character, an aerial orbit
+ 
+
+517
+00:08:23,680 --> 00:08:25,830
+reveals a character, an aerial orbit
+reveals a location. It establishes the
+
+518
+00:08:25,830 --> 00:08:25,840
+reveals a location. It establishes the
+ 
+
+519
+00:08:25,840 --> 00:08:28,230
+reveals a location. It establishes the
+location clearly, and the slow rotation
+
+520
+00:08:28,230 --> 00:08:28,240
+location clearly, and the slow rotation
+ 
+
+521
+00:08:28,240 --> 00:08:29,990
+location clearly, and the slow rotation
+places the building at the center of the
+
+522
+00:08:29,990 --> 00:08:30,000
+places the building at the center of the
+ 
+
+523
+00:08:30,000 --> 00:08:32,070
+places the building at the center of the
+frame. Every news broadcast that covers
+
+524
+00:08:32,070 --> 00:08:32,080
+frame. Every news broadcast that covers
+ 
+
+525
+00:08:32,080 --> 00:08:35,029
+frame. Every news broadcast that covers
+a major event uses this exact shot. 22
+
+526
+00:08:35,029 --> 00:08:35,039
+a major event uses this exact shot. 22
+ 
+
+527
+00:08:35,039 --> 00:08:37,190
+a major event uses this exact shot. 22
+is the FPV drone, and this one has the
+
+528
+00:08:37,190 --> 00:08:37,200
+is the FPV drone, and this one has the
+ 
+
+529
+00:08:37,200 --> 00:08:39,190
+is the FPV drone, and this one has the
+most raw energy of anything on the
+
+530
+00:08:39,190 --> 00:08:39,200
+most raw energy of anything on the
+ 
+
+531
+00:08:39,200 --> 00:08:41,509
+most raw energy of anything on the
+entire list. FPV footage broke film
+
+532
+00:08:41,509 --> 00:08:41,519
+entire list. FPV footage broke film
+ 
+
+533
+00:08:41,519 --> 00:08:43,509
+entire list. FPV footage broke film
+language because it moves in a way no
+
+534
+00:08:43,509 --> 00:08:43,519
+language because it moves in a way no
+ 
+
+535
+00:08:43,519 --> 00:08:45,430
+language because it moves in a way no
+traditional camera can. It can dive off
+
+536
+00:08:45,430 --> 00:08:45,440
+traditional camera can. It can dive off
+ 
+
+537
+00:08:45,440 --> 00:08:47,509
+traditional camera can. It can dive off
+a building, fly through a window, weave
+
+538
+00:08:47,509 --> 00:08:47,519
+a building, fly through a window, weave
+ 
+
+539
+00:08:47,519 --> 00:08:49,350
+a building, fly through a window, weave
+between obstacles, and the whole time
+
+540
+00:08:49,350 --> 00:08:49,360
+between obstacles, and the whole time
+ 
+
+541
+00:08:49,360 --> 00:08:51,030
+between obstacles, and the whole time
+the viewer feels like they're strapped
+
+542
+00:08:51,030 --> 00:08:51,040
+the viewer feels like they're strapped
+ 
+
+543
+00:08:51,040 --> 00:08:53,030
+the viewer feels like they're strapped
+to the front of it. It's chaotic, and in
+
+544
+00:08:53,030 --> 00:08:53,040
+to the front of it. It's chaotic, and in
+ 
+
+545
+00:08:53,040 --> 00:08:55,190
+to the front of it. It's chaotic, and in
+our frozen explosion scene, it turns the
+
+546
+00:08:55,190 --> 00:08:55,200
+our frozen explosion scene, it turns the
+ 
+
+547
+00:08:55,200 --> 00:08:57,509
+our frozen explosion scene, it turns the
+pause debris into an obstacle course
+
+548
+00:08:57,509 --> 00:08:57,519
+pause debris into an obstacle course
+ 
+
+549
+00:08:57,519 --> 00:08:59,269
+pause debris into an obstacle course
+that the camera is ripping through at
+
+550
+00:08:59,269 --> 00:08:59,279
+that the camera is ripping through at
+ 
+
+551
+00:08:59,279 --> 00:09:01,829
+that the camera is ripping through at
+full speed. 23 is the aerial pullback.
+
+552
+00:09:01,829 --> 00:09:01,839
+full speed. 23 is the aerial pullback.
+ 
+
+553
+00:09:01,839 --> 00:09:03,990
+full speed. 23 is the aerial pullback.
+The pullback is the farewell shot. It
+
+554
+00:09:03,990 --> 00:09:04,000
+The pullback is the farewell shot. It
+ 
+
+555
+00:09:04,000 --> 00:09:05,829
+The pullback is the farewell shot. It
+starts close and ends wide. And the
+
+556
+00:09:05,829 --> 00:09:05,839
+starts close and ends wide. And the
+ 
+
+557
+00:09:05,839 --> 00:09:07,829
+starts close and ends wide. And the
+further the camera gets, the less
+
+558
+00:09:07,829 --> 00:09:07,839
+further the camera gets, the less
+ 
+
+559
+00:09:07,839 --> 00:09:09,509
+further the camera gets, the less
+significant the subject becomes.
+
+560
+00:09:09,509 --> 00:09:09,519
+significant the subject becomes.
+ 
+
+561
+00:09:09,519 --> 00:09:11,590
+significant the subject becomes.
+Directors use it to close scenes or end
+
+562
+00:09:11,590 --> 00:09:11,600
+Directors use it to close scenes or end
+ 
+
+563
+00:09:11,600 --> 00:09:13,430
+Directors use it to close scenes or end
+films because it says visually that
+
+564
+00:09:13,430 --> 00:09:13,440
+films because it says visually that
+ 
+
+565
+00:09:13,440 --> 00:09:15,190
+films because it says visually that
+we're leaving this moment behind. And
+
+566
+00:09:15,190 --> 00:09:15,200
+we're leaving this moment behind. And
+ 
+
+567
+00:09:15,200 --> 00:09:17,190
+we're leaving this moment behind. And
+the last one flips the scale entirely.
+
+568
+00:09:17,190 --> 00:09:17,200
+the last one flips the scale entirely.
+ 
+
+569
+00:09:17,200 --> 00:09:19,430
+the last one flips the scale entirely.
+24 is the extreme macro. Instead of
+
+570
+00:09:19,430 --> 00:09:19,440
+24 is the extreme macro. Instead of
+ 
+
+571
+00:09:19,440 --> 00:09:21,509
+24 is the extreme macro. Instead of
+going big, we go impossibly small. I'm
+
+572
+00:09:21,509 --> 00:09:21,519
+going big, we go impossibly small. I'm
+ 
+
+573
+00:09:21,519 --> 00:09:23,350
+going big, we go impossibly small. I'm
+generating a new image in Nano Banana
+
+574
+00:09:23,350 --> 00:09:23,360
+generating a new image in Nano Banana
+ 
+
+575
+00:09:23,360 --> 00:09:25,269
+generating a new image in Nano Banana
+Pro of a single floating glass shard
+
+576
+00:09:25,269 --> 00:09:25,279
+Pro of a single floating glass shard
+ 
+
+577
+00:09:25,279 --> 00:09:27,269
+Pro of a single floating glass shard
+with the lobby reflected inside it. Then
+
+578
+00:09:27,269 --> 00:09:27,279
+with the lobby reflected inside it. Then
+ 
+
+579
+00:09:27,279 --> 00:09:29,110
+with the lobby reflected inside it. Then
+I'll import that into Cinema Studio for
+
+580
+00:09:29,110 --> 00:09:29,120
+I'll import that into Cinema Studio for
+ 
+
+581
+00:09:29,120 --> 00:09:30,870
+I'll import that into Cinema Studio for
+this shot. I'll paste in this prompt.
+
+582
+00:09:30,870 --> 00:09:30,880
+this shot. I'll paste in this prompt.
+ 
+
+583
+00:09:30,880 --> 00:09:33,110
+this shot. I'll paste in this prompt.
+Macro is the opposite of aerial, but it
+
+584
+00:09:33,110 --> 00:09:33,120
+Macro is the opposite of aerial, but it
+ 
+
+585
+00:09:33,120 --> 00:09:34,550
+Macro is the opposite of aerial, but it
+does the same thing to the viewer's
+
+586
+00:09:34,550 --> 00:09:34,560
+does the same thing to the viewer's
+ 
+
+587
+00:09:34,560 --> 00:09:36,230
+does the same thing to the viewer's
+brain. It takes something the audience
+
+588
+00:09:36,230 --> 00:09:36,240
+brain. It takes something the audience
+ 
+
+589
+00:09:36,240 --> 00:09:38,070
+brain. It takes something the audience
+would never look twice at, a single
+
+590
+00:09:38,070 --> 00:09:38,080
+would never look twice at, a single
+ 
+
+591
+00:09:38,080 --> 00:09:40,070
+would never look twice at, a single
+piece of broken glass, and gives it a
+
+592
+00:09:40,070 --> 00:09:40,080
+piece of broken glass, and gives it a
+ 
+
+593
+00:09:40,080 --> 00:09:41,829
+piece of broken glass, and gives it a
+massive scale. In our sequence, the
+
+594
+00:09:41,829 --> 00:09:41,839
+massive scale. In our sequence, the
+ 
+
+595
+00:09:41,839 --> 00:09:44,070
+massive scale. In our sequence, the
+reflection of the entire destroyed lobby
+
+596
+00:09:44,070 --> 00:09:44,080
+reflection of the entire destroyed lobby
+ 
+
+597
+00:09:44,080 --> 00:09:46,310
+reflection of the entire destroyed lobby
+trapped in the surface of one shard, is
+
+598
+00:09:46,310 --> 00:09:46,320
+trapped in the surface of one shard, is
+ 
+
+599
+00:09:46,320 --> 00:09:48,230
+trapped in the surface of one shard, is
+the kind of detail that makes people
+
+600
+00:09:48,230 --> 00:09:48,240
+the kind of detail that makes people
+ 
+
+601
+00:09:48,240 --> 00:09:50,790
+the kind of detail that makes people
+pause and rewatch. Every move so far has
+
+602
+00:09:50,790 --> 00:09:50,800
+pause and rewatch. Every move so far has
+ 
+
+603
+00:09:50,800 --> 00:09:52,870
+pause and rewatch. Every move so far has
+had the subject standing still while the
+
+604
+00:09:52,870 --> 00:09:52,880
+had the subject standing still while the
+ 
+
+605
+00:09:52,880 --> 00:09:54,470
+had the subject standing still while the
+camera does all the work, and that
+
+606
+00:09:54,470 --> 00:09:54,480
+camera does all the work, and that
+ 
+
+607
+00:09:54,480 --> 00:09:56,389
+camera does all the work, and that
+changes now. For this section, I'll have
+
+608
+00:09:56,389 --> 00:09:56,399
+changes now. For this section, I'll have
+ 
+
+609
+00:09:56,399 --> 00:09:58,230
+changes now. For this section, I'll have
+time start moving again just for our
+
+610
+00:09:58,230 --> 00:09:58,240
+time start moving again just for our
+ 
+
+611
+00:09:58,240 --> 00:09:59,990
+time start moving again just for our
+character. He walks through the debris
+
+612
+00:09:59,990 --> 00:10:00,000
+character. He walks through the debris
+ 
+
+613
+00:10:00,000 --> 00:10:01,750
+character. He walks through the debris
+while everything stays paused and the
+
+614
+00:10:01,750 --> 00:10:01,760
+while everything stays paused and the
+ 
+
+615
+00:10:01,760 --> 00:10:03,509
+while everything stays paused and the
+tracking shots follow him through it. I
+
+616
+00:10:03,509 --> 00:10:03,519
+tracking shots follow him through it. I
+ 
+
+617
+00:10:03,519 --> 00:10:05,030
+tracking shots follow him through it. I
+need a starting image with the subject
+
+618
+00:10:05,030 --> 00:10:05,040
+need a starting image with the subject
+ 
+
+619
+00:10:05,040 --> 00:10:06,710
+need a starting image with the subject
+mid-stride. So, I'll generate one in
+
+620
+00:10:06,710 --> 00:10:06,720
+mid-stride. So, I'll generate one in
+ 
+
+621
+00:10:06,720 --> 00:10:08,790
+mid-stride. So, I'll generate one in
+Nano Banana Pro. Cinema Studio has
+
+622
+00:10:08,790 --> 00:10:08,800
+Nano Banana Pro. Cinema Studio has
+ 
+
+623
+00:10:08,800 --> 00:10:11,030
+Nano Banana Pro. Cinema Studio has
+camera follows as a preset which handles
+
+624
+00:10:11,030 --> 00:10:11,040
+camera follows as a preset which handles
+ 
+
+625
+00:10:11,040 --> 00:10:13,350
+camera follows as a preset which handles
+basic tracking. I'll choose 25, which is
+
+626
+00:10:13,350 --> 00:10:13,360
+basic tracking. I'll choose 25, which is
+ 
+
+627
+00:10:13,360 --> 00:10:14,870
+basic tracking. I'll choose 25, which is
+the leading shot. That's where the
+
+628
+00:10:14,870 --> 00:10:14,880
+the leading shot. That's where the
+ 
+
+629
+00:10:14,880 --> 00:10:16,870
+the leading shot. That's where the
+subject walks toward the camera as the
+
+630
+00:10:16,870 --> 00:10:16,880
+subject walks toward the camera as the
+ 
+
+631
+00:10:16,880 --> 00:10:18,550
+subject walks toward the camera as the
+camera pulls back. I'll paste in this
+
+632
+00:10:18,550 --> 00:10:18,560
+camera pulls back. I'll paste in this
+ 
+
+633
+00:10:18,560 --> 00:10:20,150
+camera pulls back. I'll paste in this
+prompt. The leading shot is about
+
+634
+00:10:20,150 --> 00:10:20,160
+prompt. The leading shot is about
+ 
+
+635
+00:10:20,160 --> 00:10:22,230
+prompt. The leading shot is about
+control. The camera backs away to make
+
+636
+00:10:22,230 --> 00:10:22,240
+control. The camera backs away to make
+ 
+
+637
+00:10:22,240 --> 00:10:23,910
+control. The camera backs away to make
+room for this subject, signaling that
+
+638
+00:10:23,910 --> 00:10:23,920
+room for this subject, signaling that
+ 
+
+639
+00:10:23,920 --> 00:10:25,590
+room for this subject, signaling that
+they own the space. This movement
+
+640
+00:10:25,590 --> 00:10:25,600
+they own the space. This movement
+ 
+
+641
+00:10:25,600 --> 00:10:27,590
+they own the space. This movement
+isolates the protagonist, making him
+
+642
+00:10:27,590 --> 00:10:27,600
+isolates the protagonist, making him
+ 
+
+643
+00:10:27,600 --> 00:10:29,430
+isolates the protagonist, making him
+look like the only thing that matters.
+
+644
+00:10:29,430 --> 00:10:29,440
+look like the only thing that matters.
+ 
+
+645
+00:10:29,440 --> 00:10:31,590
+look like the only thing that matters.
+26 is the following shot, which is the
+
+646
+00:10:31,590 --> 00:10:31,600
+26 is the following shot, which is the
+ 
+
+647
+00:10:31,600 --> 00:10:33,350
+26 is the following shot, which is the
+reverse. I'll select camera follows
+
+648
+00:10:33,350 --> 00:10:33,360
+reverse. I'll select camera follows
+ 
+
+649
+00:10:33,360 --> 00:10:35,190
+reverse. I'll select camera follows
+again and adjust the scene prompt. The
+
+650
+00:10:35,190 --> 00:10:35,200
+again and adjust the scene prompt. The
+ 
+
+651
+00:10:35,200 --> 00:10:36,790
+again and adjust the scene prompt. The
+following shot is the journey. The
+
+652
+00:10:36,790 --> 00:10:36,800
+following shot is the journey. The
+ 
+
+653
+00:10:36,800 --> 00:10:38,470
+following shot is the journey. The
+viewer is walking behind the character,
+
+654
+00:10:38,470 --> 00:10:38,480
+viewer is walking behind the character,
+ 
+
+655
+00:10:38,480 --> 00:10:40,630
+viewer is walking behind the character,
+and it creates a sense of companionship
+
+656
+00:10:40,630 --> 00:10:40,640
+and it creates a sense of companionship
+ 
+
+657
+00:10:40,640 --> 00:10:42,230
+and it creates a sense of companionship
+depending on the distance. Close
+
+658
+00:10:42,230 --> 00:10:42,240
+depending on the distance. Close
+ 
+
+659
+00:10:42,240 --> 00:10:43,829
+depending on the distance. Close
+following feels urgent, like you're
+
+660
+00:10:43,829 --> 00:10:43,839
+following feels urgent, like you're
+ 
+
+661
+00:10:43,839 --> 00:10:45,590
+following feels urgent, like you're
+chasing them. Wide following feels
+
+662
+00:10:45,590 --> 00:10:45,600
+chasing them. Wide following feels
+ 
+
+663
+00:10:45,600 --> 00:10:47,509
+chasing them. Wide following feels
+observational, like you're watching them
+
+664
+00:10:47,509 --> 00:10:47,519
+observational, like you're watching them
+ 
+
+665
+00:10:47,519 --> 00:10:49,350
+observational, like you're watching them
+leave. Both versions tell the viewer
+
+666
+00:10:49,350 --> 00:10:49,360
+leave. Both versions tell the viewer
+ 
+
+667
+00:10:49,360 --> 00:10:51,110
+leave. Both versions tell the viewer
+that this person is going somewhere, and
+
+668
+00:10:51,110 --> 00:10:51,120
+that this person is going somewhere, and
+ 
+
+669
+00:10:51,120 --> 00:10:52,710
+that this person is going somewhere, and
+they should keep watching to find out
+
+670
+00:10:52,710 --> 00:10:52,720
+they should keep watching to find out
+ 
+
+671
+00:10:52,720 --> 00:10:55,110
+they should keep watching to find out
+where. 27 is the side tracking shot.
+
+672
+00:10:55,110 --> 00:10:55,120
+where. 27 is the side tracking shot.
+ 
+
+673
+00:10:55,120 --> 00:10:56,710
+where. 27 is the side tracking shot.
+I'll paste in a custom prompt for this
+
+674
+00:10:56,710 --> 00:10:56,720
+I'll paste in a custom prompt for this
+ 
+
+675
+00:10:56,720 --> 00:10:58,710
+I'll paste in a custom prompt for this
+one. Side tracking is the most neutral
+
+676
+00:10:58,710 --> 00:10:58,720
+one. Side tracking is the most neutral
+ 
+
+677
+00:10:58,720 --> 00:11:00,550
+one. Side tracking is the most neutral
+tracking angle, and that's exactly why
+
+678
+00:11:00,550 --> 00:11:00,560
+tracking angle, and that's exactly why
+ 
+
+679
+00:11:00,560 --> 00:11:02,949
+tracking angle, and that's exactly why
+it works. The camera stays beside the
+
+680
+00:11:02,949 --> 00:11:02,959
+it works. The camera stays beside the
+ 
+
+681
+00:11:02,959 --> 00:11:04,870
+it works. The camera stays beside the
+character, making it perfect for walk-in
+
+682
+00:11:04,870 --> 00:11:04,880
+character, making it perfect for walk-in
+ 
+
+683
+00:11:04,880 --> 00:11:06,790
+character, making it perfect for walk-in
+talk sequences. The contrast between
+
+684
+00:11:06,790 --> 00:11:06,800
+talk sequences. The contrast between
+ 
+
+685
+00:11:06,800 --> 00:11:08,870
+talk sequences. The contrast between
+foreground blur and a sharp background
+
+686
+00:11:08,870 --> 00:11:08,880
+foreground blur and a sharp background
+ 
+
+687
+00:11:08,880 --> 00:11:11,269
+foreground blur and a sharp background
+makes it feel like real footage. 28 is
+
+688
+00:11:11,269 --> 00:11:11,279
+makes it feel like real footage. 28 is
+ 
+
+689
+00:11:11,279 --> 00:11:13,110
+makes it feel like real footage. 28 is
+the POV walk, which simulates
+
+690
+00:11:13,110 --> 00:11:13,120
+the POV walk, which simulates
+ 
+
+691
+00:11:13,120 --> 00:11:15,190
+the POV walk, which simulates
+firstperson perspective with a natural
+
+692
+00:11:15,190 --> 00:11:15,200
+firstperson perspective with a natural
+ 
+
+693
+00:11:15,200 --> 00:11:17,110
+firstperson perspective with a natural
+human bob. I'll paste in this prompt.
+
+694
+00:11:17,110 --> 00:11:17,120
+human bob. I'll paste in this prompt.
+ 
+
+695
+00:11:17,120 --> 00:11:19,269
+human bob. I'll paste in this prompt.
+POV puts the viewer inside the scene.
+
+696
+00:11:19,269 --> 00:11:19,279
+POV puts the viewer inside the scene.
+ 
+
+697
+00:11:19,279 --> 00:11:20,710
+POV puts the viewer inside the scene.
+You move through the debris in first
+
+698
+00:11:20,710 --> 00:11:20,720
+You move through the debris in first
+ 
+
+699
+00:11:20,720 --> 00:11:22,630
+You move through the debris in first
+person and the slight camera motion
+
+700
+00:11:22,630 --> 00:11:22,640
+person and the slight camera motion
+ 
+
+701
+00:11:22,640 --> 00:11:24,550
+person and the slight camera motion
+makes it feel real. Directors use this
+
+702
+00:11:24,550 --> 00:11:24,560
+makes it feel real. Directors use this
+ 
+
+703
+00:11:24,560 --> 00:11:26,949
+makes it feel real. Directors use this
+because it removes the emotional buffer,
+
+704
+00:11:26,949 --> 00:11:26,959
+because it removes the emotional buffer,
+ 
+
+705
+00:11:26,959 --> 00:11:28,870
+because it removes the emotional buffer,
+making the shot intense. The biggest
+
+706
+00:11:28,870 --> 00:11:28,880
+making the shot intense. The biggest
+ 
+
+707
+00:11:28,880 --> 00:11:30,550
+making the shot intense. The biggest
+mistake with a tracking shot is
+
+708
+00:11:30,550 --> 00:11:30,560
+mistake with a tracking shot is
+ 
+
+709
+00:11:30,560 --> 00:11:32,150
+mistake with a tracking shot is
+forgetting to describe the subject's
+
+710
+00:11:32,150 --> 00:11:32,160
+forgetting to describe the subject's
+ 
+
+711
+00:11:32,160 --> 00:11:33,829
+forgetting to describe the subject's
+action. If the prompt says a man
+
+712
+00:11:33,829 --> 00:11:33,839
+action. If the prompt says a man
+ 
+
+713
+00:11:33,839 --> 00:11:35,670
+action. If the prompt says a man
+standing in a lobby, and you ask for a
+
+714
+00:11:35,670 --> 00:11:35,680
+standing in a lobby, and you ask for a
+ 
+
+715
+00:11:35,680 --> 00:11:37,590
+standing in a lobby, and you ask for a
+following shot, the camera moves, but he
+
+716
+00:11:37,590 --> 00:11:37,600
+following shot, the camera moves, but he
+ 
+
+717
+00:11:37,600 --> 00:11:39,350
+following shot, the camera moves, but he
+stays frozen. Always describe both
+
+718
+00:11:39,350 --> 00:11:39,360
+stays frozen. Always describe both
+ 
+
+719
+00:11:39,360 --> 00:11:41,110
+stays frozen. Always describe both
+actions in the same prompt. Now, we're
+
+720
+00:11:41,110 --> 00:11:41,120
+actions in the same prompt. Now, we're
+ 
+
+721
+00:11:41,120 --> 00:11:43,030
+actions in the same prompt. Now, we're
+into the final move. This one defines
+
+722
+00:11:43,030 --> 00:11:43,040
+into the final move. This one defines
+ 
+
+723
+00:11:43,040 --> 00:11:44,870
+into the final move. This one defines
+both the start and end frame, and it's
+
+724
+00:11:44,870 --> 00:11:44,880
+both the start and end frame, and it's
+ 
+
+725
+00:11:44,880 --> 00:11:46,470
+both the start and end frame, and it's
+what allows you to connect everything
+
+726
+00:11:46,470 --> 00:11:46,480
+what allows you to connect everything
+ 
+
+727
+00:11:46,480 --> 00:11:48,550
+what allows you to connect everything
+into a complete sequence. With Cinema
+
+728
+00:11:48,550 --> 00:11:48,560
+into a complete sequence. With Cinema
+ 
+
+729
+00:11:48,560 --> 00:11:50,310
+into a complete sequence. With Cinema
+Studio, you can use the final frame of
+
+730
+00:11:50,310 --> 00:11:50,320
+Studio, you can use the final frame of
+ 
+
+731
+00:11:50,320 --> 00:11:52,150
+Studio, you can use the final frame of
+one clip as the starting frame of the
+
+732
+00:11:52,150 --> 00:11:52,160
+one clip as the starting frame of the
+ 
+
+733
+00:11:52,160 --> 00:11:54,150
+one clip as the starting frame of the
+next one. Your next generation continues
+
+734
+00:11:54,150 --> 00:11:54,160
+next one. Your next generation continues
+ 
+
+735
+00:11:54,160 --> 00:11:55,750
+next one. Your next generation continues
+from the first with no visible
+
+736
+00:11:55,750 --> 00:11:55,760
+from the first with no visible
+ 
+
+737
+00:11:55,760 --> 00:11:57,670
+from the first with no visible
+inconsistencies. And that's exactly what
+
+738
+00:11:57,670 --> 00:11:57,680
+inconsistencies. And that's exactly what
+ 
+
+739
+00:11:57,680 --> 00:11:59,269
+inconsistencies. And that's exactly what
+I'm going to do with the last move. Let
+
+740
+00:11:59,269 --> 00:11:59,279
+I'm going to do with the last move. Let
+ 
+
+741
+00:11:59,279 --> 00:12:01,350
+I'm going to do with the last move. Let
+me show you the through shot using 29.
+
+742
+00:12:01,350 --> 00:12:01,360
+me show you the through shot using 29.
+ 
+
+743
+00:12:01,360 --> 00:12:03,269
+me show you the through shot using 29.
+I'll carry over the final frame from the
+
+744
+00:12:03,269 --> 00:12:03,279
+I'll carry over the final frame from the
+ 
+
+745
+00:12:03,279 --> 00:12:05,670
+I'll carry over the final frame from the
+POV walk clip as my starting frame.
+
+746
+00:12:05,670 --> 00:12:05,680
+POV walk clip as my starting frame.
+ 
+
+747
+00:12:05,680 --> 00:12:07,350
+POV walk clip as my starting frame.
+After that, the scene shifts to a
+
+748
+00:12:07,350 --> 00:12:07,360
+After that, the scene shifts to a
+ 
+
+749
+00:12:07,360 --> 00:12:09,190
+After that, the scene shifts to a
+cracked glass panel with the lobby
+
+750
+00:12:09,190 --> 00:12:09,200
+cracked glass panel with the lobby
+ 
+
+751
+00:12:09,200 --> 00:12:10,790
+cracked glass panel with the lobby
+visible behind it. The through shot
+
+752
+00:12:10,790 --> 00:12:10,800
+visible behind it. The through shot
+ 
+
+753
+00:12:10,800 --> 00:12:12,710
+visible behind it. The through shot
+feels like magic. The camera glides
+
+754
+00:12:12,710 --> 00:12:12,720
+feels like magic. The camera glides
+ 
+
+755
+00:12:12,720 --> 00:12:14,550
+feels like magic. The camera glides
+through barriers like walls or glass,
+
+756
+00:12:14,550 --> 00:12:14,560
+through barriers like walls or glass,
+ 
+
+757
+00:12:14,560 --> 00:12:16,470
+through barriers like walls or glass,
+creating the sensation of entering a
+
+758
+00:12:16,470 --> 00:12:16,480
+creating the sensation of entering a
+ 
+
+759
+00:12:16,480 --> 00:12:18,150
+creating the sensation of entering a
+restricted area. The reason those
+
+760
+00:12:18,150 --> 00:12:18,160
+restricted area. The reason those
+ 
+
+761
+00:12:18,160 --> 00:12:20,389
+restricted area. The reason those
+tracking shots feel human is that Cinema
+
+762
+00:12:20,389 --> 00:12:20,399
+tracking shots feel human is that Cinema
+ 
+
+763
+00:12:20,399 --> 00:12:22,629
+tracking shots feel human is that Cinema
+Studio in Higsfield uses real camera
+
+764
+00:12:22,629 --> 00:12:22,639
+Studio in Higsfield uses real camera
+ 
+
+765
+00:12:22,639 --> 00:12:23,910
+Studio in Higsfield uses real camera
+physics instead of relying on
+
+766
+00:12:23,910 --> 00:12:23,920
+physics instead of relying on
+ 
+
+767
+00:12:23,920 --> 00:12:25,350
+physics instead of relying on
+randomness. Go ahead and sign up to
+
+768
+00:12:25,350 --> 00:12:25,360
+randomness. Go ahead and sign up to
+ 
+
+769
+00:12:25,360 --> 00:12:27,030
+randomness. Go ahead and sign up to
+Higsfield through the link in the
+
+770
+00:12:27,030 --> 00:12:27,040
+Higsfield through the link in the
+ 
+
+771
+00:12:27,040 --> 00:12:28,629
+Higsfield through the link in the
+description. Thank you for watching and
+
+772
+00:12:28,629 --> 00:12:28,639
+description. Thank you for watching and
+ 
+
+773
+00:12:28,639 --> 00:12:32,399
+description. Thank you for watching and
+I'll see you in the next one.
+

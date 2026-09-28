@@ -1,0 +1,368 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A-1 漫剧是啥 · 一句话讲清 · 漫剧制作教程站。玉哥整理的 AI 漫剧与短剧制作实用教程，包含步骤、案例和练习。">
+<title>A-1 漫剧是啥 · 一句话讲清 · 漫剧制作教程站</title>
+<link rel="stylesheet" href="../../assets/site.css?v=fix20260927-2215">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg?v=fix20260927-2215">
+<link rel="stylesheet" href="../../assets/tutorial.css?v=fix20260927-2215">
+<style>
+/* 作品名锚链接:蓝字 + 下划线,点跳到下方作品卡片 */
+.work-link {
+  color: #635BFF !important;
+  text-decoration: underline;
+  text-decoration-color: rgba(99,91,255,.4);
+  text-underline-offset: 3px;
+  font-weight: 600 !important;
+}
+.work-link:hover {
+  text-decoration-color: #635BFF;
+  background: rgba(99,91,255,.08);
+  border-radius: 3px;
+}
+/* 作品详情卡片 */
+.work-card {
+  margin: 22px 0;
+  padding: 20px 22px;
+  border: 2px dashed #F47C3C;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #FFF9F0 0%, #FFF7E8 100%);
+}
+.work-card h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #1F1A14;
+}
+.work-card .video-slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  max-height: 320px;
+  margin: 14px 0;
+  background: #1F1A14;
+  color: #FFE9D6;
+  border-radius: 10px;
+  font-size: 14px;
+  position: relative;
+  overflow: hidden;
+}
+.video-slot .play-btn {
+  width: 64px; height: 64px;
+  background: rgba(99,91,255,.85);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 28px; color: #fff;
+  margin-bottom: 8px;
+}
+.video-slot .placeholder-text {
+  text-align: center;
+  font-size: 12.5px;
+  color: #A8A29E;
+}
+.work-card .shot-list {
+  font-size: 13px;
+  color: #1F1A14;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin: 10px 0 0;
+}
+.work-card .shot-list b { color: #635BFF; }
+.work-card .meta-row {
+  display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0;
+  font-size: 12px;
+}
+.work-card .meta-row span {
+  background: #fff; border: 1px solid var(--line);
+  padding: 3px 10px; border-radius: 10px;
+  color: #6F6657;
+}
+.work-card .meta-row b { color: #635BFF; margin-right: 3px; }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="logo">🎬 漫剧教程站 <small>v3 · 玉哥</small></div>
+  <nav>
+    <a href="../../index.html">首页</a>
+    <a href="../../tutorial/all-courses.html" class="active">漫剧教程</a>
+    <a href="../../prompts/image-prompts.html">图片作品</a>
+    <a href="../../works/index.html">视频作品</a>
+    <a href="../../prompts/prompts.html">prompt 模板</a>
+    <a href="../../tools/toolkit.html">工具箱</a>
+    <a href="../../qa/troubleshooting.html">问题库</a>
+    <a href="../../news/industry.html">行业新闻</a>
+    </nav>
+  <div class="search"><input type="search" placeholder="🔍 搜…"></div>
+  <button class="theme-toggle" title="深浅主题切换" onclick="document.documentElement.classList.toggle('dark')">🌙</button>
+</header>
+
+<div class="layout-3col">
+  <!-- 左侧目录(JS 自动生成) -->
+  <aside class="sidebar-left" id="sidebar-left"></aside>
+
+  <!-- 中间正文 -->
+  <main class="content">
+    <div class="breadcrumb">
+      <a href="../../index.html">首页</a> <span>›</span>
+      <a href="../all-courses.html">A 漫剧基础</a> <span>›</span>
+      A-1 漫剧是啥
+    </div>
+
+    <h1>A-1 · 漫剧是啥 · 一句话讲清</h1>
+    <h2 id="sec-1">1. 漫剧是啥?看 3 部真实作品找答案</h2>
+    <p><strong>漫剧是什么?</strong>看再多定义,不如直接看 3 部真实爆款 —— 看完你脑子里就有了。</p>
+    <p><strong>带着 4 个问题去看</strong>(看完答案自动跳出来):</p>
+    <ol>
+      <li><strong>90 秒怎么讲完一个完整故事</strong> · 作者怎么安排分镜?几秒一个?</li>
+      <li><strong>开头 3 秒怎么钩住人不划走</strong> · 第一帧是什么画面、用什么音效?</li>
+      <li><strong>用什么 AI 工具能堆出来</strong> · 一部爆款需要什么工具链(出图 / 图生视频 / 配音)?</li>
+      <li><strong>一部爆款要几个人 / 多少钱 / 多长时间</strong> · 真实门槛到底有多低?</li>
+    </ol>
+    <p class="src">👇 点作品名直接跳到下方详情卡,边看视频边对照问题找答案。</p>
+
+    <div class="example">
+      <span class="label">男频·爽文</span>
+      <h4>👑 <a href="#work-fapei" class="work-link">《发配边关,罪妻开荒养出战神》</a> · 大多多动画</h4>
+      <p><strong style="color:#635BFF;">抖音 41 亿播放</strong> · 夫妻档 · 5 镜头 · 总时长 90 秒</p>
+      <p class="src">📌 看点:<strong>开头 3 秒</strong>用"流放边关 + 带娃走泥路"画面钩住人 + 男频爽文"扮猪吃虎"模板怎么套</p>
+    </div>
+
+    <div class="example">
+      <span class="label">科幻·末日</span>
+      <h4>✈️ <a href="#work-mori" class="work-link">《末日航班最后的起飞》</a> · 章鱼哥推文</h4>
+      <p><strong style="color:#635BFF;">全网 3 亿播放 · 年营收 860 万</strong> · 应届个人 · 4 镜头 · 总时长 80 秒</p>
+      <p class="src">📌 看点:<strong>悬念递进</strong>结构(末日前夜 → 神秘机长 → 循环反转) + 一个人怎么用 Wan 2.x 起步</p>
+    </div>
+
+    <div class="example">
+      <span class="label">女性向·逆袭</span>
+      <h4>👗 <a href="#work-beicai" class="work-link">《被裁掉的女孩》</a> · 菲菲飞</h4>
+      <p><strong style="color:#635BFF;">抖音 4.5 亿播放</strong> · 3-8 人小团队 · 4 镜头 · 总时长 90 秒</p>
+      <p class="src">📌 看点:<strong>女性向爆款</strong>结构(被裁 → 偶遇男主 → 转型逆袭) + 3 人核心团队怎么起步 + 角色一致性怎么保</p>
+    </div>
+
+    <h2 id="sec-2">2. 漫剧的 3 个组成部分</h2>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>#</th><th>组成</th><th>用什么做</th><th>学员常用</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>画面</td><td>AI 出图(静态)</td><td>ComfyUI / 即梦 / Midjourney</td></tr>
+          <tr><td>2</td><td>动效</td><td>图生视频(动态)</td><td>Hailuo / 可灵 / Wan 2.x</td></tr>
+          <tr><td>3</td><td>声音</td><td>AI 配音 + 背景音乐</td><td>剪映 / 魔音工坊 / Suno</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="sec-3">3. 90 秒讲一个故事意味着啥</h2>
+    <p>短剧每集 60-90 秒。<strong>前面 3 秒必须有钩子</strong>(否则用户划走),中间有 1-2 个反转,结尾留悬念拉下一集。</p>
+    <p>90 秒能装下:</p>
+    <ul>
+      <li>3-5 个镜头(平均 18-30 秒/镜头)</li>
+      <li>1 个核心冲突 + 1 个反转 + 1 个钩子</li>
+      <li>1-2 句对白 + 1 段旁白</li>
+    </ul>
+
+    <h2 id="sec-4">4. 一集的工作量</h2>
+    <div class="callout warn">
+      <span class="ico">⏱</span>
+      <p><strong>首次做 1 集(0 基础)</strong>:5-7 天 · 包括学工具 + 选书 + 改剧本 + 出图 + 出视频 + 配音剪辑</p>
+    </div>
+    <div class="callout ok">
+      <span class="ico">⏱</span>
+      <p><strong>熟练后 1 集(做过 3 集以上)</strong>:2-3 天 · 工具熟了,流程固定</p>
+    </div>
+    <div class="callout warn">
+      <span class="ico">⏱</span>
+      <p><strong>爆款 1 集</strong>:7-15 天 · 包括改 3 轮 + 测试数据 + 优化。5 部里 1-2 部爆是常态,不要期待每部都爆</p>
+    </div>
+
+    <h2 id="sec-5">5. 漫剧 vs 真人短剧 vs 有声书</h2>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th></th><th>漫剧</th><th>真人短剧</th><th>有声书</th></tr></thead>
+        <tbody>
+          <tr><td>画面</td><td>AI 静态图 + 视频</td><td>真人拍摄</td><td>无</td></tr>
+          <tr><td>成本</td><td>¥100-500 / 集</td><td>¥3 万-10 万 / 集</td><td>¥0-50 / 集</td></tr>
+          <tr><td>周期</td><td>2-7 天</td><td>1-3 个月</td><td>1-2 天</td></tr>
+          <tr><td>上限</td><td>中等(没真人带感)</td><td>高(真人情绪)</td><td>低(只听不看)</td></tr>
+          <tr><td>学员首选</td><td>✅ 推荐</td><td>❌ 资金门槛高</td><td>🟡 替代品</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="sec-6">6. 学完这节能做啥</h2>
+    <ul class="checklist">
+      <li>能用 1 句话给朋友解释漫剧</li>
+      <li>知道漫剧 vs 短剧 vs 有声书区别</li>
+      <li>知道 1 集漫剧需要哪些工具</li>
+      <li>估算自己做 1 集要多少时间</li>
+    </ul>
+
+    <h2 id="sec-7">7. 常见误解</h2>
+    <div class="callout bad">
+      <span class="ico">❌</span>
+      <p><strong>"漫剧 = 漫画 + 视频"</strong> · 不对。漫剧是"AI 生成的图 + 视频"讲故事,漫画是手绘静态。两者制作方式完全不同。</p>
+    </div>
+    <div class="callout bad">
+      <span class="ico">❌</span>
+      <p><strong>"漫剧不需要剧本"</strong> · 错。90 秒也要剧本,没有剧本 = 没有节奏 = 没人看。</p>
+    </div>
+    <div class="callout warn">
+      <span class="ico">⚠️</span>
+      <p><strong>"AI 出图就能直接当画面"</strong> · 部分对。AI 出图要统一画风 + 统一角色 + 校色调,否则看着像 PPT。</p>
+    </div>
+
+    <h2 id="sec-8">8. 本节小练习</h2>
+    <ol>
+      <li>打开抖音搜"漫剧"找 3 部 1 集,看完记下"这部最吸引我的 1 句话是什么"</li>
+      <li>估算:如果你做 1 集,3-5 个镜头每个多少秒?</li>
+      <li>列出 1 集你需要的工具(脑子里想的就行,后面 A-4 会教)</li>
+    </ol>
+
+    <h2 id="sec-9">9. 玉哥说</h2>
+    <div class="callout warn">
+      <span class="ico">📢</span>
+      <p><strong>📢 玉哥说</strong>:<br>
+      1. 漫剧是<strong>普通人能入行的最低门槛</strong> · 1 万块 + 1 个月能出 1 部完整剧<br>
+      2. 但<strong>回本概率低</strong> · 5 部里 1-2 部赚钱是常态 · 不要辞职 ALL IN<br>
+      3. 漫剧 vs 真人短剧不是替代 · 是<strong>互补</strong> · 学员先做漫剧练手,有能力再上真人</p>
+    </div>
+
+    <!-- ===== 作品详情卡片(3 个) ===== -->
+    <h2 id="works-detail">📺 3 个作品详情 · 点作品名跳到这里</h2>
+    <p class="meta" style="margin-top:-6px;">每个作品卡包含:<strong>真实视频 + 分镜 + 作者背景 · 涅磐重生 + 收入</strong>。这 3 个创作者都是 <strong style="color:#F47C3C;">从底层翻身</strong>的草根代表,看完你就明白 —— <strong>漫剧行业不挑背景,只挑做不做</strong>。</p>
+
+    <div class="work-card" id="work-fapei">
+      <h3>👑 《发配边关,罪妻开荒养出战神》· 大多多动画 · 男频爽文</h3>
+      <div class="meta-row">
+        <span><b>类型</b>男频·爽文</span>
+        <span><b>账号</b>大多多动画(123 万粉)</span>
+        <span><b>战绩</b>抖音 41 亿播放</span>
+        <span><b>创作者</b>何杰 + 张芬(95 后夫妻)</span>
+        <span><b>团队</b>夫妻档 → 30+ 人</span>
+        <span><b>工具</b>Wan 2.x / 即梦</span>
+      </div>
+      <video src="videos/fapei-bianguan.mp4" controls preload="metadata" style="width:100%; aspect-ratio:16/9; max-height:420px; margin:14px 0; border-radius:10px; background:#1F1A14;"></video>
+      <div class="shot-list">
+        <b>分镜节奏:</b><br>
+        镜头 1 · 女主被流放边关,带着孩子走泥路<br>
+        镜头 2 · 荒地开荒,种田养娃,边关战事起<br>
+        镜头 3 · 女主发现丈夫真实身份是战神<br>
+        镜头 4 · 大结局 · 丈夫归来,一家团聚
+      </div>
+      <div style="margin-top:14px; padding:14px 16px; background:#fff; border-left:4px solid #F47C3C; border-radius:8px; font-size:13px; line-height:1.75; color:#1F1A14;">
+        <div style="font-weight:700; color:#F47C3C; margin-bottom:6px; font-size:14px;">🔥 作者背景 · 涅磐重生</div>
+        <strong>何杰 + 张芬</strong>(95 后夫妻,96 年生),安徽宿州人,<strong>送过外卖、跑过快递、进过工厂</strong>。2023 年女方怀孕后没法再上班,两人决定在家做剧情号。男的一边带孩子一边写剧本,女方坐完月子就开始自学剪映。<strong>整整一年没出过爆款</strong>,账号粉丝一直没破万。2024 年底差点放弃回工厂上班,最后把积蓄全投 AI 工具,做《发配边关》。上线 3 个月抖音 <strong>41 亿播放</strong>,塔猴 <strong>16 亿破纪录</strong>。现在团队扩到 30+ 人,都是安徽老乡带出来的。
+      </div>
+      <div style="margin-top:10px; padding:12px 16px; background:#FFF7E8; border-left:4px solid #635BFF; border-radius:8px; font-size:13px; line-height:1.75; color:#1F1A14;">
+        <div style="font-weight:700; color:#635BFF; margin-bottom:6px; font-size:14px;">💰 收入(单部预估)</div>
+        抖音 + 红果 + 番茄 + 全网分账 <strong>2000 万 - 4000 万</strong>(投资界/封面新闻报道预估),夫妻俩身家 <strong>过亿</strong>。现成立 <strong>大多多动画</strong> 内容公司,估值 <strong>1 亿+</strong>。
+      </div>
+    </div>
+
+    <div class="work-card" id="work-mori">
+      <h3>✈️ 《末日航班最后的起飞》· 章鱼哥推文 · 科幻末日</h3>
+      <div class="meta-row">
+        <span><b>类型</b>科幻·末日</span>
+        <span><b>账号</b>章鱼哥推文(62 万粉)</span>
+        <span><b>战绩</b>全网 3 亿播放</span>
+        <span><b>创作者</b>沈富强(00 后应届)</span>
+        <span><b>团队</b>个人 → 30 人</span>
+        <span><b>工具</b>可灵 / 即梦</span>
+      </div>
+      <video src="videos/mori-hangban.mp4" controls preload="metadata" style="width:100%; aspect-ratio:16/9; max-height:420px; margin:14px 0; border-radius:10px; background:#1F1A14;"></video>
+      <div class="shot-list">
+        <b>分镜节奏:</b><br>
+        镜头 1 · 末日前夜,机场登机口人群慌乱<br>
+        镜头 2 · 神秘航班起飞,机长身份成谜<br>
+        镜头 3 · 机舱内时间循环 / 反转<br>
+        镜头 4 · 大结局 · 最后一次起飞
+      </div>
+      <div style="margin-top:14px; padding:14px 16px; background:#fff; border-left:4px solid #F47C3C; border-radius:8px; font-size:13px; line-height:1.75; color:#1F1A14;">
+        <div style="font-weight:700; color:#F47C3C; margin-bottom:6px; font-size:14px;">🔥 作者背景 · 涅磐重生</div>
+        <strong>沈富强</strong>(江湖人称"沈老板"),2003 年生,江苏盐城人,徐州凌山文化 CEO。2024 年计算机专业本科毕业,<strong>实习时被裁</strong>,回家闷头啃 AI 工具三个月,把家里客厅改成工作室,<strong>一台笔记本 + 一个月生活费起步</strong>。一个人写剧本、做图、剪视频,《末日航班》上线当月全网播放破亿。半年时间从被裁应届变成 30 人小团队 CEO。
+      </div>
+      <div style="margin-top:10px; padding:12px 16px; background:#FFF7E8; border-left:4px solid #635BFF; border-radius:8px; font-size:13px; line-height:1.75; color:#1F1A14;">
+        <div style="font-weight:700; color:#635BFF; margin-bottom:6px; font-size:14px;">💰 收入(2025 年)</div>
+        抖音 + 番茄 + 红果分账 <strong>年营收 860 万</strong>(搜狐报道),个人身家 <strong>千万级</strong>。带动 30 人小团队,平均月薪 <strong>8K-2W</strong>(盐城本地高于平均 2 倍)。
+      </div>
+    </div>
+
+    <div class="work-card" id="work-beicai">
+      <h3>👗 《被裁掉的女孩》· 菲菲飞 · 女性向</h3>
+      <div class="meta-row">
+        <span><b>类型</b>女性向·逆袭</span>
+        <span><b>账号</b>菲菲飞(91 万粉)</span>
+        <span><b>战绩</b>抖音 4.5 亿播放</span>
+        <span><b>创作者</b>菲菲飞(前模特)</span>
+        <span><b>团队</b>3 人 → 8 人小团队</span>
+        <span><b>工具</b>即梦 AISeedance / LibTV</span>
+      </div>
+      <video src="videos/beicai-nvhai.mp4" controls preload="metadata" style="width:100%; aspect-ratio:16/9; max-height:420px; margin:14px 0; border-radius:10px; background:#1F1A14;"></video>
+      <div class="shot-list">
+        <b>分镜节奏:</b><br>
+        镜头 1 · 女主(方桃子)被 MCN 当面裁掉,理由是"年龄大了"<br>
+        镜头 2 · 回家路上偶遇男主(周以衡),被帮了一把<br>
+        镜头 3 · 女主决定转型,从模特到 AI 漫剧<br>
+        镜头 4 · 大结局 · 女主新剧爆款,前 MCN 来抢人
+      </div>
+      <div style="margin-top:14px; padding:14px 16px; background:#fff; border-left:4px solid #F47C3C; border-radius:8px; font-size:13px; line-height:1.75; color:#1F1A14;">
+        <div style="font-weight:700; color:#F47C3C; margin-bottom:6px; font-size:14px;">🔥 作者背景 · 涅磐重生</div>
+        <strong>菲菲飞</strong>(本名方桃子),37 岁,广州人,<strong>做了 7 年模特</strong>。20-27 岁是模特黄金期,28 岁后被 MCN 列入"高龄裁剪名单",理由是"上镜不再有少女感"。消沉两年后转型剧情短视频,运营 8 年把账号"0011 号"做到 <strong>665 万粉</strong>。2026 年 3 月学 AI 出图 + 即梦 AISeedance 2.0 + 融脸技术,<strong>3 个月做出《被裁掉的女孩》爆款</strong>。第一季 <strong>3 人核心团队</strong>(剧本 + 导演/技术 + 造型),第二季扩到 <strong>8 人小团队</strong>。在广州成立 <strong>我的影视文化传媒</strong>。
+      </div>
+      <div style="margin-top:10px; padding:12px 16px; background:#FFF7E8; border-left:4px solid #635BFF; border-radius:8px; font-size:13px; line-height:1.75; color:#1F1A14;">
+        <div style="font-weight:700; color:#635BFF; margin-bottom:6px; font-size:14px;">💰 收入(第一季)</div>
+        抖音 + 全网分账 + 广告 <strong>单集万元起</strong>(QQ 浏览器报道),全网预估 <strong>2000 万+</strong>(4.5 亿播放)。第二季扩到 8 人后,单部成本可控在 <strong>5 万以内</strong>,ROI 极高。账号矩阵(菲菲飞 91 万 + 方桃子 50 万 + 周以衡 13 万)持续带货变现。
+      </div>
+    </div>
+
+    <nav class="bottom-nav">
+      <a class="prev" href="../all-courses.html">
+        <span class="label">← 上一节</span>
+        <span class="title">A 漫剧基础 目录</span>
+      </a>
+      <a class="next" href="A-2.html">
+        <span class="label">下一节 →</span>
+        <span class="title">A-2 漫剧和短剧区别</span>
+      </a>
+    </nav>
+  </main>
+
+  <!-- 右侧 TOC(JS 自动生成) -->
+  <aside class="sidebar-right" id="sidebar-right"></aside>
+</div>
+
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="扫码关注玉哥">
+      <img class="qr-img" src="../../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../../changelog.html">📅 更新日志</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+
+<script src="../../assets/tutorial.js?v=fix20260927-2215"></script>
+<script src="../../assets/site-enhance.js?v=fix20260927-2215" defer></script>
+</body>
+</html>

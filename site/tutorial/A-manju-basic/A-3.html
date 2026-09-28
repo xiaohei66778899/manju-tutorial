@@ -1,0 +1,288 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A-3 一集漫剧是怎样做出来的 · 漫剧制作教程站。玉哥整理的 AI 漫剧与短剧制作实用教程，包含步骤、案例和练习。">
+<title>A-3 一集漫剧是怎样做出来的 · 漫剧制作教程站</title>
+<link rel="stylesheet" href="../../assets/site.css?v=fix20260927-2215">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg?v=fix20260927-2215">
+<link rel="stylesheet" href="../../assets/tutorial.css?v=fix20260927-2215">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="logo">🎬 漫剧教程站 <small>v3 · 玉哥</small></div>
+  <nav>
+    <a href="../../index.html">首页</a>
+    <a href="../../tutorial/all-courses.html" class="active">漫剧教程</a>
+    <a href="../../prompts/image-prompts.html">图片作品</a>
+    <a href="../../works/index.html">视频作品</a>
+    <a href="../../prompts/prompts.html">prompt 模板</a>
+    <a href="../../tools/toolkit.html">工具箱</a>
+    <a href="../../qa/troubleshooting.html">问题库</a>
+    <a href="../../news/industry.html">行业新闻</a>
+    </nav>
+  <div class="search"><input type="search" placeholder="🔍 搜…"></div>
+  <button class="theme-toggle" title="深浅主题切换" onclick="document.documentElement.classList.toggle('dark')">🌙</button>
+</header>
+
+<div class="layout-3col">
+  <aside class="sidebar-left" id="sidebar-left"></aside>
+
+  <main class="content">
+    <div class="breadcrumb">
+      <a href="../../index.html">首页</a> <span>›</span>
+      <a href="../all-courses.html">A 漫剧基础</a> <span>›</span>
+      A-3 一集漫剧是怎样做出来的
+    </div>
+
+    <h1>A-3 · 一集漫剧是怎样做出来的</h1>
+    <h2 id="sec-1">1. 第一集实战示例</h2>
+
+    <div class="example">
+      <span class="label">学员实操</span>
+      <h4>👨‍💻 0 基础 · 第一集《战神归来·退婚》</h4>
+      <p><strong>0 基础用了 6 天</strong>,完整流程:</p>
+      <ul>
+        <li><strong>Day 1(4h)</strong>:刷 50 部抖音爆款,选定《战神归来》题材,写出第 1 集 90 秒剧本</li>
+        <li><strong>Day 2(3h)</strong>:画主角 + 反派 + 3 个场景的三视图(用即梦 + ComfyUI)</li>
+        <li><strong>Day 3(5h)</strong>:分 5 个镜头,每个镜头出 4 张关键帧,挑 1 张做视频(H2.3 跑 5 条)</li>
+        <li><strong>Day 4(2h)</strong>:配音 5 句台词(魔音工坊·古风男声)+ 选 BGM(Suno AI 生成)</li>
+        <li><strong>Day 5(3h)</strong>:剪映拼接 5 镜头 + 配音 + BGM + 字幕 + 封面</li>
+        <li><strong>Day 6(1h)</strong>:抖音发布,加 AIGC 标识 + #漫剧 标签</li>
+      </ul>
+    </div>
+
+    <h2 id="sec-2">2. 6 步流水线全流程图</h2>
+
+    <div class="flow">
+      <div class="flow-step">
+        <span class="num">01</span>
+        <span class="result">项目方向卡</span>
+        <h4>想清楚</h4>
+        <ul>
+          <li>看用户(给谁看)</li>
+          <li>选赛道(题材形态)</li>
+          <li>定平台(画幅时长)</li>
+          <li>定来源(原创/改编)</li>
+          <li>算清楚(预算合规)</li>
+        </ul>
+      </div>
+
+      <div class="flow-step">
+        <span class="num">02</span>
+        <span class="result">可制作剧本</span>
+        <h4>写出来</h4>
+        <ul>
+          <li>提炼(一句话故事)</li>
+          <li>设计(人物关系)</li>
+          <li>搭建(冲突反转)</li>
+          <li>拆分(每集任务)</li>
+          <li>落地(场景台词)</li>
+        </ul>
+      </div>
+
+      <div class="flow-step">
+        <span class="num">03</span>
+        <span class="result">资产包 + 分镜</span>
+        <h4>画出来</h4>
+        <ul>
+          <li>定画风(视觉标准)</li>
+          <li>做角色(三视图)</li>
+          <li>做场景(空间道具)</li>
+          <li>拆分镜(景别机位)</li>
+          <li>守一致(LoRA)</li>
+        </ul>
+      </div>
+
+      <div class="flow-step">
+        <span class="num">04</span>
+        <span class="result">可用视频镜头</span>
+        <h4>动起来</h4>
+        <ul>
+          <li>做关键帧(锁定起点)</li>
+          <li>选生成法(图生视频)</li>
+          <li>写运动(动作表情)</li>
+          <li>批量生成(筛可用)</li>
+          <li>修镜头(对口型补帧)</li>
+        </ul>
+      </div>
+
+      <div class="flow-step">
+        <span class="num">05</span>
+        <span class="result">发布版成片</span>
+        <h4>剪成片</h4>
+        <ul>
+          <li>剪镜头(粗剪精剪)</li>
+          <li>做人声(角色配音)</li>
+          <li>铺声音(BGM音效)</li>
+          <li>做后期(字幕调色)</li>
+          <li>做质检(音画节奏)</li>
+        </ul>
+      </div>
+
+      <div class="flow-step">
+        <span class="num">06</span>
+        <span class="result">数据 + 改进清单</span>
+        <h4>发出去</h4>
+        <ul>
+          <li>过审核(AIGC 标识)</li>
+          <li>做包装(封面标题)</li>
+          <li>去发布(排期投放)</li>
+          <li>看数据(留存完播)</li>
+          <li>做复盘(问题定位)</li>
+        </ul>
+      </div>
+
+      <div class="flow-loop">
+        <span class="arrow">↻</span> <strong>数据回流 · 重新想清楚</strong> · 看完数据后,带着问题回到 01 想清楚,这就是飞轮。<br>
+        <span style="font-size: 12px; font-weight: 400;">5 部里 1-2 部赚钱是常态,持续迭代才是关键。</span>
+      </div>
+    </div>
+
+    <h2 id="sec-3">3. 6 步对应教程章节(直接跳转)</h2>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th>步骤</th><th>干啥</th><th>教程节</th><th>字数</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>01 想清楚</strong></td><td>选题 + 方向卡</td><td>A 入门 + B 小说改剧本</td><td>25 节</td></tr>
+          <tr><td><strong>02 写出来</strong></td><td>剧本 + 集纲</td><td>B 小说改剧本</td><td>17 节</td></tr>
+          <tr><td><strong>03 画出来</strong></td><td>角色 + 分镜 + 出图</td><td>C 角色 + D 分镜 + E AI 出图</td><td>67 节</td></tr>
+          <tr><td><strong>04 动起来</strong></td><td>图生视频</td><td>F AI 视频</td><td>19 节</td></tr>
+          <tr><td><strong>05 剪成片</strong></td><td>配音 + 剪辑</td><td>G 配音剪辑</td><td>18 节</td></tr>
+          <tr><td><strong>06 发出去</strong></td><td>审核 + 发布 + 数据</td><td>H 发布运营</td><td>10 节</td></tr>
+          <tr><td><strong>横向支撑</strong></td><td>工具 + SOP + 合规</td><td>工具箱 + I 附录</td><td>9 节</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="sec-4">4. 每步时间分配(学员实测)</h2>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th>阶段</th><th>首次做(0 基础)</th><th>熟练后(3 集以上)</th><th>爆款打磨</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>01 想清楚</td><td>1 天</td><td>2 小时</td><td>3 天</td></tr>
+          <tr><td>02 写出来</td><td>2 天</td><td>4 小时</td><td>5 天</td></tr>
+          <tr><td>03 画出来</td><td>2 天</td><td>4 小时</td><td>3 天</td></tr>
+          <tr><td>04 动起来</td><td>1 天</td><td>3 小时</td><td>3 天</td></tr>
+          <tr><td>05 剪成片</td><td>0.5 天</td><td>2 小时</td><td>2 天</td></tr>
+          <tr><td>06 发出去</td><td>0.5 天</td><td>1 小时</td><td>1 天</td></tr>
+          <tr style="background: var(--lime);"><td><strong>合计</strong></td><td><strong>7 天</strong></td><td><strong>16 小时(2 天)</strong></td><td><strong>17 天</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout warn">
+      <span class="ico">⏱</span>
+      <p><strong>时间表</strong>:首次 7 天是"包含学工具"的时间,如果工具已经熟练,首集可以压到 3-4 天。爆款 17 天包含"改 3 轮 + 数据优化",5 部里 1-2 部能爆。</p>
+    </div>
+
+    <h2 id="sec-5">5. 6 个常见误解(跳过某步的代价)</h2>
+
+    <div class="callout bad">
+      <span class="ico">❌</span>
+      <p><strong>"跳过 01 想清楚直接做"</strong> · 等于盲做。90% 的项目死在"没人想看"上,不是死在制作上。</p>
+    </div>
+
+    <div class="callout bad">
+      <span class="ico">❌</span>
+      <p><strong>"跳过 02 写剧本直接出图"</strong> · 等于 PPT 切换图。90 秒没节奏 = 没人看 = 0 完播。</p>
+    </div>
+
+    <div class="callout bad">
+      <span class="ico">❌</span>
+      <p><strong>"跳过角色一致性直接画"</strong> · 主角 5 镜头换 5 张脸 = 串脸 = 看吐了。</p>
+    </div>
+
+    <div class="callout warn">
+      <span class="ico">⚠️</span>
+      <p><strong>"跳过视频批量"</strong> · 跑 1 个镜头就过 = 运气活。批量跑 4-8 个选最优 = 稳定产。</p>
+    </div>
+
+    <div class="callout warn">
+      <span class="ico">⚠️</span>
+      <p><strong>"跳过质检"</strong> · 字幕错字 / 音画不同步 / BGM 抢戏,这类小问题 1 个就够掉 50% 完播。</p>
+    </div>
+
+    <div class="callout bad">
+      <span class="ico">❌</span>
+      <p><strong>"跳过 06 数据"</strong> · 不看数据 = 不知道哪部好 = 重复踩坑。数据回流才是漫剧长期赚钱的关键。</p>
+    </div>
+
+    <h2 id="sec-6">6. 学完这节能做啥</h2>
+
+    <ul class="checklist">
+      <li>能用 1 句话讲清 6 步流水线</li>
+      <li>能给自己一个项目排 1 周时间表</li>
+      <li>知道每个步骤的"结果验收标准"</li>
+      <li>知道跳过某步的具体代价</li>
+      <li>理解"数据回流"是飞轮,不是直线</li>
+    </ul>
+
+    <h2 id="sec-7">7. 本节小练习</h2>
+    <ol>
+      <li>假设你要做一部"重生年代漫剧",按 6 步流水线,列出每步你要干啥(每步 3-5 个 bullet)</li>
+      <li>按上面时间表,排一份 1 周时间表(每天具体做哪一步)</li>
+      <li>在每步后面写上"验收标准"(比如 03 画出来的结果是"主角 3 视图 + 5 个场景 + 30 张分镜关键帧")</li>
+    </ol>
+
+    <h2 id="sec-8">玉哥说</h2>
+
+    <div class="callout warn">
+      <span class="ico">📢</span>
+      <p><strong>📢 玉哥说</strong>:<br>
+      1. <strong>6 步不是顺序,是飞轮</strong> · 06 数据回流到 01,是漫剧"越做越顺"的秘密<br>
+      2. <strong>每步都有验收标准</strong> · 不是"我做了",是"做完长啥样"。没标准 = 没做完<br>
+      3. <strong>首次 7 天是正常</strong> · 不要焦虑,小张同学第一集才 8000 播放,但跑通了流程就值了<br>
+      4. <strong>5 部里 1-2 部爆是常态</strong> · 别期待每部爆款,要持续迭代</p>
+    </div>
+
+    <nav class="bottom-nav">
+      <a class="prev" href="A-2.html">
+        <span class="label">← 上一节</span>
+        <span class="title">A-2 漫剧和短剧区别</span>
+      </a>
+      <a class="next" href="A-4.html">
+        <span class="label">下一节 →</span>
+        <span class="title">A-4 必备工具清单</span>
+      </a>
+    </nav>
+  </main>
+
+  <aside class="sidebar-right" id="sidebar-right"></aside>
+</div>
+
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="扫码关注玉哥">
+      <img class="qr-img" src="../../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../../changelog.html">📅 更新日志</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+
+<script src="../../assets/tutorial.js?v=fix20260927-2215"></script>
+<script src="../../assets/site-enhance.js?v=fix20260927-2215" defer></script>
+</body>
+</html>

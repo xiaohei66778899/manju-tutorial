@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="E-34 反推提示词(图 → 词) · 漫剧制作教程站。玉哥整理的 AI 漫剧与短剧制作实用教程，包含步骤、案例和练习。">
+<title>E-34 反推提示词(图 → 词) · 漫剧制作教程站</title>
+<link rel="stylesheet" href="../../assets/site.css?v=fix20260927-2215">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg?v=fix20260927-2215">
+<link rel="stylesheet" href="../../assets/tutorial.css?v=fix20260927-2215">
+</head>
+<body>
+<header class="topbar">
+  <div class="logo">🎬 漫剧教程站 <small>v3 · 玉哥</small></div>
+  <nav>
+    <a href="../../index.html">首页</a>
+    <a href="../all-courses.html" class="active">漫剧教程</a>
+    <a href="../../prompts/image-prompts.html">图片作品</a>
+    <a href="../../works/index.html">视频作品</a>
+    <a href="../../prompts/prompts.html">prompt 模板</a>
+    <a href="../../tools/toolkit.html">工具箱</a>
+    <a href="../../qa/troubleshooting.html">问题库</a>
+    <a href="../../news/industry.html">行业新闻</a>
+    </nav>
+  <div class="search"><input type="search" placeholder="🔍 搜…"></div>
+  <button class="theme-toggle" title="深浅主题切换" onclick="document.documentElement.classList.toggle('dark')">🌙</button>
+</header>
+<div class="layout-3col">
+  <aside class="sidebar-left" id="sidebar-left"></aside>
+  <main class="content">
+    <div class="breadcrumb"><a href="../../index.html">首页</a> <span>›</span> <a href="../all-courses.html">E AI 出图</a> <span>›</span> E-34 反推提示词</div>
+    <h1>E-34 · 反推提示词(图 → 提示词)</h1>
+    <h2 id="sec-1">1. 反推工具 3 大主流</h2>
+    <div class="tbl-wrap"><table><thead><tr><th>工具</th><th>学员用</th></tr></thead><tbody>
+    <tr><td><strong>CLIP Interrogator</strong></td><td><strong>50%</strong></td></tr>
+    <tr><td>WD Tagger(WD14)</td><td>30%</td></tr>
+    <tr><td>JoyTag</td><td>20%</td></tr>
+    </tbody></table></div>
+
+    <h2 id="sec-2">2. CLIP Interrogator(学员主流)</h2>
+    <ul>
+      <li><strong>网址</strong>:github.com/phineas-pta/本地出图工具-clIP-interrogator</li>
+      <li><strong>节点</strong>:直接加节点</li>
+      <li><strong>输出</strong>:完整提示词(含质量词 + 主体 + 风格)</li>
+    </ul>
+
+    <h2 id="sec-3">3. WD Tagger(WD14)</h2>
+    <ul>
+      <li><strong>用途</strong>:打标签(动漫向)</li>
+      <li><strong>输出</strong>:逗号分隔的标签列表</li>
+      <li><strong>学员</strong>:LoRA 训练打标必用</li>
+      <li><strong>节点</strong>:本地出图工具-WD14-Tagger</li>
+    </ul>
+
+    <h2 id="sec-4">4. JoyTag(2025 新)</h2>
+    <ul>
+      <li><strong>优势</strong>:准确度高</li>
+      <li><strong>支持</strong>:真实图 + 动漫图</li>
+      <li><strong>学员</strong>:20% 在试</li>
+    </ul>
+
+    <h2 id="sec-5">5. 学员反推工作流</h2>
+    <ol>
+      <li>找到好图(小红书 / CivitAI)</li>
+      <li>下载到本地</li>
+      <li>本地加  Interrogator 节点</li>
+      <li>出提示词</li>
+      <li>改改直接用</li>
+    </ol>
+
+    <h2 id="sec-6">6. 反推提示词二次加工</h2>
+    <p>反推词 ≠ 直接用,要加工:</p>
+    <ul>
+      <li>删无关词(如别人 LoRA 触发词)</li>
+      <li>调权重((key:1.3))</li>
+      <li>补镜头词 / 灯光词</li>
+      <li>翻译中文 → 英文</li>
+    </ul>
+
+    <h2 id="sec-7">7. 数字时间</h2>
+    <div class="tbl-wrap"><table><thead><tr><th>操作</th><th>耗时</th></tr></thead><tbody>
+    <tr><td>反推单图</td><td>5-10 秒</td></tr>
+    <tr><td>提示词二次加工</td><td>2-5 分钟</td></tr>
+    <tr><td>出图对比</td><td>20 秒</td></tr>
+    </tbody></table></div>
+
+    <h2 id="sec-8">8. 常见误解</h2>
+    <div class="callout bad"><span class="ico">❌</span><p><strong>误解</strong>:反推词能完美还原 —— 错。反推只是猜测,真实提示词可能差很多。</p></div>
+    <div class="callout bad"><span class="ico">❌</span><p><strong>误解</strong>:别人的图都能完美复刻 —— 错。模型 + LoRA + 种子都是变量。</p></div>
+
+    <h2 id="sec-9">9. 本节小练习</h2>
+    <ol>
+      <li>下载一张好看的图</li>
+      <li>本地反推</li>
+      <li>改改提示词出图</li>
+      <li>对比效果</li>
+    </ol>
+
+    <h2 id="sec-10">10. 学完能做啥</h2>
+    <ul class="checklist"><li>能反推提示词</li><li>会二次加工</li><li>抄作业基础</li></ul>
+
+    <h2 id="sec-11">11. 玉哥说</h2>
+    <div class="callout warn"><span class="ico">📢</span><p><strong>📢 玉哥说</strong>:<br>
+    1. <strong>学员 80% 用反推</strong> · 抄作业神器<br>
+    2. <strong>CLIP Interrogator 是首选</strong><br>
+    3. <strong>WD Tagger 是训练必备</strong><br>
+    4. <strong>反推词要二次加工</strong></p></div>
+
+    <nav class="bottom-nav">
+      <a class="prev" href="E-33.html"><span class="label">← 上一节</span><span class="title">E-33 调试 30 招</span></a>
+      <a class="next" href="E-35.html"><span class="label">下一节 →</span><span class="title">E-35 出图审核</span></a>
+    </nav>
+  </main>
+  <aside class="sidebar-right" id="sidebar-right"></aside>
+</div>
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="扫码关注玉哥">
+      <img class="qr-img" src="../../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../../changelog.html">📅 更新日志</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+<script src="../../assets/tutorial.js?v=fix20260927-2215"></script>
+<script src="../../assets/site-enhance.js?v=fix20260927-2215" defer></script>
+</body>
+</html>

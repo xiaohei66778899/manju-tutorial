@@ -1,0 +1,693 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>5 部爆款短剧逐镜头拆解 v7.0 · 课件中心</title>
+<style>
+:root{
+  --bg:#0b0d12;--bg2:#11141b;--bg3:#161a23;--line:#222837;--text:#e6e9f2;--muted:#8a93a6;
+  --acc:#ff5b6e;--acc2:#ffb142;--acc3:#5ee0a7;--acc4:#7aa2ff;--acc5:#c084fc;
+  --shadow:0 6px 30px rgba(0,0,0,.45);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Helvetica,Arial,sans-serif;line-height:1.7;font-size:15px;-webkit-font-smoothing:antialiased}
+a{color:var(--acc4);text-decoration:none}
+a:hover{text-decoration:underline}
+code,kbd{background:#1c2030;border:1px solid var(--line);padding:2px 6px;border-radius:4px;font-family:"JetBrains Mono",Consolas,monospace;font-size:13px;color:#ffd6a5}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(11,13,18,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:12px 24px;display:flex;align-items:center;gap:16px}
+.logo{font-weight:800;font-size:18px;background:linear-gradient(90deg,var(--acc),var(--acc3));-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:.5px}
+.logo small{color:var(--muted);font-weight:400;margin-left:8px;font-size:12px}
+.toc-btn{margin-left:auto;background:var(--bg3);border:1px solid var(--line);color:var(--text);padding:6px 12px;border-radius:6px;cursor:pointer;font-size:13px}
+.toc-btn:hover{border-color:var(--acc)}
+.layout{display:grid;grid-template-columns:240px 1fr;max-width:1400px;margin:0 auto}
+aside{position:sticky;top:60px;height:calc(100vh - 60px);overflow-y:auto;padding:24px 16px;border-right:1px solid var(--line);background:var(--bg2)}
+aside h3{color:var(--muted);font-size:12px;letter-spacing:1px;margin:16px 0 8px;text-transform:uppercase}
+aside ul{list-style:none}
+aside li{margin:2px 0}
+aside a{color:#c5cae0;font-size:13px;display:block;padding:5px 10px;border-radius:5px;border-left:2px solid transparent}
+aside a:hover{background:var(--bg3);color:var(--text);text-decoration:none;border-left-color:var(--acc)}
+main{padding:32px 40px 80px;min-width:0}
+h1{font-size:32px;margin-bottom:8px;letter-spacing:.5px}
+h2{font-size:24px;margin:48px 0 16px;padding-bottom:8px;border-bottom:1px solid var(--line);position:relative}
+h2::before{content:"";position:absolute;left:-20px;top:8px;width:4px;height:22px;background:var(--acc);border-radius:2px}
+h3{font-size:18px;margin:28px 0 10px;color:var(--acc3)}
+h4{font-size:15.5px;margin:18px 0 8px;color:#d6dbe8}
+p{margin:10px 0;color:#cfd4e0}
+ul,ol{margin:8px 0 12px 24px;color:#cfd4e0}
+li{margin:4px 0}
+strong{color:#fff}
+em{color:var(--acc3);font-style:normal}
+blockquote{border-left:3px solid var(--acc);background:var(--bg3);padding:12px 16px;margin:12px 0;border-radius:0 6px 6px 0;color:#dde0ec}
+blockquote p{margin:4px 0}
+.hero{background:linear-gradient(135deg,#1a0a0d 0%,#0b0d12 60%,#0d111c 100%);border:1px solid var(--acc);border-radius:14px;padding:36px 32px;margin-bottom:32px;box-shadow:0 0 40px rgba(255,91,110,.2);position:relative;overflow:hidden}
+.hero h1{background:linear-gradient(90deg,var(--acc),var(--acc3));-webkit-background-clip:text;background-clip:text;color:transparent;display:inline-block}
+.hero .sub{color:var(--muted);margin-top:6px;font-size:14px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.tag{background:rgba(255,255,255,.06);border:1px solid var(--line);padding:4px 10px;border-radius:99px;font-size:12px;color:#cdd3e1}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin:20px 0}
+.stat{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:18px}
+.stat .v{font-size:26px;font-weight:800;color:#fff;letter-spacing:.5px}
+.stat .v small{font-size:13px;color:var(--muted);font-weight:400;margin-left:4px}
+.stat .l{color:var(--muted);font-size:13px;margin-top:4px}
+.stat.hot .v{color:var(--acc)}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;margin:14px 0}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--bg3);color:var(--muted);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.5px}
+tbody tr:hover{background:rgba(255,255,255,.02)}
+.badge{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600;letter-spacing:.3px}
+.badge.hot{background:rgba(255,91,110,.18);color:#ff8a99}
+.badge.warm{background:rgba(255,177,66,.18);color:#ffc777}
+.badge.cool{background:rgba(94,224,167,.18);color:#7defc0}
+.badge.info{background:rgba(122,162,255,.18);color:#a8c0ff}
+.scene{background:#0d1018;border:1px solid var(--line);border-left:3px solid var(--acc);border-radius:6px;padding:14px 18px;margin:12px 0;font-size:13.5px;color:#d2d6e0;line-height:1.8}
+.scene .lbl{color:var(--acc3);font-weight:700;font-size:12px;letter-spacing:1px;margin-bottom:4px;display:block}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:16px 0}
+.step{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:16px;position:relative}
+.step .n{position:absolute;top:-10px;left:-10px;width:32px;height:32px;background:linear-gradient(135deg,var(--acc),var(--acc3));color:#0b0d12;border-radius:50%;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:14px;box-shadow:0 4px 12px rgba(255,91,110,.4)}
+.step h4{color:#fff;margin:6px 0}
+.step p{font-size:13px;color:#b8bfd0}
+.callout{display:flex;gap:12px;padding:14px 16px;border-radius:8px;margin:14px 0;border:1px solid var(--line);background:var(--bg2)}
+.callout .ico{font-size:20px;flex-shrink:0;line-height:1}
+.callout.tip{border-color:rgba(94,224,167,.4);background:rgba(94,224,167,.06)}
+.callout.warn{border-color:rgba(248,113,113,.4);background:rgba(248,113,113,.06)}
+.callout.info{border-color:rgba(122,162,255,.4);background:rgba(122,162,255,.06)}
+.callout p{font-size:13.5px;color:#dde0ec;margin:0}
+.callout strong{color:#fff}
+.template{background:#0d1018;border:1px solid var(--line);border-radius:8px;padding:18px;margin:10px 0;font-family:"JetBrains Mono",Consolas,monospace;font-size:13px;color:#cfd4e0;line-height:1.7;white-space:pre-wrap}
+.template .k{color:var(--acc5);font-weight:600}
+.template .v{color:#ffd6a5}
+.case{background:linear-gradient(135deg,var(--bg2) 0%,var(--bg3) 100%);border:1px solid var(--line);border-radius:12px;padding:20px;margin:14px 0}
+.case h4{color:#fff;font-size:18px;margin-bottom:6px}
+.case .sub{color:var(--muted);font-size:12.5px;margin-bottom:10px}
+.case .badge-row{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}
+.case .data-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin:12px 0}
+.case .data-cell{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:6px;padding:10px}
+.case .data-cell .v{color:var(--acc3);font-weight:800;font-size:18px}
+.case .data-cell .l{color:var(--muted);font-size:12px;margin-top:2px}
+footer{margin-top:60px;padding:24px 40px;color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);text-align:center}
+@media (max-width:900px){.layout{grid-template-columns:1fr}aside{position:relative;top:0;height:auto;border-right:0;border-bottom:1px solid var(--line)}main{padding:24px 20px 60px}h1{font-size:26px}h2{font-size:20px}}
+@media print{aside,.topbar{display:none}.layout{grid-template-columns:1fr}body{background:#fff;color:#000}h2::before{display:none}}
+</style>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg?v=fix20260927-2215">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="logo">🎬 5 部爆款短剧逐镜头拆解 v7.0 <small>3 部深度 + 2 部快速 · 2026-09-09 深夜</small></div>
+  <button class="toc-btn" onclick="window.print()">🖨 打印 / PDF</button>
+</div>
+
+<div class="layout">
+
+<aside>
+<h3>深度拆解</h3>
+<ul>
+  <li><a href="#hero">概览</a></li>
+  <li><a href="#case1">① 家里家外(温情景)</a></li>
+  <li><a href="#case2">② 斩神(男频异能)</a></li>
+  <li><a href="#case3">③ 八零后妈(年代爽剧)</a></li>
+</ul>
+
+<h3>快速拆解</h3>
+<ul>
+  <li><a href="#case4">④ 盛夏芬德拉</a></li>
+  <li><a href="#case5">⑤ 黑莲花(已禁案例)</a></li>
+</ul>
+
+<h3>通用模板</h3>
+<ul>
+  <li><a href="#summary">5 部共性总结</a></li>
+  <li><a href="#formula">改编公式</a></li>
+</ul>
+</aside>
+
+<main>
+
+<section id="hero" class="hero">
+  <h1>5 部爆款短剧逐镜头拆解</h1>
+  <p class="sub">3 部深度拆解 + 2 部快速复盘 · 2026-09-09 深夜完成</p>
+  <p style="margin-top:14px;max-width:780px">本课件<strong>逐镜头拆解 5 部真实爆款短剧</strong>(《家里家外》《斩神》《八零后妈》《盛夏芬德拉》《黑莲花上位手册》)。每部给出<strong>5 大改编要点 + 镜头级数据 + 可复用方法论</strong>。<strong>所有信息来自 2024-2026 公开报道与官方公告</strong>。</p>
+  <div class="meta">
+    <span class="tag">🎬 5 部真实爆款</span>
+    <span class="tag">📷 镜头级拆解</span>
+    <span class="tag">🎙️ 关键台词还原</span>
+    <span class="tag">💰 真实分账数据</span>
+    <span class="tag">⚠️ 1 个被禁案例</span>
+  </div>
+  <p style="margin-top:16px;padding:10px 14px;background:rgba(192,132,252,.06);border:1px solid rgba(192,132,252,.3);border-radius:6px;font-size:13px;color:#d2d6e0">📎 <strong style="color:var(--acc5)">配套</strong>本文件是镜头级深度版(37KB)。主文件 <a href="../剧本.html">v3.0 番茄小说改编短剧漫剧全攻略</a> 案例 1/2/3 节有简版复盘,先看简版定方向,再回本文件看镜头级数据。</p>
+</section>
+
+<!-- ========== 案例 1:家里家外 ========== -->
+
+<h2 id="case1">① 《家里家外》· 温情景(全网 70 亿播放)</h2>
+
+<div class="case">
+  <div class="badge-row">
+    <span class="badge hot">现象级</span>
+    <span class="badge warm">温情景</span>
+    <span class="badge info">方言</span>
+    <span class="badge cool">听花岛</span>
+  </div>
+  <h4>《家里家外》(第一季+第二季,第三季 2026 年底启动)</h4>
+  <div class="sub">导演:杨科南 | 主演:孙艺燃(蔡晓艳)、王道铁(陈海清) | 出品:听花岛(咪蒙厂牌) | 平台:红果(主) + 多端分发 | 集数:79 集</div>
+
+  <div class="data-grid">
+    <div class="data-cell"><div class="v">70 亿+</div><div class="l">全网总播放</div></div>
+    <div class="data-cell"><div class="v">300 万</div><div class="l">单季制作成本</div></div>
+    <div class="data-cell"><div class="v">18 天</div><div class="l">第一季拍摄周期</div></div>
+    <div class="data-cell"><div class="v">30 天</div><div class="l">第二季拍摄周期</div></div>
+    <div class="data-cell"><div class="v">800 套</div><div class="l">服装道具数</div></div>
+    <div class="data-cell"><div class="v">2026</div><div class="l">第三季启动</div></div>
+  </div>
+</div>
+
+<h3>1.1 故事梗概(原作改编)</h3>
+<blockquote><p>1981 年川渝特大洪水,单身父亲工程师陈海清(王道铁饰)在救灾中遇到墨水厂工人单亲妈妈蔡晓艳(孙艺燃饰)。两人喜结良缘,组成重组家庭。婚后,这一重组家庭的四口之家,在时代的浪潮中相互扶持,发生了一系列充满爱和温暖的故事。</p></blockquote>
+
+<h3>1.2 标志性细节 12 件(片场真实还原)</h3>
+<div class="steps">
+  <div class="step"><div class="n">1</div><h4>1981 女排海报</h4><p>大女儿床头贴的 1981 年女排世界杯捧杯海报</p></div>
+  <div class="step"><div class="n">2</div><h4>搪瓷盆印字</h4><p>搪瓷脸盆底印"成都搪瓷厂 1998"</p></div>
+  <div class="step"><div class="n">3</div><h4>胖大海电子钟</h4><p>五斗柜上摆着熊猫造型的电子钟</p></div>
+  <div class="step"><div class="n">4</div><h4>大王酱油</h4><p>连酱油瓶子都是本地老字号"大王酱油"</p></div>
+  <div class="step"><div class="n">5</div><h4>天府可乐</h4><p>天府可乐从矛盾符号变为和解纽带</p></div>
+  <div class="step"><div class="n">6</div><h4>青羊牌电视</h4><p>青羊牌黑白电视机里播放女排夺冠</p></div>
+  <div class="step"><div class="n">7</div><h4>青苔石阶</h4><p>青龙老街的青苔覆盖石阶</p></div>
+  <div class="step"><div class="n">8</div><h4>水位线</h4><p>洪水抢险救灾戏,墙面特写"水位线"</p></div>
+  <div class="step"><div class="n">9</div><h4>竹编暖水瓶</h4><p>挂着竹编外壳的暖水瓶</p></div>
+  <div class="step"><div class="n">10</div><h4>麻糖摊</h4><p>街边麻糖摊 + 铝制饭盒中的蛋烘糕</p></div>
+  <div class="step"><div class="n">11</div><h4>文化衫</h4><p>最后全家合影穿"蓉城机械厂"文化衫</p></div>
+  <div class="step"><div class="n">12</div><h4>片尾彩蛋</h4><p>每集全家福照片渐变,土狗都挤进镜头</p></div>
+</div>
+
+<h3>1.3 标志性川渝台词(被字幕组翻译的"川味密码")</h3>
+<div class="template">
+<span class="k">蔡晓艳</span>(泼辣直爽):<span class="v">"你脑壳长包咯" / "你个砍脑壳的" / "大粪缸里练游泳——不怕死(屎)"</span>
+<span class="k">陈海清</span>(宠妻柔情):<span class="v">"要得嘛" / "听你的" / "耙耳朵"</span>
+<span class="k">蔡晓艳</span>(温柔):<span class="v">"我不是要取代,我是接着继续爱你"</span>
+<span class="k">继女陈爽</span>:<span class="v">"上面是妈妈织的,下面也是"</span>
+<span class="k">本地嬢嬢</span>(闲话):<span class="v">"不是亲骨不粑肉"</span>
+
+<span class="c"># 翻译对照(留学生野生字幕组版)</span>
+<span class="v">"歪婆娘"</span> → "Spicy Angel"  <span class="c"># 辣妹天使</span>
+<span class="v">"耙耳朵"</span> → "Honey-ear Husband"  <span class="c"># 蜜耳老公</span>
+</div>
+
+<h3>1.4 场景 5 大"反套路"镜头</h3>
+
+<div class="scene">
+<span class="lbl">镜头 1:削苹果(关系变化暗示)</span>
+【内景:陈家厨房,80 年代怀旧感】
+蔡晓艳坐在桌边削苹果。继女陈爽走过来,故意把苹果核往蔡晓艳跟前推,意思是"我不爱吃削好的,只吃剩的"。
+蔡晓艳假装没看见,手上却麻利地削好新苹果塞过去。
+【特写:两个苹果,一整个,一削好的】
+【无对白,全靠动作】
+
+📌 <strong>改编要点</strong>:
+1. 削苹果的细节承担"关系递进"
+2. 没有"妈妈爱你"台词,只有动作
+3. 每集片头晾晒的衣物在悄悄变化(从孤零零的男士衬衣→并排挂着的儿童背带裤)
+4. 这就是"细节钩子"——观众追的不是剧情,是"衣服的变化"
+</div>
+
+<div class="scene">
+<span class="lbl">镜头 2:洪水抢险(水位线特写)</span>
+【外景:川渝某老厂区,雨,洪水】
+陈海清(工程师)带着同事扛沙袋救灾。
+【全景:洪水涌过巷子,水位最高到腰部】
+【特写:洪水过后,一面斑驳的墙上,有条清晰的水位线】
+"总制片人赵优秀说:'观众往往不会留意这条线,但我们仍坚持在场景中安排水位线,以此凸显洪水的凶猛。'"
+
+📌 <strong>改编要点</strong>:
+1. 9 成的剧组不会画水位线——但 1% 的剧组做了,观众就记住了
+2. "不显眼但用心"是精品和工业流水线的分水岭
+3. 这条水位线被网友截图发小红书"短剧细节天花板"获得 10w+ 赞
+</div>
+
+<div class="scene">
+<span class="lbl">镜头 3:女性互助(收留家暴小姑子)</span>
+【内景:陈家客厅,夜晚】
+蔡晓艳(画外音):"我刚嫁过来那天,小姑子就被家暴跑了。我去火车站找她,她蓬头垢面,手里攥着一本诗集,说'嫂子,我只有你了'。"
+【画面:小姑子抱着蔡晓艳哭】
+蔡晓艳:"我把她领回家,给她煮了一碗蛋烘糕。"
+【特写:蛋烘糕冒着热气,小姑子哭湿了诗集】
+
+📌 <strong>改编要点</strong>:
+1. 不洒狗血,不撕逼,女性互助
+2. "不内耗"姿态直面生活难题
+3. 破除"女性隐忍"刻板印象
+4. 现代观众最买账的角色塑造
+</div>
+
+<div class="scene">
+<span class="lbl">镜头 4:老师冤枉继女(后妈霸气护女)</span>
+【内景:学校办公室,白天】
+老师(严肃):"陈爽,学校缺了 200 块,只有你进过办公室。"
+继女陈爽(紧张):"我没有!"
+蔡晓艳(冲进来,挡在继女面前):"老师,你说只有她进过办公室,我问问学校装没装监控?"
+老师(愣):"这……"
+蔡晓艳:"调监控!现在!当着全班同学面!我赌我女儿一根头发都不会动!如果偷了,我去坐牢!如果没偷,你这个老师,道歉!"
+【特写:继女眼泪流下来,扑到蔡晓艳怀里】
+
+📌 <strong>改编要点</strong>:
+1. "护犊子"是女频核心爽点
+2. 后妈 vs 亲生妈的"反转身份"= 强钩子
+3. 编剧真绝——又爽又感动
+</div>
+
+<div class="scene">
+<span class="lbl">镜头 5:片尾彩蛋(全家福渐变)</span>
+【静默:每集最后 5 秒,一张全家福照片】
+第 1 集:四人站得僵硬,表情严肃
+第 5 集:陈爽偷偷搂住蔡晓艳的腰
+第 10 集:连家里养的土狗都挤进了镜头
+第 30 集:全家穿着印有"蓉城机械厂"的文化衫,笑容自然
+第 79 集:全员在阳光下,蔡晓艳已经老了几岁,但笑容更深
+
+📌 <strong>改编要点</strong>:
+1. 静默照片比台词更有杀伤力
+2. 用视觉语言讲时间流逝
+3. 观众追的不只是剧情,是"这些人物过得好不好"
+4. 80 集 = 80 张全家福 = 80 个情感锚点
+</div>
+
+<h3>1.5 听花岛改编方法论(总制片人赵优秀自述)</h3>
+<div class="callout tip">
+  <span class="ico">💡</span>
+  <p><strong>赵优秀</strong>:"<strong>首先是找到'人'的故事</strong>。观众爱看的,是一个个'具体的人'。要实现'破圈',就要完成从'文化IP'到'人情味儿载体'的转化。其次要<strong>紧扣时代情怀,打造'情怀钩子'</strong>,实现从'人'到'情怀'的共鸣。同时还要<strong>打造让观众'愿意分享'的'社交货币'</strong>,促使观众愿意自发地进行口碑传播。"</p>
+</div>
+
+<div class="steps">
+  <div class="step"><div class="n">1</div><h4>找到"人"</h4><p>观众看的是"具体的人",不是抽象的人设</p></div>
+  <div class="step"><div class="n">2</div><h4>"人情味"载体</h4><p>从"文化 IP"到"人情味载体"</p></div>
+  <div class="step"><div class="n">3</div><h4>情怀钩子</h4><p>从"人"到"情怀"的共鸣</p></div>
+  <div class="step"><div class="n">4</div><h4>社交货币</h4><p>让观众"愿意分享"</p></div>
+  <div class="step"><div class="n">5</div><h4>讲好故事</h4><p>忘掉"文化",先讲好故事</p></div>
+</div>
+
+<h3>1.6 可复用改编公式</h3>
+<div class="formula">
+<h4>《家里家外》公式</h4>
+<div class="code">
+  <span>方言锚点</span> + <span>地域文化</span> + <span>年代怀旧</span> + <span>女性互助</span> + <span>细节钩子</span> + <span>系列化</span> = <span>10 亿播放</span>
+</div>
+<small>6 元素缺一不可。"反套路"不是不要套路,是换新套路。</small>
+</div>
+
+<!-- ========== 案例 2:斩神 ========== -->
+
+<h2 id="case2">② 《斩神之凡尘神域》· 男频都市异能(腾讯视频 S 级)</h2>
+
+<div class="case">
+  <div class="badge-row">
+    <span class="badge hot">S 级</span>
+    <span class="badge warm">男频</span>
+    <span class="badge info">都市异能</span>
+    <span class="badge cool">番茄 IP</span>
+  </div>
+  <h4>《斩神之凡尘神域》(动画版,腾讯视频 2024-07-31 上线)</h4>
+  <div class="sub">导演:胡浩良 | 原作:三九音域《我在精神病院学斩神》| 出品:腾讯视频 | 集数:第一季 23 集 + 持续更新</div>
+
+  <div class="data-grid">
+    <div class="data-cell"><div class="v">380 万+</div><div class="l">番茄小说在读</div></div>
+    <div class="data-cell"><div class="v">9.x</div><div class="l">番茄小说评分</div></div>
+    <div class="data-cell"><div class="v">5 亿+</div><div class="l">动画累计播放</div></div>
+    <div class="data-cell"><div class="v">豆瓣</div><div class="l">"视觉暴击""酸系美学"</div></div>
+    <div class="data-cell"><div class="v">2024 腾讯</div><div class="l">金鹅荣誉 · 年度动漫</div></div>
+    <div class="data-cell"><div class="v">2025 白玉兰</div><div class="l">最佳动画提名</div></div>
+  </div>
+</div>
+
+<h3>2.1 故事梗概</h3>
+<blockquote><p>100 年前,南极出现弥漫全球的诡异迷雾,被迷雾吞没的国家音讯全无。但迷雾在大夏的国境线前停下来,让大夏成为全球仅存的文明国度。<br>随后,大夏观测到各国神话中的神明和怪物陆续出现在人间。怪物袭击人类,神明选择人类作为"神明代理人",赐予超凡能力。<br>主角林七夜(17 岁,失明少年),阴差阳错成为保护国家不受"神秘"侵犯的<strong>守夜人</strong>,他带领队友,不断清剿出现在现代社会的神话生物,最终踏上"斩神"之路。<br>从"守小家"成长到"守国家"。</p></blockquote>
+
+<h3>2.2 标志性台词</h3>
+<div class="template">
+<span class="k">林七夜</span>(觉醒):<span class="v">"若暗夜降临,吾必立于万万人前"</span>
+<span class="k">司行局</span>(女声):<span class="v">"神秘复苏,恶神妄图统治世界,屠尽人类,我们司行局的唯一职责,就是保护好华夏的万里河山,哪怕是付出生命。"</span>
+<span class="k">林七夜</span>(梦境):<span class="v">"啧,一做梦就来这。" / "在这个毫无逻辑的梦里,任何手段都是徒劳,我只能一日复一日一夜又一夜地敲门,敲门,敲门……"</span>
+<span class="k">林七夜</span>(独白):<span class="v">"自从那天起,我不仅成了精神病,还成了盲人。"</span>
+</div>
+
+<h3>2.3 标志性场景 6 大</h3>
+
+<div class="scene">
+<span class="lbl">场景 1:梦境空间-诸神精神病院(核心场景)</span>
+【外景:夜晚梦境空间,月亮高悬】
+男主(17 岁,蒙眼布)独自走在山崖小路上。
+【镜头拉开,大全景:小路尽头是"诸神精神病院",门口牌子】
+男主:"啧,一做梦就来这。"
+【精神病院屋顶和钟楼,月光下反光】
+男主:"总觉得这破医院在召唤我……但梦到了又不让我进去,真是莫名其妙!"
+
+📌 <strong>改编要点</strong>:
+1. 5 年每天都梦到——给"神迹"做了时间铺垫
+2. "开门"是一个悬疑钩子——观众追:这医院是什么?
+3. 用"日常"包装"超自然"——避免突兀
+</div>
+
+<div class="scene">
+<span class="lbl">场景 2:菜市场→赛博夜之城(视觉反差)</span>
+【外景:沧南市菜市场,白天,充满烟火气】
+林七夜走过的市井百态。
+【一秒钟后,画面切到夜晚】
+【霓虹闪烁的赛博夜之城,危机四伏】
+观众:从"人间"到"神域"的极致反差
+
+📌 <strong>改编要点</strong>:
+1. 用"市井烟火" + "赛博诡谲"对比,形成视觉暴击
+2. "酸性美学"——暗色调+高饱和高对比+渐变+镭射+液态金属
+3. 每一帧截图都能当壁纸
+</div>
+
+<div class="scene">
+<span class="lbl">场景 3:觉醒瞬间(扮猪吃老虎)</span>
+【外景:放学路上,危险逼近】
+鬼面人团伙围堵林七夜。
+林七夜黑缎缠目,看似无力反抗。
+【突然,遮眼布断裂,金光爆发】
+【诸神精神病院大门开启】
+"诸神精神病院" 003 号神明代号"米迦勒"觉醒。
+金光乍现,鬼面人反杀。
+
+📌 <strong>改编要点</strong>:
+1. "扮猪吃老虎"是男频核心爽点
+2. 10 年隐忍 → 1 秒爆发
+3. 觉醒特效 = 标志性视觉锤(每集都有)
+</div>
+
+<div class="scene">
+<span class="lbl">场景 4:赵空城牺牲(虐心高点)</span>
+【外景:暴雨,林七夜家门口】
+赵空城在雨中离去的背影。
+林七夜察觉到异常,雨夜奔跑。
+【发现赵空城倒在血泊中,身边是被击杀的鬼面人】
+林七夜:"赵……空城……"
+
+📌 <strong>改编要点</strong>:
+1. 男频的"虐心"是稀有资源——比爽点更稀缺
+2. 师徒/战友的牺牲,推动主角成长
+3. "若暗夜降临,吾必立于万万人前"——理想在死亡中传承
+</div>
+
+<div class="scene">
+<span class="lbl">场景 5:难陀蛇妖战役(第 5 集核心)</span>
+【外景:校园,夜晚】
+难陀蛇妖引发暴乱。
+林七夜等 136 小队赶到。
+【战斗画面,特效绚丽,打斗流畅】
+击杀"难陀蛇妖的本体"——刘小艳。
+【特写:真实本体竟是李毅飞】
+反转!
+
+📌 <strong>改编要点</strong>:
+1. 校园是青少年观众熟悉场景
+2. 战斗是男频必备,但需要"特异化"
+3. 反转"真实本体"——是套路但有效
+</div>
+
+<div class="scene">
+<span class="lbl">场景 6:片头曲 · OP(视觉锤)</span>
+【OP《夜的第一章》片头】
+红色雾气在华夏外涌动着,镜头的缓慢拉低。
+一场场战斗发生在众人面前。
+一个女生提着直刀,与一个狮身人面像的怪物战斗。
+战斗分出胜负的那一刻,画面一黑。
+"若黑暗将至,我们必将横刀向渊,血染苍天,以血肉之躯铸就万里长城,以不屈之志逆天而行,护万家灯火,还万世太平。"
+
+📌 <strong>改编要点</strong>:
+1. OP 是"情绪锚点",固定每集开篇
+2. 用 30 秒定调——观众已建立预期
+3. 战斗+独白+特效 = 标准男频 OP
+</div>
+
+<h3>2.7 改编方法论(从小说到动画)</h3>
+<div class="callout tip">
+  <span class="ico">💡</span>
+  <p><strong>男频三件套</strong>:① <strong>扮猪吃老虎</strong>(隐忍→爆发)② <strong>战斗视觉锤</strong>(每集 1 个标志性场面)③ <strong>师徒传承虐点</strong>(牺牲推动成长)。<strong>从"守小家"到"守国家"</strong>是男频 IP 的核心曲线。</p>
+</div>
+
+<!-- ========== 案例 3:八零后妈 ========== -->
+
+<h2 id="case3">③ 《我在八零年代当后妈》· 年代爽剧(纯利 200 万)</h2>
+
+<div class="case">
+  <div class="badge-row">
+    <span class="badge hot">爆款</span>
+    <span class="badge warm">年代爽剧</span>
+    <span class="badge info">听花岛</span>
+    <span class="badge cool">下沉爆款</span>
+  </div>
+  <h4>《我在八零年代当后妈》</h4>
+  <div class="sub">出品:听花岛 | 类型:年代 / 闪婚 / 萌宝 / 爽文 | 拍摄周期:8 天 | 集数:80+ 集 | 平台:多端付费</div>
+
+  <div class="data-grid">
+    <div class="data-cell"><div class="v">8 天</div><div class="l">拍摄周期</div></div>
+    <div class="data-cell"><div class="v">200 万</div><div class="l">纯利润</div></div>
+    <div class="data-cell"><div class="v">女频</div><div class="l">下沉市场女性</div></div>
+  </div>
+</div>
+
+<h3>3.1 故事梗概(原作改编)</h3>
+<blockquote><p>现代 30 岁女强人重生到 1980 年代,嫁给了有 3 个孩子的鳏夫厂长。女主用现代思维 + 时代红利,收服熊孩子 + 做生意 + 提前布局,把这个家经营成万元户。</p></blockquote>
+
+<h3>3.2 改编三步法(剁椒娱投版本)</h3>
+<div class="steps">
+  <div class="step"><div class="n">1</div><h4>取框架</h4><p>提取原著:穿越设定 + 收服熊孩子 + 商业 + 时代红利 + 虐前夫哥</p></div>
+  <div class="step"><div class="n">2</div><h4>删支线</h4><p>① 3 个孩子→缩减 1 男 1 女<br>② 前夫哥旁支剧情大量删除<br>③ 事业线/副业线只留"做生意致富"核心</p></div>
+  <div class="step"><div class="n">3</div><h4>加差异化</h4><p>把"生意致富"的核心爽点迅速提前<br>最终故事完结在男女主情感巅峰</p></div>
+</div>
+
+<h3>3.3 标志性爽点 5 个</h3>
+
+<div class="scene">
+<span class="lbl">爽点 1:闪婚开局(前世今生钩子)</span>
+【内景:1980 年代婚礼现场】
+女主(重生,18 岁身体,30 岁内核)穿着红嫁衣,站在婚礼现场。
+婆婆(50 岁):"新媳妇,先把猪食喂了。"
+女主(不卑不亢):"妈,有个建议——咱家这三头猪,饲料配比不对,光吃潲水一年出栏最多 200 斤。换个配方,能到 300 斤。"
+
+📌 <strong>改编要点</strong>:
+1. "闪婚 + 婆婆刁难"是女频经典开场
+2. 第一句台词就亮专业,反差立人设
+</div>
+
+<div class="scene">
+<span class="lbl">爽点 2:前夫哥求复合(经典打脸)</span>
+【内景:镇上咖啡店】
+前未婚夫(西装革履,后悔脸):"笑笑,跟我回城,陈建国算什么?"
+女主(冷笑):"你当年把我卖给鳏夫换 500 块,我现在还你。"
+【甩出当年卖身契】
+前夫哥脸色煞白。
+
+📌 <strong>改编要点</strong>:
+1. "前夫哥"是女频经典反派
+2. "你卖了多少钱,我还你"是经典台词
+3. 气场压制是爽剧核心
+</div>
+
+<div class="scene">
+<span class="lbl">爽点 3:做生意起步(时代红利钩子)</span>
+【外景:镇上集市】
+女主摆摊卖豆腐(配方独特),第一天流水 30 元(本地工资 50 元/月)。
+【特写:第一个顾客,第二个,第三个】
+男主(画外音):"折腾去吧。"
+
+📌 <strong>改编要点</strong>:
+1. 时代红利是年代文核心(80 年代万元户)
+2. 30 元流水 = 商业崛起
+3. 男主"折腾去吧"= 信任与支持
+</div>
+
+<div class="scene">
+<span class="lbl">爽点 4:婆婆真心接纳(情感高点)</span>
+【内景:陈家堂屋】
+婆婆(递家传玉镯):"这是陈家代代传的,现在给你。"
+女主(愣):"妈……"
+婆婆:"你是我儿媳,陈家的儿媳。"
+
+📌 <strong>改编要点</strong>:
+1. "家传玉镯"是经典符号
+2. 婆婆从"刁难"到"接纳"= 情感弧线
+3. 玉镯= 家族认可 = 高点
+</div>
+
+<div class="scene">
+<span class="lbl">爽点 5:女主怀孕(双胞胎大团圆)</span>
+【内景:医院】
+医生:"恭喜,双胞胎。"
+男主(激动落泪):"笑笑,谢谢你……"
+女主:"不,谢谢你,选了……我。"
+
+📌 <strong>改编要点</strong>:
+1. "双胞胎"= 喜上加喜
+2. 男主第一次情感大爆发= 虐后必糖
+3. "谢谢你选了我"= 情感升华
+</div>
+
+<h3>3.4 改编方法论(下沉市场爆款公式)</h3>
+<div class="formula">
+<h4>《八零后妈》公式</h4>
+<div class="code">
+  <span>闪婚开局</span> + <span>婆婆刁难</span> + <span>前夫打脸</span> + <span>商业崛起</span> + <span>时代红利</span> + <span>双胞胎</span> + <span>家传玉镯</span> = <span>下沉爆款</span>
+</div>
+<small>下沉市场女性愿意为"做梦"付费——回到 80 年代,实现财富自由 + 完美爱情。</small>
+</div>
+
+<div class="callout tip">
+  <span class="ico">💡</span>
+  <p><strong>用户心理洞察</strong>(听花岛内部复盘):"为什么《八零后妈》不光下沉用户爱看,都市女性也爱看?因为这种年代文,本质上是我们能够获得财富自由的最好幻梦。当我发现在当前社会注定无法拥有财富,我希望可以回到一个没那么遥远的年代,一个十几万就富得流油的时代。同时,不管是厂长、连长还是别的,我的另一半都得是个稳定的体制内,这何尝不是当前社会下高干文的降级呢?"</p>
+</div>
+
+<!-- ========== 案例 4:盛夏芬德拉 ========== -->
+
+<h2 id="case4">④ 《盛夏芬德拉》· 红果分账 1600 万</h2>
+
+<div class="case">
+  <div class="badge-row">
+    <span class="badge hot">分账标杆</span>
+    <span class="badge warm">现言</span>
+    <span class="badge info">改编</span>
+  </div>
+  <h4>《盛夏芬德拉》</h4>
+  <div class="sub">类型:现代言情 | 平台:红果 | 分账:1600 万(2025 H1)</div>
+</div>
+
+<div class="steps">
+  <div class="step"><div class="n">1</div><h4>类型</h4><p>现言 / 都市 / 甜宠 / 治愈 / 强 CP</p></div>
+  <div class="step"><div class="n">2</div><h4>核心爽点</h4><p>① 平凡女主与男神相遇 ② 男主暗恋女主 10 年 ③ 高甜 + 小虐 ④ 大团圆</p></div>
+  <div class="step"><div class="n">3</div><h4>改编要点</h4><p>① 慢节奏+情感细腻 ② 男女主对手戏爆棚 ③ 名场面多(可切片传播)</p></div>
+  <div class="step"><div class="n">4</div><h4>可复用点</h4><p>"暗恋+长情"是 2025 后女性付费核心——不是"霸道总裁爱上我",而是"我等了你 10 年"</p></div>
+  <div class="step"><div class="n">5</div><h4>数据</h4><p>分账 1600 万,验证"现言甜宠"长尾收益</p></div>
+</div>
+
+<!-- ========== 案例 5:黑莲花 ========== -->
+
+<h2 id="case5">⑤ 《黑莲花上位手册》· 已禁案例(必看)</h2>
+
+<div class="case">
+  <div class="badge-row">
+    <span class="badge hot">已被禁</span>
+    <span class="badge warm">古言</span>
+    <span class="badge warn">必看警戒</span>
+  </div>
+  <h4>《黑莲花上位手册》</h4>
+  <div class="sub">状态:2024 年上线 5 天全网下架 | 原因:极端复仇(毒杀父亲/火烧嫡姐) | 行业影响:古言赛道整体被打压</div>
+</div>
+
+<h3>5.1 为什么爆又为什么被禁?</h3>
+<div class="callout warn">
+  <span class="ico">⚠️</span>
+  <p><strong>《黑莲花上位手册》</strong>曾爆款,但因<strong>极端复仇(毒杀父亲 / 火烧嫡姐)</strong>违反价值观监管,上线 5 天全网下架。<strong>这是女频改编的"血泪教训"</strong>——火得快,死得更快。</p>
+</div>
+
+<h3>5.2 改编禁区清单(必看)</h3>
+<ul>
+  <li><strong>禁止 1</strong>:毒杀、火烧、残忍报复</li>
+  <li><strong>禁止 2</strong>:极端复仇(主角彻底黑化)</li>
+  <li><strong>禁止 3</strong>:擦边低俗(《特助如此多娇》下架案)</li>
+  <li><strong>禁止 4</strong>:双男主 / 双女主 / 纯灵异</li>
+  <li><strong>禁止 5</strong>:美化自杀、暴力、毒品</li>
+</ul>
+
+<h3>5.3 改良版"温和复仇"公式</h3>
+<div class="formula">
+<h4>从《黑莲花》改良</h4>
+<div class="code">
+  <span>原版(已被禁)</span>: <span>毒杀父亲 + 火烧嫡姐 + 复仇成功</span>
+  <span>改良版</span>: <span>离婚甩股权 + 法律维权 + 商业反杀 + 大团圆</span>
+</div>
+<small>同样的"爽",不同的"手段"。走法律、走商业、走女性互助——<strong>避开极端复仇,保留核心爽点</strong>。</small>
+</div>
+
+<!-- ========== 5 部共性 ========== -->
+
+<h2 id="summary">5 部共性总结 · 通用爆款公式</h2>
+
+<div class="callout tip">
+  <span class="ico">💡</span>
+  <p><strong>5 部爆款的最大共性</strong>:不是"爽"或"虐",而是<strong>"让观众记住 1 个具体的人"</strong>。每个爆款都有 1-2 个"蔡晓艳"式的人物,被观众"自来水"反复推荐。</p>
+</div>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>维度</th><th>家里家外</th><th>斩神</th><th>八零后妈</th><th>盛夏芬德拉</th><th>黑莲花(已禁)</th></tr></thead>
+<tbody>
+<tr><td><strong>类型</strong></td><td>年代温情</td><td>男频都市异能</td><td>年代爽剧</td><td>现言甜宠</td><td>古言宅斗</td></tr>
+<tr><td><strong>核心元素</strong></td><td>方言+女性互助+细节</td><td>扮猪吃老虎+战斗</td><td>闪婚+商业+时代红利</td><td>暗恋+长情+高甜</td><td>极端复仇</td></tr>
+<tr><td><strong>爽点密度</strong></td><td>中(慢节奏)</td><td>高(战斗)</td><td>高(密集)</td><td>中(情感)</td><td>极高(被禁)</td></tr>
+<tr><td><strong>虐点</strong></td><td>低(温情)</td><td>高(师徒牺牲)</td><td>中(小虐)</td><td>中(小虐)</td><td>极高(极端)</td></tr>
+<tr><td><strong>数据</strong></td><td>70 亿播放</td><td>5 亿播放+金鹅</td><td>纯利 200 万</td><td>分账 1600 万</td><td>5 天下架</td></tr>
+<tr><td><strong>复用性</strong></td><td>★★★★★(长尾)</td><td>★★★★(系列化)</td><td>★★★★(易复刻)</td><td>★★★★(稳定)</td><td>★(已被禁)</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="formula">改编公式 · 总结</h2>
+
+<div class="formula">
+<h4>5 部爆款通用公式</h4>
+<div class="code">
+  <span>差异化类型</span> + <span>核心情绪锚点</span> + <span>3 个标志性场景</span> + <span>1 句出圈台词</span> + <strong>避免极端</strong> = <span>爆款</span>
+</div>
+<small>4 元素缺一不可。改编时先问:这 4 项我的剧本里有吗?</small>
+</div>
+
+<div class="steps">
+  <div class="step"><div class="n">1</div><h4>差异化类型</h4><p>不要做"市面上最多的爽剧",要做"市面上稀缺的温情"或"目前蓝海的男频"</p></div>
+  <div class="step"><div class="n">2</div><h4>核心情绪锚点</h4><p>观众追剧追的是情绪——怀旧/愤怒/感动/梦想</p></div>
+  <div class="step"><div class="n">3</div><h4>3 个标志性场景</h4><p>每部剧必须有 3 个让观众"自来水截图"的名场面</p></div>
+  <div class="step"><div class="n">4</div><h4>1 句出圈台词</h4><p>"耙耳朵""若暗夜降临"——一句话带火一部剧</p></div>
+  <div class="step"><div class="n">5</div><h4>避免极端</h4><p>极端复仇/擦边低俗/双男主/纯灵异——碰一个死一个</p></div>
+</div>
+
+<hr style="margin:40px 0;border:0;border-top:1px solid var(--line)">
+
+<div class="callout info">
+  <span class="ico">📌</span>
+  <p><strong>本章总结</strong>:本课件拆解了 5 部真实爆款——3 部深度(《家里家外》《斩神》《八零后妈》)+ 2 部快速(《盛夏芬德拉》《黑莲花》)。每部给出<strong>标志性细节 + 镜头级还原 + 改编公式</strong>。改编时,<strong>先问 5 部共性公式,再问差异化</strong>。</p>
+</div>
+
+</main>
+</div>
+
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="后期放公众号二维码">
+      <img class="qr-img" src="../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../changelog.html">📅 更新日志</a></li>
+      <li><a href="mailto:yuge@local.demo">✉ 联系玉哥</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流 · 京 ICP 备 XXXXXXXX 号(待补)
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('aside a').forEach(function(a){
+    a.addEventListener('click',function(){
+      document.querySelectorAll('aside a').forEach(function(x){
+        x.style.color='';x.style.background='';x.style.borderLeftColor='transparent';
+      });
+      a.style.color='#5ee0a7';a.style.background='#161a23';a.style.borderLeftColor='#ff5b6e';
+    });
+  });
+});
+</script>
+</body>
+</html>

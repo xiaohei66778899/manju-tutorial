@@ -1,0 +1,690 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
+<meta name="description" content="玉哥漫剧教程站 27 个常见问题 + 10 个真难题 · Seedance / 即梦 / ComfyUI 视频生成避坑经验">
+<meta name="keywords" content="AI 短剧, 漫剧, Seedance, 即梦, ComfyUI, 视频问题, 玉哥">
+<meta name="author" content="玉哥">
+<meta property="og:title" content="漫剧教程站 · 玉哥">
+<meta property="og:description" content="玉哥漫剧教程站 27 个常见问题 + 10 个真难题 · Seedance / 即梦 / ComfyUI 视频生成避坑经验">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="漫剧教程站 · 玉哥">
+<title>踩坑急救 · 玉哥漫剧教程站</title>
+<link rel="stylesheet" href="../assets/site.css?v=fix20260927-2215">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg?v=fix20260927-2215">
+<style>
+:root{
+  --bg:#FFFCF6; --surface:#FFF7E8; --ink:#1F1A14; --ink2:#6F6657; --line:#E8DFC8;
+  --blue:#635BFF; --blue-ink:#4B43D9; --blue-bg:#ECE7FF;
+  --amber:#E8A33D; --amber-bg:#FFE9D6;
+  --red:#B85B5B; --red-bg:#FCEAEA;
+  --radius:14px;
+}
+body{background:var(--bg)}
+.layout-3col{display:grid;grid-template-columns:260px 1fr 220px;gap:22px;max-width:1280px;margin:0 auto;padding:24px 20px 56px}
+@media (max-width:1100px){.layout-3col{grid-template-columns:220px 1fr}}
+@media (max-width:900px){.layout-3col{grid-template-columns:1fr}.sb-right{display:none}}
+
+.sb-left{position:sticky;top:78px;align-self:start;max-height:calc(100vh - 100px);overflow-y:auto;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 12px;font-size:13px}
+.sb-left .sb-h{font-size:11px;font-weight:900;color:var(--ink2);text-transform:uppercase;letter-spacing:.5px;padding:4px 8px;margin-bottom:6px}
+.sb-cat{margin-bottom:6px}
+.sb-cat-title{font-size:12.5px;font-weight:800;color:var(--ink);padding:5px 8px;border-radius:7px;background:var(--bg);margin-bottom:2px;display:flex;align-items:center;gap:6px}
+.sb-cat-title .ic{font-size:14px;line-height:1}
+.sb-cat-title .cnt{margin-left:auto;font-size:10px;color:var(--blue);font-weight:900;font-family:ui-monospace,Menlo,monospace}
+.sb-list{list-style:none;padding:0;margin:0}
+.sb-list a{display:block;padding:5px 8px 5px 22px;border-radius:6px;color:var(--ink2);text-decoration:none;font-size:12px;line-height:1.5;transition:all .12s;overflow-wrap:break-word}
+.sb-list a:hover{color:var(--ink);background:var(--bg)}
+.sb-list a .badge{float:right;font-size:9px;background:var(--red);color:#fff;padding:1px 5px;border-radius:4px;font-weight:700;margin-top:2px}
+.sb-list a.hard{color:var(--ink);font-weight:700;display:flex;align-items:center;gap:5px}
+.sb-list a.hard::before{content:'◆';color:var(--blue);font-size:8px;flex-shrink:0}
+
+.sb-right{position:sticky;top:78px;align-self:start;max-height:calc(100vh - 100px);overflow-y:auto;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 12px;font-size:13px}
+.sb-right .sb-h{font-size:11px;font-weight:900;color:var(--ink2);text-transform:uppercase;letter-spacing:.5px;padding:4px 8px;margin-bottom:6px}
+.sb-right .sb-stat{display:flex;justify-content:space-between;padding:7px 8px;border-bottom:1px dashed var(--line);font-size:12px}
+.sb-right .sb-stat:last-child{border-bottom:none}
+.sb-right .sb-stat b{color:var(--ink);font-weight:900;font-family:ui-monospace,Menlo,monospace}
+.sb-right .sb-tip{margin-top:10px;padding:9px 10px;background:var(--amber-bg);border-left:3px solid var(--amber);border-radius:6px;font-size:12px;line-height:1.6;color:var(--ink)}
+
+.qh{padding:46px 20px 30px;background:linear-gradient(180deg,#FFE9D6 0%,#FFF7E8 60%,#ECE7FF 100%);text-align:center}
+.qh-inner{max-width:920px;margin:0 auto}
+.qh h1{font-size:clamp(24px,3.4vw,32px);font-weight:900;margin:0 0 14px;color:var(--ink);letter-spacing:-.4px;line-height:1.2}
+.qh h1 em{font-style:normal;color:var(--blue)}
+.qh .sub{margin:0 auto 14px;max-width:620px;font-size:13.5px;color:var(--ink2);line-height:1.65}
+.qh .stats{display:inline-flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:0}
+.qh .stat{padding:4px 11px;background:var(--surface);border:1px solid var(--line);border-radius:999px;font-size:12px;color:var(--ink2);font-weight:600}
+.qh .stat b{color:var(--ink);font-weight:900;font-family:ui-monospace,Menlo,monospace;margin-right:3px}
+.qh .stat b.hard{color:var(--red)}
+.qh .src{margin:0;font-size:11.5px;color:var(--ink2)}
+.qh .src a{color:var(--blue-ink);text-decoration:none;border-bottom:1px solid var(--blue-bg)}
+
+.q-search{display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin-bottom:18px;transition:border-color .15s}
+.q-search:focus-within{border-color:var(--blue);box-shadow:0 0 0 3px var(--blue-bg)}
+.q-search svg{flex-shrink:0;color:var(--ink2)}
+.q-search input{flex:1;border:none;background:transparent;font-size:14.5px;color:var(--ink);outline:none;font-family:inherit}
+.q-search input::placeholder{color:#A89B89}
+.q-search .hint{font-size:12px;color:var(--ink2);background:var(--bg);padding:3px 9px;border-radius:6px;border:1px solid var(--line)}
+
+.q-cat{margin-bottom:36px}
+.q-cat-head{display:flex;align-items:center;gap:12px;margin-bottom:14px;padding-bottom:12px;border-bottom:2px dashed var(--line)}
+.q-cat-head .ic{font-size:26px;line-height:1}
+.q-cat-head h2{font-size:19px;font-weight:900;margin:0;color:var(--ink);letter-spacing:-.2px}
+.q-cat-head .ct{margin-left:auto;font-size:11.5px;color:var(--ink2);font-weight:600}
+.q-cat-head .hard-tag{font-size:10px;font-weight:900;background:var(--red-bg);color:var(--red);padding:3px 9px;border-radius:5px;letter-spacing:.5px;margin-left:8px}
+
+.q-list{display:flex;flex-direction:column;gap:8px}
+.q-item{background:var(--surface);border:1px solid var(--line);border-radius:11px;overflow:hidden;transition:border-color .15s}
+.q-item.hidden{display:none}
+.q-item.hard{border-left:2px solid var(--blue)}
+.q-item.hard:hover{border-color:var(--blue-ink)}
+.q-item:hover{border-color:var(--blue-ink)}
+.q-item summary{display:flex;align-items:center;gap:12px;padding:13px 16px;cursor:pointer;list-style:none;user-select:none;font-size:14.5px;line-height:1.5}
+.q-item summary::-webkit-details-marker{display:none}
+.q-item .q-toggle{margin-left:auto;flex-shrink:0;width:22px;height:22px;border-radius:50%;background:var(--bg);border:1px solid var(--line);display:inline-flex;align-items:center;justify-content:center;font-size:14px;color:var(--ink2);transition:all .2s;font-weight:400}
+.q-item[open] .q-toggle{background:var(--blue);color:#fff;border-color:var(--blue);transform:rotate(45deg)}
+.q-item .q-num{font-size:11px;font-weight:900;color:var(--blue);font-family:ui-monospace,Menlo,monospace;background:var(--blue-bg);padding:2px 8px;border-radius:6px;flex-shrink:0;min-width:32px;text-align:center}
+.q-item.hard .q-num{background:var(--blue-bg);color:var(--blue-ink)}
+.q-item .q-title{font-weight:700;color:var(--ink);flex:1;line-height:1.45;overflow-wrap:break-word;word-break:break-word}
+.q-item .q-quick{font-size:12.5px;color:var(--ink2);font-weight:600;font-family:ui-monospace,Menlo,monospace;flex-shrink:0;max-width:42%;text-align:right;background:var(--bg);padding:3px 12px;border-radius:7px;border:1px solid var(--line);letter-spacing:-.1px;white-space:nowrap}
+.q-item .q-body{padding:14px 18px 18px 60px;font-size:13.5px;line-height:1.8;color:var(--ink2);border-top:1px solid var(--line);background:var(--surface)}
+.q-item .q-body b{color:var(--ink)}
+.q-item .q-body code{font-family:ui-monospace,Menlo,monospace;font-size:12.5px;background:var(--bg);border:1px solid var(--line);padding:1px 7px;border-radius:5px;color:var(--ink)}
+.q-item .q-section{margin:10px 0}
+.q-item .q-section:first-child{margin-top:2px}
+.q-item .q-section h4{margin:0 0 5px;font-size:11px;font-weight:900;color:var(--blue);text-transform:uppercase;letter-spacing:.5px}
+.q-item .q-section h4.hard{color:var(--red)}
+.q-item .yuge-say{margin-top:10px;padding:9px 13px;background:var(--amber-bg);border-left:3px solid var(--amber);border-radius:7px;font-size:13px;color:var(--ink);line-height:1.65}
+.q-item .yuge-say b{color:#7A4A0F;font-weight:900}
+.q-item .q-src{margin-top:10px;padding-top:8px;border-top:1px dashed var(--line);font-size:11.5px;color:var(--ink2)}
+.q-item .q-src a{color:var(--blue-ink);text-decoration:none;border-bottom:1px solid var(--blue-bg);margin-right:8px;display:inline-block;margin-top:3px;word-break:break-word}
+.q-item .q-src .issue{color:var(--red);border-color:var(--red-bg)}
+
+.q-empty{display:none;padding:40px 20px;text-align:center;color:var(--ink2);font-size:14px}
+
+.q-foot{margin-top:32px;padding:14px 20px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);text-align:center}
+.q-foot a{display:inline-block;padding:8px 22px;background:var(--blue);color:#fff;border-radius:9px;text-decoration:none;font-weight:600;font-size:13.5px;transition:background .15s}
+.q-foot a:hover{background:var(--blue-ink)}
+
+@media (max-width:600px){
+  .layout-3col{padding:16px 12px 32px}
+  .q-item summary{flex-wrap:wrap;gap:8px}
+  .q-item .q-quick{max-width:100%;width:100%;text-align:left}
+  .q-item .q-body{padding-left:18px}
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="logo">🎬 漫剧教程站 <small>v3 · 玉哥</small></div>
+  <nav>
+    <a href="../index.html">首页</a>
+    <a href="../tutorial/all-courses.html">漫剧教程</a>
+    <a href="../prompts/image-prompts.html">图片作品</a>
+    <a href="../works/index.html">视频作品</a>
+    <a href="../prompts/prompts.html">prompt 模板</a>
+    <a href="../tools/toolkit.html">工具箱</a>
+    <a href="../qa/troubleshooting.html" class="active">问题库</a>
+    <a href="../news/industry.html">行业新闻</a>
+    </nav>
+  <div class="search"><input type="search" placeholder="🔍 搜"></div>
+  <button class="theme-toggle" id="themeBtn" title="深浅主题切换">🌙</button>
+</header>
+
+<!-- ============ Hero ============ -->
+<section class="qh">
+  <div class="qh-inner">
+    <h1>踩坑<em>急救</em></h1>
+    <div class="stats">
+      <span class="stat"><b>27</b> 问题</span>
+      <span class="stat"><b class="hard">10</b> 真难题</span>
+      <span class="stat"><b>4</b> 主分类</span>
+      <span class="stat"><b>95k+</b> ★ 来源</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3-Col Layout: 左侧目录 / 中内容 / 右侧统计 ============ -->
+<div class="layout-3col">
+
+  <!-- ====== 左侧:问题目录 ====== -->
+  <aside class="sb-left" aria-label="问题目录">
+    <div class="sb-h">问题目录</div>
+
+    <div class="sb-cat">
+      <div class="sb-cat-title"><span class="ic">🎨</span>出图 <span class="cnt">5</span></div>
+      <ul class="sb-list">
+        <li><a href="#q01">01 全黑 / 灰 / 单色图</a></li>
+        <li><a href="#q02">02 CUDA 显存爆</a></li>
+        <li><a href="#q03">03 prompt 不跟随</a></li>
+        <li><a href="#q04">04 模糊 / 细节丢失</a></li>
+        <li><a href="#q05">05 跑在 CPU 上超慢</a></li>
+      </ul>
+    </div>
+
+    <div class="sb-cat">
+      <div class="sb-cat-title"><span class="ic">🧩</span>ComfyUI <span class="cnt">10</span></div>
+      <ul class="sb-list">
+        <li><a href="#q06">06 节点红框 / INVALID</a></li>
+        <li><a href="#q07">07 ComfyUI 启动 OOM</a></li>
+        <li><a href="#q08">08 BFloat16 精度错</a></li>
+        <li><a href="#q09">09 start 卡 / UI 不出</a></li>
+        <li><a class="hard" href="#q10">10 Wan 2.2 NaN 黑帧</a></li>
+        <li><a class="hard" href="#q11">11 Qwen-Image 2.1 黑图</a></li>
+        <li><a class="hard" href="#q12">12 H3 bf16 100% 黑帧</a></li>
+        <li><a class="hard" href="#q13">13 H3 W4A8 + LoRA 错</a></li>
+        <li><a class="hard" href="#q14">14 ImageUpscale 4.83GB</a></li>
+        <li><a class="hard" href="#q15">15 ACE-Step 1.5 OOM</a></li>
+      </ul>
+    </div>
+
+    <div class="sb-cat">
+      <div class="sb-cat-title"><span class="ic">🎬</span>视频 <span class="cnt">7</span></div>
+      <ul class="sb-list">
+        <li><a href="#q16">16 图生视频脸漂移</a></li>
+        <li><a href="#q17">17 运镜不自然</a></li>
+        <li><a href="#q21">21 Seedance 2.0 脸突变</a></li>
+        <li><a href="#q22">22 Seedance 2.5 多图跳切</a></li>
+        <li><a class="hard" href="#q18">18 H3 i2v 网格瓦片</a></li>
+        <li><a class="hard" href="#q19">19 H3 audio 中心裁切</a></li>
+        <li><a class="hard" href="#q20">20 H3 阻止 CUDA graph</a></li>
+      </ul>
+    </div>
+
+    <div class="sb-cat">
+      <div class="sb-cat-title"><span class="ic">🚀</span>发布投流 <span class="cnt">5</span></div>
+      <ul class="sb-list">
+        <li><a href="#q23">23 ROI < 1.0 止损</a></li>
+        <li><a href="#q24">24 完播率低杠杆</a></li>
+        <li><a href="#q25">25 账号封号预防</a></li>
+        <li><a href="#q26">26 千川没量排查</a></li>
+        <li><a href="#q27">27 配音不匹配口型</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- ====== 中间:问题详情 ====== -->
+  <main class="content">
+    <div class="q-search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <input type="search" id="q-search" placeholder="搜:OOM / 完播率 / NaN / 黑帧 / 投流…">
+    </div>
+
+    <!-- ============== A. 出图 ============== -->
+    <div class="q-cat" data-cat="a">
+      <div class="q-cat-head">
+        <span class="ic">🎨</span>
+        <h2>出图问题</h2>
+        <span class="ct">SD · MJ · 即梦 · 可灵图像</span>
+      </div>
+      <div class="q-list">
+
+        <details class="q-item" id="q01">
+          <summary><span class="q-num">01</span><span class="q-title">生成图全黑 / 全灰 / 单色</span><span class="q-quick">→ 切对 VAE</span><span class="q-toggle">+</span></summary>
+          <div class="q-body">
+            <div class="q-section"><h4>原因</h4><p>VAE 错配或缺失(SD 1.5 模型用了 SDXL VAE)。</p></div>
+            <div class="q-section"><h4>解法</h4><p>WebUI → Settings → Stable Diffusion → VAE: SD 1.5 选 <code>vae-ft-mse-840000-ema-pruned.safetensors</code>;SDXL 选 <code>sdxl_vae.safetensors</code>。</p></div>
+            <div class="yuge-say"><b>玉哥说:</b>80% 黑图是 VAE 选错,不是模型坏了。先切对 VAE 再说。</div>
+            <div class="q-src"><a href="https://dev.to/techsifted/stable-diffusion-not-working-9-fixes-for-common-errors-2026-9pp" target="_blank" rel="noopener">dev.to: SD 9 Fixes (2026)</a></div>
+          </div>
+        </details>
+
+        <details class="q-item" id="q02">
+          <summary><span class="q-num">02</span><span class="q-title">CUDA out of memory(显存爆)</span><span class="q-quick">→ --medvram --xformers</span><span class="q-toggle">+</span></summary>
+          <div class="q-body">
+            <div class="q-section"><h4>快捷</h4><p><code>webui-user.bat</code> 加 <code>--medvram --xformers</code>;4GB 显卡加 <code>--lowvram</code>。</p></div>
+            <div class="q-section"><h4>代码层</h4><p><code>pipe.enable_model_cpu_offload()</code> / <code>enable_sequential_cpu_offload()</code> / <code>enable_attention_slicing()</code>;加载 <code>torch_dtype=torch.float16</code>。</p></div>
+            <div class="q-src"><a href="https://github.com/NousResearch/hermes-agent/blob/HEAD/optional-skills/mlops/stable-diffusion/references/troubleshooting.md" target="_blank" rel="noopener">Hermes SD Troubleshooting</a></div>
+          </div>
+        </details>
+
+        <details class="q-item" id="q03">
+          <summary><span class="q-num">03</span><span class="q-title">prompt 写清楚,图不跟</span><span class="q-quick">→ CFG 7-12</span><span class="q-toggle">+</span></summary>
+          <div class="q-body">
+            <p>CFG < 3 模型自由发挥;CFG > 15 图像僵硬过曝。CFG 7-12 是甜区。<br>
+              prompt 写法:"好看的风景" → "阳光明媚的阿尔卑斯山,清澈湖泊,远雪山景,8K 摄影级",立刻见效。</p>
+          </div>
+        </details>
+
+        <details class="q-item" id="q04">
+          <summary><span class="q-num">04</span><span class="q-title">图像模糊 / 细节丢失</span><span class="q-quick">→ 步数 30+ + 换 VAE</span><span class="q-toggle">+</span></summary>
+          <div class="q-body">
+            <p>步数调到 30-50;换 <code>stabilityai/sd-vae-ft-mse</code>(SD 1.5 标准 VAE)。<br>
+              img2img upscale 二次补救,strength 0.3。要真画质上 SDXL。</p>
+            <div class="yuge-say"><b>玉哥说:</b>玉哥做漫剧分镜默认 768×1024 + 步数 30 + CFG 8 + sd-vae-ft-mse,90% 出图干净。</div>
+            <div class="q-src"><a href="https://github.com/NousResearch/hermes-agent/blob/HEAD/optional-skills/mlops/stable-diffusion/references/troubleshooting.md" target="_blank" rel="noopener">Hermes SD</a></div>
+          </div>
+        </details>
+
+        <details class="q-item" id="q05">
+          <summary><span class="q-num">05</span><span class="q-title">生成超慢 / 实际用 CPU</span><span class="q-quick">→ 检查 device: cuda:0</span><span class="q-toggle">+</span></summary>
+          <div class="q-body">
+            <p>启动 console 找 <code>Model loaded on device: cuda:0</code>;显示 <code>cpu</code> = GPU 没识别。<br>
+              <code>nvidia-smi</code> 看不到卡 = 驱动装错。<br>
+              PyTorch CUDA 不匹配:<code>pip uninstall torch torchvision</code> → 装 <code>cu121</code>(按显卡 CUDA 版本选)。</p>
+            <div class="yuge-say"><b>玉哥说:</b>玉哥这边学员常因 NVIDIA 自动更新驱动把 CUDA 弄崩,玉哥教程 C160 有手把手 PyTorch 重装。</div>
+            <div class="q-src"><a href="https://github.com/easydiffusion/easydiffusion/wiki/Troubleshooting" target="_blank" rel="noopener">EasyDiffusion Wiki 9k★</a></div>
+          </div>
+        </details>
+      </div>
+    </div>
+
+    <!-- ============== B. ComfyUI ============== -->
+    <div class="q-cat" data-cat="b">
+      <div class="q-cat-head">
+        <span class="ic">🧩</span>
+        <h2>ComfyUI / 工作流</h2>
+        <span class="ct">节点 · 工作流 · 高难度 issue</span>
+        <span class="hard-tag">10 个真难题</span>
+      </div>
+      <div class="q-list">
+
+        <details class="q-item" id="q06">
+          <summary><span class="q-num">06</span><span class="q-title">节点红框 / INVALID</span><span class="q-quick">→ Manager 装缺失节点</span><span class="q-toggle">+</span></summary>
+          <div class="q-body">
+            <p>70%:导入工作流时缺自定义节点 → Manager → Install Missing Custom Nodes → 重启 ComfyUI。<br>
+              20%:连线类型不匹配 → <code>VAE Encode</code>/<code>VAE Decode</code> 转换。<br>
+              10%:SDXL LoRA 接到 SD 1.5 checkpoint。</p>
+            <div class="q-src"><a href="https://comfyui-cheatsheet.com/guides/troubleshooting" target="_blank" rel="noopener">ComfyUI Cheatsheet 7k★</a></div>
+          </div>
+        </details>
+
+        <details class="q-item" id="q07">
+          <summary><span class="q-num">07</span><span class="q-title">CUDA OOM(ComfyUI 跑一半炸)</span><span class="q-quick">→ --fp8_e4m3fn-unet</span><span class="q-toggle">+</span></summary>
+          <div class="q-body">
+            <p>启动加 <code>--fp8_e4m3fn-unet</code>(显存减半);工作流内 Tiled VAE Decode;降分辨率;重启清碎片。</p>
+            <div class="yuge-say"><b>玉哥说:</b>玉哥这边跑视频常 OOM,加 <code>--fp8_e4m3fn-unet</code> + Tiled VAE 直接稳了。</div>
+            <div class="q-src"><a href="https://claudeskills.info/zh-hant/skills/mckruz/comfyui-expert/comfyui-troubleshooter/" target="_blank" rel="noopener">comfyui-troubleshooter</a></div>
+          </div>
+        </details>
+
+        <details class="q-item" id="q08">
+          <summary><span class="q-num">08</span><span class="q-title">"Expected BFloat16 but found Float"</span><span class="q-quick">→ --force-fp16</span><span class="q-toggle">+</span></summary>
+          <div class="q-body">
+            <p>ComfyUI 内部精度与模型精度不匹配。启动加 <code>--force-fp16</code> 强制统一。</p>
+          </div>
+        </details>
+
+        <details class="q-item" id="q09">
+          <summary><span class="q-num">09</span><span class="q-title">start 卡住 / UI 加载不出</span><span class="q-quick">→ 改 offline mode</span><span class="q-toggle">+</span></summary>
+          <div class="q-body">
+            <p>Manager 卡:config.ini 设 <code>network_mode = offline</code>。<br>
+              encoding 错:设 <code>PYTHONUTF8=1</code> + <code>PYTHONIOENCODING=utf-8</code>。<br>
+              探活:curl <code>http://127.0.0.1:8188/system_stats</code>,有响应 = core 起来了,问题在 frontend。</p>
+            <div class="yuge-say"><b>玉哥说:</b>玉哥这边 ComfyUI 装在中国大陆,Manager 连 raw.githubusercontent.com 总卡,改 offline 最省心。</div>
+            <div class="q-src"><a href="https://docs.comfy.org/troubleshooting/overview" target="_blank" rel="noopener">docs.comfy.org</a></div>
+          </div>
+        </details>
+
+        <details class="q-item hard" id="q10">
+          <summary><span class="q-num">10</span><span class="q-title">🔥 难题:Wan 2.2 14B(I2V)sampler 发出 NaN latents</span><span class="q-quick">→ --bf16-unet 别用 float16</span><span class="q-toggle">+</span></summary>
+          <div class="q-body">
+            <div class="q-section">
+              <h4 class="hard">症状</h4>
+              <p>Wan 2.2 14B (I2V) sampler 发出 NaN latents → 每帧一个纯色。<br>
+                AMD gfx1201(Radeon AI PRO R9700)+ ROCm 7.2.4 + torch 2.14/2.15 上稳定复现。<br>
+                5B 模型同样节点图能正常跑。</p>
+            </div>
+            <div class="q-section">
+              <h4>解法</h4>
+              <p>启动加 <code>--bf16-unet</code>(bf16 的 exponent 比 fp16 宽得多,扛得住溢出)。<br>
+                升级 ComfyUI 到 0.36.0+(该 issue 在后续 patch 修)。</p>
+            </div>
+            <div class="yuge-say"><b>玉哥说:</b>AMD 显卡跑 Wan 2.2 14B 必装 bf16,不然就是黑屏。</div>
+            <div class="q-src"><a href="https://github.com/Comfy-Org/ComfyUI/issues/16313" class="issue" target="_blank" rel="noopener">ComfyUI #16313</a><a href="https://github.com/comfyanonymous/ComfyUI" target="_blank" rel="noopener">ComfyUI 86k★</a></div>
+          </div>
+        </details>
+
+        <details class="q-item hard" id="q11">
+          <summary><span class="q-num">11</span><span class="q-title">🔥 难题:Qwen-Image 2.1 在 1024×1024 出 broadband noise</span><span class="q-quick">→ 改 992 或 1056 避开</span><span class="q-toggle">+</span></summary>
+          <div class="q-body">
+            <div class="q-section">
+              <h4 class="hard">症状</h4>
+              <p>Qwen-Image-2.1 image edit 的 VAE reference-latent splice 节点:<br>
+                <b>resolution = 1024(节点默认值)</b>时输出 broadband noise;<br>
+                992 / 1056 完全干净;CPU 也复现。</p>
+            </div>
+            <div class="q-section">
+              <h4>解法</h4>
+              <p>硬编码 <b>resolution = 992 或 1056</b>,绕开 node 默认值。<br>
+                关 <code>--enable-dynamic-vram</code>(2026-09 更新后该 flag 静默损坏输出)。<br>
+                跟踪 patch:PR #15027 fast-disk policy。</p>
+            </div>
+            <div class="yuge-say"><b>玉哥说:</b>玉哥这边遇到 Qwen 出怪图,99% 是分辨率正好撞 node 默认 1024。</div>
+            <div class="q-src"><a href="https://github.com/Comfy-Org/ComfyUI/issues/16435" class="issue" target="_blank" rel="noopener">ComfyUI #16435</a></div>
+          </div>
+        </details>
+
+        <details class="q-item hard" id="q12">
+          <summary><span class="q-num">12</span><span class="q-title">🔥 难题:H3 plain bf16 checkpoints 100% 黑帧</span><span class="q-quick">→ 改用 int8_convrot repack</span><span class="q-toggle">+</span></summary>
+          <div class="q-body">
+            <div class="q-section">
+              <h4 class="hard">症状</h4>
+              <p>H3 plain bf16 checkpoints(full + pruned)在 v0.32.0 上 100% 黑帧;<br>
+                同样权重的 <b>int8_convrot repacks</b> 正常。</p>
+            </div>
+            <div class="q-section">
+              <h4>解法</h4>
+              <p>下载 H3 <b>int8_convrot</b> 版本而不是 plain bf16。<br>
+                升 ComfyUI 到 0.36.0+(修了 plain bf16 的 fp16 处理路径)。<br>
+                不要用 <code>minimax_h3_ref2va_pruned_fp8_scaled</code>(metadata 已损坏)。</p>
+            </div>
+            <div class="q-src"><a href="https://github.com/Comfy-Org/ComfyUI/issues/15563" class="issue" target="_blank" rel="noopener">ComfyUI #15563</a><a href="https://github.com/Comfy-Org/ComfyUI/issues/15567" class="issue" target="_blank" rel="noopener">#15567 metadata 损坏</a></div>
+          </div>
+        </details>
+
+        <details class="q-item hard" id="q13">
+          <summary><span class="q-num">13</span><span class="q-title">🔥 难题:H3 W4A8 + LoRA 在 0.36.0 之前 patches 错权重</span><span class="q-quick">→ 升 0.36.0+ 或不用 LoRA</span><span class="q-toggle">+</span></summary>
+          <div class="q-body">
+            <div class="q-section">
+              <h4 class="hard">症状</h4>
+              <p>Quantized(W4A8)H3 + LoRA 在 0.36.0 之前会 patch <code>adaln_proj</code>,但权重还在 packed 形状;<br>
+                生成混乱但没崩。</p>
+            </div>
+            <div class="q-section">
+              <h4>解法</h4>
+              <p>升 ComfyUI 到 <b>0.36.0+</b>(修了 dequant/cast 顺序)。<br>
+                临时方案:卸 LoRA,跑裸 H3 W4A8。</p>
+            </div>
+            <div class="q-src"><a href="https://github.com/Comfy-Org/ComfyUI/issues/16420" class="issue" target="_blank" rel="noopener">ComfyUI #16420</a></div>
+          </div>
+        </details>
+
+        <details class="q-item hard" id="q14">
+          <summary><span class="q-num">14</span><span class="q-title">🔥 难题:ImageUpscaleWithModel 给 17.9 MB 模型预留 4.83 GB</span><span class="q-quick">→ 关 dynamic-vram 重新加载</span><span class="q-toggle">+</span></summary>
+          <div class="q-body">
+            <div class="q-section">
+              <h4 class="hard">症状</h4>
+              <p>ImageUpscaleWithModel 节点给一个 17.9 MB 模型预留 4.83 GB 显存;<br>
+                同时驱逐其他已加载模型 → 后续节点 OOM。</p>
+            </div>
+            <div class="q-section">
+              <h4>解法</h4>
+              <p>关 <code>--enable-dynamic-vram</code>。<br>
+                重新加载大模型时调高优先级。<br>
+                用更轻的 upscaler(如 <code>4x-UltraSharp</code>)。</p>
+            </div>
+            <div class="q-src"><a href="https://github.com/Comfy-Org/ComfyUI/issues/15573" class="issue" target="_blank" rel="noopener">ComfyUI #15573</a></div>
+          </div>
+        </details>
+
+        <details class="q-item hard" id="q15">
+          <summary><span class="q-num">15</span><span class="q-title">🔥 难题:ACE-Step 1.5 集成 OOM Windows/AMD</span><span class="q-quick">→ 关 Desktop auto-update + 升 0.36.0</span><span class="q-toggle">+</span></summary>
+          <div class="q-body">
+            <div class="q-section">
+              <h4 class="hard">症状</h4>
+              <p>ACE-Step 1.5 Integration Memory Leak / CPU Fallback → Windows/AMD 严重慢 + OOM。<br>
+                12 条评论 + linked PR。</p>
+            </div>
+            <div class="q-section">
+              <h4>解法</h4>
+              <p>升 ComfyUI 到 <b>0.36.0+</b>(相关 PR 已合并)。<br>
+                关 ComfyUI Desktop 的 auto-update(它会强制升级到不兼容版本)。<br>
+                AMD 显卡加 <code>--use-pytorch-cross-attention</code>。</p>
+            </div>
+            <div class="q-src"><a href="https://github.com/Comfy-Org/ComfyUI/issues/15973" class="issue" target="_blank" rel="noopener">ComfyUI #15973</a></div>
+          </div>
+        </details>
+
+      </div>
+    </div>
+
+    <!-- ============== C. 视频 ============== -->
+    <div class="q-cat" data-cat="c">
+      <div class="q-cat-head">
+        <span class="ic">🎬</span>
+        <h2>视频生成</h2>
+        <span class="ct">可灵 · 海螺 · Sora · Veo · H3 · Seedance</span>
+        <span class="hard-tag">3 个真难题</span>
+      </div>
+      <div class="q-list">
+
+        <details class="q-item" id="q16">
+          <summary><span class="q-num">16</span><span class="q-title">图生视频角色脸漂移</span><span class="q-quick">→ start+end frame + IP-Adapter</span><span class="q-toggle">+</span></summary>
+          <div class="q-body">
+            <p>同时给 start + end frame(可灵 2.0 / 海螺 02 支持)。<br>
+              ComfyUI:IP-Adapter + FaceID 锁脸,一致性 80% 提升。weight 0.8+,reference 清晰正面。</p>
+            <div class="q-src"><a href="../tutorial/F-ai-video/F-11.html">玉哥 F-11: 12 模型横评</a></div>
+          </div>
+        </details>
+
+        <details class="q-item" id="q17">
+          <summary><span class="q-num">17</span><span class="q-title">运镜不自然 / 镜头僵</span><span class="q-quick">→ 人物眼神跟随镜头</span><span class="q-toggle">+</span></summary>
+          <div class="q-body">
+            <p>运镜中人物眼神必须跟随镜头:crane-up 眼睛抬起,orbit 扫过镜头,push-in 直视镜头。<br>
+              写法:<code>"the woman's eyes slowly follow the camera movement"</code>。</p>
+            <div class="yuge-say"><b>玉哥说:</b>镜头僵的关键 = 头部静止 + 眼球不动。</div>
+            <div class="q-src">玉哥教程 F-15</div>
+          </div>
+        </details>
+
+        <details class="q-item" id="q21">
+          <summary><span class="q-num">21</span><span class="q-title">Seedance 2.0 视频人物脸部突变 / 性别撕裂</span><span class="q-quick">→ start frame 必须为正面</span><span class="q-toggle">+</span></summary>
+          <div class="q-body">
+            <div class="q-section">
+              <h4>症状</h4>
+              <p>Seedance 2.0(图生视频)前 1.5 秒人物脸部会从 input 图的男性突变到女性,<br>
+                或五官错位 / 肤色突变 — 火山引擎 i2v 模型自回归解码早期最常见。</p>
+            </div>
+            <div class="q-section">
+              <h4>解法</h4>
+              <p>start frame 必须为<b>正面、无遮挡、清晰大脸</b>(占图面 30%+),不要用侧脸 / 半遮挡 / 多人物。<br>
+                跑前用 <code>face_detect</code> 校验:脸部面积 < 20% 直接换图。<br>
+                紧急方案:改用 Seedance 2.5,2.5 加了第二人称 prompt + face anchor,突变率从 30% 降到 8%。</p>
+            </div>
+            <div class="q-src"><a href="https://www.volcengine.com/product/seedance" target="_blank" rel="noopener">火山引擎 Seedance 官方</a><a href="../tutorial/F-ai-video/F-11.html">玉哥 F-11: 12 模型横评</a></div>
+          </div>
+        </details>
+
+        <details class="q-item" id="q22">
+          <summary><span class="q-num">22</span><span class="q-title">Seedance 2.5 多图生视频镜头跳跃 / 失帧</span><span class="q-quick">→ 同场景 ≤ 3 张图</span><span class="q-toggle">+</span></summary>
+          <div class="q-body">
+            <div class="q-section">
+              <h4>症状</h4>
+              <p>Seedance 2.5 的"multi-image to video"输入 4+ 张图时,镜头在帧间会突然跳切,<br>
+                镜头位置 / 视角不一致,看起来像 3 段不同视频拼接。</p>
+            </div>
+            <div class="q-section">
+              <h4>解法</h4>
+              <p>同场景多图生视频:输入图控制在 <b>≤ 3 张</b>,且全部<b>同景别 / 同视角</b>(全是正面中景,或全是俯拍远景)。<br>
+                prompt 显式写"同一镜头 / continuous shot / no cut"。<br>
+                不支持 5+ 图输入时:把第 4+ 张图拆成第二个 5 秒视频,后期剪映接上。</p>
+            </div>
+            <div class="q-src"><a href="https://www.volcengine.com/product/seedance" target="_blank" rel="noopener">火山引擎 Seedance 2.5</a></div>
+          </div>
+        </details>
+
+        <details class="q-item hard" id="q18">
+          <summary><span class="q-num">18</span><span class="q-title">🔥 难题:H3 i2v 输出"独立瓦片方阵"图</span><span class="q-quick">→ 升 0.36.0+ 修 latent 解码顺序</span><span class="q-toggle">+</span></summary>
+          <div class="q-body">
+            <div class="q-section">
+              <h4 class="hard">症状</h4>
+              <p>H3 i2v 输出是<strong>独立解码的正方形瓦片拼成的大图</strong>,而不是一张连贯图像。<br>
+                因为 latent 解码顺序 bug。</p>
+            </div>
+            <div class="q-section">
+              <h4>解法</h4>
+              <p>升 ComfyUI <b>0.36.0+</b>(修了 patchifier 的对称解码)。<br>
+                临时方案:换 LTX-2.3 或 Wan 2.2 跑视频。<br>
+                不要用 SymmetricPatchifier 节点 + H3 组合。</p>
+            </div>
+            <div class="q-src"><a href="https://github.com/Comfy-Org/ComfyUI/issues/15548" class="issue" target="_blank" rel="noopener">ComfyUI #15548</a></div>
+          </div>
+        </details>
+
+        <details class="q-item hard" id="q19">
+          <summary><span class="q-num">19</span><span class="q-title">🔥 难题:H3 AudioVAE 把音频 leading samples 吃掉</span><span class="q-quick">→ 别 i2v + audio combo;单独跑</span><span class="q-toggle">+</span></summary>
+          <div class="q-body">
+            <div class="q-section">
+              <h4 class="hard">症状</h4>
+              <p>H3 AudioVAE input 是 <strong>center-cropped</strong>,丢开头的音频样本,导致 latent 长度不对 → 视频前几帧无声。</p>
+            </div>
+            <div class="q-section">
+              <h4>解法</h4>
+              <p>不要用 <strong>i2v + standalone audio-timbre reference</strong> combo,先单独跑 audio。<br>
+                升 0.36.0+(修复部分 patch 已合并,但还没全修)。<br>
+                Audio latents 直接对齐 — 用同一份 wav 文件,不用 timestamp 对齐。</p>
+            </div>
+            <div class="q-src"><a href="https://github.com/Comfy-Org/ComfyUI/issues/16289" class="issue" target="_blank" rel="noopener">ComfyUI #16289</a></div>
+          </div>
+        </details>
+
+        <details class="q-item hard" id="q20">
+          <summary><span class="q-num">20</span><span class="q-title">🔥 难题:H3 _forward 阻止 CUDA graph capture</span><span class="q-quick">→ H3 跑时关 graph capture</span><span class="q-toggle">+</span></summary>
+          <div class="q-body">
+            <div class="q-section">
+              <h4 class="hard">症状</h4>
+              <p>H3 _forward 函数每步做 <strong>per-step GPU→CPU sync</strong>(sigma_v / text_tags),<br>
+                每步都阻塞 CUDA graph capture,完全无法用 graph capture 加速。</p>
+            </div>
+            <div class="q-section">
+              <h4>解法</h4>
+              <p>跑 H3 时 <b>关 CUDA graph capture</b>(从 0.36.0 起有开关)。<br>
+                临时:用 batch_size ≥ 4 跑批,弥补单步同步损耗。<br>
+                CPU→GPU H2D copy 在 SymmetricPatchifier 同样阻塞 — 同步处理。</p>
+            </div>
+            <div class="q-src"><a href="https://github.com/Comfy-Org/ComfyUI/issues/15551" class="issue" target="_blank" rel="noopener">ComfyUI #15551</a><a href="https://github.com/Comfy-Org/ComfyUI/issues/15550" class="issue" target="_blank" rel="noopener">#15550</a></div>
+          </div>
+        </details>
+
+      </div>
+    </div>
+
+    <!-- ============== D. 发布投流 ============== -->
+    <div class="q-cat" data-cat="d">
+      <div class="q-cat-head">
+        <span class="ic">🚀</span>
+        <h2>发布投流</h2>
+        <span class="ct">千川 · 完播率 · ROI</span>
+      </div>
+      <div class="q-list">
+
+        <details class="q-item" id="q23">
+          <summary><span class="q-num">23</span><span class="q-title">投流 ROI < 1.0 怎么办</span><span class="q-quick">→ 暂停 + 自然流测试</span><span class="q-toggle">+</span></summary>
+          <div class="q-body">
+            <p>ROI < 1.0 立即止损,暂停该计划,自然流测试涨粉。自然流爆款再投流。</p>
+            <div class="q-src">玉哥教程 H10</div>
+          </div>
+        </details>
+
+        <details class="q-item" id="q24">
+          <summary><span class="q-num">24</span><span class="q-title">完播率低(< 30%)</span><span class="q-quick">→ 钩子 / 中段 / 结尾</span><span class="q-toggle">+</span></summary>
+          <div class="q-body">
+            <p>3 大杠杆:钩子(3 秒留人)/ 中段节奏(每 15 秒反转)/ 结尾悬念。<br>
+              60 秒以下完播率 > 30% 才及格,> 50% 才推流。</p>
+            <div class="yuge-say"><b>玉哥说:</b>玉哥短剧黄金场是 60-90 秒。</div>
+            <div class="q-src">玉哥教程 H5</div>
+          </div>
+        </details>
+
+        <details class="q-item" id="q25">
+          <summary><span class="q-num">25</span><span class="q-title">账号封号 / 限流</span><span class="q-quick">→ 不踩红线 + 多账号矩阵</span><span class="q-toggle">+</span></summary>
+          <div class="q-body">
+            <p>常见封号:未成年人脸、同质化内容、低质搬运、敏感词、AI 脸部虚假宣传。<br>
+              预防:多账号矩阵、玉哥 H 类投流 SOP。</p>
+            <div class="q-src">玉哥教程 H15</div>
+          </div>
+        </details>
+
+        <details class="q-item" id="q26">
+          <summary><span class="q-num">26</span><span class="q-title">千川没量 / 0 展现</span><span class="q-quick">→ 出价 + 定向双排查</span><span class="q-toggle">+</span></summary>
+          <div class="q-body">
+            <p>出价太低:参考同行出价区间。<br>
+              定向过窄:简化定向,系统算不出 100 人就不跑。<br>
+              素材原创度 < 60% 直接限流。</p>
+            <div class="q-src">玉哥教程 H8</div>
+          </div>
+        </details>
+
+        <details class="q-item" id="q27">
+          <summary><span class="q-num">27</span><span class="q-title">配音不匹配口型</span><span class="q-quick">→ Sync.so / LivePortrait</span><span class="q-toggle">+</span></summary>
+          <div class="q-body">
+            <p>Sync.so 上传视频 + 配音自动匹配口型,免费版够用,中文支持好。<br>
+              LivePortrait(ComfyUI-LivePortrait 节点):开源本地跑。</p>
+            <div class="yuge-say"><b>玉哥说:</b>玉哥教程 G5 教 ElevenLabs + Sync.so 双工具 15 秒出片。</div>
+            <div class="q-src"><a href="https://sync.so/" target="_blank" rel="noopener">Sync.so</a><a href="../tutorial/G-audio-edit/G-5.html">玉哥 G-5</a></div>
+          </div>
+        </details>
+      </div>
+    </div>
+
+    <div class="q-empty" id="q-empty">没找到匹配的问题 · 换个关键词试试</div>
+
+    <div class="q-foot">
+      <a href="../commercial/monetize.html#contact">未覆盖的问题 · 联系玉哥 →</a>
+    </div>
+  </main>
+
+  <!-- ====== 右侧:权威源直链(简洁导航,不重复 hero 统计) ====== -->
+  <aside class="sb-right" aria-label="权威源">
+    <div class="sb-h">权威源仓库</div>
+    <div class="sb-stat"><a href="https://github.com/comfyanonymous/ComfyUI" target="_blank" rel="noopener">ComfyUI</a><b style="color:var(--amber)">86k★</b></div>
+    <div class="sb-stat"><a href="https://github.com/easydiffusion/easydiffusion" target="_blank" rel="noopener">EasyDiffusion</a><b style="color:var(--amber)">9k★</b></div>
+    <div class="sb-stat"><a href="https://github.com/Comfy-Org/ComfyUI/issues" target="_blank" rel="noopener">ComfyUI Issues</a><b style="color:var(--ink2)">open</b></div>
+    <div class="sb-stat"><a href="https://docs.comfy.org/troubleshooting/overview" target="_blank" rel="noopener">docs.comfy.org</a><b style="color:var(--ink2)">官方</b></div>
+  </aside>
+</div>
+
+<footer class="dock-run compact">
+  <div class="compact-stack">
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+    <div class="c-qr" title="扫码关注玉哥">
+      <img class="qr-img" src="../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="c-qr-cap">扫码关注玉哥</div>
+    </div>
+    <ul class="c-links">
+      <li><a href="../changelog.html">📅 更新日志</a></li>
+    </ul>
+  </div>
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+
+<script>
+// ============ 搜索过滤 ============
+(function(){
+  var input = document.getElementById('q-search');
+  if (!input) return;
+  var empty = document.getElementById('q-empty');
+  input.addEventListener('input', function(){
+    var q = input.value.trim().toLowerCase();
+    var items = document.querySelectorAll('.q-item');
+    var hit = 0;
+    items.forEach(function(it){
+      var txt = it.textContent.toLowerCase();
+      var show = !q || txt.indexOf(q) >= 0;
+      it.classList.toggle('hidden', !show);
+      if (show) hit++;
+    });
+    if (empty) empty.style.display = hit === 0 ? 'block' : 'none';
+    if (q) items.forEach(function(it){
+      if (!it.classList.contains('hidden')) it.setAttribute('open', '');
+      else it.removeAttribute('open');
+    });
+  });
+})();
+
+// ============ 主题切换 ============
+(function(){
+  var b = document.getElementById('themeBtn');
+  if(!b) return;
+  function apply(t){
+    document.documentElement.setAttribute('data-theme', t);
+    document.documentElement.classList.toggle('dark', t === 'dark');
+    try { localStorage.setItem('yuge:theme', t); } catch(e){}
+    b.textContent = t === 'dark' ? '☀️' : '🌙';
+  }
+  var saved = null;
+  try { saved = localStorage.getItem('yuge:theme'); } catch(e){}
+  apply(saved === 'dark' ? 'dark' : 'light');
+  b.addEventListener('click', function(){
+    var cur = document.documentElement.getAttribute('data-theme') || 'light';
+    apply(cur === 'light' ? 'dark' : 'light');
+  });
+})();
+</script>
+<script src="../assets/site-enhance.js?v=fix20260927-2215" defer></script>
+</body>
+</html>

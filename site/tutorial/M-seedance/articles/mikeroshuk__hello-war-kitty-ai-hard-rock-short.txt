@@ -1,0 +1,8 @@
+来源URL: https://mikeroshuk.com/hello-war-kitty-soldiers-vs-pikachu-bots-inside-my-new-ai-generated-hard-rock-short/
+作者: Mike Roshuk
+日期: 2026-03-10
+
+核心内容摘要:
+一位插画师分享如何用AI管线将10年前的数字插画角色复活为音乐短片：原始插画→Nano Banana生成角色产品照作为一致性参考→手动构图草图引导AI生成→生成约150个电影场景（其中30个需要Photoshop修复）→Kling动画化→Premiere剪辑+Suno配乐+自定义音效。展示了"从已有艺术资产出发"的AI制作路径，以及AI生成后仍需人工修图的现实。
+
+推荐教学点: 适合"AI动画短片实战案例"章节——展示从静态插画到动态短片的管线，重点讲"已有艺术资产作为角色锚点"和"AI生成后人工修图的必要性"。

@@ -1,0 +1,20 @@
+{
+  "name": "manju-news-fetcher",
+  "version": "2.0.0",
+  "private": true,
+  "description": "漫剧教程站 · 行业新闻自动抓取系统(MVP)。零外部依赖(Node 内置),输出 site/news/data.json。",
+  "type": "module",
+  "main": "fetch.js",
+  "scripts": {
+    "news:fetch": "node fetch.js",
+    "news:fetch:dry": "node fetch.js --dry",
+    "news:stats": "node stats.js",
+    "news:cleanup": "node cleanup.js",
+    "news:test-sources": "node lib/test-sources.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "玉哥",
+  "license": "MIT"
+}

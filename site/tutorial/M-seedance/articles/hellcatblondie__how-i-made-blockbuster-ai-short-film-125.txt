@@ -1,0 +1,8 @@
+来源URL: https://hellcatblondie.io/blog/how-i-made-an-ai-short-film-on-a-125-dollar-subscription
+作者: DAJAI.IO (Hellcat Blondie / Katherine Grace Clark)
+日期: 2026-04-12
+
+核心内容摘要:
+独立音乐人用$125/月的Higgsfield Creator订阅，耗时两个月完成了一部7分钟叙事AI短片SIMULATION。文章完整拆解了从角色锁定（Soul ID）、多模型策略（Seedance 2.0主用、Kling 3.0补镜、Veo 3.1环境镜头）、提示词工程（灯光语言/镜头语言/情绪指引/负提示）、信用额度管理（30%成功率）到DaVinci Resolve调色与声音设计的全流程。成本约$250，强调"先有声音后剪画面"的音频驱动剪辑法。
+
+推荐教学点: 适合"AI短片全流程实战"章节——展示单人创作者如何用多模型协作完成叙事短片，重点讲角色一致性（Soul ID）、多模型分工策略、以及跨模型调色统一的必要性。

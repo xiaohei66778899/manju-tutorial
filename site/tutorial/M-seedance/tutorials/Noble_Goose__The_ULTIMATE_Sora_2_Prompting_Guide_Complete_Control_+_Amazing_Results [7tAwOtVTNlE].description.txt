@@ -1,0 +1,13 @@
+﻿Learn how to master Sora 2 prompting from beginner to expert in this ultimate Sora 2 tutorial and full guide!
+
+I break down how Sora 2 prompts work, explain best practices for AI video generation, and show you how to craft easy, medium, and advanced Sora 2 prompts for amazing cinematic results.
+
+Chapters:
+00:00 Intro
+01:07 Sora 2 Prompting Best Practices
+04:04 Easy Prompt Style
+05:20 Medium Difficulty Prompt Style
+08:00 Advanced / Hard Prompting
+10:01 Custom GPT Overview
+
+Prompts used in the video are listed in the description.

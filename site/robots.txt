@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Disallow: /tutorial/N-aixiexiaoshuo/repos/

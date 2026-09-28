@@ -1,0 +1,309 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="E-20 提示词工程 5 大原则 · 漫剧制作教程站。玉哥整理的 AI 漫剧与短剧制作实用教程，包含步骤、案例和练习。">
+<title>E-20 提示词工程 5 大原则 · 漫剧制作教程站</title>
+<link rel="stylesheet" href="../../assets/site.css?v=fix20260927-2215">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg?v=fix20260927-2215">
+<link rel="stylesheet" href="../../assets/tutorial.css?v=fix20260927-2215">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="logo">🎬 漫剧教程站 <small>v3 · 玉哥</small></div>
+  <nav>
+    <a href="../../index.html">首页</a>
+    <a href="../all-courses.html" class="active">漫剧教程</a>
+    <a href="../../prompts/image-prompts.html">图片作品</a>
+    <a href="../../works/index.html">视频作品</a>
+    <a href="../../prompts/prompts.html">prompt 模板</a>
+    <a href="../../tools/toolkit.html">工具箱</a>
+    <a href="../../qa/troubleshooting.html">问题库</a>
+    <a href="../../news/industry.html">行业新闻</a>
+    </nav>
+  <div class="search"><input type="search" placeholder="🔍 搜…"></div>
+  <button class="theme-toggle" title="深浅主题切换" onclick="document.documentElement.classList.toggle('dark')">🌙</button>
+</header>
+
+<div class="layout-3col">
+  <aside class="sidebar-left" id="sidebar-left"></aside>
+
+  <main class="content">
+    <div class="breadcrumb">
+      <a href="../../index.html">首页</a> <span>›</span>
+      <a href="../all-courses.html">E AI 出图</a> <span>›</span>
+      E-20 提示词工程 5 大原则
+    </div>
+
+    <h1>E-20 · 提示词工程 5 大原则</h1>
+    <h2 id="sec-1">1. 学员小林的 5 次重抽 vs 1 次过</h2>
+
+    <div class="example">
+      <span class="label">学员实操 · 玉哥整理</span>
+      <h4>👩‍💻 小林 · 2026 年 6 月 · 同一张图两种写法</h4>
+      <p>小林要做一张"男主在公司加班看文件"的图。两种写法:</p>
+
+      <p><strong>❌ 写法 A(小白风格,5 次重抽)</strong>:</p>
+      <pre class="codebox">a man working in office late at night, tired, photorealistic, 8k, masterpiece, best quality, ultra detailed, dramatic lighting, looking at documents, sitting at desk, computer screen, window, city lights, professional photography</pre>
+      <p>5 次重抽结果:人物脸不一样 / 性别有时变女 / 场景有时是卧室 / 文件内容五花八门。</p>
+
+      <p><strong>✅ 写法 B(玉哥 5 原则,1 次过)</strong>:</p>
+      <pre class="codebox">主体:30 岁亚洲男性,短发黑发,白衬衫,黑西裤,疲惫表情
+动作:坐在办公桌前,左手翻文件,右手拿笔
+场景:现代办公室,落地窗,城市夜景
+景别:中景,胸部以上
+光线:电脑屏幕冷光为主,窗外暖光辅助
+风格:写实摄影,f1.8 浅景深
+
+负面提示词:卡通, 动漫, 模糊, 变形, 多余手指</pre>
+      <p class="src">📌 <strong>关键区别</strong>:写法 A 给了 13 个模糊词,AI 不知道哪个优先。写法 B 把信息分成 6 块,每块独立,AI 100% 听懂。学员平均 1 次过率:<strong>写法 A 30%,写法 B 85%</strong>。</p>
+    </div>
+
+    <h2 id="sec-2">2. 玉哥 5 大原则总览</h2>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th>#</th><th>原则</th><th>核心</th><th>反例(小白写法)</th><th>正例(玉哥写法)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>1</strong></td><td>主体先</td><td>身份 + 外貌放第一行</td><td>"a beautiful scene"</td><td>"30 岁亚洲男性,白衬衫"</td></tr>
+          <tr><td><strong>2</strong></td><td>动作场景并列</td><td>动作 + 场景 + 景别三件套</td><td>"他很累"</td><td>"左手翻文件 / 现代办公室 / 中景"</td></tr>
+          <tr><td><strong>3</strong></td><td>光线风格收尾</td><td>光线 + 风格 + 镜头参数</td><td>"好看的"</td><td>"电脑冷光,f1.8 浅景深"</td></tr>
+          <tr><td><strong>4</strong></td><td>负面提示词</td><td>明确告诉 AI 不要什么</td><td>(空)</td><td>"卡通, 模糊, 变形, 多余手指"</td></tr>
+          <tr><td><strong>5</strong></td><td>分块不堆砌</td><td>用换行 / 冒号分块</td><td>"a man tired working office night photo realistic..."</td><td>6 行分块,每行一类信息</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="sec-3">3. 原则 1 · 主体先(身份 + 外貌)</h2>
+
+    <div class="example">
+      <span class="label">玉哥技巧</span>
+      <h4>🎯 主体 = AI 的"第一目标"</h4>
+      <p>AI 看提示词是<strong>从前往后</strong>理解,<strong>前面越具体,后面越听话</strong>。</p>
+
+      <p><strong>反例</strong>:"<code>a tired office worker</code>" → AI 不知道是男是女、年龄、长相,只能瞎猜。</p>
+      <p><strong>正例</strong>:"<code>30 岁亚洲男性,短发黑发,国字脸,白衬衫,黑西裤</code>" → AI 立刻锁定主体,后续所有元素都围绕这一个人。</p>
+
+      <p class="src">📌 <strong>玉哥模板</strong>:主体 = <strong>年龄段 + 性别 + 脸型/发型 + 服装</strong>。<strong>4 项必填</strong>,缺一 AI 都会自由发挥。</p>
+    </div>
+
+    <h2 id="sec-4">4. 原则 2 · 动作 + 场景 + 景别 三件套</h2>
+
+    <div class="example">
+      <span class="label">玉哥三件套公式</span>
+      <h4>🎬 画面 = 动作 + 场景 + 景别(必须并列写)</h4>
+      <p>漫剧一帧画面 = 3 个信息:<strong>人在做什么 / 在哪 / 镜头多远</strong>。<strong>3 件缺 1 件,画面就缺一块</strong>。</p>
+
+      <div class="tbl-wrap" style="margin-top: 12px;">
+        <table>
+          <thead>
+            <tr><th>信息</th><th>写什么</th><th>玉哥常用词</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>动作</strong></td><td>主体正在干啥(动词 + 部位)</td><td>坐下 / 站立 / 走 / 跑 / 拿 / 看 / 笑 / 哭</td></tr>
+            <tr><td><strong>场景</strong></td><td>在什么地方 + 时间(内外景 + 朝代/年代)</td><td>现代办公室 / 古代客栈 / 玄幻森林 / 雨夜街道</td></tr>
+            <tr><td><strong>景别</strong></td><td>镜头离主体多远</td><td>全景 / 中景 / 近景 / 特写 / 胸部以上 / 半身</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="src">📌 <strong>反例</strong>:"<code>a man in office</code>" → AI 出图 = 一个男人站在白墙前(没动作、没景别)。<br>
+      📌 <strong>正例</strong>:"<code>站在落地窗前 / 现代办公室夜景 / 中景胸部以上</code>" → AI 出图 = 明确构图。</p>
+    </div>
+
+    <h2 id="sec-5">5. 原则 3 · 光线 + 风格 + 镜头参数 收尾</h2>
+
+    <div class="example">
+      <span class="label">玉哥"质感三件套"</span>
+      <h4>💡 光线 + 风格 + 镜头 = 画面质感</h4>
+      <p>主体动作场景都对了,但<strong>光线不对 = 画面像 PPT 配图</strong>。<strong>风格不对 = 写实剧里突然出卡通</strong>。</p>
+
+      <div class="tbl-wrap" style="margin-top: 12px;">
+        <table>
+          <thead>
+            <tr><th>维度</th><th>干啥</th><th>玉哥常用词</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>光线</strong></td><td>主光源方向 + 色温 + 强度</td><td>侧光 / 顶光 / 逆光 / 暖光 / 冷光 / 窗户自然光 / 霓虹灯</td></tr>
+            <tr><td><strong>风格</strong></td><td>画风 + 媒介</td><td>写实摄影 / 日漫 / 3D 渲染 / 水墨 / 油画 / 像素</td></tr>
+            <tr><td><strong>镜头参数</strong></td><td>景深 + 焦段 + 视角</td><td>f1.8 浅景深 / 35mm 广角 / 85mm 人像 / 俯拍 / 仰拍</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="src">📌 <strong>玉哥偷懒技巧</strong>:全片统一 1 套风格词(如"写实摄影,f1.8 浅景深,85mm 人像"),所有镜头复制。<strong>省时间 + 整片画风一致</strong>。</p>
+    </div>
+
+    <h2 id="sec-6">6. 原则 4 · 负面提示词(必备 5 类)</h2>
+
+    <div class="example">
+      <span class="label">玉哥负面词 5 大类</span>
+      <h4>🚫 学员通用负面词(直接复制)</h4>
+      <pre class="codebox">质量类:模糊, 低质量, jpeg  artifacts, 噪点, 失真
+人物类:变形, 多余手指, 多余四肢, 脸部扭曲, 不对称眼睛, 双头
+风格类:卡通, 动漫, 3D 渲染, 水彩(写实剧用), 像素(写实剧用)
+内容类:文字, 水印, 签名, 边框, 丑陋
+构图类:裁剪头部, 多余身体, 视角错误</pre>
+
+      <p class="src">📌 <strong>玉哥经验</strong>:<strong>写实剧 + 动漫剧负面词不一样</strong>。<strong>写实剧</strong>必加"卡通、动漫";<strong>动漫剧</strong>必加"写实、照片"。<strong>通用底线 = 上方 5 类 25 个词</strong>。</p>
+    </div>
+
+    <h2 id="sec-7">7. 原则 5 · 分块不堆砌(短句分隔)</h2>
+
+    <div class="example">
+      <span class="label">玉哥排版技巧</span>
+      <h4>📋 分块 vs 堆砌的对比</h4>
+
+      <p><strong>❌ 堆砌写法</strong>(1 行 200 字):</p>
+      <pre class="codebox">a beautiful 30 year old asian man with short black hair wearing white shirt and black pants sitting in modern office late at night looking at documents holding pen tired expression medium shot from chest up cold light from computer screen warm light from window f1.8 photorealistic</pre>
+
+      <p><strong>✅ 分块写法</strong>(6 行,每行一类):</p>
+      <pre class="codebox">主体:30 岁亚洲男性,短发黑发,白衬衫,黑西裤,疲惫表情
+动作:坐在办公桌前,左手翻文件,右手拿笔
+场景:现代办公室,落地窗,城市夜景
+景别:中景,胸部以上
+光线:电脑冷光为主,窗外暖光辅助
+风格:写实摄影,f1.8 浅景深,85mm 焦段</pre>
+
+      <p class="src">📌 <strong>玉哥实测</strong>:同样模型 + 参数,分块写法 <strong>1 次过率 85%</strong>,堆砌写法 <strong>30%</strong>。<strong>换行不花钱,效果差 3 倍</strong>。</p>
+    </div>
+
+    <h2 id="sec-8">8. 完整模板(直接抄)</h2>
+
+    <div class="example">
+      <span class="label">学员通用模板</span>
+      <h4>📝 漫剧单镜头提示词模板(复制即用)</h4>
+      <pre class="codebox">主体:{年龄段}{性别},{脸型/发型},{服装}
+动作:{动词}{部位}
+场景:{时代}{地点},{时间}
+景别:{全景/中景/近景/特写}
+光线:{主光源方向 + 色温}
+风格:{画风},{镜头参数}
+
+负面提示词:模糊, 低质量, 变形, 多余手指, 脸部扭曲, 卡通(写实剧), 文字, 水印</pre>
+    </div>
+
+    <h2 id="sec-9">9. 实战:同一画面 5 种写法对比</h2>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th>写法</th><th>提示词</th><th>1 次过率</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>1. 关键词堆砌</strong></td><td>"beautiful girl, princess, magic, fantasy, stunning, 8k"</td><td>25%</td></tr>
+          <tr><td><strong>2. 长句叙事</strong></td><td>"a beautiful princess standing in a magical forest looking stunning"</td><td>40%</td></tr>
+          <tr><td><strong>3. 列表逗号</strong></td><td>"princess, white dress, forest, magic light, fantasy, 8k"</td><td>55%</td></tr>
+          <tr><td><strong>4. 玉哥 5 原则(简体)</strong></td><td>主体 3 项 + 动作 + 场景 + 景别</td><td>75%</td></tr>
+          <tr><td><strong>5. 玉哥 5 原则(完整)</strong></td><td>6 行分块 + 负面词</td><td><strong>85%</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout ok">
+      <span class="ico">✅</span>
+      <p><strong>结论</strong>:学员作品 1 次过率 <strong>85%</strong> vs 小白写法 <strong>25%</strong>。<strong>同一张图,平均省 3 次重抽 × 30 秒 = 90 秒/张</strong>。一集 80 张图 = <strong>省 2 小时</strong>。</p>
+    </div>
+
+    <h2 id="sec-10">10. 学完这节能做啥</h2>
+
+    <ul class="checklist">
+      <li>知道玉哥 5 原则是哪 5 条</li>
+      <li>能用"主体 + 动作场景并列 + 光线风格 + 负面 + 分块"模板写任意镜头</li>
+      <li>能用玉哥通用负面词(5 类 25 个)</li>
+      <li>能判断"写法 A(堆砌)"和"写法 B(分块)"的 1 次过率差距</li>
+      <li>能用玉哥模板批量产出 80 个镜头提示词(每张 10-15 秒)</li>
+    </ul>
+
+    <h2 id="sec-11">11. 常见误解</h2>
+
+    <div class="callout bad">
+      <span class="ico">❌</span>
+      <p><strong>"提示词要写满 200 字"</strong> · 错。<strong>短而具体 > 长而模糊</strong>。学员作品平均提示词 <strong>60-80 字</strong>,小白写法平均 150 字。<strong>字多 AI 抓不住重点,反而效果差</strong>。</p>
+    </div>
+
+    <div class="callout bad">
+      <span class="ico">❌</span>
+      <p><strong>"用 masterpiece、best quality 就能出精品"</strong> · 部分对。<strong>这俩词只对 SDXL 基础模型有用</strong>(它们是被训练成"高分图"标签)。对 Flux / Midjourney / 即梦<strong>完全无效</strong>。</p>
+    </div>
+
+    <div class="callout warn">
+      <span class="ico">⚠️</span>
+      <p><strong>"中文提示词 AI 不懂"</strong> · 错。SDXL / Flux / Midjourney <strong>双语都能跑</strong>(英文权重略高 10%)。<strong>本地出图用中文完全 OK</strong>。但<strong>视频提示词(可灵 / Sora / Runway)必须英文</strong>。</p>
+    </div>
+
+    <div class="callout warn">
+      <span class="ico">⚠️</span>
+      <p><strong>"负面提示词越全越好"</strong> · 错。<strong>超过 30 个负面词 AI 会"过度纠正"</strong>(画面变奇怪)。学员通用 <strong>15-25 个负面词</strong>。<strong>具体问题具体加</strong>,不要一锅端。</p>
+    </div>
+
+    <h2 id="sec-12">12. 本节小练习</h2>
+
+    <ol>
+      <li>从你喜欢的电影里截 1 帧画面(随便什么电影)</li>
+      <li>用"堆砌写法"写 1 版提示词(150 字以内)</li>
+      <li>用"玉哥 5 原则"写 1 版(6 行分块)</li>
+      <li>本地跑两次(同样模型 / 参数 / Seed),对比出图</li>
+      <li>把对比图 + 两次提示词保存,作为学员"提示词风格"参考</li>
+      <li>用同样方法改写第 1 集剧本里 5 个镜头,跑出来对比</li>
+    </ol>
+
+    <h2 id="sec-13">13. 玉哥说</h2>
+
+    <div class="callout warn">
+      <span class="ico">📢</span>
+      <p><strong>📢 玉哥说</strong>:<br>
+      1. <strong>短而具体 > 长而模糊</strong> · 60-80 字分块写法,1 次过率 85%<br>
+      2. <strong>5 原则 = 主体先 / 动作场景并列 / 光线风格 / 负面 / 分块</strong> · 缺一不可<br>
+      3. <strong>负面提示词 15-25 个够用</strong> · 玉哥通用 5 类 25 词,直接抄<br>
+      4. <strong>整片统一风格词</strong> · 写实摄影 + f1.8 + 85mm 复制 80 次,省时间保一致<br>
+      5. <strong>中文提示词 OK</strong>(出图),<strong>视频必须英文</strong>(可灵/Sora)</p>
+    </div>
+
+    <nav class="bottom-nav">
+      <a class="prev" href="E-19.html">
+        <span class="label">← 上一节</span>
+        <span class="title">E-19 Flux 模型</span>
+      </a>
+      <a class="next" href="../F-ai-video/F-6.html">
+        <span class="label">下一节 →</span>
+        <span class="title">F-6 运镜提示词(眼神跟镜头)</span>
+      </a>
+    </nav>
+  </main>
+
+  <aside class="sidebar-right" id="sidebar-right"></aside>
+</div>
+
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="扫码关注玉哥">
+      <img class="qr-img" src="../../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../../changelog.html">📅 更新日志</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+
+<script src="../../assets/tutorial.js?v=fix20260927-2215"></script>
+<script src="../../assets/site-enhance.js?v=fix20260927-2215" defer></script>
+</body>
+</html>
+

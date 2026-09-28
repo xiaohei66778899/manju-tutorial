@@ -1,0 +1,8 @@
+来源URL: https://thefluxtrain.com/blog/vibe-coding-for-video-claude-direct-film/
+作者: Saquib Alam (TheFluxTrain)
+日期: 2026-07-08
+
+核心内容摘要:
+介绍"Vibe Coding for Video"概念——用Claude作为AI导演agent，通过多轮对话驱动整个AI电影制作流程。六个核心步骤：解读创意简报→拆分场景（每场戏只做一个叙事任务）→维持连续性（角色圣经资产化）→选择工具模型→审查素材（dailies思维）→定向修改弱镜头。附带完整的多轮对话示例，展示如何从"make it tenser"这样的抽象指令转化为具体的场景级调整。核心论点：业余片段和可展示短片的差距不在模型而在导演。
+
+推荐教学点: 适合"AI导演工作流"章节——展示如何用LLM agent作为导演来统筹AI视频生成全流程，重点讲"一场景一任务"和"dailies审查思维"，以及弱vs强导演指令的对比案例。

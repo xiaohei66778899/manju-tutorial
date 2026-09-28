@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html><html lang="zh-CN"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="更新日志 · 漫剧制作教程站 · 玉哥。玉哥整理的 AI 漫剧与短剧制作实用教程，包含步骤、案例和练习。">
+<title>更新日志 · 漫剧制作教程站 · 玉哥</title>
+<link rel="stylesheet" href="assets/site.css?v=fix20260927-2215">
+<link rel="icon" type="image/svg+xml" href="favicon.svg?v=fix20260927-2215">
+<link rel="stylesheet" href="assets/page.css?v=fix20260927-2215">
+<style>
+.page { max-width: 920px; margin: 0 auto; padding: 24px 20px 60px; }
+.lead { color: var(--muted); margin: -8px 0 18px; }
+.timeline { list-style: none; padding: 0; margin: 18px 0 0; border-left: 2px solid var(--line); }
+.timeline li { position: relative; padding: 0 0 18px 22px; margin-left: 12px; }
+.timeline li::before {
+  content: ""; position: absolute; left: -7px; top: 6px;
+  width: 12px; height: 12px; border-radius: 50%;
+  background: #fff; border: 2px solid var(--blue);
+}
+.timeline li.v1::before { background: var(--blue); }
+.timeline .date { font-weight: 700; color: var(--blue); font-size: 14px; display: inline-block; margin-right: 8px; }
+.timeline .tag {
+  display: inline-block; font-size: 11px; padding: 2px 7px; border-radius: 10px;
+  background: #E0DEFF; color: #1F1A14; margin-left: 6px; vertical-align: middle;
+}
+.timeline .tag.major { background: #fff0d6; color: #a86200; }
+.timeline p { margin: 6px 0 0; color: var(--text); line-height: 1.7; font-size: 14px; }
+.timeline p a { color: var(--blue); text-decoration: none; }
+.timeline p a:hover { text-decoration: underline; }
+.timeline ul.sub { margin: 6px 0 0; padding-left: 18px; }
+.timeline ul.sub li { padding: 0 0 3px 0; margin: 0; font-size: 13px; color: var(--muted); }
+.timeline ul.sub li::before { display: none; }
+</style>
+</head><body>
+<header class="topbar">
+  <div class="logo">🎬 漫剧教程站 <small>v3 · 玉哥</small></div>
+  <nav>
+    <a href="index.html">首页</a>
+    <a href="tutorial/all-courses.html">漫剧教程</a>
+    <a href="prompts/image-prompts.html">图片作品</a>
+    <a href="works/index.html">视频作品</a>
+    <a href="prompts/prompts.html">prompt 模板</a>
+    <a href="tools/toolkit.html">工具箱</a>
+    <a href="qa/troubleshooting.html">问题库</a>
+    <a href="news/industry.html">行业新闻</a>
+  </nav>
+  <div class="search"><input type="search" placeholder="🔍 搜…"></div>
+  <button class="theme-toggle" title="深浅主题切换" onclick="document.documentElement.classList.toggle('dark')">🌙</button>
+</header>
+
+<main class="page">
+  <h1>📅 更新日志</h1>
+  <div class="lead">本站所有大改动的留痕记录。最新在上,最旧在下。</div>
+
+  <ul class="timeline">
+
+    <li class="v1">
+      <span class="date">2026-09-27</span><span class="tag major">v2.0 · 里程碑</span>
+      <p>🚀 <strong>作品墙 + 三大专题 + 系统级升级 · 部署就绪</strong></p>
+      <ul class="sub">
+        <li><strong>作品墙完整重建</strong>:<a href="works/index.html">works/index.html</a> · 24 视频作品(6 学员 + 16 HF veo3 + 1 shopware + 1 Bananovel 短剧)全部 200 OK</li>
+        <li><strong>M 专题集成</strong>:<a href="tutorial/M-seedance/Seedance即梦实操课.html">Seedance 即梦实操课</a> · 保留原版冷蓝风格不覆盖玉哥暖色</li>
+        <li><strong>N 专题集成</strong>:<a href="tutorial/N-aixiexiaoshuo/AI写小说实战课.html">AI 写小说实战课</a> · 16 GitHub 仓库 661 MB · 60 截图 · sidebar 让出 topbar</li>
+        <li><strong>剧本.html SPA 升级</strong>:主页加"← 返回玉哥网站首页"按钮 + 8 个 view 统一加左侧 220px sidebar(章节名用完整名称:选题库 · 题材方向 等)</li>
+        <li><strong>导航栏</strong>:"作品"→"视频作品" 全站统一 · topbar 56px 锁定 · active 高亮 hard-code 紫蓝 + 底部 2px 蓝条</li>
+        <li><strong>server 升级</strong>:ThreadingHTTPServer 多线程 · 端口固定 18080 · 响应头 no-store</li>
+        <li><strong>cache 体系</strong>:bump-cache-v6.py 一键升级 · 145 文件批量更新到 <code>v=fix20260927-1715</code></li>
+        <li><strong>Footer 方案 D</strong>:单列居中(品牌 → 副标题 → QR → 链接 → 版权) · 140+ 页面批量推送</li>
+        <li><strong>玉哥暖色调 v3</strong>:配色 <code>#FFFCF6 / #635BFF / #F47C3C</code> · hero 渐变 <code>#FFE9D6 → #FFF7E8 → #ECE7FF</code></li>
+        <li><strong>7 个 banana hero 批量精简</strong>:删 badge-row + sub · 干净大气</li>
+        <li><strong>底部导航卡片式升级</strong>:3 改样式 → 大卡片式 prev/next</li>
+        <li><strong>L/H 卡片图标替换</strong>:统一 icon 系统</li>
+        <li><strong>3 个大视频压缩</strong>(省 187 MB · 部署服务器用)</li>
+        <li><strong>external/ 资源下载</strong>:HF veo3 数据集 16 zip + 18 mp4(89 MB)</li>
+        <li><strong>legacy 整理</strong>:单一源 <code>site/legacy/</code>(junction 双源合并)</li>
+      </ul>
+    </li>
+
+    <li class="v1">
+      <span class="date">2026-09-16</span><span class="tag major">v1.0 · 里程碑</span>
+      <p>🎉 <strong>全站 148 节全完成 · 玉哥明早验收</strong></p>
+      <ul class="sub">
+        <li>9 大类全部完工:A 8 / B 17 / C 17 / D 15 / E 35 / F 19 / G 18 / H 10 / I 9 = 148 节</li>
+        <li>教程列表页(<a href="tutorial/all-courses.html">tutorial/all-courses.html</a>)改成 RUNOOB 风格:176px sticky 左侧 + 9 大类卡片 3 列横排</li>
+        <li>首页 + 教程列表页 footer 统一升级为 RUNOOB 4 列结构(教程入口 / 资源库 / 最新更新 / 关于玉哥 + 二维码位)</li>
+        <li><code>PLAN.md</code> 写入 v1.0 里程碑</li>
+      </ul>
+    </li>
+
+    <li>
+      <span class="date">2026-09-13</span><span class="tag">v0.7</span>
+      <p>骨架 v3 上线 · 9 大类 150 节清单(PLAN.md)+ 7 个导航占位页</p>
+    </li>
+
+    <li>
+      <span class="date">2026-09-13</span><span class="tag">v0.6</span>
+      <p>新首页(5 屏:5 步流程 + 学完成果 + 学员作品 + 9 类图标网格)</p>
+    </li>
+
+    <li>
+      <span class="date">2026-09-13</span><span class="tag">v0.5</span>
+      <p>历史课件已归档，查看 <a href="legacy/v17.0-小说改剧本实操与课程包.html">v17.0 课程包</a> · 新建 site/ 目录结构</p>
+    </li>
+
+    <li>
+      <span class="date">2026-09-12</span><span class="tag">v9.0</span>
+      <p>千川补回 ROI 计算器(7.2 节)</p>
+    </li>
+
+    <li>
+      <span class="date">2026-09-12</span><span class="tag">v8.0</span>
+      <p>改"补给站"(师傅 / 课程 / 工具 / 验真 4 大模块)</p>
+    </li>
+
+    <li>
+      <span class="date">2026-09-11</span><span class="tag">v18.0</span>
+      <p>加 BigBanana / Anil-matcha / OnlyShot 4 顶级仓库</p>
+    </li>
+
+    <li>
+      <span class="date">2026-09-08</span><span class="tag">v9.0</span>
+      <p>加 ROI 计算器(7.2 节)</p>
+    </li>
+
+    <li>
+      <span class="date">2026-08-10</span><span class="tag">v0.1</span>
+      <p>项目立项 · 玉哥启动"漫剧教程站"计划</p>
+    </li>
+
+  </ul>
+
+  <hr style="margin: 36px 0; border: none; border-top: 1px solid var(--line);">
+
+  <h2>📊 阶段里程碑</h2>
+  <div class="lead">Stage 0 → Stage 5b,所有阶段已完结。</div>
+
+  <table style="width:100%; border-collapse: collapse; margin-top: 12px; font-size: 13.5px;">
+    <thead>
+      <tr style="background: var(--bg2); text-align: left;">
+        <th style="padding: 8px 12px; border-bottom: 1px solid var(--line);">阶段</th>
+        <th style="padding: 8px 12px; border-bottom: 1px solid var(--line);">内容</th>
+        <th style="padding: 8px 12px; border-bottom: 1px solid var(--line);">节数</th>
+        <th style="padding: 8px 12px; border-bottom: 1px solid var(--line);">状态</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td style="padding: 8px 12px; border-bottom: 1px solid var(--line);">Stage 0</td><td style="padding: 8px 12px; border-bottom: 1px solid var(--line);">P0 24 节 + 全站骨架</td><td style="padding: 8px 12px; border-bottom: 1px solid var(--line);">24</td><td style="padding: 8px 12px; border-bottom: 1px solid var(--line); color: #1F1A14;">✅</td></tr>
+      <tr><td style="padding: 8px 12px; border-bottom: 1px solid var(--line);">Stage 1a-c</td><td style="padding: 8px 12px; border-bottom: 1px solid var(--line);">B 节全 17 节 + I 附录 9 节</td><td style="padding: 8px 12px; border-bottom: 1px solid var(--line);">26</td><td style="padding: 8px 12px; border-bottom: 1px solid var(--line); color: #1F1A14;">✅</td></tr>
+      <tr><td style="padding: 8px 12px; border-bottom: 1px solid var(--line);">Stage 2a-d</td><td style="padding: 8px 12px; border-bottom: 1px solid var(--line);">C 角色全 17 节 + D 分镜全 15 节</td><td style="padding: 8px 12px; border-bottom: 1px solid var(--line);">32</td><td style="padding: 8px 12px; border-bottom: 1px solid var(--line); color: #1F1A14;">✅</td></tr>
+      <tr><td style="padding: 8px 12px; border-bottom: 1px solid var(--line);">Stage 3a-d</td><td style="padding: 8px 12px; border-bottom: 1px solid var(--line);">E AI 出图全 35 节 + F AI 视频全 19 节</td><td style="padding: 8px 12px; border-bottom: 1px solid var(--line);">54</td><td style="padding: 8px 12px; border-bottom: 1px solid var(--line); color: #1F1A14;">✅</td></tr>
+      <tr><td style="padding: 8px 12px; border-bottom: 1px solid var(--line);">Stage 4a-b</td><td style="padding: 8px 12px; border-bottom: 1px solid var(--line);">G 配音剪辑全 18 节 + H 发布运营全 10 节</td><td style="padding: 8px 12px; border-bottom: 1px solid var(--line);">28</td><td style="padding: 8px 12px; border-bottom: 1px solid var(--line); color: #1F1A14;">✅</td></tr>
+      <tr style="background: #ECE7FF;"><td style="padding: 8px 12px; font-weight: 700;">合计</td><td style="padding: 8px 12px; font-weight: 700;">9 大类全完成</td><td style="padding: 8px 12px; font-weight: 700;">148</td><td style="padding: 8px 12px; font-weight: 700; color: #1F1A14;">✅ v1.0</td></tr>
+    </tbody>
+  </table>
+
+</main>
+
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="扫码关注玉哥">
+      <img class="qr-img" src="assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+<script src="assets/site-enhance.js?v=fix20260927-2215" defer></script>
+</body></html>

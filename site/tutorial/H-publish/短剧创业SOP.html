@@ -1,0 +1,554 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="短剧创业 SOP · 原版 v16.0 · 10 章 + 创业工具包。玉哥整理的 AI 漫剧与短剧制作实用教程，包含步骤、案例和练习。">
+<title>短剧创业 SOP · 原版 v16.0 · 10 章 + 创业工具包</title>
+<style>
+:root{--bg:#fafaff;--bg2:#fff;--bg3:#ECE7FF;--line:#E4E1F4;--text:#1F1A14;--muted:#6F6657;--blue:#635BFF;--blue-soft:#ECE7FF;--blue-deep:#4F46E5;--purple:#8B5CF6;--warm:#FFB142;--danger:#FF5B6E;--success:#10B981;--acc:#635BFF;--acc2:#FFB142;--acc3:#635BFF;--acc4:#FF5B6E;--shadow:0 6px 18px rgba(244,124,60,.18)}
+[data-theme="dark"]{--bg:#0F0F12;--bg2:#17171A;--bg3:#1F1F23;--line:#2D2D33;--text:#E6E9F2;--muted:#8A93A6;--blue:#7B7AFF;--blue-soft:#1F1F2A;--blue-deep:#9B98FF;--purple:#A78BFA;--warm:#FFB142;--danger:#FF7D91;--success:#34D399;--acc:#7B7AFF;--acc2:#FFB142;--acc3:#7B7AFF;--acc4:#FF7D91;--shadow:0 6px 18px rgba(0,0,0,.5)}
+*{box-sizing:border-box;margin:0;padding:0}html,body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Helvetica,Arial,sans-serif;line-height:1.7;font-size:15px;-webkit-font-smoothing:antialiased}
+a{color:var(--acc3);text-decoration:none}
+code,kbd{background:var(--bg3);border:1px solid var(--line);padding:2px 6px;border-radius:4px;font-family:"JetBrains Mono",Consolas,monospace;font-size:13px;color:var(--warm)}
+pre{background:var(--bg2);border:1px solid var(--line);padding:14px 16px;border-radius:8px;overflow-x:auto;margin:12px 0;font-size:12.5px;color:var(--text);line-height:1.6}
+.read-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,var(--blue),var(--purple));z-index:9999;transition:width 80ms ease-out;pointer-events:none}
+.read-progress.show-end{box-shadow:0 1px 8px rgba(139,92,246,.6)}
+aside a.aside-current{color:var(--blue)!important;background:color-mix(in srgb,var(--blue) 12%,var(--bg2))!important;border-left:3px solid var(--blue)!important;font-weight:600}
+aside a.aside-current::before{content:"▸ ";color:var(--blue);font-size:11px;margin-right:2px}
+.topbar{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg2) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:12px 24px;display:flex;align-items:center;gap:16px}
+.logo{font-weight:800;font-size:18px;background:linear-gradient(90deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:.5px}
+.hero{background:linear-gradient(135deg,#ECE7FF 0%,var(--bg) 60%,#ECE7FF 100%);border:1px solid var(--acc);border-radius:14px;padding:36px 32px;margin-bottom:32px;box-shadow:0 8px 28px rgba(244,124,60,.18)}
+.hero h1{background:linear-gradient(90deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent;display:inline-block;margin-bottom:6px}
+.hero .sub{color:var(--muted);font-size:14px}
+.hero .target{background:rgba(255,91,110,.1);border:1px solid var(--acc4);border-radius:8px;padding:14px;margin-top:20px;font-size:14px;color:var(--text)}
+.hero .target b{color:var(--acc2)}
+h1{font-size:28px;margin-bottom:8px;letter-spacing:.5px}
+h2{font-size:22px;margin:40px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line);position:relative;color:var(--acc)}
+h2::before{content:"";position:absolute;left:-16px;top:8px;width:4px;height:20px;background:var(--acc);border-radius:2px}
+h3{font-size:16px;margin:24px 0 8px;color:var(--acc2)}
+p{margin:8px 0;color:var(--text)}
+ul,ol{margin:6px 0 10px 22px;color:var(--text)}
+li{margin:3px 0}
+strong{color:var(--text)}
+em{color:var(--acc2);font-style:normal}
+.callout{display:flex;gap:12px;padding:12px 14px;border-radius:8px;margin:12px 0;border:1px solid var(--line);background:var(--bg2)}
+.callout .ico{font-size:18px;flex-shrink:0;line-height:1}
+.callout.tip{border-color:rgba(94,224,167,.4);background:rgba(94,224,167,.06)}
+.callout.warn{border-color:rgba(248,113,113,.4);background:rgba(248,113,113,.06)}
+.callout.info{border-color:rgba(122,162,255,.4);background:rgba(122,162,255,.06)}
+.callout p{font-size:13.5px;margin:0}
+.template{background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:14px;margin:8px 0;font-family:"JetBrains Mono",Consolas,monospace;font-size:13px;color:var(--text);line-height:1.6;white-space:pre-wrap;overflow-x:auto}
+.template .k{color:var(--acc4);font-weight:600}
+.template .v{color:var(--warm)}
+.template .c{color:var(--muted);font-style:italic}
+.template .ok{color:#5ee0a7;font-weight:700}
+.template .bad{color:#ff5b6e;font-weight:700}
+.scene{background:var(--bg2);border:1px solid var(--line);border-left:3px solid var(--acc);border-radius:6px;padding:12px 16px;margin:10px 0;font-size:13.5px;color:var(--text);line-height:1.7}
+.scene .lbl{color:var(--acc);font-weight:700;font-size:12px;letter-spacing:1px;margin-bottom:4px;display:block}
+.checklist{background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:16px;margin:12px 0}
+.checklist label{display:flex;gap:8px;padding:4px 0;font-size:13.5px;color:var(--text);cursor:pointer}
+.checklist input[type=checkbox]{margin-top:4px;cursor:pointer}
+.red{color:var(--acc4);font-weight:600}
+.green{color:var(--acc);font-weight:600}
+footer{margin-top:50px;padding:20px 40px;color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);text-align:center}
+@media print{.topbar{display:none}body{background:#fff;color:#000}h2::before{display:none}}
+</style>
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg?v=fix20260927-2215">
+</head>
+<body>
+
+<div class="read-progress" id="readProgress"></div>
+
+<div class="topbar">
+  <div class="logo">🎯 短剧创业 SOP <small>v16.0 原版 · 1 份就够</small></div>
+  <div style="margin-left:auto;display:flex;gap:8px">
+    <a href="../../index.html" style="background:var(--bg3);border:1px solid var(--line);color:var(--text);padding:5px 12px;border-radius:5px;font-size:12px;text-decoration:none">🏠 返回首页</a>
+    <button id="themeBtn" style="background:var(--bg3);border:1px solid var(--line);color:var(--text);padding:5px 12px;border-radius:5px;cursor:pointer;font-size:12px">🎨 主题</button>
+    <button onclick="window.print()" style="background:var(--bg3);border:1px solid var(--line);color:var(--text);padding:5px 12px;border-radius:5px;cursor:pointer;font-size:12px">🖨 打印</button>
+  </div>
+</div>
+
+<div class="layout">
+<main style="padding:32px 40px 80px;max-width:920px;margin:0 auto">
+
+<section class="hero">
+  <h1>短剧创业 SOP</h1>
+  <p class="sub">1 份就够 · 砍水版 · 2026-09-10</p>
+  <div class="target">
+    <b>目标</b>:用 1-3 万预算,在 6 个月内做出 1 部可能爆的短剧,首月分账 1-10 万<br>
+    <b>路径</b>:选书 → 改编 → 投流 → 商业化 → 复利<br>
+    <b>承诺</b>:这是 1 份完整 SOP,看完就动手,不再读其他课件。其他 14 个独立文件是"附录",需要时再查
+  </div>
+</section>
+
+<div class="callout warn">
+  <span class="ico">🚨</span>
+  <p><strong>2026 入行警告</strong>:AI 漫剧日产 1000 部,90% 小公司已退出。短剧行业进入"红海"。<strong>盲目入场 = 大概率亏本</strong>。<strong>这 6 个月路径 = 1 份"少亏多赚"的指南</strong>,不是"必赚"承诺。</p>
+</div>
+
+<!-- ============ 阶段 0:认知 ============ -->
+
+<h2>阶段 0 · 认知校准(开始前必读)</h2>
+
+<h3>0.1 短剧创业的 3 个真相</h3>
+<div class="callout info">
+  <span class="ico">🔍</span>
+  <p><strong>真相 1</strong>:头部编剧年薪 200 万(腾讯新闻 2025-12-09),但<strong>新人过稿率 5%</strong>。<strong>真相 2</strong>:短剧行业 80% 成本砸向投流,制作只占 10-30%。<strong>真相 3</strong>:90% 中国出海公司亏损,ReelShort 母公司也亏。</p>
+</div>
+
+<h3>0.2 你的 3 个数字目标</h3>
+<div class="template">
+<span class="k">预算</span>: <span class="v">1-3 万</span>
+<span class="k">时间</span>: <span class="v">6 个月(每周 15-20 小时)</span>
+<span class="k">目标收入</span>: <span class="v">首月分账 1-10 万(中等爆款)/ 3-30 万(大爆款)/ 0(没爆)</span>
+<span class="k">底线</span>: <span class="v">6 个月累计支出 ≤ 3 万,不能借钱/抵押</span>
+</div>
+
+<h3>0.3 失败后的退路</h3>
+<p>即使按这 SOP 做,也可能失败。提前想好退路:</p>
+<ul>
+  <li>6 个月没出过 1 部过稿剧 → 复盘,转做"短剧剪辑/解说博主"(轻资产副业)</li>
+  <li>出过 1 部但没爆 → 用过稿经验接单(代写短剧剧本,5-10 万/部)</li>
+  <li>爆了 1 部 → 立刻做系列化(《家里家外 1/2/3》模式),长尾分账</li>
+</ul>
+
+<!-- ============ 阶段 1:选书(2 周) ============ -->
+
+<h2>阶段 1 · 选书(2 周,产出 30 集剧本 ≈ 2 万字)</h2>
+
+<h3>1.1 选书 5 维评估(总分 100)</h3>
+<div class="template">
+<span class="k">① 数据</span>:  <span class="v">在读 30 万+ = 20</span>  /  <span class="v">20-30 万 = 15</span>  /  <span class="v">10-20 万 = 10</span>  /  <span class="v">&lt;10 万 = 5</span>
+<span class="k">② 评分</span>:  <span class="v">9.5+ = 20</span>  /  <span class="v">9.0-9.5 = 15</span>  /  <span class="v">8.5-9.0 = 10</span>  /  <span class="v">&lt;8.5 = 5</span>
+<span class="k">③ 体量</span>:  <span class="v">100-300 万字 = 20</span>  /  <span class="v">50-100 万 = 15</span>  /  <span class="v">&gt;500 万 = 10</span>
+<span class="k">④ 合规</span>:  <span class="v">合规 = 20</span>  /  <span class="v">边缘 = 10</span>  /  <span class="v">违规 = 0</span>
+<span class="k">⑤ 改编空白</span>:  <span class="v">未改编 = 20</span>  /  <span class="v">改 1 次 = 15</span>  /  <span class="v">改 2-3 次 = 10</span>  /  <span class="v">改 3+ = 5</span>
+
+<span class="c"># 评分</span>
+<span class="ok">&gt;80 分</span>: 必选
+<span class="k">60-80 分</span>: 可选
+<span class="bad">&lt;60 分</span>: 不选
+</div>
+
+<p style="margin:6px 0 4px;padding:6px 10px;background:rgba(94,224,167,.06);border-left:3px solid var(--acc);border-radius:4px;font-size:12.5px">📎 30 本详细 TOP 榜单 + 5 维评分表见 <a href="../../legacy/v10.0-番茄IP选书TOP50.html">v10.0 番茄 IP TOP 50</a>(23KB)。本节是 TOP 3 摘要。</p>
+<h3>1.2 番茄 3 本最推荐改的 IP(2026-09 数据)</h3>
+<div class="template">
+<span class="k">① 《我不是戏神》</span>  <span class="v">三九音域 / 233 万在读 / 9.9 / 400 万字</span>
+  <span class="c">未被改编,殿堂作家,克系+悬疑,改短剧天花板</span>
+
+<span class="k">② 《恋语新解》</span>  <span class="v">番茄官方青春榜 / 9.8 / 87 万在读 / 131 万字</span>
+  <span class="c">穿越+恋综+沙雕甜文,女频稀缺品类,体量短剧友好</span>
+
+<span class="k">③ 《实习驱灵》</span>  <span class="v">9.6 / 79.6 万在读 / 365 万字</span>
+  <span class="c">都市高武+怪物收容,男频天花板潜质</span>
+
+<span class="c"># 注:已被改编 3+ 次的不选(过稿地狱);</span>
+<span class="c"># 体量 &gt;500 万字的不选(改不动);</span>
+<span class="c"># 双男主/纯灵异/极端复仇的不选(违规);</span>
+<span class="c"># 完结比连载好(完整可全 IP 拿下)。</span>
+</div>
+
+<h3>1.3 选书 5 步执行</h3>
+<ol>
+  <li><strong>D1</strong>:装 novel-downloader 油猴脚本(github.com/404-novel-project)</li>
+  <li><strong>D2</strong>:登录番茄作家助手 APP,开短剧白名单</li>
+  <li><strong>D3-D5</strong>:从番茄短剧版权中心免费下载 5 本候选</li>
+  <li><strong>D6-D10</strong>:通读 3 遍(快读/精读/改编笔记)</li>
+  <li><strong>D11-D14</strong>:用 5 维评估打分,选 1 本</li>
+</ol>
+
+<div class="callout tip">
+  <span class="ico">💡</span>
+  <p><strong>番茄短剧版权中心</strong>:抖音 App → 创作者服务中心 → 短剧版权中心(每月免费领 5 部 IP)</p>
+</div>
+
+<!-- ============ 阶段 2:改编(8 周) ============ -->
+
+<h2>阶段 2 · 改编(8 周,30 集剧本 + 漫剧 3 集)</h2>
+
+<h3>2.1 改编 5 大铁律</h3>
+<div class="callout warn">
+  <span class="ico">⚠️</span>
+  <p><strong>删 70% 留 10% 加 20%</strong>。抱着"翻译"心态改 90% 失败。</p>
+</div>
+<ol>
+  <li><strong>第 1 集 3 秒核弹</strong>:开篇 3 秒必须有强冲突/悬念/情绪炸弹</li>
+  <li><strong>每集 1 钩子</strong>:每集结尾 1 个钩子,让观众想看下一集</li>
+  <li><strong>环境描写归零</strong>:心理/环境/水文 = 100% 删除</li>
+  <li><strong>对白重写(≤30 字)</strong>:90% 对白重写,3-7 字短句 + 情绪</li>
+  <li><strong>每 5 集 1 爽点</strong>:5/10/15/20/25/30 集都要有爽点</li>
+</ol>
+
+<h3>2.2 8 周时间表(每周 15-20 小时)</h3>
+<div class="template">
+<span class="k">W1</span>  通读 3 遍 + 改编笔记
+<span class="k">W2</span>  5 个人物卡 + 30 集大纲(每集 200-300 字)
+<span class="k">W3</span>  写第 1 集(1500 字)+ 第 2-5 集
+<span class="k">W4</span>  写第 6-10 集(含付费卡 1)
+<span class="k">W5</span>  自检第 1-10 集 + 改 2 稿
+<span class="k">W6</span>  同步做 1-3 集 AI 漫剧(ComfyUI/即梦/可灵)
+<span class="k">W7</span>  写第 11-20 集 + 自检
+<span class="k">W8</span>  写第 21-30 集 + 30 项自检清单 + 投稿
+</div>
+
+<h3>2.3 30 集大纲模板(每集 200-300 字)</h3>
+<div class="template">
+<span class="k">【第 X 集】</span>
+<span class="k">【时间地点】</span>: <span class="v">[年月日 + 室内/室外 + 地点]</span>
+<span class="k">【角色】</span>: <span class="v">[主角/配角/群演]</span>
+<span class="k">【核心事件】</span>: <span class="v">[1-2 句写清本集发生什么]</span>
+<span class="k">【情绪曲线】</span>: <span class="v">[平静→紧张 / 压抑→爆发 / 幸福→惊吓]</span>
+<span class="k">【结尾钩子】</span>: <span class="v">[1 句让观众想看下一集]</span>
+<span class="k">【爽点/虐点】</span>: <span class="v">[本集主打什么]</span>
+</div>
+
+<h3>2.4 第 1 集核弹开场 · 模板(直接套用)</h3>
+<div class="scene">
+<span class="lbl">男频战神 · 5 段开场</span>
+【0-3s】主角受辱(跪地/被打耳光/被赶出)
+【3-10s】"你们不知道我是谁吧?"
+【10-20s】打电话/亮玉佩/亮印章
+【20-30s】全城大佬到场,反派下跪
+【卡点结尾】"他说:从今天起,XXX 归位。"
+
+<span class="lbl">女频离婚 · 5 段开场</span>
+【0-3s】女主开门,看到丈夫与闺蜜
+【3-10s】丈夫:"你听我解释!"
+【10-20s】女主:"不用解释,签吧。"
+【20-30s】女主拿出离婚协议,冷静签字
+【卡点结尾】"她擦干眼泪,眼神变了:这一次,我不忍了。"
+</div>
+
+<h3>2.5 30 项自检清单(投稿前必过)</h3>
+<div class="checklist">
+<label><input type="checkbox"> 1. 单集字数 800-1500</label>
+<label><input type="checkbox"> 2. 场景描述清晰(时间/地点/光线)</label>
+<label><input type="checkbox"> 3. 对白标(角色):"对白内容"</label>
+<label><input type="checkbox"> 4. 运镜/动作指示用【】或★</label>
+<label><input type="checkbox"> 5. 每集末尾有"下集预告"</label>
+<label><input type="checkbox"> 6. 第 1 集 3 秒内有情绪炸弹</label>
+<label><input type="checkbox"> 7. 第 1 集结尾有"非解决"悬念</label>
+<label><input type="checkbox"> 8. 第 7 集有强钩子(身份曝光/危机/反转)</label>
+<label><input type="checkbox"> 9. 第 10 集卡点"接近揭开"</label>
+<label><input type="checkbox"> 10. 主角一句话人设</label>
+<label><input type="checkbox"> 11. 没有大段心理描写</label>
+<label><input type="checkbox"> 12. 没有大段环境描写</label>
+<label><input type="checkbox"> 13. 每 5 集 1 爽点</label>
+<label><input type="checkbox"> 14. 每集结尾有悬念</label>
+<label><input type="checkbox"> 15. 每句对白 ≤30 字</label>
+<label><input type="checkbox"> 16. 至少 3 集是"情感过渡集"</label>
+<label><input type="checkbox"> 17. 1 个付费卡点(第 10 集)</label>
+<label><input type="checkbox"> 18. 1 主线 + ≤2 副线</label>
+<label><input type="checkbox"> 19. ≥3 句标志性台词</label>
+<label><input type="checkbox"> 20. 题材不在平台不收名单</label>
+<label><input type="checkbox"> 21. 无极端复仇</label>
+<label><input type="checkbox"> 22. 无擦边低俗</label>
+<label><input type="checkbox"> 23. 无双男主/双女主</label>
+<label><input type="checkbox"> 24. 无"被禁"题材</label>
+<label><input type="checkbox"> 25. 不洗稿、不抄</label>
+<label><input type="checkbox"> 26. 字数符合要求</label>
+<label><input type="checkbox"> 27. 5 维评分 ≥80</label>
+<label><input type="checkbox"> 28. 提交"大纲+人物+前 10 集"</label>
+<label><input type="checkbox"> 29. 编辑回复 12 小时内回</label>
+<label><input type="checkbox"> 30. 改 5 稿还没过 = 换方向</label>
+</div>
+
+<!-- ============ 阶段 3:投流(2 周) ============ -->
+
+<h2>阶段 3 · 投流(2 周,千川小预算测试)</h2>
+
+<h3>3.1 4 阶段 SOP</h3>
+<div class="template">
+<span class="k">D1-D3 冷启动</span>  ¥500-3000/天 测素材
+  <span class="c"># 3-5 条素材 A/B 测试,3 秒完播率&gt;60% 保留</span>
+
+<span class="k">D4-D7 放量</span>  ¥5000-20000/天 扩量
+  <span class="c"># Top 1-2 素材,验证 ROI&gt;1.0</span>
+
+<span class="k">D8-D14 峰值</span>  ¥20000-100000/天 集中打
+  <span class="c"># 付费卡 1 前 3 天,目标 ROI 1.2-1.5</span>
+
+<span class="k">D15+ 收尾</span>  ¥1000-5000/天 捡漏
+  <span class="c"># 长尾素材投完结花絮,30 天 ROI&lt;0.5 停</span>
+</div>
+
+<h3>3.2 5 大爆款投流素材模板(直接套用)</h3>
+<div class="scene">
+<span class="lbl">模板 1:身份反转型(男频爆款)</span>
+[0-3s] 主角受辱(跪地/被打耳光/被赶出)
+[3-10s] "你们不知道我是谁吧?"
+[10-20s] 打电话/亮玉佩/亮印章
+[20-30s] 全城大佬到场,反派下跪
+[卡点] "他说:从今天起,XXX 归位。"
+
+<span class="lbl">模板 2:出轨实锤型(女频爆款)</span>
+[0-3s] 女主开门,看到丈夫与闺蜜
+[3-10s] 丈夫:"你听我解释!"
+[10-20s] 女主:"不用解释,签吧。"
+[20-30s] 离婚协议,冷静签字
+[卡点] "她擦干眼泪,眼神变了:这一次,我不忍了。"
+</div>
+
+<h3>3.3 ROI 健康警戒线</h3>
+<div class="template">
+<span class="ok">&gt;1.5</span>  爆款区 → 立即加预算
+<span class="ok">1.2-1.5</span>  健康 → 维持
+<span class="k">1.0-1.2</span>  临界 → 优化素材,降出价
+<span class="bad">0.8-1.0</span>  亏损 → 减半,改方向
+<span class="bad">&lt;0.8</span>  血亏 → 立即停
+</div>
+
+<h3>3.4 投流方对接(可选)</h3>
+<p>不想自己投?找投流方。分成 40-60%,合同要点:</p>
+<ul>
+  <li>乙方垫付投流成本,后期从分账扣</li>
+  <li>ROI &lt; 1.0 连续 30 天乙方可停</li>
+  <li>素材著作权归乙方,甲方有本剧使用权</li>
+  <li>非独家(独家 = 失去话语权)</li>
+  <li>60 天结算(避免 90+)</li>
+</ul>
+
+<!-- ============ 阶段 4:商业化(持续) ============ -->
+
+<h2>阶段 4 · 商业化(持续,5 大变现路径)</h2>
+
+<h3>4.1 5 大变现</h3>
+<div class="template">
+<span class="k">① 编剧保底+分成</span>  <span class="v">5-20 万保底 + 20% 长期分账</span>
+  <span class="c"># 头部可 200 万年薪</span>
+
+<span class="k">② 制作方分账</span>  <span class="v">短剧分账</span>
+  <span class="c"># 真人 5-30 万/部,漫剧 1-5 万/部</span>
+
+<span class="k">③ 广告植入</span>  <span class="v">1000-5000 万/集</span>
+  <span class="c"># 头部短剧 2000-5000 万/集</span>
+
+<span class="k">④ IP 衍生+文旅</span>  <span class="v">长尾</span>
+  <span class="c"># 《家里家外》带动成都文旅</span>
+
+<span class="k">⑤ 矩阵账号</span>  <span class="v">广告/带货</span>
+  <span class="c"># 1 部剧养 5 个号(抖音/快手/小红书/视频号)</span>
+</div>
+
+<h3>4.2 真实收入分布(2026)</h3>
+<div class="callout warn">
+  <span class="ico">📊</span>
+  <p>10% 头部吃掉 90% 利润。<strong>期望要现实</strong>:6 个月内做出 1 部过稿剧(5-20 万)或 1 部中爆剧(1-10 万月分账),已是中上水平。<strong>不要期望 1 部爆赚 100 万</strong>。</p>
+</div>
+
+<!-- ============ 阶段 5:资金保护(必读) ============ -->
+
+<h2>阶段 5 · 资金保护(必读,5 大红线)</h2>
+
+<div class="callout warn">
+  <span class="ico">🚨</span>
+  <p><strong>创业第一原则:不死 = 胜利</strong>。保护本金 = 长期复利。</p>
+</div>
+
+<ol>
+  <li><strong>不借债投流</strong>:投流最多 3 万封顶,超过 3 万还没回本 = 停</li>
+  <li><strong>不抄爆款</strong>:番茄已严打,被下架 + 封号 + 负法律责任</li>
+  <li><strong>不签独家全版权</strong>:只签"本剧改编权",保留 IP 衍生权</li>
+  <li><strong>不押注 1 部</strong>:留 30% 精力做"长尾 IP"系列化</li>
+  <li><strong>6 个月累计 ≤ 3 万</strong>:超过这个数 = 自动停</li>
+</ol>
+
+<!-- ============ 阶段 6:立即开始 ============ -->
+
+<h2>阶段 6 · 立即开始(今天/这周/这月)</h2>
+
+<h3>6.1 今天(D1)</h3>
+<div class="checklist">
+<label><input type="checkbox"> 装 Tampermonkey(Chrome/Edge 扩展商店)</label>
+<label><input type="checkbox"> 装 novel-downloader 油猴脚本</label>
+<label><input type="checkbox"> 装抖音短剧版权中心(抖音 App → 创作者服务中心 → 短剧版权中心)</label>
+<label><input type="checkbox"> 创建工作区子目录:E:\AIGC\课件\12小说\我的项目\</label>
+<label><input type="checkbox"> 把 v16.0 收藏为书签</label>
+</div>
+
+<h3>6.2 这周(W1)</h3>
+<div class="checklist">
+<label><input type="checkbox"> D1-D3:下载 5 本候选番茄小说</label>
+<label><input type="checkbox"> D4-D7:通读 3 遍</label>
+<label><input type="checkbox"> D7 选 1 本(用 5 维评估)</label>
+</div>
+
+<h3>6.3 这月(M1)</h3>
+<div class="checklist">
+<label><input type="checkbox"> 完成 5 个人物卡 + 30 集大纲</label>
+<label><input type="checkbox"> 完成第 1 集剧本(1500 字,3 秒核弹开场)</label>
+<label><input type="checkbox"> 投出 1 部 30 集(红果 + 1 家保底)</label>
+</div>
+
+<h3>6.4 6 个月里程碑</h3>
+<div class="template">
+<span class="k">M1</span>  选书 + 改编完成 30 集 + 投 1 家
+<span class="k">M2</span>  改 5-10 次 + 过 1 家(目标)
+<span class="k">M3</span>  完 1 部 + 同步做 1-3 集 AI 漫剧
+<span class="k">M4</span>  上线 + 千川小预算测试
+<span class="k">M5</span>  复盘 + 系列化准备
+<span class="k">M6</span>  第二部 + 长尾分账
+
+<span class="c"># 6 个月目标</span>
+<span class="c"># 必成:1 部过稿 + 1 部可能爆款</span>
+<span class="c"># 期望:首月分账 1-10 万</span>
+<span class="c"># 底线:总支出 ≤ 3 万</span>
+</div>
+
+<!-- ============ 附录:何时查其他课件 ============ -->
+
+<h2>附录 · 其他 14 个课件何时查</h2>
+
+<p>其他文件<strong>不是"必读"</strong>,是"按需查阅":</p>
+<div class="template">
+<span class="k">主课件(177KB)</span>  → 查"平台对比/趋势判断/题材禁区"时
+<span class="k">剧本样本库</span>  → 写第 1 集时<strong>必查</strong>
+<span class="k">合同模板包</span>  → 投出去前 1 周<strong>必查</strong>
+<span class="k">ComfyUI 工作流</span>  → 做 AI 漫剧时查
+<span class="k">5 部爆款拆解</span>  → 写剧本时<strong>必查</strong>(家里家外/斩神/八零后妈)
+<span class="k">头部 UP 主</span>  → 学习阶段查
+<span class="k">千川投流 SOP</span>  → 上线前 1 周查
+<span class="k">番茄 IP TOP50</span>  → 选书时辅助
+<span class="k">短剧演员指南</span>  → 不做(创业不需要当演员)
+<span class="k">海外 4 平台</span>  → 6 个月后再查
+<span class="k">行业地图</span>  → 6 个月后看趋势
+<span class="k">v14.0 小说改剧本实操</span>  → 写剧本时<strong>必查</strong>(7 环节+28 坑)
+<span class="k">知识盘点与盲区</span>  → 6 个月后回看盲区
+</div>
+
+<div class="callout tip">
+  <span class="ico">📌</span>
+  <p><strong>4 个必查文件</strong>:v4.0 / v5.0 / v7.0 / v14.0。其他 10 个是"锦上添花"。</p>
+</div>
+
+<!-- ============ 收官 ============ -->
+
+<h2>🎯 最后的话</h2>
+
+<div class="callout tip">
+  <span class="ico">✅</span>
+  <p><strong>这 6 个月你只需要做 3 件事</strong>:① 用 v16.0 的 5 维评估选 1 本书 ② 用 v16.0 的 8 周时间表写 30 集 ③ 用 v16.0 的 4 阶段投流小预算测。<strong>其他 14 个文件能不看就不看</strong>。</p>
+</div>
+
+<p><strong>现在请你做一件事</strong>:打开 v16.0 → 阶段 6.1 → 装 novel-downloader 油猴脚本 → 下载 1 本番茄小说。</p>
+
+<p><strong>这 1 步,比再读 100 个课件都有用</strong>。</p>
+
+<hr style="margin:30px 0;border:0;border-top:1px solid var(--line)">
+
+<p style="text-align:center;color:var(--muted);font-size:13px">
+📕 短剧创业 SOP v16.0 · 1 份就够<br>
+2026-09-10 · 砍水版 · 第 16 个课件,也是最后一个<br>
+其他 14 个文件,需要时再查
+</p>
+
+
+<h2 id="d2">§ 7 · 全网顶级短剧创业视频课路径(2026-09 校验)</h2>
+
+<div class='callout purple'>
+  <span class='ico'>💎</span>
+  <p><strong>短剧创业不是'知道几个流程'就够</strong>。<strong>本章 6 阶段 SOP + 16 课顶级视频课</strong> = 学员'0 经验到月入 1-3 万'完整路径。</p>
+</div>
+
+<h3>🐣 7.1 小白(从没做过短剧) · 4 课</h3>
+<p>目标:<strong>30 分钟搞懂短剧是什么 + 怎么起步</strong>。</p>
+<div class='tbl-wrap'>
+<table>
+<thead><tr><th>课程</th><th>UP / 频道</th><th>时长</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td>短剧是什么 · 一节课搞懂</td><td>短剧入门 (B 站)</td><td>1 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%E6%98%AF%E4%BB%80%E4%B9%88' target='_blank' rel="noopener noreferrer">B 站搜'短剧是什么'</a></td></tr>
+<tr><td>番茄小说改编短剧 30 天</td><td>短剧改编 30 天 (B 站)</td><td>3-5 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%95%AA%E8%8C%84%E6%94%B9%E7%BC%96' target='_blank' rel="noopener noreferrer">B 站搜'番茄改编'</a></td></tr>
+<tr><td>AI 漫剧 1 个月出 1 部</td><td>AI 漫剧 1 个月 (B 站)</td><td>2-3 小时</td><td><a href='https://search.bilibili.com/all?keyword=AI%20%E6%BC%AB%E5%89%A7%20%E5%87%BA%E5%89%A7' target='_blank' rel="noopener noreferrer">B 站搜'AI 漫剧 出剧'</a></td></tr>
+<tr><td>短剧创业 1 万预算版</td><td>短剧 1 万预算 (B 站)</td><td>1-2 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%20%E4%B8%9A%E4%B8%9A' target='_blank' rel="noopener noreferrer">B 站搜'短剧 1 万'</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>🌱 7.2 入门(写过剧本,想投稿) · 4 课</h3>
+<p>目标:<strong>30 天投 1 部过稿</strong>。</p>
+<div class='tbl-wrap'>
+<table>
+<thead><tr><th>课程</th><th>UP / 频道</th><th>时长</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td>短剧投稿 12 家平台</td><td>短剧投稿 (B 站)</td><td>2-3 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%E6%8A%95%E7%A8%BF' target='_blank' rel="noopener noreferrer">B 站搜'短剧投稿'</a></td></tr>
+<tr><td>红果 / 九州 收稿风格</td><td>红果 九州 (B 站)</td><td>2-3 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%BA%A2%E6%9E%9C%20%E5%8D%83%E5%B7%9D' target='_blank' rel="noopener noreferrer">B 站搜'红果 千川'</a></td></tr>
+<tr><td>短剧合同 5 大必备条款</td><td>短剧合同 (B 站)</td><td>1-2 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%20%E5%90%88%E5%90%8C' target='_blank' rel="noopener noreferrer">B 站搜'短剧 合同'</a></td></tr>
+<tr><td>编剧中心制 1 万 6 个月</td><td>编剧中心制 (B 站)</td><td>2-3 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%BC%96%E5%89%A7%E4%B8%AD%E5%BF%83%E5%88%B6' target='_blank' rel="noopener noreferrer">B 站搜'编剧中心制'</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>🚀 7.3 进阶(投过稿,想稳定月入 1-3 万) · 4 课</h3>
+<p>目标:<strong>30 天出 1 部 + 60 天月入 1 万</strong>。</p>
+<div class='tbl-wrap'>
+<table>
+<thead><tr><th>课程</th><th>UP / 频道</th><th>时长</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td>短剧千川 4 阶段 SOP</td><td>短剧投流 (B 站)</td><td>3-5 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%20%E5%8D%83%E5%B7%9D' target='_blank' rel="noopener noreferrer">B 站搜'短剧 千川'</a></td></tr>
+<tr><td>AI 漫剧 ComfyUI 实战</td><td>ComfyUI 漫剧 (B 站)</td><td>5-8 小时</td><td><a href='https://search.bilibili.com/all?keyword=ComfyUI%20%E6%BC%AB%E5%89%A7' target='_blank' rel="noopener noreferrer">B 站搜'ComfyUI 漫剧'</a></td></tr>
+<tr><td>短剧 ROI 5 大杠杆</td><td>短剧 ROI (B 站)</td><td>2-3 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%20ROI' target='_blank' rel="noopener noreferrer">B 站搜'短剧 ROI'</a></td></tr>
+<tr><td>短剧复盘 + 续作策略</td><td>短剧复盘 (B 站)</td><td>2-3 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%20%E5%A4%8D%E7%9B%98' target='_blank' rel="noopener noreferrer">B 站搜'短剧 复盘'</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>👑 7.4 大神(想年入 30 万+,矩阵化) · 4 课</h3>
+<p>目标:<strong>3-5 部剧同时跑 + 海外矩阵</strong>。</p>
+<div class='tbl-wrap'>
+<table>
+<thead><tr><th>课程</th><th>UP / 频道</th><th>时长</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td>短剧矩阵化 5 平台投流</td><td>短剧矩阵 (B 站)</td><td>5-10 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%20%E7%9F%A9%E9%98%B5' target='_blank' rel="noopener noreferrer">B 站搜'短剧 矩阵'</a></td></tr>
+<tr><td>爆款编剧中心制 · 月入 10 万</td><td>爆款编剧 (B 站)</td><td>3-5 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%88%86%E6%AC%BE%20%E7%BC%96%E5%89%A7' target='_blank' rel="noopener noreferrer">B 站搜'爆款 编剧'</a></td></tr>
+<tr><td>海外短剧 4 平台运营</td><td>海外短剧运营 (B 站)</td><td>5-10 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E6%B5%B7%E5%A4%96%E7%9F%AD%E5%89%A7%20%E8%BF%90%E8%90%A5' target='_blank' rel="noopener noreferrer">B 站搜'海外短剧 运营'</a></td></tr>
+<tr><td>短剧头部操盘手案例</td><td>短剧操盘手 (B 站)</td><td>3-5 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%20%E6%93%8D%E7%9B%98%E6%89%8B' target='_blank' rel="noopener noreferrer">B 站搜'短剧 操盘手'</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<div class='callout info'>
+  <span class='ico'>📌</span>
+  <p><strong>学完这页 + 6 阶段 SOP</strong> = 短剧创业学习唯一入口。<strong>16 课顶级视频课 + 6 阶段 SOP + 30 天路径</strong> = 从'0 经验'到'月入 1-3 万'完整地图。</p>
+</div>
+</main>
+</div>
+
+<div style="margin-top:60px;padding:24px 20px;color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);text-align:center"><p>✍️ 整理人:玉哥 · 📧 内部学员版 · 转发请保留作者署名</p></div>
+
+<script>
+(function(){
+  var btn = document.getElementById('themeBtn');
+  var setTheme = function(t){
+    document.documentElement.setAttribute('data-theme', t);
+    try{ localStorage.setItem('startup:theme', t); }catch(e){}
+    if(btn) btn.textContent = t === 'dark' ? '☀️' : '🎨';
+  };
+  var saved = null;
+  try{ saved = localStorage.getItem('startup:theme'); }catch(e){}
+  setTheme(saved || 'light');
+  if(btn) btn.addEventListener('click', function(){
+    var cur = document.documentElement.getAttribute('data-theme') || 'light';
+    setTheme(cur === 'light' ? 'dark' : 'light');
+  });
+})();
+(function(){
+  var bar = document.getElementById('readProgress');
+  function update(){
+    if(!bar) return;
+    var doc = document.documentElement, body = document.body;
+    var scrollTop = window.pageYOffset || doc.scrollTop || body.scrollTop || 0;
+    var scrollHeight = Math.max(body.scrollHeight, doc.scrollHeight, body.offsetHeight, doc.offsetHeight, body.clientHeight, doc.clientHeight);
+    var trackable = Math.max(1, scrollHeight - window.innerHeight);
+    var pct = Math.min(100, Math.max(0, scrollTop / trackable * 100));
+    bar.style.width = pct.toFixed(2) + '%';
+    bar.classList.toggle('show-end', pct > 95);
+  }
+  window.addEventListener('scroll', update, {passive:true});
+  window.addEventListener('resize', update);
+  update();
+})();
+</script>
+<script src="../../assets/site-enhance.js?v=fix20260927-2215" defer></script>
+</body>
+</html>

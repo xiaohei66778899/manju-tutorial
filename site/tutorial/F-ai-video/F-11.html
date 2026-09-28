@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="F-11 12 模型横评 · 漫剧制作教程站。玉哥整理的 AI 漫剧与短剧制作实用教程，包含步骤、案例和练习。">
+<title>F-11 12 模型横评 · 漫剧制作教程站</title>
+<link rel="stylesheet" href="../../assets/site.css?v=fix20260927-2215">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg?v=fix20260927-2215">
+<link rel="stylesheet" href="../../assets/tutorial.css?v=fix20260927-2215">
+</head>
+<body>
+<header class="topbar">
+  <div class="logo">🎬 漫剧教程站 <small>v3 · 玉哥</small></div>
+  <nav>
+    <a href="../../index.html">首页</a>
+    <a href="../all-courses.html" class="active">漫剧教程</a>
+    <a href="../../prompts/image-prompts.html">图片作品</a>
+    <a href="../../works/index.html">视频作品</a>
+    <a href="../../prompts/prompts.html">prompt 模板</a>
+    <a href="../../tools/toolkit.html">工具箱</a>
+    <a href="../../qa/troubleshooting.html">问题库</a>
+    <a href="../../news/industry.html">行业新闻</a>
+    </nav>
+  <div class="search"><input type="search" placeholder="🔍 搜…"></div>
+  <button class="theme-toggle" title="深浅主题切换" onclick="document.documentElement.classList.toggle('dark')">🌙</button>
+</header>
+<div class="layout-3col">
+  <aside class="sidebar-left" id="sidebar-left"></aside>
+  <main class="content">
+    <div class="breadcrumb"><a href="../../index.html">首页</a> <span>›</span> <a href="../all-courses.html">F AI 视频</a> <span>›</span> F-11 4 模型横评</div>
+    <h1>F-11 · 12 大视频模型横评(2026 真实数据)</h1>
+    <h2 id="sec-1">1. 8 模型核心对比(学员最该知道的)</h2>
+    <div class="tbl-wrap"><table><thead><tr><th>维度</th><th>Kling 3.0</th><th>Hailuo 02</th><th>Seedance 2.0</th><th>Veo 3.1</th><th>Sora 2</th><th>Runway Gen-4</th><th>Wan 2.7</th><th>Vidu Q3</th></tr></thead><tbody>
+    <tr><td>厂商</td><td>快手</td><td>MiniMax</td><td>字节跳动</td><td>Google</td><td>OpenAI</td><td>Runway</td><td>阿里</td><td>生数科技</td></tr>
+    <tr><td>时长</td><td>5-30s</td><td>6-60s</td><td>5-16s</td><td>8s/60s</td><td>4s/60s</td><td>5-18s</td><td>5-10s</td><td>5-16s</td></tr>
+    <tr><td>分辨率</td><td>1080P / 4K</td><td>1080P</td><td>1080P</td><td>4K</td><td>1080P</td><td>4K</td><td>720P / 1080P</td><td>1080P</td></tr>
+    <tr><td>原生音频</td><td>部分</td><td>无</td><td><strong>有</strong></td><td><strong>48kHz</strong></td><td><strong>有</strong></td><td>无</td><td>无</td><td><strong>有</strong></td></tr>
+    <tr><td>价格</td><td>~$10/月</td><td>$9.99/月</td><td>$0.05-0.25/秒</td><td>$20/月</td><td>$20-200/月</td><td>$15/月</td><td>$0.05/秒</td><td>按秒</td></tr>
+    <tr><td>主用场景</td><td><strong>学员首选</strong></td><td>慢动作</td><td>对话 / 唇同步</td><td>物理真实</td><td>电影质感</td><td>商业剪辑</td><td>开源 / 私有部署</td><td>国产长片段</td></tr>
+    </tbody></table></div>
+
+    <h2 id="sec-2">2. Kling 3.0(学员首选)</h2>
+    <ul>
+      <li><strong>强项</strong>:中文理解 + 运动物理 + 性价比</li>
+      <li><strong>弱项</strong>:动作极复杂时仍有抖动</li>
+      <li><strong>漫剧用</strong>:日常分镜 · 动作戏 · 镜头运动</li>
+      <li><strong>价格</strong>:Std 5 秒 ≈ 50 积分(约 ¥3)· 月卡 $10 起</li>
+      <li><strong>官网</strong>:klingai.kuaishou.com</li>
+    </ul>
+
+    <h2 id="sec-3">3. Hailuo 02(MiniMax)</h2>
+    <ul>
+      <li><strong>强项</strong>:慢动作 + 长片段(60s)+ 中文友好</li>
+      <li><strong>弱项</strong>:无原生音频 · 渲染稍慢</li>
+      <li><strong>漫剧用</strong>:慢动作 · 镜头运动 · 写意长片段</li>
+      <li><strong>价格</strong>:免费层 + $9.99/月起 · H2.3 套餐 3 条/日免费</li>
+      <li><strong>官网</strong>:hailuoai.com</li>
+    </ul>
+
+    <h2 id="sec-4">4. Seedance 2.0(字节跳动)</h2>
+    <ul>
+      <li><strong>强项</strong>:原生音频 + 多镜头 + 唇同步 + 对话场景</li>
+      <li><strong>弱项</strong>:高分有 upscaling 痕迹 · 4K 模式贵</li>
+      <li><strong>漫剧用</strong>:对话戏 · 多镜头分镜 · 唇同步</li>
+      <li><strong>价格</strong>:按秒 $0.05-0.25/秒</li>
+      <li><strong>官网</strong>:volcengine.com/product/seedance</li>
+    </ul>
+
+    <h2 id="sec-5">5. Veo 3.1(Google)</h2>
+    <ul>
+      <li><strong>强项</strong>:物理真实 · 原生 48kHz 音频 · 4K 输出</li>
+      <li><strong>弱项</strong>:Lite 模式仅 8 秒 · 速度慢</li>
+      <li><strong>漫剧用</strong>:写实场景 · 高质感片段 · 实验镜头</li>
+      <li><strong>价格</strong>:Gemini Advanced $20/月起 · Quality 4K 180-420 积分/段</li>
+      <li><strong>官网</strong>:aistudio.google.com</li>
+    </ul>
+
+    <h2 id="sec-6">6. Sora 2(OpenAI)</h2>
+    <ul>
+      <li><strong>强项</strong>:电影质感 · 物理模拟 · ChatGPT 集成</li>
+      <li><strong>弱项</strong>:基础仅 4 秒 · Pro $200/月 · 区域限制</li>
+      <li><strong>漫剧用</strong>:概念验证 · 实验镜头 · 高预算成品</li>
+      <li><strong>价格</strong>:ChatGPT Plus $20/月(基础) · Pro $200/月(60 秒)</li>
+      <li><strong>官网</strong>:openai.com/sora</li>
+    </ul>
+
+    <h2 id="sec-7">7. Runway Gen-4</h2>
+    <ul>
+      <li><strong>强项</strong>:镜头控制最强 · 4K · 时间线剪辑</li>
+      <li><strong>弱项</strong>:无原生音频 · 18 秒上限</li>
+      <li><strong>漫剧用</strong>:商业影视 · 真人质感 · 后期精修</li>
+      <li><strong>价格</strong>:$15/月起</li>
+      <li><strong>官网</strong>:runway.ml</li>
+    </ul>
+
+    <h2 id="sec-8">8. Wan 2.7(阿里开源)</h2>
+    <ul>
+      <li><strong>强项</strong>:开源 · 按秒计费 · 可私有部署</li>
+      <li><strong>弱项</strong>:仅 10 秒 · 无原生音频</li>
+      <li><strong>漫剧用</strong>:批量打草稿 · 私有部署 · 控制成本</li>
+      <li><strong>价格</strong>:720p $0.05/秒 · 可本地跑</li>
+      <li><strong>官网</strong>:github.com/Wan-Video/Wan2.7</li>
+    </ul>
+
+    <h2 id="sec-9">9. Vidu Q3(生数科技)</h2>
+    <ul>
+      <li><strong>强项</strong>:16s 长片段 · 原生音频 · 国产叙事</li>
+      <li><strong>弱项</strong>:分辨率以 1080P 为主</li>
+      <li><strong>漫剧用</strong>:长叙事 · 多角色一致</li>
+      <li><strong>价格</strong>:按秒计费</li>
+      <li><strong>官网</strong>:vidu.studio</li>
+    </ul>
+
+    <h2 id="sec-10">10. 学员决策表</h2>
+    <div class="tbl-wrap"><table><thead><tr><th>场景</th><th>推荐</th></tr></thead><tbody>
+    <tr><td>漫剧日常对话</td><td><strong>Kling 3.0</strong> 或 Seedance 2.0</td></tr>
+    <tr><td>漫剧慢动作</td><td>Hailuo 02</td></tr>
+    <tr><td>漫剧动作戏</td><td>Kling 3.0 + Hailuo 双保险</td></tr>
+    <tr><td>对话 / 唇同步</td><td>Seedance 2.0</td></tr>
+    <tr><td>原生音频 · 物理真实</td><td>Veo 3.1</td></tr>
+    <tr><td>真人质感 · 商业影视</td><td>Runway Gen-4</td></tr>
+    <tr><td>开源 · 私有部署</td><td>Wan 2.7</td></tr>
+    <tr><td>长叙事 · 国产</td><td>Vidu Q3</td></tr>
+    <tr><td>电影质感 · 实验</td><td>Sora 2</td></tr>
+    <tr><td>低成本批量</td><td>Kling 3.0 月卡</td></tr>
+    </tbody></table></div>
+
+    <h2 id="sec-11">11. 数字时间 + 成本(2026 真实)</h2>
+    <div class="tbl-wrap"><table><thead><tr><th>模型</th><th>单条耗时</th><th>单条成本</th></tr></thead><tbody>
+    <tr><td>Kling 3.0(5s Std)</td><td>2 分钟</td><td>~$0.05-0.10/条(月卡折算)</td></tr>
+    <tr><td>Hailuo 02(6s)</td><td>3 分钟</td><td>免费层 或 $9.99/月</td></tr>
+    <tr><td>Seedance 2.0(5s 480p)</td><td>2-3 分钟</td><td>$0.25-1.25/条</td></tr>
+    <tr><td>Veo 3.1 Lite(8s)</td><td>3 分钟</td><td>~$0.30/条(积分换算)</td></tr>
+    <tr><td>Sora 2(4s)</td><td>3-5 分钟</td><td>ChatGPT Plus $20/月含额度</td></tr>
+    <tr><td>Runway Gen-4(5s)</td><td>3 分钟</td><td>$15/月套餐含额度</td></tr>
+    <tr><td>Wan 2.7(5s 720p)</td><td>本地秒级</td><td>$0.25/条(API)</td></tr>
+    </tbody></table></div>
+
+    <h2 id="sec-12">12. 学完能做啥</h2>
+    <ul class="checklist"><li>能选对 12 大模型</li><li>懂每个模型优缺点</li><li>算清 2026 真实成本</li><li>知道原生音频 / 4K / 私有部署的能力差异</li></ul>
+
+    <h2 id="sec-13">13. 小结</h2>
+    <div class="callout warn"><span class="ico">📢</span><p><strong>📢 小结</strong>:<br>
+    1. <strong>Kling 3.0 是学员默认</strong> · 中文场景 + 性价比最佳<br>
+    2. <strong>慢动作 / 镜头运动用 Hailuo 02</strong><br>
+    3. <strong>对话 / 唇同步用 Seedance 2.0</strong><br>
+    4. <strong>原生音频 / 物理真实用 Veo 3.1</strong><br>
+    5. <strong>数据已对齐 2026 权威源</strong></p></div>
+
+    <nav class="bottom-nav">
+      <a class="prev" href="F-10.html"><span class="label">← 上一节</span><span class="title">F-10 LTX-Video</span></a>
+      <a class="next" href="F-12.html"><span class="label">下一节 →</span><span class="title">F-12 人物变形</span></a>
+    </nav>
+  </main>
+  <aside class="sidebar-right" id="sidebar-right"></aside>
+</div>
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="扫码关注玉哥">
+      <img class="qr-img" src="../../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../../changelog.html">📅 更新日志</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+<script src="../../assets/tutorial.js?v=fix20260927-2215"></script>
+<script src="../../assets/site-enhance.js?v=fix20260927-2215" defer></script>
+</body>
+</html>

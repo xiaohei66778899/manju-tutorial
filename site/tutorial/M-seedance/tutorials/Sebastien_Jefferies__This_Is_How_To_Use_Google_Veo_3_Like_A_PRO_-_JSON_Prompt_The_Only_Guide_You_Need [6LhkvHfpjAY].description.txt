@@ -1,0 +1,7 @@
+﻿How to create 100k videos with Google Veo 3 with JSON prompting using just one tool and one JSON prompt!
+
+In this tutorial, I walk you through how creators are using Google Veo 3 and structured JSON prompting to produce insane AI-generated videos, for free or at a fraction of the usual cost.
+
+From a hilarious Uber Eats spot to a Tesla ad that looks straight out of Hollywood, you'll see real examples, complete prompts, and learn the JSON prompt structure that gives you full control over Veo 3's audio, visuals, and timing.
+
+Link to Master JSON Prompting Guide: http://json.sebtips.com

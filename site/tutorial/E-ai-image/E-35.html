@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="E-35 出图审核与学员案例 · 漫剧制作教程站。玉哥整理的 AI 漫剧与短剧制作实用教程，包含步骤、案例和练习。">
+<title>E-35 出图审核与学员案例 · 漫剧制作教程站</title>
+<link rel="stylesheet" href="../../assets/site.css?v=fix20260927-2215">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg?v=fix20260927-2215">
+<link rel="stylesheet" href="../../assets/tutorial.css?v=fix20260927-2215">
+</head>
+<body>
+<header class="topbar">
+  <div class="logo">🎬 漫剧教程站 <small>v3 · 玉哥</small></div>
+  <nav>
+    <a href="../../index.html">首页</a>
+    <a href="../all-courses.html" class="active">漫剧教程</a>
+    <a href="../../prompts/image-prompts.html">图片作品</a>
+    <a href="../../works/index.html">视频作品</a>
+    <a href="../../prompts/prompts.html">prompt 模板</a>
+    <a href="../../tools/toolkit.html">工具箱</a>
+    <a href="../../qa/troubleshooting.html">问题库</a>
+    <a href="../../news/industry.html">行业新闻</a>
+    </nav>
+  <div class="search"><input type="search" placeholder="🔍 搜…"></div>
+  <button class="theme-toggle" title="深浅主题切换" onclick="document.documentElement.classList.toggle('dark')">🌙</button>
+</header>
+<div class="layout-3col">
+  <aside class="sidebar-left" id="sidebar-left"></aside>
+  <main class="content">
+    <div class="breadcrumb"><a href="../../index.html">首页</a> <span>›</span> <a href="../all-courses.html">E AI 出图</a> <span>›</span> E-35 出图审核</div>
+    <h1>E-35 · 出图审核与学员真实案例</h1>
+    <h2 id="sec-1">1. 学员 5 大审核项</h2>
+    <div class="tbl-wrap"><table><thead><tr><th>项</th><th>标准</th></tr></thead><tbody>
+    <tr><td><strong>角色一致</strong></td><td>同一角色跨镜头像同一人</td></tr>
+    <tr><td><strong>构图</strong></td><td>景别 / 视角 / 留白合理</td></tr>
+    <tr><td><strong>表情</strong></td><td>符合场景情绪</td></tr>
+    <tr><td><strong>画质</strong></td><td>无崩 / 无噪点 / 无乱码</td></tr>
+    <tr><td><strong>风格</strong></td><td>整集统一画风</td></tr>
+    </tbody></table></div>
+
+    <h2 id="sec-2">2. 学员真实案例(3 个)</h2>
+
+    <h3>案例 1:小红漫剧女主出场</h3>
+    <ul>
+      <li><strong>原问题</strong>:第一版脸崩 + 服装不一致</li>
+      <li><strong>解决</strong>:用 LoRA xiaohong_girl + 触发词 + 局部重绘</li>
+      <li><strong>耗时</strong>:2 小时调 → 20 分钟定型</li>
+    </ul>
+
+    <h3>案例 2:古风漫剧大场景</h3>
+    <ul>
+      <li><strong>原问题</strong>:建筑比例怪 + 远景糊</li>
+      <li><strong>解决</strong>:ControlNet 边缘 + Tiled VAE + 4x 放大</li>
+      <li><strong>耗时</strong>:30 分钟</li>
+    </ul>
+
+    <h3>案例 3:反派登场镜头</h3>
+    <ul>
+      <li><strong>原问题</strong>:反派不够压迫感</li>
+      <li><strong>解决</strong>:加 low angle + dramatic lighting + 反派专属 LoRA</li>
+      <li><strong>耗时</strong>:15 分钟</li>
+    </ul>
+
+    <h2 id="sec-3">3. 学员审核工具</h2>
+    <ul>
+      <li><strong>A/B 对比</strong>:PS 左右对比</li>
+      <li><strong>整集拼图</strong>:Storyboard 软件</li>
+      <li><strong>一致性测试</strong>:同提示词 5 张对比</li>
+    </ul>
+
+    <h2 id="sec-4">4. 学员交付清单</h2>
+    <ol>
+      <li>角色 5 角度图(学员标准)</li>
+      <li>第 1 集分镜 30 张</li>
+      <li>关键帧 3-5 张</li>
+      <li>角色表情包 9 张</li>
+    </ol>
+
+    <h2 id="sec-5">5. 学员常见错误</h2>
+    <ul>
+      <li>❌ 不审核直接用(崩图也传)</li>
+      <li>❌ 角色 LoRA 没训就出图</li>
+      <li>❌ 风格不统一</li>
+      <li>❌ 远景当近景用(构图乱)</li>
+    </ul>
+
+    <h2 id="sec-6">6. 数字时间</h2>
+    <div class="tbl-wrap"><table><thead><tr><th>审核环节</th><th>耗时</th></tr></thead><tbody>
+    <tr><td>30 张分镜审核</td><td>30-60 分钟</td></tr>
+    <tr><td>改图 5-10 张</td><td>30-60 分钟</td></tr>
+    <tr><td>整集风格统一</td><td>1-2 小时</td></tr>
+    </tbody></table></div>
+
+    <h2 id="sec-7">7. 学完能做啥</h2>
+    <ul class="checklist"><li>能审核分镜</li><li>懂玉哥级标准</li><li>会真实案例复盘</li></ul>
+
+    <h2 id="sec-8">8. 玉哥说</h2>
+    <div class="callout warn"><span class="ico">📢</span><p><strong>📢 玉哥说</strong>:<br>
+    1. <strong>5 大审核项必查</strong><br>
+    2. <strong>整集风格统一</strong> · 学员硬指标<br>
+    3. <strong>崩图不要用</strong> · 宁缺毋滥<br>
+    4. <strong>真实案例学经验</strong> · 比看书强</p></div>
+
+    <h2 id="sec-9">9. 下一阶段</h2>
+    <p>E 节 AI 出图完成。<strong>下一节 F-1</strong>:AI 视频生成。</p>
+
+    <nav class="bottom-nav">
+      <a class="prev" href="E-34.html"><span class="label">← 上一节</span><span class="title">E-34 反推提示词</span></a>
+      <a class="next" href="../F-ai-video/F-1.html"><span class="label">下一节 →</span><span class="title">F-1 AI 视频简介</span></a>
+    </nav>
+  </main>
+  <aside class="sidebar-right" id="sidebar-right"></aside>
+</div>
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="扫码关注玉哥">
+      <img class="qr-img" src="../../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../../changelog.html">📅 更新日志</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+<script src="../../assets/tutorial.js?v=fix20260927-2215"></script>
+<script src="../../assets/site-enhance.js?v=fix20260927-2215" defer></script>
+</body>
+</html>

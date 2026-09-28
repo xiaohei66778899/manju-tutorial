@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="F-3 首帧生成视频 · 漫剧制作教程站。玉哥整理的 AI 漫剧与短剧制作实用教程，包含步骤、案例和练习。">
+<title>F-3 首帧生成视频 · 漫剧制作教程站</title>
+<link rel="stylesheet" href="../../assets/site.css?v=fix20260927-2215">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg?v=fix20260927-2215">
+<link rel="stylesheet" href="../../assets/tutorial.css?v=fix20260927-2215">
+</head>
+<body>
+<header class="topbar">
+  <div class="logo">🎬 漫剧教程站 <small>v3 · 玉哥</small></div>
+  <nav>
+    <a href="../../index.html">首页</a>
+    <a href="../all-courses.html" class="active">漫剧教程</a>
+    <a href="../../prompts/image-prompts.html">图片作品</a>
+    <a href="../../works/index.html">视频作品</a>
+    <a href="../../prompts/prompts.html">prompt 模板</a>
+    <a href="../../tools/toolkit.html">工具箱</a>
+    <a href="../../qa/troubleshooting.html">问题库</a>
+    <a href="../../news/industry.html">行业新闻</a>
+    </nav>
+  <div class="search"><input type="search" placeholder="🔍 搜…"></div>
+  <button class="theme-toggle" title="深浅主题切换" onclick="document.documentElement.classList.toggle('dark')">🌙</button>
+</header>
+<div class="layout-3col">
+  <aside class="sidebar-left" id="sidebar-left"></aside>
+  <main class="content">
+    <div class="breadcrumb"><a href="../../index.html">首页</a> <span>›</span> <a href="../all-courses.html">F AI 视频</a> <span>›</span> F-3 首帧生成</div>
+    <h1>F-3 · 首帧生成视频(漫剧 60% 用法)</h1>
+    <h2 id="sec-1">1. 首帧是什么</h2>
+    <p>视频第 0 秒的画面。模型从这帧"推演"出后续帧。</p>
+    <ul>
+      <li>构图被首帧锁死</li>
+      <li>角色外貌被首帧锁死</li>
+      <li>颜色被首帧锁死</li>
+    </ul>
+
+    <h2 id="sec-2">2. 首帧生成工作流</h2>
+    <ol>
+      <li>本地出分镜图</li>
+      <li>上传到视频生成器</li>
+      <li>写动作提示词</li>
+      <li>选运镜 / 时长</li>
+      <li>提交</li>
+    </ol>
+
+    <h2 id="sec-3">3. 学员首帧标准</h2>
+    <ul>
+      <li>角色清晰</li>
+      <li>构图稳</li>
+      <li>不偏色</li>
+      <li>分辨率适配(720P+)</li>
+    </ul>
+
+    <h2 id="sec-4">4. 动作提示词模板</h2>
+<pre><code>subject: 1girl smiling
+camera: slow push-in
+action: gentle head turn
+duration: 5 seconds
+mood: warm</code></pre>
+
+    <h2 id="sec-5">5. 学员常用运镜</h2>
+    <div class="tbl-wrap"><table><thead><tr><th>运镜</th><th>提示词</th><th>学员用</th></tr></thead><tbody>
+    <tr><td>推进</td><td>slow push-in</td><td>30%</td></tr>
+    <tr><td>拉远</td><td>slow zoom out</td><td>15%</td></tr>
+    <tr><td>横移</td><td>pan left / pan right</td><td>20%</td></tr>
+    <tr><td>环绕</td><td>orbit / 360 shot</td><td>10%</td></tr>
+    <tr><td>静止</td><td>static camera</td><td>25%</td></tr>
+    </tbody></table></div>
+
+    <h2 id="sec-6">6. 玉哥黄金组合</h2>
+    <ul>
+      <li>首帧 + 推进 + 慢动作 = 漫剧特写</li>
+      <li>首帧 + 横移 + 角色说话 = 漫剧对话</li>
+      <li>首帧 + 静止 + 表情变化 = 漫剧情绪</li>
+    </ul>
+
+    <h2 id="sec-7">7. 数字时间</h2>
+    <div class="tbl-wrap"><table><thead><tr><th>任务</th><th>耗时</th></tr></thead><tbody>
+    <tr><td>出分镜图</td><td>20 秒</td></tr>
+    <tr><td>写动作提示词</td><td>2 分钟</td></tr>
+    <tr><td>提交生成</td><td>2-5 分钟</td></tr>
+    <tr><td>下载 / 检查</td><td>1 分钟</td></tr>
+    </tbody></table></div>
+
+    <h2 id="sec-8">8. 学完能做啥</h2>
+    <ul class="checklist"><li>能首帧生成视频</li><li>会写动作提示词</li><li>懂玉哥黄金组合</li></ul>
+
+    <h2 id="sec-9">9. 玉哥说</h2>
+    <div class="callout warn"><span class="ico">📢</span><p><strong>📢 玉哥说</strong>:<br>
+    1. <strong>首帧法学员 60% 用</strong><br>
+    2. <strong>首帧决定 70% 视频质量</strong><br>
+    3. <strong>动作提示词 5 字段</strong><br>
+    4. <strong>眼神跟随镜头</strong> · 漫剧必备</p></div>
+
+    <nav class="bottom-nav">
+      <a class="prev" href="F-2.html"><span class="label">← 上一节</span><span class="title">F-2 文生 vs 图生</span></a>
+      <a class="next" href="F-4.html"><span class="label">下一节 →</span><span class="title">F-4 首尾帧生成</span></a>
+    </nav>
+  </main>
+  <aside class="sidebar-right" id="sidebar-right"></aside>
+</div>
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="扫码关注玉哥">
+      <img class="qr-img" src="../../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../../changelog.html">📅 更新日志</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+<script src="../../assets/tutorial.js?v=fix20260927-2215"></script>
+<script src="../../assets/site-enhance.js?v=fix20260927-2215" defer></script>
+</body>
+</html>

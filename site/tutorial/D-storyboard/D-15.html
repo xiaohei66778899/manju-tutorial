@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="D-15 一集分镜完整实例 · 漫剧制作教程站。玉哥整理的 AI 漫剧与短剧制作实用教程，包含步骤、案例和练习。">
+<title>D-15 一集分镜完整实例 · 漫剧制作教程站</title>
+<link rel="stylesheet" href="../../assets/site.css?v=fix20260927-2215">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg?v=fix20260927-2215">
+<link rel="stylesheet" href="../../assets/tutorial.css?v=fix20260927-2215">
+</head>
+<body>
+<header class="topbar">
+  <div class="logo">🎬 漫剧教程站 <small>v3 · 玉哥</small></div>
+  <nav>
+    <a href="../../index.html">首页</a>
+    <a href="../all-courses.html" class="active">漫剧教程</a>
+    <a href="../../prompts/image-prompts.html">图片作品</a>
+    <a href="../../works/index.html">视频作品</a>
+    <a href="../../prompts/prompts.html">prompt 模板</a>
+    <a href="../../tools/toolkit.html">工具箱</a>
+    <a href="../../qa/troubleshooting.html">问题库</a>
+    <a href="../../news/industry.html">行业新闻</a>
+    </nav>
+  <div class="search"><input type="search" placeholder="🔍 搜…"></div>
+  <button class="theme-toggle" title="深浅主题切换" onclick="document.documentElement.classList.toggle('dark')">🌙</button>
+</header>
+<div class="layout-3col">
+  <aside class="sidebar-left" id="sidebar-left"></aside>
+  <main class="content">
+    <div class="breadcrumb"><a href="../../index.html">首页</a> <span>›</span> <a href="../all-courses.html">D 分镜</a> <span>›</span> D-15 一集实例</div>
+    <h1>D-15 · 一集分镜完整实例</h1>
+    <h2 id="sec-1">1. 第 1 集剧本(原文)</h2>
+    <pre class="codebox"># 《龙王归来》第 1 集剧本(90 秒)
+
+场 1: 内景 婚宴大厅 夜
+[中景]宾客满座,婚礼进行中。门口,龙王穿外卖服出现。
+王总(嘲讽):哟,送外卖的?
+林婉(紧张):龙王,你?
+龙王(冷):来接我老婆。
+王总(推搡):你算什么东西?
+[特写]龙王放下外卖箱。
+龙王:通知你们一下。3 年前的战神,回来了。
+(画面定格,本集完)</pre>
+
+    <h2 id="sec-2">2. 完整分镜表</h2>
+    <div class="tbl-wrap"><table><thead><tr><th>镜号</th><th>场</th><th>景</th><th>运镜</th><th>画面</th><th>对白</th><th>时长</th></tr></thead><tbody>
+    <tr><td>1</td><td>1</td><td>远</td><td>固定</td><td>婚宴大厅全景,宾客满座</td><td>旁白:结婚 3 年</td><td>3s</td></tr>
+    <tr><td>2</td><td>1</td><td>中</td><td>推</td><td>龙王外卖服门口站</td><td>王总:哟,送外卖的?</td><td>4s</td></tr>
+    <tr><td>3</td><td>1</td><td>近</td><td>固定</td><td>林婉紧张脸</td><td>林婉:龙王,你?</td><td>3s</td></tr>
+    <tr><td>4</td><td>1</td><td>近</td><td>固定</td><td>龙王冷峻脸</td><td>龙王:来接我老婆。</td><td>3s</td></tr>
+    <tr><td>5</td><td>1</td><td>中</td><td>固定</td><td>王总推搡</td><td>王总:你算什么东西?</td><td>3s</td></tr>
+    <tr><td>6</td><td>1</td><td>特</td><td>推</td><td>手放下外卖箱</td><td>(无)</td><td>2s</td></tr>
+    <tr><td>7</td><td>1</td><td>近</td><td>推</td><td>龙王冷脸</td><td>龙王:3 年前的战神,回来了。</td><td>4s</td></tr>
+    </tbody></table></div>
+
+    <h2 id="sec-3">3. 完整 AI prompt</h2>
+    <pre class="codebox"># 镜 1
+wide shot, wedding hall interior, warm light,
+guests seated at tables, chandelier, 9:16
+
+# 镜 2
+medium shot, man with square face short black hair,
+white shirt black pants, standing at doorway,
+delivery bag on shoulder, indoor, 9:16
+
+# 镜 3
+close-up on woman with long black hair, white dress,
+worried expression, indoor warm light, 9:16
+
+# 镜 4
+close-up on man with square face, cold expression,
+serious eyes, 9:16
+
+# 镜 5
+medium shot, fat man in black jacket, pushing man,
+arrogant expression, 9:16
+
+# 镜 6
+extreme close-up, hand putting down delivery bag,
+slow motion, dramatic lighting, 9:16
+
+# 镜 7
+close-up on man, smirking confidently,
+eyes locked on camera, dramatic shadow, 9:16</pre>
+
+    <h2 id="sec-4">4. AI 出图后 → 视频流程</h2>
+    <ol>
+      <li>用 IP-Adapter 锁脸(参考 D-12 / E-14)</li>
+      <li>每张图跑 4 次,挑 1 张最佳</li>
+      <li>丢给可灵/Hailuo 做 6 秒视频(用 prompt 描述运镜)</li>
+      <li>配音(G-3)+ 口型同步(G-7)</li>
+      <li>剪辑 + BGM(G-9)</li>
+      <li>导出发布(H 节)</li>
+    </ol>
+
+    <h2 id="sec-5">5. 学员耗时</h2>
+    <div class="tbl-wrap"><table><thead><tr><th>环节</th><th>耗时</th></tr></thead><tbody>
+    <tr><td>分镜表</td><td>1 小时</td></tr>
+    <tr><td>AI 出图(7 张)</td><td>30 分钟</td></tr>
+    <tr><td>视频生成(7 段)</td><td>30 分钟</td></tr>
+      <tr><td>配音</td><td>30 分钟</td></tr>
+    <tr><td>剪辑</td><td>1 小时</td></tr>
+    <tr><td><strong>合计</strong></td><td><strong>~3.5 小时</strong></td></tr>
+    </tbody></table></div>
+
+    <h2 id="sec-6">6. 学完这能做啥</h2>
+    <ul class="checklist"><li>看完整 1 集流程</li><li>能复制学员范本</li><li>能算耗时</li></ul>
+
+    <h2 id="sec-7">7. 玉哥说</h2>
+    <div class="callout warn"><span class="ico">📢</span><p><strong>📢 玉哥说</strong>:<br>
+    1. <strong>完整流程 = 剧本 + 分镜 + AI</strong><br>
+    2. <strong>90 秒 = 6-7 镜头</strong><br>
+    3. <strong>一集 3.5 小时</strong> · 学员中位数<br>
+    4. <strong>第 5 集起 1.5 小时</strong>(熟练后)</p></div>
+
+    <nav class="bottom-nav">
+      <a class="prev" href="D-14.html"><span class="label">← 上一节</span><span class="title">D-14 分镜表</span></a>
+      <a class="next" href="../E-ai-image/E-1.html"><span class="label">下一节 →</span><span class="title">E-1 AI 出图简介</span></a>
+    </nav>
+  </main>
+  <aside class="sidebar-right" id="sidebar-right"></aside>
+</div>
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="扫码关注玉哥">
+      <img class="qr-img" src="../../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../../changelog.html">📅 更新日志</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+<script src="../../assets/tutorial.js?v=fix20260927-2215"></script>
+<script src="../../assets/site-enhance.js?v=fix20260927-2215" defer></script>
+</body>
+</html>

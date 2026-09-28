@@ -1,0 +1,19 @@
+来源URL: https://www.youtube.com/watch?v=RIU93w24y9A
+作者/频道: Prompt Mastery
+发布日期: 2026-03-09
+时长: 812秒 (13.5分钟)
+分辨率与体积: 1280x704 (720p), 33.4 MB
+字幕: en-orig.srt (英文自动字幕原文), en.srt (英文自动字幕翻译版)
+      zh-Hans.srt (简体中文自动字幕)
+      繁体中文自动字幕因 YouTube 限流(429)未获取
+
+核心内容摘要:
+本视频教授如何使用 WAN2GP 一键本地运行 LTX Video 2.3 模型，完全不依赖 ComfyUI。
+1) WAN2GP 安装与配置：下载和设置 WAN2GP 图形界面工具，无需复杂节点编排；
+2) 硬件优化：讲解 WAN2GP 如何管理显存、避免 Out of Memory 错误，在消费级显卡上流畅运行；
+3) 提示词生成：在 WAN2GP 界面中书写 prompt、选择模型参数、生成视频；
+4) 与 ComfyUI 对比：说明为什么 WAN2GP 比传统 ComfyUI 工作流更简单直接。
+
+推荐课件教学点:
+适合"本地/开源工具链（非 ComfyUI 路线）"章节——为不想学 ComfyUI 节点编排的学员提供替代方案，
+展示一键式本地推理工具的安装和使用，降低本地 AI 视频制作的技术门槛。

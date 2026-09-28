@@ -1,0 +1,3275 @@
+1
+00:00:24,890 --> 00:00:34,705
+
+[music]
+
+2
+00:00:34,705 --> 00:00:34,715
+
+ 
+
+3
+00:00:34,715 --> 00:00:42,565
+
+[music]
+
+4
+00:00:42,565 --> 00:00:42,575
+
+ 
+
+5
+00:00:42,575 --> 00:00:45,790
+
+[music]
+
+6
+00:00:45,790 --> 00:00:45,800
+
+ 
+
+7
+00:00:45,800 --> 00:00:47,310
+
+>> I'm not a professional when it comes to
+
+8
+00:00:47,310 --> 00:00:47,320
+>> I'm not a professional when it comes to
+ 
+
+9
+00:00:47,320 --> 00:00:49,070
+>> I'm not a professional when it comes to
+AI filmmaking, but what if I told you
+
+10
+00:00:49,070 --> 00:00:49,080
+AI filmmaking, but what if I told you
+ 
+
+11
+00:00:49,080 --> 00:00:51,310
+AI filmmaking, but what if I told you
+that I created that entire AI film you
+
+12
+00:00:51,310 --> 00:00:51,320
+that I created that entire AI film you
+ 
+
+13
+00:00:51,320 --> 00:00:53,230
+that I created that entire AI film you
+just watched in under an hour without
+
+14
+00:00:53,230 --> 00:00:53,240
+just watched in under an hour without
+ 
+
+15
+00:00:53,240 --> 00:00:54,910
+just watched in under an hour without
+any filmmaking experience, without
+
+16
+00:00:54,910 --> 00:00:54,920
+any filmmaking experience, without
+ 
+
+17
+00:00:54,920 --> 00:00:56,630
+any filmmaking experience, without
+spending loads of money on constant
+
+18
+00:00:56,630 --> 00:00:56,640
+spending loads of money on constant
+ 
+
+19
+00:00:56,640 --> 00:00:58,590
+spending loads of money on constant
+regenerations, and best of all, with a
+
+20
+00:00:58,590 --> 00:00:58,600
+regenerations, and best of all, with a
+ 
+
+21
+00:00:58,600 --> 00:01:00,390
+regenerations, and best of all, with a
+reusable workflow that'll allow you to
+
+22
+00:01:00,390 --> 00:01:00,400
+reusable workflow that'll allow you to
+ 
+
+23
+00:01:00,400 --> 00:01:02,990
+reusable workflow that'll allow you to
+create as many realistic AI films as you
+
+24
+00:01:02,990 --> 00:01:03,000
+create as many realistic AI films as you
+ 
+
+25
+00:01:03,000 --> 00:01:04,750
+create as many realistic AI films as you
+want. Over the past month, I've spent
+
+26
+00:01:04,750 --> 00:01:04,760
+want. Over the past month, I've spent
+ 
+
+27
+00:01:04,760 --> 00:01:06,590
+want. Over the past month, I've spent
+thousands of credits and days of time
+
+28
+00:01:06,590 --> 00:01:06,600
+thousands of credits and days of time
+ 
+
+29
+00:01:06,600 --> 00:01:08,430
+thousands of credits and days of time
+creating a complete workflow that'll
+
+30
+00:01:08,430 --> 00:01:08,440
+creating a complete workflow that'll
+ 
+
+31
+00:01:08,440 --> 00:01:10,230
+creating a complete workflow that'll
+consistently allow you to create these
+
+32
+00:01:10,230 --> 00:01:10,240
+consistently allow you to create these
+ 
+
+33
+00:01:10,240 --> 00:01:12,310
+consistently allow you to create these
+realistic AI films, and I'm going to
+
+34
+00:01:12,310 --> 00:01:12,320
+realistic AI films, and I'm going to
+ 
+
+35
+00:01:12,320 --> 00:01:14,390
+realistic AI films, and I'm going to
+show you exactly how I did it. I'll walk
+
+36
+00:01:14,390 --> 00:01:14,400
+show you exactly how I did it. I'll walk
+ 
+
+37
+00:01:14,400 --> 00:01:15,910
+show you exactly how I did it. I'll walk
+you through the exact end-to-end
+
+38
+00:01:15,910 --> 00:01:15,920
+you through the exact end-to-end
+ 
+
+39
+00:01:15,920 --> 00:01:17,910
+you through the exact end-to-end
+workflow I use with the power of
+
+40
+00:01:17,910 --> 00:01:17,920
+workflow I use with the power of
+ 
+
+41
+00:01:17,920 --> 00:01:20,550
+workflow I use with the power of
+SeaDance 2.5. I'll teach you how to plan
+
+42
+00:01:20,550 --> 00:01:20,560
+SeaDance 2.5. I'll teach you how to plan
+ 
+
+43
+00:01:20,560 --> 00:01:22,470
+SeaDance 2.5. I'll teach you how to plan
+your story, lock in characters that stay
+
+44
+00:01:22,470 --> 00:01:22,480
+your story, lock in characters that stay
+ 
+
+45
+00:01:22,480 --> 00:01:24,710
+your story, lock in characters that stay
+perfectly consistent across every scene,
+
+46
+00:01:24,710 --> 00:01:24,720
+perfectly consistent across every scene,
+ 
+
+47
+00:01:24,720 --> 00:01:26,510
+perfectly consistent across every scene,
+generate your locations, and stitch it
+
+48
+00:01:26,510 --> 00:01:26,520
+generate your locations, and stitch it
+ 
+
+49
+00:01:26,520 --> 00:01:28,470
+generate your locations, and stitch it
+all together into a finished film. And
+
+50
+00:01:28,470 --> 00:01:28,480
+all together into a finished film. And
+ 
+
+51
+00:01:28,480 --> 00:01:30,110
+all together into a finished film. And
+like I said earlier, you don't need any
+
+52
+00:01:30,110 --> 00:01:30,120
+like I said earlier, you don't need any
+ 
+
+53
+00:01:30,120 --> 00:01:31,790
+like I said earlier, you don't need any
+experience because I've got a workflow
+
+54
+00:01:31,790 --> 00:01:31,800
+experience because I've got a workflow
+ 
+
+55
+00:01:31,800 --> 00:01:33,510
+experience because I've got a workflow
+that does all the heavy lifting for you.
+
+56
+00:01:33,510 --> 00:01:33,520
+that does all the heavy lifting for you.
+ 
+
+57
+00:01:33,520 --> 00:01:35,030
+that does all the heavy lifting for you.
+So, even if you've never made anything
+
+58
+00:01:35,030 --> 00:01:35,040
+So, even if you've never made anything
+ 
+
+59
+00:01:35,040 --> 00:01:36,350
+So, even if you've never made anything
+like this before, you'll be able to
+
+60
+00:01:36,350 --> 00:01:36,360
+like this before, you'll be able to
+ 
+
+61
+00:01:36,360 --> 00:01:38,390
+like this before, you'll be able to
+follow along step-by-step and become a
+
+62
+00:01:38,390 --> 00:01:38,400
+follow along step-by-step and become a
+ 
+
+63
+00:01:38,400 --> 00:01:40,630
+follow along step-by-step and become a
+master at AI filmmaking. We'll be using
+
+64
+00:01:40,630 --> 00:01:40,640
+master at AI filmmaking. We'll be using
+ 
+
+65
+00:01:40,640 --> 00:01:43,470
+master at AI filmmaking. We'll be using
+OpenArt to use SeaDance 2.5. So, if you
+
+66
+00:01:43,470 --> 00:01:43,480
+OpenArt to use SeaDance 2.5. So, if you
+ 
+
+67
+00:01:43,480 --> 00:01:45,190
+OpenArt to use SeaDance 2.5. So, if you
+want to follow along, I'll leave a link
+
+68
+00:01:45,190 --> 00:01:45,200
+want to follow along, I'll leave a link
+ 
+
+69
+00:01:45,200 --> 00:01:47,070
+want to follow along, I'll leave a link
+for OpenArt in the description below.
+
+70
+00:01:47,070 --> 00:01:47,080
+for OpenArt in the description below.
+ 
+
+71
+00:01:47,080 --> 00:01:48,750
+for OpenArt in the description below.
+It'll also give you some free credits to
+
+72
+00:01:48,750 --> 00:01:48,760
+It'll also give you some free credits to
+ 
+
+73
+00:01:48,760 --> 00:01:50,590
+It'll also give you some free credits to
+start off with, so feel free to check it
+
+74
+00:01:50,590 --> 00:01:50,600
+start off with, so feel free to check it
+ 
+
+75
+00:01:50,600 --> 00:01:51,990
+start off with, so feel free to check it
+out. Now, once you've signed in, before
+
+76
+00:01:51,990 --> 00:01:52,000
+out. Now, once you've signed in, before
+ 
+
+77
+00:01:52,000 --> 00:01:53,670
+out. Now, once you've signed in, before
+we touch anything, we need to plan our
+
+78
+00:01:53,670 --> 00:01:53,680
+we touch anything, we need to plan our
+ 
+
+79
+00:01:53,680 --> 00:01:55,350
+we touch anything, we need to plan our
+story. And I know the temptation is to
+
+80
+00:01:55,350 --> 00:01:55,360
+story. And I know the temptation is to
+ 
+
+81
+00:01:55,360 --> 00:01:56,870
+story. And I know the temptation is to
+just jump straight into generating
+
+82
+00:01:56,870 --> 00:01:56,880
+just jump straight into generating
+ 
+
+83
+00:01:56,880 --> 00:01:58,910
+just jump straight into generating
+videos, but trust me, this planning step
+
+84
+00:01:58,910 --> 00:01:58,920
+videos, but trust me, this planning step
+ 
+
+85
+00:01:58,920 --> 00:02:00,790
+videos, but trust me, this planning step
+is the single biggest reason your films
+
+86
+00:02:00,790 --> 00:02:00,800
+is the single biggest reason your films
+ 
+
+87
+00:02:00,800 --> 00:02:02,710
+is the single biggest reason your films
+come out consistent instead of a messy
+
+88
+00:02:02,710 --> 00:02:02,720
+come out consistent instead of a messy
+ 
+
+89
+00:02:02,720 --> 00:02:04,950
+come out consistent instead of a messy
+blur. Skipping this is exactly why most
+
+90
+00:02:04,950 --> 00:02:04,960
+blur. Skipping this is exactly why most
+ 
+
+91
+00:02:04,960 --> 00:02:07,030
+blur. Skipping this is exactly why most
+people's AI films fall apart. Start off
+
+92
+00:02:07,030 --> 00:02:07,040
+people's AI films fall apart. Start off
+ 
+
+93
+00:02:07,040 --> 00:02:08,870
+people's AI films fall apart. Start off
+by joining my free school community
+
+94
+00:02:08,870 --> 00:02:08,880
+by joining my free school community
+ 
+
+95
+00:02:08,880 --> 00:02:10,669
+by joining my free school community
+linked below. Once you're inside, you'll
+
+96
+00:02:10,669 --> 00:02:10,679
+linked below. Once you're inside, you'll
+ 
+
+97
+00:02:10,679 --> 00:02:12,430
+linked below. Once you're inside, you'll
+get access to a Google Doc with the
+
+98
+00:02:12,430 --> 00:02:12,440
+get access to a Google Doc with the
+ 
+
+99
+00:02:12,440 --> 00:02:14,430
+get access to a Google Doc with the
+master prompt template I use throughout
+
+100
+00:02:14,430 --> 00:02:14,440
+master prompt template I use throughout
+ 
+
+101
+00:02:14,440 --> 00:02:16,590
+master prompt template I use throughout
+this video, plus a special MD file
+
+102
+00:02:16,590 --> 00:02:16,600
+this video, plus a special MD file
+ 
+
+103
+00:02:16,600 --> 00:02:18,310
+this video, plus a special MD file
+that's going to do all the heavy lifting
+
+104
+00:02:18,310 --> 00:02:18,320
+that's going to do all the heavy lifting
+ 
+
+105
+00:02:18,320 --> 00:02:20,310
+that's going to do all the heavy lifting
+for us regarding prompting and asset
+
+106
+00:02:20,310 --> 00:02:20,320
+for us regarding prompting and asset
+ 
+
+107
+00:02:20,320 --> 00:02:22,190
+for us regarding prompting and asset
+generation. Copy the template from the
+
+108
+00:02:22,190 --> 00:02:22,200
+generation. Copy the template from the
+ 
+
+109
+00:02:22,200 --> 00:02:24,470
+generation. Copy the template from the
+Doc and download that MD file and paste
+
+110
+00:02:24,470 --> 00:02:24,480
+Doc and download that MD file and paste
+ 
+
+111
+00:02:24,480 --> 00:02:26,230
+Doc and download that MD file and paste
+everything straight into Claude. You can
+
+112
+00:02:26,230 --> 00:02:26,240
+everything straight into Claude. You can
+ 
+
+113
+00:02:26,240 --> 00:02:27,949
+everything straight into Claude. You can
+use ChatGPT if you prefer, but
+
+114
+00:02:27,949 --> 00:02:27,959
+use ChatGPT if you prefer, but
+ 
+
+115
+00:02:27,959 --> 00:02:29,470
+use ChatGPT if you prefer, but
+personally, I like Claude for this
+
+116
+00:02:29,470 --> 00:02:29,480
+personally, I like Claude for this
+ 
+
+117
+00:02:29,480 --> 00:02:31,070
+personally, I like Claude for this
+because it just handles long structured
+
+118
+00:02:31,070 --> 00:02:31,080
+because it just handles long structured
+ 
+
+119
+00:02:31,080 --> 00:02:32,830
+because it just handles long structured
+prompts a lot cleaner. The template
+
+120
+00:02:32,830 --> 00:02:32,840
+prompts a lot cleaner. The template
+ 
+
+121
+00:02:32,840 --> 00:02:34,310
+prompts a lot cleaner. The template
+walks you through everything, the film
+
+122
+00:02:34,310 --> 00:02:34,320
+walks you through everything, the film
+ 
+
+123
+00:02:34,320 --> 00:02:35,949
+walks you through everything, the film
+style, the overall look, your
+
+124
+00:02:35,949 --> 00:02:35,959
+style, the overall look, your
+ 
+
+125
+00:02:35,959 --> 00:02:37,990
+style, the overall look, your
+characters, your shots and scenes, and
+
+126
+00:02:37,990 --> 00:02:38,000
+characters, your shots and scenes, and
+ 
+
+127
+00:02:38,000 --> 00:02:39,790
+characters, your shots and scenes, and
+even the sound. It's all separated into
+
+128
+00:02:39,790 --> 00:02:39,800
+even the sound. It's all separated into
+ 
+
+129
+00:02:39,800 --> 00:02:41,550
+even the sound. It's all separated into
+clean sections, so it's really easy to
+
+130
+00:02:41,550 --> 00:02:41,560
+clean sections, so it's really easy to
+ 
+
+131
+00:02:41,560 --> 00:02:43,270
+clean sections, so it's really easy to
+understand and fill out. Take your time
+
+132
+00:02:43,270 --> 00:02:43,280
+understand and fill out. Take your time
+ 
+
+133
+00:02:43,280 --> 00:02:45,150
+understand and fill out. Take your time
+here, but don't stress about perfection
+
+134
+00:02:45,150 --> 00:02:45,160
+here, but don't stress about perfection
+ 
+
+135
+00:02:45,160 --> 00:02:46,830
+here, but don't stress about perfection
+because you can always tweak and adjust
+
+136
+00:02:46,830 --> 00:02:46,840
+because you can always tweak and adjust
+ 
+
+137
+00:02:46,840 --> 00:02:48,590
+because you can always tweak and adjust
+any part of the script later, so it
+
+138
+00:02:48,590 --> 00:02:48,600
+any part of the script later, so it
+ 
+
+139
+00:02:48,600 --> 00:02:50,270
+any part of the script later, so it
+doesn't have to be flawless. Once you've
+
+140
+00:02:50,270 --> 00:02:50,280
+doesn't have to be flawless. Once you've
+ 
+
+141
+00:02:50,280 --> 00:02:51,510
+doesn't have to be flawless. Once you've
+filled it all in, it should look
+
+142
+00:02:51,510 --> 00:02:51,520
+filled it all in, it should look
+ 
+
+143
+00:02:51,520 --> 00:02:53,270
+filled it all in, it should look
+something like mine. I'll have my exact
+
+144
+00:02:53,270 --> 00:02:53,280
+something like mine. I'll have my exact
+ 
+
+145
+00:02:53,280 --> 00:02:55,030
+something like mine. I'll have my exact
+template dropped in the Doc, too, so you
+
+146
+00:02:55,030 --> 00:02:55,040
+template dropped in the Doc, too, so you
+ 
+
+147
+00:02:55,040 --> 00:02:56,750
+template dropped in the Doc, too, so you
+can use it as a direct reference. And
+
+148
+00:02:56,750 --> 00:02:56,760
+can use it as a direct reference. And
+ 
+
+149
+00:02:56,760 --> 00:02:58,070
+can use it as a direct reference. And
+here's the best part, you don't even
+
+150
+00:02:58,070 --> 00:02:58,080
+here's the best part, you don't even
+ 
+
+151
+00:02:58,080 --> 00:02:59,710
+here's the best part, you don't even
+have to fill out every section. If
+
+152
+00:02:59,710 --> 00:02:59,720
+have to fill out every section. If
+ 
+
+153
+00:02:59,720 --> 00:03:01,190
+have to fill out every section. If
+you're unsure how you want the film to
+
+154
+00:03:01,190 --> 00:03:01,200
+you're unsure how you want the film to
+ 
+
+155
+00:03:01,200 --> 00:03:03,150
+you're unsure how you want the film to
+go, how your characters look, or how
+
+156
+00:03:03,150 --> 00:03:03,160
+go, how your characters look, or how
+ 
+
+157
+00:03:03,160 --> 00:03:04,949
+go, how your characters look, or how
+many scenes you want, just let the MD
+
+158
+00:03:04,949 --> 00:03:04,959
+many scenes you want, just let the MD
+ 
+
+159
+00:03:04,959 --> 00:03:06,470
+many scenes you want, just let the MD
+file do the work. Simply leave a
+
+160
+00:03:06,470 --> 00:03:06,480
+file do the work. Simply leave a
+ 
+
+161
+00:03:06,480 --> 00:03:07,949
+file do the work. Simply leave a
+question mark next to anything you're
+
+162
+00:03:07,949 --> 00:03:07,959
+question mark next to anything you're
+ 
+
+163
+00:03:07,959 --> 00:03:10,110
+question mark next to anything you're
+unsure of and let the AI decide. The
+
+164
+00:03:10,110 --> 00:03:10,120
+unsure of and let the AI decide. The
+ 
+
+165
+00:03:10,120 --> 00:03:11,750
+unsure of and let the AI decide. The
+reason this matters so much is that it
+
+166
+00:03:11,750 --> 00:03:11,760
+reason this matters so much is that it
+ 
+
+167
+00:03:11,760 --> 00:03:13,590
+reason this matters so much is that it
+completely removes that blank page
+
+168
+00:03:13,590 --> 00:03:13,600
+completely removes that blank page
+ 
+
+169
+00:03:13,600 --> 00:03:15,630
+completely removes that blank page
+paralysis that stops most people before
+
+170
+00:03:15,630 --> 00:03:15,640
+paralysis that stops most people before
+ 
+
+171
+00:03:15,640 --> 00:03:17,509
+paralysis that stops most people before
+they even begin. Instead of staring at
+
+172
+00:03:17,509 --> 00:03:17,519
+they even begin. Instead of staring at
+ 
+
+173
+00:03:17,519 --> 00:03:19,270
+they even begin. Instead of staring at
+an empty prompt trying to figure out
+
+174
+00:03:19,270 --> 00:03:19,280
+an empty prompt trying to figure out
+ 
+
+175
+00:03:19,280 --> 00:03:21,310
+an empty prompt trying to figure out
+story structure from scratch, the AI
+
+176
+00:03:21,310 --> 00:03:21,320
+story structure from scratch, the AI
+ 
+
+177
+00:03:21,320 --> 00:03:22,870
+story structure from scratch, the AI
+fills in the gaps with something that
+
+178
+00:03:22,870 --> 00:03:22,880
+fills in the gaps with something that
+ 
+
+179
+00:03:22,880 --> 00:03:24,990
+fills in the gaps with something that
+actually works. And this template works
+
+180
+00:03:24,990 --> 00:03:25,000
+actually works. And this template works
+ 
+
+181
+00:03:25,000 --> 00:03:26,949
+actually works. And this template works
+for any type of AI film, too, whether
+
+182
+00:03:26,949 --> 00:03:26,959
+for any type of AI film, too, whether
+ 
+
+183
+00:03:26,959 --> 00:03:29,509
+for any type of AI film, too, whether
+it's realistic, cartoon, anime, you name
+
+184
+00:03:29,509 --> 00:03:29,519
+it's realistic, cartoon, anime, you name
+ 
+
+185
+00:03:29,519 --> 00:03:31,270
+it's realistic, cartoon, anime, you name
+it, it works. Once you're happy, make
+
+186
+00:03:31,270 --> 00:03:31,280
+it, it works. Once you're happy, make
+ 
+
+187
+00:03:31,280 --> 00:03:33,190
+it, it works. Once you're happy, make
+sure that MD file is attached, hit
+
+188
+00:03:33,190 --> 00:03:33,200
+sure that MD file is attached, hit
+ 
+
+189
+00:03:33,200 --> 00:03:35,110
+sure that MD file is attached, hit
+enter, and let Claude generate all the
+
+190
+00:03:35,110 --> 00:03:35,120
+enter, and let Claude generate all the
+ 
+
+191
+00:03:35,120 --> 00:03:36,750
+enter, and let Claude generate all the
+prompts for your film. What you'll get
+
+192
+00:03:36,750 --> 00:03:36,760
+prompts for your film. What you'll get
+ 
+
+193
+00:03:36,760 --> 00:03:38,630
+prompts for your film. What you'll get
+back is a complete workflow that you can
+
+194
+00:03:38,630 --> 00:03:38,640
+back is a complete workflow that you can
+ 
+
+195
+00:03:38,640 --> 00:03:40,430
+back is a complete workflow that you can
+follow from start to finish just by
+
+196
+00:03:40,430 --> 00:03:40,440
+follow from start to finish just by
+ 
+
+197
+00:03:40,440 --> 00:03:41,949
+follow from start to finish just by
+working your way down. I know it might
+
+198
+00:03:41,949 --> 00:03:41,959
+working your way down. I know it might
+ 
+
+199
+00:03:41,959 --> 00:03:43,590
+working your way down. I know it might
+look complicated at first, but I made
+
+200
+00:03:43,590 --> 00:03:43,600
+look complicated at first, but I made
+ 
+
+201
+00:03:43,600 --> 00:03:45,430
+look complicated at first, but I made
+sure the output is all in order and
+
+202
+00:03:45,430 --> 00:03:45,440
+sure the output is all in order and
+ 
+
+203
+00:03:45,440 --> 00:03:47,310
+sure the output is all in order and
+super easy to follow. Why is this so
+
+204
+00:03:47,310 --> 00:03:47,320
+super easy to follow. Why is this so
+ 
+
+205
+00:03:47,320 --> 00:03:49,070
+super easy to follow. Why is this so
+powerful? Because this is basically your
+
+206
+00:03:49,070 --> 00:03:49,080
+powerful? Because this is basically your
+ 
+
+207
+00:03:49,080 --> 00:03:51,590
+powerful? Because this is basically your
+entire film pre-built as a checklist.
+
+208
+00:03:51,590 --> 00:03:51,600
+entire film pre-built as a checklist.
+ 
+
+209
+00:03:51,600 --> 00:03:52,990
+entire film pre-built as a checklist.
+Instead of guessing what to generate
+
+210
+00:03:52,990 --> 00:03:53,000
+Instead of guessing what to generate
+ 
+
+211
+00:03:53,000 --> 00:03:54,910
+Instead of guessing what to generate
+next and hoping it all fits together,
+
+212
+00:03:54,910 --> 00:03:54,920
+next and hoping it all fits together,
+ 
+
+213
+00:03:54,920 --> 00:03:56,590
+next and hoping it all fits together,
+you're just working top to bottom with
+
+214
+00:03:56,590 --> 00:03:56,600
+you're just working top to bottom with
+ 
+
+215
+00:03:56,600 --> 00:03:58,110
+you're just working top to bottom with
+every prompt already written and
+
+216
+00:03:58,110 --> 00:03:58,120
+every prompt already written and
+ 
+
+217
+00:03:58,120 --> 00:04:00,190
+every prompt already written and
+optimized for you. Now, before we start
+
+218
+00:04:00,190 --> 00:04:00,200
+optimized for you. Now, before we start
+ 
+
+219
+00:04:00,200 --> 00:04:02,150
+optimized for you. Now, before we start
+generating our assets, quickly check the
+
+220
+00:04:02,150 --> 00:04:02,160
+generating our assets, quickly check the
+ 
+
+221
+00:04:02,160 --> 00:04:03,870
+generating our assets, quickly check the
+adjustments Claude made to your film's
+
+222
+00:04:03,870 --> 00:04:03,880
+adjustments Claude made to your film's
+ 
+
+223
+00:04:03,880 --> 00:04:05,830
+adjustments Claude made to your film's
+direction, the changes, and the style
+
+224
+00:04:05,830 --> 00:04:05,840
+direction, the changes, and the style
+ 
+
+225
+00:04:05,840 --> 00:04:08,590
+direction, the changes, and the style
+DNA. This film read back might show more
+
+226
+00:04:08,590 --> 00:04:08,600
+DNA. This film read back might show more
+ 
+
+227
+00:04:08,600 --> 00:04:10,390
+DNA. This film read back might show more
+or less detail depending on how much
+
+228
+00:04:10,390 --> 00:04:10,400
+or less detail depending on how much
+ 
+
+229
+00:04:10,400 --> 00:04:12,270
+or less detail depending on how much
+freedom you gave Claude. This step takes
+
+230
+00:04:12,270 --> 00:04:12,280
+freedom you gave Claude. This step takes
+ 
+
+231
+00:04:12,280 --> 00:04:13,910
+freedom you gave Claude. This step takes
+no longer than a minute, but it's worth
+
+232
+00:04:13,910 --> 00:04:13,920
+no longer than a minute, but it's worth
+ 
+
+233
+00:04:13,920 --> 00:04:16,229
+no longer than a minute, but it's worth
+it. The style DNA is what keeps every
+
+234
+00:04:16,229 --> 00:04:16,239
+it. The style DNA is what keeps every
+ 
+
+235
+00:04:16,239 --> 00:04:17,910
+it. The style DNA is what keeps every
+single shot looking like it belongs in
+
+236
+00:04:17,910 --> 00:04:17,920
+single shot looking like it belongs in
+ 
+
+237
+00:04:17,920 --> 00:04:20,030
+single shot looking like it belongs in
+the same film, so make sure you're happy
+
+238
+00:04:20,030 --> 00:04:20,040
+the same film, so make sure you're happy
+ 
+
+239
+00:04:20,040 --> 00:04:21,710
+the same film, so make sure you're happy
+with the output. Now, let's move on to
+
+240
+00:04:21,710 --> 00:04:21,720
+with the output. Now, let's move on to
+ 
+
+241
+00:04:21,720 --> 00:04:23,470
+with the output. Now, let's move on to
+generating our assets starting with
+
+242
+00:04:23,470 --> 00:04:23,480
+generating our assets starting with
+ 
+
+243
+00:04:23,480 --> 00:04:25,270
+generating our assets starting with
+characters. Claude gives you prompts to
+
+244
+00:04:25,270 --> 00:04:25,280
+characters. Claude gives you prompts to
+ 
+
+245
+00:04:25,280 --> 00:04:26,950
+characters. Claude gives you prompts to
+create your character's look based on
+
+246
+00:04:26,950 --> 00:04:26,960
+create your character's look based on
+ 
+
+247
+00:04:26,960 --> 00:04:29,030
+create your character's look based on
+your request, followed by a three-panel
+
+248
+00:04:29,030 --> 00:04:29,040
+your request, followed by a three-panel
+ 
+
+249
+00:04:29,040 --> 00:04:30,790
+your request, followed by a three-panel
+sheet that locks in their features,
+
+250
+00:04:30,790 --> 00:04:30,800
+sheet that locks in their features,
+ 
+
+251
+00:04:30,800 --> 00:04:33,190
+sheet that locks in their features,
+face, clothing, and everything else.
+
+252
+00:04:33,190 --> 00:04:33,200
+face, clothing, and everything else.
+ 
+
+253
+00:04:33,200 --> 00:04:35,030
+face, clothing, and everything else.
+Start by copying the portrait character
+
+254
+00:04:35,030 --> 00:04:35,040
+Start by copying the portrait character
+ 
+
+255
+00:04:35,040 --> 00:04:36,990
+Start by copying the portrait character
+prompt and paste it into OpenArt under
+
+256
+00:04:36,990 --> 00:04:37,000
+prompt and paste it into OpenArt under
+ 
+
+257
+00:04:37,000 --> 00:04:39,030
+prompt and paste it into OpenArt under
+the image creation workspace. Before you
+
+258
+00:04:39,030 --> 00:04:39,040
+the image creation workspace. Before you
+ 
+
+259
+00:04:39,040 --> 00:04:41,430
+the image creation workspace. Before you
+adjust anything, set the model to GPT
+
+260
+00:04:41,430 --> 00:04:41,440
+adjust anything, set the model to GPT
+ 
+
+261
+00:04:41,440 --> 00:04:43,430
+adjust anything, set the model to GPT
+Image 2 if you're going for realism. You
+
+262
+00:04:43,430 --> 00:04:43,440
+Image 2 if you're going for realism. You
+ 
+
+263
+00:04:43,440 --> 00:04:45,750
+Image 2 if you're going for realism. You
+can also test Nano Banana 2. It's cheap
+
+264
+00:04:45,750 --> 00:04:45,760
+can also test Nano Banana 2. It's cheap
+ 
+
+265
+00:04:45,760 --> 00:04:47,190
+can also test Nano Banana 2. It's cheap
+to run and still gives you great
+
+266
+00:04:47,190 --> 00:04:47,200
+to run and still gives you great
+ 
+
+267
+00:04:47,200 --> 00:04:49,030
+to run and still gives you great
+realistic results. For the settings,
+
+268
+00:04:49,030 --> 00:04:49,040
+realistic results. For the settings,
+ 
+
+269
+00:04:49,040 --> 00:04:51,310
+realistic results. For the settings,
+match these exactly. 4 to 5 aspect
+
+270
+00:04:51,310 --> 00:04:51,320
+match these exactly. 4 to 5 aspect
+ 
+
+271
+00:04:51,320 --> 00:04:53,670
+match these exactly. 4 to 5 aspect
+ratio, 4K for the best result, and
+
+272
+00:04:53,670 --> 00:04:53,680
+ratio, 4K for the best result, and
+ 
+
+273
+00:04:53,680 --> 00:04:55,750
+ratio, 4K for the best result, and
+quality set to high. Then hit generate.
+
+274
+00:04:55,750 --> 00:04:55,760
+quality set to high. Then hit generate.
+ 
+
+275
+00:04:55,760 --> 00:04:57,590
+quality set to high. Then hit generate.
+I did this for all of my characters, and
+
+276
+00:04:57,590 --> 00:04:57,600
+I did this for all of my characters, and
+ 
+
+277
+00:04:57,600 --> 00:04:59,470
+I did this for all of my characters, and
+they all came out super realistic and
+
+278
+00:04:59,470 --> 00:04:59,480
+they all came out super realistic and
+ 
+
+279
+00:04:59,480 --> 00:05:01,230
+they all came out super realistic and
+followed the prompt perfectly. And
+
+280
+00:05:01,230 --> 00:05:01,240
+followed the prompt perfectly. And
+ 
+
+281
+00:05:01,240 --> 00:05:03,190
+followed the prompt perfectly. And
+ignore the blurred cut on the man's arm.
+
+282
+00:05:03,190 --> 00:05:03,200
+ignore the blurred cut on the man's arm.
+ 
+
+283
+00:05:03,200 --> 00:05:04,830
+ignore the blurred cut on the man's arm.
+That's just there for YouTube sake. Now,
+
+284
+00:05:04,830 --> 00:05:04,840
+That's just there for YouTube sake. Now,
+ 
+
+285
+00:05:04,840 --> 00:05:06,830
+That's just there for YouTube sake. Now,
+here's why we generate a portrait first
+
+286
+00:05:06,830 --> 00:05:06,840
+here's why we generate a portrait first
+ 
+
+287
+00:05:06,840 --> 00:05:08,230
+here's why we generate a portrait first
+instead of jumping straight to full
+
+288
+00:05:08,230 --> 00:05:08,240
+instead of jumping straight to full
+ 
+
+289
+00:05:08,240 --> 00:05:10,150
+instead of jumping straight to full
+scenes. This clean, well-lit portrait
+
+290
+00:05:10,150 --> 00:05:10,160
+scenes. This clean, well-lit portrait
+ 
+
+291
+00:05:10,160 --> 00:05:11,990
+scenes. This clean, well-lit portrait
+becomes the anchor for your character's
+
+292
+00:05:11,990 --> 00:05:12,000
+becomes the anchor for your character's
+ 
+
+293
+00:05:12,000 --> 00:05:13,550
+becomes the anchor for your character's
+identity. Everything after this
+
+294
+00:05:13,550 --> 00:05:13,560
+identity. Everything after this
+ 
+
+295
+00:05:13,560 --> 00:05:15,350
+identity. Everything after this
+references back to it, so getting one
+
+296
+00:05:15,350 --> 00:05:15,360
+references back to it, so getting one
+ 
+
+297
+00:05:15,360 --> 00:05:17,830
+references back to it, so getting one
+strong, clear face locked in now is what
+
+298
+00:05:17,830 --> 00:05:17,840
+strong, clear face locked in now is what
+ 
+
+299
+00:05:17,840 --> 00:05:19,590
+strong, clear face locked in now is what
+stops your character from slowly turning
+
+300
+00:05:19,590 --> 00:05:19,600
+stops your character from slowly turning
+ 
+
+301
+00:05:19,600 --> 00:05:21,750
+stops your character from slowly turning
+into a different person by scene three.
+
+302
+00:05:21,750 --> 00:05:21,760
+into a different person by scene three.
+ 
+
+303
+00:05:21,760 --> 00:05:23,310
+into a different person by scene three.
+Now that we've got our characters, jump
+
+304
+00:05:23,310 --> 00:05:23,320
+Now that we've got our characters, jump
+ 
+
+305
+00:05:23,320 --> 00:05:25,350
+Now that we've got our characters, jump
+back to Claude and copy the three-panel
+
+306
+00:05:25,350 --> 00:05:25,360
+back to Claude and copy the three-panel
+ 
+
+307
+00:05:25,360 --> 00:05:26,670
+back to Claude and copy the three-panel
+sheet prompt. This locks in your
+
+308
+00:05:26,670 --> 00:05:26,680
+sheet prompt. This locks in your
+ 
+
+309
+00:05:26,680 --> 00:05:28,470
+sheet prompt. This locks in your
+character's identity across all your
+
+310
+00:05:28,470 --> 00:05:28,480
+character's identity across all your
+ 
+
+311
+00:05:28,480 --> 00:05:30,830
+character's identity across all your
+future scenes. Keep the model on GPT
+
+312
+00:05:30,830 --> 00:05:30,840
+future scenes. Keep the model on GPT
+ 
+
+313
+00:05:30,840 --> 00:05:33,790
+future scenes. Keep the model on GPT
+Image 2, switch to 16 to 9, 4K, and
+
+314
+00:05:33,790 --> 00:05:33,800
+Image 2, switch to 16 to 9, 4K, and
+ 
+
+315
+00:05:33,800 --> 00:05:35,909
+Image 2, switch to 16 to 9, 4K, and
+quality high, then paste in the prompt.
+
+316
+00:05:35,909 --> 00:05:35,919
+quality high, then paste in the prompt.
+ 
+
+317
+00:05:35,919 --> 00:05:37,270
+quality high, then paste in the prompt.
+Here's the key part. Drag in your
+
+318
+00:05:37,270 --> 00:05:37,280
+Here's the key part. Drag in your
+ 
+
+319
+00:05:37,280 --> 00:05:39,030
+Here's the key part. Drag in your
+reference image of the character so the
+
+320
+00:05:39,030 --> 00:05:39,040
+reference image of the character so the
+ 
+
+321
+00:05:39,040 --> 00:05:41,070
+reference image of the character so the
+generation has a face to work from. This
+
+322
+00:05:41,070 --> 00:05:41,080
+generation has a face to work from. This
+ 
+
+323
+00:05:41,080 --> 00:05:43,070
+generation has a face to work from. This
+prompt is for the female character, so
+
+324
+00:05:43,070 --> 00:05:43,080
+prompt is for the female character, so
+ 
+
+325
+00:05:43,080 --> 00:05:44,790
+prompt is for the female character, so
+I'll add her photo, and make sure you
+
+326
+00:05:44,790 --> 00:05:44,800
+I'll add her photo, and make sure you
+ 
+
+327
+00:05:44,800 --> 00:05:46,510
+I'll add her photo, and make sure you
+add the image at the very start of the
+
+328
+00:05:46,510 --> 00:05:46,520
+add the image at the very start of the
+ 
+
+329
+00:05:46,520 --> 00:05:48,350
+add the image at the very start of the
+prompt. Do this for every character,
+
+330
+00:05:48,350 --> 00:05:48,360
+prompt. Do this for every character,
+ 
+
+331
+00:05:48,360 --> 00:05:50,510
+prompt. Do this for every character,
+copying directly from the Claude output.
+
+332
+00:05:50,510 --> 00:05:50,520
+copying directly from the Claude output.
+ 
+
+333
+00:05:50,520 --> 00:05:51,990
+copying directly from the Claude output.
+You'll be left with perfect character
+
+334
+00:05:51,990 --> 00:05:52,000
+You'll be left with perfect character
+ 
+
+335
+00:05:52,000 --> 00:05:53,830
+You'll be left with perfect character
+sheets, a close-up shot, a front
+
+336
+00:05:53,830 --> 00:05:53,840
+sheets, a close-up shot, a front
+ 
+
+337
+00:05:53,840 --> 00:05:55,710
+sheets, a close-up shot, a front
+full-body headless shot, and a back
+
+338
+00:05:55,710 --> 00:05:55,720
+full-body headless shot, and a back
+ 
+
+339
+00:05:55,720 --> 00:05:57,430
+full-body headless shot, and a back
+full-body shot. All these prompts are
+
+340
+00:05:57,430 --> 00:05:57,440
+full-body shot. All these prompts are
+ 
+
+341
+00:05:57,440 --> 00:05:59,390
+full-body shot. All these prompts are
+optimized thanks to that MD file we
+
+342
+00:05:59,390 --> 00:05:59,400
+optimized thanks to that MD file we
+ 
+
+343
+00:05:59,400 --> 00:06:01,190
+optimized thanks to that MD file we
+added at the start. That's why we get
+
+344
+00:06:01,190 --> 00:06:01,200
+added at the start. That's why we get
+ 
+
+345
+00:06:01,200 --> 00:06:03,190
+added at the start. That's why we get
+results this clean first attempt. And
+
+346
+00:06:03,190 --> 00:06:03,200
+results this clean first attempt. And
+ 
+
+347
+00:06:03,200 --> 00:06:04,790
+results this clean first attempt. And
+here's a detail most people miss, but
+
+348
+00:06:04,790 --> 00:06:04,800
+here's a detail most people miss, but
+ 
+
+349
+00:06:04,800 --> 00:06:06,430
+here's a detail most people miss, but
+it's genuinely game-changing. That
+
+350
+00:06:06,430 --> 00:06:06,440
+it's genuinely game-changing. That
+ 
+
+351
+00:06:06,440 --> 00:06:07,830
+it's genuinely game-changing. That
+headless center pose, that's
+
+352
+00:06:07,830 --> 00:06:07,840
+headless center pose, that's
+ 
+
+353
+00:06:07,840 --> 00:06:09,630
+headless center pose, that's
+intentional. It locks in the character's
+
+354
+00:06:09,630 --> 00:06:09,640
+intentional. It locks in the character's
+ 
+
+355
+00:06:09,640 --> 00:06:11,790
+intentional. It locks in the character's
+face just once, instead of confusing the
+
+356
+00:06:11,790 --> 00:06:11,800
+face just once, instead of confusing the
+ 
+
+357
+00:06:11,800 --> 00:06:14,110
+face just once, instead of confusing the
+AI with multiple faces to choose from.
+
+358
+00:06:14,110 --> 00:06:14,120
+AI with multiple faces to choose from.
+ 
+
+359
+00:06:14,120 --> 00:06:15,870
+AI with multiple faces to choose from.
+This is exactly the trick that solves
+
+360
+00:06:15,870 --> 00:06:15,880
+This is exactly the trick that solves
+ 
+
+361
+00:06:15,880 --> 00:06:18,150
+This is exactly the trick that solves
+the number one problem in AI filmmaking,
+
+362
+00:06:18,150 --> 00:06:18,160
+the number one problem in AI filmmaking,
+ 
+
+363
+00:06:18,160 --> 00:06:20,070
+the number one problem in AI filmmaking,
+which is character consistency. Because
+
+364
+00:06:20,070 --> 00:06:20,080
+which is character consistency. Because
+ 
+
+365
+00:06:20,080 --> 00:06:21,990
+which is character consistency. Because
+now Seedance has one crystal clear
+
+366
+00:06:21,990 --> 00:06:22,000
+now Seedance has one crystal clear
+ 
+
+367
+00:06:22,000 --> 00:06:23,830
+now Seedance has one crystal clear
+reference for the face, and separate
+
+368
+00:06:23,830 --> 00:06:23,840
+reference for the face, and separate
+ 
+
+369
+00:06:23,840 --> 00:06:25,510
+reference for the face, and separate
+references for the body from every
+
+370
+00:06:25,510 --> 00:06:25,520
+references for the body from every
+ 
+
+371
+00:06:25,520 --> 00:06:27,030
+references for the body from every
+angle, so your character stays
+
+372
+00:06:27,030 --> 00:06:27,040
+angle, so your character stays
+ 
+
+373
+00:06:27,040 --> 00:06:28,750
+angle, so your character stays
+identical, no matter what scene they're
+
+374
+00:06:28,750 --> 00:06:28,760
+identical, no matter what scene they're
+ 
+
+375
+00:06:28,760 --> 00:06:30,470
+identical, no matter what scene they're
+in. Now that our characters are ready,
+
+376
+00:06:30,470 --> 00:06:30,480
+in. Now that our characters are ready,
+ 
+
+377
+00:06:30,480 --> 00:06:32,150
+in. Now that our characters are ready,
+scroll down the workflow to create our
+
+378
+00:06:32,150 --> 00:06:32,160
+scroll down the workflow to create our
+ 
+
+379
+00:06:32,160 --> 00:06:34,190
+scroll down the workflow to create our
+location. I only have one, but if you've
+
+380
+00:06:34,190 --> 00:06:34,200
+location. I only have one, but if you've
+ 
+
+381
+00:06:34,200 --> 00:06:35,990
+location. I only have one, but if you've
+got multiple, they'll all be listed here
+
+382
+00:06:35,990 --> 00:06:36,000
+got multiple, they'll all be listed here
+ 
+
+383
+00:06:36,000 --> 00:06:38,070
+got multiple, they'll all be listed here
+based on your template. Same process,
+
+384
+00:06:38,070 --> 00:06:38,080
+based on your template. Same process,
+ 
+
+385
+00:06:38,080 --> 00:06:40,070
+based on your template. Same process,
+copy the prompt, head back to OpenArt,
+
+386
+00:06:40,070 --> 00:06:40,080
+copy the prompt, head back to OpenArt,
+ 
+
+387
+00:06:40,080 --> 00:06:41,870
+copy the prompt, head back to OpenArt,
+and paste it. For locations, I like
+
+388
+00:06:41,870 --> 00:06:41,880
+and paste it. For locations, I like
+ 
+
+389
+00:06:41,880 --> 00:06:44,550
+and paste it. For locations, I like
+using Nano Banana 2, but Nano Banana Pro
+
+390
+00:06:44,550 --> 00:06:44,560
+using Nano Banana 2, but Nano Banana Pro
+ 
+
+391
+00:06:44,560 --> 00:06:47,750
+using Nano Banana 2, but Nano Banana Pro
+and GPT Image 2 both give results too,
+
+392
+00:06:47,750 --> 00:06:47,760
+and GPT Image 2 both give results too,
+ 
+
+393
+00:06:47,760 --> 00:06:49,909
+and GPT Image 2 both give results too,
+so feel free to test all three. Settings
+
+394
+00:06:49,909 --> 00:06:49,919
+so feel free to test all three. Settings
+ 
+
+395
+00:06:49,919 --> 00:06:52,710
+so feel free to test all three. Settings
+here are 16:9 and 4K. And here's how
+
+396
+00:06:52,710 --> 00:06:52,720
+here are 16:9 and 4K. And here's how
+ 
+
+397
+00:06:52,720 --> 00:06:54,710
+here are 16:9 and 4K. And here's how
+mine turned out with Nano Banana 2,
+
+398
+00:06:54,710 --> 00:06:54,720
+mine turned out with Nano Banana 2,
+ 
+
+399
+00:06:54,720 --> 00:06:56,510
+mine turned out with Nano Banana 2,
+super realistic and exactly what I
+
+400
+00:06:56,510 --> 00:06:56,520
+super realistic and exactly what I
+ 
+
+401
+00:06:56,520 --> 00:06:58,110
+super realistic and exactly what I
+wanted. I also ran it through Nano
+
+402
+00:06:58,110 --> 00:06:58,120
+wanted. I also ran it through Nano
+ 
+
+403
+00:06:58,120 --> 00:07:01,190
+wanted. I also ran it through Nano
+Banana Pro and GPT Image 2 with the same
+
+404
+00:07:01,190 --> 00:07:01,200
+Banana Pro and GPT Image 2 with the same
+ 
+
+405
+00:07:01,200 --> 00:07:02,670
+Banana Pro and GPT Image 2 with the same
+prompt, so you can compare, and
+
+406
+00:07:02,670 --> 00:07:02,680
+prompt, so you can compare, and
+ 
+
+407
+00:07:02,680 --> 00:07:04,110
+prompt, so you can compare, and
+honestly, they all look great. The
+
+408
+00:07:04,110 --> 00:07:04,120
+honestly, they all look great. The
+ 
+
+409
+00:07:04,120 --> 00:07:06,070
+honestly, they all look great. The
+reason we build the location as its own
+
+410
+00:07:06,070 --> 00:07:06,080
+reason we build the location as its own
+ 
+
+411
+00:07:06,080 --> 00:07:07,950
+reason we build the location as its own
+separate asset is the same reason we did
+
+412
+00:07:07,950 --> 00:07:07,960
+separate asset is the same reason we did
+ 
+
+413
+00:07:07,960 --> 00:07:10,270
+separate asset is the same reason we did
+it for characters, which is consistency.
+
+414
+00:07:10,270 --> 00:07:10,280
+it for characters, which is consistency.
+ 
+
+415
+00:07:10,280 --> 00:07:11,870
+it for characters, which is consistency.
+When you feed Seedance a locked-in
+
+416
+00:07:11,870 --> 00:07:11,880
+When you feed Seedance a locked-in
+ 
+
+417
+00:07:11,880 --> 00:07:13,550
+When you feed Seedance a locked-in
+location reference, every shot that
+
+418
+00:07:13,550 --> 00:07:13,560
+location reference, every shot that
+ 
+
+419
+00:07:13,560 --> 00:07:15,230
+location reference, every shot that
+takes place there shares the same
+
+420
+00:07:15,230 --> 00:07:15,240
+takes place there shares the same
+ 
+
+421
+00:07:15,240 --> 00:07:16,990
+takes place there shares the same
+environment, the same lighting, and the
+
+422
+00:07:16,990 --> 00:07:17,000
+environment, the same lighting, and the
+ 
+
+423
+00:07:17,000 --> 00:07:18,590
+environment, the same lighting, and the
+same details. That's what makes your
+
+424
+00:07:18,590 --> 00:07:18,600
+same details. That's what makes your
+ 
+
+425
+00:07:18,600 --> 00:07:20,430
+same details. That's what makes your
+film feel like it was actually shot on
+
+426
+00:07:20,430 --> 00:07:20,440
+film feel like it was actually shot on
+ 
+
+427
+00:07:20,440 --> 00:07:22,470
+film feel like it was actually shot on
+one set, instead of a random collection
+
+428
+00:07:22,470 --> 00:07:22,480
+one set, instead of a random collection
+ 
+
+429
+00:07:22,480 --> 00:07:24,390
+one set, instead of a random collection
+of AI clips. Now that we've got our
+
+430
+00:07:24,390 --> 00:07:24,400
+of AI clips. Now that we've got our
+ 
+
+431
+00:07:24,400 --> 00:07:26,310
+of AI clips. Now that we've got our
+characters and location, let's put it
+
+432
+00:07:26,310 --> 00:07:26,320
+characters and location, let's put it
+ 
+
+433
+00:07:26,320 --> 00:07:28,270
+characters and location, let's put it
+all together and create our scenes. This
+
+434
+00:07:28,270 --> 00:07:28,280
+all together and create our scenes. This
+ 
+
+435
+00:07:28,280 --> 00:07:31,110
+all together and create our scenes. This
+is where Seedance 2.5 really shows off.
+
+436
+00:07:31,110 --> 00:07:31,120
+is where Seedance 2.5 really shows off.
+ 
+
+437
+00:07:31,120 --> 00:07:32,750
+is where Seedance 2.5 really shows off.
+Back in Claude, scroll down and you'll
+
+438
+00:07:32,750 --> 00:07:32,760
+Back in Claude, scroll down and you'll
+ 
+
+439
+00:07:32,760 --> 00:07:34,710
+Back in Claude, scroll down and you'll
+see an upload order section. Keep this
+
+440
+00:07:34,710 --> 00:07:34,720
+see an upload order section. Keep this
+ 
+
+441
+00:07:34,720 --> 00:07:36,510
+see an upload order section. Keep this
+handy, we'll use it as a reference when
+
+442
+00:07:36,510 --> 00:07:36,520
+handy, we'll use it as a reference when
+ 
+
+443
+00:07:36,520 --> 00:07:38,430
+handy, we'll use it as a reference when
+assembling our assets for the video
+
+444
+00:07:38,430 --> 00:07:38,440
+assembling our assets for the video
+ 
+
+445
+00:07:38,440 --> 00:07:39,950
+assembling our assets for the video
+prompts. Below that, you'll find your
+
+446
+00:07:39,950 --> 00:07:39,960
+prompts. Below that, you'll find your
+ 
+
+447
+00:07:39,960 --> 00:07:41,870
+prompts. Below that, you'll find your
+shot list. It breaks down each shot,
+
+448
+00:07:41,870 --> 00:07:41,880
+shot list. It breaks down each shot,
+ 
+
+449
+00:07:41,880 --> 00:07:43,990
+shot list. It breaks down each shot,
+when it happens, how long it lasts, and
+
+450
+00:07:43,990 --> 00:07:44,000
+when it happens, how long it lasts, and
+ 
+
+451
+00:07:44,000 --> 00:07:45,830
+when it happens, how long it lasts, and
+which prompt block it belongs to. Go
+
+452
+00:07:45,830 --> 00:07:45,840
+which prompt block it belongs to. Go
+ 
+
+453
+00:07:45,840 --> 00:07:47,350
+which prompt block it belongs to. Go
+through this and make sure you're happy
+
+454
+00:07:47,350 --> 00:07:47,360
+through this and make sure you're happy
+ 
+
+455
+00:07:47,360 --> 00:07:49,030
+through this and make sure you're happy
+because your final video follows this
+
+456
+00:07:49,030 --> 00:07:49,040
+because your final video follows this
+ 
+
+457
+00:07:49,040 --> 00:07:51,470
+because your final video follows this
+exact sequence. Scroll a bit further and
+
+458
+00:07:51,470 --> 00:07:51,480
+exact sequence. Scroll a bit further and
+ 
+
+459
+00:07:51,480 --> 00:07:52,710
+exact sequence. Scroll a bit further and
+you'll see the prompts for every
+
+460
+00:07:52,710 --> 00:07:52,720
+you'll see the prompts for every
+ 
+
+461
+00:07:52,720 --> 00:07:55,390
+you'll see the prompts for every
+generation sorted into blocks. Each
+
+462
+00:07:55,390 --> 00:07:55,400
+generation sorted into blocks. Each
+ 
+
+463
+00:07:55,400 --> 00:07:57,550
+generation sorted into blocks. Each
+block groups your shots into 30-second
+
+464
+00:07:57,550 --> 00:07:57,560
+block groups your shots into 30-second
+ 
+
+465
+00:07:57,560 --> 00:08:00,150
+block groups your shots into 30-second
+intervals to stay within SeaDance 2.5's
+
+466
+00:08:00,150 --> 00:08:00,160
+intervals to stay within SeaDance 2.5's
+ 
+
+467
+00:08:00,160 --> 00:08:02,030
+intervals to stay within SeaDance 2.5's
+30-second video cap. And notice the
+
+468
+00:08:02,030 --> 00:08:02,040
+30-second video cap. And notice the
+ 
+
+469
+00:08:02,040 --> 00:08:04,470
+30-second video cap. And notice the
+style DNA added at the bottom of every
+
+470
+00:08:04,470 --> 00:08:04,480
+style DNA added at the bottom of every
+ 
+
+471
+00:08:04,480 --> 00:08:06,030
+style DNA added at the bottom of every
+prompt. That's what keeps your visuals
+
+472
+00:08:06,030 --> 00:08:06,040
+prompt. That's what keeps your visuals
+ 
+
+473
+00:08:06,040 --> 00:08:07,950
+prompt. That's what keeps your visuals
+consistent throughout. Each block also
+
+474
+00:08:07,950 --> 00:08:07,960
+consistent throughout. Each block also
+ 
+
+475
+00:08:07,960 --> 00:08:09,790
+consistent throughout. Each block also
+lists exactly what order to paste your
+
+476
+00:08:09,790 --> 00:08:09,800
+lists exactly what order to paste your
+ 
+
+477
+00:08:09,800 --> 00:08:12,230
+lists exactly what order to paste your
+assets in. So, let's start with block
+
+478
+00:08:12,230 --> 00:08:12,240
+assets in. So, let's start with block
+ 
+
+479
+00:08:12,240 --> 00:08:13,909
+assets in. So, let's start with block
+one. Copy the first block's prompt and
+
+480
+00:08:13,909 --> 00:08:13,919
+one. Copy the first block's prompt and
+ 
+
+481
+00:08:13,919 --> 00:08:15,390
+one. Copy the first block's prompt and
+head to OpenArt. Into the video
+
+482
+00:08:15,390 --> 00:08:15,400
+head to OpenArt. Into the video
+ 
+
+483
+00:08:15,400 --> 00:08:17,590
+head to OpenArt. Into the video
+workspace called text with reference.
+
+484
+00:08:17,590 --> 00:08:17,600
+workspace called text with reference.
+ 
+
+485
+00:08:17,600 --> 00:08:19,190
+workspace called text with reference.
+Paste your prompt in and make sure the
+
+486
+00:08:19,190 --> 00:08:19,200
+Paste your prompt in and make sure the
+ 
+
+487
+00:08:19,200 --> 00:08:21,990
+Paste your prompt in and make sure the
+model is set to SeaDance 2.5. Now, look
+
+488
+00:08:21,990 --> 00:08:22,000
+model is set to SeaDance 2.5. Now, look
+ 
+
+489
+00:08:22,000 --> 00:08:23,750
+model is set to SeaDance 2.5. Now, look
+for the reference key in the prompt. It
+
+490
+00:08:23,750 --> 00:08:23,760
+for the reference key in the prompt. It
+ 
+
+491
+00:08:23,760 --> 00:08:25,470
+for the reference key in the prompt. It
+tells you the exact order to drag your
+
+492
+00:08:25,470 --> 00:08:25,480
+tells you the exact order to drag your
+ 
+
+493
+00:08:25,480 --> 00:08:27,470
+tells you the exact order to drag your
+assets in. First up is the female
+
+494
+00:08:27,470 --> 00:08:27,480
+assets in. First up is the female
+ 
+
+495
+00:08:27,480 --> 00:08:29,350
+assets in. First up is the female
+character, so I'll drag in her character
+
+496
+00:08:29,350 --> 00:08:29,360
+character, so I'll drag in her character
+ 
+
+497
+00:08:29,360 --> 00:08:31,270
+character, so I'll drag in her character
+sheet as reference one. Next is the
+
+498
+00:08:31,270 --> 00:08:31,280
+sheet as reference one. Next is the
+ 
+
+499
+00:08:31,280 --> 00:08:33,430
+sheet as reference one. Next is the
+male, drag his sheet in, and finally the
+
+500
+00:08:33,430 --> 00:08:33,440
+male, drag his sheet in, and finally the
+ 
+
+501
+00:08:33,440 --> 00:08:35,709
+male, drag his sheet in, and finally the
+location as the third reference. This is
+
+502
+00:08:35,709 --> 00:08:35,719
+location as the third reference. This is
+ 
+
+503
+00:08:35,719 --> 00:08:37,270
+location as the third reference. This is
+simple, but it's critical. Follow the
+
+504
+00:08:37,270 --> 00:08:37,280
+simple, but it's critical. Follow the
+ 
+
+505
+00:08:37,280 --> 00:08:39,310
+simple, but it's critical. Follow the
+asset order Claude gave you exactly. Get
+
+506
+00:08:39,310 --> 00:08:39,320
+asset order Claude gave you exactly. Get
+ 
+
+507
+00:08:39,320 --> 00:08:41,310
+asset order Claude gave you exactly. Get
+it wrong characters might end up doing
+
+508
+00:08:41,310 --> 00:08:41,320
+it wrong characters might end up doing
+ 
+
+509
+00:08:41,320 --> 00:08:43,070
+it wrong characters might end up doing
+the opposite of their role, or your
+
+510
+00:08:43,070 --> 00:08:43,080
+the opposite of their role, or your
+ 
+
+511
+00:08:43,080 --> 00:08:44,950
+the opposite of their role, or your
+location gets treated as a character.
+
+512
+00:08:44,950 --> 00:08:44,960
+location gets treated as a character.
+ 
+
+513
+00:08:44,960 --> 00:08:46,670
+location gets treated as a character.
+Getting this order right the first time
+
+514
+00:08:46,670 --> 00:08:46,680
+Getting this order right the first time
+ 
+
+515
+00:08:46,680 --> 00:08:48,430
+Getting this order right the first time
+is what saves you from wasting credits
+
+516
+00:08:48,430 --> 00:08:48,440
+is what saves you from wasting credits
+ 
+
+517
+00:08:48,440 --> 00:08:50,430
+is what saves you from wasting credits
+on a broken generation. For settings,
+
+518
+00:08:50,430 --> 00:08:50,440
+on a broken generation. For settings,
+ 
+
+519
+00:08:50,440 --> 00:08:54,070
+on a broken generation. For settings,
+keep audio on, output 16:9, 1080p, and
+
+520
+00:08:54,070 --> 00:08:54,080
+keep audio on, output 16:9, 1080p, and
+ 
+
+521
+00:08:54,080 --> 00:08:55,990
+keep audio on, output 16:9, 1080p, and
+match the duration listed in the last
+
+522
+00:08:55,990 --> 00:08:56,000
+match the duration listed in the last
+ 
+
+523
+00:08:56,000 --> 00:08:57,990
+match the duration listed in the last
+shot of your prompt. For mine, that's a
+
+524
+00:08:57,990 --> 00:08:58,000
+shot of your prompt. For mine, that's a
+ 
+
+525
+00:08:58,000 --> 00:09:00,350
+shot of your prompt. For mine, that's a
+17-second generation. Now, here's a pro
+
+526
+00:09:00,350 --> 00:09:00,360
+17-second generation. Now, here's a pro
+ 
+
+527
+00:09:00,360 --> 00:09:01,510
+17-second generation. Now, here's a pro
+trick that will save you from a
+
+528
+00:09:01,510 --> 00:09:01,520
+trick that will save you from a
+ 
+
+529
+00:09:01,520 --> 00:09:03,829
+trick that will save you from a
+potential regeneration. Always add two
+
+530
+00:09:03,829 --> 00:09:03,839
+potential regeneration. Always add two
+ 
+
+531
+00:09:03,839 --> 00:09:05,630
+potential regeneration. Always add two
+extra seconds to whatever your prompt's
+
+532
+00:09:05,630 --> 00:09:05,640
+extra seconds to whatever your prompt's
+ 
+
+533
+00:09:05,640 --> 00:09:07,470
+extra seconds to whatever your prompt's
+duration is. This gives each shot a
+
+534
+00:09:07,470 --> 00:09:07,480
+duration is. This gives each shot a
+ 
+
+535
+00:09:07,480 --> 00:09:08,950
+duration is. This gives each shot a
+little breathing room, and honestly,
+
+536
+00:09:08,950 --> 00:09:08,960
+little breathing room, and honestly,
+ 
+
+537
+00:09:08,960 --> 00:09:10,350
+little breathing room, and honestly,
+it's the reason I rarely have to
+
+538
+00:09:10,350 --> 00:09:10,360
+it's the reason I rarely have to
+ 
+
+539
+00:09:10,360 --> 00:09:12,430
+it's the reason I rarely have to
+regenerate. So, instead of 17 seconds,
+
+540
+00:09:12,430 --> 00:09:12,440
+regenerate. So, instead of 17 seconds,
+ 
+
+541
+00:09:12,440 --> 00:09:33,550
+regenerate. So, instead of 17 seconds,
+I'll set it to 19, then hit generate.
+
+542
+00:09:33,550 --> 00:09:33,560
+
+ 
+
+543
+00:09:33,560 --> 00:09:35,310
+
+Why does this tiny adjustment matter so
+
+544
+00:09:35,310 --> 00:09:35,320
+Why does this tiny adjustment matter so
+ 
+
+545
+00:09:35,320 --> 00:09:37,870
+Why does this tiny adjustment matter so
+much? Because AI video models often rush
+
+546
+00:09:37,870 --> 00:09:37,880
+much? Because AI video models often rush
+ 
+
+547
+00:09:37,880 --> 00:09:39,790
+much? Because AI video models often rush
+or cut off the final action of a shot
+
+548
+00:09:39,790 --> 00:09:39,800
+or cut off the final action of a shot
+ 
+
+549
+00:09:39,800 --> 00:09:41,390
+or cut off the final action of a shot
+when they're squeezed for time. That
+
+550
+00:09:41,390 --> 00:09:41,400
+when they're squeezed for time. That
+ 
+
+551
+00:09:41,400 --> 00:09:43,310
+when they're squeezed for time. That
+extra 2 seconds gives the model enough
+
+552
+00:09:43,310 --> 00:09:43,320
+extra 2 seconds gives the model enough
+ 
+
+553
+00:09:43,320 --> 00:09:44,790
+extra 2 seconds gives the model enough
+room to actually finish the motion
+
+554
+00:09:44,790 --> 00:09:44,800
+room to actually finish the motion
+ 
+
+555
+00:09:44,800 --> 00:09:46,630
+room to actually finish the motion
+naturally, which means smoother clips,
+
+556
+00:09:46,630 --> 00:09:46,640
+naturally, which means smoother clips,
+ 
+
+557
+00:09:46,640 --> 00:09:48,630
+naturally, which means smoother clips,
+cleaner endings, and way fewer wasted
+
+558
+00:09:48,630 --> 00:09:48,640
+cleaner endings, and way fewer wasted
+ 
+
+559
+00:09:48,640 --> 00:09:50,510
+cleaner endings, and way fewer wasted
+credits redoing shots that got clipped
+
+560
+00:09:50,510 --> 00:09:50,520
+credits redoing shots that got clipped
+ 
+
+561
+00:09:50,520 --> 00:09:52,190
+credits redoing shots that got clipped
+short. Now, just repeat this for every
+
+562
+00:09:52,190 --> 00:09:52,200
+short. Now, just repeat this for every
+ 
+
+563
+00:09:52,200 --> 00:09:54,070
+short. Now, just repeat this for every
+remaining block. Copy the block into
+
+564
+00:09:54,070 --> 00:09:54,080
+remaining block. Copy the block into
+ 
+
+565
+00:09:54,080 --> 00:09:55,950
+remaining block. Copy the block into
+OpenArt, add your assets in the correct
+
+566
+00:09:55,950 --> 00:09:55,960
+OpenArt, add your assets in the correct
+ 
+
+567
+00:09:55,960 --> 00:09:57,910
+OpenArt, add your assets in the correct
+order, adjust the duration, always
+
+568
+00:09:57,910 --> 00:09:57,920
+order, adjust the duration, always
+ 
+
+569
+00:09:57,920 --> 00:09:59,870
+order, adjust the duration, always
+adding those two extra seconds when you
+
+570
+00:09:59,870 --> 00:09:59,880
+adding those two extra seconds when you
+ 
+
+571
+00:09:59,880 --> 00:10:01,630
+adding those two extra seconds when you
+can. Once all your generations are
+
+572
+00:10:01,630 --> 00:10:01,640
+can. Once all your generations are
+ 
+
+573
+00:10:01,640 --> 00:10:03,630
+can. Once all your generations are
+complete, drop them into a free editing
+
+574
+00:10:03,630 --> 00:10:03,640
+complete, drop them into a free editing
+ 
+
+575
+00:10:03,640 --> 00:10:05,790
+complete, drop them into a free editing
+tool like CapCut or whatever software
+
+576
+00:10:05,790 --> 00:10:05,800
+tool like CapCut or whatever software
+ 
+
+577
+00:10:05,800 --> 00:10:08,390
+tool like CapCut or whatever software
+you like, and together into one complete
+
+578
+00:10:08,390 --> 00:10:08,400
+you like, and together into one complete
+ 
+
+579
+00:10:08,400 --> 00:10:10,230
+you like, and together into one complete
+film. This is also where you fine-tune
+
+580
+00:10:10,230 --> 00:10:10,240
+film. This is also where you fine-tune
+ 
+
+581
+00:10:10,240 --> 00:10:12,070
+film. This is also where you fine-tune
+everything, trim an extra second off a
+
+582
+00:10:12,070 --> 00:10:12,080
+everything, trim an extra second off a
+ 
+
+583
+00:10:12,080 --> 00:10:14,150
+everything, trim an extra second off a
+clip so the next one lines up better, or
+
+584
+00:10:14,150 --> 00:10:14,160
+clip so the next one lines up better, or
+ 
+
+585
+00:10:14,160 --> 00:10:16,030
+clip so the next one lines up better, or
+add your own background music or a sound
+
+586
+00:10:16,030 --> 00:10:16,040
+add your own background music or a sound
+ 
+
+587
+00:10:16,040 --> 00:10:17,750
+add your own background music or a sound
+effect to bring it to life. The reason
+
+588
+00:10:17,750 --> 00:10:17,760
+effect to bring it to life. The reason
+ 
+
+589
+00:10:17,760 --> 00:10:19,550
+effect to bring it to life. The reason
+this final pass makes such a difference
+
+590
+00:10:19,550 --> 00:10:19,560
+this final pass makes such a difference
+ 
+
+591
+00:10:19,560 --> 00:10:21,470
+this final pass makes such a difference
+is that editing is what turns a pile of
+
+592
+00:10:21,470 --> 00:10:21,480
+is that editing is what turns a pile of
+ 
+
+593
+00:10:21,480 --> 00:10:23,470
+is that editing is what turns a pile of
+good clips into an actual film. A
+
+594
+00:10:23,470 --> 00:10:23,480
+good clips into an actual film. A
+ 
+
+595
+00:10:23,480 --> 00:10:25,430
+good clips into an actual film. A
+well-timed cut, the right background
+
+596
+00:10:25,430 --> 00:10:25,440
+well-timed cut, the right background
+ 
+
+597
+00:10:25,440 --> 00:10:27,390
+well-timed cut, the right background
+music, and a couple of sound effects add
+
+598
+00:10:27,390 --> 00:10:27,400
+music, and a couple of sound effects add
+ 
+
+599
+00:10:27,400 --> 00:10:29,150
+music, and a couple of sound effects add
+that layer of polish that instantly
+
+600
+00:10:29,150 --> 00:10:29,160
+that layer of polish that instantly
+ 
+
+601
+00:10:29,160 --> 00:10:31,150
+that layer of polish that instantly
+separates your work from the generic AI
+
+602
+00:10:31,150 --> 00:10:31,160
+separates your work from the generic AI
+ 
+
+603
+00:10:31,160 --> 00:10:33,510
+separates your work from the generic AI
+slop you see online. It's the finishing
+
+604
+00:10:33,510 --> 00:10:33,520
+slop you see online. It's the finishing
+ 
+
+605
+00:10:33,520 --> 00:10:35,990
+slop you see online. It's the finishing
+touch that makes viewers stop watch. And
+
+606
+00:10:35,990 --> 00:10:36,000
+touch that makes viewers stop watch. And
+ 
+
+607
+00:10:36,000 --> 00:10:37,870
+touch that makes viewers stop watch. And
+that's the entire workflow, from a blank
+
+608
+00:10:37,870 --> 00:10:37,880
+that's the entire workflow, from a blank
+ 
+
+609
+00:10:37,880 --> 00:10:40,350
+that's the entire workflow, from a blank
+template to a fully realistic AI film,
+
+610
+00:10:40,350 --> 00:10:40,360
+template to a fully realistic AI film,
+ 
+
+611
+00:10:40,360 --> 00:10:42,150
+template to a fully realistic AI film,
+all in one sitting with characters that
+
+612
+00:10:42,150 --> 00:10:42,160
+all in one sitting with characters that
+ 
+
+613
+00:10:42,160 --> 00:10:44,230
+all in one sitting with characters that
+stay consistent, locations that hold up,
+
+614
+00:10:44,230 --> 00:10:44,240
+stay consistent, locations that hold up,
+ 
+
+615
+00:10:44,240 --> 00:10:46,070
+stay consistent, locations that hold up,
+and shots that actually flow together.
+
+616
+00:10:46,070 --> 00:10:46,080
+and shots that actually flow together.
+ 
+
+617
+00:10:46,080 --> 00:10:48,190
+and shots that actually flow together.
+No experience needed, no wasting credits
+
+618
+00:10:48,190 --> 00:10:48,200
+No experience needed, no wasting credits
+ 
+
+619
+00:10:48,200 --> 00:10:50,150
+No experience needed, no wasting credits
+and hours with regenerations, just a
+
+620
+00:10:50,150 --> 00:10:50,160
+and hours with regenerations, just a
+ 
+
+621
+00:10:50,160 --> 00:10:52,230
+and hours with regenerations, just a
+clear, easy-to-use workflow that can be
+
+622
+00:10:52,230 --> 00:10:52,240
+clear, easy-to-use workflow that can be
+ 
+
+623
+00:10:52,240 --> 00:10:54,430
+clear, easy-to-use workflow that can be
+reused for any type of AI film. The
+
+624
+00:10:54,430 --> 00:10:54,440
+reused for any type of AI film. The
+ 
+
+625
+00:10:54,440 --> 00:10:56,350
+reused for any type of AI film. The
+reason this whole process works so well
+
+626
+00:10:56,350 --> 00:10:56,360
+reason this whole process works so well
+ 
+
+627
+00:10:56,360 --> 00:10:58,150
+reason this whole process works so well
+is that everything lives inside OpenArt
+
+628
+00:10:58,150 --> 00:10:58,160
+is that everything lives inside OpenArt
+ 
+
+629
+00:10:58,160 --> 00:11:00,870
+is that everything lives inside OpenArt
+alongside C Dance 2.5, so you're not
+
+630
+00:11:00,870 --> 00:11:00,880
+alongside C Dance 2.5, so you're not
+ 
+
+631
+00:11:00,880 --> 00:11:02,590
+alongside C Dance 2.5, so you're not
+dragging files between 10 different
+
+632
+00:11:02,590 --> 00:11:02,600
+dragging files between 10 different
+ 
+
+633
+00:11:02,600 --> 00:11:05,150
+dragging files between 10 different
+tools or juggling a dozen subscriptions.
+
+634
+00:11:05,150 --> 00:11:05,160
+tools or juggling a dozen subscriptions.
+ 
+
+635
+00:11:05,160 --> 00:11:07,030
+tools or juggling a dozen subscriptions.
+It's all in one place, which is exactly
+
+636
+00:11:07,030 --> 00:11:07,040
+It's all in one place, which is exactly
+ 
+
+637
+00:11:07,040 --> 00:11:08,829
+It's all in one place, which is exactly
+what makes finishing a film like this
+
+638
+00:11:08,829 --> 00:11:08,839
+what makes finishing a film like this
+ 
+
+639
+00:11:08,839 --> 00:11:10,829
+what makes finishing a film like this
+actually realistic for a single normal
+
+640
+00:11:10,829 --> 00:11:10,839
+actually realistic for a single normal
+ 
+
+641
+00:11:10,839 --> 00:11:12,350
+actually realistic for a single normal
+person. So, if you're ready to make your
+
+642
+00:11:12,350 --> 00:11:12,360
+person. So, if you're ready to make your
+ 
+
+643
+00:11:12,360 --> 00:11:14,150
+person. So, if you're ready to make your
+own film and become a master at AI
+
+644
+00:11:14,150 --> 00:11:14,160
+own film and become a master at AI
+ 
+
+645
+00:11:14,160 --> 00:11:15,670
+own film and become a master at AI
+filmmaking, click the link in the
+
+646
+00:11:15,670 --> 00:11:15,680
+filmmaking, click the link in the
+ 
+
+647
+00:11:15,680 --> 00:11:17,630
+filmmaking, click the link in the
+description to sign up for OpenArt, grab
+
+648
+00:11:17,630 --> 00:11:17,640
+description to sign up for OpenArt, grab
+ 
+
+649
+00:11:17,640 --> 00:11:19,790
+description to sign up for OpenArt, grab
+the free template and MD file from my
+
+650
+00:11:19,790 --> 00:11:19,800
+the free template and MD file from my
+ 
+
+651
+00:11:19,800 --> 00:11:21,750
+the free template and MD file from my
+school community, and start creating.
+
+652
+00:11:21,750 --> 00:11:21,760
+school community, and start creating.
+ 
+
+653
+00:11:21,760 --> 00:11:23,230
+school community, and start creating.
+Thanks for watching, and I'll see you in
+
+654
+00:11:23,230 --> 00:11:23,240
+Thanks for watching, and I'll see you in
+ 
+
+655
+00:11:23,240 --> 00:11:25,960
+Thanks for watching, and I'll see you in
+the next one.
+

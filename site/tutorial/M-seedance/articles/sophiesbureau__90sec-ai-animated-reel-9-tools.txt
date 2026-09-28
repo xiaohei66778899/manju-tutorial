@@ -1,0 +1,8 @@
+来源URL: https://www.sophiesbureau.com/digital-ops/how-i-made-90-second-reel-ai-tools
+作者: Sophie Kazandjian
+日期: 2026-01-04
+
+核心内容摘要:
+一位设计师用9个AI工具在一个下午完成了90秒动画短片"Timing, Not Time"。完整工具栈：Claude写剧本→ChatGPT优化提示词→Leonardo AI生成插画→Nano Banana Pro放大→Kling AI动画化→Suno配乐→ElevenLabs配音→Filmora剪辑→Canva排版。核心经验：先写文字再做视觉；找到风格提示词后模板化不要反复改；Claude擅长策略性创意而ChatGPT擅长技术性指令（如Kling动画的精确控制）；动画提示词需要明确禁止不需要的动作并提供替代微动作。
+
+推荐教学点: 适合"多工具协作工作流"章节——展示不同AI工具的角色分工和互补性，重点讲"Claude vs ChatGPT在提示词写作中的不同优势"以及"Kling动画的精确控制技巧"。

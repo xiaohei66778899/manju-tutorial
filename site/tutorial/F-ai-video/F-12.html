@@ -1,0 +1,320 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="F-12 人物为什么会变形(避坑) · 漫剧制作教程站。玉哥整理的 AI 漫剧与短剧制作实用教程，包含步骤、案例和练习。">
+<title>F-12 人物为什么会变形(避坑) · 漫剧制作教程站</title>
+<link rel="stylesheet" href="../../assets/site.css?v=fix20260927-2215">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg?v=fix20260927-2215">
+<link rel="stylesheet" href="../../assets/tutorial.css?v=fix20260927-2215">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="logo">🎬 漫剧教程站 <small>v3 · 玉哥</small></div>
+  <nav>
+    <a href="../../index.html">首页</a>
+    <a href="../all-courses.html" class="active">漫剧教程</a>
+    <a href="../../prompts/image-prompts.html">图片作品</a>
+    <a href="../../works/index.html">视频作品</a>
+    <a href="../../prompts/prompts.html">prompt 模板</a>
+    <a href="../../tools/toolkit.html">工具箱</a>
+    <a href="../../qa/troubleshooting.html">问题库</a>
+    <a href="../../news/industry.html">行业新闻</a>
+    </nav>
+  <div class="search"><input type="search" placeholder="🔍 搜…"></div>
+  <button class="theme-toggle" title="深浅主题切换" onclick="document.documentElement.classList.toggle('dark')">🌙</button>
+</header>
+
+<div class="layout-3col">
+  <aside class="sidebar-left" id="sidebar-left"></aside>
+
+  <main class="content">
+    <div class="breadcrumb">
+      <a href="../../index.html">首页</a> <span>›</span>
+      <a href="../all-courses.html">F AI 视频</a> <span>›</span>
+      F-12 人物为什么会变形
+    </div>
+
+    <h1>F-12 · 人物为什么会变形(避坑)</h1>
+    <h2 id="sec-1">1. 学员小李的 80 镜头:42 个变形</h2>
+
+    <div class="example">
+      <span class="label">学员实操 · 玉哥整理</span>
+      <h4>👨‍💻 小李 · 2026 年 8 月 · 用可灵跑《龙王归来》第 1 集</h4>
+      <p>小李第一次跑 80 个镜头(可灵 6 秒),跑完后逐个看,发现:</p>
+      <ul>
+        <li><strong>42 个镜头有人物变形</strong>(52.5%)</li>
+        <li><strong>25 个是手指问题</strong>(6 指 / 7 指 / 指节扭曲)</li>
+        <li><strong>10 个是脸部问题</strong>(眨眼没闭上 / 半张脸)</li>
+        <li><strong>5 个是关节扭曲</strong>(手肘反向 / 胳膊长)</li>
+        <li><strong>2 个是穿模</strong>(手伸进桌子)</li>
+      </ul>
+      <p>小李花了 <strong>4 小时重跑</strong>(避开易变形镜头)才凑够 80 个能用的。</p>
+      <p class="src">📌 <strong>玉哥经验</strong>:<strong>50% 变形率是常态</strong>。<strong>会识别 + 会修</strong> = 学员效率高 2 倍。</p>
+    </div>
+
+    <h2 id="sec-2">2. 5 大变形场景对照</h2>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th>#</th><th>类型</th><th>表现</th><th>出现频率</th><th>严重度</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>1</strong></td><td>多余手指</td><td>6 指 / 7 指 / 指节扭曲</td><td>⭐⭐⭐⭐⭐</td><td>🔴 高</td></tr>
+          <tr><td><strong>2</strong></td><td>脸部变形</td><td>眨眼没闭上 / 嘴歪 / 半张脸</td><td>⭐⭐⭐⭐</td><td>🔴 高</td></tr>
+          <tr><td><strong>3</strong></td><td>关节扭曲</td><td>手肘反向 / 膝盖 180°</td><td>⭐⭐⭐</td><td>🔴 高</td></tr>
+          <tr><td><strong>4</strong></td><td>身体比例</td><td>头身比不对 / 胳膊长短不一</td><td>⭐⭐⭐</td><td>🟡 中</td></tr>
+          <tr><td><strong>5</strong></td><td>服装穿模</td><td>手穿进衣服 / 衣服融合背景</td><td>⭐⭐</td><td>🟡 中</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="sec-3">3. 变形 1 · 多余手指(60% 概率)</h2>
+
+    <div class="example">
+      <span class="label">玉哥拆解 · 手指变形 3 大子类型</span>
+      <h4>👆 手指变形 = AI 视频头号问题</h4>
+      <p><strong>为什么</strong>:AI 在低分辨率(512x512)学手指,本质是"统计像素",不是"理解结构"。视频生成时从图升级,手指就成了"重灾区"。</p>
+
+      <p><strong>3 大子类型</strong>:</p>
+      <ul>
+        <li><strong>多指</strong>:6 指 / 7 指 / 大拇指分叉</li>
+        <li><strong>少指</strong>:3 指 / 4 指(罕见)</li>
+        <li><strong>指节扭曲</strong>:手指像被搅过,关节位置错乱</li>
+      </ul>
+
+      <p><strong>玉哥 4 个修法</strong>:</p>
+      <ol>
+        <li><strong>加负面提示词</strong>:"extra fingers, mutated hands, six fingers, deformed fingers" → 降低 40% 概率</li>
+        <li><strong>避开手指镜头</strong>:用"拳头 / 插兜 / 拿武器"等不露手指的姿势</li>
+        <li><strong>切景别</strong>:中景以上只露上半身,手指不出框</li>
+        <li><strong>手动修</strong>:PS Beta AI 移除 / Runway Inpainting 重画手指(学员最终兜底)</li>
+      </ol>
+
+      <p class="src">📌 <strong>玉哥数据</strong>:加负面词降低到 <strong>25%</strong>,加上姿势规避降低到 <strong>10%</strong>,加上切景别降低到 <strong>3%</strong>。<strong>3 件全做</strong> = 学员手指变形率底线。</p>
+    </div>
+
+    <h2 id="sec-4">4. 变形 2 · 脸部变形(20% 概率)</h2>
+
+    <div class="example">
+      <span class="label">玉哥脸部变形 4 类</span>
+      <h4>👤 脸部变形 4 大子类型</h4>
+      <ul>
+        <li><strong>眨眼没闭上</strong>(最常见):眨眼动作卡在中途,半闭半睁</li>
+        <li><strong>嘴部扭曲</strong>:张嘴像尖叫 / 嘴歪到耳朵</li>
+        <li><strong>半张脸</strong>:右脸消失 / 下巴融合脖子</li>
+        <li><strong>眼神涣散</strong>:两只眼看不同方向 / 斗鸡眼</li>
+      </ul>
+
+      <p><strong>玉哥 3 个修法</strong>:</p>
+      <ol>
+        <li><strong>特写镜头少用</strong>:脸部变形 70% 出在特写,中景 / 近景变形率低</li>
+        <li><strong>加提示词</strong>:"clear eyes, natural blink, symmetric face, normal expression"</li>
+        <li><strong>换模型</strong>:Runway Gen-4 脸部稳定性 > 可灵 > Sora(学员数据)</li>
+      </ol>
+
+      <p class="src">📌 <strong>学员血泪</strong>:第 1 集用了 10 个特写脸部镜头,<strong>8 个变形</strong>。后来第 2 集特写降到 2 个,<strong>0 个变形</strong>。</p>
+    </div>
+
+    <h2 id="sec-5">5. 变形 3 · 关节扭曲(15% 概率)</h2>
+
+    <div class="example">
+      <span class="label">玉哥关节变形解析</span>
+      <h4>🦴 关节扭曲 = 动起来才出问题</h4>
+      <p>关节扭曲<strong>只在运动镜头出现</strong>(静态图几乎不出)。AI 不懂人体解剖。</p>
+
+      <p><strong>3 类表现</strong>:</p>
+      <ul>
+        <li>手肘反向(向后弯)</li>
+        <li>膝盖 180°</li>
+        <li>手指弯到不可能的角度</li>
+      </ul>
+
+      <p><strong>玉哥 3 个修法</strong>:</p>
+      <ol>
+        <li><strong>简化动作</strong>:不写复杂动作(如"跳舞 / 武术"),只写"站立 / 行走 / 坐下"</li>
+        <li><strong>加提示词</strong>:"anatomically correct, natural body proportions, realistic pose"</li>
+        <li><strong>分镜拆细</strong>:把"走 5 步"拆成"踏 1 步 + 踏 2 步 + 踏 3 步",每段只动 1 个关节</li>
+      </ol>
+
+      <p class="src">📌 <strong>玉哥经验</strong>:<strong>动作越简单,变形越少</strong>。<strong>漫剧本质是"对话驱动"</strong>,80% 镜头是"站 / 坐 / 走",关节变形率实际可控。</p>
+    </div>
+
+    <h2 id="sec-6">6. 变形 4 · 身体比例(8% 概率)</h2>
+
+    <div class="example">
+      <span class="label">玉哥比例变形</span>
+      <h4>📏 比例变形 = 风格不一致</h4>
+      <p>头太大 / 胳膊太长 / 腿太短。<strong>每个镜头的主角比例不一样</strong>,观众一眼看出"换人了"。</p>
+
+      <p><strong>玉哥 2 个修法</strong>:</p>
+      <ol>
+        <li><strong>全程 IP-Adapter 锁参考图</strong>(E-14 教的):参考图比例定死,所有镜头统一</li>
+        <li><strong>出图前先看比例</strong>:发现 1 个镜头比例不对,<strong>整集重做</strong>(不能 80 个里 5 个不对)</li>
+      </ol>
+
+      <p class="src">📌 <strong>玉哥数据</strong>:不用 IP-Adapter 的学员,<strong>80 镜头里有 15 个比例不一致</strong>;用了 IP-Adapter 后降到 <strong>2 个</strong>(都是边角镜头)。</p>
+    </div>
+
+    <h2 id="sec-7">7. 变形 5 · 服装穿模(5% 概率)</h2>
+
+    <div class="example">
+      <span class="label">玉哥穿模归类</span>
+      <h4>👔 穿模 = 物理碰撞失败</h4>
+      <p>手伸进桌子 / 衣服融进背景 / 头发长到不可能。<strong>AI 不懂"实体"</strong>,只画"看起来像"。</p>
+
+      <p><strong>玉哥 2 个修法</strong>:</p>
+      <ol>
+        <li><strong>回避穿模姿势</strong>:不写"靠在桌边打字"(手会穿桌),改写"坐在椅子上打字"</li>
+        <li><strong>简化场景交互</strong>:不写"摸物品 / 推门",只写"站在门口 / 站立"</li>
+      </ol>
+    </div>
+
+    <h2 id="sec-8">8. 4 个模型变形率横评</h2>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th>模型</th><th>手指变形</th><th>脸部变形</th><th>关节扭曲</th><th>综合变形率</th><th>学员首选</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>可灵 2.x</strong></td><td>15%</td><td>10%</td><td>8%</td><td>~30%</td><td>✅ 性价比</td></tr>
+          <tr><td><strong>Hailuo/海螺</strong></td><td>12%</td><td>10%</td><td>7%</td><td>~25%</td><td>✅ <strong>首选</strong>(脸部强)</td></tr>
+          <tr><td><strong>Sora 2</strong></td><td>8%</td><td>6%</td><td>5%</td><td>~15%</td><td>✅ 关键镜头</td></tr>
+          <tr><td><strong>Runway Gen-4</strong></td><td>10%</td><td>5%</td><td>6%</td><td>~18%</td><td>✅ 脸部稳定</td></tr>
+          <tr><td><strong>Veo 3</strong></td><td>14%</td><td>12%</td><td>10%</td><td>~35%</td><td>🟡 中等</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout warn">
+      <span class="ico">💡</span>
+      <p><strong>玉哥组合拳</strong>:<strong>80% 镜头用可灵/Hailuo</strong>(便宜);<strong>关键 10-20 个镜头</strong>(特写脸部 / 复杂动作)<strong>用 Sora</strong>。<strong>成本节省 70%</strong>,质量保留 90%。</p>
+    </div>
+
+    <h2 id="sec-9">9. 4 个修法 SOP(按优先级)</h2>
+
+    <div class="example">
+      <span class="label">玉哥 SOP · 学员必背</span>
+      <h4>🔧 变形修法 4 步走</h4>
+      <ol>
+        <li><strong>先加负面提示词</strong>(1 分钟):常见负面词组合,降低 30-50% 变形</li>
+        <li><strong>然后重抽</strong>(3 分钟):换 Seed 重跑,大部分问题消失</li>
+        <li><strong>还不行换模型</strong>(5 分钟):Sora / Runway 兜底</li>
+        <li><strong>最后手动修</strong>(20 分钟):PS AI 移除 / Runway Inpainting</li>
+      </ol>
+
+      <p><strong>玉哥决策表</strong>:</p>
+      <table>
+        <thead>
+          <tr><th>严重度</th><th>次数</th><th>玉哥做法</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>轻微变形(不影响剧情)</td><td>1 次</td><td>直接用</td></tr>
+          <tr><td>中等变形(出戏)</td><td>1 次</td><td>重抽(换 Seed)</td></tr>
+          <tr><td>中等变形</td><td>3 次</td><td>换模型</td></tr>
+          <tr><td>严重变形(脸部 / 多余器官)</td><td>—</td><td>直接放弃这镜头,改分镜</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="sec-10">10. 学完这节能做啥</h2>
+
+    <ul class="checklist">
+      <li>认识 5 大变形场景(手指 / 脸 / 关节 / 比例 / 穿模)</li>
+      <li>能用"加负面词 + 重抽 + 换模型 + 手动修"4 步 SOP</li>
+      <li>知道 4 大模型变形率排序</li>
+      <li>能设计"80% 可灵 + 20% Sora"的成本组合拳</li>
+      <li>能用"姿势规避 + 切景别"把变形率从 50% 降到 5%</li>
+    </ul>
+
+    <h2 id="sec-11">11. 常见误解</h2>
+
+    <div class="callout bad">
+      <span class="ico">❌</span>
+      <p><strong>"AI 视频 2026 年已经很完美了"</strong> · 错。<strong>变形率 20-50% 是常态</strong>。学员 <strong>没人能 1 抽过</strong>,关键是<strong>会修 + 会规避</strong>。</p>
+    </div>
+
+    <div class="callout bad">
+      <span class="ico">❌</span>
+      <p><strong>"Sora 不会变形"</strong> · 错。<strong>Sora 也变形</strong>(~15%),但<strong>比可灵好 2 倍</strong>。预算允许就用 Sora,不允许就<strong>用可灵 + 修法组合</strong>。</p>
+    </div>
+
+    <div class="callout warn">
+      <span class="ico">⚠️</span>
+      <p><strong>"变形只能修不能避"</strong> · 错。<strong>70% 变形可以用分镜规避</strong>(切景别 / 简化动作 / 改姿势)。<strong>写分镜时就考虑"哪里会变形"</strong> 比<strong>事后修</strong> 强 5 倍。</p>
+    </div>
+
+    <div class="callout warn">
+      <span class="ico">⚠️</span>
+      <p><strong>"手动修 = 万能兜底"</strong> · 部分对。<strong>手动修 1 个镜头 20 分钟</strong>,80 镜头都修 = 26 小时,<strong>不现实</strong>。<strong>学员标准</strong> = 手动修 ≤ 5 个/集(其余靠规避 + 重抽)。</p>
+    </div>
+
+    <h2 id="sec-12">12. 本节小练习</h2>
+
+    <ol>
+      <li>用可灵跑 5 个常见镜头(握手 / 推门 / 摸物品 / 站立 / 行走)</li>
+      <li>逐个检查,记录 5 类变形各出现几个</li>
+      <li>挑 1 个变形镜头,加负面词重抽 3 次,记录改善率</li>
+      <li>挑 1 个手指变形,用 Runway Inpainting 修 1 次,记下耗时</li>
+      <li>总结自己的"必避姿势清单"(比如"漫剧不写握笔姿势")</li>
+      <li>用清单优化第 1 集分镜,看能减少多少变形</li>
+    </ol>
+
+    <h2 id="sec-13">13. 玉哥说</h2>
+
+    <div class="callout warn">
+      <span class="ico">📢</span>
+      <p><strong>📢 玉哥说</strong>:<br>
+      1. <strong>50% 变形率是常态</strong> · 会识别 + 会修 = 学员效率高 2 倍<br>
+      2. <strong>5 大变形</strong> · 手指(60%) / 脸(20%) / 关节(15%) / 比例(8%) / 穿模(5%)<br>
+      3. <strong>4 步修法</strong> · 负面词 → 重抽 → 换模型 → 手动修<br>
+      4. <strong>70% 变形可以用分镜规避</strong> · 写分镜时考虑"哪里会变形"比事后修强 5 倍<br>
+      5. <strong>80% 可灵 + 20% Sora</strong> · 成本省 70%,质量保留 90%</p>
+    </div>
+
+    <nav class="bottom-nav">
+      <a class="prev" href="F-6.html">
+        <span class="label">← 上一节</span>
+        <span class="title">F-6 运镜提示词</span>
+      </a>
+      <a class="next" href="F-13.html">
+        <span class="label">下一节 →</span>
+        <span class="title">F-13 角色为什么会漂移</span>
+      </a>
+    </nav>
+  </main>
+
+  <aside class="sidebar-right" id="sidebar-right"></aside>
+</div>
+
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="扫码关注玉哥">
+      <img class="qr-img" src="../../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../../changelog.html">📅 更新日志</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+
+<script src="../../assets/tutorial.js?v=fix20260927-2215"></script>
+<script src="../../assets/site-enhance.js?v=fix20260927-2215" defer></script>
+</body>
+</html>

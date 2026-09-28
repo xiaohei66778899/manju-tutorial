@@ -1,0 +1,71 @@
+# Lapian Notes — AI-assisted film study notebook
+
+[![Discord](https://img.shields.io/discord/958164961270591508?logo=discord&logoColor=white&label=Discord&color=5865F2)](https://discord.gg/uT6xryBX9w)
+[![X](https://img.shields.io/badge/X-%40bkingfilm-000000?logo=x&logoColor=white)](https://x.com/bkingfilm)
+[![Download](https://img.shields.io/github/v/release/bkingfilm/lapian-notes?label=download&color=2d6cdf)](https://github.com/bkingfilm/lapian-notes/releases/latest)
+[![License](https://img.shields.io/github/license/bkingfilm/lapian-notes?color=green)](LICENSE)
+
+**Short link [l.bking.film](https://l.bking.film) opens the online demo**
+
+**🚀 [Try it online — no install needed →](https://bkingfilm.github.io/lapian-notes/)** The full workflow runs in your browser: import an MP4, extract frames, take notes, generate the AI analysis package. The online demo lacks local transcoding and automatic subtitle search (those need the downloaded version); everything else is identical, and your data stays in your own browser.
+
+Turn a film into an editable shot-by-shot study notebook ("拉片" — the Chinese film-school practice of pulling a film apart scene by scene).
+
+Everything runs locally. Your film and notes never leave your machine. Bring your own AI — no API key required.
+
+> **Note**: the interface supports English and Simplified Chinese; use the language switcher in the bottom-right corner. [中文说明 →](README.md)
+
+![Screenshot: story-line swimlanes, audience-emotion curve, structure tree](docs/screenshot.jpg)
+
+## What it does
+
+- **Film timeline**: extracts one frame per second locally, builds a visual timeline
+- **AI analysis package**: bundles frames + subtitles into a ZIP you hand to ChatGPT or any AI (a task prompt and JSON schema are included); import the returned JSON and get:
+- **Story-line swimlanes**: segments laid out across story lines that the AI names for this specific film, with cross-line reference cards
+- **Structure tree and audience-emotion curve**: narrative grouping plus a beat-by-beat engagement curve
+- **Deep-dive per segment**: export any single segment as a small package for scene- and shot-level breakdown
+- **Built-in player sync**: click any timestamp in your notes to jump the video there; "play this segment" auto-pauses at the segment end
+- **Full manual editing**: every AI field is an editable draft; export the whole notebook as Markdown or a shareable long image
+
+<img src="docs/player-panel.png" alt="Player sync panel" width="380">
+
+> **Using an AI that rejects ZIP uploads (common with Chinese models like Kimi / Doubao / Qwen / DeepSeek)?** Click the "No-ZIP export (CN AI apps)" button next to the package button: it exports plain files instead — a task brief, subtitles and timecoded contact-sheet images — which you upload directly. Everything else works the same.
+
+> **Don't want to upload files at all?** Click "Direct AI analysis": enter your own API key once (presets for Gemini / Kimi / OpenAI / Claude, or use "Custom" for any OpenAI-compatible endpoint) and the full-film analysis runs and imports back in one click. The key stays in your local browser and token costs go to your own account. Full (local) version only — not available in the online demo.
+>
+> Why no DeepSeek preset? It is a text-only model and cannot see images. Film breakdown lives on the visuals — cinematography notes, dialogue-free passages and the emotion curve all need frames — so subtitles-only analysis degrades noticeably on visual films, and shipping it as a preset would quietly steer people into a crippled mode. If you still want it, pick "Custom", enter `https://api.deepseek.com` and uncheck "Attach frame contact sheets"; the tool falls back to subtitles-only analysis, which is serviceable for dialogue-heavy films.
+
+> **Note: free-tier AI may "cut corners".** A film sampled at one frame per second yields 6000 to 8000 images, often beyond free quotas. Instead of saying so, the AI may silently look at only a few frames from the beginning, middle and end, returning a suspiciously thin analysis. If that happens, ask it to "fully extract the ZIP and analyze every segment per prompt.md, no sampling", or retry with a paid tier or another AI.
+
+## Quick start
+
+### Not a developer
+
+1. **Download**: open the [latest release](https://github.com/bkingfilm/lapian-notes/releases/latest) and grab `lapian-notes-vX.Y.Z.zip` from the "Assets" list. Don't use the green "Code → Download ZIP" button; that one is a source snapshot for developers.
+2. **Unzip** it anywhere.
+3. **Launch**: on Windows double-click `run.bat`; on macOS double-click `run.command` (first run: Control-click → Open → Open, once only).
+
+The first launch sets up the runtime automatically (no preinstalled Node.js needed, it fetches a portable build, a few minutes), then opens the tool in your browser. Keep the black console window open while you work; closing it quits the tool.
+
+### Developers
+
+Requires Node.js 20.19+ / 22.12+ (the one-click launchers handle this automatically) and a Chromium browser. [ffmpeg](https://ffmpeg.org/) is optional (enables auto-transcoding of RMVB/AVI/HEVC).
+
+```bash
+npm install
+npm run dev
+```
+
+Open the printed localhost address.
+
+Running the tests inside `npm run check` additionally requires Node 22.18+. The test files are TypeScript and run straight on Node's built-in type stripping; older versions fail to parse them at all. Development and production builds are not affected.
+
+Automatic subtitle search picks its source by film title: non-Chinese titles search OpenSubtitles (English subtitles, zero setup), Chinese titles search a Chinese subtitle site. Optional: grab a free API key from [opensubtitles.com](https://www.opensubtitles.com/) and set the `OPENSUBTITLES_API_KEY` environment variable to route through their official maintained API for better results. Manual subtitle import (SRT/ASS/VTT) works everywhere.
+
+## Data
+
+Notes autosave to localStorage, frame images to IndexedDB — all local. The "Backup ZIP" button exports a self-contained archive (notes + frames + Markdown) for backup, sharing or moving machines.
+
+## License
+
+[MIT](LICENSE)

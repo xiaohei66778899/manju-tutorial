@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A-5 一个人能不能做漫剧(成本+时间) · 漫剧制作教程站。玉哥整理的 AI 漫剧与短剧制作实用教程，包含步骤、案例和练习。">
+<title>A-5 一个人能不能做漫剧(成本+时间) · 漫剧制作教程站</title>
+<link rel="stylesheet" href="../../assets/site.css?v=fix20260927-2215">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg?v=fix20260927-2215">
+<link rel="stylesheet" href="../../assets/tutorial.css?v=fix20260927-2215">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="logo">🎬 漫剧教程站 <small>v3 · 玉哥</small></div>
+  <nav>
+    <a href="../../index.html">首页</a>
+    <a href="../../tutorial/all-courses.html" class="active">漫剧教程</a>
+    <a href="../../prompts/image-prompts.html">图片作品</a>
+    <a href="../../works/index.html">视频作品</a>
+    <a href="../../prompts/prompts.html">prompt 模板</a>
+    <a href="../../tools/toolkit.html">工具箱</a>
+    <a href="../../qa/troubleshooting.html">问题库</a>
+    <a href="../../news/industry.html">行业新闻</a>
+    </nav>
+  <div class="search"><input type="search" placeholder="🔍 搜…"></div>
+  <button class="theme-toggle" title="深浅主题切换" onclick="document.documentElement.classList.toggle('dark')">🌙</button>
+</header>
+
+<div class="layout-3col">
+  <aside class="sidebar-left" id="sidebar-left"></aside>
+
+  <main class="content">
+    <div class="breadcrumb">
+      <a href="../../index.html">首页</a> <span>›</span>
+      <a href="../all-courses.html">A 漫剧基础</a> <span>›</span>
+      A-5 一个人能不能做
+    </div>
+
+    <h1>A-5 · 一个人能不能做漫剧(成本+时间)</h1>
+    <h2 id="sec-1">1. 真实学员样本(3 类典型情况)</h2>
+
+    <div class="example">
+      <span class="label">学员 A · 在职转型</span>
+      <h4>👨‍💻 阿强 · 32 岁 · 互联网运营 · 利用下班做</h4>
+      <p>白天上班,晚上 + 周末做漫剧。<strong>3 个月做出 1 部 60 集完整剧</strong>。</p>
+      <ul>
+        <li><strong>预算</strong>:¥8000(主要是生活费,工具几乎免费)</li>
+        <li><strong>时间</strong>:每天晚上 2 小时 + 周末 8 小时 = 平均 3-4 天 / 集</li>
+        <li><strong>结果</strong>:第 1 集 5000 播放,第 30 集爆了 80 万,总收益 ¥4500</li>
+        <li><strong>经验</strong>:利用晚上 + 周末,不影响主业,3 个月回本</li>
+      </ul>
+    </div>
+
+    <div class="example">
+      <span class="label">学员 B · 全职创业</span>
+      <h4>👩‍💻 小美 · 28 岁 · 全职做漫剧 4 个月</h4>
+      <p>辞职全职做漫剧 4 个月。<strong>做出 3 部剧,1 部爆款</strong>。</p>
+      <ul>
+        <li><strong>预算</strong>:¥30000(生活费 + 工具升级 + 简单投流)</li>
+        <li><strong>时间</strong>:每天 8-10 小时 = 平均 2 天 / 集</li>
+        <li><strong>结果</strong>:3 部剧,1 部抖音 500 万播放,总收益 ¥28000(扣除生活费还亏)</li>
+        <li><strong>经验</strong>:全职做要扛得住 5 部里 1-2 部爆的现实,4 个月没回本也常见</li>
+      </ul>
+    </div>
+
+    <div class="example">
+      <span class="label">学员 C · 副业试水</span>
+      <h4>👨‍💻 老张 · 40 岁 · 上班族 · 周末副业</h4>
+      <p>纯周末副业,不辞职。<strong>半年做出 1 部 30 集剧</strong>。</p>
+      <ul>
+        <li><strong>预算</strong>:¥2000(生活费 + 偶尔升级工具)</li>
+        <li><strong>时间</strong>:每周 8-10 小时 = 平均 7-10 天 / 集</li>
+        <li><strong>结果</strong>:30 集累计 50 万播放,总收益 ¥1800,纯当副业练手</li>
+        <li><strong>经验</strong>:不指望副业立刻赚钱,练手 + 攒经验,有机会再全职</li>
+      </ul>
+    </div>
+
+    <h2 id="sec-2">2. 一个人做需要哪些能力?</h2>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th>能力</th><th>重要度</th><th>学会难度</th><th>如何学</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>写 90 秒剧本</strong></td><td></td><td>中等</td><td>读 50 部抖音爆款 + 11 个玉哥 Prompt</td></tr>
+          <tr><td><strong>AI 出图提示词</strong></td><td></td><td>低</td><td>抄提示词模板 + 即梦试 5 张</td></tr>
+          <tr><td><strong>图生视频</strong></td><td></td><td>低</td><td>即梦/可灵点几下就出</td></tr>
+          <tr><td><strong>剪映基础</strong></td><td></td><td>中等</td><td>B 站搜"剪映入门"1 小时学会</td></tr>
+          <tr><td><strong>AI 配音</strong></td><td></td><td>低</td><td>剪映自带 / 魔音点几下</td></tr>
+          <tr><td><strong>封面设计</strong></td><td></td><td>低</td><td>即梦出图 + Canva 模板</td></tr>
+          <tr><td><strong>平台规则</strong></td><td></td><td>低</td><td>刷 50 部 + 看 v12 海外4平台</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout ok">
+      <span class="ico">✅</span>
+      <p><strong>提示</strong>:核心门槛是 <strong>"写 90 秒剧本"</strong>,其他都是点几下按钮。如果你能在抖音写出"3 秒钩子 + 30 秒反转 + 90 秒结尾"的短文,就能做漫剧。</p>
+    </div>
+
+    <h2 id="sec-3">3. 1 集漫剧的工作量(学员实测)</h2>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th>阶段</th><th>0 基础首集</th><th>熟练后</th><th>爆款打磨</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>01 想清楚</td><td>1 天</td><td>2 小时</td><td>3 天</td></tr>
+          <tr><td>02 写剧本</td><td>2 天</td><td>4 小时</td><td>5 天</td></tr>
+          <tr><td>03 角色+分镜+出图</td><td>2 天</td><td>4 小时</td><td>3 天</td></tr>
+          <tr><td>04 出视频</td><td>1 天</td><td>3 小时</td><td>3 天</td></tr>
+          <tr><td>05 配音+剪辑</td><td>0.5 天</td><td>2 小时</td><td>2 天</td></tr>
+          <tr><td>06 发布</td><td>0.5 天</td><td>1 小时</td><td>1 天</td></tr>
+          <tr style="background: var(--lime);"><td><strong>合计</strong></td><td><strong>7 天</strong></td><td><strong>16 小时(2 天)</strong></td><td><strong>17 天</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="sec-4">4. 1-3 万预算怎么花?</h2>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th>项目</th><th>金额</th><th>说明</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>生活费(3 个月)</td><td>¥18000-24000</td><td>辞职全职做需要,副业不需要</td></tr>
+          <tr><td>工具升级</td><td>¥500-2000</td><td>魔音会员 / MJ 标准 / GPT 会员</td></tr>
+          <tr><td>投流测试</td><td>¥2000-5000</td><td>抖音千川小金额测试(可选)</td></tr>
+          <tr><td>简单设备</td><td>¥500-1000</td><td>若有高配电脑最好</td></tr>
+          <tr style="background: var(--lime);"><td><strong>合计</strong></td><td><strong>¥1-3 万</strong></td><td>按需花,工具几乎免费</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout warn">
+      <span class="ico">⚠️</span>
+      <p><strong>预算</strong>:1-3 万预算的最大头是<strong>生活费</strong>,不是工具。如果你有主业副业做,工具 ¥500-2000 就够;全职做要扛 3 个月生活费(¥2-3 万)。</p>
+    </div>
+
+    <h2 id="sec-5">5. 什么时候适合做?3 类人适合</h2>
+
+    <div class="callout ok">
+      <span class="ico">✅ 适合</span>
+      <p><strong>1. 想转型的上班族</strong> · 副业试水 3 个月,有爆款再考虑全职</p>
+    </div>
+
+    <div class="callout ok">
+      <span class="ico">✅ 适合</span>
+      <p><strong>2. 内容创作者</strong> · 已有短视频经验,转漫剧是顺水推舟</p>
+    </div>
+
+    <div class="callout ok">
+      <span class="ico">✅ 适合</span>
+      <p><strong>3. 创业者试水</strong> · 1-3 万预算 + 3 个月时间,验证商业模型</p>
+    </div>
+
+    <div class="callout bad">
+      <span class="ico">❌ 不适合</span>
+      <p><strong>4. 想一夜暴富</strong> · 5 部里 1-2 部爆是常态,不要期待每部爆款</p>
+    </div>
+
+    <div class="callout bad">
+      <span class="ico">❌ 不适合</span>
+      <p><strong>5. 不会写剧本</strong> · 漫剧核心是"写 90 秒故事",写不出来 = 做不出来</p>
+    </div>
+
+    <h2 id="sec-6">6. 学完这节能做啥</h2>
+
+    <ul class="checklist">
+      <li>能判断自己适不适合做漫剧(5 类人清单)</li>
+      <li>能估算 1-3 万预算怎么花(生活费/工具/投流)</li>
+      <li>能估算 1 集漫剧工作量(7 天首集 / 2 天熟练)</li>
+      <li>知道 1 个人 = 不需要团队 + 不需要演员 + 不需要摄影</li>
+      <li>知道核心门槛 = 写 90 秒剧本</li>
+    </ul>
+
+    <h2 id="sec-7">7. 常见误解</h2>
+
+    <div class="callout bad">
+      <span class="ico">❌</span>
+      <p><strong>"做漫剧需要团队"</strong> · 错。1 个人电脑前就能做,真人短剧才需要 5-15 人团队。</p>
+    </div>
+
+    <div class="callout bad">
+      <span class="ico">❌</span>
+      <p><strong>"做漫剧要先辞职"</strong> · 错。80% 学员是副业做的(阿强样本),边做边学,3 个月稳定后再考虑全职。</p>
+    </div>
+
+    <div class="callout warn">
+      <span class="ico">⚠️</span>
+      <p><strong>"做漫剧 1 个月能赚 10 万"</strong> · 部分对,但 5 部里 1-2 部爆是常态。**别期待每部爆款**,要持续迭代。</p>
+    </div>
+
+    <div class="callout warn">
+      <span class="ico">⚠️</span>
+      <p><strong>"做漫剧需要很多设备"</strong> · 错。1 台电脑 + 1 套剪映 + 1 个好点的耳机 = 全部。麦克风/声卡是"做得更好"的锦上添花。</p>
+    </div>
+
+    <h2 id="sec-8">8. 本节小练习</h2>
+    <ol>
+      <li>列自己的预算(¥1 万 / ¥3 万 / 副业),算一下能撑几个月</li>
+      <li>按 7 天表,写一份"未来 7 天"具体每天的安排(每天 2-3 小时可接受?)</li>
+      <li>如果时间紧张,副业路径更现实;如果想快速验证,全职 1-3 个月</li>
+    </ol>
+
+    <h2 id="sec-9">玉哥说</h2>
+
+    <div class="callout warn">
+      <span class="ico">📢</span>
+      <p><strong>📢 玉哥说</strong>:<br>
+      1. <strong>1 个人就能做</strong> · 不需要团队,不需要演员,不需要摄影<br>
+      2. <strong>核心门槛是写剧本</strong> · 写不出 90 秒故事 = 做不出爆款<br>
+      3. <strong>不要辞职 ALL IN</strong> · 80% 学员副业起步,3 个月稳定再考虑全职<br>
+      4. <strong>1-3 万预算合理</strong> · 主要生活费,工具几乎免费<br>
+      5. <strong>5 部里 1-2 部爆是常态</strong> · 别期待每部爆款,要持续迭代</p>
+    </div>
+
+    <nav class="bottom-nav">
+      <a class="prev" href="A-4.html">
+        <span class="label">← 上一节</span>
+        <span class="title">A-4 必备工具清单</span>
+      </a>
+      <a class="next" href="A-6.html">
+        <span class="label">下一节 →</span>
+        <span class="title">A-6 本地 vs 在线工具</span>
+      </a>
+    </nav>
+  </main>
+
+  <aside class="sidebar-right" id="sidebar-right"></aside>
+</div>
+
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="扫码关注玉哥">
+      <img class="qr-img" src="../../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../../changelog.html">📅 更新日志</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+
+<script src="../../assets/tutorial.js?v=fix20260927-2215"></script>
+<script src="../../assets/site-enhance.js?v=fix20260927-2215" defer></script>
+</body>
+</html>

@@ -1,0 +1,3565 @@
+1
+00:00:00,160 --> 00:00:02,470
+
+So, Sora 2 is absolutely changing the
+
+2
+00:00:02,470 --> 00:00:02,480
+So, Sora 2 is absolutely changing the
+ 
+
+3
+00:00:02,480 --> 00:00:04,550
+So, Sora 2 is absolutely changing the
+game when it comes to AI video. But if
+
+4
+00:00:04,550 --> 00:00:04,560
+game when it comes to AI video. But if
+ 
+
+5
+00:00:04,560 --> 00:00:06,630
+game when it comes to AI video. But if
+you want to create great videos on the
+
+6
+00:00:06,630 --> 00:00:06,640
+you want to create great videos on the
+ 
+
+7
+00:00:06,640 --> 00:00:08,710
+you want to create great videos on the
+platform, you need to know how to write
+
+8
+00:00:08,710 --> 00:00:08,720
+platform, you need to know how to write
+ 
+
+9
+00:00:08,720 --> 00:00:10,950
+platform, you need to know how to write
+a great prompt. I have spent a ton of
+
+10
+00:00:10,950 --> 00:00:10,960
+a great prompt. I have spent a ton of
+ 
+
+11
+00:00:10,960 --> 00:00:12,870
+a great prompt. I have spent a ton of
+time researching how the top creators on
+
+12
+00:00:12,870 --> 00:00:12,880
+time researching how the top creators on
+ 
+
+13
+00:00:12,880 --> 00:00:14,629
+time researching how the top creators on
+Sora are writing prompts. Today, I'm
+
+14
+00:00:14,629 --> 00:00:14,639
+Sora are writing prompts. Today, I'm
+ 
+
+15
+00:00:14,639 --> 00:00:15,990
+Sora are writing prompts. Today, I'm
+going to be showing you how to create
+
+16
+00:00:15,990 --> 00:00:16,000
+going to be showing you how to create
+ 
+
+17
+00:00:16,000 --> 00:00:18,070
+going to be showing you how to create
+the best Sora 2 prompts possible,
+
+18
+00:00:18,070 --> 00:00:18,080
+the best Sora 2 prompts possible,
+ 
+
+19
+00:00:18,080 --> 00:00:20,070
+the best Sora 2 prompts possible,
+ranging from simple prompts all the way
+
+20
+00:00:20,070 --> 00:00:20,080
+ranging from simple prompts all the way
+ 
+
+21
+00:00:20,080 --> 00:00:23,029
+ranging from simple prompts all the way
+to advanced multi-step prompts where we
+
+22
+00:00:23,029 --> 00:00:23,039
+to advanced multi-step prompts where we
+ 
+
+23
+00:00:23,039 --> 00:00:25,109
+to advanced multi-step prompts where we
+plan out every single second of the
+
+24
+00:00:25,109 --> 00:00:25,119
+plan out every single second of the
+ 
+
+25
+00:00:25,119 --> 00:00:27,109
+plan out every single second of the
+shot. We'll also be covering how to add
+
+26
+00:00:27,109 --> 00:00:27,119
+shot. We'll also be covering how to add
+ 
+
+27
+00:00:27,119 --> 00:00:28,070
+shot. We'll also be covering how to add
+sound effects, [music]
+
+28
+00:00:28,070 --> 00:00:28,080
+sound effects, [music]
+ 
+
+29
+00:00:28,080 --> 00:00:30,630
+sound effects, [music]
+voiceovers, and more. all in one
+
+30
+00:00:30,630 --> 00:00:30,640
+voiceovers, and more. all in one
+ 
+
+31
+00:00:30,640 --> 00:00:32,950
+voiceovers, and more. all in one
+structured prompt. But the one issue is
+
+32
+00:00:32,950 --> 00:00:32,960
+structured prompt. But the one issue is
+ 
+
+33
+00:00:32,960 --> 00:00:35,190
+structured prompt. But the one issue is
+that Sora [music] 2 prompts can be so
+
+34
+00:00:35,190 --> 00:00:35,200
+that Sora [music] 2 prompts can be so
+ 
+
+35
+00:00:35,200 --> 00:00:37,270
+that Sora [music] 2 prompts can be so
+advanced that they take a long time to
+
+36
+00:00:37,270 --> 00:00:37,280
+advanced that they take a long time to
+ 
+
+37
+00:00:37,280 --> 00:00:39,430
+advanced that they take a long time to
+make. And who has time to be writing
+
+38
+00:00:39,430 --> 00:00:39,440
+make. And who has time to be writing
+ 
+
+39
+00:00:39,440 --> 00:00:41,190
+make. And who has time to be writing
+prompts for every single video? That's
+
+40
+00:00:41,190 --> 00:00:41,200
+prompts for every single video? That's
+ 
+
+41
+00:00:41,200 --> 00:00:42,549
+prompts for every single video? That's
+why if you stick around to the end of
+
+42
+00:00:42,549 --> 00:00:42,559
+why if you stick around to the end of
+ 
+
+43
+00:00:42,559 --> 00:00:44,310
+why if you stick around to the end of
+the video, I'll be giving you access to
+
+44
+00:00:44,310 --> 00:00:44,320
+the video, I'll be giving you access to
+ 
+
+45
+00:00:44,320 --> 00:00:47,029
+the video, I'll be giving you access to
+my custom GPT that I've trained on the
+
+46
+00:00:47,029 --> 00:00:47,039
+my custom GPT that I've trained on the
+ 
+
+47
+00:00:47,039 --> 00:00:49,430
+my custom GPT that I've trained on the
+best Sora [music] 2 prompting practices
+
+48
+00:00:49,430 --> 00:00:49,440
+best Sora [music] 2 prompting practices
+ 
+
+49
+00:00:49,440 --> 00:00:51,270
+best Sora [music] 2 prompting practices
+with a ton of data so that you can
+
+50
+00:00:51,270 --> 00:00:51,280
+with a ton of data so that you can
+ 
+
+51
+00:00:51,280 --> 00:00:53,590
+with a ton of data so that you can
+quickly and easily create the best SORT
+
+52
+00:00:53,590 --> 00:00:53,600
+quickly and easily create the best SORT
+ 
+
+53
+00:00:53,600 --> 00:00:55,990
+quickly and easily create the best SORT
+2 prompts possible by chatting with chat
+
+54
+00:00:55,990 --> 00:00:56,000
+2 prompts possible by chatting with chat
+ 
+
+55
+00:00:56,000 --> 00:00:58,069
+2 prompts possible by chatting with chat
+GPT. So stick around to the end of the
+
+56
+00:00:58,069 --> 00:00:58,079
+GPT. So stick around to the end of the
+ 
+
+57
+00:00:58,079 --> 00:00:59,590
+GPT. So stick around to the end of the
+video and check that out. It's actually
+
+58
+00:00:59,590 --> 00:00:59,600
+video and check that out. It's actually
+ 
+
+59
+00:00:59,600 --> 00:01:01,670
+video and check that out. It's actually
+impossible to just skip right to that.
+
+60
+00:01:01,670 --> 00:01:01,680
+impossible to just skip right to that.
+ 
+
+61
+00:01:01,680 --> 00:01:03,430
+impossible to just skip right to that.
+You have to watch the video as well as
+
+62
+00:01:03,430 --> 00:01:03,440
+You have to watch the video as well as
+ 
+
+63
+00:01:03,440 --> 00:01:05,509
+You have to watch the video as well as
+like it if you want to. So, let's jump
+
+64
+00:01:05,509 --> 00:01:05,519
+like it if you want to. So, let's jump
+ 
+
+65
+00:01:05,519 --> 00:01:07,429
+like it if you want to. So, let's jump
+right into things. So, let's talk about
+
+66
+00:01:07,429 --> 00:01:07,439
+right into things. So, let's talk about
+ 
+
+67
+00:01:07,439 --> 00:01:09,990
+right into things. So, let's talk about
+Sora prompting best practices. [music]
+
+68
+00:01:09,990 --> 00:01:10,000
+Sora prompting best practices. [music]
+ 
+
+69
+00:01:10,000 --> 00:01:11,670
+Sora prompting best practices. [music]
+If we want to create a good prompt, how
+
+70
+00:01:11,670 --> 00:01:11,680
+If we want to create a good prompt, how
+ 
+
+71
+00:01:11,680 --> 00:01:13,830
+If we want to create a good prompt, how
+does Sora prompting even work? Prompting
+
+72
+00:01:13,830 --> 00:01:13,840
+does Sora prompting even work? Prompting
+ 
+
+73
+00:01:13,840 --> 00:01:15,910
+does Sora prompting even work? Prompting
+can be complex and overwhelming, but
+
+74
+00:01:15,910 --> 00:01:15,920
+can be complex and overwhelming, but
+ 
+
+75
+00:01:15,920 --> 00:01:17,510
+can be complex and overwhelming, but
+don't worry, I'm here to break it down
+
+76
+00:01:17,510 --> 00:01:17,520
+don't worry, I'm here to break it down
+ 
+
+77
+00:01:17,520 --> 00:01:19,670
+don't worry, I'm here to break it down
+for you. Sora prompting uses natural
+
+78
+00:01:19,670 --> 00:01:19,680
+for you. Sora prompting uses natural
+ 
+
+79
+00:01:19,680 --> 00:01:21,749
+for you. Sora prompting uses natural
+language. The types of prompts Sora 2
+
+80
+00:01:21,749 --> 00:01:21,759
+language. The types of prompts Sora 2
+ 
+
+81
+00:01:21,759 --> 00:01:23,990
+language. The types of prompts Sora 2
+can accept vary, and Sora 2 is an
+
+82
+00:01:23,990 --> 00:01:24,000
+can accept vary, and Sora 2 is an
+ 
+
+83
+00:01:24,000 --> 00:01:25,795
+can accept vary, and Sora 2 is an
+incredibly flexible platform. However,
+
+84
+00:01:25,795 --> 00:01:25,805
+incredibly flexible platform. However,
+ 
+
+85
+00:01:25,805 --> 00:01:27,830
+incredibly flexible platform. However,
+[music] there's one simple formula that
+
+86
+00:01:27,830 --> 00:01:27,840
+[music] there's one simple formula that
+ 
+
+87
+00:01:27,840 --> 00:01:29,990
+[music] there's one simple formula that
+all good prompts follow on Sora. This
+
+88
+00:01:29,990 --> 00:01:30,000
+all good prompts follow on Sora. This
+ 
+
+89
+00:01:30,000 --> 00:01:32,789
+all good prompts follow on Sora. This
+formula goes as follows. Scene intent
+
+90
+00:01:32,789 --> 00:01:32,799
+formula goes as follows. Scene intent
+ 
+
+91
+00:01:32,799 --> 00:01:35,350
+formula goes as follows. Scene intent
+plus shot composition plus lighting and
+
+92
+00:01:35,350 --> 00:01:35,360
+plus shot composition plus lighting and
+ 
+
+93
+00:01:35,360 --> 00:01:36,789
+plus shot composition plus lighting and
+tone. [music] These three things
+
+94
+00:01:36,789 --> 00:01:36,799
+tone. [music] These three things
+ 
+
+95
+00:01:36,799 --> 00:01:39,109
+tone. [music] These three things
+together make a great Sora prompt. Let's
+
+96
+00:01:39,109 --> 00:01:39,119
+together make a great Sora prompt. Let's
+ 
+
+97
+00:01:39,119 --> 00:01:41,190
+together make a great Sora prompt. Let's
+check out what scene intent is. Scene
+
+98
+00:01:41,190 --> 00:01:41,200
+check out what scene intent is. Scene
+ 
+
+99
+00:01:41,200 --> 00:01:43,350
+check out what scene intent is. Scene
+intent is describing the overall theme
+
+100
+00:01:43,350 --> 00:01:43,360
+intent is describing the overall theme
+ 
+
+101
+00:01:43,360 --> 00:01:45,190
+intent is describing the overall theme
+or world that you're looking to create.
+
+102
+00:01:45,190 --> 00:01:45,200
+or world that you're looking to create.
+ 
+
+103
+00:01:45,200 --> 00:01:46,950
+or world that you're looking to create.
+Usually, in one to three sentences,
+
+104
+00:01:46,950 --> 00:01:46,960
+Usually, in one to three sentences,
+ 
+
+105
+00:01:46,960 --> 00:01:48,389
+Usually, in one to three sentences,
+think of this as briefing your
+
+106
+00:01:48,389 --> 00:01:48,399
+think of this as briefing your
+ 
+
+107
+00:01:48,399 --> 00:01:50,069
+think of this as briefing your
+cinematographer. What is the viewer
+
+108
+00:01:50,069 --> 00:01:50,079
+cinematographer. What is the viewer
+ 
+
+109
+00:01:50,079 --> 00:01:51,830
+cinematographer. What is the viewer
+looking to feel? What are you looking to
+
+110
+00:01:51,830 --> 00:01:51,840
+looking to feel? What are you looking to
+ 
+
+111
+00:01:51,840 --> 00:01:54,550
+looking to feel? What are you looking to
+create? An example of our scene intent
+
+112
+00:01:54,550 --> 00:01:54,560
+create? An example of our scene intent
+ 
+
+113
+00:01:54,560 --> 00:01:56,710
+create? An example of our scene intent
+could be something such as a highquality
+
+114
+00:01:56,710 --> 00:01:56,720
+could be something such as a highquality
+ 
+
+115
+00:01:56,720 --> 00:01:59,749
+could be something such as a highquality
+2D anime film style cinematic realism. A
+
+116
+00:01:59,749 --> 00:01:59,759
+2D anime film style cinematic realism. A
+ 
+
+117
+00:01:59,759 --> 00:02:01,910
+2D anime film style cinematic realism. A
+samurai woman with long white hair walks
+
+118
+00:02:01,910 --> 00:02:01,920
+samurai woman with long white hair walks
+ 
+
+119
+00:02:01,920 --> 00:02:03,830
+samurai woman with long white hair walks
+slowly along a coastal path beside the
+
+120
+00:02:03,830 --> 00:02:03,840
+slowly along a coastal path beside the
+ 
+
+121
+00:02:03,840 --> 00:02:05,510
+slowly along a coastal path beside the
+ocean. We get some detail about her
+
+122
+00:02:05,510 --> 00:02:05,520
+ocean. We get some detail about her
+ 
+
+123
+00:02:05,520 --> 00:02:07,109
+ocean. We get some detail about her
+armor as well as some other details
+
+124
+00:02:07,109 --> 00:02:07,119
+armor as well as some other details
+ 
+
+125
+00:02:07,119 --> 00:02:08,790
+armor as well as some other details
+about the scene. The next part of the
+
+126
+00:02:08,790 --> 00:02:08,800
+about the scene. The next part of the
+ 
+
+127
+00:02:08,800 --> 00:02:11,110
+about the scene. The next part of the
+formula is shot composition. What is
+
+128
+00:02:11,110 --> 00:02:11,120
+formula is shot composition. What is
+ 
+
+129
+00:02:11,120 --> 00:02:12,949
+formula is shot composition. What is
+happening in our shot? Who are our
+
+130
+00:02:12,949 --> 00:02:12,959
+happening in our shot? Who are our
+ 
+
+131
+00:02:12,959 --> 00:02:15,110
+happening in our shot? Who are our
+characters and what is the action? If we
+
+132
+00:02:15,110 --> 00:02:15,120
+characters and what is the action? If we
+ 
+
+133
+00:02:15,120 --> 00:02:17,110
+characters and what is the action? If we
+described a woman walking alongside a
+
+134
+00:02:17,110 --> 00:02:17,120
+described a woman walking alongside a
+ 
+
+135
+00:02:17,120 --> 00:02:19,190
+described a woman walking alongside a
+path and our scene intent, what do we
+
+136
+00:02:19,190 --> 00:02:19,200
+path and our scene intent, what do we
+ 
+
+137
+00:02:19,200 --> 00:02:21,190
+path and our scene intent, what do we
+want to happen in the video besides
+
+138
+00:02:21,190 --> 00:02:21,200
+want to happen in the video besides
+ 
+
+139
+00:02:21,200 --> 00:02:24,390
+want to happen in the video besides
+that? Sora accepts both timestamp as
+
+140
+00:02:24,390 --> 00:02:24,400
+that? Sora accepts both timestamp as
+ 
+
+141
+00:02:24,400 --> 00:02:26,710
+that? Sora accepts both timestamp as
+well as cutbased prompt control, meaning
+
+142
+00:02:26,710 --> 00:02:26,720
+well as cutbased prompt control, meaning
+ 
+
+143
+00:02:26,720 --> 00:02:28,710
+well as cutbased prompt control, meaning
+that you can break a prompt into
+
+144
+00:02:28,710 --> 00:02:28,720
+that you can break a prompt into
+ 
+
+145
+00:02:28,720 --> 00:02:30,790
+that you can break a prompt into
+different cuts or timestamps, which
+
+146
+00:02:30,790 --> 00:02:30,800
+different cuts or timestamps, which
+ 
+
+147
+00:02:30,800 --> 00:02:32,470
+different cuts or timestamps, which
+we'll show later in the video, so that
+
+148
+00:02:32,470 --> 00:02:32,480
+we'll show later in the video, so that
+ 
+
+149
+00:02:32,480 --> 00:02:33,910
+we'll show later in the video, so that
+you can have an incredible amount of
+
+150
+00:02:33,910 --> 00:02:33,920
+you can have an incredible amount of
+ 
+
+151
+00:02:33,920 --> 00:02:35,990
+you can have an incredible amount of
+control over your Soritude prompts.
+
+152
+00:02:35,990 --> 00:02:36,000
+control over your Soritude prompts.
+ 
+
+153
+00:02:36,000 --> 00:02:37,990
+control over your Soritude prompts.
+Here's an example you'll see here where
+
+154
+00:02:37,990 --> 00:02:38,000
+Here's an example you'll see here where
+ 
+
+155
+00:02:38,000 --> 00:02:41,030
+Here's an example you'll see here where
+we are able to break out. Hey, the woman
+
+156
+00:02:41,030 --> 00:02:41,040
+we are able to break out. Hey, the woman
+ 
+
+157
+00:02:41,040 --> 00:02:43,350
+we are able to break out. Hey, the woman
+walks along the path, the camera follows
+
+158
+00:02:43,350 --> 00:02:43,360
+walks along the path, the camera follows
+ 
+
+159
+00:02:43,360 --> 00:02:45,670
+walks along the path, the camera follows
+smoothly behind her. We transition to
+
+160
+00:02:45,670 --> 00:02:45,680
+smoothly behind her. We transition to
+ 
+
+161
+00:02:45,680 --> 00:02:47,830
+smoothly behind her. We transition to
+looking at the fence. Her hand touches
+
+162
+00:02:47,830 --> 00:02:47,840
+looking at the fence. Her hand touches
+ 
+
+163
+00:02:47,840 --> 00:02:50,470
+looking at the fence. Her hand touches
+it and then we show a medium shot of her
+
+164
+00:02:50,470 --> 00:02:50,480
+it and then we show a medium shot of her
+ 
+
+165
+00:02:50,480 --> 00:02:51,990
+it and then we show a medium shot of her
+face where she looks out against the
+
+166
+00:02:51,990 --> 00:02:52,000
+face where she looks out against the
+ 
+
+167
+00:02:52,000 --> 00:02:54,309
+face where she looks out against the
+horizon and then quietly whispers, "Hey,
+
+168
+00:02:54,309 --> 00:02:54,319
+horizon and then quietly whispers, "Hey,
+ 
+
+169
+00:02:54,319 --> 00:02:56,070
+horizon and then quietly whispers, "Hey,
+I'll return someday." If you'll notice
+
+170
+00:02:56,070 --> 00:02:56,080
+I'll return someday." If you'll notice
+ 
+
+171
+00:02:56,080 --> 00:02:58,070
+I'll return someday." If you'll notice
+here, we can use these timestamps within
+
+172
+00:02:58,070 --> 00:02:58,080
+here, we can use these timestamps within
+ 
+
+173
+00:02:58,080 --> 00:03:00,390
+here, we can use these timestamps within
+the shot composition to direct how and
+
+174
+00:03:00,390 --> 00:03:00,400
+the shot composition to direct how and
+ 
+
+175
+00:03:00,400 --> 00:03:01,830
+the shot composition to direct how and
+when these shots happen. We'll get more
+
+176
+00:03:01,830 --> 00:03:01,840
+when these shots happen. We'll get more
+ 
+
+177
+00:03:01,840 --> 00:03:03,750
+when these shots happen. We'll get more
+into that later. The last is lighting
+
+178
+00:03:03,750 --> 00:03:03,760
+into that later. The last is lighting
+ 
+
+179
+00:03:03,760 --> 00:03:05,350
+into that later. The last is lighting
+and tone. We want to end with a single
+
+180
+00:03:05,350 --> 00:03:05,360
+and tone. We want to end with a single
+ 
+
+181
+00:03:05,360 --> 00:03:06,949
+and tone. We want to end with a single
+paragraph that defines the scene's
+
+182
+00:03:06,949 --> 00:03:06,959
+paragraph that defines the scene's
+ 
+
+183
+00:03:06,959 --> 00:03:08,790
+paragraph that defines the scene's
+overall look and feel. Lighting,
+
+184
+00:03:08,790 --> 00:03:08,800
+overall look and feel. Lighting,
+ 
+
+185
+00:03:08,800 --> 00:03:11,270
+overall look and feel. Lighting,
+atmosphere, amore, and emotional tone.
+
+186
+00:03:11,270 --> 00:03:11,280
+atmosphere, amore, and emotional tone.
+ 
+
+187
+00:03:11,280 --> 00:03:13,030
+atmosphere, amore, and emotional tone.
+This is what ties everything together.
+
+188
+00:03:13,030 --> 00:03:13,040
+This is what ties everything together.
+ 
+
+189
+00:03:13,040 --> 00:03:14,470
+This is what ties everything together.
+And it's actually incredibly important
+
+190
+00:03:14,470 --> 00:03:14,480
+And it's actually incredibly important
+ 
+
+191
+00:03:14,480 --> 00:03:16,470
+And it's actually incredibly important
+that we do this in every single prompt.
+
+192
+00:03:16,470 --> 00:03:16,480
+that we do this in every single prompt.
+ 
+
+193
+00:03:16,480 --> 00:03:18,070
+that we do this in every single prompt.
+So, this is usually saying something
+
+194
+00:03:18,070 --> 00:03:18,080
+So, this is usually saying something
+ 
+
+195
+00:03:18,080 --> 00:03:20,070
+So, this is usually saying something
+like golden late afternoon sunset with
+
+196
+00:03:20,070 --> 00:03:20,080
+like golden late afternoon sunset with
+ 
+
+197
+00:03:20,080 --> 00:03:22,550
+like golden late afternoon sunset with
+soft shadows, dynamic ocean reflections,
+
+198
+00:03:22,550 --> 00:03:22,560
+soft shadows, dynamic ocean reflections,
+ 
+
+199
+00:03:22,560 --> 00:03:24,630
+soft shadows, dynamic ocean reflections,
+details about this scene that don't
+
+200
+00:03:24,630 --> 00:03:24,640
+details about this scene that don't
+ 
+
+201
+00:03:24,640 --> 00:03:26,390
+details about this scene that don't
+necessarily belong at the top of your
+
+202
+00:03:26,390 --> 00:03:26,400
+necessarily belong at the top of your
+ 
+
+203
+00:03:26,400 --> 00:03:28,470
+necessarily belong at the top of your
+prompt, however, fit really well at the
+
+204
+00:03:28,470 --> 00:03:28,480
+prompt, however, fit really well at the
+ 
+
+205
+00:03:28,480 --> 00:03:30,390
+prompt, however, fit really well at the
+night at the end in order to tie
+
+206
+00:03:30,390 --> 00:03:30,400
+night at the end in order to tie
+ 
+
+207
+00:03:30,400 --> 00:03:31,990
+night at the end in order to tie
+everything together. Sora as a whole
+
+208
+00:03:31,990 --> 00:03:32,000
+everything together. Sora as a whole
+ 
+
+209
+00:03:32,000 --> 00:03:33,910
+everything together. Sora as a whole
+right now as a video generation platform
+
+210
+00:03:33,910 --> 00:03:33,920
+right now as a video generation platform
+ 
+
+211
+00:03:33,920 --> 00:03:35,990
+right now as a video generation platform
+is the best platform at understanding
+
+212
+00:03:35,990 --> 00:03:36,000
+is the best platform at understanding
+ 
+
+213
+00:03:36,000 --> 00:03:38,070
+is the best platform at understanding
+and reacting to your prompt. So, it's
+
+214
+00:03:38,070 --> 00:03:38,080
+and reacting to your prompt. So, it's
+ 
+
+215
+00:03:38,080 --> 00:03:40,390
+and reacting to your prompt. So, it's
+super important as a creator that you
+
+216
+00:03:40,390 --> 00:03:40,400
+super important as a creator that you
+ 
+
+217
+00:03:40,400 --> 00:03:42,390
+super important as a creator that you
+understand how to use it correctly to
+
+218
+00:03:42,390 --> 00:03:42,400
+understand how to use it correctly to
+ 
+
+219
+00:03:42,400 --> 00:03:44,869
+understand how to use it correctly to
+make the best videos possible. Now, all
+
+220
+00:03:44,869 --> 00:03:44,879
+make the best videos possible. Now, all
+ 
+
+221
+00:03:44,879 --> 00:03:46,789
+make the best videos possible. Now, all
+of this theory is good to know, but it's
+
+222
+00:03:46,789 --> 00:03:46,799
+of this theory is good to know, but it's
+ 
+
+223
+00:03:46,799 --> 00:03:48,550
+of this theory is good to know, but it's
+all useless unless we put it into
+
+224
+00:03:48,550 --> 00:03:48,560
+all useless unless we put it into
+ 
+
+225
+00:03:48,560 --> 00:03:50,309
+all useless unless we put it into
+motion. So, if you're like me and you
+
+226
+00:03:50,309 --> 00:03:50,319
+motion. So, if you're like me and you
+ 
+
+227
+00:03:50,319 --> 00:03:52,550
+motion. So, if you're like me and you
+learn from being hands-on, let's build a
+
+228
+00:03:52,550 --> 00:03:52,560
+learn from being hands-on, let's build a
+ 
+
+229
+00:03:52,560 --> 00:03:54,869
+learn from being hands-on, let's build a
+few prompts together, step by step, so
+
+230
+00:03:54,869 --> 00:03:54,879
+few prompts together, step by step, so
+ 
+
+231
+00:03:54,879 --> 00:03:56,550
+few prompts together, step by step, so
+you can see how this works. Feel free to
+
+232
+00:03:56,550 --> 00:03:56,560
+you can see how this works. Feel free to
+ 
+
+233
+00:03:56,560 --> 00:03:57,990
+you can see how this works. Feel free to
+follow along as we build these things
+
+234
+00:03:57,990 --> 00:03:58,000
+follow along as we build these things
+ 
+
+235
+00:03:58,000 --> 00:03:59,990
+follow along as we build these things
+together. I'll put all the prompts we
+
+236
+00:03:59,990 --> 00:04:00,000
+together. I'll put all the prompts we
+ 
+
+237
+00:04:00,000 --> 00:04:01,910
+together. I'll put all the prompts we
+use in the description below to go into
+
+238
+00:04:01,910 --> 00:04:01,920
+use in the description below to go into
+ 
+
+239
+00:04:01,920 --> 00:04:03,750
+use in the description below to go into
+Sora and try it out for yourself. So
+
+240
+00:04:03,750 --> 00:04:03,760
+Sora and try it out for yourself. So
+ 
+
+241
+00:04:03,760 --> 00:04:05,429
+Sora and try it out for yourself. So
+let's start with prompt style one where
+
+242
+00:04:05,429 --> 00:04:05,439
+let's start with prompt style one where
+ 
+
+243
+00:04:05,439 --> 00:04:07,270
+let's start with prompt style one where
+we're going to start easy here with
+
+244
+00:04:07,270 --> 00:04:07,280
+we're going to start easy here with
+ 
+
+245
+00:04:07,280 --> 00:04:09,429
+we're going to start easy here with
+simple instructions. So for our first
+
+246
+00:04:09,429 --> 00:04:09,439
+simple instructions. So for our first
+ 
+
+247
+00:04:09,439 --> 00:04:11,670
+simple instructions. So for our first
+video we are just going to be using text
+
+248
+00:04:11,670 --> 00:04:11,680
+video we are just going to be using text
+ 
+
+249
+00:04:11,680 --> 00:04:13,270
+video we are just going to be using text
+to video and we're going to be giving
+
+250
+00:04:13,270 --> 00:04:13,280
+to video and we're going to be giving
+ 
+
+251
+00:04:13,280 --> 00:04:14,789
+to video and we're going to be giving
+simple instructions about our scene
+
+252
+00:04:14,789 --> 00:04:14,799
+simple instructions about our scene
+ 
+
+253
+00:04:14,799 --> 00:04:16,710
+simple instructions about our scene
+intent as well as our lighting and tone.
+
+254
+00:04:16,710 --> 00:04:16,720
+intent as well as our lighting and tone.
+ 
+
+255
+00:04:16,720 --> 00:04:18,710
+intent as well as our lighting and tone.
+So we're going to go into Sora here. So,
+
+256
+00:04:18,710 --> 00:04:18,720
+So we're going to go into Sora here. So,
+ 
+
+257
+00:04:18,720 --> 00:04:20,870
+So we're going to go into Sora here. So,
+for our scene intent, I am going to use
+
+258
+00:04:20,870 --> 00:04:20,880
+for our scene intent, I am going to use
+ 
+
+259
+00:04:20,880 --> 00:04:23,110
+for our scene intent, I am going to use
+just a simple, hey, high quality 2D
+
+260
+00:04:23,110 --> 00:04:23,120
+just a simple, hey, high quality 2D
+ 
+
+261
+00:04:23,120 --> 00:04:25,270
+just a simple, hey, high quality 2D
+anime film style. And then we're going
+
+262
+00:04:25,270 --> 00:04:25,280
+anime film style. And then we're going
+ 
+
+263
+00:04:25,280 --> 00:04:27,830
+anime film style. And then we're going
+to do our lighting is warm and cinematic
+
+264
+00:04:27,830 --> 00:04:27,840
+to do our lighting is warm and cinematic
+ 
+
+265
+00:04:27,840 --> 00:04:29,830
+to do our lighting is warm and cinematic
+with a late afternoon sunlight glinting
+
+266
+00:04:29,830 --> 00:04:29,840
+with a late afternoon sunlight glinting
+ 
+
+267
+00:04:29,840 --> 00:04:31,830
+with a late afternoon sunlight glinting
+off the ocean surface with the sound of
+
+268
+00:04:31,830 --> 00:04:31,840
+off the ocean surface with the sound of
+ 
+
+269
+00:04:31,840 --> 00:04:33,670
+off the ocean surface with the sound of
+distant waves and wind competes with the
+
+270
+00:04:33,670 --> 00:04:33,680
+distant waves and wind competes with the
+ 
+
+271
+00:04:33,680 --> 00:04:35,030
+distant waves and wind competes with the
+tranquil environment. And we're going to
+
+272
+00:04:35,030 --> 00:04:35,040
+tranquil environment. And we're going to
+ 
+
+273
+00:04:35,040 --> 00:04:36,550
+tranquil environment. And we're going to
+put all this into our prompt. This is
+
+274
+00:04:36,550 --> 00:04:36,560
+put all this into our prompt. This is
+ 
+
+275
+00:04:36,560 --> 00:04:39,030
+put all this into our prompt. This is
+what it looks like here in Sora. And I'm
+
+276
+00:04:39,030 --> 00:04:39,040
+what it looks like here in Sora. And I'm
+ 
+
+277
+00:04:39,040 --> 00:04:40,710
+what it looks like here in Sora. And I'm
+going to hit generate. Now, I'm going to
+
+278
+00:04:40,710 --> 00:04:40,720
+going to hit generate. Now, I'm going to
+ 
+
+279
+00:04:40,720 --> 00:04:42,150
+going to hit generate. Now, I'm going to
+pause so we can listen to this with
+
+280
+00:04:42,150 --> 00:04:42,160
+pause so we can listen to this with
+ 
+
+281
+00:04:42,160 --> 00:04:43,510
+pause so we can listen to this with
+sound. And then we'll talk over the
+
+282
+00:04:43,510 --> 00:04:43,520
+sound. And then we'll talk over the
+ 
+
+283
+00:04:43,520 --> 00:04:49,430
+sound. And then we'll talk over the
+recording with it muted.
+
+284
+00:04:49,430 --> 00:04:49,440
+
+ 
+
+285
+00:04:49,440 --> 00:04:51,510
+
+So, as we see here, this pretty much did
+
+286
+00:04:51,510 --> 00:04:51,520
+So, as we see here, this pretty much did
+ 
+
+287
+00:04:51,520 --> 00:04:53,030
+So, as we see here, this pretty much did
+exactly what we looked for. It gave us
+
+288
+00:04:53,030 --> 00:04:53,040
+exactly what we looked for. It gave us
+ 
+
+289
+00:04:53,040 --> 00:04:55,030
+exactly what we looked for. It gave us
+an anime style image of the woman
+
+290
+00:04:55,030 --> 00:04:55,040
+an anime style image of the woman
+ 
+
+291
+00:04:55,040 --> 00:04:57,590
+an anime style image of the woman
+walking down the path. It had We didn't
+
+292
+00:04:57,590 --> 00:04:57,600
+walking down the path. It had We didn't
+ 
+
+293
+00:04:57,600 --> 00:04:59,670
+walking down the path. It had We didn't
+ask for any specific cuts. We asked for
+
+294
+00:04:59,670 --> 00:04:59,680
+ask for any specific cuts. We asked for
+ 
+
+295
+00:04:59,680 --> 00:05:01,510
+ask for any specific cuts. We asked for
+just the woman walking down the path
+
+296
+00:05:01,510 --> 00:05:01,520
+just the woman walking down the path
+ 
+
+297
+00:05:01,520 --> 00:05:03,189
+just the woman walking down the path
+with the sound of the distant waves in
+
+298
+00:05:03,189 --> 00:05:03,199
+with the sound of the distant waves in
+ 
+
+299
+00:05:03,199 --> 00:05:05,030
+with the sound of the distant waves in
+the background. It did that pretty much
+
+300
+00:05:05,030 --> 00:05:05,040
+the background. It did that pretty much
+ 
+
+301
+00:05:05,040 --> 00:05:07,110
+the background. It did that pretty much
+exactly and really caught the
+
+302
+00:05:07,110 --> 00:05:07,120
+exactly and really caught the
+ 
+
+303
+00:05:07,120 --> 00:05:08,710
+exactly and really caught the
+cinematography of the scene we were
+
+304
+00:05:08,710 --> 00:05:08,720
+cinematography of the scene we were
+ 
+
+305
+00:05:08,720 --> 00:05:10,310
+cinematography of the scene we were
+looking to create. You could use this if
+
+306
+00:05:10,310 --> 00:05:10,320
+looking to create. You could use this if
+ 
+
+307
+00:05:10,320 --> 00:05:12,710
+looking to create. You could use this if
+you were creating an anime as a shot
+
+308
+00:05:12,710 --> 00:05:12,720
+you were creating an anime as a shot
+ 
+
+309
+00:05:12,720 --> 00:05:14,550
+you were creating an anime as a shot
+before another shot. It's not incredibly
+
+310
+00:05:14,550 --> 00:05:14,560
+before another shot. It's not incredibly
+ 
+
+311
+00:05:14,560 --> 00:05:16,390
+before another shot. It's not incredibly
+advanced. We don't need a super complex
+
+312
+00:05:16,390 --> 00:05:16,400
+advanced. We don't need a super complex
+ 
+
+313
+00:05:16,400 --> 00:05:18,310
+advanced. We don't need a super complex
+prop to create something like this. Now,
+
+314
+00:05:18,310 --> 00:05:18,320
+prop to create something like this. Now,
+ 
+
+315
+00:05:18,320 --> 00:05:20,390
+prop to create something like this. Now,
+let's move on to prompt style number
+
+316
+00:05:20,390 --> 00:05:20,400
+let's move on to prompt style number
+ 
+
+317
+00:05:20,400 --> 00:05:22,790
+let's move on to prompt style number
+two, our medium difficulty. Let's kick
+
+318
+00:05:22,790 --> 00:05:22,800
+two, our medium difficulty. Let's kick
+ 
+
+319
+00:05:22,800 --> 00:05:24,950
+two, our medium difficulty. Let's kick
+things up a notch and start to see how
+
+320
+00:05:24,950 --> 00:05:24,960
+things up a notch and start to see how
+ 
+
+321
+00:05:24,960 --> 00:05:26,710
+things up a notch and start to see how
+Sora can handle more complex
+
+322
+00:05:26,710 --> 00:05:26,720
+Sora can handle more complex
+ 
+
+323
+00:05:26,720 --> 00:05:28,310
+Sora can handle more complex
+instructions. We know that Sora can
+
+324
+00:05:28,310 --> 00:05:28,320
+instructions. We know that Sora can
+ 
+
+325
+00:05:28,320 --> 00:05:29,670
+instructions. We know that Sora can
+handle a simple shot like we just
+
+326
+00:05:29,670 --> 00:05:29,680
+handle a simple shot like we just
+ 
+
+327
+00:05:29,680 --> 00:05:31,590
+handle a simple shot like we just
+created. However, if we want to create a
+
+328
+00:05:31,590 --> 00:05:31,600
+created. However, if we want to create a
+ 
+
+329
+00:05:31,600 --> 00:05:33,909
+created. However, if we want to create a
+complex shot, we have 10 seconds in each
+
+330
+00:05:33,909 --> 00:05:33,919
+complex shot, we have 10 seconds in each
+ 
+
+331
+00:05:33,919 --> 00:05:35,270
+complex shot, we have 10 seconds in each
+sore generation. If you're on the free
+
+332
+00:05:35,270 --> 00:05:35,280
+sore generation. If you're on the free
+ 
+
+333
+00:05:35,280 --> 00:05:36,950
+sore generation. If you're on the free
+plan, you've got 12 seconds if you're on
+
+334
+00:05:36,950 --> 00:05:36,960
+plan, you've got 12 seconds if you're on
+ 
+
+335
+00:05:36,960 --> 00:05:39,510
+plan, you've got 12 seconds if you're on
+a pro plan. Let's use every single one
+
+336
+00:05:39,510 --> 00:05:39,520
+a pro plan. Let's use every single one
+ 
+
+337
+00:05:39,520 --> 00:05:41,510
+a pro plan. Let's use every single one
+of those seconds to do this correctly.
+
+338
+00:05:41,510 --> 00:05:41,520
+of those seconds to do this correctly.
+ 
+
+339
+00:05:41,520 --> 00:05:43,830
+of those seconds to do this correctly.
+So, let's introduce the concept of cuts.
+
+340
+00:05:43,830 --> 00:05:43,840
+So, let's introduce the concept of cuts.
+ 
+
+341
+00:05:43,840 --> 00:05:45,909
+So, let's introduce the concept of cuts.
+still giving Sora some freedom as to the
+
+342
+00:05:45,909 --> 00:05:45,919
+still giving Sora some freedom as to the
+ 
+
+343
+00:05:45,919 --> 00:05:47,749
+still giving Sora some freedom as to the
+timing of each cut, but giving more
+
+344
+00:05:47,749 --> 00:05:47,759
+timing of each cut, but giving more
+ 
+
+345
+00:05:47,759 --> 00:05:49,670
+timing of each cut, but giving more
+direction as to what we are looking for.
+
+346
+00:05:49,670 --> 00:05:49,680
+direction as to what we are looking for.
+ 
+
+347
+00:05:49,680 --> 00:05:51,270
+direction as to what we are looking for.
+The next thing we're going to do is
+
+348
+00:05:51,270 --> 00:05:51,280
+The next thing we're going to do is
+ 
+
+349
+00:05:51,280 --> 00:05:53,670
+The next thing we're going to do is
+introduce our shot composition part of
+
+350
+00:05:53,670 --> 00:05:53,680
+introduce our shot composition part of
+ 
+
+351
+00:05:53,680 --> 00:05:55,430
+introduce our shot composition part of
+the prompt. Now, our shot composition
+
+352
+00:05:55,430 --> 00:05:55,440
+the prompt. Now, our shot composition
+ 
+
+353
+00:05:55,440 --> 00:05:57,510
+the prompt. Now, our shot composition
+part is going to go in and it's going to
+
+354
+00:05:57,510 --> 00:05:57,520
+part is going to go in and it's going to
+ 
+
+355
+00:05:57,520 --> 00:05:59,110
+part is going to go in and it's going to
+show exactly what we're looking for. In
+
+356
+00:05:59,110 --> 00:05:59,120
+show exactly what we're looking for. In
+ 
+
+357
+00:05:59,120 --> 00:06:00,710
+show exactly what we're looking for. In
+cut one, we want to walk we want to
+
+358
+00:06:00,710 --> 00:06:00,720
+cut one, we want to walk we want to
+ 
+
+359
+00:06:00,720 --> 00:06:02,629
+cut one, we want to walk we want to
+watch her walk slowly down the fence. In
+
+360
+00:06:02,629 --> 00:06:02,639
+watch her walk slowly down the fence. In
+ 
+
+361
+00:06:02,639 --> 00:06:04,790
+watch her walk slowly down the fence. In
+cut two, we want to see the camera tilt
+
+362
+00:06:04,790 --> 00:06:04,800
+cut two, we want to see the camera tilt
+ 
+
+363
+00:06:04,800 --> 00:06:06,469
+cut two, we want to see the camera tilt
+downward towards the rocks below. And
+
+364
+00:06:06,469 --> 00:06:06,479
+downward towards the rocks below. And
+ 
+
+365
+00:06:06,479 --> 00:06:08,390
+downward towards the rocks below. And
+then in cut three, we want to see her
+
+366
+00:06:08,390 --> 00:06:08,400
+then in cut three, we want to see her
+ 
+
+367
+00:06:08,400 --> 00:06:10,309
+then in cut three, we want to see her
+eyes reflecting and we want her to say,
+
+368
+00:06:10,309 --> 00:06:10,319
+eyes reflecting and we want her to say,
+ 
+
+369
+00:06:10,319 --> 00:06:12,629
+eyes reflecting and we want her to say,
+"It's been so long." So, how you
+
+370
+00:06:12,629 --> 00:06:12,639
+"It's been so long." So, how you
+ 
+
+371
+00:06:12,639 --> 00:06:15,189
+"It's been so long." So, how you
+introduce voice effects as well as sound
+
+372
+00:06:15,189 --> 00:06:15,199
+introduce voice effects as well as sound
+ 
+
+373
+00:06:15,199 --> 00:06:16,950
+introduce voice effects as well as sound
+effects is that you put them where they
+
+374
+00:06:16,950 --> 00:06:16,960
+effects is that you put them where they
+ 
+
+375
+00:06:16,960 --> 00:06:19,029
+effects is that you put them where they
+need to go in the prompt. So, if I want
+
+376
+00:06:19,029 --> 00:06:19,039
+need to go in the prompt. So, if I want
+ 
+
+377
+00:06:19,039 --> 00:06:20,950
+need to go in the prompt. So, if I want
+her to say something such as, "It's been
+
+378
+00:06:20,950 --> 00:06:20,960
+her to say something such as, "It's been
+ 
+
+379
+00:06:20,960 --> 00:06:22,950
+her to say something such as, "It's been
+so long. I'm going to put that in cut
+
+380
+00:06:22,950 --> 00:06:22,960
+so long. I'm going to put that in cut
+ 
+
+381
+00:06:22,960 --> 00:06:24,710
+so long. I'm going to put that in cut
+three of this prompt." So, she says this
+
+382
+00:06:24,710 --> 00:06:24,720
+three of this prompt." So, she says this
+ 
+
+383
+00:06:24,720 --> 00:06:26,469
+three of this prompt." So, she says this
+towards the end. If I wanted her to say
+
+384
+00:06:26,469 --> 00:06:26,479
+towards the end. If I wanted her to say
+ 
+
+385
+00:06:26,479 --> 00:06:28,070
+towards the end. If I wanted her to say
+this in cut one, I would put it in cut
+
+386
+00:06:28,070 --> 00:06:28,080
+this in cut one, I would put it in cut
+ 
+
+387
+00:06:28,080 --> 00:06:29,270
+this in cut one, I would put it in cut
+one. It would be more towards the
+
+388
+00:06:29,270 --> 00:06:29,280
+one. It would be more towards the
+ 
+
+389
+00:06:29,280 --> 00:06:31,350
+one. It would be more towards the
+beginning. Now, I ask here for a ship
+
+390
+00:06:31,350 --> 00:06:31,360
+beginning. Now, I ask here for a ship
+ 
+
+391
+00:06:31,360 --> 00:06:33,909
+beginning. Now, I ask here for a ship
+horn. And the ship horn I am putting in
+
+392
+00:06:33,909 --> 00:06:33,919
+horn. And the ship horn I am putting in
+ 
+
+393
+00:06:33,919 --> 00:06:35,670
+horn. And the ship horn I am putting in
+cut two, but I'm also referencing this
+
+394
+00:06:35,670 --> 00:06:35,680
+cut two, but I'm also referencing this
+ 
+
+395
+00:06:35,680 --> 00:06:38,309
+cut two, but I'm also referencing this
+again in the lighting and tone. My GPT I
+
+396
+00:06:38,309 --> 00:06:38,319
+again in the lighting and tone. My GPT I
+ 
+
+397
+00:06:38,319 --> 00:06:39,830
+again in the lighting and tone. My GPT I
+let you know that I'll show you at the
+
+398
+00:06:39,830 --> 00:06:39,840
+let you know that I'll show you at the
+ 
+
+399
+00:06:39,840 --> 00:06:41,110
+let you know that I'll show you at the
+end knows how to do all of this
+
+400
+00:06:41,110 --> 00:06:41,120
+end knows how to do all of this
+ 
+
+401
+00:06:41,120 --> 00:06:42,870
+end knows how to do all of this
+automatically. Just know that specific
+
+402
+00:06:42,870 --> 00:06:42,880
+automatically. Just know that specific
+ 
+
+403
+00:06:42,880 --> 00:06:44,629
+automatically. Just know that specific
+dialogue needs to be mentioned within
+
+404
+00:06:44,629 --> 00:06:44,639
+dialogue needs to be mentioned within
+ 
+
+405
+00:06:44,639 --> 00:06:47,029
+dialogue needs to be mentioned within
+the cut. More tonal sounds or background
+
+406
+00:06:47,029 --> 00:06:47,039
+the cut. More tonal sounds or background
+ 
+
+407
+00:06:47,039 --> 00:06:48,790
+the cut. More tonal sounds or background
+sounds can be mentioned in the lighting
+
+408
+00:06:48,790 --> 00:06:48,800
+sounds can be mentioned in the lighting
+ 
+
+409
+00:06:48,800 --> 00:06:50,629
+sounds can be mentioned in the lighting
+and tone section. So let's put all of
+
+410
+00:06:50,629 --> 00:06:50,639
+and tone section. So let's put all of
+ 
+
+411
+00:06:50,639 --> 00:06:53,670
+and tone section. So let's put all of
+this into Sora here and see what it
+
+412
+00:06:53,670 --> 00:06:53,680
+this into Sora here and see what it
+ 
+
+413
+00:06:53,680 --> 00:06:55,029
+this into Sora here and see what it
+comes up with. So I'm just going to take
+
+414
+00:06:55,029 --> 00:06:55,039
+comes up with. So I'm just going to take
+ 
+
+415
+00:06:55,039 --> 00:06:56,550
+comes up with. So I'm just going to take
+the prompt. I'm going to copy and paste
+
+416
+00:06:56,550 --> 00:06:56,560
+the prompt. I'm going to copy and paste
+ 
+
+417
+00:06:56,560 --> 00:06:58,629
+the prompt. I'm going to copy and paste
+it here into Sora. Exactly. And I'm
+
+418
+00:06:58,629 --> 00:06:58,639
+it here into Sora. Exactly. And I'm
+ 
+
+419
+00:06:58,639 --> 00:07:00,710
+it here into Sora. Exactly. And I'm
+going to hit create video. Okay. Let's
+
+420
+00:07:00,710 --> 00:07:00,720
+going to hit create video. Okay. Let's
+ 
+
+421
+00:07:00,720 --> 00:07:02,230
+going to hit create video. Okay. Let's
+check out the video that Sora created
+
+422
+00:07:02,230 --> 00:07:02,240
+check out the video that Sora created
+ 
+
+423
+00:07:02,240 --> 00:07:03,749
+check out the video that Sora created
+from our prompt. Remember we had our
+
+424
+00:07:03,749 --> 00:07:03,759
+from our prompt. Remember we had our
+ 
+
+425
+00:07:03,759 --> 00:07:05,350
+from our prompt. Remember we had our
+woman walking. We wanted to see the
+
+426
+00:07:05,350 --> 00:07:05,360
+woman walking. We wanted to see the
+ 
+
+427
+00:07:05,360 --> 00:07:06,710
+woman walking. We wanted to see the
+ocean. And then we wanted to see a
+
+428
+00:07:06,710 --> 00:07:06,720
+ocean. And then we wanted to see a
+ 
+
+429
+00:07:06,720 --> 00:07:08,469
+ocean. And then we wanted to see a
+close-up of her face. And she wanted to
+
+430
+00:07:08,469 --> 00:07:08,479
+close-up of her face. And she wanted to
+ 
+
+431
+00:07:08,479 --> 00:07:10,790
+close-up of her face. And she wanted to
+say, "It's been so long." Bonus points
+
+432
+00:07:10,790 --> 00:07:10,800
+say, "It's been so long." Bonus points
+ 
+
+433
+00:07:10,800 --> 00:07:13,909
+say, "It's been so long." Bonus points
+if she says this with a dramatic anime
+
+434
+00:07:13,909 --> 00:07:13,919
+if she says this with a dramatic anime
+ 
+
+435
+00:07:13,919 --> 00:07:22,230
+if she says this with a dramatic anime
+flare.
+
+436
+00:07:22,230 --> 00:07:22,240
+
+ 
+
+437
+00:07:22,240 --> 00:07:24,390
+
+>> It's been so long.
+
+438
+00:07:24,390 --> 00:07:24,400
+>> It's been so long.
+ 
+
+439
+00:07:24,400 --> 00:07:25,909
+>> It's been so long.
+>> So, that's pretty much exactly what we
+
+440
+00:07:25,909 --> 00:07:25,919
+>> So, that's pretty much exactly what we
+ 
+
+441
+00:07:25,919 --> 00:07:27,510
+>> So, that's pretty much exactly what we
+asked for, right, everyone? First, she's
+
+442
+00:07:27,510 --> 00:07:27,520
+asked for, right, everyone? First, she's
+ 
+
+443
+00:07:27,520 --> 00:07:29,589
+asked for, right, everyone? First, she's
+walking down the path. Then, we see our
+
+444
+00:07:29,589 --> 00:07:29,599
+walking down the path. Then, we see our
+ 
+
+445
+00:07:29,599 --> 00:07:31,909
+walking down the path. Then, we see our
+waves, and then we get a close-up of her
+
+446
+00:07:31,909 --> 00:07:31,919
+waves, and then we get a close-up of her
+ 
+
+447
+00:07:31,919 --> 00:07:33,749
+waves, and then we get a close-up of her
+where she says what we're asking for.
+
+448
+00:07:33,749 --> 00:07:33,759
+where she says what we're asking for.
+ 
+
+449
+00:07:33,759 --> 00:07:35,110
+where she says what we're asking for.
+This is a simple scene, guys, with
+
+450
+00:07:35,110 --> 00:07:35,120
+This is a simple scene, guys, with
+ 
+
+451
+00:07:35,120 --> 00:07:36,550
+This is a simple scene, guys, with
+simple interactions, but just know that
+
+452
+00:07:36,550 --> 00:07:36,560
+simple interactions, but just know that
+ 
+
+453
+00:07:36,560 --> 00:07:38,309
+simple interactions, but just know that
+this is how you would create for text to
+
+454
+00:07:38,309 --> 00:07:38,319
+this is how you would create for text to
+ 
+
+455
+00:07:38,319 --> 00:07:40,710
+this is how you would create for text to
+video complex fight scenes, crazy shots.
+
+456
+00:07:40,710 --> 00:07:40,720
+video complex fight scenes, crazy shots.
+ 
+
+457
+00:07:40,720 --> 00:07:42,230
+video complex fight scenes, crazy shots.
+You'll see on the homepage, this is a
+
+458
+00:07:42,230 --> 00:07:42,240
+You'll see on the homepage, this is a
+ 
+
+459
+00:07:42,240 --> 00:07:44,309
+You'll see on the homepage, this is a
+formula that allows you to do that. I'm
+
+460
+00:07:44,309 --> 00:07:44,319
+formula that allows you to do that. I'm
+ 
+
+461
+00:07:44,319 --> 00:07:45,670
+formula that allows you to do that. I'm
+do a lot of anime on this channel, but
+
+462
+00:07:45,670 --> 00:07:45,680
+do a lot of anime on this channel, but
+ 
+
+463
+00:07:45,680 --> 00:07:46,790
+do a lot of anime on this channel, but
+you could use this for literally
+
+464
+00:07:46,790 --> 00:07:46,800
+you could use this for literally
+ 
+
+465
+00:07:46,800 --> 00:07:48,070
+you could use this for literally
+anything. You could have Jake Paul
+
+466
+00:07:48,070 --> 00:07:48,080
+anything. You could have Jake Paul
+ 
+
+467
+00:07:48,080 --> 00:07:49,589
+anything. You could have Jake Paul
+punching people if you wanted to using
+
+468
+00:07:49,589 --> 00:07:49,599
+punching people if you wanted to using
+ 
+
+469
+00:07:49,599 --> 00:07:51,749
+punching people if you wanted to using
+this style. This works for any type of
+
+470
+00:07:51,749 --> 00:07:51,759
+this style. This works for any type of
+ 
+
+471
+00:07:51,759 --> 00:07:54,070
+this style. This works for any type of
+composition and works with my GPT, which
+
+472
+00:07:54,070 --> 00:07:54,080
+composition and works with my GPT, which
+ 
+
+473
+00:07:54,080 --> 00:07:55,830
+composition and works with my GPT, which
+you can use, and I'll tell you about at
+
+474
+00:07:55,830 --> 00:07:55,840
+you can use, and I'll tell you about at
+ 
+
+475
+00:07:55,840 --> 00:07:58,070
+you can use, and I'll tell you about at
+the end of the video. We've done two
+
+476
+00:07:58,070 --> 00:07:58,080
+the end of the video. We've done two
+ 
+
+477
+00:07:58,080 --> 00:07:59,990
+the end of the video. We've done two
+texttovideo examples, and some would say
+
+478
+00:07:59,990 --> 00:08:00,000
+texttovideo examples, and some would say
+ 
+
+479
+00:08:00,000 --> 00:08:02,150
+texttovideo examples, and some would say
+text to video is the easy way to do
+
+480
+00:08:02,150 --> 00:08:02,160
+text to video is the easy way to do
+ 
+
+481
+00:08:02,160 --> 00:08:03,909
+text to video is the easy way to do
+things. So let's go in and let's test
+
+482
+00:08:03,909 --> 00:08:03,919
+things. So let's go in and let's test
+ 
+
+483
+00:08:03,919 --> 00:08:06,390
+things. So let's go in and let's test
+out the hard style. So for prompt number
+
+484
+00:08:06,390 --> 00:08:06,400
+out the hard style. So for prompt number
+ 
+
+485
+00:08:06,400 --> 00:08:08,469
+out the hard style. So for prompt number
+three, what we're introducing here is we
+
+486
+00:08:08,469 --> 00:08:08,479
+three, what we're introducing here is we
+ 
+
+487
+00:08:08,479 --> 00:08:10,790
+three, what we're introducing here is we
+want to use image to video with adjusted
+
+488
+00:08:10,790 --> 00:08:10,800
+want to use image to video with adjusted
+ 
+
+489
+00:08:10,800 --> 00:08:12,629
+want to use image to video with adjusted
+language and cuts. Now image to video
+
+490
+00:08:12,629 --> 00:08:12,639
+language and cuts. Now image to video
+ 
+
+491
+00:08:12,639 --> 00:08:14,150
+language and cuts. Now image to video
+has some advantages as well as some
+
+492
+00:08:14,150 --> 00:08:14,160
+has some advantages as well as some
+ 
+
+493
+00:08:14,160 --> 00:08:15,430
+has some advantages as well as some
+disadvantages when we think about
+
+494
+00:08:15,430 --> 00:08:15,440
+disadvantages when we think about
+ 
+
+495
+00:08:15,440 --> 00:08:17,029
+disadvantages when we think about
+prompting on Sora. The first is that
+
+496
+00:08:17,029 --> 00:08:17,039
+prompting on Sora. The first is that
+ 
+
+497
+00:08:17,039 --> 00:08:18,629
+prompting on Sora. The first is that
+image to video is going to allow you to
+
+498
+00:08:18,629 --> 00:08:18,639
+image to video is going to allow you to
+ 
+
+499
+00:08:18,639 --> 00:08:20,150
+image to video is going to allow you to
+take images that you create in an
+
+500
+00:08:20,150 --> 00:08:20,160
+take images that you create in an
+ 
+
+501
+00:08:20,160 --> 00:08:21,909
+take images that you create in an
+external platform. Maybe something like
+
+502
+00:08:21,909 --> 00:08:21,919
+external platform. Maybe something like
+ 
+
+503
+00:08:21,919 --> 00:08:23,830
+external platform. Maybe something like
+a midjourney here where we've created an
+
+504
+00:08:23,830 --> 00:08:23,840
+a midjourney here where we've created an
+ 
+
+505
+00:08:23,840 --> 00:08:26,070
+a midjourney here where we've created an
+image of our samurai woman here walking
+
+506
+00:08:26,070 --> 00:08:26,080
+image of our samurai woman here walking
+ 
+
+507
+00:08:26,080 --> 00:08:27,990
+image of our samurai woman here walking
+down the path. And so this allows us to
+
+508
+00:08:27,990 --> 00:08:28,000
+down the path. And so this allows us to
+ 
+
+509
+00:08:28,000 --> 00:08:29,430
+down the path. And so this allows us to
+take images that maybe we create in
+
+510
+00:08:29,430 --> 00:08:29,440
+take images that maybe we create in
+ 
+
+511
+00:08:29,440 --> 00:08:31,350
+take images that maybe we create in
+midjourney. Maybe I go into Nano Banana
+
+512
+00:08:31,350 --> 00:08:31,360
+midjourney. Maybe I go into Nano Banana
+ 
+
+513
+00:08:31,360 --> 00:08:33,110
+midjourney. Maybe I go into Nano Banana
+and we're creating a whole different
+
+514
+00:08:33,110 --> 00:08:33,120
+and we're creating a whole different
+ 
+
+515
+00:08:33,120 --> 00:08:34,870
+and we're creating a whole different
+world here from this image. Drop a
+
+516
+00:08:34,870 --> 00:08:34,880
+world here from this image. Drop a
+ 
+
+517
+00:08:34,880 --> 00:08:36,149
+world here from this image. Drop a
+comment on the video below if you'd like
+
+518
+00:08:36,149 --> 00:08:36,159
+comment on the video below if you'd like
+ 
+
+519
+00:08:36,159 --> 00:08:37,670
+comment on the video below if you'd like
+to see a guide on how to do that. For
+
+520
+00:08:37,670 --> 00:08:37,680
+to see a guide on how to do that. For
+ 
+
+521
+00:08:37,680 --> 00:08:39,750
+to see a guide on how to do that. For
+prompt three, what we're going to do is
+
+522
+00:08:39,750 --> 00:08:39,760
+prompt three, what we're going to do is
+ 
+
+523
+00:08:39,760 --> 00:08:41,430
+prompt three, what we're going to do is
+that we're using image to video, but
+
+524
+00:08:41,430 --> 00:08:41,440
+that we're using image to video, but
+ 
+
+525
+00:08:41,440 --> 00:08:42,709
+that we're using image to video, but
+there's a couple different things here.
+
+526
+00:08:42,709 --> 00:08:42,719
+there's a couple different things here.
+ 
+
+527
+00:08:42,719 --> 00:08:45,030
+there's a couple different things here.
+We're adjusting how we're asking for
+
+528
+00:08:45,030 --> 00:08:45,040
+We're adjusting how we're asking for
+ 
+
+529
+00:08:45,040 --> 00:08:46,310
+We're adjusting how we're asking for
+some of these things from the initial
+
+530
+00:08:46,310 --> 00:08:46,320
+some of these things from the initial
+ 
+
+531
+00:08:46,320 --> 00:08:48,150
+some of these things from the initial
+frame. So, instead of saying the woman's
+
+532
+00:08:48,150 --> 00:08:48,160
+frame. So, instead of saying the woman's
+ 
+
+533
+00:08:48,160 --> 00:08:49,990
+frame. So, instead of saying the woman's
+walking, we're saying the woman gently
+
+534
+00:08:49,990 --> 00:08:50,000
+walking, we're saying the woman gently
+ 
+
+535
+00:08:50,000 --> 00:08:51,750
+walking, we're saying the woman gently
+shifts her weight, then begins walking a
+
+536
+00:08:51,750 --> 00:08:51,760
+shifts her weight, then begins walking a
+ 
+
+537
+00:08:51,760 --> 00:08:53,430
+shifts her weight, then begins walking a
+few slow steps towards the fence down
+
+538
+00:08:53,430 --> 00:08:53,440
+few slow steps towards the fence down
+ 
+
+539
+00:08:53,440 --> 00:08:54,949
+few slow steps towards the fence down
+the path. We have our multi-shot
+
+540
+00:08:54,949 --> 00:08:54,959
+the path. We have our multi-shot
+ 
+
+541
+00:08:54,959 --> 00:08:57,030
+the path. We have our multi-shot
+composition with timestamps so it knows
+
+542
+00:08:57,030 --> 00:08:57,040
+composition with timestamps so it knows
+ 
+
+543
+00:08:57,040 --> 00:08:59,190
+composition with timestamps so it knows
+exactly how long we want for each one.
+
+544
+00:08:59,190 --> 00:08:59,200
+exactly how long we want for each one.
+ 
+
+545
+00:08:59,200 --> 00:09:00,949
+exactly how long we want for each one.
+And then finally, we have our lighting
+
+546
+00:09:00,949 --> 00:09:00,959
+And then finally, we have our lighting
+ 
+
+547
+00:09:00,959 --> 00:09:03,030
+And then finally, we have our lighting
+and tone. So, let's go in and see how
+
+548
+00:09:03,030 --> 00:09:03,040
+and tone. So, let's go in and see how
+ 
+
+549
+00:09:03,040 --> 00:09:05,030
+and tone. So, let's go in and see how
+this one did. We'll go in and take our
+
+550
+00:09:05,030 --> 00:09:05,040
+this one did. We'll go in and take our
+ 
+
+551
+00:09:05,040 --> 00:09:07,269
+this one did. We'll go in and take our
+whole prompt here. We'll go into Sora
+
+552
+00:09:07,269 --> 00:09:07,279
+whole prompt here. We'll go into Sora
+ 
+
+553
+00:09:07,279 --> 00:09:09,990
+whole prompt here. We'll go into Sora
+and we'll paste this one. And I will hit
+
+554
+00:09:09,990 --> 00:09:10,000
+and we'll paste this one. And I will hit
+ 
+
+555
+00:09:10,000 --> 00:09:17,750
+and we'll paste this one. And I will hit
+create video.
+
+556
+00:09:17,750 --> 00:09:17,760
+
+ 
+
+557
+00:09:17,760 --> 00:09:19,350
+
+>> It's been so long.
+
+558
+00:09:19,350 --> 00:09:19,360
+>> It's been so long.
+ 
+
+559
+00:09:19,360 --> 00:09:21,030
+>> It's been so long.
+>> So, this is really the power of Sora,
+
+560
+00:09:21,030 --> 00:09:21,040
+>> So, this is really the power of Sora,
+ 
+
+561
+00:09:21,040 --> 00:09:22,550
+>> So, this is really the power of Sora,
+guys. You can't prompt like this in any
+
+562
+00:09:22,550 --> 00:09:22,560
+guys. You can't prompt like this in any
+ 
+
+563
+00:09:22,560 --> 00:09:24,310
+guys. You can't prompt like this in any
+other platform. This is why Sora is so
+
+564
+00:09:24,310 --> 00:09:24,320
+other platform. This is why Sora is so
+ 
+
+565
+00:09:24,320 --> 00:09:26,070
+other platform. This is why Sora is so
+cool and why everyone's so freaking
+
+566
+00:09:26,070 --> 00:09:26,080
+cool and why everyone's so freaking
+ 
+
+567
+00:09:26,080 --> 00:09:27,910
+cool and why everyone's so freaking
+excited about it. I'm so excited about
+
+568
+00:09:27,910 --> 00:09:27,920
+excited about it. I'm so excited about
+ 
+
+569
+00:09:27,920 --> 00:09:29,750
+excited about it. I'm so excited about
+AI videos, everyone. If we see here the
+
+570
+00:09:29,750 --> 00:09:29,760
+AI videos, everyone. If we see here the
+ 
+
+571
+00:09:29,760 --> 00:09:31,670
+AI videos, everyone. If we see here the
+output of the video, we have her walking
+
+572
+00:09:31,670 --> 00:09:31,680
+output of the video, we have her walking
+ 
+
+573
+00:09:31,680 --> 00:09:33,110
+output of the video, we have her walking
+down the path like we asked for our
+
+574
+00:09:33,110 --> 00:09:33,120
+down the path like we asked for our
+ 
+
+575
+00:09:33,120 --> 00:09:34,470
+down the path like we asked for our
+exact image. We had complete control
+
+576
+00:09:34,470 --> 00:09:34,480
+exact image. We had complete control
+ 
+
+577
+00:09:34,480 --> 00:09:36,389
+exact image. We had complete control
+over this entire prompt. [music] We then
+
+578
+00:09:36,389 --> 00:09:36,399
+over this entire prompt. [music] We then
+ 
+
+579
+00:09:36,399 --> 00:09:39,030
+over this entire prompt. [music] We then
+see we get a shot of our ocean and then
+
+580
+00:09:39,030 --> 00:09:39,040
+see we get a shot of our ocean and then
+ 
+
+581
+00:09:39,040 --> 00:09:40,550
+see we get a shot of our ocean and then
+we see here and then she says our
+
+582
+00:09:40,550 --> 00:09:40,560
+we see here and then she says our
+ 
+
+583
+00:09:40,560 --> 00:09:42,070
+we see here and then she says our
+dialogue. Exactly. We also have that
+
+584
+00:09:42,070 --> 00:09:42,080
+dialogue. Exactly. We also have that
+ 
+
+585
+00:09:42,080 --> 00:09:43,829
+dialogue. Exactly. We also have that
+ship horn in the background. This is
+
+586
+00:09:43,829 --> 00:09:43,839
+ship horn in the background. This is
+ 
+
+587
+00:09:43,839 --> 00:09:45,990
+ship horn in the background. This is
+incredibly cool. This is what you would
+
+588
+00:09:45,990 --> 00:09:46,000
+incredibly cool. This is what you would
+ 
+
+589
+00:09:46,000 --> 00:09:48,150
+incredibly cool. This is what you would
+say complete control. We're using every
+
+590
+00:09:48,150 --> 00:09:48,160
+say complete control. We're using every
+ 
+
+591
+00:09:48,160 --> 00:09:50,150
+say complete control. We're using every
+single part of our 10 seconds. All of
+
+592
+00:09:50,150 --> 00:09:50,160
+single part of our 10 seconds. All of
+ 
+
+593
+00:09:50,160 --> 00:09:51,590
+single part of our 10 seconds. All of
+these prompts will be linked in the
+
+594
+00:09:51,590 --> 00:09:51,600
+these prompts will be linked in the
+ 
+
+595
+00:09:51,600 --> 00:09:52,949
+these prompts will be linked in the
+description below so you can try these
+
+596
+00:09:52,949 --> 00:09:52,959
+description below so you can try these
+ 
+
+597
+00:09:52,959 --> 00:09:54,550
+description below so you can try these
+things out for yourself. Just understand
+
+598
+00:09:54,550 --> 00:09:54,560
+things out for yourself. Just understand
+ 
+
+599
+00:09:54,560 --> 00:09:57,030
+things out for yourself. Just understand
+that your imagination is the only limit
+
+600
+00:09:57,030 --> 00:09:57,040
+that your imagination is the only limit
+ 
+
+601
+00:09:57,040 --> 00:09:58,470
+that your imagination is the only limit
+here. It's only going to get better in
+
+602
+00:09:58,470 --> 00:09:58,480
+here. It's only going to get better in
+ 
+
+603
+00:09:58,480 --> 00:10:00,710
+here. It's only going to get better in
+time. Sora 3, Sora 4, we're in a wild
+
+604
+00:10:00,710 --> 00:10:00,720
+time. Sora 3, Sora 4, we're in a wild
+ 
+
+605
+00:10:00,720 --> 00:10:02,310
+time. Sora 3, Sora 4, we're in a wild
+time, everyone. Now, hopefully you have
+
+606
+00:10:02,310 --> 00:10:02,320
+time, everyone. Now, hopefully you have
+ 
+
+607
+00:10:02,320 --> 00:10:03,829
+time, everyone. Now, hopefully you have
+a better understanding of how to prompt
+
+608
+00:10:03,829 --> 00:10:03,839
+a better understanding of how to prompt
+ 
+
+609
+00:10:03,839 --> 00:10:05,990
+a better understanding of how to prompt
+Sora for the best results possible.
+
+610
+00:10:05,990 --> 00:10:06,000
+Sora for the best results possible.
+ 
+
+611
+00:10:06,000 --> 00:10:07,750
+Sora for the best results possible.
+However, there's one problem. You know,
+
+612
+00:10:07,750 --> 00:10:07,760
+However, there's one problem. You know,
+ 
+
+613
+00:10:07,760 --> 00:10:09,750
+However, there's one problem. You know,
+as you can see, Sora understands those
+
+614
+00:10:09,750 --> 00:10:09,760
+as you can see, Sora understands those
+ 
+
+615
+00:10:09,760 --> 00:10:11,670
+as you can see, Sora understands those
+large complex prompts, but these prompts
+
+616
+00:10:11,670 --> 00:10:11,680
+large complex prompts, but these prompts
+ 
+
+617
+00:10:11,680 --> 00:10:13,030
+large complex prompts, but these prompts
+take a long time to write. You can have
+
+618
+00:10:13,030 --> 00:10:13,040
+take a long time to write. You can have
+ 
+
+619
+00:10:13,040 --> 00:10:14,710
+take a long time to write. You can have
+GPT do it for you, but you would need to
+
+620
+00:10:14,710 --> 00:10:14,720
+GPT do it for you, but you would need to
+ 
+
+621
+00:10:14,720 --> 00:10:16,150
+GPT do it for you, but you would need to
+let it know what you're asking for each
+
+622
+00:10:16,150 --> 00:10:16,160
+let it know what you're asking for each
+ 
+
+623
+00:10:16,160 --> 00:10:18,310
+let it know what you're asking for each
+time. That takes time. And this is why
+
+624
+00:10:18,310 --> 00:10:18,320
+time. That takes time. And this is why
+ 
+
+625
+00:10:18,320 --> 00:10:20,710
+time. That takes time. And this is why
+I've created my own custom GPT, which I
+
+626
+00:10:20,710 --> 00:10:20,720
+I've created my own custom GPT, which I
+ 
+
+627
+00:10:20,720 --> 00:10:22,550
+I've created my own custom GPT, which I
+will link in the description below, that
+
+628
+00:10:22,550 --> 00:10:22,560
+will link in the description below, that
+ 
+
+629
+00:10:22,560 --> 00:10:24,630
+will link in the description below, that
+you can use to create your own prompts.
+
+630
+00:10:24,630 --> 00:10:24,640
+you can use to create your own prompts.
+ 
+
+631
+00:10:24,640 --> 00:10:26,630
+you can use to create your own prompts.
+It's 100% free and it will create
+
+632
+00:10:26,630 --> 00:10:26,640
+It's 100% free and it will create
+ 
+
+633
+00:10:26,640 --> 00:10:28,790
+It's 100% free and it will create
+prompts that utilize all of the best
+
+634
+00:10:28,790 --> 00:10:28,800
+prompts that utilize all of the best
+ 
+
+635
+00:10:28,800 --> 00:10:30,230
+prompts that utilize all of the best
+practices that we went through the video
+
+636
+00:10:30,230 --> 00:10:30,240
+practices that we went through the video
+ 
+
+637
+00:10:30,240 --> 00:10:32,470
+practices that we went through the video
+here today easily and quickly. You can
+
+638
+00:10:32,470 --> 00:10:32,480
+here today easily and quickly. You can
+ 
+
+639
+00:10:32,480 --> 00:10:35,030
+here today easily and quickly. You can
+go into this GPT and you can ask for any
+
+640
+00:10:35,030 --> 00:10:35,040
+go into this GPT and you can ask for any
+ 
+
+641
+00:10:35,040 --> 00:10:37,110
+go into this GPT and you can ask for any
+different type of prompts. This GPT is
+
+642
+00:10:37,110 --> 00:10:37,120
+different type of prompts. This GPT is
+ 
+
+643
+00:10:37,120 --> 00:10:39,350
+different type of prompts. This GPT is
+trained on the best practices possible.
+
+644
+00:10:39,350 --> 00:10:39,360
+trained on the best practices possible.
+ 
+
+645
+00:10:39,360 --> 00:10:41,190
+trained on the best practices possible.
+You can see here it gave us exactly what
+
+646
+00:10:41,190 --> 00:10:41,200
+You can see here it gave us exactly what
+ 
+
+647
+00:10:41,200 --> 00:10:42,790
+You can see here it gave us exactly what
+we are looking for in the same different
+
+648
+00:10:42,790 --> 00:10:42,800
+we are looking for in the same different
+ 
+
+649
+00:10:42,800 --> 00:10:44,550
+we are looking for in the same different
+style of prompts that we created in this
+
+650
+00:10:44,550 --> 00:10:44,560
+style of prompts that we created in this
+ 
+
+651
+00:10:44,560 --> 00:10:46,310
+style of prompts that we created in this
+video. All in one second, completely
+
+652
+00:10:46,310 --> 00:10:46,320
+video. All in one second, completely
+ 
+
+653
+00:10:46,320 --> 00:10:48,150
+video. All in one second, completely
+unscripted. I just did this right now. I
+
+654
+00:10:48,150 --> 00:10:48,160
+unscripted. I just did this right now. I
+ 
+
+655
+00:10:48,160 --> 00:10:50,150
+unscripted. I just did this right now. I
+will constantly be updating and refining
+
+656
+00:10:50,150 --> 00:10:50,160
+will constantly be updating and refining
+ 
+
+657
+00:10:50,160 --> 00:10:52,150
+will constantly be updating and refining
+this GPT. I'll probably put cling into
+
+658
+00:10:52,150 --> 00:10:52,160
+this GPT. I'll probably put cling into
+ 
+
+659
+00:10:52,160 --> 00:10:53,509
+this GPT. I'll probably put cling into
+this thing next. I'll probably put
+
+660
+00:10:53,509 --> 00:10:53,519
+this thing next. I'll probably put
+ 
+
+661
+00:10:53,519 --> 00:10:54,949
+this thing next. I'll probably put
+midjourney in here as well at some
+
+662
+00:10:54,949 --> 00:10:54,959
+midjourney in here as well at some
+ 
+
+663
+00:10:54,959 --> 00:10:56,310
+midjourney in here as well at some
+point. Just want to provide the best
+
+664
+00:10:56,310 --> 00:10:56,320
+point. Just want to provide the best
+ 
+
+665
+00:10:56,320 --> 00:10:57,829
+point. Just want to provide the best
+stuff for you all. So, go ahead and
+
+666
+00:10:57,829 --> 00:10:57,839
+stuff for you all. So, go ahead and
+ 
+
+667
+00:10:57,839 --> 00:10:59,350
+stuff for you all. So, go ahead and
+check this out. It's in the description.
+
+668
+00:10:59,350 --> 00:10:59,360
+check this out. It's in the description.
+ 
+
+669
+00:10:59,360 --> 00:11:00,870
+check this out. It's in the description.
+And thank you so much for watching to
+
+670
+00:11:00,870 --> 00:11:00,880
+And thank you so much for watching to
+ 
+
+671
+00:11:00,880 --> 00:11:02,550
+And thank you so much for watching to
+this point so that you can get this. I
+
+672
+00:11:02,550 --> 00:11:02,560
+this point so that you can get this. I
+ 
+
+673
+00:11:02,560 --> 00:11:03,910
+this point so that you can get this. I
+know you didn't just skip to this point,
+
+674
+00:11:03,910 --> 00:11:03,920
+know you didn't just skip to this point,
+ 
+
+675
+00:11:03,920 --> 00:11:05,190
+know you didn't just skip to this point,
+right? That I mean that does that
+
+676
+00:11:05,190 --> 00:11:05,200
+right? That I mean that does that
+ 
+
+677
+00:11:05,200 --> 00:11:06,230
+right? That I mean that does that
+wouldn't even work, right? You can't
+
+678
+00:11:06,230 --> 00:11:06,240
+wouldn't even work, right? You can't
+ 
+
+679
+00:11:06,240 --> 00:11:07,430
+wouldn't even work, right? You can't
+even do that. I think YouTube blocks
+
+680
+00:11:07,430 --> 00:11:07,440
+even do that. I think YouTube blocks
+ 
+
+681
+00:11:07,440 --> 00:11:09,269
+even do that. I think YouTube blocks
+you. If you did do that, like the video.
+
+682
+00:11:09,269 --> 00:11:09,279
+you. If you did do that, like the video.
+ 
+
+683
+00:11:09,279 --> 00:11:10,710
+you. If you did do that, like the video.
+That'd be awesome. That'd be great. I'd
+
+684
+00:11:10,710 --> 00:11:10,720
+That'd be awesome. That'd be great. I'd
+ 
+
+685
+00:11:10,720 --> 00:11:12,630
+That'd be awesome. That'd be great. I'd
+love that. Anyways, guys, thank you so
+
+686
+00:11:12,630 --> 00:11:12,640
+love that. Anyways, guys, thank you so
+ 
+
+687
+00:11:12,640 --> 00:11:14,310
+love that. Anyways, guys, thank you so
+much for watching. If you enjoy my
+
+688
+00:11:14,310 --> 00:11:14,320
+much for watching. If you enjoy my
+ 
+
+689
+00:11:14,320 --> 00:11:16,069
+much for watching. If you enjoy my
+content or find value in this video,
+
+690
+00:11:16,069 --> 00:11:16,079
+content or find value in this video,
+ 
+
+691
+00:11:16,079 --> 00:11:17,750
+content or find value in this video,
+please drop a like on the video. That
+
+692
+00:11:17,750 --> 00:11:17,760
+please drop a like on the video. That
+ 
+
+693
+00:11:17,760 --> 00:11:19,269
+please drop a like on the video. That
+helps it get out to more people. And
+
+694
+00:11:19,269 --> 00:11:19,279
+helps it get out to more people. And
+ 
+
+695
+00:11:19,279 --> 00:11:21,269
+helps it get out to more people. And
+drop me a sub if you enjoy my content.
+
+696
+00:11:21,269 --> 00:11:21,279
+drop me a sub if you enjoy my content.
+ 
+
+697
+00:11:21,279 --> 00:11:23,190
+drop me a sub if you enjoy my content.
+I'm trying to get to 500 subs by the end
+
+698
+00:11:23,190 --> 00:11:23,200
+I'm trying to get to 500 subs by the end
+ 
+
+699
+00:11:23,200 --> 00:11:25,190
+I'm trying to get to 500 subs by the end
+of the year. That would make me so happy
+
+700
+00:11:25,190 --> 00:11:25,200
+of the year. That would make me so happy
+ 
+
+701
+00:11:25,200 --> 00:11:26,870
+of the year. That would make me so happy
+if we could do that. But honestly, it
+
+702
+00:11:26,870 --> 00:11:26,880
+if we could do that. But honestly, it
+ 
+
+703
+00:11:26,880 --> 00:11:28,310
+if we could do that. But honestly, it
+just makes me happy making these videos
+
+704
+00:11:28,310 --> 00:11:28,320
+just makes me happy making these videos
+ 
+
+705
+00:11:28,320 --> 00:11:29,910
+just makes me happy making these videos
+for you all, interacting with you all. I
+
+706
+00:11:29,910 --> 00:11:29,920
+for you all, interacting with you all. I
+ 
+
+707
+00:11:29,920 --> 00:11:31,269
+for you all, interacting with you all. I
+hope you all see some value in this.
+
+708
+00:11:31,269 --> 00:11:31,279
+hope you all see some value in this.
+ 
+
+709
+00:11:31,279 --> 00:11:33,590
+hope you all see some value in this.
+Anyways, I hope you all have a fantastic
+
+710
+00:11:33,590 --> 00:11:33,600
+Anyways, I hope you all have a fantastic
+ 
+
+711
+00:11:33,600 --> 00:11:35,670
+Anyways, I hope you all have a fantastic
+rest of the day and I'll see you all on
+
+712
+00:11:35,670 --> 00:11:35,680
+rest of the day and I'll see you all on
+ 
+
+713
+00:11:35,680 --> 00:11:39,040
+rest of the day and I'll see you all on
+the next one. Peace.
+

@@ -1,0 +1,803 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>小说改剧本实操全攻略 v14.0 · 编剧圣经 + 7 步全流程</title>
+<style>
+:root{
+  --bg:#0b0d12;--bg2:#11141b;--bg3:#161a23;--line:#222837;--text:#e6e9f2;--muted:#8a93a6;
+  --acc:#5ee0a7;--acc2:#ffb142;--acc3:#7aa2ff;--acc4:#ff5b6e;--acc5:#c084fc;
+  --shadow:0 6px 30px rgba(0,0,0,.45);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Helvetica,Arial,sans-serif;line-height:1.7;font-size:15px;-webkit-font-smoothing:antialiased}
+a{color:var(--acc3);text-decoration:none}
+a:hover{text-decoration:underline}
+.topbar{position:sticky;top:0;background:rgba(11,13,18,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:12px 20px;z-index:50;display:flex;align-items:center;gap:16px}
+.logo{font-weight:800;font-size:18px;background:linear-gradient(90deg,var(--acc),var(--acc3));-webkit-background-clip:text;background-clip:text;color:transparent}
+.logo small{color:var(--muted);font-weight:400;margin-left:8px;font-size:12px}
+.layout{display:grid;grid-template-columns:260px 1fr;max-width:1400px;margin:0 auto}
+aside{position:sticky;top:56px;height:calc(100vh - 56px);overflow-y:auto;padding:20px 14px;border-right:1px solid var(--line);background:var(--bg2);font-size:13px}
+aside h3{color:var(--muted);font-size:11px;letter-spacing:1px;margin:14px 0 6px;text-transform:uppercase}
+aside ul{list-style:none;margin-bottom:14px}
+aside li{margin:1px 0}
+aside a{color:#c5cae0;display:block;padding:4px 8px;border-radius:4px;border-left:2px solid transparent}
+aside a:hover{background:var(--bg3);color:var(--text);text-decoration:none;border-left-color:var(--acc)}
+main{padding:28px 40px 80px;min-width:0}
+h1{font-size:32px;margin:0 0 8px}
+h2{font-size:22px;margin:44px 0 12px;padding-bottom:6px;border-bottom:1px solid var(--line);position:relative;color:var(--acc)}
+h2::before{content:"";position:absolute;left:-20px;top:8px;width:4px;height:22px;background:var(--acc);border-radius:2px}
+h3{font-size:16px;margin:20px 0 6px;color:var(--acc2)}
+h4{font-size:14px;margin:12px 0 4px;color:#fff}
+p{margin:8px 0;color:#cfd4e0}
+ul,ol{margin:6px 0 12px 24px;color:#cfd4e0}
+li{margin:3px 0}
+strong{color:#fff}
+em{color:var(--acc);font-style:normal}
+.hero{background:linear-gradient(135deg,#0a0d1f 0%,#0b0d12 60%,#0d111c 100%);border:1px solid var(--acc);border-radius:14px;padding:32px;margin-bottom:28px;box-shadow:0 0 40px rgba(94,224,167,.15)}
+.hero h1{background:linear-gradient(90deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent;display:inline-block;font-size:36px}
+.hero .sub{color:var(--muted);margin-top:6px;font-size:14px}
+.hero p{margin-top:14px;max-width:780px;font-size:14.5px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.tag{background:rgba(255,255,255,.06);border:1px solid var(--line);padding:3px 10px;border-radius:99px;font-size:12px;color:#cdd3e1}
+.tag.cold{background:rgba(122,162,255,.15);color:#a8c0ff;border-color:rgba(122,162,255,.3)}
+.tag.warm{background:rgba(255,177,66,.15);color:#ffd6a5;border-color:rgba(255,177,66,.3)}
+.tag.hot{background:rgba(255,91,110,.15);color:#ff8a99;border-color:rgba(255,91,110,.3)}
+.tag.god{background:rgba(192,132,252,.15);color:#d4b8ff;border-color:rgba(192,132,252,.3)}
+.callout{display:flex;gap:10px;padding:12px 14px;border-radius:8px;margin:12px 0;border:1px solid var(--line);background:var(--bg2)}
+.callout .ico{font-size:18px;flex-shrink:0;line-height:1}
+.callout.tip{border-color:rgba(94,224,167,.4);background:rgba(94,224,167,.06)}
+.callout.warn{border-color:rgba(248,113,113,.4);background:rgba(248,113,113,.06)}
+.callout.info{border-color:rgba(122,162,255,.4);background:rgba(122,162,255,.06)}
+.callout.purple{border-color:rgba(192,132,252,.4);background:rgba(192,132,252,.06)}
+.callout p{font-size:13px;color:#dde0ec;margin:0}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:8px;margin:12px 0}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{padding:8px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--bg3);color:var(--muted);font-weight:600;font-size:11.5px;text-transform:uppercase;letter-spacing:.5px}
+tbody tr:hover{background:rgba(255,255,255,.02)}
+.template{background:#0d1018;border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin:10px 0;font-family:"JetBrains Mono",Consolas,monospace;font-size:12.5px;color:#d2d6e0;line-height:1.6;white-space:pre-wrap;overflow-x:auto}
+.template .k{color:var(--acc5);font-weight:600}
+.template .v{color:#ffd6a5}
+.template .c{color:var(--muted);font-style:italic}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin:14px 0}
+.step{background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:12px 14px;position:relative}
+.step .n{position:absolute;top:-9px;left:-9px;width:28px;height:28px;background:linear-gradient(135deg,var(--acc),var(--acc2));color:#0b0d12;border-radius:50%;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:13px}
+.step h4{color:#fff;margin:4px 0;font-size:13.5px}
+.step p{font-size:12px;color:#b8bfd0;margin:0}
+footer{margin-top:50px;padding:20px 40px;color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);text-align:center}
+@media (max-width:900px){.layout{grid-template-columns:1fr}aside{position:relative;top:0;height:auto;border-right:0;border-bottom:1px solid var(--line);font-size:12px}main{padding:24px 20px 60px}h1{font-size:24px}h2{font-size:18px}.hero h1{font-size:26px}}
+@media print{aside,.topbar{display:none}.layout{grid-template-columns:1fr}body{background:#fff;color:#000}h2::before{display:none}}
+</style>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg?v=fix20260927-2215">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="logo">📖 小说改剧本实操全攻略 v14.0 <small>编剧圣经 + 7 步全流程 + 大神路径 · 2026-09-12</small></div>
+  <button class="toc-btn" onclick="window.print()" style="margin-left:auto;background:var(--bg3);border:1px solid var(--line);color:var(--text);padding:5px 12px;border-radius:5px;cursor:pointer;font-size:12px">🖨 打印 / PDF</button>
+</div>
+
+<div class="layout">
+
+<aside>
+<h3>0 编剧基础(小白)</h3>
+<ul>
+  <li><a href="#b1">1. 编剧是什么</a></li>
+  <li><a href="#b2">2. 剧本标准格式</a></li>
+  <li><a href="#b3">3. 3 幕结构 + 救猫咪</a></li>
+  <li><a href="#b4">4. 短剧 vs 电影</a></li>
+</ul>
+
+<h3>1-7 步实操(入门)</h3>
+<ul>
+  <li><a href="#c1">1. 选书</a></li>
+  <li><a href="#c2">2. 通读</a></li>
+  <li><a href="#c3">3. 拆解</a></li>
+  <li><a href="#c4">4. 改编</a></li>
+  <li><a href="#c5">5. 自检</a></li>
+  <li><a href="#c6">6. 投稿</a></li>
+  <li><a href="#c7">7. 修改</a></li>
+</ul>
+
+<h3>二/三/四 进阶</h3>
+<ul>
+  <li><a href="#ai">AI 辅助 4 工具</a></li>
+  <li><a href="#case">3 个真实案例</a></li>
+  <li><a href="#card">速查卡</a></li>
+</ul>
+
+<h3>五/六/七 大神</h3>
+<ul>
+  <li><a href="#d1">5. 编剧进阶</a></li>
+  <li><a href="#d2">6. 顶级资源池</a></li>
+  <li><a href="#d3">7. 视频课路径</a></li>
+</ul>
+</aside>
+
+<main>
+
+<section class="hero">
+  <h1>📖 小说改剧本实操全攻略</h1>
+  <p class="sub">v14.0 · 编剧圣经 + 7 步全流程 + 大神路径 · 2026-09-12 重构</p>
+  <p>本章 = <strong>小说改剧本"全网最权威"</strong>。<strong>0-4 编剧基础(小白)</strong> + <strong>1-7 步实操(入门)</strong> + <strong>AI/案例/速查(进阶)</strong> + <strong>编剧进阶/资源/视频课(大神)</strong>。<strong>学完这页,不用看任何其他编剧教程了</strong>。</p>
+  <div class="meta">
+    <span class="tag cold">🐣 小白 4 章</span>
+    <span class="tag">🌱 入门 7 步</span>
+    <span class="tag warm">🚀 进阶 3 章</span>
+    <span class="tag god">👑 大神 3 章</span>
+    <span class="tag">5 大编剧圣经</span>
+    <span class="tag">8 大题材模板</span>
+    <span class="tag">15+ GitHub 仓库</span>
+    <span class="tag">✍️ 玉哥</span>
+  </div>
+</section>
+
+<!-- ==================== § 0 编剧基础 · 小白入门 ==================== -->
+
+<h2 id="b0">§ 0 · 编剧基础 · 小白入门</h2>
+
+<div class="callout info">
+  <span class="ico">🐣</span>
+  <p><strong>本章</strong>面向<strong>从没写过剧本</strong>的学员。<strong>4 章</strong>覆盖编剧是什么、剧本长啥样、3 幕结构、短剧 vs 电影。<strong>看完能看懂任何剧本</strong>,知道基本结构。</p>
+</div>
+
+<h3 id="b1">0.1 编剧是什么 · 短剧 vs 电影</h3>
+
+<p><strong>编剧</strong> = 写故事的人。<strong>短剧编剧</strong> = 在 1-3 分钟/集 × 30-60 集的格式里,用极快节奏讲完一个完整故事的人。</p>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>维度</th><th>电影编剧</th><th>短剧编剧</th></tr></thead>
+<tbody>
+<tr><td>时长</td><td>90-120 分钟</td><td><strong>1-3 分钟/集 × 30-60 集</strong></td></tr>
+<tr><td>节奏</td><td>慢热铺垫 30 分钟</td><td><strong>3 秒内冲突,30 秒内钩子</strong></td></tr>
+<tr><td>结构</td><td>经典 3 幕</td><td><strong>压缩 3 幕 + 每集自闭环</strong></td></tr>
+<tr><td>对白</td><td>哲学/诗意</td><td><strong>短平快,≤ 20 字/句</strong></td></tr>
+<tr><td>受众</td><td>影评人 + 大众</td><td><strong>下沉市场 30-50 岁女性</strong></td></tr>
+<tr><td>收入</td><td>剧本费 + 票房分成</td><td><strong>保底 + 分账 + 爆款奖</strong></td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout warn">
+  <span class="ico">⚠️</span>
+  <p><strong>关键差异</strong>:短剧编剧是<strong>极度压缩的叙事艺术</strong>。<strong>电影编剧要"展现",短剧编剧要"碾压"</strong>。一个能写好电影的人,不一定能写好短剧;反之亦然。<strong>短剧核心能力 = 在 30 集里塞进 60 个付费卡点</strong>。</p>
+</div>
+
+<h3 id="b2">0.2 剧本标准格式(2026 行业规范)</h3>
+
+<p><strong>短剧剧本标准格式</strong>(每集 1 个文件,字数 800-1500):</p>
+
+<div class="template"><span class="k">【剧本文件命名】</span>
+<书名>_<第N集>_<集标题>.txt
+例:家里家外_第01集_婚礼变故.txt
+
+<span class="k">【剧本内容结构】</span>
+
+# 第{N}集:{集标题}
+
+> 关键词:3-5 个
+> 爽点:8 类爽感之一
+> 前情:上一集结尾 1-2 句
+
+---
+
+## 场景一
+
+**场景:** 内景/外景 · {地点} · {日/夜}
+**出场:** {人物列表}
+
+△ (全景){场景描写}
+△ (中景){人物动作}
+
+**{角色}({语气}):**"{台词}"
+
+♪ 音乐:{氛围}
+
+---
+
+> 钩子:{悬念}
+> 下集:{核心看点}</div>
+
+<h3>0.2.1 5 类景别(必学)</h3>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>景别</th><th>用途</th><th>示意符号</th></tr></thead>
+<tbody>
+<tr><td><strong>全景</strong></td><td>开场定调 / 转场</td><td>△ 全</td></tr>
+<tr><td><strong>中景</strong></td><td>人物对话 / 互动</td><td>△ 中</td></tr>
+<tr><td><strong>近景</strong></td><td>情绪 / 反应</td><td>△ 近</td></tr>
+<tr><td><strong>特写</strong></td><td>关键道具 / 转折</td><td>△ 特</td></tr>
+<tr><td><strong>空镜</strong></td><td>过渡 / 抒情</td><td>△ 空</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3 id="b3">0.3 3 幕结构 + 救猫咪 15 节拍(编剧圣经基础)</h3>
+
+<p><strong>3 幕结构</strong>由<strong>Syd Field</strong>(《Screenplay》1979)提出,是<strong>所有故事</strong>的骨架:</p>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>幕</th><th>占比</th><th>作用</th></tr></thead>
+<tbody>
+<tr><td><strong>第一幕(建置)</strong></td><td>25%</td><td>建立人物 + 展示世界 + 触发事件</td></tr>
+<tr><td><strong>第二幕(对抗)</strong></td><td>50%</td><td>冲突升级 + 副线 + 失败 + 觉醒</td></tr>
+<tr><td><strong>第三幕(解决)</strong></td><td>25%</td><td>决战 + 高潮 + 结局</td></tr>
+</tbody>
+</table>
+</div>
+
+<h4>救猫咪 15 节拍(Blake Snyder · 短剧编剧必学)</h4>
+<p>好莱坞编剧圣经,15 节拍精确控制节奏。<strong>短剧压缩版</strong>:</p>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>节拍</th><th>占比</th><th>作用</th><th>短剧版(按 30 集)</th></tr></thead>
+<tbody>
+<tr><td>① 开场画面</td><td>0-1%</td><td>定调 + 主角处境</td><td>第 1 集前 5 秒</td></tr>
+<tr><td>② 主题陈述</td><td>5%</td><td>主角要解决的命题</td><td>第 1 集末</td></tr>
+<tr><td>③ 铺垫</td><td>1-10%</td><td>人物关系 + 世界观</td><td>第 1-3 集</td></tr>
+<tr><td>④ 触发事件</td><td>10%</td><td>打破平衡的"猫叫"</td><td>第 3 集末</td></tr>
+<tr><td>⑤ 辩论</td><td>10-20%</td><td>主角是否行动</td><td>第 4-6 集</td></tr>
+<tr><td>⑥ 第二幕开始</td><td>20%</td><td>进入对抗</td><td>第 6 集</td></tr>
+<tr><td>⑦ 副线</td><td>20-50%</td><td>B 故事 + 感情线</td><td>第 7-15 集</td></tr>
+<tr><td>⑧ 乐趣与游戏</td><td>20-50%</td><td>爽点密集</td><td>第 7-15 集(每集 1-2 爽点)</td></tr>
+<tr><td>⑨ 中点</td><td>50%</td><td>重大反转 / 觉醒</td><td>第 15 集(高潮 / 付费卡点)</td></tr>
+<tr><td>⑩ 反派逼近</td><td>50-75%</td><td>敌人占上风</td><td>第 16-22 集</td></tr>
+<tr><td>⑪ 一无所有</td><td>75%</td><td>主角最低谷</td><td>第 22-23 集</td></tr>
+<tr><td>⑫ 灵魂的黑夜</td><td>75-80%</td><td>主角内心独白</td><td>第 23 集</td></tr>
+<tr><td>⑬ 第三幕开始</td><td>80%</td><td>主角决定反击</td><td>第 24 集</td></tr>
+<tr><td>⑭ 决战</td><td>80-99%</td><td>高潮对决</td><td>第 25-29 集</td></tr>
+<tr><td>⑮ 终场画面</td><td>99-100%</td><td>结局 + 钩子(续作)</td><td>第 30 集</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3 id="b4">0.4 短剧 vs 电影 · 6 大核心差异(必学)</h3>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>维度</th><th>电影</th><th>短剧</th><th>短剧改写要点</th></tr></thead>
+<tbody>
+<tr><td><strong>前 5 秒</strong></td><td>Logo / 演职员</td><td><strong>冲突 / 悬念</strong></td><td>删演职员,直接打脸</td></tr>
+<tr><td><strong>对白长度</strong></td><td>30-50 字/句</td><td><strong>≤ 20 字/句</strong></td><td>拆长句,删修饰</td></tr>
+<tr><td><strong>内心戏</strong></td><td>长段独白</td><td><strong>外化为动作 / 表情</strong></td><td>"他心里想"→"他攥紧拳头"</td></tr>
+<tr><td><strong>环境描写</strong></td><td>500-2000 字</td><td><strong>0-50 字</strong></td><td>环境描写归零,只留"咖啡馆/家/公司"</td></tr>
+<tr><td><strong>节奏密度</strong></td><td>3-5 场/分钟</td><td><strong>8-12 场/分钟</strong></td><td>每 5-8 秒切景</td></tr>
+<tr><td><strong>钩子频率</strong></td><td>每 5-10 分钟</td><td><strong>每集必钩</strong></td><td>短剧每集结尾必须有钩</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout purple">
+  <span class="ico">💎</span>
+  <p><strong>改写公式(玉哥版)</strong>:<strong>删 70%</strong>(次要人物/支线/环境/心理) + <strong>留 10%</strong>(核心冲突 + 主要人物) + <strong>加 20%</strong>(付费卡点 + 钩子 + 爽点)。<strong>不翻译,改写</strong>。</p>
+</div>
+
+<!-- ==================== § 1 完整 7 步流程 ==================== -->
+
+<h2 id="c0">§ 1 · 完整 7 步流程(从选书到修改)</h2>
+
+<p><strong>本章核心</strong>:小说改剧本的 7 步完整流程。<strong>每步含 SOP + 5 大坑 + 实操模板</strong>。<strong>学员按此流程跑 1 本书 = 30 天出 1 部可投剧本</strong>。</p>
+
+<div class="steps">
+  <div class="step"><div class="n">1</div><h4>选书</h4><p>5 维评估 + 番茄榜单</p></div>
+  <div class="step"><div class="n">2</div><h4>通读</h4><p>3 遍读 + 笔记</p></div>
+  <div class="step"><div class="n">3</div><h4>拆解</h4><p>列主线 + 人物卡</p></div>
+  <div class="step"><div class="n">4</div><h4>改编</h4><p>5 大铁律 + 实操</p></div>
+  <div class="step"><div class="n">5</div><h4>自检</h4><p>30 项清单</p></div>
+  <div class="step"><div class="n">6</div><h4>投稿</h4><p>12 家平台</p></div>
+  <div class="step"><div class="n">7</div><h4>修改</h4><p>5 步改稿</p></div>
+</div>
+
+<h3 id="c1">1. 选书 · 选对事就成功 50%</h3>
+
+<h4>1.1 5 维评估表(详见 v10.0)</h4>
+<p>每本番茄候选书用 5 维打分(1-10):<strong>爆款指数 + 改编难度 + IP 热度 + 平台匹配 + 制作成本</strong>。<strong>总分 ≥ 35</strong> 选,≤ 25 直接放弃。</p>
+
+<h4>1.2 选书 5 大坑</h4>
+<ol>
+  <li><strong>选大热书(必撞车)</strong> — 大热书 50+ 改编同时跑,你抢不过头部公司</li>
+  <li><strong>选冷门书(没流量)</strong> — 没粉丝基础,平台不一定收</li>
+  <li><strong>选男频文(平台不爱)</strong> — 短剧 80% 收女频</li>
+  <li><strong>选 IP 已被改编的</strong> — 改编权 + 一致性麻烦</li>
+  <li><strong>选超过 200 万字的</strong> — 压缩到 30 集难度高</li>
+</ol>
+
+<h3 id="c2">2. 通读 · 读三遍再动笔</h3>
+
+<h4>2.1 通读 SOP(3 遍)</h4>
+<ul>
+  <li><strong>第 1 遍:快读</strong> — 通读整本,标出主线 / 副线 / 高潮 / 主要人物</li>
+  <li><strong>第 2 遍:精读</strong> — 慢读关键章节,标出爽点 / 钩子 / 付费卡点</li>
+  <li><strong>第 3 遍:改编笔记</strong> — 边读边写"改编思路",记下"这章删 / 这段加"</li>
+</ul>
+
+<h4>2.2 通读 5 大坑</h4>
+<ol>
+  <li><strong>只读 1 遍就动笔</strong> — 理解不深,改编必翻车</li>
+  <li><strong>读太慢(1 本花 2 周)</strong> — 30 天周期不允许</li>
+  <li><strong>不做笔记</strong> — 读到后面忘了前面</li>
+  <li><strong>舍不得删情节</strong> — 小说 80% 情节不能进短剧</li>
+  <li><strong>没标关键章节</strong> — 改编时找不到高潮</li>
+</ol>
+
+<h3 id="c3">3. 拆解 · 取框架就成功 30%</h3>
+
+<h4>3.1 拆解 7 步</h4>
+<ol>
+  <li>列主线(1 句话讲完的故事)</li>
+  <li>列副线(感情 / 复仇 / 身世)</li>
+  <li>做人物卡(主角 / 反派 / 配角,5 项:姓名/性格/动机/困境/金手指)</li>
+  <li>列爽点(30 集每集 1-2 个)</li>
+  <li>列钩子(每集结尾 1 个,5 类钩子选其一)</li>
+  <li>定卡点(15 / 25 / 30 集必设付费墙)</li>
+  <li>写 30 集大纲(每集 1-2 句话)</li>
+</ol>
+
+<h4>3.2 拆解 5 大坑</h4>
+<ol>
+  <li>主线太复杂(2 个以上支线就崩)</li>
+  <li>人物动机不清晰(读者不知道为啥这么做)</li>
+  <li>爽点太分散(没在 3-5-7-10 集密集爆发)</li>
+  <li>钩子太弱(悬念不够,留不住人)</li>
+  <li>卡点位置错(放在高潮前而不是高潮后)</li>
+</ol>
+
+<h3 id="c4">4. 改编 · 动笔的 5 大铁律</h3>
+
+<h4>4.1 改编 5 大铁律</h4>
+<ol>
+  <li><strong>第 1 集 3 秒核弹</strong> — 第 1 集前 3 秒必须有冲突/悬念/打脸</li>
+  <li><strong>每集 1 个钩子</strong> — 5 类钩子轮换,保证下一集继续看</li>
+  <li><strong>环境描写归零</strong> — 不写景,只写"咖啡馆 / 家 / 公司"</li>
+  <li><strong>对白重写</strong> — 小说对白改短剧对白,心理戏外化</li>
+  <li><strong>每 5 集 1 爽点</strong> — 3 / 7 / 12 / 17 / 22 / 27 集是爆点</li>
+</ol>
+
+<h4>4.2 改编 5 大坑</h4>
+<ol>
+  <li>前 1 集铺垫太长(10 集还没冲突)</li>
+  <li>每集钩子都"还有下集"(没吸引力)</li>
+  <li>写大段环境(没经费拍)</li>
+  <li>直接搬小说对白(念起来尴尬)</li>
+  <li>30 集没爽点(看完整本没爆点)</li>
+</ol>
+
+<h3 id="c5">5. 自检 · 30 项清单</h3>
+
+<h4>5.1 30 项自检清单(改稿前必查)</h4>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>类</th><th>项</th><th>自检</th></tr></thead>
+<tbody>
+<tr><td rowspan="6">结构</td><td>第 1 集前 3 秒有冲突</td><td>☐</td></tr>
+<tr><td>第 1 集末有钩子</td><td>☐</td></tr>
+<tr><td>30 集大纲清晰(1-2 句/集)</td><td>☐</td></tr>
+<tr><td>主线 1 条 + 副线 1-2 条</td><td>☐</td></tr>
+<tr><td>15 集 / 30 集有付费卡点</td><td>☐</td></tr>
+<tr><td>主角有金手指/反差</td><td>☐</td></tr>
+<tr><td rowspan="6">人物</td><td>主角动机清晰</td><td>☐</td></tr>
+<tr><td>反派分层(4 层递进)</td><td>☐</td></tr>
+<tr><td>每个角色有 1 句口头禅</td><td>☐</td></tr>
+<tr><td>主角有 1 个软肋</td><td>☐</td></tr>
+<tr><td>反派有"洗白"瞬间(可选)</td><td>☐</td></tr>
+<tr><td>配角不超过 5 个</td><td>☐</td></tr>
+<tr><td rowspan="6">节奏</td><td>每 5 集 1 个爽点</td><td>☐</td></tr>
+<tr><td>每集结尾有钩子(5 类选其一)</td><td>☐</td></tr>
+<tr><td>无超过 3 集无冲突的连续段</td><td>☐</td></tr>
+<tr><td>15 集 + 30 集是高潮</td><td>☐</td></tr>
+<tr><td>无长篇内心独白</td><td>☐</td></tr>
+<tr><td>无超过 100 字的连续对白</td><td>☐</td></tr>
+<tr><td rowspan="6">对白</td><td>每句对白 ≤ 20 字</td><td>☐</td></tr>
+<tr><td>无小说式书面对白</td><td>☐</td></tr>
+<tr><td>对白有潜台词</td><td>☐</td></tr>
+<tr><td>无声优念不出的绕口令</td><td>☐</td></tr>
+<tr><td>无超过 3 行的连续对白</td><td>☐</td></tr>
+<tr><td>关键台词重复 / 强调</td><td>☐</td></tr>
+<tr><td rowspan="6">合规</td><td>无政治敏感</td><td>☐</td></tr>
+<tr><td>无色情暗示</td><td>☐</td></tr>
+<tr><td>无血腥暴力</td><td>☐</td></tr>
+<tr><td>无对特定群体歧视</td><td>☐</td></tr>
+<tr><td>无未授权品牌 / 商标</td><td>☐</td></tr>
+<tr><td>30 项全部通过</td><td>☐</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3 id="c6">6. 投稿 · 选对平台 + 听编辑反馈</h3>
+
+<h4>6.1 平台选择 3 维</h4>
+<p><strong>12 家收稿平台</strong>(详见 v3.0 第 15 章):红果 / 九州 / 七猫 / 抖音 / 快手 / B 站 / 番茄 / 阅文 / 起点 / 纵横 / 黑岩 / 磨铁。<strong>优先投 3 家</strong>:</p>
+<ul>
+  <li><strong>红果</strong> — 短剧头部,需求大</li>
+  <li><strong>九州</strong> — 短剧新贵,审稿快</li>
+  <li><strong>七猫</strong> — IP 库丰富</li>
+</ul>
+
+<h4>6.2 投稿 3 大坑</h4>
+<ol>
+  <li>一份剧本投 12 家(没诚意,编辑反感)</li>
+  <li>不看平台风格(红果要爽剧,七猫要温情剧)</li>
+  <li>投后不跟进(2 周没回音没催)</li>
+</ol>
+
+<h3 id="c7">7. 修改 · 听反馈是门艺术</h3>
+
+<h4>7.1 改稿 5 步</h4>
+<ol>
+  <li>读编辑反馈(2-3 遍,理解意图)</li>
+  <li>判断合理性(80% 编辑反馈是对的)</li>
+  <li>列修改清单(每条反馈 → 具体修改点)</li>
+  <li>改 + 保留好版本(原版备份)</li>
+  <li>提交 + 标记修改(让编辑知道你听了)</li>
+</ol>
+
+<h4>7.2 改稿 5 大坑</h4>
+<ol>
+  <li>编辑反馈 = 全部照搬(不思考)</li>
+  <li>改完不保留原版(回滚难)</li>
+  <li>改完不标记修改(编辑还要重新看)</li>
+  <li>提交后继续改(影响审稿)</li>
+  <li>改 5 遍以上(说明选题错了)</li>
+</ol>
+
+<!-- ==================== § 2 AI 辅助 ==================== -->
+
+<h2 id="ai">§ 2 · AI 辅助 · 4 大工具用法</h2>
+
+<p>AI 工具是编剧的<strong>副驾</strong>。<strong>不替代编剧</strong>,但能<strong>提速 5 倍</strong>。</p>
+
+<h3>2.1 Claude / ChatGPT:剧本改写 + 优化</h3>
+<div class="template"><span class="k">📋 Prompt · 改写第 N 集</span>
+
+你是短剧编剧。基于以下 30 集大纲 + 第 N 集原小说内容,改写 800-1500 字短剧剧本。
+
+<span class="k">改写铁律</span>:
+- 第 1 集前 3 秒冲突 / 30 秒钩子
+- 对白 ≤ 20 字/句
+- 无长段环境描写
+- 心理戏外化为动作
+- 每 5 集 1 爽点
+- 每集结尾 1 钩子
+
+<span class="k">输出格式</span>:严格按短剧标准格式(场景 / 景别 / 人物 / 台词)
+
+<span class="k">我的输入</span>:
+- 书名:{你的书名}
+- 第 N 集:{数字}
+- 大纲(每集 1-2 句):{你的 30 集大纲}
+- 原文关键章节:{从小说复制 500-1000 字}
+- 题材:{你的题材,8 大类选其一}
+- 主角设定:{姓名/性格/困境/金手指}
+- 反派:{姓名/与主角矛盾}
+- 本集核心爽点:{8 类选其一}</div>
+
+<h3>2.2 Claude:对话优化(单句重写)</h3>
+<div class="template"><span class="k">Prompt</span>:把这句短剧对白优化到 ≤ 20 字,口语化,有潜台词:
+
+原句:{粘贴}
+
+输出 3 个候选。</div>
+
+<h3>2.3 豆包 / Kimi:人物卡生成</h3>
+<div class="template"><span class="k">Prompt</span>:基于小说《{书名}》生成 4 个主要人物卡:
+
+姓名 / 年龄 / 性格 3 个关键词 / 动机 / 困境 / 金手指 / 与主角关系 / 口头禅
+
+输出 4 个人物,每个人 8 项。</div>
+
+<h3>2.4 通义听悟 / 飞书妙记:录音转写</h3>
+<p>口述大纲 → 录音 → 转写 → 编辑。<strong>适合打字慢</strong>的学员。</p>
+
+<!-- ==================== § 3 真实案例 ==================== -->
+
+<h2 id="case">§ 3 · 3 个真实改编案例 · 必看</h2>
+
+<h3>3.1 案例 1:《八零后妈》原文 → 剧本(听花岛改编)</h3>
+<p>番茄女频 TOP 10,2024 H1 改编短剧爆款。<strong>改编要点</strong>:删 80% 配角 / 3 条副线全砍 / 加 6 个付费卡点 / 主角人设改"柔弱 → 智斗"。</p>
+
+<h3>3.2 案例 2:《十日终焉》改编难点(虚构方案)</h3>
+<p>番茄悬疑天花板。<strong>难点</strong>:无限流设定 / 多时间线 / 心理悬疑。改编方案:用"3 幕 + 每集单循环"结构压缩 1000+ 章 → 30 集。</p>
+
+<h3>3.3 案例 3:玉哥自己改 1 本书 · 8 周时间表</h3>
+<ol>
+  <li><strong>选书 + 立项</strong>(D1-3):番茄 TOP 200 → 5 维评估 → 选 1 本</li>
+  <li><strong>通读 3 遍</strong>(D4-7):标主线 / 副线 / 人物 / 爽点</li>
+  <li><strong>人物卡 + 大纲</strong>(D8-10):4 人物 + 30 集大纲</li>
+  <li><strong>第 1 集剧本</strong>(D11-14):800-1500 字,前 3 秒冲突</li>
+  <li><strong>第 2-10 集</strong>(D15-25):每集 800-1500 字</li>
+  <li><strong>自检 + 修改</strong>(D26-28):30 项清单</li>
+  <li><strong>投稿</strong>(D29-30):投 3 家平台</li>
+  <li><strong>听反馈 + 修改</strong>(D31-56):改 2-3 轮</li>
+</ol>
+
+<!-- ==================== § 4 速查卡 ==================== -->
+
+<h2 id="card">§ 4 · 速查卡 · 1 页打印贴墙</h2>
+
+<div class="callout tip">
+  <span class="ico">📋</span>
+  <p><strong>建议</strong>:<strong>打印这页贴墙</strong>,每天看一眼。30 天后这页内容变成肌肉记忆。</p>
+</div>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>步</th><th>动作</th><th>时间</th><th>输出</th><th>必做</th></tr></thead>
+<tbody>
+<tr><td>1. 选书</td><td>5 维评估</td><td>1-2 天</td><td>1 本候选</td><td>≥ 35 分才选</td></tr>
+<tr><td>2. 通读</td><td>3 遍</td><td>3-4 天</td><td>笔记</td><td>必须做笔记</td></tr>
+<tr><td>3. 拆解</td><td>7 步</td><td>2-3 天</td><td>30 集大纲</td><td>每集 1-2 句</td></tr>
+<tr><td>4. 改编</td><td>5 大铁律</td><td>10-15 天</td><td>30 集剧本</td><td>每集 800-1500 字</td></tr>
+<tr><td>5. 自检</td><td>30 项</td><td>2-3 天</td><td>通过</td><td>30/30 才投稿</td></tr>
+<tr><td>6. 投稿</td><td>3 家</td><td>1 天</td><td>3 个回音</td><td>优先红果/九州/七猫</td></tr>
+<tr><td>7. 修改</td><td>2-3 轮</td><td>4 周</td><td>过稿</td><td>保留原版</td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- ==================== § 5 编剧进阶 ==================== -->
+
+<h2 id="d1">§ 5 · 编剧进阶 · 大神路径(5 大经典理论)</h2>
+
+<div class="callout purple">
+  <span class="ico">👑</span>
+  <p><strong>本章</strong>面向<strong>想成为顶级编剧</strong>的学员。<strong>5 大编剧圣经</strong>(救猫咪/McKee/Vogler/Field/Truby) + 8 大题材模板 + 玉哥 30 集改写公式。<strong>看完能写出"膜拜级"剧本</strong>。</p>
+</div>
+
+<h3>5.1 5 大经典编剧圣经(必读)</h3>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>#</th><th>书 / 理论</th><th>作者</th><th>年份</th><th>核心</th></tr></thead>
+<tbody>
+<tr><td>①</td><td><strong>救猫咪(Save the Cat)</strong></td><td>Blake Snyder</td><td>2005</td><td><strong>15 节拍表</strong>(必学)</td></tr>
+<tr><td>②</td><td><strong>故事(Story)</strong></td><td>Robert McKee</td><td>1997</td><td>故事结构 + 价值 + 场景设计</td></tr>
+<tr><td>③</td><td><strong>作家之路(The Writer's Journey)</strong></td><td>Christopher Vogler</td><td>1992</td><td><strong>英雄之旅 12 阶段</strong></td></tr>
+<tr><td>④</td><td><strong>电影剧本写作基础(Screenplay)</strong></td><td>Syd Field</td><td>1979</td><td><strong>3 幕结构鼻祖</strong></td></tr>
+<tr><td>⑤</td><td><strong>故事的解剖(The Anatomy of Story)</strong></td><td>John Truby</td><td>2007</td><td>22 步故事结构</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout info">
+  <span class="ico">📚</span>
+  <p><strong>玉哥推荐阅读顺序</strong>:<br>
+  ① 救猫咪(短剧适用性最强)→ ② 3 幕结构(基础)→ ③ 故事(进阶)→ ④ 英雄之旅(世界观构建)→ ⑤ 故事解剖(结构深度)。<strong>预算紧</strong>先看 ① + ③,够用。</p>
+</div>
+
+<h3>5.2 救猫咪 15 节拍 · 短剧压缩版(完整)</h3>
+<p>15 节拍精确控制节奏。<strong>30 集短剧映射</strong>:</p>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>节拍</th><th>作用</th><th>占比</th><th>短剧版(30 集)</th><tr></tr></thead>
+<tbody>
+<tr><td>① 开场画面</td><td>定调 + 主角处境</td><td>0-1%</td><td><strong>第 1 集前 5 秒</strong></td></tr>
+<tr><td>② 主题陈述</td><td>主角要解决的命题</td><td>5%</td><td><strong>第 2 集前 30 秒</strong></td></tr>
+<tr><td>③ 铺垫</td><td>人物 + 世界观</td><td>1-10%</td><td><strong>第 1-3 集</strong></td></tr>
+<tr><td>④ 触发事件</td><td>"猫叫"</td><td>10%</td><td><strong>第 3 集末(钩子)</strong></td></tr>
+<tr><td>⑤ 辩论</td><td>是否行动</td><td>10-20%</td><td><strong>第 4-5 集</strong></td></tr>
+<tr><td>⑥ 第二幕开始</td><td>进入对抗</td><td>20%</td><td><strong>第 6 集</strong></td></tr>
+<tr><td>⑦ 副线</td><td>B 故事 / 感情</td><td>20-50%</td><td><strong>第 7-15 集</strong></td></tr>
+<tr><td>⑧ 乐趣与游戏</td><td>爽点密集</td><td>20-50%</td><td><strong>第 7-15 集(每集 1-2 爽点)</strong></td></tr>
+<tr><td>⑨ 中点</td><td>重大反转</td><td>50%</td><td><strong>第 15 集(高潮 / 付费卡点)</strong></td></tr>
+<tr><td>⑩ 反派逼近</td><td>敌人占上风</td><td>50-75%</td><td><strong>第 16-22 集</strong></td></tr>
+<tr><td>⑪ 一无所有</td><td>最低谷</td><td>75%</td><td><strong>第 23 集</strong></td></tr>
+<tr><td>⑫ 灵魂的黑夜</td><td>内心独白</td><td>75-80%</td><td><strong>第 24 集</strong></td></tr>
+<tr><td>⑬ 第三幕开始</td><td>决定反击</td><td>80%</td><td><strong>第 25 集</strong></td></tr>
+<tr><td>⑭ 决战</td><td>高潮对决</td><td>80-99%</td><td><strong>第 26-29 集</strong></td></tr>
+<tr><td>⑮ 终场画面</td><td>结局 + 续作钩子</td><td>99-100%</td><td><strong>第 30 集</strong></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>5.3 短剧改编公式 · 玉哥版</h3>
+
+<div class="callout warn">
+  <span class="ico">💎</span>
+  <p><strong>删 70% 留 10% 加 20%</strong> = 短剧改编核心公式。</p>
+</div>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>动作</th><th>占比</th><th>操作</th></tr></thead>
+<tbody>
+<tr><td>删 70%</td><td>次要人物 + 支线 + 环境 + 心理</td><td>大幅砍,只留主线</td></tr>
+<tr><td>留 10%</td><td>核心冲突 + 主要人物</td><td>原汁原味,保 80% 风格</td></tr>
+<tr><td>加 20%</td><td>付费卡点 + 钩子 + 爽点</td><td>15/25/30 集 + 每集钩子 + 5/12/17 集爽点</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>5.4 8 大题材模板(选书用)</h3>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>题材</th><th>核心爽感</th><th>代表 IP</th><th>改编难度</th><th>市场热度</th></tr></thead>
+<tbody>
+<tr><td>① 霸总甜宠</td><td>身份碾压 + 甜宠撒糖</td><td>家里家外</td><td>低</td><td>🔥🔥🔥🔥</td></tr>
+<tr><td>② 重生复仇</td><td>逆袭励志 + 打脸复仇</td><td>重生八零</td><td>低</td><td>🔥🔥🔥🔥</td></tr>
+<tr><td>③ 战神归来</td><td>身份碾压 + 燃爆</td><td>龙王传说</td><td>低</td><td>🔥🔥🔥</td></tr>
+<tr><td>④ 家庭伦理</td><td>打脸 + 情感纠葛</td><td>八零后妈</td><td>中</td><td>🔥🔥🔥</td></tr>
+<tr><td>⑤ 悬疑探案</td><td>悬疑反转 + 烧脑</td><td>十日终焉</td><td>高</td><td>🔥🔥</td></tr>
+<tr><td>⑥ 校园青春</td><td>甜宠 + 励志</td><td>你好旧时光</td><td>中</td><td>🔥🔥</td></tr>
+<tr><td>⑦ 古装权谋</td><td>悬疑 + 燃爆</td><td>琅琊榜</td><td>高</td><td>🔥🔥🔥</td></tr>
+<tr><td>⑧ 都市情感</td><td>甜宠 + 现实</td><td>欢乐颂</td><td>中</td><td>🔥🔥🔥</td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- ==================== § 6 顶级资源池 ==================== -->
+
+<h2 id="d2">§ 6 · 顶级资源池(编剧工具 + 圣经 + UP 主)</h2>
+
+<h3>6.1 GitHub 编剧 / 短剧仓库(15+ 个)</h3>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>仓库</th><th>⭐</th><th>用途</th></tr></thead>
+<tbody>
+<tr><td><a href="https://github.com/0xsline/short-drama" target="_blank">0xsline/short-drama</a></td><td>566</td><td><strong>短剧剧本 skill 13 题材/4 反派/5 钩子</strong></td></tr>
+<tr><td><a href="https://github.com/shuyu-labs/BigBanana-AI-Director" target="_blank">shuyu-labs/BigBanana-AI-Director</a></td><td>2.1k</td><td>工业级 AI 短剧/漫剧</td></tr>
+<tr><td><a href="https://github.com/Anil-matcha/Open-AI-Micro-Drama-Generator" target="_blank">Anil-matcha/Micro-Drama-Generator</a></td><td>486</td><td>多 Agent 视频流水线</td></tr>
+<tr><td><a href="https://github.com/A-cat-with-carrots/OnlyShot" target="_blank">A-cat-with-carrots/OnlyShot</a></td><td>271</td><td>5 步产线 + 17 失败模式</td></tr>
+<tr><td><a href="https://github.com/jianzongwu/AI-Novel-to-Short-Drama" target="_blank">jianzongwu/AI-Novel-to-Short-Drama</a></td><td>—</td><td>AI 小说转短剧</td></tr>
+<tr><td><a href="https://github.com/MuBaiYangCode/AI-Novel-to-Short-Drama-Script" target="_blank">MuBaiYangCode/AI-Novel-to-Short-Drama-Script</a></td><td>—</td><td>小说转短剧剧本</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>6.2 编剧圣经 5 本</h3>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>书</th><th>作者</th><th>中文版</th><th>必读</th></tr></thead>
+<tbody>
+<tr><td>救猫咪</td><td>Blake Snyder</td><td>✓ 后浪出版</td><td>★★★★★</td></tr>
+<tr><td>故事</td><td>Robert McKee</td><td>✓ 编剧的艺术(麦基)</td><td>★★★★★</td></tr>
+<tr><td>作家之路</td><td>Christopher Vogler</td><td>✓ 后浪出版</td><td>★★★★</td></tr>
+<tr><td>电影剧本写作基础</td><td>Syd Field</td><td>✓ 后浪出版</td><td>★★★★</td></tr>
+<tr><td>故事的解剖</td><td>John Truby</td><td>✓ 后浪出版</td><td>★★★★</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>6.3 B 站编剧 UP 主</h3>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>UP 主</th><th>类型</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td><strong>七秒工场</strong></td><td>短剧拆解+改编</td><td><a href="https://www.bilibili.com/read/cv43130874" target="_blank">B 站搜"七秒工场"</a></td></tr>
+<tr><td><strong>短剧编剧 / 拉片拆解合集</strong></td><td>短剧拆解</td><td><a href="https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%E6%8B%BC%E7%89%87" target="_blank">B 站搜"短剧拉片"</a></td></tr>
+<tr><td><strong>CG 迷李辰</strong></td><td>ComfyUI + 编剧</td><td><a href="https://search.bilibili.com/all?keyword=CG%E8%BF%B7%E6%9D%8E%E8%BE%B0" target="_blank">B 站搜"CG 迷李辰"</a></td></tr>
+<tr><td><strong>编剧 0 基础</strong></td><td>编剧入门</td><td><a href="https://search.bilibili.com/all?keyword=%E7%BC%96%E5%89%A7%E5%85%A5%E9%97%A8" target="_blank">B 站搜"编剧入门"</a></td></tr>
+<tr><td><strong>故事会经典</strong></td><td>故事学习</td><td><a href="https://search.bilibili.com/all?keyword=%E6%95%85%E4%BA%8B%E4%BC%9A" target="_blank">B 站搜"故事会"</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>6.4 知乎编剧大 V</h3>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>专栏</th><th>链接</th><th>内容</th></tr></thead>
+<tbody>
+<tr><td>编剧理论与技法</td><td><a href="https://www.zhihu.com/topic/19551432" target="_blank">知乎搜"编剧"</a></td><td>国际编剧理论</td></tr>
+<tr><td>短剧改编实战</td><td><a href="https://www.zhihu.com/search?type=content&q=%E7%9F%AD%E5%89%A7%E6%94%B9%E7%BC%96" target="_blank">知乎搜"短剧改编"</a></td><td>短剧改编实战</td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- ==================== § 7 视频课路径 ==================== -->
+
+<h2 id="d3">§ 7 · 全网顶级编剧视频课路径(2026-09 校验)</h2>
+
+<div class="callout purple">
+  <span class="ico">💎</span>
+  <p><strong>ComfyUI 必须配合视频课学(工具太复杂);编剧同理</strong>。<strong>本章精选全网最顶级免费编剧课</strong>,按 4 段路径排列。<strong>学员按自己段位挑课</strong>,不要全看。</p>
+</div>
+
+<h3>🐣 7.1 小白(从没写过剧本) · 5 课</h3>
+<p>目标:<strong>看完能写出 800-1500 字短剧剧本</strong>。</p>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>课程</th><th>UP / 频道</th><th>时长</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td><strong>编剧 0 基础入门</strong></td><td>B 站 · 编剧 0 基础系列</td><td>3-5 小时</td><td><a href="https://search.bilibili.com/all?keyword=%E7%BC%96%E5%89%A7%E5%85%A5%E9%97%A8" target="_blank">B 站搜"编剧入门"</a></td></tr>
+<tr><td><strong>编剧 0 基础 · 短剧</strong></td><td>编剧 0 基础 (B 站)</td><td>2-3 小时</td><td><a href="https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%E7%BC%96%E5%89%A7" target="_blank">B 站搜"短剧编剧"</a></td></tr>
+<tr><td><strong>救猫咪 15 节拍精讲</strong></td><td>编剧之友 (B 站)</td><td>1-2 小时</td><td><a href="https://search.bilibili.com/all?keyword=%E6%95%91%E7%8C%AB%E5%92%AA" target="_blank">B 站搜"救猫咪 15 节拍"</a></td></tr>
+<tr><td><strong>编剧课 / 编剧入门到精通</strong></td><td>编剧课 (B 站)</td><td>5-10 小时</td><td><a href="https://search.bilibili.com/all?keyword=%E7%BC%96%E5%89%A7%E8%AF%BE" target="_blank">B 站搜"编剧课"</a></td></tr>
+<tr><td><strong>短剧写作入门</strong></td><td>编剧之友 (B 站)</td><td>1-2 小时</td><td><a href="https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%E5%86%99%E4%BD%9C%E5%85%A5%E9%97%A8" target="_blank">B 站搜"短剧写作入门"</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>🌱 7.2 入门(会写剧本,想批量) · 4 课</h3>
+<p>目标:<strong>30 天出 1 部可投剧本</strong>。</p>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>课程</th><th>UP / 频道</th><th>时长</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td><strong>小说改剧本实操</strong></td><td>短剧改编实战 (B 站)</td><td>3-5 小时</td><td><a href="https://search.bilibili.com/all?keyword=%E5%B0%8F%E8%AF%B4%E6%94%B9%E5%89%A7%E6%9C%AC" target="_blank">B 站搜"小说改剧本"</a></td></tr>
+<tr><td><strong>短剧改编 5 大铁律</strong></td><td>短剧拉片 (B 站)</td><td>1-2 小时</td><td><a href="https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%E6%94%B9%E7%BC%96" target="_blank">B 站搜"短剧改编"</a></td></tr>
+<tr><td><strong>剧本格式精讲</strong></td><td>编剧理论 (B 站)</td><td>1 小时</td><td><a href="https://search.bilibili.com/all?keyword=%E5%89%A7%E6%9C%AC%E6%A0%BC%E5%BC%8F" target="_blank">B 站搜"剧本格式"</a></td></tr>
+<tr><td><strong>30 集短剧大纲写法</strong></td><td>短剧编剧 (B 站)</td><td>2 小时</td><td><a href="https://search.bilibili.com/all?keyword=30%E9%9B%86%E5%A4%A7%E7%BA%B2" target="_blank">B 站搜"30 集大纲"</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>🚀 7.3 进阶(成熟编剧,想做爆款) · 4 课</h3>
+<p>目标:<strong>写出"爆款"级别剧本</strong>。</p>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>课程</th><th>UP / 频道</th><th>时长</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td><strong>救猫咪精读</strong></td><td>编剧理论 (B 站)</td><td>5-8 小时</td><td><a href="https://search.bilibili.com/all?keyword=%E6%95%91%E7%8C%AB%E5%92%AA%E7%B2%BE%E8%AF%BB" target="_blank">B 站搜"救猫咪精读"</a></td></tr>
+<tr><td><strong>故事(麦基)精讲</strong></td><td>编剧理论 (B 站)</td><td>5-10 小时</td><td><a href="https://search.bilibili.com/all?keyword=%E8%B0%A2%E9%9C%80%E5%BA%93%E6%95%85%E4%BA%8B" target="_blank">B 站搜"麦基 故事"</a></td></tr>
+<tr><td><strong>英雄之旅 12 阶段</strong></td><td>编剧理论 (B 站)</td><td>2-3 小时</td><td><a href="https://search.bilibili.com/all?keyword=%E8%8B%B1%E9%9B%84%E4%B9%8B%E6%97%85" target="_blank">B 站搜"英雄之旅"</a></td></tr>
+<tr><td><strong>故事解剖(Truby)</strong></td><td>编剧理论 (B 站)</td><td>3-5 小时</td><td><a href="https://search.bilibili.com/all?keyword=%E6%95%85%E4%BA%8B%E8%A7%A3%E5%89%96" target="_blank">B 站搜"故事解剖"</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>👑 7.4 大神(顶级编剧 / 想出书) · 3 课</h3>
+<p>目标:<strong>从"接单"到"开山立派"</strong>。</p>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>课程</th><th>UP / 频道</th><th>时长</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td><strong>编剧 / 制片人 / 行业实践</strong></td><td>许鞍华讲编剧 (B 站)</td><td>10+ 小时</td><td><a href="https://search.bilibili.com/all?keyword=%E8%AE%B8%E9%9E%91%E5%8D%8E%E7%BC%96%E5%89%A7" target="_blank">B 站搜"许鞍华编剧"</a></td></tr>
+<tr><td><strong>中央戏剧学院编剧课</strong></td><td>中戏公开课 (B 站)</td><td>20+ 小时</td><td><a href="https://search.bilibili.com/all?keyword=%E4%B8%AD%E5%A4%AE%E6%88%8F%E5%89%A7%E5%AD%A6%E9%99%A2%E7%BC%96%E5%89%A7" target="_blank">B 站搜"中戏 编剧"</a></td></tr>
+<tr><td><strong>短剧编剧中心制实战</strong></td><td>短剧编剧中心 (B 站)</td><td>5-10 小时</td><td><a href="https://search.bilibili.com/all?keyword=%E7%BC%96%E5%89%A7%E4%B8%AD%E5%BF%83%E5%88%B6" target="_blank">B 站搜"编剧中心制"</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout info">
+  <span class="ico">📌</span>
+  <p><strong>学完这页,不用看任何其他编剧教程了</strong>。<strong>0-4 编剧基础 + 1-7 步实操 + AI/案例/速查 + 5 大编剧圣经 + 15+ GitHub 仓库 + 16 课顶级视频课</strong> = 全网最完整"小说改剧本"地图。</p>
+</div>
+
+</main>
+</div>
+
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="后期放公众号二维码">
+      <img class="qr-img" src="../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../changelog.html">📅 更新日志</a></li>
+      <li><a href="mailto:yuge@local.demo">✉ 联系玉哥</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流 · 京 ICP 备 XXXXXXXX 号(待补)
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('aside a').forEach(function(a){
+    a.addEventListener('click',function(){
+      document.querySelectorAll('aside a').forEach(function(x){
+        x.style.color='';x.style.background='';x.style.borderLeftColor='transparent';
+      });
+      a.style.color='#5ee0a7';a.style.background='#161a23';a.style.borderLeftColor='#5ee0a7';
+    });
+  });
+});
+</script>
+</body>
+</html>

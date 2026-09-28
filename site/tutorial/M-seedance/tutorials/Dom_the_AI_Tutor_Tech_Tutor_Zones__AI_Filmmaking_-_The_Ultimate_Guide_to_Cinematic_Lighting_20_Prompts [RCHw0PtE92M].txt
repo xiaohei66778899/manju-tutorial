@@ -1,0 +1,18 @@
+来源URL: https://www.youtube.com/watch?v=RCHw0PtE92M
+作者/频道: Dom the AI Tutor | Tech Tutor Zones
+发布日期: 2026-01-03
+时长: 10分23秒 (622.6秒)
+分辨率与体积: 1280x720 (720p AV1), 27.4 MB
+字幕: 英文自动字幕 (en.srt, en-orig.srt)
+简介: 已保存为同根名 .description.txt
+
+核心内容摘要:
+本片专门讲解光影与氛围类提示词，共演示 20 种电影级布光方案的提示词与成片对照。
+1. 古典布光提示词: 伦勃朗三角光 (Rembrandt Triangle)、蝴蝶光 (Butterfly Lighting) 等经典布光的提示词写法。
+2. 三点布光系统: 主光、辅光、轮廓光的提示词组合公式。
+3. 色温控制提示词: 教如何用 Kelvin 色值描述冷暖色调氛围。
+4. 特殊光效提示词: 投影图案 (Gobo Projections)、体积光/丁达尔效应 (Volumetric God Rays) 的写法。
+5. 负面补光 (Negative Fill): 用明暗对比增强电影感的高级提示词技巧。
+6. 自然光氛围: 大气自然光、黄昏、逆光等氛围类提示词。
+
+推荐教学点: 光影氛围提示词专项课 —— 适合作为"光影/氛围词汇表"教学，放在课件视觉风格章节，补充 Dan Kieft 运镜篇未覆盖的布光维度。

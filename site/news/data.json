@@ -1,0 +1,3686 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2026-09-17T03:31:43.329Z",
+  "total": 102,
+  "sources": [
+    "GitHub Trending(AI/视频/短剧)",
+    "钛媒体",
+    "量子位",
+    "玉哥 v10.0",
+    "玉哥 v9.0 数据",
+    "本教程站",
+    "OpenAI Blog",
+    "GitHub",
+    "ComfyUI GitHub",
+    "Runway 官方",
+    "Appmagic",
+    "Hugging Face / GitHub",
+    "Sensor Tower",
+    "Boss 直聘",
+    "Suno 官方",
+    "Midjourney 官方",
+    "可灵官方",
+    "字节火山引擎",
+    "北青网 / 央视新闻",
+    "北青网",
+    "人民日报海外版",
+    "广电总局通报",
+    "央视网",
+    "海螺官方",
+    "广东网信网",
+    "抖音集团短剧创作者中心"
+  ],
+  "news": [
+    {
+      "id": 40,
+      "title": "[GitHub Trending] openai / whisper (Python)",
+      "title_zh": "OpenAI Whisper 登上 GitHub 趋势榜：基于大规模弱监督的鲁棒语音识别",
+      "category": "overseas",
+      "category_label": "海外资讯",
+      "tag": "速报",
+      "tags": [
+        "Whisper",
+        "语音识别",
+        "OpenAI",
+        "开源",
+        "配音"
+      ],
+      "summary": "Robust Speech Recognition via Large-Scale Weak Supervision · ⭐ Built by",
+      "source": "GitHub Trending(AI/视频/短剧)",
+      "url": "https://github.com/openai/whisper",
+      "canonical_url": "https://github.com/openai/whisper",
+      "date": "2026-09-17",
+      "fetched_at": "2026-09-17T01:26:28.200Z",
+      "confidence": 0.9,
+      "sensitive": false,
+      "permanent": false,
+      "status": "published",
+      "llm_summary": "OpenAI 开源语音识别项目 Whisper 登上 GitHub Trending 榜单。该项目采用大规模弱监督训练方法，实现鲁棒的语音识别能力，支持多语言转写与翻译。作为开源模型，Whisper 可被集成到各类音视频处理流程中，为内容创作者提供自动字幕、语音转文字等基础能力。",
+      "llm_key_points": [
+        "OpenAI Whisper 登上 GitHub Trending 榜单",
+        "基于大规模弱监督训练，强调鲁棒语音识别",
+        "开源项目，支持多语言语音转写",
+        "可应用于字幕生成、配音等音视频创作环节"
+      ],
+      "llm_impact": "Whisper 为短剧和漫剧团队提供了低成本、可本地部署的语音转文字与字幕生成方案，能显著降低配音、字幕和口型同步等环节的人工成本；对 AI 工具开发者而言，它是构建配音、剪辑自动化工作流的重要基础组件。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "AI 工具开发者",
+        "运营"
+      ],
+      "llm_processed_at": "2026-09-17T03:03:21.629Z"
+    },
+    {
+      "id": 53,
+      "title": "年轻人不再为 AI 兴奋",
+      "title_zh": "年轻人不再为 AI 兴奋",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "速报",
+      "tags": [
+        "速报"
+      ],
+      "summary": "历史上第一次，多数30岁以下成年人表示对AI的担忧多于兴奋。",
+      "source": "钛媒体",
+      "url": "https://www.tmtpost.com/8142630.html",
+      "canonical_url": "https://tmtpost.com/8142630.html",
+      "date": "2026-09-17",
+      "fetched_at": "2026-09-17T02:16:44.163Z",
+      "confidence": 0,
+      "sensitive": false,
+      "permanent": false,
+      "status": "pending_review",
+      "llm_skipped": true,
+      "llm_reason": "该新闻仅涉及公众对AI的情绪态度调查，未涉及AI/AIGC内容创作、视频工具、短剧漫剧平台或相关政策，与创作行业无直接关联。"
+    },
+    {
+      "id": 54,
+      "title": "AI手机2.0，豆包这次“学乖”了",
+      "title_zh": "AI手机2.0时代，豆包这次选择合规优先",
+      "category": "policy",
+      "category_label": "政策监管",
+      "tag": "政策",
+      "tags": [
+        "AI手机",
+        "豆包",
+        "合规",
+        "字节跳动",
+        "端侧AI"
+      ],
+      "summary": "用合规换安全。",
+      "source": "钛媒体",
+      "url": "https://www.tmtpost.com/8142454.html",
+      "canonical_url": "https://tmtpost.com/8142454.html",
+      "date": "2026-09-17",
+      "fetched_at": "2026-09-17T02:16:44.163Z",
+      "confidence": 0.72,
+      "sensitive": false,
+      "permanent": false,
+      "status": "published",
+      "llm_summary": "文章讨论字节跳动旗下豆包在AI手机2.0阶段的产品策略调整，核心是以合规换取安全性。此前AI手机在权限调用、数据隐私等方面面临监管与用户质疑，豆包此次强调合规优先，意味着其在系统级AI助手的能力开放上更加谨慎，避免因越权操作或隐私问题引发风险。这一转向反映出AI终端产品在功能创新与合规安全之间的平衡难题。",
+      "llm_key_points": [
+        "豆包在AI手机2.0阶段调整策略，主打合规",
+        "以合规换安全，规避权限与隐私风险",
+        "反映AI手机在系统级能力开放上的监管压力",
+        "字节跳动在端侧AI助手赛道持续布局"
+      ],
+      "llm_impact": "对AI工具方而言，系统级AI助手的合规门槛正在提高，功能设计需提前考虑权限与隐私边界；对短剧/漫剧创作者，手机端AI助手若更规范，可能带来更稳定的创作辅助体验，但短期功能开放或趋保守；对投资人，AI手机赛道竞争焦点从功能堆叠转向合规能力。",
+      "llm_audience": [
+        "AI工具开发者",
+        "投资人",
+        "运营",
+        "科技行业观察者"
+      ],
+      "llm_processed_at": "2026-09-17T03:03:32.244Z"
+    },
+    {
+      "id": 55,
+      "title": "临床资产为零，估值15亿美元：字节的AI制药生意在赌什么？",
+      "title_zh": "临床资产为零，估值15亿美元：字节的AI制药生意在赌什么？",
+      "category": "business",
+      "category_label": "市场商业",
+      "tag": "速报",
+      "tags": [
+        "速报"
+      ],
+      "summary": "一个还没进临床的分子，凭什么撑起15亿美元估值？拆解字节Anew Labs的首轮融资结构。",
+      "source": "钛媒体",
+      "url": "https://www.tmtpost.com/8142491.html",
+      "canonical_url": "https://tmtpost.com/8142491.html",
+      "date": "2026-09-17",
+      "fetched_at": "2026-09-17T02:16:44.163Z",
+      "confidence": 0.7,
+      "sensitive": false,
+      "permanent": false,
+      "status": "published",
+      "llm_skipped": true,
+      "llm_reason": "该新闻聚焦字节跳动AI制药业务Anew Labs的融资与估值，属于AI在生物医药领域的应用，与AI/AIGC内容创作、短剧/漫剧、视频工具、平台动态等无关。"
+    },
+    {
+      "id": 56,
+      "title": "好内容历久弥新，AI时代年轻人为何沉迷于考古和整活？",
+      "title_zh": "好内容历久弥新：AI时代年轻人为何沉迷考古与整活？",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "速报",
+      "tags": [
+        "内容创作",
+        "经典翻红",
+        "AI时代",
+        "年轻用户",
+        "创作趋势"
+      ],
+      "summary": "旧作的翻红让我们看到，好内容的影响力可能会迟到，但一定不会缺席。",
+      "source": "钛媒体",
+      "url": "https://www.tmtpost.com/8142164.html",
+      "canonical_url": "https://tmtpost.com/8142164.html",
+      "date": "2026-09-17",
+      "fetched_at": "2026-09-17T02:16:44.163Z",
+      "confidence": 0.8,
+      "sensitive": false,
+      "permanent": false,
+      "status": "pending_review",
+      "llm_summary": "文章探讨了在AI技术快速发展的背景下，年轻人反而热衷于考古旧内容并进行二次创作（整活）的现象。指出好内容的影响力可能迟到但不会缺席，旧作翻红证明了优质内容的持久生命力。这一趋势对AI内容创作者具有启示意义：在追求技术效率的同时，内容本身的质量和情感共鸣仍是核心。",
+      "llm_key_points": [
+        "AI时代年轻人出现考古旧内容和二次创作（整活）的潮流",
+        "旧作翻红表明好内容的影响力可能迟到但不会缺席",
+        "优质内容的持久生命力不因技术迭代而减弱",
+        "对AI内容创作者而言，内容质量与情感共鸣仍是关键"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，应重视内容本身的品质和情感价值，而非单纯依赖AI技术堆砌；AI工具方需思考如何辅助创作出更具持久生命力的内容；投资人可关注经典IP的二次开发与AI结合的机会。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "AI工具开发者",
+        "运营",
+        "投资人"
+      ],
+      "llm_processed_at": "2026-09-17T03:03:36.952Z"
+    },
+    {
+      "id": 57,
+      "title": "豆包手机，开始“敲门”",
+      "title_zh": "豆包手机开始“敲门”，争夺AI入口",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "速报",
+      "tags": [
+        "豆包",
+        "AI入口",
+        "字节跳动",
+        "手机",
+        "AI助手"
+      ],
+      "summary": "争夺AI入口。",
+      "source": "钛媒体",
+      "url": "https://www.tmtpost.com/8142170.html",
+      "canonical_url": "https://tmtpost.com/8142170.html",
+      "date": "2026-09-17",
+      "fetched_at": "2026-09-17T02:16:44.163Z",
+      "confidence": 0.8,
+      "sensitive": false,
+      "permanent": false,
+      "status": "pending_review",
+      "llm_summary": "字节跳动旗下AI助手豆包开始进军手机领域，试图通过硬件入口争夺AI生态主导权。此举可能涉及与手机厂商合作或推出定制设备，旨在将豆包AI能力深度集成到移动终端，为用户提供更便捷的AI服务。目前具体形式尚未明确，但标志着AI助手竞争从软件向硬件延伸。",
+      "llm_key_points": [
+        "豆包作为字节跳动的AI助手，开始布局手机入口",
+        "争夺AI入口意味着从软件向硬件生态扩展",
+        "可能通过合作或定制设备实现深度集成",
+        "此举将加剧AI助手在移动端的竞争"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，AI入口的争夺可能带来更便捷的AI创作工具集成，例如通过手机端直接调用豆包进行剧本生成或视频编辑。对AI工具开发者，需关注硬件入口的适配和生态合作机会。投资人可留意字节在AI硬件领域的动向。",
+      "llm_audience": [
+        "AI工具开发者",
+        "短剧创作者",
+        "漫剧团队",
+        "投资人",
+        "运营"
+      ],
+      "llm_processed_at": "2026-09-17T03:03:40.170Z"
+    },
+    {
+      "id": 58,
+      "title": "网易有道周枫：AI能力竞争，正在进入「Model + Agent + Workflow」时代，网易有道AI Open Day展示AI时代“有道解法”",
+      "title_zh": "网易有道周枫：AI竞争进入「Model + Agent + Workflow」时代，AI Open Day展示有道解法",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "速报",
+      "tags": [
+        "网易有道",
+        "AI Agent",
+        "Workflow",
+        "大模型",
+        "AI开放日"
+      ],
+      "summary": "9月16日，网易有道「NEXT，AGENT｜有道AI Open Day」在北京举办。",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490974.html",
+      "canonical_url": "https://qbitai.com/2026/09/490974.html",
+      "date": "2026-09-17",
+      "fetched_at": "2026-09-17T02:50:33.347Z",
+      "confidence": 0.9,
+      "sensitive": false,
+      "permanent": false,
+      "status": "published",
+      "llm_summary": "9月16日，网易有道在北京举办「NEXT，AGENT｜有道AI Open Day」。网易有道CEO周枫提出，AI能力竞争正在进入「Model + Agent + Workflow」时代，强调模型、智能体与工作流三者结合是未来方向。活动展示了网易有道在AI时代的技术布局与解决方案，可能涉及教育、创作等场景的AI应用。",
+      "llm_key_points": [
+        "网易有道举办AI Open Day，主题为「NEXT，AGENT」",
+        "周枫提出AI竞争进入「Model + Agent + Workflow」时代",
+        "活动展示网易有道AI时代的「有道解法」",
+        "强调模型、智能体与工作流结合的战略方向"
+      ],
+      "llm_impact": "对AI工具开发者而言，网易有道的「Model + Agent + Workflow」理念可能推动创作工具向更自动化、流程化方向发展；短剧/漫剧团队可关注其Agent与工作流结合能否提升剧本生成、分镜等环节效率；投资人可留意网易有道在AI应用层的布局。",
+      "llm_audience": [
+        "AI工具开发者",
+        "短剧创作者",
+        "漫剧团队",
+        "投资人"
+      ],
+      "llm_processed_at": "2026-09-17T03:03:43.231Z"
+    },
+    {
+      "id": 68,
+      "title": "飞渡科技何文武：空间智能“下半场”，比的是理解、推演和决策",
+      "title_zh": "飞渡科技何文武：空间智能“下半场”，比的是理解、推演和决策",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "模型",
+      "tags": [
+        "模型"
+      ],
+      "summary": "语言模型让AI理解知识，空间智能让AI理解它所在的世界。",
+      "source": "钛媒体",
+      "url": "https://www.tmtpost.com/8142462.html",
+      "canonical_url": "https://tmtpost.com/8142462.html",
+      "date": "2026-09-17",
+      "fetched_at": "2026-09-17T02:50:33.347Z",
+      "confidence": 0,
+      "sensitive": false,
+      "permanent": false,
+      "status": "pending_review",
+      "llm_skipped": true,
+      "llm_reason": "该新闻讨论空间智能技术，未涉及AI/AIGC内容创作、短剧/漫剧、视频生成或相关平台政策等主题。"
+    },
+    {
+      "id": 69,
+      "title": "年轻人不再为 AI 兴奋",
+      "title_zh": "年轻人不再为 AI 兴奋：多数 30 岁以下成年人担忧多于期待",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "速报",
+      "tags": [
+        "AI 态度",
+        "年轻用户",
+        "公众情绪",
+        "AIGC 行业",
+        "市场趋势"
+      ],
+      "summary": "历史上第一次，多数30岁以下成年人表示对AI的担忧多于兴奋。",
+      "source": "钛媒体",
+      "url": "https://www.tmtpost.com/8142630.html",
+      "canonical_url": "https://tmtpost.com/8142630.html",
+      "date": "2026-09-17",
+      "fetched_at": "2026-09-17T02:50:33.347Z",
+      "confidence": 0.85,
+      "sensitive": false,
+      "permanent": false,
+      "status": "pending_review",
+      "llm_summary": "一项调查显示，历史上首次出现多数 30 岁以下成年人表示对 AI 的担忧多于兴奋。这一情绪转变意味着 AI 在年轻群体中的接受度正在下降，可能影响 AI 内容创作、社交传播与消费类 AI 产品的用户增长。对于依赖年轻用户和创作者生态的 AI 漫剧、短剧及 AIGC 工具而言，用户信任与价值沟通将成为新的挑战。",
+      "llm_key_points": [
+        "历史上首次多数 30 岁以下成年人表示对 AI 担忧多于兴奋",
+        "年轻人曾是 AI 产品与内容的主要接受者和传播者",
+        "情绪转向可能影响 AI 内容消费、创作工具采用与平台增长",
+        "行业需更重视 AI 透明度、版权与就业影响等公众关切"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，年轻受众对 AI 的抵触可能降低 AI 生成内容的传播效果和付费意愿；AI 工具方需要加强价值沟通与合规透明，平台和投资人则应关注用户情绪变化对增长预期的潜在影响。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "AI 工具开发者",
+        "运营",
+        "投资人"
+      ],
+      "llm_processed_at": "2026-09-17T03:03:52.469Z"
+    },
+    {
+      "id": 70,
+      "title": "AI手机2.0，豆包这次“学乖”了",
+      "title_zh": "AI手机2.0时代，豆包这次“学乖”了",
+      "category": "policy",
+      "category_label": "政策监管",
+      "tag": "政策",
+      "tags": [
+        "AI手机",
+        "豆包",
+        "合规",
+        "端侧AI",
+        "字节跳动"
+      ],
+      "summary": "用合规换安全。",
+      "source": "钛媒体",
+      "url": "https://www.tmtpost.com/8142454.html",
+      "canonical_url": "https://tmtpost.com/8142454.html",
+      "date": "2026-09-17",
+      "fetched_at": "2026-09-17T02:50:33.347Z",
+      "confidence": 0.6,
+      "sensitive": false,
+      "permanent": false,
+      "status": "published",
+      "llm_summary": "文章讨论AI手机进入2.0阶段，字节跳动旗下豆包在合规方面做出调整，以合规换取安全。摘要仅提及“用合规换安全”，未展开具体细节。",
+      "llm_key_points": [
+        "AI手机进入2.0阶段",
+        "豆包调整策略，强调合规",
+        "以合规换取安全"
+      ],
+      "llm_impact": "对AI工具开发者而言，合规成为产品迭代的重要考量；对短剧创作者，AI手机可能带来新的创作与分发场景，但需关注合规要求。",
+      "llm_audience": [
+        "AI工具开发者",
+        "短剧创作者",
+        "运营"
+      ],
+      "llm_processed_at": "2026-09-17T03:03:54.911Z"
+    },
+    {
+      "id": 71,
+      "title": "临床资产为零，估值15亿美元：字节的AI制药生意在赌什么？",
+      "title_zh": "临床资产为零，估值15亿美元：字节的AI制药生意在赌什么？",
+      "category": "business",
+      "category_label": "市场商业",
+      "tag": "速报",
+      "tags": [
+        "速报"
+      ],
+      "summary": "一个还没进临床的分子，凭什么撑起15亿美元估值？拆解字节Anew Labs的首轮融资结构。",
+      "source": "钛媒体",
+      "url": "https://www.tmtpost.com/8142491.html",
+      "canonical_url": "https://tmtpost.com/8142491.html",
+      "date": "2026-09-17",
+      "fetched_at": "2026-09-17T02:50:33.348Z",
+      "confidence": 0.7,
+      "sensitive": false,
+      "permanent": false,
+      "status": "published",
+      "llm_skipped": true,
+      "llm_reason": "该新闻聚焦字节跳动AI制药业务Anew Labs的融资与估值，属于AI在生物医药领域的应用，与AI/AIGC内容创作、短剧/漫剧、视频工具、平台动态等无关。"
+    },
+    {
+      "id": 72,
+      "title": "好内容历久弥新，AI时代年轻人为何沉迷于考古和整活？",
+      "title_zh": "好内容历久弥新：AI时代年轻人为何沉迷考古与整活？",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "速报",
+      "tags": [
+        "内容创作",
+        "AI时代",
+        "考古",
+        "整活",
+        "年轻人"
+      ],
+      "summary": "旧作的翻红让我们看到，好内容的影响力可能会迟到，但一定不会缺席。",
+      "source": "钛媒体",
+      "url": "https://www.tmtpost.com/8142164.html",
+      "canonical_url": "https://tmtpost.com/8142164.html",
+      "date": "2026-09-17",
+      "fetched_at": "2026-09-17T02:50:33.348Z",
+      "confidence": 0.9,
+      "sensitive": false,
+      "permanent": false,
+      "status": "pending_review",
+      "llm_summary": "文章探讨了在AI时代，年轻人为何热衷于考古（挖掘旧内容）和整活（二次创作），并指出好内容的影响力可能会迟到但不会缺席。旧作的翻红表明优质内容具有持久生命力，即使在新内容层出不穷的AI时代，经典作品仍能通过年轻人的再创作获得新生。",
+      "llm_key_points": [
+        "AI时代年轻人沉迷考古和整活现象",
+        "旧作翻红证明好内容历久弥新",
+        "好内容影响力可能迟到但不会缺席",
+        "优质内容在AI时代仍具持久价值"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，应注重内容质量而非单纯追逐热点，优质内容具有长尾效应；AI工具方可以思考如何辅助内容挖掘和二次创作；运营者可借鉴考古和整活思路策划话题。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "运营",
+        "内容创作者"
+      ],
+      "llm_processed_at": "2026-09-17T03:03:59.166Z"
+    },
+    {
+      "id": 73,
+      "title": "网易有道周枫：AI能力竞争，正在进入「Model + Agent + Workflow」时代，网易有道AI Open Day展示AI时代“有道解法”",
+      "title_zh": "网易有道周枫：AI能力竞争进入「Model + Agent + Workflow」时代，AI Open Day展示有道解法",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "网易有道 / Agent / Workflow / AI能力竞争 / AI Open Day",
+      "tags": [
+        "AI Agent",
+        "Workflow",
+        "网易有道",
+        "大模型",
+        "AI开放日"
+      ],
+      "summary": "9月16日，网易有道「NEXT，AGENT｜有道AI Open Day」在北京举办。",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490974.html",
+      "canonical_url": "https://qbitai.com/2026/09/490974.html",
+      "date": "2026-09-17",
+      "fetched_at": "2026-09-17T02:52:02.356Z",
+      "confidence": 0.9,
+      "sensitive": false,
+      "permanent": false,
+      "status": "published",
+      "llm_summary": "9月16日，网易有道在北京举办「NEXT，AGENT｜有道AI Open Day」。网易有道CEO周枫在会上提出，AI能力竞争正在进入「Model + Agent + Workflow」时代，即模型、智能体与工作流三者结合成为新的竞争焦点。活动展示了网易有道在AI时代的技术布局与解决方案，但具体产品细节未在摘要中展开。",
+      "llm_key_points": [
+        "网易有道举办AI Open Day，主题为「NEXT，AGENT」",
+        "周枫提出AI竞争进入「Model + Agent + Workflow」时代",
+        "强调模型、智能体与工作流三者融合",
+        "活动展示网易有道在AI时代的技术解法"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，Agent与Workflow的结合可能推动AI内容创作流程自动化，提升从剧本到成片的效率；对AI工具开发者，这一趋势意味着需加强智能体与工作流集成能力；对投资人，关注点或转向具备Agent+Workflow落地能力的AI应用公司。",
+      "llm_audience": [
+        "AI工具开发者",
+        "短剧创作者",
+        "漫剧团队",
+        "投资人",
+        "运营"
+      ],
+      "llm_processed_at": "2026-09-17T03:04:02.127Z"
+    },
+    {
+      "id": 83,
+      "title": "飞渡科技何文武：空间智能“下半场”，比的是理解、推演和决策",
+      "title_zh": "飞渡科技何文武：空间智能“下半场”，比的是理解、推演和决策",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "模型",
+      "tags": [
+        "模型"
+      ],
+      "summary": "语言模型让AI理解知识，空间智能让AI理解它所在的世界。",
+      "source": "钛媒体",
+      "url": "https://www.tmtpost.com/8142462.html",
+      "canonical_url": "https://tmtpost.com/8142462.html",
+      "date": "2026-09-17",
+      "fetched_at": "2026-09-17T02:52:02.356Z",
+      "confidence": 0,
+      "sensitive": false,
+      "permanent": false,
+      "status": "pending_review",
+      "llm_skipped": true,
+      "llm_reason": "该新闻聚焦空间智能与AI理解物理世界，未涉及AI视频、AIGC内容创作、短剧/漫剧平台或相关工具，与目标行业无关。"
+    },
+    {
+      "id": 84,
+      "title": "年轻人不再为 AI 兴奋",
+      "title_zh": "年轻人对AI的兴奋感消退：多数30岁以下成年人担忧多于兴奋",
+      "category": "business",
+      "category_label": "技术前沿",
+      "tag": "AI 态度 / 年轻用户 / 行业趋势 / 公众认知 / AIGC",
+      "tags": [
+        "AI态度",
+        "年轻用户",
+        "市场趋势",
+        "社会影响",
+        "AIGC"
+      ],
+      "summary": "历史上第一次，多数30岁以下成年人表示对AI的担忧多于兴奋。",
+      "source": "钛媒体",
+      "url": "https://www.tmtpost.com/8142630.html",
+      "canonical_url": "https://tmtpost.com/8142630.html",
+      "date": "2026-09-17",
+      "fetched_at": "2026-09-17T02:52:02.356Z",
+      "confidence": 0.9,
+      "sensitive": false,
+      "permanent": false,
+      "status": "published",
+      "llm_summary": "最新调查显示，历史上首次出现多数30岁以下成年人表示对人工智能的担忧超过兴奋。这一态度转变可能影响AI内容创作工具的普及和商业化，因为年轻用户是短剧、漫剧等AIGC内容的主要消费和创作群体。",
+      "llm_key_points": [
+        "多数30岁以下成年人首次对AI表示担忧多于兴奋",
+        "年轻人是AI内容创作和消费的主力军",
+        "态度转变可能影响AI工具的采纳率和市场增长",
+        "行业需关注用户信任和伦理问题"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，年轻受众对AI的抵触情绪可能降低AI生成内容的接受度，需更注重内容质量和伦理透明；AI工具方需加强用户信任建设；投资人应关注市场情绪变化对AI创作赛道的影响。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "AI工具开发者",
+        "运营",
+        "投资人"
+      ],
+      "llm_processed_at": "2026-09-17T03:04:10.782Z"
+    },
+    {
+      "id": 85,
+      "title": "AI手机2.0，豆包这次“学乖”了",
+      "title_zh": "AI手机2.0时代，豆包这次“学乖”了",
+      "category": "tool",
+      "category_label": "政策监管",
+      "tag": "AI手机 / 豆包 / 合规 / AI助手 / 端侧AI",
+      "tags": [
+        "AI手机",
+        "豆包",
+        "合规",
+        "端侧AI",
+        "字节跳动"
+      ],
+      "summary": "用合规换安全。",
+      "source": "钛媒体",
+      "url": "https://www.tmtpost.com/8142454.html",
+      "canonical_url": "https://tmtpost.com/8142454.html",
+      "date": "2026-09-17",
+      "fetched_at": "2026-09-17T02:52:02.356Z",
+      "confidence": 0.6,
+      "sensitive": true,
+      "permanent": false,
+      "status": "published",
+      "llm_summary": "文章讨论AI手机进入2.0阶段，字节跳动旗下豆包在经历此前争议后，此次策略转向以合规换取安全。摘要仅提及“用合规换安全”，未展开具体技术或产品细节，但核心指向AI手机助手在数据隐私、权限管理等方面的合规化调整。",
+      "llm_key_points": [
+        "AI手机概念升级至2.0阶段",
+        "豆包调整策略，强调合规优先",
+        "以合规换取安全成为核心思路",
+        "涉及字节跳动在AI终端领域的布局"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，AI手机合规化可能影响未来移动端AI创作工具的权限与数据使用方式；工具方需更注重隐私合规，避免因权限问题下架；投资人可关注字节在AI硬件生态的合规进展。",
+      "llm_audience": [
+        "AI工具开发者",
+        "短剧创作者",
+        "投资人",
+        "运营"
+      ],
+      "llm_processed_at": "2026-09-17T03:04:13.479Z"
+    },
+    {
+      "id": 86,
+      "title": "临床资产为零，估值15亿美元：字节的AI制药生意在赌什么？",
+      "title_zh": "临床资产为零，估值15亿美元：字节的AI制药生意在赌什么？",
+      "category": "business",
+      "category_label": "市场商业",
+      "tag": "速报",
+      "tags": [
+        "速报"
+      ],
+      "summary": "一个还没进临床的分子，凭什么撑起15亿美元估值？拆解字节Anew Labs的首轮融资结构。",
+      "source": "钛媒体",
+      "url": "https://www.tmtpost.com/8142491.html",
+      "canonical_url": "https://tmtpost.com/8142491.html",
+      "date": "2026-09-17",
+      "fetched_at": "2026-09-17T02:52:02.356Z",
+      "confidence": 0.7,
+      "sensitive": false,
+      "permanent": false,
+      "status": "published",
+      "llm_skipped": true,
+      "llm_reason": "该新闻关于字节跳动AI制药业务Anew Labs的融资与估值，属于AI在生物医药领域的应用，与AI/AIGC内容创作、短剧/漫剧、视频工具、平台动态等无关。"
+    },
+    {
+      "id": 87,
+      "title": "好内容历久弥新，AI时代年轻人为何沉迷于考古和整活？",
+      "title_zh": "好内容历久弥新：AI时代年轻人为何沉迷考古与整活？",
+      "category": "creation",
+      "category_label": "技术前沿",
+      "tag": "内容创作 / AI时代 / 经典翻红 / 年轻人 / 创作趋势",
+      "tags": [
+        "内容创作",
+        "AI时代",
+        "经典翻红",
+        "年轻人",
+        "创作趋势"
+      ],
+      "summary": "旧作的翻红让我们看到，好内容的影响力可能会迟到，但一定不会缺席。",
+      "source": "钛媒体",
+      "url": "https://www.tmtpost.com/8142164.html",
+      "canonical_url": "https://tmtpost.com/8142164.html",
+      "date": "2026-09-17",
+      "fetched_at": "2026-09-17T02:52:02.356Z",
+      "confidence": 0.8,
+      "sensitive": false,
+      "permanent": false,
+      "status": "published",
+      "llm_summary": "文章探讨在AI时代，年轻人为何热衷于对旧内容进行考古和二次创作（整活），并指出旧作的翻红表明好内容的影响力可能会迟到但不会缺席。",
+      "llm_key_points": [
+        "AI时代年轻人沉迷于考古和整活",
+        "旧作翻红现象普遍",
+        "好内容的影响力可能迟到但不会缺席",
+        "内容创作在AI时代的新趋势"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，经典内容的二次创作和考古可能成为新的流量机会，AI工具可辅助高效产出整活内容，但需注意版权合规。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "运营",
+        "内容创作者"
+      ],
+      "llm_processed_at": "2026-09-17T03:04:17.521Z"
+    },
+    {
+      "id": 88,
+      "title": "网易有道周枫：AI能力竞争，正在进入「Model + Agent + Workflow」时代，网易有道AI Open Day展示AI时代“有道解法”",
+      "title_zh": "网易有道周枫：AI竞争进入「Model + Agent + Workflow」时代，AI Open Day展示有道解法",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "网易有道 / AI Agent / Workflow / 大模型 / AI开放日",
+      "tags": [
+        "网易有道",
+        "AI Agent",
+        "Workflow",
+        "大模型",
+        "AI开放日"
+      ],
+      "summary": "9月16日，网易有道「NEXT，AGENT｜有道AI Open Day」在北京举办。",
+      "llm_summary": "9月16日，网易有道在北京举办「NEXT，AGENT｜有道AI Open Day」。网易有道CEO周枫提出，AI能力竞争正在进入「Model + Agent + Workflow」时代，强调模型、智能体与工作流三者结合是未来方向。活动展示了网易有道在AI时代的技术布局与解决方案，可能涉及教育、创作等场景的Agent应用。",
+      "llm_key_points": [
+        "网易有道举办AI Open Day，主题为「NEXT，AGENT」",
+        "CEO周枫提出AI竞争进入「Model + Agent + Workflow」时代",
+        "活动展示网易有道在AI时代的技术解法",
+        "强调模型、智能体与工作流融合的趋势"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，Agent与Workflow的结合可能提升内容生成与运营自动化效率；AI工具开发者可关注网易有道的技术路径，探索创作流程中的Agent应用。",
+      "llm_audience": [
+        "AI工具开发者",
+        "短剧创作者",
+        "漫剧团队",
+        "运营人员"
+      ],
+      "llm_processed_at": "2026-09-17T02:53:04.982Z",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490974.html",
+      "canonical_url": "https://qbitai.com/2026/09/490974.html",
+      "date": "2026-09-17",
+      "fetched_at": "2026-09-17T02:53:37.127Z",
+      "confidence": 0.9,
+      "sensitive": false,
+      "permanent": false,
+      "status": "published"
+    },
+    {
+      "id": 98,
+      "title": "飞渡科技何文武：空间智能“下半场”，比的是理解、推演和决策",
+      "title_zh": "飞渡科技何文武：空间智能“下半场”，比的是理解、推演和决策",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "模型",
+      "tags": [
+        "模型"
+      ],
+      "summary": "语言模型让AI理解知识，空间智能让AI理解它所在的世界。",
+      "source": "钛媒体",
+      "url": "https://www.tmtpost.com/8142462.html",
+      "canonical_url": "https://tmtpost.com/8142462.html",
+      "date": "2026-09-17",
+      "fetched_at": "2026-09-17T02:53:37.127Z",
+      "confidence": 0,
+      "sensitive": false,
+      "permanent": false,
+      "status": "pending_review",
+      "llm_skipped": true,
+      "llm_reason": "该新闻讨论空间智能的宏观概念，未涉及AI视频、AIGC内容创作、短剧/漫剧平台、政策监管或具体创作工具，与目标行业无关。"
+    },
+    {
+      "id": 99,
+      "title": "年轻人不再为 AI 兴奋",
+      "title_zh": "年轻人对AI的态度转向：担忧多于兴奋",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "速报",
+      "tags": [
+        "AI态度",
+        "用户调研",
+        "年轻用户",
+        "行业趋势",
+        "AIGC"
+      ],
+      "summary": "历史上第一次，多数30岁以下成年人表示对AI的担忧多于兴奋。",
+      "source": "钛媒体",
+      "url": "https://www.tmtpost.com/8142630.html",
+      "canonical_url": "https://tmtpost.com/8142630.html",
+      "date": "2026-09-17",
+      "fetched_at": "2026-09-17T02:53:37.127Z",
+      "confidence": 0.85,
+      "sensitive": false,
+      "permanent": false,
+      "status": "pending_review",
+      "llm_summary": "一项调查显示，历史上首次出现多数30岁以下成年人表示对AI的担忧多于兴奋。这一态度转变反映出年轻群体对AI技术快速渗透的复杂情绪，可能影响AI内容创作产品的用户增长与市场接受度。",
+      "llm_key_points": [
+        "多数30岁以下成年人首次表示对AI担忧多于兴奋",
+        "这是历史上首次出现此类态度反转",
+        "年轻用户是AI内容消费与创作的重要群体",
+        "态度变化可能影响AIGC产品的市场推广"
+      ],
+      "llm_impact": "对短剧创作者和AI工具方而言，年轻用户是核心受众，态度转冷可能影响AI生成内容的接受度和付费意愿；平台和投资人需关注用户情绪变化，调整产品叙事与合规策略。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "AI工具开发者",
+        "运营",
+        "投资人"
+      ],
+      "llm_processed_at": "2026-09-17T03:04:22.935Z"
+    },
+    {
+      "id": 100,
+      "title": "AI手机2.0，豆包这次“学乖”了",
+      "title_zh": "AI手机2.0时代，豆包这次“学乖”了",
+      "category": "tool",
+      "category_label": "政策监管",
+      "tag": "AI手机 / 豆包 / 合规 / 端侧AI / 字节跳动",
+      "tags": [
+        "AI手机",
+        "豆包",
+        "合规",
+        "端侧AI",
+        "字节跳动"
+      ],
+      "summary": "用合规换安全。",
+      "llm_summary": "文章讨论AI手机进入2.0阶段，字节跳动旗下豆包在合规方面做出调整，以“用合规换安全”为核心策略。虽然具体细节未在摘要中展开，但暗示豆包在AI手机功能上更加注重政策合规，可能涉及数据隐私、内容安全或AI标识等要求。这一变化反映了AI硬件与手机结合时面临的监管压力，以及厂商在创新与合规之间的平衡。",
+      "llm_key_points": [
+        "AI手机进入2.0阶段，强调合规与安全",
+        "豆包调整策略，以合规换取安全发展",
+        "可能涉及数据隐私、内容安全等监管要求",
+        "反映AI手机行业在政策压力下的应对"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，AI手机合规化可能影响未来移动端AI创作工具的功能与数据使用方式；AI工具开发者需关注合规要求，调整产品设计；平台方可能加强内容审核；投资人需评估政策风险。",
+      "llm_audience": [
+        "AI工具开发者",
+        "短剧创作者",
+        "漫剧团队",
+        "投资人",
+        "运营"
+      ],
+      "llm_processed_at": "2026-09-17T02:53:14.755Z",
+      "source": "钛媒体",
+      "url": "https://www.tmtpost.com/8142454.html",
+      "canonical_url": "https://tmtpost.com/8142454.html",
+      "date": "2026-09-17",
+      "fetched_at": "2026-09-17T02:53:37.127Z",
+      "confidence": 0.8,
+      "sensitive": true,
+      "permanent": false,
+      "status": "published"
+    },
+    {
+      "id": 101,
+      "title": "临床资产为零，估值15亿美元：字节的AI制药生意在赌什么？",
+      "title_zh": "临床资产为零，估值15亿美元：字节的AI制药生意在赌什么？",
+      "category": "business",
+      "category_label": "市场商业",
+      "tag": "速报",
+      "tags": [
+        "速报"
+      ],
+      "summary": "一个还没进临床的分子，凭什么撑起15亿美元估值？拆解字节Anew Labs的首轮融资结构。",
+      "source": "钛媒体",
+      "url": "https://www.tmtpost.com/8142491.html",
+      "canonical_url": "https://tmtpost.com/8142491.html",
+      "date": "2026-09-17",
+      "fetched_at": "2026-09-17T02:53:37.127Z",
+      "confidence": 0.7,
+      "sensitive": false,
+      "permanent": false,
+      "status": "published",
+      "llm_skipped": true,
+      "llm_reason": "该新闻聚焦字节跳动AI制药业务Anew Labs的融资与估值，属于AI医疗/药物研发领域，与AI/AIGC内容创作、短剧漫剧、视频工具及平台动态无关。"
+    },
+    {
+      "id": 102,
+      "title": "好内容历久弥新，AI时代年轻人为何沉迷于考古和整活？",
+      "title_zh": "好内容历久弥新：AI时代年轻人为何沉迷考古与整活？",
+      "category": "creation",
+      "category_label": "技术前沿",
+      "tag": "内容创作 / 经典翻红 / AI时代 / 年轻人 / 创作趋势",
+      "tags": [
+        "内容创作",
+        "经典翻红",
+        "AI时代",
+        "年轻人",
+        "创作趋势"
+      ],
+      "summary": "旧作的翻红让我们看到，好内容的影响力可能会迟到，但一定不会缺席。",
+      "llm_summary": "文章探讨了在AI技术快速发展的时代背景下，年轻人为何热衷于对旧内容进行考古和二次创作（整活）。通过分析旧作翻红现象，指出优质内容的影响力可能延迟但不会缺席，反映了经典内容在AI时代的持久生命力以及年轻创作者的参与热情。",
+      "llm_key_points": [
+        "AI时代年轻人对旧内容进行考古和整活成为趋势",
+        "旧作翻红表明好内容的影响力可能迟到但不会缺席",
+        "经典内容在新技术环境下依然具有强大生命力",
+        "年轻创作者通过二次创作参与内容生态"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，应重视内容的长尾价值，经典IP或旧作可通过AI工具进行二次创作焕新；同时需关注年轻受众的审美偏好和互动方式，利用AI技术降低创作门槛，激发更多创意整活。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "内容运营",
+        "AI工具开发者"
+      ],
+      "llm_processed_at": "2026-09-17T02:53:18.744Z",
+      "source": "钛媒体",
+      "url": "https://www.tmtpost.com/8142164.html",
+      "canonical_url": "https://tmtpost.com/8142164.html",
+      "date": "2026-09-17",
+      "fetched_at": "2026-09-17T02:53:37.127Z",
+      "confidence": 0.9,
+      "sensitive": false,
+      "permanent": false,
+      "status": "published"
+    },
+    {
+      "id": 103,
+      "title": "网易有道周枫：AI能力竞争，正在进入「Model + Agent + Workflow」时代，网易有道AI Open Day展示AI时代“有道解法”",
+      "title_zh": "网易有道周枫：AI能力竞争进入「Model + Agent + Workflow」时代，AI Open Day展示有道解法",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "网易有道 / AI Agent / Workflow / 大模型 / AI应用",
+      "tags": [
+        "网易有道",
+        "AI Agent",
+        "Workflow",
+        "大模型",
+        "AI应用"
+      ],
+      "summary": "9月16日，网易有道「NEXT，AGENT｜有道AI Open Day」在北京举办。",
+      "llm_summary": "9月16日，网易有道在北京举办「NEXT，AGENT｜有道AI Open Day」。网易有道CEO周枫提出，AI能力竞争正在进入「Model + Agent + Workflow」时代，强调模型、智能体与工作流三者结合将成为AI应用落地的关键。活动展示了网易有道在AI时代的技术布局与解决方案，可能涉及教育、内容创作等场景的Agent与工作流实践。",
+      "llm_key_points": [
+        "网易有道举办AI Open Day，主题为「NEXT，AGENT」",
+        "CEO周枫提出AI竞争进入「Model + Agent + Workflow」时代",
+        "强调模型、智能体与工作流结合是AI应用落地关键",
+        "活动展示网易有道在AI时代的技术解法与布局"
+      ],
+      "llm_impact": "对AI工具开发者而言，Model+Agent+Workflow的提法可能影响产品设计思路，推动更自动化、流程化的创作工具出现；对短剧/漫剧团队，未来或可借助此类Agent工作流提升剧本生成、分镜、剪辑等环节效率；对投资人，关注AI应用层从单一模型向工作流整合的投资机会。",
+      "llm_audience": [
+        "AI工具开发者",
+        "短剧创作者",
+        "漫剧团队",
+        "投资人",
+        "运营"
+      ],
+      "llm_processed_at": "2026-09-17T03:01:53.655Z",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490974.html",
+      "canonical_url": "https://qbitai.com/2026/09/490974.html",
+      "date": "2026-09-17",
+      "fetched_at": "2026-09-17T03:02:32.590Z",
+      "confidence": 0.9,
+      "sensitive": false,
+      "permanent": false,
+      "status": "published"
+    },
+    {
+      "id": 114,
+      "title": "演员拍摄需求下滑80%，AI正在冲击好莱坞微短剧就业",
+      "title_zh": "演员拍摄需求暴跌80%，AI正在冲击好莱坞微短剧就业",
+      "category": "business",
+      "category_label": "技术前沿",
+      "tag": "AI替代 / 好莱坞 / 微短剧就业 / 演员需求 / 行业冲击",
+      "tags": [
+        "AI替代",
+        "好莱坞",
+        "微短剧就业",
+        "演员需求",
+        "行业冲击"
+      ],
+      "summary": "微短剧，曾经是好莱坞从业者的“救命稻草”。",
+      "llm_summary": "新闻指出，好莱坞微短剧曾被视为从业者的救命稻草，但如今演员拍摄需求下滑了80%，AI技术正在冲击这一领域的就业。这表明AI在视频内容创作中的应用已对传统演员工作机会产生实质性影响，微短剧行业的人力结构可能面临重塑。",
+      "llm_key_points": [
+        "好莱坞微短剧演员拍摄需求下降80%",
+        "微短剧曾是好莱坞从业者的重要收入来源",
+        "AI技术被指是导致需求下滑的主要原因",
+        "就业冲击反映出AI在视频制作中的渗透加速"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，AI替代演员的趋势可能降低制作成本，但也可能引发行业就业争议和监管关注；对AI工具方，需求验证了市场机会；对投资人，需关注AI视频生成技术的商业化前景及政策风险。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "AI工具开发者",
+        "投资人",
+        "行业观察者"
+      ],
+      "llm_processed_at": "2026-09-17T03:02:02.888Z",
+      "source": "钛媒体",
+      "url": "https://www.tmtpost.com/8142809.html",
+      "canonical_url": "https://tmtpost.com/8142809.html",
+      "date": "2026-09-17",
+      "fetched_at": "2026-09-17T03:02:32.590Z",
+      "confidence": 0.9,
+      "sensitive": false,
+      "permanent": false,
+      "status": "published"
+    },
+    {
+      "id": 115,
+      "title": "创作者月入超10万，AI UGC游戏平台依旧算不上好生意",
+      "title_zh": "创作者月入超10万，AI UGC游戏平台依旧算不上好生意",
+      "category": "business",
+      "category_label": "技术前沿",
+      "tag": "AI UGC / 游戏平台 / 创作者变现 / 商业模式 / AIGC",
+      "tags": [
+        "AI UGC",
+        "游戏平台",
+        "创作者变现",
+        "商业模式",
+        "AIGC"
+      ],
+      "summary": "热闹的风口，少数人的红利。",
+      "llm_summary": "文章探讨了AI UGC游戏平台中创作者月收入超过10万元的现象，但指出这仅是少数人的红利，整体平台仍难以称为好生意。尽管AI降低了内容创作门槛，吸引了大量创作者，但平台面临盈利模式不清晰、头部效应显著、用户留存与商业化平衡等挑战，反映出AI内容创作领域普遍存在的变现难题。",
+      "llm_key_points": [
+        "AI UGC游戏平台中个别创作者月收入可超10万元",
+        "高收入仅为少数头部创作者，多数人收益有限",
+        "平台整体商业模型尚未成熟，算不上好生意",
+        "AI降低创作门槛但未解决变现集中化问题"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，这提示AI内容创作虽能带来收入机会，但平台经济仍偏向头部，需谨慎评估投入产出；对AI工具方和投资人，需关注可持续的创作者分成与平台盈利模式，避免盲目追逐风口。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "AI工具开发者",
+        "投资人",
+        "运营"
+      ],
+      "llm_processed_at": "2026-09-17T03:02:05.911Z",
+      "source": "钛媒体",
+      "url": "https://www.tmtpost.com/8142784.html",
+      "canonical_url": "https://tmtpost.com/8142784.html",
+      "date": "2026-09-17",
+      "fetched_at": "2026-09-17T03:02:32.590Z",
+      "confidence": 0.9,
+      "sensitive": false,
+      "permanent": false,
+      "status": "published"
+    },
+    {
+      "id": 116,
+      "title": "全球30%游戏从业者过去一年被裁，35%的公司已经因为AI“不想招人了”",
+      "title_zh": "全球30%游戏从业者过去一年被裁，35%的公司因AI减少招聘",
+      "category": "business",
+      "category_label": "技术前沿",
+      "tag": "游戏行业 / 裁员 / AI替代 / 就业影响 / 行业趋势",
+      "tags": [
+        "游戏行业",
+        "裁员",
+        "AI替代",
+        "就业影响",
+        "行业趋势"
+      ],
+      "summary": "AI到底会不会抢走游戏人的饭碗？",
+      "llm_summary": "一项调查显示，过去一年全球约30%的游戏从业者被裁员，同时35%的公司表示因AI技术应用而减少招聘。这反映出AI对游戏行业就业结构的冲击，引发从业者对职业前景的担忧。",
+      "llm_key_points": [
+        "全球30%游戏从业者过去一年被裁",
+        "35%的公司因AI减少招聘",
+        "AI对游戏行业就业影响显著",
+        "从业者担忧AI抢走饭碗"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，AI替代传统岗位的趋势可能加速，需关注自身技能与AI协作能力的提升；对AI工具方，游戏行业的AI应用案例可借鉴至内容创作领域；对投资人，需评估AI对人力密集型行业的重塑风险与机会。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "AI工具开发者",
+        "运营",
+        "投资人"
+      ],
+      "llm_processed_at": "2026-09-17T03:02:08.476Z",
+      "source": "钛媒体",
+      "url": "https://www.tmtpost.com/8142804.html",
+      "canonical_url": "https://tmtpost.com/8142804.html",
+      "date": "2026-09-17",
+      "fetched_at": "2026-09-17T03:02:32.590Z",
+      "confidence": 0.9,
+      "sensitive": false,
+      "permanent": false,
+      "status": "published"
+    },
+    {
+      "id": 117,
+      "title": "飞渡科技何文武：空间智能“下半场”，比的是理解、推演和决策",
+      "title_zh": "飞渡科技何文武：空间智能“下半场”，比的是理解、推演和决策",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "模型",
+      "tags": [
+        "模型"
+      ],
+      "summary": "语言模型让AI理解知识，空间智能让AI理解它所在的世界。",
+      "source": "钛媒体",
+      "url": "https://www.tmtpost.com/8142462.html",
+      "canonical_url": "https://tmtpost.com/8142462.html",
+      "date": "2026-09-17",
+      "fetched_at": "2026-09-17T03:02:32.590Z",
+      "confidence": 0,
+      "sensitive": false,
+      "permanent": false,
+      "status": "pending_review",
+      "llm_skipped": true,
+      "llm_reason": "该新闻聚焦空间智能技术理念，未涉及AI/AIGC内容创作、短剧漫剧、视频工具或相关平台政策，与目标行业无关。"
+    },
+    {
+      "id": 118,
+      "title": "年轻人不再为 AI 兴奋",
+      "title_zh": "年轻人不再为 AI 兴奋",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "速报",
+      "tags": [
+        "速报"
+      ],
+      "summary": "历史上第一次，多数30岁以下成年人表示对AI的担忧多于兴奋。",
+      "source": "钛媒体",
+      "url": "https://www.tmtpost.com/8142630.html",
+      "canonical_url": "https://tmtpost.com/8142630.html",
+      "date": "2026-09-17",
+      "fetched_at": "2026-09-17T03:02:32.590Z",
+      "confidence": 0,
+      "sensitive": false,
+      "permanent": false,
+      "status": "pending_review",
+      "llm_skipped": true,
+      "llm_reason": "该新闻仅讨论公众对AI的情绪态度，未涉及AI/AIGC内容创作、视频工具、短剧平台或相关政策，与行业关注面无关。"
+    },
+    {
+      "id": 119,
+      "title": "AI手机2.0，豆包这次“学乖”了",
+      "title_zh": "AI手机2.0时代，豆包这次“学乖”了",
+      "category": "tech",
+      "category_label": "政策监管",
+      "tag": "AI手机 / 豆包 / 合规 / 端侧AI / 字节跳动",
+      "tags": [
+        "AI手机",
+        "豆包",
+        "合规",
+        "端侧AI",
+        "字节跳动"
+      ],
+      "summary": "用合规换安全。",
+      "llm_summary": "文章讨论AI手机进入2.0阶段，字节跳动旗下豆包在经历此前的合规争议后，调整策略，以合规换取安全发展。内容涉及AI手机端侧能力与监管平衡，但未提供具体技术细节或产品发布信息。",
+      "llm_key_points": [
+        "AI手机概念升级至2.0阶段",
+        "豆包调整策略，强调合规优先",
+        "合规成为AI手机发展的关键因素",
+        "字节跳动在AI硬件领域的布局受关注"
+      ],
+      "llm_impact": "对AI工具开发者而言，合规能力成为产品落地的重要门槛；对短剧创作者，AI手机可能带来新的创作与分发场景，但需关注政策风险；对投资人，合规性将影响AI硬件项目的估值。",
+      "llm_audience": [
+        "AI工具开发者",
+        "投资人",
+        "短剧创作者",
+        "科技行业观察者"
+      ],
+      "llm_processed_at": "2026-09-17T03:02:13.376Z",
+      "source": "钛媒体",
+      "url": "https://www.tmtpost.com/8142454.html",
+      "canonical_url": "https://tmtpost.com/8142454.html",
+      "date": "2026-09-17",
+      "fetched_at": "2026-09-17T03:02:32.590Z",
+      "confidence": 0.7,
+      "sensitive": false,
+      "permanent": false,
+      "status": "published"
+    },
+    {
+      "id": 31,
+      "title": "通用能力不打折，空间具身智能断层领先！ZDTaichu5.0-9B国产开源，跻身全球多模态第一梯队",
+      "title_zh": "通用能力不打折，空间具身智能断层领先！ZDTaichu5.0-9B国产开源，跻身全球多模态第一梯队",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "模型",
+      "tags": [
+        "多模态模型",
+        "开源模型",
+        "具身智能",
+        "空间智能",
+        "国产AI"
+      ],
+      "summary": "九大空间测试10B规模通用模型中8项第一",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490839.html",
+      "canonical_url": "https://qbitai.com/2026/09/490839.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T01:26:28.200Z",
+      "confidence": 0.9,
+      "sensitive": false,
+      "permanent": false,
+      "status": "pending_review",
+      "llm_summary": "国产开源多模态模型ZDTaichu5.0-9B发布，在九项空间测试中，于10B规模通用模型里取得八项第一，空间具身智能能力断层领先，并跻身全球多模态第一梯队。该模型强调通用能力不打折，同时具备突出的空间理解与具身智能表现，为国产开源多模态模型在空间智能方向树立新标杆。",
+      "llm_key_points": [
+        "ZDTaichu5.0-9B为国产开源多模态模型，参数规模9B。",
+        "在九项空间测试中，10B规模通用模型里八项排名第一。",
+        "空间具身智能能力断层领先，通用能力未打折扣。",
+        "整体性能跻身全球多模态第一梯队。"
+      ],
+      "llm_impact": "对AI工具开发者而言，该开源模型可降低多模态与空间智能应用的开发门槛；对短剧/漫剧创作者，未来或可借助其空间理解能力提升AI视频生成中的场景一致性与镜头调度；对投资人，国产开源多模态的快速迭代意味着AIGC基础设施层机会增多。",
+      "llm_audience": [
+        "AI工具开发者",
+        "多模态研究者",
+        "短剧创作者",
+        "漫剧团队",
+        "投资人"
+      ],
+      "llm_processed_at": "2026-09-17T03:04:37.396Z"
+    },
+    {
+      "id": 32,
+      "title": "AI大模型工场2026 AI产业生态大会今日举办，大咖同台共探智能生长与产业共生",
+      "title_zh": "2026 AI产业生态大会在京举办，大咖共探智能生长与产业共生",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "模型",
+      "tags": [
+        "AI产业大会",
+        "大模型",
+        "产业生态",
+        "行业峰会",
+        "AIGC"
+      ],
+      "summary": "9月15日，由AI大模型工场主办的“2026 AI产业生态大会”在北京举行。",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490760.html",
+      "canonical_url": "https://qbitai.com/2026/09/490760.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T01:26:28.200Z",
+      "confidence": 0.75,
+      "sensitive": false,
+      "permanent": false,
+      "status": "pending_review",
+      "llm_summary": "9月15日，由AI大模型工场主办的“2026 AI产业生态大会”在北京举行，大会以“智能生长与产业共生”为主题，邀请多位行业嘉宾同台，围绕AI大模型的智能演进与产业协同展开探讨。会议聚焦大模型技术发展与产业落地生态，为从业者提供交流平台。",
+      "llm_key_points": [
+        "大会由AI大模型工场主办，9月15日在北京举行",
+        "主题为“智能生长与产业共生”",
+        "多位行业大咖同台分享",
+        "聚焦AI大模型与产业生态协同"
+      ],
+      "llm_impact": "此类产业大会有助于AI大模型技术与内容创作等下游应用的对接，短剧/漫剧团队可关注其中模型能力与工具生态的更新信号，工具方与投资人可借此把握行业合作与落地趋势。",
+      "llm_audience": [
+        "AI工具开发者",
+        "投资人",
+        "运营",
+        "短剧创作者"
+      ],
+      "llm_processed_at": "2026-09-17T03:04:40.198Z"
+    },
+    {
+      "id": 33,
+      "title": "高通技术公司携手中兴努比亚和豆包手机助手，共同推动智能手机迈入个人AI新时代",
+      "title_zh": "高通技术公司携手中兴努比亚和豆包手机助手，共同推动智能手机迈入个人AI新时代",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "速报",
+      "tags": [
+        "速报"
+      ],
+      "summary": "第五代骁龙8至尊版赋能全新AI智能体手机努比亚NaviX Ultra，加速智能体体验规模化落地",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490756.html",
+      "canonical_url": "https://qbitai.com/2026/09/490756.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T01:26:28.200Z",
+      "confidence": 0,
+      "sensitive": false,
+      "permanent": false,
+      "status": "pending_review",
+      "llm_skipped": true,
+      "llm_reason": "新闻内容为高通与手机厂商合作推出AI智能体手机，属于智能手机硬件与AI助手领域，未涉及AI视频/AIGC内容创作、短剧/漫剧、平台动态或相关政策，与目标行业无关。"
+    },
+    {
+      "id": 34,
+      "title": "基元律动与无问芯穹达成战略合作，推进高质量Token供给与应用",
+      "title_zh": "基元律动与无问芯穹达成战略合作，推进高质量Token供给与应用",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "速报",
+      "tags": [
+        "AI基础设施",
+        "Token供给",
+        "战略合作",
+        "算力",
+        "AIGC"
+      ],
+      "summary": "2026年 9 月 15 日，AI基础设施公司基元律动（TokenRhythm）与无问芯穹（Infinigence AI）签署战略合作协议。",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490750.html",
+      "canonical_url": "https://qbitai.com/2026/09/490750.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T01:26:28.200Z",
+      "confidence": 0.75,
+      "sensitive": false,
+      "permanent": false,
+      "status": "pending_review",
+      "llm_summary": "2026年9月15日，AI基础设施公司基元律动（TokenRhythm）与无问芯穹（Infinigence AI）签署战略合作协议。双方将围绕高质量Token供给与应用展开合作，旨在提升AI推理与内容生成场景下的Token效率与质量。基元律动专注于Token相关基础设施，无问芯穹则以AI算力与推理优化见长，此次合作或为AIGC内容创作提供更高效的底层支撑。",
+      "llm_key_points": [
+        "基元律动与无问芯穹于2026年9月15日签署战略合作协议",
+        "合作聚焦高质量Token供给与应用",
+        "双方分别专注Token基础设施与AI算力推理优化",
+        "合作有望提升AIGC内容生成的底层效率"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，底层Token供给质量与效率的提升可能降低AI视频生成成本、加快出片速度；对AI工具方和投资人，则意味着推理基础设施层竞争加剧，值得关注后续产品化落地。",
+      "llm_audience": [
+        "AI工具开发者",
+        "投资人",
+        "短剧创作者",
+        "漫剧团队"
+      ],
+      "llm_processed_at": "2026-09-17T03:04:44.385Z"
+    },
+    {
+      "id": 35,
+      "title": "协同办公进入Agent时代，飞书+豆包工作跑在了最前面",
+      "title_zh": "协同办公进入Agent时代，飞书+豆包工作跑在了最前面",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "速报",
+      "tags": [
+        "飞书",
+        "豆包",
+        "AI Agent",
+        "协同办公",
+        "工作流"
+      ],
+      "summary": "AI协同办公的新官配，我先磕了",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490686.html",
+      "canonical_url": "https://qbitai.com/2026/09/490686.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T01:26:28.200Z",
+      "confidence": 0.72,
+      "sensitive": false,
+      "permanent": false,
+      "status": "published",
+      "llm_summary": "文章讨论协同办公进入Agent时代，认为飞书与豆包组合在AI办公场景中处于领先位置。内容指出AI协同办公出现新的“官配”，即飞书与豆包深度结合，可能通过Agent能力提升办公效率与工作流自动化。虽然摘要信息有限，但核心指向AI Agent在协同办公产品中的落地，以及字节系产品在AI办公赛道的竞争位置。",
+      "llm_key_points": [
+        "协同办公正从传统工具向Agent时代演进",
+        "飞书+豆包被视为AI协同办公的新组合",
+        "字节系在AI办公产品落地方面表现靠前",
+        "Agent能力可能改变团队协作与工作流方式"
+      ],
+      "llm_impact": "对短剧和漫剧团队而言，飞书+豆包若形成成熟Agent工作流，可提升剧本协作、分镜管理、素材流转和项目管理效率。对AI工具方来说，协同办公Agent化意味着新的集成入口和竞争维度；对投资人而言，字节系AI办公组合值得关注。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "AI工具开发者",
+        "运营",
+        "投资人"
+      ],
+      "llm_processed_at": "2026-09-17T03:04:47.327Z"
+    },
+    {
+      "id": 36,
+      "title": "清华稳准智能联合发布LimiX-2，结构化数据基础模型登顶国际评测榜单",
+      "title_zh": "清华稳准智能联合发布LimiX-2，结构化数据基础模型登顶国际评测榜单",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "模型 / 数据",
+      "tags": [
+        "模型",
+        "数据"
+      ],
+      "summary": "9月16日，稳准智能联合清华大学发布新一代数据大模型 LimiX-2，模型参数规模提升至400M。",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490400.html",
+      "canonical_url": "https://qbitai.com/2026/09/490400.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T01:26:28.200Z",
+      "confidence": 0,
+      "sensitive": false,
+      "permanent": false,
+      "status": "pending_review",
+      "llm_skipped": true,
+      "llm_reason": "该新闻为结构化数据基础模型发布，与AI视频/AIGC内容创作、短剧漫剧、平台动态等无关。"
+    },
+    {
+      "id": 37,
+      "title": "B站AI无限竞技场今日上线！全球百大AI模型同场竞技，GPT-6高居榜首",
+      "title_zh": "B站AI无限竞技场今日上线！全球百大AI模型同场竞技，GPT-6高居榜首",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "模型 / 数据",
+      "tags": [
+        "B站",
+        "AI模型评测",
+        "GPT-6",
+        "大模型竞技",
+        "AIGC工具"
+      ],
+      "summary": "9月16日，B站「AI无限竞技场」正式上线，首期大模型测评榜单同步公布。",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490396.html",
+      "canonical_url": "https://qbitai.com/2026/09/490396.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T01:26:28.200Z",
+      "confidence": 0.9,
+      "sensitive": false,
+      "permanent": false,
+      "status": "pending_review",
+      "llm_summary": "9月16日，B站正式上线「AI无限竞技场」，首期大模型测评榜单同步公布。该平台汇集全球百大AI模型同场竞技，GPT-6在首期榜单中高居榜首。此举标志着B站进一步布局AI内容生态，为创作者和开发者提供模型能力对比与选型参考。",
+      "llm_key_points": [
+        "B站于9月16日上线「AI无限竞技场」",
+        "首期大模型测评榜单同步公布",
+        "全球百大AI模型参与同场竞技",
+        "GPT-6在首期榜单中排名第一"
+      ],
+      "llm_impact": "对短剧/漫剧创作者而言，多了一个了解AI模型能力的窗口，有助于选择适合视频生成、剧本创作的工具；对AI工具方，B站流量入口可能带来曝光与竞争；对平台，B站强化AI内容生态布局。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "AI工具开发者",
+        "运营",
+        "投资人"
+      ],
+      "llm_processed_at": "2026-09-17T03:04:50.888Z"
+    },
+    {
+      "id": 38,
+      "title": "量子位2026人工智能年度榜单，正式启动！",
+      "title_zh": "量子位2026人工智能年度榜单正式启动",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "数据",
+      "tags": [
+        "量子位",
+        "AI榜单",
+        "行业评选",
+        "年度盘点"
+      ],
+      "summary": "报名通道已开启，欢迎参与！",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490329.html",
+      "canonical_url": "https://qbitai.com/2026/09/490329.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T01:26:28.200Z",
+      "confidence": 0.75,
+      "sensitive": false,
+      "permanent": false,
+      "status": "pending_review",
+      "llm_summary": "量子位宣布2026人工智能年度榜单正式启动，报名通道已开启，邀请相关企业、产品与团队参与评选。该榜单为AI行业年度盘点活动，覆盖人工智能各领域，具体评选维度、奖项设置及时间安排尚未在摘要中披露。",
+      "llm_key_points": [
+        "量子位2026人工智能年度榜单正式启动",
+        "报名通道已开启",
+        "面向AI行业相关方征集参与",
+        "具体评选细则未在摘要中说明"
+      ],
+      "llm_impact": "对AI工具方与内容创作团队而言，此类行业榜单可作为品牌曝光与行业背书渠道，有助于提升在AIGC创作生态中的认知度；对创作者和投资人可作为观察年度AI产品与团队格局的参考。",
+      "llm_audience": [
+        "AI工具开发者",
+        "AI内容创作团队",
+        "投资人",
+        "运营"
+      ],
+      "llm_processed_at": "2026-09-17T03:04:53.674Z"
+    },
+    {
+      "id": 39,
+      "title": "被英伟达点名的杭州团队，补上了AI for Science的「最后一公里」",
+      "title_zh": "被英伟达点名的杭州团队，补上了AI for Science的「最后一公里」",
+      "category": "overseas",
+      "category_label": "海外资讯",
+      "tag": "速报",
+      "tags": [
+        "AI for Science",
+        "英伟达",
+        "杭州团队",
+        "科研工具",
+        "对话式AI"
+      ],
+      "summary": "从想法到结果，一次对话实现",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490185.html",
+      "canonical_url": "https://qbitai.com/2026/09/490185.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T01:26:28.200Z",
+      "confidence": 0.7,
+      "sensitive": false,
+      "permanent": false,
+      "status": "published",
+      "llm_summary": "文章介绍了一支被英伟达点名的杭州团队，该团队致力于解决AI for Science领域的“最后一公里”问题，即让科研人员能够通过一次对话从想法直接得到结果。报道强调其产品将科研流程简化为对话式交互，从而降低AI在科学研究中的使用门槛。",
+      "llm_key_points": [
+        "杭州团队获得英伟达点名关注",
+        "聚焦AI for Science的“最后一公里”问题",
+        "核心能力是“从想法到结果，一次对话实现”",
+        "旨在简化科研流程，降低AI使用门槛"
+      ],
+      "llm_impact": "该进展可能推动AI在科研场景中的普及，对AI工具开发者有借鉴意义；对短剧/漫剧创作者而言，其对话式交互思路或可启发AI创作工具的产品设计，但直接关联较弱。",
+      "llm_audience": [
+        "AI工具开发者",
+        "科研人员",
+        "投资人",
+        "AI行业观察者"
+      ],
+      "llm_processed_at": "2026-09-17T03:04:56.487Z"
+    },
+    {
+      "id": 41,
+      "title": "通用能力不打折，空间具身智能断层领先！ZDTaichu5.0-9B国产开源，跻身全球多模态第一梯队",
+      "title_zh": "国产开源多模态模型ZDTaichu5.0-9B发布：通用能力不打折，空间具身智能断层领先",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "模型",
+      "tags": [
+        "多模态大模型",
+        "具身智能",
+        "开源模型",
+        "空间智能",
+        "国产AI"
+      ],
+      "summary": "九大空间测试10B规模通用模型中8项第一",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490839.html",
+      "canonical_url": "https://qbitai.com/2026/09/490839.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T02:16:44.163Z",
+      "confidence": 0.9,
+      "sensitive": false,
+      "permanent": false,
+      "status": "pending_review",
+      "llm_summary": "国产开源多模态模型ZDTaichu5.0-9B正式发布，该模型在保持通用能力不打折的前提下，于空间具身智能领域实现断层领先。在九项空间测试中，该模型在10B规模通用模型中拿下八项第一，整体性能跻身全球多模态第一梯队。作为国产开源模型，其发布标志着国内在多模态与具身智能方向取得重要进展，有望为AI内容创作、空间理解等场景提供新的基础模型选择。",
+      "llm_key_points": [
+        "ZDTaichu5.0-9B为国产开源多模态模型，参数规模9B",
+        "在九项空间测试中，10B规模通用模型里八项排名第一",
+        "空间具身智能能力断层领先，通用能力未打折扣",
+        "整体性能跻身全球多模态第一梯队",
+        "开源属性可能降低多模态应用开发门槛"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，更强的空间理解与多模态能力有望提升AI视频生成中的场景一致性和镜头逻辑；对AI工具开发者，开源模型可降低集成成本并催生新的创作工作流；对投资人，国产多模态开源模型的突破可能带动具身智能与AIGC交叉领域的关注。",
+      "llm_audience": [
+        "AI工具开发者",
+        "短剧创作者",
+        "漫剧团队",
+        "技术研究者",
+        "投资人"
+      ],
+      "llm_processed_at": "2026-09-17T03:04:59.943Z"
+    },
+    {
+      "id": 42,
+      "title": "AI大模型工场2026 AI产业生态大会今日举办，大咖同台共探智能生长与产业共生",
+      "title_zh": "2026 AI产业生态大会在京举办，业界共探智能生长与产业共生",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "模型",
+      "tags": [
+        "AI产业大会",
+        "大模型",
+        "产业生态",
+        "行业峰会",
+        "AIGC"
+      ],
+      "summary": "9月15日，由AI大模型工场主办的“2026 AI产业生态大会”在北京举行。",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490760.html",
+      "canonical_url": "https://qbitai.com/2026/09/490760.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T02:16:44.163Z",
+      "confidence": 0.6,
+      "sensitive": false,
+      "permanent": false,
+      "status": "pending_review",
+      "llm_summary": "9月15日，由AI大模型工场主办的“2026 AI产业生态大会”在北京举行，大会以“智能生长与产业共生”为主题，邀请多位行业嘉宾同台，围绕人工智能大模型的产业落地与生态协同展开探讨。会议聚焦大模型技术演进与产业融合方向，属于行业交流性质的活动。",
+      "llm_key_points": [
+        "大会由AI大模型工场主办，9月15日在北京举行",
+        "主题为“智能生长与产业共生”",
+        "多位行业大咖同台，探讨大模型与产业协同",
+        "属于AI产业生态层面的行业交流活动"
+      ],
+      "llm_impact": "此类产业大会通常是大模型厂商发布新能力、展示生态合作的窗口，短剧与漫剧创作者可关注其中是否释放视频生成、Agent工作流等与内容生产相关的工具信号，工具方与投资人也借此观察产业风向。",
+      "llm_audience": [
+        "AI工具开发者",
+        "投资人",
+        "短剧创作者",
+        "漫剧团队",
+        "运营"
+      ],
+      "llm_processed_at": "2026-09-17T03:05:02.898Z"
+    },
+    {
+      "id": 43,
+      "title": "高通技术公司携手中兴努比亚和豆包手机助手，共同推动智能手机迈入个人AI新时代",
+      "title_zh": "高通携手中兴努比亚与豆包手机助手，推动智能手机进入个人AI新时代",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "速报",
+      "tags": [
+        "高通",
+        "努比亚",
+        "豆包",
+        "AI智能体",
+        "端侧AI"
+      ],
+      "summary": "第五代骁龙8至尊版赋能全新AI智能体手机努比亚NaviX Ultra，加速智能体体验规模化落地",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490756.html",
+      "canonical_url": "https://qbitai.com/2026/09/490756.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T02:16:44.163Z",
+      "confidence": 0.9,
+      "sensitive": false,
+      "permanent": false,
+      "status": "pending_review",
+      "llm_summary": "高通技术公司宣布与中兴努比亚及豆包手机助手合作，基于第五代骁龙8至尊版移动平台，推出全新AI智能体手机努比亚NaviX Ultra。该合作旨在加速智能体体验在智能手机上的规模化落地，推动个人AI时代到来。三方将整合芯片算力、终端硬件与AI助手能力，探索端侧AI智能体的应用场景。",
+      "llm_key_points": [
+        "高通、中兴努比亚、豆包手机助手达成合作",
+        "基于第五代骁龙8至尊版平台",
+        "推出AI智能体手机努比亚NaviX Ultra",
+        "目标加速智能体体验规模化落地",
+        "推动智能手机迈入个人AI新时代"
+      ],
+      "llm_impact": "对AI工具开发者而言，端侧智能体能力增强可能带来新的内容创作入口；对短剧/漫剧创作者，手机端AI助手或成为便捷的创作辅助工具；对平台和投资人，端侧AI智能体生态的成熟将影响流量分发与商业模式。",
+      "llm_audience": [
+        "AI工具开发者",
+        "短剧创作者",
+        "漫剧团队",
+        "投资人",
+        "运营"
+      ],
+      "llm_processed_at": "2026-09-17T03:05:05.917Z"
+    },
+    {
+      "id": 44,
+      "title": "基元律动与无问芯穹达成战略合作，推进高质量Token供给与应用",
+      "title_zh": "基元律动与无问芯穹达成战略合作，推进高质量Token供给与应用",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "速报",
+      "tags": [
+        "AI基础设施",
+        "Token供给",
+        "战略合作",
+        "无问芯穹",
+        "基元律动"
+      ],
+      "summary": "2026年 9 月 15 日，AI基础设施公司基元律动（TokenRhythm）与无问芯穹（Infinigence AI）签署战略合作协议。",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490750.html",
+      "canonical_url": "https://qbitai.com/2026/09/490750.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T02:16:44.163Z",
+      "confidence": 0.85,
+      "sensitive": false,
+      "permanent": false,
+      "status": "pending_review",
+      "llm_summary": "2026年9月15日，AI基础设施公司基元律动（TokenRhythm）与无问芯穹（Infinigence AI）签署战略合作协议。双方将围绕高质量Token供给与应用展开合作，旨在提升AI推理效率与内容生成质量。该合作可能涉及算力优化、模型推理加速及AIGC内容生产链路，为短剧、漫剧等AI视频创作提供更稳定的底层支持。",
+      "llm_key_points": [
+        "基元律动与无问芯穹于2026年9月15日签署战略合作协议",
+        "合作聚焦高质量Token供给与应用",
+        "双方均为AI基础设施领域公司",
+        "合作可能提升AI推理效率与内容生成质量",
+        "对AIGC视频创作底层算力与Token成本有潜在影响"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，底层Token供给质量与成本直接影响AI视频生成效率与制作成本；若合作降低推理成本，将利好中小创作团队。对AI工具方，可能获得更稳定的模型推理服务。对投资人，关注AI基础设施层整合趋势。",
+      "llm_audience": [
+        "AI工具开发者",
+        "短剧创作者",
+        "漫剧团队",
+        "投资人"
+      ],
+      "llm_processed_at": "2026-09-17T03:05:08.802Z"
+    },
+    {
+      "id": 45,
+      "title": "协同办公进入Agent时代，飞书+豆包工作跑在了最前面",
+      "title_zh": "协同办公进入Agent时代，飞书+豆包工作跑在了最前面",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "速报",
+      "tags": [
+        "飞书",
+        "豆包",
+        "AI Agent",
+        "协同办公",
+        "工作流"
+      ],
+      "summary": "AI协同办公的新官配，我先磕了",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490686.html",
+      "canonical_url": "https://qbitai.com/2026/09/490686.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T02:16:44.163Z",
+      "confidence": 0.7,
+      "sensitive": false,
+      "permanent": false,
+      "status": "published",
+      "llm_summary": "文章指出协同办公正进入Agent时代，飞书与豆包组合在AI办公场景中表现领先。飞书作为协同平台，豆包作为AI助手，二者结合可能实现更智能的任务处理、信息整合与流程自动化，提升团队协作效率。文章以“新官配”形容这一组合，暗示其协同效应显著，可能成为AI办公的新范式。",
+      "llm_key_points": [
+        "协同办公正从传统工具向Agent驱动演进",
+        "飞书与豆包的组合在AI办公场景中领先",
+        "该组合可能实现智能任务处理与流程自动化",
+        "被称为“新官配”，强调协同效应"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，飞书+豆包的Agent化办公可能优化剧本协作、分镜管理和项目进度跟踪，提升内容生产效率。对AI工具开发者，这展示了Agent与办公平台结合的商业潜力。对投资人，AI办公赛道竞争加剧，关注头部组合的生态效应。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "AI工具开发者",
+        "运营",
+        "投资人"
+      ],
+      "llm_processed_at": "2026-09-17T03:05:11.775Z"
+    },
+    {
+      "id": 46,
+      "title": "清华稳准智能联合发布LimiX-2，结构化数据基础模型登顶国际评测榜单",
+      "title_zh": "清华稳准智能联合发布LimiX-2，结构化数据基础模型登顶国际评测榜单",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "模型 / 数据",
+      "tags": [
+        "模型",
+        "数据"
+      ],
+      "summary": "9月16日，稳准智能联合清华大学发布新一代数据大模型 LimiX-2，模型参数规模提升至400M。",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490400.html",
+      "canonical_url": "https://qbitai.com/2026/09/490400.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T02:16:44.163Z",
+      "confidence": 0,
+      "sensitive": false,
+      "permanent": false,
+      "status": "pending_review",
+      "llm_skipped": true,
+      "llm_reason": "该新闻为结构化数据基础模型发布，与AI视频/AIGC内容创作、短剧漫剧、平台或监管等主题无关。"
+    },
+    {
+      "id": 47,
+      "title": "B站AI无限竞技场今日上线！全球百大AI模型同场竞技，GPT-6高居榜首",
+      "title_zh": "B站AI无限竞技场今日上线！全球百大AI模型同场竞技，GPT-6高居榜首",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "模型 / 数据",
+      "tags": [
+        "B站",
+        "AI模型评测",
+        "GPT-6",
+        "大模型竞技",
+        "AIGC工具"
+      ],
+      "summary": "9月16日，B站「AI无限竞技场」正式上线，首期大模型测评榜单同步公布。",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490396.html",
+      "canonical_url": "https://qbitai.com/2026/09/490396.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T02:16:44.163Z",
+      "confidence": 0.95,
+      "sensitive": false,
+      "permanent": false,
+      "status": "pending_review",
+      "llm_summary": "9月16日，B站正式上线「AI无限竞技场」，首期大模型测评榜单同步公布。该平台汇集全球百大AI模型进行同场竞技，GPT-6在首期榜单中高居榜首。此举标志着B站进一步布局AI内容生态，为创作者和开发者提供模型能力对比与选型参考。",
+      "llm_key_points": [
+        "B站于9月16日上线「AI无限竞技场」",
+        "首期大模型测评榜单同步公布",
+        "全球百大AI模型参与同场竞技",
+        "GPT-6在首期榜单中排名第一"
+      ],
+      "llm_impact": "对短剧/漫剧创作者而言，B站提供模型评测可辅助选择适合的AI视频生成或文本创作工具；对AI工具方，榜单可能影响模型曝光与市场认知；对平台，B站借此强化AI内容生态布局，吸引技术类创作者。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "AI工具开发者",
+        "运营",
+        "投资人"
+      ],
+      "llm_processed_at": "2026-09-17T03:05:15.845Z"
+    },
+    {
+      "id": 48,
+      "title": "量子位2026人工智能年度榜单，正式启动！",
+      "title_zh": "量子位2026人工智能年度榜单正式启动，报名通道开启",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "数据",
+      "tags": [
+        "量子位",
+        "AI榜单",
+        "年度评选",
+        "行业活动",
+        "报名"
+      ],
+      "summary": "报名通道已开启，欢迎参与！",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490329.html",
+      "canonical_url": "https://qbitai.com/2026/09/490329.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T02:16:44.163Z",
+      "confidence": 0.85,
+      "sensitive": false,
+      "permanent": false,
+      "status": "pending_review",
+      "llm_summary": "量子位宣布2026人工智能年度榜单正式启动，报名通道已开启，欢迎相关企业、团队和个人参与。该榜单是AI行业年度评选活动，通常覆盖大模型、AIGC工具、数字人、AI视频等多个细分领域，旨在梳理年度内具有代表性的产品、技术和企业。",
+      "llm_key_points": [
+        "量子位2026人工智能年度榜单正式启动",
+        "报名通道已开启",
+        "面向AI行业相关方征集参与",
+        "属于年度行业评选活动"
+      ],
+      "llm_impact": "对AI工具方和内容创作团队而言，参与榜单有助于提升品牌曝光和行业认可度；对短剧/漫剧创作者，可借此关注年度AI视频与AIGC工具趋势，为工具选型和合作提供参考。",
+      "llm_audience": [
+        "AI工具开发者",
+        "短剧创作者",
+        "漫剧团队",
+        "投资人",
+        "运营"
+      ],
+      "llm_processed_at": "2026-09-17T03:05:18.548Z"
+    },
+    {
+      "id": 59,
+      "title": "通用能力不打折，空间具身智能断层领先！ZDTaichu5.0-9B国产开源，跻身全球多模态第一梯队",
+      "title_zh": "国产开源ZDTaichu5.0-9B发布：通用能力不打折，空间具身智能断层领先，跻身全球多模态第一梯队",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "模型",
+      "tags": [
+        "多模态模型",
+        "开源",
+        "具身智能",
+        "空间智能",
+        "国产AI"
+      ],
+      "summary": "九大空间测试10B规模通用模型中8项第一",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490839.html",
+      "canonical_url": "https://qbitai.com/2026/09/490839.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T02:50:33.347Z",
+      "confidence": 0.9,
+      "sensitive": false,
+      "permanent": false,
+      "status": "pending_review",
+      "llm_summary": "国产开源多模态模型ZDTaichu5.0-9B发布，在九项空间测试中，10B规模通用模型里八项排名第一，空间具身智能能力断层领先，同时通用能力不打折，整体跻身全球多模态第一梯队。该模型为开源，有望推动具身智能与多模态技术发展。",
+      "llm_key_points": [
+        "ZDTaichu5.0-9B为国产开源多模态模型",
+        "在九项空间测试中，10B规模通用模型里八项第一",
+        "空间具身智能能力断层领先",
+        "通用能力不打折，整体跻身全球多模态第一梯队"
+      ],
+      "llm_impact": "对AI工具开发者而言，开源多模态模型可降低开发门槛，促进空间智能与具身智能应用创新；对短剧/漫剧创作者，未来可能带来更精准的场景理解与生成能力，但短期直接影响有限；对投资人，国产开源模型崛起可能改变多模态赛道竞争格局。",
+      "llm_audience": [
+        "AI工具开发者",
+        "技术研究者",
+        "投资人"
+      ],
+      "llm_processed_at": "2026-09-17T03:05:21.387Z"
+    },
+    {
+      "id": 60,
+      "title": "AI大模型工场2026 AI产业生态大会今日举办，大咖同台共探智能生长与产业共生",
+      "title_zh": "2026 AI产业生态大会今日举办，大咖同台共探智能生长与产业共生",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "模型",
+      "tags": [
+        "AI产业",
+        "行业大会",
+        "大模型",
+        "生态合作",
+        "北京"
+      ],
+      "summary": "9月15日，由AI大模型工场主办的“2026 AI产业生态大会”在北京举行。",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490760.html",
+      "canonical_url": "https://qbitai.com/2026/09/490760.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T02:50:33.347Z",
+      "confidence": 0.6,
+      "sensitive": false,
+      "permanent": false,
+      "status": "pending_review",
+      "llm_summary": "9月15日，由AI大模型工场主办的“2026 AI产业生态大会”在北京举行。大会以“智能生长与产业共生”为主题，邀请多位行业嘉宾同台，围绕AI大模型的产业生态、技术演进与行业协同展开探讨。新闻仅披露了大会的时间、地点、主办方与主题，未公布具体议程、发布内容或参会嘉宾名单。",
+      "llm_key_points": [
+        "大会于9月15日在北京举行",
+        "主办方为AI大模型工场",
+        "主题为智能生长与产业共生",
+        "多位行业嘉宾同台交流",
+        "具体议程与发布内容未披露"
+      ],
+      "llm_impact": "对AI工具方与内容创作团队而言，此类产业生态大会通常是模型能力、工具链与行业合作的风向标，值得关注后续释放的技术与生态合作信息；对短剧/漫剧创作者，可留意大会是否涉及视频生成、内容生产等落地场景。",
+      "llm_audience": [
+        "AI工具开发者",
+        "投资人",
+        "运营",
+        "短剧创作者",
+        "漫剧团队"
+      ],
+      "llm_processed_at": "2026-09-17T03:05:24.372Z"
+    },
+    {
+      "id": 61,
+      "title": "高通技术公司携手中兴努比亚和豆包手机助手，共同推动智能手机迈入个人AI新时代",
+      "title_zh": "高通技术公司携手中兴努比亚和豆包手机助手，共同推动智能手机迈入个人AI新时代",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "速报",
+      "tags": [
+        "速报"
+      ],
+      "summary": "第五代骁龙8至尊版赋能全新AI智能体手机努比亚NaviX Ultra，加速智能体体验规模化落地",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490756.html",
+      "canonical_url": "https://qbitai.com/2026/09/490756.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T02:50:33.347Z",
+      "confidence": 0,
+      "sensitive": false,
+      "permanent": false,
+      "status": "pending_review",
+      "llm_skipped": true,
+      "llm_reason": "该新闻主要关于高通与中兴努比亚、豆包合作推动智能手机AI智能体，属于消费电子和AI助手领域，未涉及AI视频/AIGC内容创作、短剧/漫剧、平台动态、政策监管等与短剧创作者相关的主题。"
+    },
+    {
+      "id": 62,
+      "title": "基元律动与无问芯穹达成战略合作，推进高质量Token供给与应用",
+      "title_zh": "基元律动与无问芯穹达成战略合作，推进高质量Token供给与应用",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "速报",
+      "tags": [
+        "AI基础设施",
+        "Token供给",
+        "战略合作",
+        "无问芯穹",
+        "基元律动"
+      ],
+      "summary": "2026年 9 月 15 日，AI基础设施公司基元律动（TokenRhythm）与无问芯穹（Infinigence AI）签署战略合作协议。",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490750.html",
+      "canonical_url": "https://qbitai.com/2026/09/490750.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T02:50:33.347Z",
+      "confidence": 0.85,
+      "sensitive": false,
+      "permanent": false,
+      "status": "pending_review",
+      "llm_summary": "2026年9月15日，AI基础设施公司基元律动（TokenRhythm）与无问芯穹（Infinigence AI）签署战略合作协议。双方将围绕高质量Token供给与应用展开合作，具体合作细节尚未披露。该合作涉及AI基础设施层面的Token生产与分发，可能影响大模型推理成本与内容生成效率。",
+      "llm_key_points": [
+        "基元律动与无问芯穹于2026年9月15日签署战略合作协议",
+        "合作方向为推进高质量Token供给与应用",
+        "双方均为AI基础设施领域公司",
+        "具体合作内容与金额未在摘要中披露"
+      ],
+      "llm_impact": "对AI短剧/漫剧创作者而言，高质量Token供给可能降低大模型调用成本，提升内容生成效率；对AI工具方，基础设施合作或带来更稳定的推理服务；对投资人，反映AI基础设施层整合趋势。",
+      "llm_audience": [
+        "AI工具开发者",
+        "短剧创作者",
+        "漫剧团队",
+        "投资人"
+      ],
+      "llm_processed_at": "2026-09-17T03:05:27.898Z"
+    },
+    {
+      "id": 63,
+      "title": "协同办公进入Agent时代，飞书+豆包工作跑在了最前面",
+      "title_zh": "协同办公进入Agent时代，飞书+豆包工作跑在了最前面",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "速报",
+      "tags": [
+        "飞书",
+        "豆包",
+        "AI Agent",
+        "协同办公",
+        "字节跳动"
+      ],
+      "summary": "AI协同办公的新官配，我先磕了",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490686.html",
+      "canonical_url": "https://qbitai.com/2026/09/490686.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T02:50:33.347Z",
+      "confidence": 0.8,
+      "sensitive": false,
+      "permanent": false,
+      "status": "published",
+      "llm_summary": "飞书与豆包联合推动协同办公进入Agent时代，通过AI智能体实现工作流程自动化，提升办公效率。这一组合被视为AI协同办公的新标配，展示了字节跳动在AI办公领域的领先布局。",
+      "llm_key_points": [
+        "飞书与豆包深度整合，打造AI Agent协同办公方案",
+        "AI智能体可自动处理任务，减少人工操作",
+        "字节跳动在AI办公赛道占据先发优势",
+        "该方案可能改变团队协作与内容创作流程"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，AI Agent可自动化剧本管理、任务分配和进度跟踪，提升制作效率；对AI工具开发者，飞书+豆包模式提供了Agent落地参考；对投资人，字节系AI办公生态值得关注。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "AI工具开发者",
+        "运营",
+        "投资人"
+      ],
+      "llm_processed_at": "2026-09-17T03:05:30.607Z"
+    },
+    {
+      "id": 64,
+      "title": "清华稳准智能联合发布LimiX-2，结构化数据基础模型登顶国际评测榜单",
+      "title_zh": "清华稳准智能联合发布LimiX-2，结构化数据基础模型登顶国际评测榜单",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "模型 / 数据",
+      "tags": [
+        "模型",
+        "数据"
+      ],
+      "summary": "9月16日，稳准智能联合清华大学发布新一代数据大模型 LimiX-2，模型参数规模提升至400M。",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490400.html",
+      "canonical_url": "https://qbitai.com/2026/09/490400.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T02:50:33.347Z",
+      "confidence": 0,
+      "sensitive": false,
+      "permanent": false,
+      "status": "pending_review",
+      "llm_skipped": true,
+      "llm_reason": "该新闻为结构化数据基础模型发布，与AI视频/AIGC内容创作、短剧漫剧、平台运营等无关。"
+    },
+    {
+      "id": 74,
+      "title": "通用能力不打折，空间具身智能断层领先！ZDTaichu5.0-9B国产开源，跻身全球多模态第一梯队",
+      "title_zh": "国产开源多模态模型ZDTaichu5.0-9B发布：通用能力不打折，空间具身智能断层领先，跻身全球第一梯队",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "多模态大模型 / 开源模型 / 空间智能 / 具身智能 / 国产AI",
+      "tags": [
+        "多模态大模型",
+        "具身智能",
+        "开源模型",
+        "空间智能",
+        "国产AI"
+      ],
+      "summary": "九大空间测试10B规模通用模型中8项第一",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490839.html",
+      "canonical_url": "https://qbitai.com/2026/09/490839.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T02:52:02.356Z",
+      "confidence": 0.9,
+      "sensitive": false,
+      "permanent": false,
+      "status": "published",
+      "llm_summary": "国产开源多模态模型ZDTaichu5.0-9B正式发布，该模型在保持通用能力不下降的前提下，于空间具身智能领域实现断层领先。在九项空间测试中，该模型在10B规模通用模型里拿下八项第一，整体性能跻身全球多模态第一梯队。作为开源模型，其发布有望推动具身智能、空间理解等方向的研究与应用落地。",
+      "llm_key_points": [
+        "ZDTaichu5.0-9B为国产开源多模态模型，参数规模9B",
+        "在九项空间测试中，10B规模通用模型里八项排名第一",
+        "空间具身智能能力断层领先，通用能力未打折扣",
+        "整体性能跻身全球多模态第一梯队",
+        "开源策略可能降低具身智能与多模态应用门槛"
+      ],
+      "llm_impact": "对AI工具开发者和研究者而言，该开源模型提供了高性能多模态基座，可能加速具身智能、空间理解在内容创作中的落地；对短剧/漫剧团队，未来或可借助其空间与多模态能力提升AI生成场景的连贯性与真实感；对投资人，国产开源多模态的突破意味着相关生态和商业化机会值得关注。",
+      "llm_audience": [
+        "AI工具开发者",
+        "研究人员",
+        "投资人",
+        "短剧创作者",
+        "漫剧团队"
+      ],
+      "llm_processed_at": "2026-09-17T03:05:35.199Z"
+    },
+    {
+      "id": 75,
+      "title": "AI大模型工场2026 AI产业生态大会今日举办，大咖同台共探智能生长与产业共生",
+      "title_zh": "2026 AI产业生态大会在京举办，大咖共探智能生长与产业共生",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "AI产业大会 / 大模型 / 产业生态 / 行业峰会 / AIGC",
+      "tags": [
+        "AI产业大会",
+        "大模型",
+        "产业生态",
+        "AIGC",
+        "行业交流"
+      ],
+      "summary": "9月15日，由AI大模型工场主办的“2026 AI产业生态大会”在北京举行。",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490760.html",
+      "canonical_url": "https://qbitai.com/2026/09/490760.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T02:52:02.356Z",
+      "confidence": 0.85,
+      "sensitive": false,
+      "permanent": false,
+      "status": "published",
+      "llm_summary": "9月15日，由AI大模型工场主办的“2026 AI产业生态大会”在北京举行。大会以“智能生长与产业共生”为主题，邀请多位行业大咖同台，围绕AI大模型技术演进、产业落地与生态协同等话题展开探讨。该会议为AI从业者提供了交流平台，可能涉及大模型在内容创作等领域的应用趋势，但摘要未披露具体发布内容或产品细节。",
+      "llm_key_points": [
+        "2026 AI产业生态大会于9月15日在北京举办",
+        "主办方为AI大模型工场",
+        "主题聚焦智能生长与产业共生",
+        "多位行业大咖同台探讨AI产业生态"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，此类大会可能释放大模型在视频生成、剧本创作等环节的新工具信号，值得关注后续技术发布；对AI工具方和投资人，则是观察产业生态合作与商业化方向的重要窗口。",
+      "llm_audience": [
+        "AI工具开发者",
+        "短剧创作者",
+        "漫剧团队",
+        "投资人",
+        "运营"
+      ],
+      "llm_processed_at": "2026-09-17T03:05:38.611Z"
+    },
+    {
+      "id": 76,
+      "title": "高通技术公司携手中兴努比亚和豆包手机助手，共同推动智能手机迈入个人AI新时代",
+      "title_zh": "高通携手中兴努比亚与豆包手机助手，推动智能手机进入个人AI新时代",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "高通 / 中兴努比亚 / 豆包手机助手 / AI智能体 / 骁龙8至尊版",
+      "tags": [
+        "高通",
+        "努比亚",
+        "豆包",
+        "AI智能体",
+        "智能手机"
+      ],
+      "summary": "第五代骁龙8至尊版赋能全新AI智能体手机努比亚NaviX Ultra，加速智能体体验规模化落地",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490756.html",
+      "canonical_url": "https://qbitai.com/2026/09/490756.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T02:52:02.356Z",
+      "confidence": 0.9,
+      "sensitive": false,
+      "permanent": false,
+      "status": "published",
+      "llm_summary": "高通技术公司宣布与中兴努比亚、豆包手机助手合作，共同推动智能手机迈入个人AI新时代。第五代骁龙8至尊版芯片赋能全新AI智能体手机努比亚NaviX Ultra，旨在加速智能体体验的规模化落地。此次合作整合了芯片、终端与AI助手能力，标志着AI智能体在移动设备上的进一步普及。",
+      "llm_key_points": [
+        "高通与中兴努比亚、豆包手机助手达成合作",
+        "第五代骁龙8至尊版芯片提供算力支持",
+        "努比亚NaviX Ultra定位为AI智能体手机",
+        "目标加速智能体体验规模化落地"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，AI智能体手机的普及可能带来更便捷的移动端AI创作工具，但短期内影响有限。对AI工具开发者，这预示着端侧AI能力的增强，可能催生新的创作应用场景。对投资人，关注AI手机生态的整合机会。",
+      "llm_audience": [
+        "AI工具开发者",
+        "投资人",
+        "科技爱好者"
+      ],
+      "llm_processed_at": "2026-09-17T03:05:41.393Z"
+    },
+    {
+      "id": 77,
+      "title": "基元律动与无问芯穹达成战略合作，推进高质量Token供给与应用",
+      "title_zh": "基元律动与无问芯穹达成战略合作，推进高质量Token供给与应用",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "AI基础设施 / Token供给 / 战略合作 / 算力 / 大模型",
+      "tags": [
+        "AI基础设施",
+        "Token供给",
+        "战略合作",
+        "算力",
+        "大模型"
+      ],
+      "summary": "2026年 9 月 15 日，AI基础设施公司基元律动（TokenRhythm）与无问芯穹（Infinigence AI）签署战略合作协议。",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490750.html",
+      "canonical_url": "https://qbitai.com/2026/09/490750.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T02:52:02.356Z",
+      "confidence": 0.6,
+      "sensitive": false,
+      "permanent": false,
+      "status": "published",
+      "llm_summary": "2026年9月15日，AI基础设施公司基元律动（TokenRhythm）与无问芯穹（Infinigence AI）签署战略合作协议。双方将围绕高质量Token供给与应用展开合作，具体合作细节、金额及落地场景未在摘要中披露。该合作属于AI基础设施层面的资源整合，可能涉及算力调度、模型推理效率或Token服务能力，对下游AIGC内容创作工具的成本与效率存在潜在影响。",
+      "llm_key_points": [
+        "基元律动与无问芯穹于2026年9月15日签署战略合作协议",
+        "合作方向为推进高质量Token供给与应用",
+        "双方均为AI基础设施领域公司",
+        "具体合作金额、技术方案与落地场景未披露"
+      ],
+      "llm_impact": "若合作能降低Token供给成本或提升推理效率，将间接利好依赖大模型API的AI短剧、漫剧创作工具，降低内容生成成本；对AI工具方而言，可能获得更稳定的底层Token服务。",
+      "llm_audience": [
+        "AI工具开发者",
+        "短剧创作者",
+        "漫剧团队",
+        "投资人"
+      ],
+      "llm_processed_at": "2026-09-17T03:05:44.344Z"
+    },
+    {
+      "id": 78,
+      "title": "协同办公进入Agent时代，飞书+豆包工作跑在了最前面",
+      "title_zh": "协同办公进入Agent时代，飞书+豆包工作跑在了最前面",
+      "category": "tool",
+      "category_label": "技术前沿",
+      "tag": "飞书 / 豆包 / AI Agent / 协同办公 / 工作流",
+      "tags": [
+        "飞书",
+        "豆包",
+        "AI Agent",
+        "协同办公",
+        "字节跳动"
+      ],
+      "summary": "AI协同办公的新官配，我先磕了",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490686.html",
+      "canonical_url": "https://qbitai.com/2026/09/490686.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T02:52:02.356Z",
+      "confidence": 0.9,
+      "sensitive": false,
+      "permanent": false,
+      "status": "published",
+      "llm_summary": "飞书与豆包联合推出AI协同办公新方案，标志着办公场景正式进入Agent时代。通过深度集成，豆包作为AI助手嵌入飞书工作流，可自动处理任务、生成内容、协调日程等，提升团队协作效率。该方案在AI办公赛道中处于领先地位，为其他厂商树立了标杆。",
+      "llm_key_points": [
+        "飞书与豆包深度整合，实现AI Agent驱动的协同办公",
+        "豆包可自动执行任务、生成文档、安排会议等",
+        "该方案在AI办公领域处于领先位置",
+        "为团队协作带来效率提升"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，飞书+豆包的Agent化办公能大幅提升剧本协作、任务分配和素材管理效率；AI工具开发者可借鉴其集成模式；投资人关注字节在AI办公的布局。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "AI工具开发者",
+        "运营",
+        "投资人"
+      ],
+      "llm_processed_at": "2026-09-17T03:05:46.935Z"
+    },
+    {
+      "id": 79,
+      "title": "清华稳准智能联合发布LimiX-2，结构化数据基础模型登顶国际评测榜单",
+      "title_zh": "清华稳准智能联合发布LimiX-2，结构化数据基础模型登顶国际评测榜单",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "模型 / 数据",
+      "tags": [
+        "模型",
+        "数据"
+      ],
+      "summary": "9月16日，稳准智能联合清华大学发布新一代数据大模型 LimiX-2，模型参数规模提升至400M。",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490400.html",
+      "canonical_url": "https://qbitai.com/2026/09/490400.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T02:52:02.356Z",
+      "confidence": 0,
+      "sensitive": false,
+      "permanent": false,
+      "status": "pending_review",
+      "llm_skipped": true,
+      "llm_reason": "该新闻为结构化数据基础模型发布，与AI视频/AIGC内容创作、短剧漫剧、平台或监管无关。"
+    },
+    {
+      "id": 89,
+      "title": "通用能力不打折，空间具身智能断层领先！ZDTaichu5.0-9B国产开源，跻身全球多模态第一梯队",
+      "title_zh": "通用能力不打折，空间具身智能断层领先！ZDTaichu5.0-9B 国产开源，跻身全球多模态第一梯队",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "多模态 / 开源模型 / 具身智能 / 空间智能 / 国产AI",
+      "tags": [
+        "多模态",
+        "开源模型",
+        "具身智能",
+        "空间智能",
+        "国产AI"
+      ],
+      "summary": "九大空间测试10B规模通用模型中8项第一",
+      "llm_summary": "国产开源多模态模型 ZDTaichu5.0-9B 发布，在九项空间测试中，于 10B 规模通用模型里取得八项第一，展现出在空间具身智能方面的断层领先优势，同时通用能力未打折扣，成功跻身全球多模态第一梯队。该模型的开源有望推动具身智能与多模态技术发展。",
+      "llm_key_points": [
+        "ZDTaichu5.0-9B 为国产开源多模态模型",
+        "在九项空间测试中，10B 规模通用模型里八项排名第一",
+        "空间具身智能能力断层领先，通用能力不打折",
+        "整体性能跻身全球多模态第一梯队"
+      ],
+      "llm_impact": "对 AI 工具开发者而言，开源多模态模型降低了空间智能与具身智能应用的开发门槛；对短剧/漫剧创作者，未来可能借助更强的多模态理解能力提升内容生成与交互体验；对投资人，国产开源模型的技术突破可能带来新的关注方向。",
+      "llm_audience": [
+        "AI 工具开发者",
+        "技术研究人员",
+        "投资人",
+        "短剧创作者"
+      ],
+      "llm_processed_at": "2026-09-17T02:53:24.506Z",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490839.html",
+      "canonical_url": "https://qbitai.com/2026/09/490839.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T02:53:37.127Z",
+      "confidence": 0.9,
+      "sensitive": false,
+      "permanent": false,
+      "status": "published"
+    },
+    {
+      "id": 90,
+      "title": "AI大模型工场2026 AI产业生态大会今日举办，大咖同台共探智能生长与产业共生",
+      "title_zh": "2026 AI产业生态大会今日举办，大咖同台共探智能生长与产业共生",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "AI产业 / 行业大会 / 大模型 / 生态合作 / AIGC",
+      "tags": [
+        "AI产业",
+        "行业大会",
+        "大模型",
+        "生态合作",
+        "AIGC"
+      ],
+      "summary": "9月15日，由AI大模型工场主办的“2026 AI产业生态大会”在北京举行。",
+      "llm_summary": "9月15日，由AI大模型工场主办的“2026 AI产业生态大会”在北京举行。大会以“智能生长与产业共生”为主题，邀请多位行业嘉宾同台，围绕AI大模型的产业生态建设、技术演进与行业协同展开探讨。新闻未披露具体议程、发布内容或参会企业名单，仅确认会议时间、地点与主办方。",
+      "llm_key_points": [
+        "大会由AI大模型工场主办，9月15日在北京举行",
+        "主题聚焦智能生长与产业共生",
+        "多位行业嘉宾同台交流",
+        "具体议题与发布内容未在摘要中披露"
+      ],
+      "llm_impact": "对AI工具方与内容创作者而言，此类产业大会通常是模型能力、生态合作与行业趋势的风向标，值得关注后续披露的发布内容；对短剧/漫剧团队，可留意是否有视频生成、Agent工作流等与创作相关的技术动向。",
+      "llm_audience": [
+        "AI工具开发者",
+        "短剧创作者",
+        "漫剧团队",
+        "投资人",
+        "运营"
+      ],
+      "llm_processed_at": "2026-09-17T02:53:27.416Z",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490760.html",
+      "canonical_url": "https://qbitai.com/2026/09/490760.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T02:53:37.127Z",
+      "confidence": 0.6,
+      "sensitive": false,
+      "permanent": false,
+      "status": "pending_review"
+    },
+    {
+      "id": 91,
+      "title": "高通技术公司携手中兴努比亚和豆包手机助手，共同推动智能手机迈入个人AI新时代",
+      "title_zh": "高通携手中兴努比亚与豆包手机助手，推动智能手机迈入个人AI新时代",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "高通 / 努比亚 / 豆包 / AI智能体 / 端侧AI",
+      "tags": [
+        "高通",
+        "努比亚",
+        "豆包",
+        "AI智能体",
+        "端侧AI"
+      ],
+      "summary": "第五代骁龙8至尊版赋能全新AI智能体手机努比亚NaviX Ultra，加速智能体体验规模化落地",
+      "llm_summary": "高通技术公司宣布与中兴努比亚及豆包手机助手合作，共同推动智能手机进入个人AI新时代。第五代骁龙8至尊版移动平台为全新AI智能体手机努比亚NaviX Ultra提供算力支持，旨在加速智能体体验的规模化落地。此次合作整合了芯片、终端与AI助手三方能力，标志着端侧AI智能体在手机场景的进一步普及。",
+      "llm_key_points": [
+        "高通与中兴努比亚、豆包手机助手达成合作，共同推进个人AI手机",
+        "第五代骁龙8至尊版为努比亚NaviX Ultra提供核心算力",
+        "努比亚NaviX Ultra定位为全新AI智能体手机",
+        "合作目标为加速智能体体验的规模化落地"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，端侧AI智能体的普及可能带来更便捷的移动端创作辅助工具；对AI工具开发者，手机厂商与AI助手的深度整合意味着新的分发渠道和场景机会；对投资人，端侧AI生态的竞争格局值得关注。",
+      "llm_audience": [
+        "AI工具开发者",
+        "短剧创作者",
+        "漫剧团队",
+        "投资人"
+      ],
+      "llm_processed_at": "2026-09-17T02:53:30.510Z",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490756.html",
+      "canonical_url": "https://qbitai.com/2026/09/490756.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T02:53:37.127Z",
+      "confidence": 0.9,
+      "sensitive": false,
+      "permanent": false,
+      "status": "published"
+    },
+    {
+      "id": 92,
+      "title": "基元律动与无问芯穹达成战略合作，推进高质量Token供给与应用",
+      "title_zh": "基元律动与无问芯穹达成战略合作，推进高质量Token供给与应用",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "AI基础设施 / Token供给 / 战略合作 / 无问芯穹 / 基元律动",
+      "tags": [
+        "AI基础设施",
+        "Token供给",
+        "战略合作",
+        "无问芯穹",
+        "基元律动"
+      ],
+      "summary": "2026年 9 月 15 日，AI基础设施公司基元律动（TokenRhythm）与无问芯穹（Infinigence AI）签署战略合作协议。",
+      "llm_summary": "2026年9月15日，AI基础设施公司基元律动（TokenRhythm）与无问芯穹（Infinigence AI）签署战略合作协议，双方将围绕高质量Token供给与应用展开合作。此举旨在提升AI模型训练与推理的Token效率，可能为AIGC内容创作提供更稳定、高效的底层算力与模型服务支持。",
+      "llm_key_points": [
+        "基元律动与无问芯穹于2026年9月15日签署战略合作协议",
+        "合作聚焦高质量Token供给与应用",
+        "双方均为AI基础设施领域公司",
+        "合作可能提升AI模型训练与推理效率"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，底层AI基础设施的优化有望降低内容生成成本、提升生成速度；对AI工具方，更高效的Token供给可改善模型服务稳定性；对投资人，AI基础设施领域的合作动态值得关注。",
+      "llm_audience": [
+        "AI工具开发者",
+        "短剧创作者",
+        "漫剧团队",
+        "投资人"
+      ],
+      "llm_processed_at": "2026-09-17T02:53:32.867Z",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490750.html",
+      "canonical_url": "https://qbitai.com/2026/09/490750.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T02:53:37.127Z",
+      "confidence": 0.9,
+      "sensitive": false,
+      "permanent": false,
+      "status": "published"
+    },
+    {
+      "id": 93,
+      "title": "协同办公进入Agent时代，飞书+豆包工作跑在了最前面",
+      "title_zh": "协同办公进入Agent时代，飞书+豆包工作跑在了最前面",
+      "category": "tool",
+      "category_label": "技术前沿",
+      "tag": "飞书 / 豆包 / AI Agent / 协同办公 / 工作流",
+      "tags": [
+        "飞书",
+        "豆包",
+        "AI Agent",
+        "协同办公",
+        "工作流"
+      ],
+      "summary": "AI协同办公的新官配，我先磕了",
+      "llm_summary": "文章指出协同办公正进入Agent时代，飞书与豆包组合在AI办公场景中表现领先。通过将AI Agent能力嵌入工作流，飞书+豆包能够自动处理任务、提升协作效率，被视为AI协同办公的新标配。",
+      "llm_key_points": [
+        "协同办公进入Agent时代",
+        "飞书+豆包组合在AI办公中领先",
+        "AI Agent嵌入工作流提升效率",
+        "被视为AI协同办公新标配"
+      ],
+      "llm_impact": "对短剧/漫剧团队而言，飞书+豆包的Agent能力可优化剧本协作、任务分配和项目管理流程；AI工具开发者可关注Agent与办公场景的融合趋势；投资人可留意协同办公AI化赛道。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "AI工具开发者",
+        "运营",
+        "投资人"
+      ],
+      "llm_processed_at": "2026-09-17T02:53:35.586Z",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490686.html",
+      "canonical_url": "https://qbitai.com/2026/09/490686.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T02:53:37.127Z",
+      "confidence": 0.8,
+      "sensitive": false,
+      "permanent": false,
+      "status": "published"
+    },
+    {
+      "id": 94,
+      "title": "清华稳准智能联合发布LimiX-2，结构化数据基础模型登顶国际评测榜单",
+      "title_zh": "清华稳准智能联合发布LimiX-2，结构化数据基础模型登顶国际评测榜单",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "模型 / 数据",
+      "tags": [
+        "模型",
+        "数据"
+      ],
+      "summary": "9月16日，稳准智能联合清华大学发布新一代数据大模型 LimiX-2，模型参数规模提升至400M。",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490400.html",
+      "canonical_url": "https://qbitai.com/2026/09/490400.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T02:53:37.127Z",
+      "confidence": 0,
+      "sensitive": false,
+      "permanent": false,
+      "status": "pending_review",
+      "llm_skipped": true,
+      "llm_reason": "该新闻为结构化数据基础模型发布，与AI视频/AIGC内容创作、短剧漫剧、平台或监管无关。"
+    },
+    {
+      "id": 104,
+      "title": "通用能力不打折，空间具身智能断层领先！ZDTaichu5.0-9B国产开源，跻身全球多模态第一梯队",
+      "title_zh": "国产开源多模态模型ZDTaichu5.0-9B发布：空间具身智能断层领先，通用能力不打折",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "多模态大模型 / 具身智能 / 开源模型 / 空间智能 / 国产AI",
+      "tags": [
+        "多模态大模型",
+        "具身智能",
+        "开源模型",
+        "空间智能",
+        "国产AI"
+      ],
+      "summary": "九大空间测试10B规模通用模型中8项第一",
+      "llm_summary": "国产开源多模态模型ZDTaichu5.0-9B正式发布，该模型在保持通用能力不打折的前提下，于空间具身智能领域实现断层领先。在九项空间测试中，该模型在10B规模通用模型中拿下八项第一，整体性能跻身全球多模态第一梯队。作为国产开源模型，其发布标志着国内在多模态与具身智能方向取得重要进展，有望为AI内容创作、空间理解等场景提供新的基础模型选择。",
+      "llm_key_points": [
+        "ZDTaichu5.0-9B为国产开源多模态模型，参数规模9B",
+        "在九项空间测试中，10B规模通用模型里八项排名第一",
+        "空间具身智能能力断层领先，同时通用能力不打折",
+        "整体性能跻身全球多模态第一梯队",
+        "开源属性可能降低AI应用开发门槛"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，更强的空间理解与多模态能力有望提升AI视频生成中的场景一致性和镜头逻辑；对AI工具开发者，开源模型提供了可定制的基础能力，可能催生新的创作工具；对投资人，国产多模态模型进入第一梯队意味着相关赛道竞争加剧，值得关注技术落地进展。",
+      "llm_audience": [
+        "AI工具开发者",
+        "短剧创作者",
+        "漫剧团队",
+        "投资人",
+        "技术研究者"
+      ],
+      "llm_processed_at": "2026-09-17T03:02:19.711Z",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490839.html",
+      "canonical_url": "https://qbitai.com/2026/09/490839.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T03:02:32.590Z",
+      "confidence": 0.9,
+      "sensitive": false,
+      "permanent": false,
+      "status": "published"
+    },
+    {
+      "id": 105,
+      "title": "AI大模型工场2026 AI产业生态大会今日举办，大咖同台共探智能生长与产业共生",
+      "title_zh": "2026 AI产业生态大会今日举办，大咖同台共探智能生长与产业共生",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "AI产业 / 行业大会 / 大模型 / 生态合作 / AIGC",
+      "tags": [
+        "AI产业",
+        "行业大会",
+        "大模型",
+        "生态合作",
+        "AIGC"
+      ],
+      "summary": "9月15日，由AI大模型工场主办的“2026 AI产业生态大会”在北京举行。",
+      "llm_summary": "9月15日，由AI大模型工场主办的“2026 AI产业生态大会”在北京举行。大会以“智能生长与产业共生”为主题，邀请多位行业嘉宾同台，围绕AI大模型的产业生态、技术演进与落地应用展开探讨。作为AI领域的行业性会议，大会为模型方、应用方与产业界提供了交流平台，但摘要未披露具体发布内容、参会企业及合作成果。",
+      "llm_key_points": [
+        "大会于9月15日在北京举行",
+        "主办方为AI大模型工场",
+        "主题为智能生长与产业共生",
+        "多位行业嘉宾同台探讨AI产业生态",
+        "摘要未披露具体发布或合作细节"
+      ],
+      "llm_impact": "对AI工具方与内容创作者而言，此类大会可能释放模型能力与生态合作信号，值得关注后续发布；对短剧/漫剧团队，若涉及视频生成或Agent工具更新，可能影响创作流程；对投资人可作为观察产业风向的窗口。",
+      "llm_audience": [
+        "AI工具开发者",
+        "短剧创作者",
+        "漫剧团队",
+        "投资人",
+        "运营"
+      ],
+      "llm_processed_at": "2026-09-17T03:02:22.913Z",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490760.html",
+      "canonical_url": "https://qbitai.com/2026/09/490760.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T03:02:32.590Z",
+      "confidence": 0.6,
+      "sensitive": false,
+      "permanent": false,
+      "status": "pending_review"
+    },
+    {
+      "id": 106,
+      "title": "高通技术公司携手中兴努比亚和豆包手机助手，共同推动智能手机迈入个人AI新时代",
+      "title_zh": "高通携手中兴努比亚与豆包手机助手，推动智能手机进入个人AI新时代",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "高通 / 努比亚 / 豆包手机助手 / AI智能体 / 骁龙8至尊版",
+      "tags": [
+        "高通",
+        "努比亚",
+        "豆包手机助手",
+        "AI智能体",
+        "骁龙8至尊版"
+      ],
+      "summary": "第五代骁龙8至尊版赋能全新AI智能体手机努比亚NaviX Ultra，加速智能体体验规模化落地",
+      "llm_summary": "高通技术公司宣布与中兴努比亚及豆包手机助手合作，共同推动智能手机迈入个人AI新时代。第五代骁龙8至尊版为全新AI智能体手机努比亚NaviX Ultra提供算力支持，旨在加速智能体体验的规模化落地。此次合作整合了芯片、终端与AI助手三方能力，标志着AI智能体在移动端从概念走向量产。",
+      "llm_key_points": [
+        "高通技术公司携手中兴努比亚和豆包手机助手达成合作",
+        "第五代骁龙8至尊版赋能努比亚NaviX Ultra AI智能体手机",
+        "目标为加速智能体体验规模化落地",
+        "合作推动智能手机进入个人AI新时代"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，端侧AI智能体能力的提升可能带来更便捷的移动端创作与交互工具；对AI工具开发者，手机厂商与AI助手的深度整合或催生新的内容生成入口；对投资人，AI手机生态的竞争格局值得关注。",
+      "llm_audience": [
+        "AI工具开发者",
+        "短剧创作者",
+        "投资人",
+        "运营"
+      ],
+      "llm_processed_at": "2026-09-17T03:02:25.679Z",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490756.html",
+      "canonical_url": "https://qbitai.com/2026/09/490756.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T03:02:32.590Z",
+      "confidence": 0.9,
+      "sensitive": false,
+      "permanent": false,
+      "status": "published"
+    },
+    {
+      "id": 107,
+      "title": "基元律动与无问芯穹达成战略合作，推进高质量Token供给与应用",
+      "title_zh": "基元律动与无问芯穹达成战略合作，推进高质量Token供给与应用",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "AI基础设施 / Token供给 / 战略合作 / 无问芯穹 / 基元律动",
+      "tags": [
+        "AI基础设施",
+        "Token供给",
+        "战略合作",
+        "无问芯穹",
+        "基元律动"
+      ],
+      "summary": "2026年 9 月 15 日，AI基础设施公司基元律动（TokenRhythm）与无问芯穹（Infinigence AI）签署战略合作协议。",
+      "llm_summary": "2026年9月15日，AI基础设施公司基元律动（TokenRhythm）与无问芯穹（Infinigence AI）签署战略合作协议。双方将围绕高质量Token供给与应用展开合作，具体合作细节尚未披露。此次合作涉及AI基础设施层面的Token生产与分发，可能影响大模型推理效率及AIGC内容创作成本。",
+      "llm_key_points": [
+        "基元律动与无问芯穹于2026年9月15日签署战略合作协议",
+        "合作方向为推进高质量Token供给与应用",
+        "双方均为AI基础设施领域公司",
+        "具体合作内容与金额未在摘要中披露"
+      ],
+      "llm_impact": "若合作能提升Token供给效率与质量，可能降低AI视频生成、短剧创作等场景的推理成本，利好依赖大模型API的AI工具方与内容创作者。但短期对终端创作流程影响有限，需关注后续具体落地。",
+      "llm_audience": [
+        "AI工具开发者",
+        "短剧创作者",
+        "漫剧团队",
+        "投资人"
+      ],
+      "llm_processed_at": "2026-09-17T03:02:28.403Z",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490750.html",
+      "canonical_url": "https://qbitai.com/2026/09/490750.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T03:02:32.590Z",
+      "confidence": 0.85,
+      "sensitive": false,
+      "permanent": false,
+      "status": "published"
+    },
+    {
+      "id": 108,
+      "title": "协同办公进入Agent时代，飞书+豆包工作跑在了最前面",
+      "title_zh": "协同办公进入Agent时代，飞书+豆包工作跑在了最前面",
+      "category": "tool",
+      "category_label": "技术前沿",
+      "tag": "飞书 / 豆包 / AI Agent / 协同办公 / 字节跳动",
+      "tags": [
+        "飞书",
+        "豆包",
+        "AI Agent",
+        "协同办公",
+        "字节跳动"
+      ],
+      "summary": "AI协同办公的新官配，我先磕了",
+      "llm_summary": "飞书与豆包联合推动协同办公进入Agent时代，通过AI智能体实现工作流程自动化，提升办公效率。文章指出这一组合在AI办公领域处于领先地位，可能改变团队协作方式。",
+      "llm_key_points": [
+        "飞书与豆包深度整合，推出Agent驱动的协同办公方案",
+        "AI智能体可自动处理任务，减少人工操作",
+        "该组合在AI办公赛道中表现突出，领先其他产品",
+        "可能对团队工作流程和效率产生深远影响"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，AI Agent可优化剧本协作、任务分配和进度管理，提升内容生产效率；对AI工具开发者，飞书+豆包模式提供了Agent落地办公场景的参考；对投资人，AI协同办公赛道值得关注。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "AI工具开发者",
+        "运营",
+        "投资人"
+      ],
+      "llm_processed_at": "2026-09-17T03:02:31.356Z",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490686.html",
+      "canonical_url": "https://qbitai.com/2026/09/490686.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T03:02:32.590Z",
+      "confidence": 0.8,
+      "sensitive": false,
+      "permanent": false,
+      "status": "published"
+    },
+    {
+      "id": 109,
+      "title": "清华稳准智能联合发布LimiX-2，结构化数据基础模型登顶国际评测榜单",
+      "title_zh": "清华稳准智能联合发布LimiX-2，结构化数据基础模型登顶国际评测榜单",
+      "category": "tech",
+      "category_label": "技术前沿",
+      "tag": "模型 / 数据",
+      "tags": [
+        "模型",
+        "数据"
+      ],
+      "summary": "9月16日，稳准智能联合清华大学发布新一代数据大模型 LimiX-2，模型参数规模提升至400M。",
+      "source": "量子位",
+      "url": "https://www.qbitai.com/2026/09/490400.html",
+      "canonical_url": "https://qbitai.com/2026/09/490400.html",
+      "date": "2026-09-16",
+      "fetched_at": "2026-09-17T03:02:32.590Z",
+      "confidence": 0,
+      "sensitive": false,
+      "permanent": false,
+      "status": "pending_review",
+      "llm_skipped": true,
+      "llm_reason": "该新闻为结构化数据基础模型发布，与AI视频/AIGC内容创作、短剧漫剧、平台动态等无关。"
+    },
+    {
+      "id": 22,
+      "title": "短剧 IP 改编 Top 50(2026-09 玉哥整理)",
+      "category": "data",
+      "tag": "数据",
+      "summary": "玉哥 v10.0 课程整理的番茄 IP 选书 TOP 50,9 月新增 3 部爆款:《剑尊》/《嫡女重生》/《重生八零》。选书核心是 5 维评分(钩子/爽点/卡点/集末/可改编度)。",
+      "source": "玉哥 v10.0",
+      "url": "#",
+      "date": "2026-09-13",
+      "title_zh": "短剧IP改编Top 50榜单（2026年9月玉哥整理）",
+      "llm_summary": "玉哥v10.0课程整理发布番茄IP选书TOP 50榜单，2026年9月新增《剑尊》《嫡女重生》《重生八零》三部爆款。该榜单以五维评分体系为核心，从钩子、爽点、卡点、集末悬念、可改编度五个维度评估IP的短剧改编潜力，为短剧创作者提供选书参考。",
+      "llm_key_points": [
+        "玉哥v10.0课程发布番茄IP选书TOP 50榜单",
+        "2026年9月新增《剑尊》《嫡女重生》《重生八零》三部爆款",
+        "选书核心为五维评分：钩子、爽点、卡点、集末、可改编度",
+        "榜单旨在帮助短剧团队筛选高改编潜力的网文IP"
+      ],
+      "llm_impact": "为短剧创作者和漫剧团队提供了系统化的IP筛选工具，有助于降低选书试错成本，提升爆款命中率；对IP方和平台而言，五维评分标准可能影响IP定价与推荐机制。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "运营",
+        "投资人"
+      ],
+      "tags": [
+        "短剧IP",
+        "番茄小说",
+        "选书方法论",
+        "爆款拆解",
+        "改编策略"
+      ],
+      "confidence": 0.95,
+      "llm_processed_at": "2026-09-17T03:06:15.823Z"
+    },
+    {
+      "id": 23,
+      "title": "千川 ROI 1.2 警戒线被 80% 学员打破",
+      "category": "business",
+      "tag": "投流",
+      "summary": "玉哥学员 9 月数据:用 v9.0 ROI 计算器筛选素材,80% 学员千川 ROI 突破 1.2(此前 60%)。玉哥 ROI 1.4 是成功案例,实际 5 部里 1-2 部赚钱 3-4 部亏是常态。",
+      "source": "玉哥 v9.0 数据",
+      "url": "#",
+      "date": "2026-09-13",
+      "title_zh": "千川 ROI 1.2 警戒线被 80% 学员打破",
+      "llm_summary": "玉哥学员 9 月数据显示，使用 v9.0 ROI 计算器筛选素材后，80% 学员千川 ROI 突破 1.2，此前该比例为 60%。玉哥本人 ROI 1.4 被视为成功案例，但实际 5 部作品中仅 1-2 部盈利，3-4 部亏损是常态。",
+      "llm_key_points": [
+        "80% 学员千川 ROI 突破 1.2，较此前 60% 提升",
+        "使用 v9.0 ROI 计算器筛选素材",
+        "玉哥 ROI 1.4 为成功案例",
+        "实际 5 部作品中 1-2 部赚钱，3-4 部亏是常态"
+      ],
+      "llm_impact": "对短剧创作者和投流团队而言，ROI 计算器工具能提升素材筛选效率，但需理性看待成功案例，亏损仍是常态。对 AI 工具方，可开发类似 ROI 预测功能辅助决策。",
+      "llm_audience": [
+        "短剧创作者",
+        "投流运营",
+        "AI 工具开发者",
+        "投资人"
+      ],
+      "tags": [
+        "千川ROI",
+        "投流",
+        "短剧变现",
+        "素材筛选",
+        "ROI计算器"
+      ],
+      "confidence": 0.9,
+      "llm_processed_at": "2026-09-17T03:05:53.033Z"
+    },
+    {
+      "id": 28,
+      "title": "玉哥 9 大类教程 v3 上线(150 节)",
+      "category": "course",
+      "tag": "教程",
+      "summary": "教程站 v3 架构上线(菜鸟教程骨架)。9 大类 150 节:漫剧基础 8 + 改剧本 17 + 角色 17 + 分镜 15 + AI 出图 35 + AI 视频 19 + 配音剪辑 18 + 发布 10 + 附录 9。",
+      "source": "本教程站",
+      "url": "tutorial/all-courses.html",
+      "date": "2026-09-13",
+      "title_zh": "玉哥9大类教程v3上线，150节覆盖漫剧全流程",
+      "llm_summary": "玉哥教程站v3版本上线，采用菜鸟教程式骨架，共9大类150节课程。内容覆盖漫剧基础、改剧本、角色设计、分镜、AI出图、AI视频、配音剪辑、发布及附录，其中AI出图35节、AI视频19节、配音剪辑18节，为漫剧创作者提供从入门到发布的全流程教学。",
+      "llm_key_points": [
+        "教程站v3架构上线，参考菜鸟教程骨架",
+        "9大类共150节，覆盖漫剧创作全链路",
+        "AI出图35节、AI视频19节、配音剪辑18节，AI工具教学占比高",
+        "包含改剧本17节、角色17节、分镜15节等前期创作内容",
+        "发布10节与附录9节，兼顾运营与补充知识"
+      ],
+      "llm_impact": "为短剧/漫剧创作者提供系统化学习路径，降低AI工具使用门槛；对AI工具方而言，教程普及可能带动工具使用量；对运营团队，可参考其课程结构进行内部培训。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "AI工具开发者",
+        "运营"
+      ],
+      "tags": [
+        "漫剧教程",
+        "AI出图",
+        "AI视频",
+        "分镜",
+        "配音剪辑"
+      ],
+      "confidence": 0.95,
+      "llm_processed_at": "2026-09-17T03:06:18.680Z"
+    },
+    {
+      "id": 30,
+      "title": "玉哥 v3.0 主页:30 分钟搞懂 1 集 AI 漫剧怎么做",
+      "category": "course",
+      "tag": "教程",
+      "summary": "新首页(5 屏):1 句承诺 + 大搜索 + 6 热词 + 5 步流程图 + 学完成果 + 学员作品 + 9 类图标网格 + 底部 dock。用户使用度优先,5 秒知道\"我能做什么\"。",
+      "source": "本教程站",
+      "url": "index.html",
+      "date": "2026-09-13",
+      "title_zh": "玉哥 v3.0 主页上线：30 分钟掌握一集 AI 漫剧制作全流程",
+      "llm_summary": "玉哥发布 v3.0 版本主页，采用 5 屏设计，包含一句承诺、大搜索框、6 个热词、5 步流程图、学完成果展示、学员作品、9 类图标网格和底部 dock。该主页强调用户使用度优先，让访客在 5 秒内明确“我能做什么”，并宣称可在 30 分钟内学会制作一集 AI 漫剧。",
+      "llm_key_points": [
+        "新版主页共 5 屏，结构清晰，突出核心承诺与操作路径",
+        "包含大搜索、热词、5 步流程图等引导元素，降低学习门槛",
+        "展示学完成果与学员作品，增强信任感与转化",
+        "9 类图标网格和底部 dock 提升导航效率",
+        "目标：让用户 5 秒内知道能做什么，30 分钟学会一集 AI 漫剧"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，该主页提供了更直观的 AI 漫剧学习入口，可能加速新手入门和技能普及；对 AI 工具方和知识付费平台，这种以用户使用度优先的设计思路值得借鉴，有助于提升转化率和用户留存。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "AI 工具开发者",
+        "运营人员",
+        "知识付费从业者"
+      ],
+      "tags": [
+        "AI漫剧",
+        "教程",
+        "创作流程",
+        "主页设计",
+        "知识付费"
+      ],
+      "confidence": 0.95,
+      "llm_processed_at": "2026-09-17T03:06:21.601Z"
+    },
+    {
+      "id": 12,
+      "title": "Sora 2 公测开放",
+      "category": "model",
+      "tag": "模型",
+      "summary": "OpenAI Sora 2 进入公测阶段。15s 视频 + 4K 分辨率,角色一致性大幅提升。但 API 价格高(单条 ~$1.5),玉哥建议学员先用 H2.3 套餐练手。",
+      "source": "OpenAI Blog",
+      "url": "https://openai.com/sora",
+      "date": "2026-09-12",
+      "title_zh": "OpenAI Sora 2 开启公测：15秒4K视频，角色一致性大幅提升",
+      "llm_summary": "OpenAI 的 Sora 2 已进入公测阶段，支持生成 15 秒、4K 分辨率的视频，并在角色一致性方面有大幅提升。不过其 API 调用价格较高，单条视频约 1.5 美元。有创作者建议学员可先使用 H2.3 套餐练手，以降低试错成本。该进展可能对 AI 短剧、漫剧等视频创作领域带来新的工具选择。",
+      "llm_key_points": [
+        "Sora 2 进入公测，支持 15 秒 4K 视频生成",
+        "角色一致性相比前代大幅提升",
+        "API 价格较高，单条视频约 1.5 美元",
+        "建议先用 H2.3 套餐练手以控制成本"
+      ],
+      "llm_impact": "对短剧和漫剧创作者而言，Sora 2 的高质量输出和角色一致性提升有助于降低分镜与角色连贯性制作门槛，但高 API 成本可能限制高频使用。工具方需关注其定价策略对中小团队的影响，投资人可留意 AI 视频生成商业化进展。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "AI 工具开发者",
+        "投资人"
+      ],
+      "tags": [
+        "Sora 2",
+        "OpenAI",
+        "文生视频",
+        "角色一致性",
+        "AI视频工具"
+      ],
+      "confidence": 0.95,
+      "llm_processed_at": "2026-09-17T03:05:55.939Z"
+    },
+    {
+      "id": 26,
+      "title": "玉哥 v9.0 补回 ROI 计算器(7.2 节)",
+      "category": "course",
+      "tag": "教程",
+      "summary": "应学员反馈,千川 ROI 计算器(5 输入 5 输出)从 v9.0 重写时被删,9-12 已补回为 § 7.2 节。包括单 ROI / 总收益 / 净利润 / 临界付费率 / 保本 ROI 5 个公式 + 行业基准表。",
+      "source": "本教程站",
+      "url": "tutorial/all-courses.html#H",
+      "date": "2026-09-12",
+      "title_zh": "玉哥 v9.0 补回千川 ROI 计算器（7.2 节）",
+      "llm_summary": "玉哥 v9.0 版本更新中，应学员反馈，将此前被删除的千川 ROI 计算器重新补回，并作为第 7.2 节内容。该计算器包含 5 个输入和 5 个输出，涵盖单 ROI、总收益、净利润、临界付费率、保本 ROI 五个公式，并附带行业基准表，旨在帮助短剧投流团队进行 ROI 测算与决策。",
+      "llm_key_points": [
+        "玉哥 v9.0 重写时曾删除千川 ROI 计算器，现根据学员反馈补回。",
+        "补回内容位于文档第 7.2 节，包含 5 输入 5 输出的计算模型。",
+        "核心公式包括单 ROI、总收益、净利润、临界付费率、保本 ROI。",
+        "附带行业基准表，便于对比参考。",
+        "该工具面向千川投流场景，服务于短剧等内容的 ROI 测算。"
+      ],
+      "llm_impact": "对短剧创作者和投流团队而言，补回 ROI 计算器有助于更精准地评估投放效果和盈亏平衡点，提升决策效率。对 AI 工具方和运营人员，可作为投流策略的参考模板。",
+      "llm_audience": [
+        "短剧创作者",
+        "投流运营",
+        "漫剧团队",
+        "投资人"
+      ],
+      "tags": [
+        "千川ROI",
+        "投流",
+        "短剧变现",
+        "运营工具",
+        "玉哥"
+      ],
+      "confidence": 0.95,
+      "llm_processed_at": "2026-09-17T03:05:58.968Z"
+    },
+    {
+      "id": 21,
+      "title": "玉哥 BigBanana 项目登 GitHub Trending(2.1k+ Star)",
+      "category": "open-source",
+      "tag": "开源",
+      "summary": "玉哥 v18.0 推荐的 4 大开源仓库之一 BigBanana-AI-Director(star 数 2.1k+)持续增长。提供端到端的 AI 短剧自动化工作流,从剧本到成片一键搞定。",
+      "source": "GitHub",
+      "url": "https://github.com/shuyu-labs/BigBanana-AI-Director",
+      "date": "2026-09-11",
+      "title_zh": "玉哥推荐的 BigBanana 项目登 GitHub Trending，AI 短剧自动化工作流获 2.1k+ Star",
+      "llm_summary": "玉哥 v18.0 推荐的四大开源仓库之一 BigBanana-AI-Director 在 GitHub Trending 上持续增长，已获得 2.1k+ Star。该项目提供端到端的 AI 短剧自动化工作流，号称从剧本到成片一键搞定，覆盖短剧制作全流程。",
+      "llm_key_points": [
+        "BigBanana-AI-Director 是玉哥 v18.0 推荐的四大开源仓库之一",
+        "项目在 GitHub Trending 上持续增长，Star 数已超过 2.1k",
+        "提供端到端的 AI 短剧自动化工作流",
+        "核心卖点是剧本到成片一键搞定，降低短剧制作门槛"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，此类端到端自动化工具可大幅降低制作成本与技术门槛，加速内容产出；对 AI 工具开发者，开源项目提供了可参考的集成方案；对投资人，AI 短剧工具赛道热度持续，值得关注。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "AI 工具开发者",
+        "运营",
+        "投资人"
+      ],
+      "tags": [
+        "AI短剧",
+        "自动化工作流",
+        "开源项目",
+        "GitHub Trending",
+        "端到端"
+      ],
+      "confidence": 0.9,
+      "llm_processed_at": "2026-09-17T03:06:24.456Z"
+    },
+    {
+      "id": 13,
+      "title": "ComfyUI 0.4.0 重大更新",
+      "category": "tool",
+      "tag": "工具",
+      "summary": "ComfyUI Desktop 版本 0.4.0 发布。原生支持 Wan 2.2 + Flux + SDXL。新增\"工作流版本控制\",学员可一键回滚失败节点。",
+      "source": "ComfyUI GitHub",
+      "url": "https://github.com/comfyanonymous/ComfyUI",
+      "date": "2026-09-10",
+      "title_zh": "ComfyUI 0.4.0 桌面版重大更新：原生支持 Wan 2.2、Flux 和 SDXL",
+      "llm_summary": "ComfyUI Desktop 发布 0.4.0 版本，新增对 Wan 2.2、Flux 和 SDXL 模型的原生支持，并引入工作流版本控制功能，允许用户一键回滚失败节点。此次更新旨在提升 AI 视频与图像生成工作流的稳定性和易用性。",
+      "llm_key_points": [
+        "ComfyUI Desktop 0.4.0 正式发布",
+        "原生支持 Wan 2.2、Flux 和 SDXL 模型",
+        "新增工作流版本控制功能",
+        "支持一键回滚失败节点"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，原生支持 Wan 2.2 等模型可简化视频生成流程，工作流版本控制能减少调试时间，提升创作效率。对 AI 工具开发者，ComfyUI 的更新可能推动更多基于其生态的插件和工具开发。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "AI 工具开发者",
+        "运营"
+      ],
+      "tags": [
+        "ComfyUI",
+        "Wan 2.2",
+        "Flux",
+        "SDXL",
+        "工作流版本控制"
+      ],
+      "confidence": 0.95,
+      "llm_processed_at": "2026-09-17T03:04:34.129Z"
+    },
+    {
+      "id": 29,
+      "title": "Runway Gen-4 Turbo 发布",
+      "category": "model",
+      "tag": "模型",
+      "summary": "Runway Gen-4 Turbo 视频生成,比 Gen-3 快 5 倍,价格降 50%。但仍贵(单条 5s 约 $0.5),玉哥建议学员用 Wan 2.2 / 可灵 / 海螺 替代。",
+      "source": "Runway 官方",
+      "url": "https://runwayml.com/",
+      "date": "2026-09-10",
+      "title_zh": "Runway Gen-4 Turbo 发布：速度提升5倍、价格减半，但创作者仍倾向国产替代方案",
+      "llm_summary": "Runway 正式发布 Gen-4 Turbo 视频生成模型，官方称其生成速度比 Gen-3 快 5 倍，价格降低 50%。然而，单条 5 秒视频成本仍约 0.5 美元，对高频创作的短剧/漫剧团队而言负担较重。有创作者（玉哥）建议学员转向 Wan 2.2、可灵、海螺等国产模型作为替代方案，以进一步控制成本。",
+      "llm_key_points": [
+        "Runway Gen-4 Turbo 速度较 Gen-3 提升 5 倍，价格下降 50%",
+        "单条 5 秒视频成本仍约 0.5 美元，高频使用成本压力大",
+        "创作者建议使用 Wan 2.2、可灵、海螺等国产模型替代",
+        "国产模型在性价比上对 Runway 形成竞争"
+      ],
+      "llm_impact": "对短剧/漫剧创作者而言，Runway 新模型虽提速降价，但成本仍高于国产方案，可能促使更多团队转向可灵、海螺等工具；对 AI 工具方，国产模型的性价比优势进一步凸显，市场竞争加剧；对投资人，需关注视频生成模型的成本下降曲线与商业化落地节奏。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "AI 工具开发者",
+        "运营",
+        "投资人"
+      ],
+      "tags": [
+        "Runway",
+        "AI视频生成",
+        "模型更新",
+        "成本优化",
+        "国产替代"
+      ],
+      "confidence": 0.95,
+      "llm_processed_at": "2026-09-17T03:04:31.667Z"
+    },
+    {
+      "id": 17,
+      "title": "短剧出海 Top 4 平台:ReelShort / DramaBox / GoodShort / FlexTV",
+      "category": "overseas",
+      "tag": "海外",
+      "summary": "玉哥 v12.0 课程里深度对比的 4 平台,9 月新增 FlexTV 月下载破 300 万(主攻东南亚)。出海已成红海,需本地化翻译 + 本地配音。",
+      "source": "Appmagic",
+      "url": "https://appmagic.rocks/",
+      "date": "2026-09-09",
+      "title_zh": "短剧出海四大平台对比：ReelShort、DramaBox、GoodShort、FlexTV",
+      "llm_summary": "玉哥 v12.0 课程对短剧出海四大平台 ReelShort、DramaBox、GoodShort、FlexTV 进行了深度对比。其中 FlexTV 于 9 月新增，月下载量突破 300 万，主要市场为东南亚。课程指出短剧出海已进入红海阶段，竞争激烈，成功关键在于本地化翻译与本地配音。",
+      "llm_key_points": [
+        "对比平台包括 ReelShort、DramaBox、GoodShort 和 FlexTV 四个短剧出海平台",
+        "FlexTV 是 9 月新增平台，月下载量突破 300 万，主攻东南亚市场",
+        "短剧出海市场已成红海，竞争加剧",
+        "本地化翻译和本地配音是出海短剧的重要策略"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，出海平台选择增多，但红海竞争要求更注重本地化质量；AI 工具方可在翻译、配音等环节提供解决方案；投资人和运营需关注 FlexTV 等新平台的增长潜力。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "运营",
+        "投资人",
+        "AI 工具开发者"
+      ],
+      "tags": [
+        "短剧出海",
+        "ReelShort",
+        "DramaBox",
+        "FlexTV",
+        "本地化"
+      ],
+      "confidence": 0.9,
+      "llm_processed_at": "2026-09-17T03:06:27.191Z"
+    },
+    {
+      "id": 9,
+      "title": "Wan 2.2 开源发布(阿里)",
+      "category": "model",
+      "tag": "模型",
+      "summary": "阿里通义 Wan 2.2 视频生成模型开源。14B 参数,支持 720P 24fps,长视频达 5 秒 + 2 秒延长。在短剧工作流中已被多个玉哥学员测试,角色一致性较 Wan 2.1 提升 30%。",
+      "source": "Hugging Face / GitHub",
+      "url": "https://github.com/Wan-Video/Wan2.2",
+      "date": "2026-09-08",
+      "title_zh": "阿里通义 Wan 2.2 视频生成模型开源发布",
+      "llm_summary": "阿里通义实验室开源了 Wan 2.2 视频生成模型，拥有 14B 参数，支持 720P 24fps 输出，可生成长达 5 秒的视频并延长 2 秒。在短剧工作流中，该模型已被多位玉哥学员测试，角色一致性相比 Wan 2.1 提升了 30%。",
+      "llm_key_points": [
+        "Wan 2.2 由阿里通义开源，参数规模 14B",
+        "支持 720P 分辨率、24fps 帧率，视频长度 5 秒并可延长 2 秒",
+        "在短剧工作流中经过玉哥学员测试",
+        "角色一致性较 Wan 2.1 提升 30%"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，Wan 2.2 的开源提供了更高质量的视频生成工具，角色一致性提升有助于降低制作成本；对 AI 工具开发者，可基于该模型开发更高效的创作流程；对投资人，开源模型可能加速 AIGC 视频领域的竞争与创新。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "AI 工具开发者",
+        "投资人"
+      ],
+      "tags": [
+        "Wan 2.2",
+        "开源模型",
+        "视频生成",
+        "角色一致性",
+        "短剧工作流"
+      ],
+      "confidence": 0.9,
+      "llm_processed_at": "2026-09-17T03:06:01.660Z"
+    },
+    {
+      "id": 16,
+      "title": "ReelShort 月下载破 500 万(海外短剧)",
+      "category": "overseas",
+      "tag": "海外",
+      "summary": "中文在线 ReelShort 9 月月下载破 500 万,北美市场占 60%。海外短剧仍是蓝海,玉哥学员 L 投流 ROI 1.8(对比国内 1.2-1.4)。",
+      "source": "Sensor Tower",
+      "url": "https://sensortower.com/",
+      "date": "2026-09-08",
+      "title_zh": "ReelShort 9月下载量突破500万，海外短剧市场持续火热",
+      "llm_summary": "中文在线旗下海外短剧平台 ReelShort 在9月份月下载量突破500万次，其中北美市场贡献了60%的下载量。海外短剧市场仍被视为蓝海，有学员案例显示投流ROI达到1.8，相比国内短剧1.2-1.4的ROI水平更具盈利空间。",
+      "llm_key_points": [
+        "ReelShort 9月月下载量突破500万",
+        "北美市场占下载量的60%",
+        "海外短剧市场仍处于蓝海阶段",
+        "学员案例投流ROI达1.8，高于国内1.2-1.4"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，海外市场提供了更高的投流回报和增长机会，可能吸引更多团队出海；对AI工具方，海外短剧制作需求可能带动AI视频生成、配音等工具的应用；对投资人，ReelShort的数据验证了海外短剧赛道的潜力。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "运营",
+        "投资人"
+      ],
+      "tags": [
+        "ReelShort",
+        "海外短剧",
+        "投流ROI",
+        "中文在线",
+        "北美市场"
+      ],
+      "confidence": 0.9,
+      "llm_processed_at": "2026-09-17T03:06:30.057Z"
+    },
+    {
+      "id": 24,
+      "title": "AI 漫剧人才缺口 10 万+",
+      "category": "business",
+      "tag": "人才",
+      "summary": "Boss 直聘数据:2026-09 AI 漫剧相关岗位(AI 出图师 / 短剧编剧 / 投流优化师)招聘需求 12 万+,求职 1.5 万。玉哥学员转行比例 35%。",
+      "source": "Boss 直聘",
+      "url": "https://www.zhipin.com/",
+      "date": "2026-09-08",
+      "title_zh": "AI 漫剧人才缺口超 10 万，招聘需求达 12 万+",
+      "llm_summary": "Boss 直聘数据显示，2026 年 9 月 AI 漫剧相关岗位（包括 AI 出图师、短剧编剧、投流优化师）招聘需求超过 12 万，而求职者仅约 1.5 万，人才缺口高达 10 万以上。同时，玉哥学员转行进入该领域的比例达到 35%，反映出 AI 漫剧行业对复合型人才的旺盛需求以及职业培训的转化效果。",
+      "llm_key_points": [
+        "AI 漫剧相关岗位招聘需求 12 万+，求职仅 1.5 万，缺口超 10 万",
+        "热门岗位包括 AI 出图师、短剧编剧、投流优化师",
+        "玉哥学员转行比例达 35%，显示培训转化活跃",
+        "数据来源为 Boss 直聘，时间点为 2026 年 9 月"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，人才缺口意味着招聘竞争加剧，需提前布局团队建设；对 AI 工具方和培训机构，是市场扩张和产品推广的窗口期；对投资人，则提示 AI 漫剧赛道人才供给瓶颈可能制约行业增速。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "AI 工具开发者",
+        "运营",
+        "投资人",
+        "职业培训从业者"
+      ],
+      "tags": [
+        "AI漫剧",
+        "人才缺口",
+        "招聘需求",
+        "短剧编剧",
+        "投流优化师"
+      ],
+      "confidence": 0.95,
+      "llm_processed_at": "2026-09-17T03:06:33.051Z"
+    },
+    {
+      "id": 18,
+      "title": "Suno v4 发布,原创 BGM 成本 ¥0.5/首",
+      "category": "tool",
+      "tag": "工具",
+      "summary": "Suno v4 模型升级,生成 4 分钟音乐时长,中英文歌词理解好。玉哥学员做短剧 BGM 平均成本从 ¥10/首降到 ¥0.5/首。",
+      "source": "Suno 官方",
+      "url": "https://suno.com/",
+      "date": "2026-09-07",
+      "title_zh": "Suno v4 发布：原创 BGM 成本降至 ¥0.5/首",
+      "llm_summary": "Suno v4 模型升级，支持生成 4 分钟时长的音乐，对中英文歌词理解良好。据玉哥学员反馈，使用该工具制作短剧 BGM 的平均成本从每首 10 元降至 0.5 元，大幅降低了短剧配乐的制作门槛和费用。",
+      "llm_key_points": [
+        "Suno v4 支持生成 4 分钟时长的音乐",
+        "中英文歌词理解能力提升",
+        "短剧 BGM 制作成本从 ¥10/首降至 ¥0.5/首",
+        "由玉哥学员案例验证成本下降效果"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，AI 音乐生成工具显著降低了配乐成本，可更自由地定制原创 BGM；对 AI 工具方，音乐生成赛道竞争加剧，需关注版权合规与差异化；对投资人，AIGC 音频工具的商业化潜力进一步显现。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "AI 工具开发者",
+        "运营",
+        "投资人"
+      ],
+      "tags": [
+        "Suno",
+        "AI音乐",
+        "短剧BGM",
+        "成本优化",
+        "AIGC工具"
+      ],
+      "confidence": 0.95,
+      "llm_processed_at": "2026-09-17T03:06:35.688Z"
+    },
+    {
+      "id": 15,
+      "title": "Midjourney v7 公测",
+      "category": "model",
+      "tag": "模型",
+      "summary": "MJ v7 公测,中文提示词理解大幅提升,新\"风格锁定\"功能解决角色一致性痛点。但国内访问仍需翻墙。",
+      "source": "Midjourney 官方",
+      "url": "https://www.midjourney.com/",
+      "date": "2026-09-06",
+      "title_zh": "Midjourney v7 开启公测：中文提示词理解大幅提升，新增风格锁定功能",
+      "llm_summary": "Midjourney v7 正式开启公测，本次更新重点提升了中文提示词的理解能力，并推出新功能“风格锁定”，旨在解决 AI 绘画中角色一致性难以保持的痛点。不过，国内用户访问该服务仍需借助翻墙工具。",
+      "llm_key_points": [
+        "Midjourney v7 进入公测阶段",
+        "中文提示词理解能力大幅提升",
+        "新增“风格锁定”功能，改善角色一致性",
+        "国内访问仍需翻墙"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，角色一致性是 AI 生成内容的核心痛点，风格锁定功能有望提升创作效率；中文提示词优化降低了国内用户的使用门槛，但翻墙限制仍影响普及。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "AI 工具开发者",
+        "运营"
+      ],
+      "tags": [
+        "Midjourney",
+        "AI绘画",
+        "角色一致性",
+        "中文提示词",
+        "AIGC工具"
+      ],
+      "confidence": 0.95,
+      "llm_processed_at": "2026-09-17T03:06:38.314Z"
+    },
+    {
+      "id": 10,
+      "title": "可灵 AI 1.6 模型上线(快手)",
+      "category": "model",
+      "tag": "模型",
+      "summary": "可灵 1.6 上线,角色一致性显著提升,运镜理解加强。运镜中人物眼神跟随镜头,符合玉哥 9-08 制定的\"人物眼神必跟镜头\"规则。",
+      "source": "可灵官方",
+      "url": "https://klingai.kuaishou.com/",
+      "date": "2026-09-05",
+      "title_zh": "快手可灵 AI 1.6 模型上线：角色一致性与运镜理解显著提升",
+      "llm_summary": "快手可灵 AI 1.6 模型正式上线，本次更新重点提升了角色一致性，并加强了对运镜的理解能力。在运镜过程中，人物眼神能够跟随镜头移动，符合玉哥 9-08 制定的“人物眼神必跟镜头”规则。该升级有望提升 AI 视频生成中角色稳定性和镜头表现力，为短剧、漫剧等创作提供更自然流畅的视觉体验。",
+      "llm_key_points": [
+        "可灵 AI 1.6 模型由快手推出并上线",
+        "角色一致性显著提升，减少角色漂移",
+        "运镜理解加强，人物眼神可跟随镜头",
+        "符合玉哥 9-08 制定的“人物眼神必跟镜头”规则"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，角色一致性和运镜理解的提升能减少后期修正成本，提高制作效率；对 AI 工具方来说，可灵 1.6 的迭代加剧了视频生成模型的竞争；投资人可关注快手在 AIGC 视频领域的持续投入。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "AI 工具开发者",
+        "投资人"
+      ],
+      "tags": [
+        "可灵AI",
+        "快手",
+        "角色一致性",
+        "运镜理解",
+        "AI视频生成"
+      ],
+      "confidence": 0.95,
+      "llm_processed_at": "2026-09-17T03:06:04.353Z"
+    },
+    {
+      "id": 14,
+      "title": "即梦(字节)开放 API",
+      "category": "tool",
+      "tag": "工具",
+      "summary": "字节即梦开放 API,支持 1.5 模型 + LoRA 微调。国内直连便宜,玉哥学员做角色一致性的成本可降至 ¥0.3/张图。",
+      "source": "字节火山引擎",
+      "url": "https://www.volcengine.com/product/jimeng",
+      "date": "2026-09-04",
+      "title_zh": "字节即梦开放 API：支持 1.5 模型与 LoRA 微调，角色一致性成本降至 ¥0.3/张",
+      "llm_summary": "字节跳动旗下 AI 创作平台即梦正式开放 API，支持 1.5 版本模型以及 LoRA 微调能力。该 API 在国内可直连，调用成本较低，据称可将角色一致性生成成本降至约 ¥0.3/张图。此举意味着创作者和开发者能够以更低门槛、更低成本将即梦的图像生成与角色定制能力集成到自有工作流中，尤其利好需要批量产出统一角色形象的短剧、漫剧团队。",
+      "llm_key_points": [
+        "即梦开放 API，支持 1.5 模型版本",
+        "提供 LoRA 微调能力，可定制角色风格",
+        "国内直连，调用成本较低",
+        "角色一致性生成成本可降至约 ¥0.3/张图",
+        "面向创作者和开发者，便于集成到自有工作流"
+      ],
+      "llm_impact": "对短剧和漫剧团队而言，角色一致性是核心痛点，即梦 API 的低成本 LoRA 方案可显著降低批量出图成本，加速分镜和角色设定环节。对 AI 工具开发者，可基于该 API 快速搭建角色定制与内容生成应用。对平台和投资人，字节进一步开放模型能力，可能加剧国内 AIGC 创作工具生态的竞争。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "AI 工具开发者",
+        "运营人员",
+        "投资人"
+      ],
+      "tags": [
+        "即梦",
+        "字节跳动",
+        "API",
+        "LoRA微调",
+        "角色一致性"
+      ],
+      "confidence": 0.95,
+      "llm_processed_at": "2026-09-17T03:06:41.577Z"
+    },
+    {
+      "id": 1,
+      "title": "9 月 1 日《微短剧发展管理办法》正式施行",
+      "category": "policy",
+      "tag": "政策",
+      "summary": "国家广电总局令第 16 号正式施行。微短剧按投资额分一类(80 万+)/二类(30-80 万)/三类(<30 万)三类管理,平台对三类剧承担审核责任。AI 生成微短剧必须在每集明显位置添加提示标识。",
+      "source": "北青网 / 央视新闻",
+      "url": "https://www.toutiao.com/article/7681079399785120308/",
+      "date": "2026-09-03",
+      "title_zh": "9月1日《微短剧发展管理办法》正式施行",
+      "llm_summary": "国家广电总局令第16号《微短剧发展管理办法》于9月1日正式施行。该办法将微短剧按投资额分为三类：一类（80万元以上）、二类（30万至80万元）、三类（30万元以下），并要求平台对三类微短剧承担审核责任。此外，AI生成的微短剧必须在每集明显位置添加提示标识。",
+      "llm_key_points": [
+        "微短剧按投资额分为一类（80万+）、二类（30-80万）、三类（<30万）",
+        "平台对三类微短剧承担审核责任",
+        "AI生成微短剧必须在每集明显位置添加提示标识",
+        "国家广电总局令第16号正式施行"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，需根据投资额明确分类并遵守审核要求，AI生成内容必须添加标识，增加了合规成本但有助于行业规范化。对平台来说，审核责任加重，需加强内容管理。对AI工具方，需支持标识添加功能。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "平台运营",
+        "AI工具开发者",
+        "投资人"
+      ],
+      "tags": [
+        "微短剧",
+        "政策监管",
+        "AI标识",
+        "内容审核",
+        "广电总局"
+      ],
+      "confidence": 0.95,
+      "llm_processed_at": "2026-09-17T03:06:07.158Z"
+    },
+    {
+      "id": 6,
+      "title": "AI 漫剧中档制作成本 800-1200 元/分钟",
+      "category": "data",
+      "tag": "成本",
+      "summary": "约为真人短剧的 1/5。低成本释放极致产能,但单部作品分到的流量被指数级稀释,回本成为小概率事件。",
+      "source": "北青网",
+      "url": "https://www.toutiao.com/article/7681079399785120308/",
+      "date": "2026-09-03",
+      "title_zh": "AI漫剧中档制作成本降至800-1200元/分钟，约为真人短剧的1/5",
+      "llm_summary": "最新信息显示，AI漫剧中档制作成本已降至每分钟800-1200元，约为真人短剧制作成本的五分之一。低成本释放了极致产能，但随之而来的是单部作品分到的流量被指数级稀释，回本成为小概率事件。",
+      "llm_key_points": [
+        "AI漫剧中档制作成本为800-1200元/分钟",
+        "成本约为真人短剧的1/5",
+        "低成本释放极致产能",
+        "单部作品流量被指数级稀释",
+        "回本成为小概率事件"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，低成本降低了入局门槛，但流量稀释意味着单纯依靠数量难以盈利，需更注重内容质量和差异化运营；对AI工具方，需提供更高效、更具差异化的创作能力；对投资人，需警惕产能过剩带来的回报风险。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "AI工具开发者",
+        "运营",
+        "投资人"
+      ],
+      "tags": [
+        "AI漫剧",
+        "制作成本",
+        "真人短剧",
+        "流量稀释",
+        "回本"
+      ],
+      "confidence": 0.95,
+      "llm_processed_at": "2026-09-17T03:06:44.200Z"
+    },
+    {
+      "id": 2,
+      "title": "抖音端原生 AI 剧漫剧上半年新剧 22.19 万部",
+      "category": "data",
+      "tag": "数据",
+      "summary": "2026 上半年抖音原生 AI 漫剧累计播放 5157.38 亿次,用户规模从 1.2 亿井喷至 6 亿,全年市场规模预计突破 400 亿元。但每 77 部新剧里只有 1 部回本,98.7% 半年内没摸到盈亏线。",
+      "source": "北青网",
+      "url": "https://www.toutiao.com/article/7680770436170334730/",
+      "date": "2026-09-02",
+      "title_zh": "抖音原生 AI 漫剧上半年新剧 22.19 万部，播放量破 5157 亿但仅 1.3% 回本",
+      "llm_summary": "2026 年上半年，抖音端原生 AI 漫剧累计播放量达 5157.38 亿次，用户规模从 1.2 亿井喷至 6 亿，全年市场规模预计突破 400 亿元。然而，新剧数量高达 22.19 万部，每 77 部新剧中仅有 1 部能够回本，98.7% 的剧集在半年内未触及盈亏线，行业呈现高增长与高淘汰并存的态势。",
+      "llm_key_points": [
+        "2026 上半年抖音原生 AI 漫剧累计播放 5157.38 亿次",
+        "用户规模从 1.2 亿增长至 6 亿，全年市场规模预计超 400 亿元",
+        "上半年新剧数量达 22.19 万部，供给爆发",
+        "每 77 部新剧中仅 1 部回本，98.7% 半年内未达盈亏线"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，市场流量红利巨大但竞争极度激烈，回本概率极低，需更注重内容差异化和投流效率。对 AI 工具方和平台来说，海量供给意味着工具需求旺盛，但需帮助创作者提升爆款率。投资人应警惕行业泡沫，关注头部效应和变现模式。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "AI 工具开发者",
+        "运营",
+        "投资人"
+      ],
+      "tags": [
+        "AI漫剧",
+        "抖音",
+        "市场规模",
+        "回本率",
+        "短剧变现"
+      ],
+      "confidence": 0.95,
+      "llm_processed_at": "2026-09-17T03:06:47.176Z"
+    },
+    {
+      "id": 3,
+      "title": "红果短剧发布《关于规范 AI 剧角色创作的公告》",
+      "category": "platform",
+      "tag": "平台",
+      "summary": "明确 AI 剧角色创作应避免雷同,杜绝\"千篇一律\"。平台将启动高频 AI 脸、同质化及素材违规治理专项,创作者需自查并修改替换问题剧集。",
+      "source": "人民日报海外版",
+      "url": "https://hot.dzwww.com/w_14zHP?ipage=4",
+      "date": "2026-09-02",
+      "title_zh": "红果短剧发布公告：规范AI剧角色创作，杜绝“千篇一律”",
+      "llm_summary": "红果短剧发布《关于规范 AI 剧角色创作的公告》，明确要求 AI 剧角色创作应避免雷同，杜绝“千篇一律”。平台将启动高频 AI 脸、同质化及素材违规治理专项，创作者需自查并修改替换问题剧集。此举旨在提升内容质量，维护平台生态。",
+      "llm_key_points": [
+        "红果短剧发布公告规范 AI 剧角色创作",
+        "要求避免角色雷同，杜绝千篇一律",
+        "平台启动高频 AI 脸、同质化及素材违规治理专项",
+        "创作者需自查并修改替换问题剧集"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，需更加注重 AI 角色的差异化设计，避免使用高频 AI 脸和同质化素材，否则可能面临剧集下架或修改。对 AI 工具方来说，需提供更丰富的角色生成选项和定制化能力。平台此举将推动行业从粗放走向精品化。",
+      "llm_audience": "短剧创作者, 漫剧团队, AI 工具开发者, 运营",
+      "tags": [
+        "红果短剧",
+        "AI剧",
+        "角色创作",
+        "平台治理",
+        "内容合规"
+      ],
+      "confidence": 0.95,
+      "llm_processed_at": "2026-09-17T03:06:49.877Z"
+    },
+    {
+      "id": 5,
+      "title": "6 家头部平台投入 60 亿扶持真人微短剧",
+      "category": "business",
+      "tag": "扶持",
+      "summary": "抖音(红果)、腾讯视频、芒果 TV、咪咕、快手、点众等 6 平台,2026 年联合投入 60 亿+支持优秀真人微短剧创作传播。抖音另设 5 亿+专项扶持资金,适配家庭/成长/悬疑题材,分账提升 10-20%。",
+      "source": "广电总局通报",
+      "url": "https://cagd.gov.cn/v/2026/08/9529.html",
+      "date": "2026-09-02",
+      "title_zh": "六大头部平台联合投入60亿扶持真人微短剧",
+      "llm_summary": "抖音（红果）、腾讯视频、芒果TV、咪咕、快手、点众等6家头部平台宣布2026年联合投入60亿元以上，支持优秀真人微短剧的创作与传播。其中抖音额外设立5亿元以上专项扶持资金，重点适配家庭、成长、悬疑题材，并将分账比例提升10%至20%。此举旨在激励优质真人微短剧内容生产，推动行业规模化发展。",
+      "llm_key_points": [
+        "6家平台联合投入60亿+扶持真人微短剧",
+        "抖音单独设立5亿+专项扶持资金",
+        "扶持题材聚焦家庭、成长、悬疑",
+        "分账比例提升10%-20%",
+        "覆盖2026年全年创作与传播"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，平台加大资金投入和分账比例意味着更多变现机会，尤其是家庭、成长、悬疑题材将获重点倾斜；对AI工具方，真人短剧扶持可能间接带动AI辅助创作需求，但纯AI漫剧可能面临竞争压力；对投资人，平台联合投入释放行业利好信号，真人微短剧赛道热度将持续。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "运营",
+        "投资人",
+        "平台方"
+      ],
+      "tags": [
+        "微短剧扶持",
+        "平台分账",
+        "抖音红果",
+        "真人短剧",
+        "行业投资"
+      ],
+      "confidence": 0.95,
+      "llm_processed_at": "2026-09-17T03:06:52.970Z"
+    },
+    {
+      "id": 19,
+      "title": "红果 2 月拦截 205 部违规短剧",
+      "category": "data",
+      "tag": "数据",
+      "summary": "红果短剧 2026 年 2 月累计拦截下架违规微短剧 205 部,大量在审核阶段即被拦截。AI 内容是治理重点:4 月专项整治中红果一周内下架 3522 部未完成备案 / 未标注 AI 属性的 AI 漫剧。",
+      "source": "北青网",
+      "url": "https://www.toutiao.com/article/7681079399785120308/",
+      "date": "2026-09-02",
+      "title_zh": "红果2月拦截205部违规短剧，AI漫剧成治理重点",
+      "llm_summary": "红果短剧公布2026年2月治理数据，累计拦截下架违规微短剧205部，其中大量在审核阶段即被拦截。平台将AI内容列为治理重点，在4月专项整治中，一周内下架3522部未完成备案或未标注AI属性的AI漫剧。",
+      "llm_key_points": [
+        "红果短剧2026年2月拦截下架违规微短剧205部",
+        "大量违规内容在审核阶段即被拦截",
+        "AI内容被列为平台治理重点",
+        "4月专项整治一周内下架3522部未备案/未标注AI属性的AI漫剧"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，平台对AI内容的审核趋严，未备案或未标注AI属性的作品将面临下架风险，需尽快完成合规备案并明确标注AI生成属性。对AI工具方和平台而言，需加强内容审核与标识能力，避免违规内容传播。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "AI工具开发者",
+        "运营",
+        "投资人"
+      ],
+      "tags": [
+        "红果短剧",
+        "违规下架",
+        "AI漫剧",
+        "备案",
+        "内容合规"
+      ],
+      "confidence": 0.95,
+      "llm_processed_at": "2026-09-17T03:06:55.454Z"
+    },
+    {
+      "id": 20,
+      "title": "快手 7 月拦截 700+ 部 + 处置违规账号",
+      "category": "data",
+      "tag": "数据",
+      "summary": "快手 7 月累计拦截、整改、下架违规微短剧七百余部,并处置一批违规账号。2 月前置拦截近百部,4 月排查 8000+ AI 漫剧下架 900+ 违规。",
+      "source": "北青网",
+      "url": "https://www.toutiao.com/article/7681079399785120308/",
+      "date": "2026-09-02",
+      "title_zh": "快手7月拦截700余部违规微短剧，并处置违规账号",
+      "llm_summary": "快手在2024年7月累计拦截、整改、下架违规微短剧七百余部，并处置一批违规账号。此前2月已前置拦截近百部，4月排查8000余部AI漫剧并下架900余部违规内容。这显示平台对微短剧和AI漫剧的内容审核持续收紧，违规作品面临下架和账号处罚。",
+      "llm_key_points": [
+        "7月快手拦截、整改、下架违规微短剧700余部",
+        "同期处置一批违规账号",
+        "2月前置拦截近百部违规微短剧",
+        "4月排查8000余部AI漫剧，下架900余部违规内容",
+        "平台对微短剧和AI漫剧的审核力度持续加强"
+      ],
+      "llm_impact": "对短剧和漫剧创作者而言，内容合规风险上升，需严格自查避免违规下架；对平台方，审核压力增大，可能进一步收紧规则；对AI工具方，需关注内容安全功能以辅助创作者合规。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "运营",
+        "平台方",
+        "投资人"
+      ],
+      "tags": [
+        "快手",
+        "微短剧监管",
+        "违规下架",
+        "AI漫剧",
+        "内容合规"
+      ],
+      "confidence": 0.95,
+      "llm_processed_at": "2026-09-17T03:06:58.451Z"
+    },
+    {
+      "id": 25,
+      "title": "微信 8 月下架 56 部 + 处置违规小程序",
+      "category": "data",
+      "tag": "数据",
+      "summary": "微信 8 月公告共下架数十部存在不良价值观导向或侵权行为的违规微短剧,并对违规小程序作出处置。淘宝 2 月下架 56 部存在涉封建迷信 / 极端复仇等价值观导向不良的微短剧。",
+      "source": "北青网",
+      "url": "https://www.toutiao.com/article/7681079399785120308/",
+      "date": "2026-09-02",
+      "title_zh": "微信8月下架56部违规微短剧并处置小程序，淘宝此前也下架56部",
+      "llm_summary": "微信8月发布公告，共下架数十部存在不良价值观导向或侵权行为的违规微短剧，并对相关违规小程序作出处置。同期信息显示，淘宝在2月也曾下架56部涉及封建迷信、极端复仇等价值观导向不良的微短剧。两大平台相继出手，表明对微短剧内容的审核与治理正在持续收紧。",
+      "llm_key_points": [
+        "微信8月下架数十部违规微短剧，主要涉及不良价值观导向或侵权行为",
+        "微信同时对违规小程序作出处置，治理范围覆盖内容与载体",
+        "淘宝2月曾下架56部微短剧，问题集中在封建迷信、极端复仇等价值观导向",
+        "平台侧对微短剧的合规审核持续加强，违规内容面临下架与账号处置"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，平台审核趋严意味着选题、剧情和价值观表达需更谨慎，封建迷信、极端复仇等题材风险升高；依赖小程序分发的团队需关注账号与载体合规，避免下架损失。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "运营",
+        "平台方",
+        "投资人"
+      ],
+      "tags": [
+        "微短剧监管",
+        "微信下架",
+        "内容合规",
+        "平台治理",
+        "价值观导向"
+      ],
+      "confidence": 0.95,
+      "llm_processed_at": "2026-09-17T03:07:01.481Z"
+    },
+    {
+      "id": 8,
+      "title": "微短剧统一标识启用(红底金色苔花)",
+      "category": "policy",
+      "tag": "标识",
+      "summary": "9 月 1 日起,一类微短剧片头启用统一\"苔花\"标识,3 秒片头。微短剧第一次有了行业\"身份标识\"。北京首批 11 部项目同步启用新证备案号。",
+      "source": "央视网",
+      "url": "https://www.toutiao.com/article/7680428551178306086",
+      "date": "2026-09-01",
+      "title_zh": "微短剧统一标识“苔花”9月1日启用，行业首获身份标识",
+      "llm_summary": "自9月1日起，一类微短剧片头将启用统一的“苔花”标识，标识为红底金色，时长3秒。这是微短剧行业首次拥有统一的“身份标识”。北京首批11部项目同步启用新证备案号，标志着微短剧行业向规范化、标准化迈出重要一步。",
+      "llm_key_points": [
+        "9月1日起一类微短剧片头启用统一“苔花”标识，红底金色，时长3秒",
+        "微短剧行业首次拥有统一“身份标识”",
+        "北京首批11部项目同步启用新证备案号",
+        "标识启用意味着行业监管与规范化进程加速"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，统一标识和备案号要求将提高准入门槛，需及时完成备案并调整片头制作流程；对平台方，需配合标识审核与上线规范；对投资人，行业规范化有助于降低政策风险，但短期可能增加合规成本。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "平台运营",
+        "投资人"
+      ],
+      "tags": [
+        "微短剧",
+        "统一标识",
+        "苔花",
+        "备案号",
+        "行业规范"
+      ],
+      "confidence": 0.95,
+      "llm_processed_at": "2026-09-17T03:07:04.167Z"
+    },
+    {
+      "id": 11,
+      "title": "Hailuo(海螺)推\"6s 静音免费\"套餐",
+      "category": "model",
+      "tag": "模型",
+      "summary": "海螺视频 Token Plan 套餐每日 3 条免费额度,优先用 H2.3(玉哥学员默认)。H3 烧 credits 需用户明确授权。",
+      "source": "海螺官方",
+      "url": "https://hailuoai.com/",
+      "date": "2026-09-01",
+      "title_zh": "海螺视频推出“6秒静音免费”套餐，每日3条免费额度",
+      "llm_summary": "海螺视频推出 Token Plan 套餐，提供每日 3 条免费额度，生成 6 秒静音视频。该套餐优先使用 H2.3 模型（玉哥学员默认），而 H3 模型会消耗 credits，需要用户明确授权才能使用。此举旨在降低用户尝试门槛，吸引更多创作者体验 AI 视频生成。",
+      "llm_key_points": [
+        "海螺视频推出 Token Plan 套餐，每日提供 3 条免费额度",
+        "免费额度生成 6 秒静音视频",
+        "优先使用 H2.3 模型，玉哥学员默认",
+        "H3 模型消耗 credits，需用户明确授权"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，免费额度降低了 AI 视频生成工具的试用成本，有利于快速测试和内容创作；对 AI 工具方，可能引发其他平台跟进免费策略，加剧竞争。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "AI 工具开发者",
+        "运营"
+      ],
+      "tags": [
+        "海螺视频",
+        "免费套餐",
+        "AI视频生成",
+        "H2.3",
+        "H3"
+      ],
+      "confidence": 0.9,
+      "llm_processed_at": "2026-09-17T03:06:09.949Z"
+    },
+    {
+      "id": 7,
+      "title": "微短剧 11 条内容红线明确",
+      "category": "policy",
+      "tag": "红线",
+      "summary": "危害国家安全、煽动民族仇恨、丑化英雄烈士、宣扬淫秽赌博、侵害未成年人权益等 11 类禁止内容。擅自播出最高罚 10 万,情节严重按《广播电视管理条例》第 49 条处罚。",
+      "source": "广东网信网",
+      "url": "https://cagd.gov.cn/v/2026/08/9529.html",
+      "date": "2026-08-31",
+      "title_zh": "微短剧11条内容红线明确，违规最高罚10万",
+      "llm_summary": "微短剧行业明确11类禁止内容，包括危害国家安全、煽动民族仇恨、丑化英雄烈士、宣扬淫秽赌博、侵害未成年人权益等。擅自播出最高罚款10万元，情节严重者将依据《广播电视管理条例》第49条处罚。该规定为微短剧创作与播出划定了清晰的内容底线，强化了行业监管。",
+      "llm_key_points": [
+        "明确11类禁止内容，涵盖国家安全、民族仇恨、英雄烈士、淫秽赌博、未成年人权益等",
+        "擅自播出违规内容最高罚款10万元",
+        "情节严重者按《广播电视管理条例》第49条处罚",
+        "为微短剧创作与平台审核提供明确合规依据"
+      ],
+      "llm_impact": "短剧创作者和漫剧团队需立即自查内容，避免触碰红线；平台方将加强审核，可能影响部分题材上线；合规成本上升，但有利于行业长期健康发展。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "平台运营",
+        "投资人"
+      ],
+      "tags": [
+        "微短剧",
+        "内容红线",
+        "广电总局",
+        "合规",
+        "处罚"
+      ],
+      "confidence": 0.95,
+      "llm_processed_at": "2026-09-17T03:07:06.829Z"
+    },
+    {
+      "id": 27,
+      "title": "算法被纳入监管:不得诱导沉迷",
+      "category": "policy",
+      "tag": "政策",
+      "summary": "《微短剧发展管理办法》要求播出单位定期审核、评估、验证算法机制机理、模型、数据和应用结果,优先推荐优质微短剧,不得使用诱导用户沉迷、过度消费等的算法模型。",
+      "source": "广东网信网",
+      "url": "https://cagd.gov.cn/v/2026/08/9529.html",
+      "date": "2026-08-31",
+      "title_zh": "算法被纳入监管：微短剧不得诱导用户沉迷",
+      "llm_summary": "《微短剧发展管理办法》对播出单位提出算法监管要求，规定平台须定期审核、评估、验证算法机制机理、模型、数据和应用结果，优先推荐优质微短剧，不得使用诱导用户沉迷、过度消费的算法模型。这意味着微短剧平台的推荐算法从纯流量导向转向合规与价值导向，算法透明度与可审计性成为硬性要求。",
+      "llm_key_points": [
+        "播出单位须定期审核、评估、验证算法机制机理、模型、数据和应用结果",
+        "平台应优先推荐优质微短剧内容",
+        "禁止使用诱导用户沉迷、过度消费的算法模型",
+        "算法治理被正式纳入微短剧监管框架"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，依赖强刺激、诱导付费的投流与推荐打法将受限，需转向内容质量与合规运营；对平台方，算法需可审计、可解释，推荐策略面临调整；对AI工具方，合规内容生成与审核能力或成新卖点。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "平台运营",
+        "AI工具开发者",
+        "投资人"
+      ],
+      "tags": [
+        "微短剧管理办法",
+        "算法监管",
+        "防沉迷",
+        "内容合规",
+        "推荐机制"
+      ],
+      "confidence": 0.95,
+      "llm_processed_at": "2026-09-17T03:06:12.933Z"
+    },
+    {
+      "id": 4,
+      "title": "抖音短剧创作者中心上线预检工具",
+      "category": "tool",
+      "tag": "工具",
+      "summary": "8 月 3 日上线,面向 AI 剧版权方与导演机构,可在成片上线前提前筛查肖像权、版权等潜在风险。",
+      "source": "抖音集团短剧创作者中心",
+      "url": "https://hot.dzwww.com/w_14zHP?ipage=4",
+      "date": "2026-08-03",
+      "title_zh": "抖音短剧创作者中心上线预检工具，AI剧版权方与导演机构可提前筛查风险",
+      "llm_summary": "8月3日，抖音短剧创作者中心正式上线预检工具，面向AI剧版权方与导演机构开放。该工具可在成片上线前对内容进行提前筛查，重点识别肖像权、版权等潜在风险，帮助创作者在发布前规避侵权与合规问题，降低下架或处罚风险。",
+      "llm_key_points": [
+        "8月3日抖音短剧创作者中心上线预检工具",
+        "服务对象为AI剧版权方与导演机构",
+        "核心功能是成片上线前筛查肖像权、版权等风险",
+        "旨在帮助创作者提前规避侵权与合规问题"
+      ],
+      "llm_impact": "对短剧创作者和漫剧团队而言，预检工具能降低因肖像权、版权问题导致的下架风险，提升上线效率；对AI工具方和平台来说，合规前置有助于减少纠纷，推动AI剧内容生态规范化。",
+      "llm_audience": [
+        "短剧创作者",
+        "漫剧团队",
+        "AI剧版权方",
+        "导演机构",
+        "平台运营"
+      ],
+      "tags": [
+        "抖音短剧",
+        "预检工具",
+        "版权合规",
+        "肖像权",
+        "AI剧"
+      ],
+      "confidence": 0.95,
+      "llm_processed_at": "2026-09-17T03:07:09.575Z"
+    }
+  ]
+}

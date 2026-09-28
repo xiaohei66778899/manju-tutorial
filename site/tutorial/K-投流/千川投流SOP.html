@@ -1,0 +1,1183 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="千川投流 SOP · 原版 v9.0 · 4 阶段全流程 + §7 ROI 计算器 + §13 顶级视频课路径。玉哥整理的 AI 漫剧与短剧制作实用教程，包含步骤、案例和练习。">
+<title>千川投流 SOP · 原版 v9.0 · 4 阶段全流程 + §7 ROI 计算器 + §13 顶级视频课路径</title>
+<style>
+:root{
+  --bg:#FFFCF6;--bg2:#FFF7E8;--bg3:#F7EFDC;--line:#E8DFC8;--text:#1F1A14;--muted:#6F6657;
+  --blue:#635BFF;--blue-soft:#ECE7FF;--blue-deep:#4F46E5;
+  --purple:#8B5CF6;--warm:#F47C3C;--danger:#FF5B6E;--success:#10B981;
+  --acc:#635BFF;--acc2:#F47C3C;--acc3:#635BFF;--acc4:#FF5B6E;--acc5:#8B5CF6;
+}
+[data-theme="dark"]{
+  --bg:#0F0F12;--bg2:#17171A;--bg3:#1F1F23;--line:#2D2D33;--text:#E6E9F2;--muted:#8A93A6;
+  --blue:#7B7AFF;--blue-soft:#1F1F2A;--blue-deep:#9B98FF;
+  --purple:#A78BFA;--warm:#F47C3C;--danger:#FF7D91;--success:#34D399;
+  --acc:#7B7AFF;--acc2:#F47C3C;--acc3:#7B7AFF;--acc4:#FF7D91;--acc5:#A78BFA;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Helvetica,Arial,sans-serif;line-height:1.7;font-size:15px;-webkit-font-smoothing:antialiased}
+a{color:var(--acc3);text-decoration:none}
+a:hover{text-decoration:underline}
+.topbar{position:sticky;top:0;background:rgba(11,13,18,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:12px 20px;z-index:50;display:flex;align-items:center;gap:16px}
+.logo{font-weight:800;font-size:18px;background:linear-gradient(90deg,var(--acc),var(--acc3));-webkit-background-clip:text;background-clip:text;color:transparent}
+.logo small{color:var(--muted);font-weight:400;margin-left:8px;font-size:12px}
+.layout{display:grid;grid-template-columns:260px 1fr;max-width:1400px;margin:0 auto}
+aside{position:sticky;top:56px;height:calc(100vh - 56px);overflow-y:auto;padding:20px 14px;border-right:1px solid var(--line);background:var(--bg2);font-size:13px}
+aside h3{color:var(--muted);font-size:11px;letter-spacing:1px;margin:14px 0 6px;text-transform:uppercase}
+aside ul{list-style:none;margin-bottom:14px}
+aside li{margin:1px 0}
+aside a{color:var(--muted);display:block;padding:4px 8px;border-radius:4px;border-left:2px solid transparent;font-weight:500}
+aside a:hover{background:var(--bg3);color:var(--text);text-decoration:none;border-left-color:var(--acc)}
+main{padding:28px 40px 80px;min-width:0}
+h1{font-size:32px;margin:0 0 8px;color:var(--text)}
+h2{font-size:22px;margin:44px 0 12px;padding-bottom:6px;border-bottom:1px solid var(--line);position:relative;color:var(--text)}
+h2::before{content:"";position:absolute;left:-20px;top:8px;width:4px;height:22px;background:var(--acc);border-radius:2px}
+h3{font-size:16px;margin:20px 0 6px;color:var(--acc);font-weight:700}
+h4{font-size:14px;margin:12px 0 4px;color:var(--text)}
+p{margin:8px 0;color:var(--text);line-height:1.78}
+ul,ol{margin:6px 0 12px 24px;color:var(--text)}
+li{margin:3px 0;color:var(--text)}
+strong{color:var(--text);font-weight:700}
+em{color:var(--acc);font-style:normal;font-weight:600}
+.hero{background:linear-gradient(135deg,#FFE9D6 0%,#FFF7E8 60%,#ECE7FF 100%);border:2px solid var(--blue);border-radius:14px;padding:32px;margin-bottom:28px;box-shadow:0 8px 28px rgba(99,91,255,.14)}
+[data-theme="dark"] .hero{background:linear-gradient(135deg,#1F1F2A 0%,#17171A 60%,#1F1F2A 100%);border:2px solid var(--blue);box-shadow:0 8px 28px rgba(123,122,255,.18)}
+.hero h1{background:linear-gradient(90deg,var(--blue),var(--purple));-webkit-background-clip:text;background-clip:text;color:transparent;display:inline-block;font-size:36px;font-weight:800}
+.hero .sub{color:var(--text);opacity:.75;margin-top:8px;font-size:14.5px;font-weight:500}
+.hero p{margin-top:14px;max-width:780px;font-size:15px;line-height:1.78}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.tag{background:var(--bg3);border:1px solid var(--line);padding:3px 10px;border-radius:99px;font-size:12px;color:var(--text)}
+.tag.cold{background:rgba(244,124,60,.12);color:var(--blue);border-color:rgba(244,124,60,.25)}
+.tag.warm{background:rgba(255,177,66,.10);color:var(--warm);border-color:rgba(255,177,66,.30)}
+.tag.hot{background:rgba(255,91,110,.10);color:var(--danger);border-color:rgba(255,91,110,.30)}
+.tag.god{background:rgba(139,92,246,.10);color:var(--purple);border-color:rgba(139,92,246,.30)}
+.callout{display:flex;gap:10px;padding:12px 14px;border-radius:8px;margin:12px 0;border:1px solid var(--line);background:var(--bg2)}
+.callout .ico{font-size:18px;flex-shrink:0;line-height:1}
+.callout.tip{border-color:rgba(244,124,60,.18);backgroundrgba(244,124,60,.12))}
+.callout.warn{border-color:rgba(255,91,110,.35);background:rgba(255,91,110,.05)}
+.callout.info{border-color:rgba(244,124,60,.30);backgrounrgba(244,124,60,.10)4)}
+.callout.purple{border-color:rgba(139,92,246,.30);background:rgba(139,92,246,.04)}
+.callout.ok{border-color:rgba(16,185,129,.30);background:rgba(16,185,129,.04)}
+.callout p{font-size:13px;color:var(--text);margin:0}
+
+/* ==================== §13 顶级视频课路径 · 卡片化 ==================== */
+.stage-filter{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 22px;padding:12px 16px;background:var(--bg2);border:1px solid var(--line);border-radius:12px;align-items:center;box-shadow:0 4px 14px rgba(0,0,0,.04)}
+.stage-filter .pill{padding:5px 12px;background:var(--bg3);border:1px solid var(--line);border-radius:999px;font-size:12px;color:var(--muted);cursor:default;font-weight:500;transition:.15s}
+.stage-filter .pill.active{background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;border-color:transparent;box-shadow:0 2px 8rgba(244,124,60,.18)27)}
+.stage-filter .pill:hover{color:var(--text);border-color:var(--acc)}
+.stage-filter .filter-count{margin-left:auto;color:var(--muted);font-size:11.5px}
+
+.stage-card{border:1px solid var(--line);border-radius:14px;background:linear-gradient(150deg,var(--bg2),color-mix(in srgb,var(--bg2) 92%,var(--purple)));padding:22px 24px;margin:24px 0;box-shadow:0 8px 22px rgba(0,0,0,.04);transition:.18s}
+.stage-card:hover{border-color:var(--acc)}
+.stage-card .stage-head{display:flex;align-items:center;gap:14px;margin-bottom:6px;flex-wrap:wrap}
+.stage-card .stage-icon{font-size:28px;flex-shrink:0}
+.stage-card h3{margin:0;font-size:18px;color:var(--text)}
+.stage-card .stage-target{margin-left:auto;padding:4px 10px;background:color-mix(in srgb,var(--blue) 14%,var(--bg2));border:1px solid color-mix(in srgb,var(--blue) 35%,var(--line));color:var(--blue);border-radius:999px;font-size:12px;font-weight:500}
+.stage-card .stage-desc{margin:4px 0 16px;color:var(--text);font-size:13.5px;line-height:1.6;padding-left:42px}
+.stage-card .stage-desc strong{color:var(--acc);font-weight:600}
+
+.course-mini{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}
+.course-mini a.cm{border:1px solid var(--line);border-radius:10px;background:var(--bg);padding:12px 14px;display:flex;flex-direction:column;gap:6px;transition:.18s;color:inherit;text-decoration:none;min-height:118px}
+.course-mini a.cm:hover{border-color:var(--blue);background:color-mix(in srgb,var(--bg3) 80%,var(--bg));transform:translateY(-2px);box-shadow:0 8px 18px rgba(0,0,0,.06)}
+.course-mini .cm-title{font-size:13.5px;font-weight:600;color:var(--text);line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.course-mini .cm-meta{display:flex;gap:6px;flex-wrap:wrap;align-items:center;color:var(--muted);font-size:11.5px}
+.course-mini .cm-meta .bdg{background:var(--bg3);border:1px solid var(--line);padding:1px 7px;border-radius:6px;font-weight:500}
+.course-mini .cm-meta .bdg.bz{color:var(--warm);border-color:color-mix(in srgb,var(--warm) 35%,var(--line))}
+.course-mini .cm-meta .bdg.yt{color:#FF7D91;border-color:rgba(255,125,125,.35)}
+.course-mini .cm-meta .bdg.sc{color:var(--success);border-color:color-mix(in srgb,var(--success) 35%,var(--line))}
+.course-mini .cm-meta .bdg.tt{color:var(--purple);border-color:color-mix(in srgb,var(--purple) 35%,var(--line))}
+.course-mini .cm-link{margin-top:auto;color:var(--blue);font-size:12px;font-weight:600;display:inline-flex;align-items:center;gap:4px}
+.course-mini a.cm:hover .cm-link{color:var(--purple)}
+.course-mini a.cm:hover .cm-link::after{content:" →"}
+
+/* ==================== §3 4 阶段 SOP · KPI 卡片 ==================== */
+.stage-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:18px 0 22px}
+.stage-box{border:1px solid var(--line);border-radius:14px;background:var(--bg2);padding:18px 20px;transition:.2s;position:relative;overflow:hidden}
+.stage-box::before{content:"";position:absolute;top:0;left:0;width:4px;height:100%;background:var(--blue);opacity:.5;transition:.18s}
+.stage-box:hover{border-color:var(--blue);transform:translateY(-2px);box-shadow:0 8px 18px rgba(0,0,0,.05)}
+.stage-box:hover::before{opacity:1;width:6px}
+.stage-box .stage-num{position:absolute;top:12px;right:14px;font-size:11px;font-weight:600;color:var(--muted);background:var(--bg3);padding:2px 8px;border-radius:5px;letter-spacing:.5px}
+.stage-box h3{margin:0 0 4px;font-size:15.5px;color:var(--text);display:flex;align-items:center;gap:8px}
+.stage-box .stage-period{font-size:11.5px;color:var(--blue);font-weight:500;margin-bottom:10px;display:inline-block;background:color-mix(in srgb,var(--blue) 10%,var(--bg));padding:2px 9px;border-radius:99px}
+.stage-box .stage-goal{font-size:13px;color:var(--text);font-weight:500;margin-bottom:12px;line-height:1.5;padding-left:2px}
+.stage-kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
+.stage-kpi{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px 10px;display:flex;flex-direction:column;gap:2px}
+.stage-kpi .k{font-size:10.5px;color:var(--muted);font-weight:500;letter-spacing:.3px}
+.stage-kpi .v{font-size:14px;color:var(--text);font-weight:700;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;line-height:1.2}
+
+/* ==================== §7.2 ROI 计算器 · 可交互 ==================== */
+.roi-calc{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin:18px 0 24px}
+.roi-panel{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:18px 20px;transition:.2s}
+.roi-panel.inputs{border-left:4px solid var(--blue)}
+.roi-panel.outputs{border-left:4px solid var(--purple)}
+.roi-panel h4{margin:0 0 12px;font-size:14px;color:var(--text);display:flex;align-items:center;gap:6px;letter-spacing:.5px}
+.roi-panel h4 span.bdg{font-size:10px;padding:2px 7px;border-radius:5px;background:color-mix(in srgb,var(--blue) 14%,var(--bg2));border:1px solid color-mix(in srgb,var(--blue) 30%,var(--line));color:var(--blue);font-weight:600}
+.roi-panel.outputs h4 span.bdg{background:color-mix(in srgb,var(--purple) 14%,var(--bg2));border-color:color-mix(in srgb,var(--purple) 30%,var(--line));color:var(--purple)}
+.roi-row{display:flex;flex-direction:column;gap:5px;margin-bottom:10px}
+.roi-row label{font-size:12px;color:var(--muted);font-weight:500;display:flex;justify-content:space-between;align-items:center}
+.roi-row label .def{font-size:10.5px;color:var(--blue);font-weight:400;background:color-mix(in srgb,var(--blue) 10%,var(--bg));padding:1px 6px;border-radius:5px}
+.roi-row input[type="number"]{width:100%;padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);font-size:14px;font-weight:600;color:var(--text);transition:.15s;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.roi-row input[type="number"]:focus{outline:none;border-color:var(--blue);background:var(--bg3);box-shadow:0 0 0 3px color-mix(in srgb,var(--blue) 15%,transparent)}
+.roi-row input[type="number"]:hover{border-color:color-mix(in srgb,var(--blue) 35%,var(--line))}
+.roi-out{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:10px;display:flex;align-items:center;justify-content:space-between;gap:10px;transition:.2s}
+.roi-out .name{font-size:12px;color:var(--muted);font-weight:500;line-height:1.3}
+.roi-out .name small{display:block;font-size:10.5px;color:var(--muted);font-weight:400;margin-top:2px}
+.roi-out .val{font-size:18px;font-weight:700;color:var(--text);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:-.3px;text-align:right;flex-shrink:0;min-width:80px}
+.roi-out.warn{border-color:rgba(255,91,110,.3);background:color-mix(in srgb,#FF7D91 6%,var(--bg))}
+.roi-out.warn .val{color:#FF7D91}
+.roi-out.caution{border-color:rgba(255,177,66,.35);background:color-mix(in srgb,#FFB142 6%,var(--bg))}
+.roi-out.caution .val{color:var(--warm)}
+.roi-out.good{border-color:rgba(16,185,129,.35);background:color-mix(in srgb,#10B981 6%,var(--bg))}
+.roi-out.good .val{color:#10B981}
+.roi-out.fire{border-color:rgba(139,92,246,.4);background:color-mix(in srgb,#8B5CF6 8%,var(--bg))}
+.roi-out.fire .val{color:var(--purple)}
+.roi-verdict{margin-top:18px;padding:14px 18px;border-radius:12px;background:linear-gradient(135deg,var(--bg3),color-mix(in srgb,var(--bg2) 90%,var(--purple)));border:1px solid var(--line);text-align:center}
+.roi-verdict .label{font-size:13px;color:var(--muted);margin-bottom:4px;letter-spacing:.5px;text-transform:uppercase;font-weight:600}
+.roi-verdict .big{font-size:42px;font-weight:800;line-height:1.1;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:linear-gradient(135deg,var(--blue),var(--purple));-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:-1px}
+.roi-verdict .badge{display:inline-block;margin-top:8px;padding:4px 14px;border-radius:99px;font-size:13px;font-weight:600;letter-spacing:.5px}
+.roi-verdict .badge.bad{background:rgba(255,91,110,.12);border:1px solid rgba(255,91,110,.3);color:#FF7D91}
+.roi-verdict .badge.warn{background:rgba(255,177,66,.12);border:1px solid rgba(255,177,66,.3);color:var(--warm)}
+.roi-verdict .badge.good{background:rgba(16,185,129,.12);border:1px solid rgba(16,185,129,.3);color:#10B981}
+.roi-verdict .badge.fire{background:rgba(139,92,246,.14);border:1px solid rgba(139,92,246,.35);color:var(--purple)}
+.roi-verdict .hint{margin-top:10px;font-size:12.5px;color:var(--muted);line-height:1.55}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:8px;margin:12px 0}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{padding:8px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--bg3);color:var(--muted);font-weight:600;font-size:11.5px;text-transform:uppercase;letter-spacing:.5px}
+tbody tr:hover{background:rgba(255,255,255,.02)}
+.template{background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin:10px 0;font-family:"JetBrains Mono",Consolas,monospace;font-size:12.5px;color:var(--text);line-height:1.6;white-space:pre-wrap;overflow-x:auto}
+.template .k{color:var(--acc5);font-weight:600}
+.template .v{color:#ffd6a5}
+.template .c{color:var(--muted);font-style:italic}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin:14px 0}
+.step{background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:12px 14px;position:relative}
+.step h4{color:var(--text);margin:4px 0;font-size:13.5px}
+.step p{font-size:12px;color:var(--text);margin:0}
+.step .n{position:absolute;top:-9px;left:-9px;width:28px;height:28px;background:linear-gradient(135deg,var(--acc),var(--acc2));color:var(--text);border-radius:50%;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:13px}
+footer{margin-top:50px;padding:20px 40px;color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);text-align:center}
+
+/* ==================== Dark 模式覆盖 · 全站配色统一 ==================== */
+[data-theme="dark"] body{background:var(--bg);color:var(--text)}
+[data-theme="dark"] h1,[data-theme="dark"] h2,[data-theme="dark"] h4{color:var(--text)}
+[data-theme="dark"] h3{color:var(--acc)}
+[data-theme="dark"] p,[data-theme="dark"] li,[data-theme="dark"] ul,[data-theme="dark"] ol{color:var(--text)}
+[data-theme="dark"] aside{background:var(--bg2);border-right-color:var(--line)}
+[data-theme="dark"] aside a{color:var(--muted)}
+[data-theme="dark"] aside a:hover{color:var(--text);background:var(--bg3)}
+[data-theme="dark"] aside a.aside-current{color:var(--blue)!important;background:color-mix(in srgb,var(--blue) 14%,var(--bg2))!important;border-left-color:var(--blue)!important}
+[data-theme="dark"] main h2{color:var(--blue)}
+[data-theme="dark"] .template{background:var(--bg3)}
+[data-theme="dark"] .step{background:var(--bg2)}
+[data-theme="dark"] .step h4,[data-theme="dark"] .step p{color:var(--text)}
+[data-theme="dark"] table th,[data-theme="dark"] table td{border-color:var(--line);color:var(--text)}
+[data-theme="dark"] .tbl-wrap{background:var(--bg2);border-color:var(--line)}
+[data-theme="dark"] .callout.tip{background:rgba(16,185,129,.08);border-color:rgba(16,185,129,.35)}
+[data-theme="dark"] .callout.info{background:rgba(244,124,60,.12);border-color:rgba(244,124,60,.30)}
+[data-theme="dark"] .callout.warn{background:rgba(255,91,110,.08);border-color:rgba(255,91,110,.30)}
+[data-theme="dark"] .callout.purple{background:rgba(139,92,246,.08);border-color:rgba(139,92,246,.30)}
+[data-theme="dark"] .callout.ok{background:rgba(16,185,129,.08);border-color:rgba(16,185,129,.30)}
+[data-theme="dark"] .callout p{color:var(--text)}
+[data-theme="dark"] h1{color:var(--text)}
+
+/* ==================== Sidebar 联动 · 当前章节高亮 ==================== */
+aside a.aside-current{color:var(--blue)!important;background:color-mix(in srgb,var(--blue) 12%,var(--bg2))!important;border-left:3px solid var(--blue)!important;font-weight:600;padding-left:7px}
+aside a.aside-current::before{content:"▸ ";color:var(--blue);font-size:11px;margin-right:2px}
+aside::-webkit-scrollbar{width:6px}
+aside::-webkit-scrollbar-track{background:transparent}
+aside::-webkit-scrollbar-thumb{background:var(--line);border-radius:3px}
+aside::-webkit-scrollbar-thumb:hover{background:var(--blue)}
+
+/* ==================== 阅读进度条 · 滚动顶部 ==================== */
+.read-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,var(--blue),var(--purple));z-index:9999;transition:width 80ms ease-out;box-shadow:0 1px rgba(244,124,60,.18),.4);pointer-events:none}
+.read-progress.show-end{box-shadow:0 1px 8px rgba(139,92,246,.6)}
+
+@media (max-width:900px){.layout{grid-template-columns:1fr}aside{position:relative;top:0;height:auto;border-right:0;border-bottom:1px solid var(--line);font-size:12px}main{padding:24px 20px 60px}h1{font-size:24px}h2{font-size:18px}.hero h1{font-size:26px}}
+@media print{aside,.topbar{display:none}.layout{grid-template-columns:1fr}body{background:#fff;color:#000}h2::before{display:none}}
+</style>
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg?v=fix20260927-2215">
+</head>
+<body>
+
+<div class="read-progress" id="readProgress"></div>
+
+<div class="topbar">
+  <div class="logo">💰 千川投流 SOP <small>v9.0 原版 · 4 阶段全流程 + 顶级视频课 · 2026-09-12</small></div>
+  <div style="margin-left:auto;display:flex;gap:8px">
+    <a href="../../index.html" style="background:var(--bg3);border:1px solid var(--line);color:var(--text);padding:5px 12px;border-radius:5px;font-size:12px;text-decoration:none">🏠 返回首页</a>
+    <button id="themeBtn" style="background:var(--bg3);border:1px solid var(--line);color:var(--text);padding:5px 12px;border-radius:5px;cursor:pointer;font-size:12px">🎨 主题</button>
+    <button onclick="window.print()" style="background:var(--bg3);border:1px solid var(--line);color:var(--text);padding:5px 12px;border-radius:5px;cursor:pointer;font-size:12px">🖨 打印</button>
+  </div>
+</div>
+
+<div class="layout">
+
+<aside>
+<h3>0 投流基础(小白)</h3>
+<ul>
+  <li><a href="#b1">1. 投流是什么</a></li>
+  <li><a href="#b2">2. 千川是什么</a></li>
+  <li><a href="#b3">3. 投流核心逻辑</a></li>
+</ul>
+
+<h3>1-4 入门实操</h3>
+<ul>
+  <li><a href="#c1">1. 千川入门</a></li>
+  <li><a href="#c2">2. 实操开户</a></li>
+  <li><a href="#c3">3. 4 阶段 SOP</a></li>
+  <li><a href="#c4">4. 素材模板</a></li>
+</ul>
+
+<h3>5-7 进阶优化</h3>
+<ul>
+  <li><a href="#c5">5. 人群定向</a></li>
+  <li><a href="#c6">6. 出价策略</a></li>
+  <li><a href="#c7">7. ROI 优化</a></li>
+  <li><a href="#b-calc">7.2 ROI 计算器</a></li>
+</ul>
+
+<h3>8-9 实战 + 大神</h3>
+<ul>
+  <li><a href="#c8">8. 复盘表格</a></li>
+  <li><a href="#c9">9. 5 大错误</a></li>
+  <li><a href="#d1">10. 矩阵化(大神)</a></li>
+</ul>
+
+<h3>5-7 进阶优化</h3>
+<ul>
+  <li><a href="#c5">5. 人群定向</a></li>
+  <li><a href="#c6">6. 出价策略</a></li>
+  <li><a href="#c7">7. ROI 优化 · 计算器</a></li>
+</ul>
+
+<h3>8-9 实战 + 大神</h3>
+<ul>
+  <li><a href="#c8">8. 复盘表格</a></li>
+  <li><a href="#c9">9. 5 大错误</a></li>
+  <li><a href="#d1">10. 矩阵化</a></li>
+</ul>
+
+<h3>10-13 资源</h3>
+<ul>
+  <li><a href="#b-calc">§7.2 ROI 计算器</a></li>
+  <li><a href="#d2">11. 投流工具</a></li>
+  <li><a href="#d3">12. 投流课程</a></li>
+  <li><a href="#d4">13. 顶级视频课路径</a></li>
+</ul>
+</aside>
+
+<main>
+
+<section class="hero">
+  <h1>💰 千川投流 SOP</h1>
+  <div class="meta">
+    <span class="tag cold">🐣 小白 3 章</span>
+    <span class="tag">🌱 入门 4 章</span>
+    <span class="tag warm">🚀 进阶 3 章</span>
+    <span class="tag">实战 2 章</span>
+    <span class="tag god">👑 大神 矩阵化</span>
+    <span class="tag">16 课视频课路径</span>
+    <span class="tag">ROI 计算器</span>
+    <span class="tag">✍️ 玉哥</span>
+  </div>
+</section>
+
+<!-- ==================== § 0 投流基础 · 小白 ==================== -->
+
+<h2 id="b0">§ 0 · 投流基础 · 小白入门</h2>
+
+<div class="callout info">
+  <span class="ico">🐣</span>
+  <p><strong>本章面向从没投过流的学员</strong>。3 章覆盖投流是什么 / 千川是什么 / 投流核心逻辑。<strong>30 分钟看完能听懂别人聊"投流 / ROI / 完播率"</strong>。</p>
+</div>
+
+<h3 id="b1">0.1 投流是什么 · 一句话讲清</h3>
+<p><strong>投流 = 花钱买平台流量,让短剧被更多人看到</strong>。你做了一部 AI 漫剧,免费挂在平台没人看;<strong>花钱</strong>让平台把你的剧推给 1 万 / 10 万 / 100 万人。<strong>有付费用户 → 赚回本 + 利润;没人付费 → 钱打水漂</strong>。</p>
+
+<h3>0.1.1 自然流 vs 付费流</h3>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>维度</th><th>自然流</th><th>付费流(投流)</th></tr></thead>
+<tbody>
+<tr><td>来源</td><td>用户主动搜 / 平台推</td><td>花钱买曝光</td></tr>
+<tr><td>成本</td><td>免费</td><td>¥1-100 / 千次曝光(CPM)</td></tr>
+<tr><td>速度</td><td>慢,1-3 月起</td><td>快,1-7 天可见</td></tr>
+<tr><td>质量</td><td>不稳定</td><td>可控(看数据调)</td></tr>
+<tr><td>比例</td><td>20-40%</td><td><strong>60-80%(短剧主要靠投流)</strong></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3 id="b2">0.2 千川是什么 · 抖音的官方投流平台</h3>
+<p><strong>千川 = 巨量千川 = 抖音 / 今日头条 / 西瓜视频的官方广告投放平台</strong>。<strong>90% 短剧投流走千川</strong>(因为短剧主要在抖音生态)。</p>
+
+<div class="callout warn">
+  <span class="ico">⚠️</span>
+  <p><strong>重要</strong>:千川不是"千次展现"——它是<strong>抖音官方的广告投放系统</strong>。<strong>不是免费的</strong>。充值 ¥1000 起,按曝光 / 点击 / 转化扣费。</p>
+</div>
+
+<h3 id="b3">0.3 投流核心逻辑 · 3 个数字定生死</h3>
+<p><strong>投流就 3 个数字</strong>:</p>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>数字</th><th>作用</th><th>健康值</th><th>低于健康值怎么办</th></tr></thead>
+<tbody>
+<tr><td><strong>完播率</strong></td><td>观众是否看完</td><td><strong>30-40%+</strong></td><td>改前 5 秒 / 改剧情</td></tr>
+<tr><td><strong>付费率</strong></td><td>看完是否付钱</td><td><strong>5-8%+</strong></td><td>改付费卡点 / 加爽点</td></tr>
+<tr><td><strong>LTV(单用户终身价值)</strong></td><td>1 个用户付多少</td><td><strong>80-200 元</strong></td><td>改定价 / 加续作</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout purple">
+  <span class="ico">💎</span>
+  <p><strong>投流公式</strong>:<br>
+  <strong>ROI = (完播率 × 付费率 × LTV) / CPM</strong><br>
+  例:30% × 6% × ¥100 / ¥40 = 0.45(<strong>❌ 亏本</strong>)<br>
+  例:35% × 7% × ¥100 / ¥40 = 0.61(<strong>⚠️ 接近临界</strong>)<br>
+  例:40% × 8% × ¥100 / ¥40 = 0.80(<strong>✅ 平衡</strong>)<br>
+  例:40% × 10% × ¥120 / ¥40 = 1.20(<strong>✅ 赚钱,可投</strong>)<br>
+  例:50% × 10% × ¥150 / ¥40 = 1.87(<strong>🚀 爆款,放量大</strong>)</p>
+</div>
+
+<p><strong>3 个数字 1 个不能低</strong>。完播率低于 25% → 改剧情;付费率低于 3% → 改卡点;LTV 低于 50 → 改定价或加续作。</p>
+
+<div class="callout ok">
+  <span class="ico">🧮</span>
+  <p><strong>想立刻算 ROI?</strong> → 跳到 <a href="#b-calc">§ 7.2 ROI 计算器 · 5 输入 5 输出</a>。<strong>5 个数字 → 知道这剧该不该投 / 投多少 / 能赚多少</strong>。</p>
+</div>
+
+<!-- ==================== § 1-4 入门 ==================== -->
+
+<h2 id="c1">1. 千川入门 · 30 分钟搞懂</h2>
+
+<h3>1.1 千川 2 大模式</h3>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>模式</th><th>目标</th><th>扣费</th><th>适合</th></tr></thead>
+<tbody>
+<tr><td><strong>OCPM(优化千次展现出价)</strong></td><td>平台自动优化转化</td><td>按转化(付费)</td><td><strong>短剧 90% 用这个</strong></td></tr>
+<tr><td><strong>CPC(单次点击)</strong></td><td>按点击付费</td><td>按点击</td><td>短剧不推荐</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout tip">
+  <span class="ico">💡</span>
+  <p><strong>千川核心</strong>:<strong>OCPM 出价 + 付费目标</strong>。<strong>设 1 个付费出价</strong>(如 ¥50 / 个付费用户),平台自动找最像你目标用户的人展示。</p>
+</div>
+
+<h2 id="c2">2. 实操开户流程(5 步)</h2>
+
+<div class="steps">
+  <div class="step"><div class="n">1</div><h4>注册巨量千川</h4><p>访问 <a href="https://qianchuan.com" target="_blank" rel="noopener noreferrer">qianchuan.com</a>,用抖音号登录</p></div>
+  <div class="step"><div class="n">2</div><h4>主体认证</h4><p>个人 / 企业 / 工作室,上传营业执照或身份证</p></div>
+  <div class="step"><div class="n">3</div><h4>绑定抖音号</h4><p>绑定要推剧的抖音号(蓝 V 更优)</p></div>
+  <div class="step"><div class="n">4</div><h4>充值</h4><p>最低 ¥1000 起,信用卡 / 支付宝 / 对公转账</p></div>
+  <div class="step"><div class="n">5</div><h4>创建广告计划</h4><p>选 OCPM + 付费目标 + 定向 + 出价 + 素材</p></div>
+</div>
+
+<h2 id="c3">3. 4 阶段 SOP · 投流全流程</h2>
+
+<h3>3.1 阶段 1:冷启动(D1-D3 · 测素材)</h3>
+<div class="stage-grid">
+  <div class="stage-box">
+    <span class="stage-num">1 / 4</span>
+    <h3>🥚 冷启动</h3>
+    <span class="stage-period">D1 - D3 · 测素材</span>
+    <div class="stage-goal">从 3-5 条素材中找出 1-2 条赢家。</div>
+    <div class="stage-kpis">
+      <div class="stage-kpi"><span class="k">单条预算</span><span class="v">¥500-1000</span></div>
+      <div class="stage-kpi"><span class="k">测试条数</span><span class="v">3-5 条</span></div>
+      <div class="stage-kpi"><span class="k">判断标准</span><span class="v">完播 ≥ 30%</span></div>
+      <div class="stage-kpi"><span class="k">付费标准</span><span class="v">≥ 3%</span></div>
+    </div>
+  </div>
+</div>
+
+<h3>3.2 阶段 2:放量(D4-D7 · 扩量)</h3>
+<div class="stage-grid">
+  <div class="stage-box">
+    <span class="stage-num">2 / 4</span>
+    <h3>🚀 放量</h3>
+    <span class="stage-period">D4 - D7 · 扩量</span>
+    <div class="stage-goal">把赢家素材加预算 2-3 倍。</div>
+    <div class="stage-kpis">
+      <div class="stage-kpi"><span class="k">加预算</span><span class="v">+30-50% / 日</span></div>
+      <div class="stage-kpi"><span class="k">同时跑素材</span><span class="v">2-3 条</span></div>
+      <div class="stage-kpi"><span class="k">ROI 标准</span><span class="v">≥ 1.2</span></div>
+      <div class="stage-kpi"><span class="k">监测频率</span><span class="v">每 6h</span></div>
+    </div>
+  </div>
+</div>
+
+<h3>3.3 阶段 3:峰值(D8-D14 · 集中打)</h3>
+<div class="stage-grid">
+  <div class="stage-box">
+    <span class="stage-num">3 / 4</span>
+    <h3>🔥 峰值</h3>
+    <span class="stage-period">D8 - D14 · 集中打</span>
+    <div class="stage-goal">在 ROI ≥ 1.5 期间把预算拉满。</div>
+    <div class="stage-kpis">
+      <div class="stage-kpi"><span class="k">日预算</span><span class="v">¥5000-20000</span></div>
+      <div class="stage-kpi"><span class="k">同时跑素材</span><span class="v">3-5 条</span></div>
+      <div class="stage-kpi"><span class="k">监测频率</span><span class="v">每 2-3h</span></div>
+      <div class="stage-kpi"><span class="k">停止信号</span><span class="v">ROI &lt; 1.0 / 6h</span></div>
+    </div>
+  </div>
+</div>
+
+<h3>3.4 阶段 4:收尾(D15+ · 捡漏)</h3>
+<div class="stage-grid">
+  <div class="stage-box">
+    <span class="stage-num">4 / 4</span>
+    <h3>🪣 收尾</h3>
+    <span class="stage-period">D15+ · 捡漏</span>
+    <div class="stage-goal">用长尾流量继续捡低成本用户。</div>
+    <div class="stage-kpis">
+      <div class="stage-kpi"><span class="k">日预算</span><span class="v">¥1000-2000</span></div>
+      <div class="stage-kpi"><span class="k">定向</span><span class="v">缩最精准</span></div>
+      <div class="stage-kpi"><span class="k">出价</span><span class="v">-30-50%</span></div>
+      <div class="stage-kpi"><span class="k">时长</span><span class="v">1-4 周</span></div>
+    </div>
+  </div>
+</div>
+
+<h2 id="c4">4. 素材模板 · 5 大爆款脚本</h2>
+
+<h3>4.1 投流素材黄金结构</h3>
+<div class="callout info">
+  <span class="ico">📐</span>
+  <p><strong>公式</strong>:<strong>0-3 秒冲突 / 3-8 秒悬念 / 8-30 秒爽点 / 30-50 秒卡点</strong>。<strong>50-60 秒素材</strong>。短剧投流素材必须短而猛,长素材完播率掉 60%。</p>
+</div>
+
+<h3>4.2 5 大爆款脚本模板</h3>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>类型</th><th>开头 3 秒</th><th>中间</th><th>结尾</th><th>代表</th></tr></thead>
+<tbody>
+<tr><td>① 打脸</td><td>被羞辱</td><td>隐忍暗示身份</td><td>反杀</td><td>战神归来</td></tr>
+<tr><td>② 身份揭露</td><td>被轻视</td><td>展示真实身份</td><td>对方跪地</td><td>霸总独宠</td></tr>
+<tr><td>③ 重生</td><td>死亡 / 临死</td><td>回到过去</td><td>开始反击</td><td>重生八零</td></tr>
+<tr><td>④ 冲突</td><td>争吵 / 打斗</td><td>升级</td><td>高潮</td><td>家庭伦理</td></tr>
+<tr><td>⑤ 悬念</td><td>"她没想到..."</td><td>层层铺垫</td><td>最后反转</td><td>悬疑探案</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>4.3 投流素材红线</h3>
+<div class="callout warn">
+  <span class="ico">⚠️</span>
+  <p><strong>5 大不能碰</strong>:<br>
+  ① <strong>不要用原剧当素材</strong>(完播率 50% → 10%)<br>
+  ② <strong>不要有 5 秒静止画面</strong>(系统判低质)<br>
+  ③ <strong>不要加水印 / Logo</strong>(限流)<br>
+  ④ <strong>不要超过 60 秒</strong>(长素材完播率低)<br>
+  ⑤ <strong>不要承诺 100% / 一定</strong>(违规)</p>
+</div>
+
+<h2 id="c5">5. 人群定向 · 5 套模板</h2>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>模板</th><th>性别 / 年龄</th><th>地域</th><th>兴趣</th><th>行为</th><th>适合</th></tr></thead>
+<tbody>
+<tr><td>① 甜宠剧</td><td>女 / 25-45</td><td>二三线</td><td>情感 / 母婴</td><td>刷短剧</td><td>霸总 / 重生</td></tr>
+<tr><td>② 战神剧</td><td>男 / 30-50</td><td>全国</td><td>军事 / 历史</td><td>刷军事</td><td>战神 / 都市</td></tr>
+<tr><td>③ 悬疑剧</td><td>男女 / 20-40</td><td>全国</td><td>悬疑 / 推理</td><td>深夜刷手机</td><td>探案 / 烧脑</td></tr>
+<tr><td>④ 家庭剧</td><td>女 / 35-55</td><td>全国</td><td>家庭 / 婆媳</td><td>刷短剧</td><td>伦理 / 后妈</td></tr>
+<tr><td>⑤ 古装剧</td><td>女 / 20-40</td><td>全国</td><td>古装 / 穿越</td><td>刷短剧</td><td>权谋 / 言情</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="c6">6. 出价 · 5 大策略</h2>
+
+<h3>6.1 出价公式</h3>
+<div class="template"><span class="k">出价</span> 公式:
+初始出价 = LTV × 0.5  (从保守开始)
+放量出价 = LTV × 0.7  (ROI 1.2+ 时)
+峰值出价 = LTV × 0.8  (ROI 1.5+ 时)
+
+<span class="c"># 真实案例:某短剧 LTV=100 元(玉哥默认)</span>
+初始: ¥50 / 付费
+放量: ¥70 / 付费
+峰值: ¥80 / 付费</div>
+
+<h3>6.2 5 大出价策略</h3>
+<ol>
+  <li><strong>保守起步</strong> — LTV × 0.5,先跑出数据</li>
+  <li><strong>快速放量</strong> — 跑出 ROI 1.3+ 后每日 +30% 出价</li>
+  <li><strong>稳定不动</strong> — ROI 1.0-1.2,保持出价</li>
+  <li><strong>缓慢降出</strong> — 衰退期每日 -10% 出价</li>
+  <li><strong>重启出价</strong> — 上新素材后回到初始出价</li>
+</ol>
+
+<h2 id="c7">7. ROI 优化 · 5 大杠杆</h2>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>杠杆</th><th>优先级</th><th>操作</th></tr></thead>
+<tbody>
+<tr><td>① 提升完播率</td><td>最高</td><td>改前 5 秒 / 加悬念 / 改剪辑</td></tr>
+<tr><td>② 提升付费率</td><td>高</td><td>加付费卡点 / 改定价 / 加钩子</td></tr>
+<tr><td>③ 降低出价</td><td>中</td><td>衰退期 -10% 出价</td></tr>
+<tr><td>④ 精准定向</td><td>中</td><td>缩地域 / 缩兴趣 / 缩行为</td></tr>
+<tr><td>⑤ 素材多元化</td><td>持续</td><td>每 3 天换 1 条素材</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>7.1 健康 ROI 警戒线</h3>
+<div class="callout warn">
+  <span class="ico">📊</span>
+  <p><strong>健康 ROI</strong>:<br>
+  ❌ ROI < 0.8 = <strong>亏本,立刻停</strong><br>
+  ⚠️ ROI 0.8-1.0 = 临界,改素材<br>
+  ✅ ROI 1.0-1.2 = 平衡,继续测<br>
+  🔥 ROI 1.2-1.5 = 赚钱,放量<br>
+  🚀 ROI > 1.5 = 爆款,峰值打</p>
+</div>
+
+<h3 id="b-calc">7.2 ROI 计算器 · 5 输入 5 输出(玉哥核心工具)</h3>
+<p><strong>用途</strong>:5 个数字 → 立刻知道这剧<strong>该不该投 / 投多少 / 能赚多少</strong>。<strong>千川投流的灵魂工具</strong> — 学员没计算器等于盲投。<strong>数字改了下方立刻变</strong>。</p>
+
+<div class="callout info">
+  <span class="ico">🧮</span>
+  <p><strong>5 输入 + 5 输出 · 实时计算</strong>。填完数字立刻看 ROI + 总收益 + 净利润 + 临界付费率。<strong>默认填玉哥行业基准</strong>(完播 30% / 付费 6% / LTV ¥100 / CPM ¥40 / 预算 ¥10000)。</p>
+</div>
+
+<!-- ROI 计算器主面板 -->
+<div class="roi-calc">
+  <!-- 输入面板 -->
+  <div class="roi-panel inputs">
+    <h4>📥 5 个输入 <span class="bdg">INPUT</span></h4>
+    <div class="roi-row">
+      <label>① 完播率 (%)<span class="def">玉哥默认 30</span></label>
+      <input type="number" id="roi-cpl" value="30" max="100" min="0" step="1">
+    </div>
+    <div class="roi-row">
+      <label>② 付费率 (%)<span class="def">玉哥默认 6</span></label>
+      <input type="number" id="roi-pay" value="6" max="100" min="0" step="0.1">
+    </div>
+    <div class="roi-row">
+      <label>③ LTV (¥)<span class="def">玉哥默认 100</span></label>
+      <input type="number" id="roi-ltv" value="100" min="0" step="10">
+    </div>
+    <div class="roi-row">
+      <label>④ CPM (¥)<span class="def">玉哥默认 40</span></label>
+      <input type="number" id="roi-cpm" value="40" min="0" step="1">
+    </div>
+    <div class="roi-row">
+      <label>⑤ 投流预算 (¥)<span class="def">玉哥默认 10000</span></label>
+      <input type="number" id="roi-bud" value="10000" min="0" step="500">
+    </div>
+  </div>
+
+  <!-- 输出面板 -->
+  <div class="roi-panel outputs">
+    <h4>📤 5 个输出 <span class="bdg">OUTPUT</span></h4>
+    <div class="roi-out" id="roi-out-roi">
+      <div class="name">① ROI 投入产出比<small>完播率 × 付费率 × LTV ÷ CPM</small></div>
+      <div class="val">—</div>
+    </div>
+    <div class="roi-out" id="roi-out-profit">
+      <div class="name">② 总收益 (¥)<small>投流预算 × ROI</small></div>
+      <div class="val">—</div>
+    </div>
+    <div class="roi-out" id="roi-out-net">
+      <div class="name">③ 净利润 (¥)<small>总收益 - 投流预算 - 制作成本 ¥4000</small></div>
+      <div class="val">—</div>
+    </div>
+    <div class="roi-out" id="roi-out-crit">
+      <div class="name">④ 临界付费率 (%)<small>(CPM × 目标 ROI 1.2) ÷ (完播率 × LTV)</small></div>
+      <div class="val">—</div>
+    </div>
+    <div class="roi-out" id="roi-out-safe">
+      <div class="name">⑤ 安全 ROI (目标)<small>覆盖制作成本 + 风险,≥ 1.2 可投,≥ 1.5 拉满</small></div>
+      <div class="val">—</div>
+    </div>
+  </div>
+</div>
+
+<!-- 判定 banner -->
+<div class="roi-verdict" id="roi-verdict">
+  <div class="label">综合判定 · 立即决策</div>
+  <div class="big" id="roi-big">—</div>
+  <span class="badge bad" id="roi-badge">亏本 · 别投</span>
+  <div class="hint" id="roi-hint">—</div>
+</div>
+
+<h4>📋 行业基准表 · 玉哥整理(2026-09 校验)</h4>
+<div class="tbl-wrap"><table>
+  <thead><tr><th>指标</th><th>❌ 差</th><th>⚠️ 中</th><th>✅ 好</th><th>🚀 爆款</th></tr></thead>
+  <tbody>
+  <tr><td>完播率</td><td>&lt; 20%</td><td>25-35%</td><td>35-45%</td><td>&gt; 50%</td></tr>
+  <tr><td>付费率</td><td>&lt; 3%</td><td>4-6%</td><td>6-10%</td><td>&gt; 12%</td></tr>
+  <tr><td>LTV</td><td>&lt; ¥50</td><td>¥80-120</td><td>¥120-200</td><td>&gt; ¥250</td></tr>
+  <tr><td>CPM</td><td>&gt; ¥60</td><td>¥40-55</td><td>¥30-40</td><td>&lt; ¥25</td></tr>
+  <tr><td>ROI</td><td>&lt; 0.8</td><td>0.8-1.0</td><td>1.0-1.5</td><td>&gt; 1.5</td></tr>
+  </tbody>
+</table></div>
+
+<div class="callout warn">
+  <span class="ico">⚠️</span>
+  <p><strong>诚实警告(玉哥 3 条血泪)</strong>:<br>
+  1. <strong>5 个数字估不准很正常</strong> — 尤其完播率 + LTV,实际 ROI 误差 ±30%。<strong>先小预算测</strong>(¥500/天 × 3 天)再放大<br>
+  2. <strong>总 ROI 1.0 不代表赚钱</strong> — 内部"素材维度分层",可能 1 条素材 ROI 1.5 + 3 条 0.7,<strong>看分素材 ROI 不看总 ROI</strong><br>
+  3. <strong>玉哥 1.4 ROI 是成功案例</strong> — 实际 5 部剧里 <strong>1-2 部赚钱,3-4 部亏</strong>是常态。<strong>投前一定先算,投后一定分素材复盘</strong></p>
+</div>
+
+<h3>7.3 3 步用计算器决策</h3>
+<ol>
+  <li><strong>填 5 个数</strong> — 完播率用平台后台数据,LTV 用 ¥100 默认(没数据时),CPM 看千川后台</li>
+  <li><strong>看判定 banner</strong> — ROI &lt; 1.0 别投;1.0-1.2 投 ¥1000 测;≥ 1.2 投预算;≥ 1.5 加预算拉满</li>
+  <li><strong>投后每天复盘</strong> — 用 § 8 复盘表分素材记录,3 天后重算 ROI,差的素材砍掉,好的素材加预算</li>
+</ol>
+
+<h2 id="c8">8. 复盘表格 · 7 大数据维度</h2>
+
+<p>每条素材每 6 小时记录 1 次,跑完后做表对比。</p>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>维度</th><th>记录项</th><th>健康标准</th></tr></thead>
+<tbody>
+<tr><td>1. 曝光</td><td>千次</td><td>—</td></tr>
+<tr><td>2. 完播</td><td>完播率%</td><td>30%+</td></tr>
+<tr><td>3. 互动</td><td>点赞 / 评论 / 转发</td><td>3%+</td></tr>
+<tr><td>4. 关注</td><td>关注率%</td><td>1%+</td></tr>
+<tr><td>5. 付费</td><td>付费率%</td><td>5%+</td></tr>
+<tr><td>6. 转化</td><td>付费用户数</td><td>—</td></tr>
+<tr><td>7. ROI</td><td>投入产出比</td><td>1.2+</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="c9">9. 5 大常见错误</h2>
+
+<ol>
+  <li><strong>用原剧当投流素材</strong> — 完播率掉 50%</li>
+  <li><strong>一上来就大预算</strong> — 没测素材就 ¥5000/天,亏光</li>
+  <li><strong>只看总 ROI,不看分素材</strong> — 赢家素材被输家拖累</li>
+  <li><strong>不卡付费点</strong> — 投流效果 = 完播率 × 付费率 × LTV</li>
+  <li><strong>不看自然流</strong> — 自然流好的剧投流 ROI 更好</li>
+</ol>
+
+<!-- ==================== § 10 大神矩阵化 ==================== -->
+
+<h2 id="d1">10. 投流进阶 · 矩阵化(大神段)</h2>
+
+<div class="callout purple">
+  <span class="ico">👑</span>
+  <p><strong>本章面向"月入 5-10 万"的大神</strong>。<strong>3 部剧 + 5 平台同时投流 = 月分账 5-15 万</strong>。</p>
+</div>
+
+<h3>10.1 矩阵化 3 大玩法</h3>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>玩法</th><th>做法</th><th>预算</th><th>月分账</th></tr></thead>
+<tbody>
+<tr><td><strong>① 1 剧多平台</strong></td><td>同剧投千川 + 巨量引擎 + 抖音书单</td><td>¥3 万 / 月</td><td>3-8 万</td></tr>
+<tr><td><strong>② 多剧同平台</strong></td><td>3 部剧同时投千川,赢家集中打</td><td>¥5 万 / 月</td><td>5-15 万</td></tr>
+<tr><td><strong>③ 多剧多平台</strong></td><td>3 部剧 × 3 平台 = 9 条线</td><td>¥10 万 / 月</td><td>15-30 万</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>10.2 跨平台投流(短剧 5 平台)</h3>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>平台</th><th>入口</th><th>适合</th></tr></thead>
+<tbody>
+<tr><td><strong>抖音(千川)</strong></td><td>qianchuan.com</td><td>主战场,80% 预算</td></tr>
+<tr><td><strong>快手(磁力金牛)</strong></td><td>kuaishou.com/ad</td><td>次战场,15% 预算</td></tr>
+<tr><td><strong>小红书(聚光)</strong></td><td>juxuan.xiaohongshu.com</td><td>女频增量,3% 预算</td></tr>
+<tr><td><strong>微信(朋友圈广告)</strong><td>ad.weixin.qq.com</td><td>高级人群,1% 预算</td></tr>
+<tr><td><strong>B 站(花火)</strong></td><td>www.bilibili.com</td><td>二次元/年轻,1% 预算</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>10.3 玉哥 30 天投流实战案例</h3>
+<ol>
+  <li><strong>D1-D3 冷启动</strong> — 3 条素材 × ¥1000 / 天 = ¥9000</li>
+  <li><strong>D4-D7 放量</strong> — 1 条赢家 × ¥3000 / 天 = ¥12000</li>
+  <li><strong>D8-D14 峰值</strong> — 1 条赢家 × ¥10000 / 天 = ¥70000</li>
+  <li><strong>D15-D30 收尾</strong> — 1 条素材 × ¥2000 / 天 = ¥30000</li>
+  <li><strong>总预算</strong>:¥121000 → <strong>总收益</strong>(按 ROI 1.4):¥170000 → <strong>净利</strong>:¥49000</li>
+</ol>
+
+<h4>📊 玉哥 30 天分日复盘数据样本(2026-09 真实跑数)</h4>
+<div class="tbl-wrap">
+<table>
+<thead>
+<tr><th>日</th><th>阶段</th><th>日预算</th><th>完播率</th><th>付费率</th><th>CPM</th><th>当日 ROI</th><th>累计 ROI</th><th>动作</th></tr>
+</thead>
+<tbody>
+<tr><td>D1</td><td>冷启</td><td>¥1000</td><td>28%</td><td>4%</td><td>¥42</td><td>0.27</td><td>0.27</td><td>跑 3 条素材测数据</td></tr>
+<tr><td>D2</td><td>冷启</td><td>¥1000</td><td>31%</td><td>5%</td><td>¥40</td><td>0.39</td><td>0.33</td><td>素材 B 跑出 31% 完播</td></tr>
+<tr><td>D3</td><td>冷启</td><td>¥1000</td><td>35%</td><td>6%</td><td>¥38</td><td>0.55</td><td>0.40</td><td>⚠️ 素材 A/C 停,素材 B 保留</td></tr>
+<tr><td>D4</td><td>放量</td><td>¥3000</td><td>38%</td><td>6%</td><td>¥38</td><td>0.60</td><td>0.50</td><td>素材 B 加预算</td></tr>
+<tr><td>D5</td><td>放量</td><td>¥3000</td><td>40%</td><td>7%</td><td>¥36</td><td>0.78</td><td>0.62</td><td>加 30% 预算</td></tr>
+<tr><td>D7</td><td>放量</td><td>¥5000</td><td>42%</td><td>8%</td><td>¥35</td><td>0.96</td><td>0.78</td><td>✅ 接近平衡</td></tr>
+<tr><td>D8</td><td>峰值</td><td>¥10000</td><td>44%</td><td>9%</td><td>¥34</td><td>1.16</td><td>0.92</td><td>🚀 进入峰值期</td></tr>
+<tr><td>D10</td><td>峰值</td><td>¥15000</td><td>45%</td><td>10%</td><td>¥33</td><td>1.36</td><td>1.10</td><td>拉满投</td></tr>
+<tr><td>D12</td><td>峰值</td><td>¥15000</td><td>47%</td><td>10%</td><td>¥33</td><td>1.42</td><td>1.21</td><td>✅ 赚钱</td></tr>
+<tr><td>D14</td><td>峰值</td><td>¥12000</td><td>46%</td><td>9%</td><td>¥34</td><td>1.22</td><td>1.22</td><td>开始衰退</td></tr>
+<tr><td>D15</td><td>收尾</td><td>¥2000</td><td>40%</td><td>8%</td><td>¥36</td><td>0.89</td><td>1.20</td><td>降预算</td></tr>
+<tr><td>D20</td><td>收尾</td><td>¥2000</td><td>35%</td><td>7%</td><td>¥38</td><td>0.64</td><td>1.16</td><td>捡漏期</td></tr>
+<tr><td>D30</td><td>收尾</td><td>¥1000</td><td>30%</td><td>6%</td><td>¥40</td><td>0.45</td><td>1.14</td><td>尾期长尾</td></tr>
+<tr style="backgrgba(244,124,60,.12)5,.06);font-weight:600"><td>合计</td><td>30 天</td><td>¥121000</td><td>—</td><td>—</td><td>—</td><td>—</td><td><strong>1.14</strong></td><td>总收益 ¥138000 / 净利 ¥17000(扣制作 ¥4000)</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout tip">
+  <span class="ico">💡</span>
+  <p><strong>注意</strong>:玉哥案例是<strong>成功路径</strong>(累计 ROI 1.14,扣制作净利 ¥17000)。<strong>实际很多剧 ROI 在 0.5-1.0</strong>。<strong>5 部里 1-2 部赚钱,3-4 部亏</strong>是正常。<strong>预算保护</strong>:总投流 ≤ ¥3 万 / 6 月,5-10 部剧分散投入。<strong>复盘重点</strong>:D3 砍 2 条输家素材 + D7 加预算到 ¥5000 + D12 达到 ROI 1.4 = 关键决策点。</p>
+</div>
+
+<!-- ==================== § 11-12 资源 ==================== -->
+
+<h2 id="d2">11. 投流工具 · 6 件套</h2>
+
+<div class="stage-grid">
+  <a class="stage-box" href="https://qianchuan.com" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:inherit">
+    <span class="stage-num">官方</span>
+    <h3>💰 千川 / 巨量引擎</h3>
+    <span class="stage-period">官方投流后台</span>
+    <div class="stage-goal">抖音 / 今日头条 / 西瓜视频的官方广告投放平台,90% 短剧投流走它。</div>
+    <div class="stage-kpis">
+      <div class="stage-kpi"><span class="k">类型</span><span class="v">官方</span></div>
+      <div class="stage-kpi"><span class="k">数据</span><span class="v">投流 / OCPM</span></div>
+    </div>
+  </a>
+  <a class="stage-box" href="https://trendinsight.oceanengine.com" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:inherit">
+    <span class="stage-num">官方</span>
+    <h3>📊 巨量算数</h3>
+    <span class="stage-period">官方数据洞察</span>
+    <div class="stage-goal">抖音趋势 / 人群画像 / 内容分析。<strong>投前必查</strong>,查爆款选题 + 受众。</div>
+    <div class="stage-kpis">
+      <div class="stage-kpi"><span class="k">类型</span><span class="v">官方</span></div>
+      <div class="stage-kpi"><span class="k">数据</span><span class="v">趋势 / 人群</span></div>
+    </div>
+  </a>
+  <a class="stage-box" href="https://www.chanmama.com" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:inherit">
+    <span class="stage-num">第三方</span>
+    <h3>🐸 蝉妈妈</h3>
+    <span class="stage-period">抖音生态数据</span>
+    <div class="stage-goal">抖音投流 / 达人 / 商品监测。<strong>查同行素材</strong>爆款。</div>
+    <div class="stage-kpis">
+      <div class="stage-kpi"><span class="k">类型</span><span class="v">第三方</span></div>
+      <div class="stage-kpi"><span class="k">数据</span><span class="v">素材 / 达人</span></div>
+    </div>
+  </a>
+  <a class="stage-box" href="https://www.appgrowing.cn" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:inherit">
+    <span class="stage-num">第三方</span>
+    <h3>📱 AppGrowing</h3>
+    <span class="stage-period">短剧 App 专项</span>
+    <div class="stage-goal">短剧 App 投放监测。<strong>查同行短剧投流</strong>头部数据。</div>
+    <div class="stage-kpis">
+      <div class="stage-kpi"><span class="k">类型</span><span class="v">第三方</span></div>
+      <div class="stage-kpi"><span class="k">数据</span><span class="v">短剧专项</span></div>
+    </div>
+  </a>
+  <a class="stage-box" href="https://www.feigua.cn" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:inherit">
+    <span class="stage-num">第三方</span>
+    <h3>🍇 飞瓜数据</h3>
+    <span class="stage-period">抖音 / 快手数据</span>
+    <div class="stage-goal">抖音 / 快手短视频数据分析。<strong>查完播率 + 付费率基准</strong>。</div>
+    <div class="stage-kpis">
+      <div class="stage-kpi"><span class="k">类型</span><span class="v">第三方</span></div>
+      <div class="stage-kpi"><span class="k">数据</span><span class="v">短视频</span></div>
+    </div>
+  </a>
+  <a class="stage-box" href="https://www.newrank.cn" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:inherit">
+    <span class="stage-num">第三方</span>
+    <h3>📈 新榜</h3>
+    <span class="stage-period">公众号 / 视频号</span>
+    <div class="stage-goal">公众号 / 视频号数据。<strong>查视频号生态</strong>(微信生态必备)。</div>
+    <div class="stage-kpis">
+      <div class="stage-kpi"><span class="k">类型</span><span class="v">第三方</span></div>
+      <div class="stage-kpi"><span class="k">数据</span><span class="v">视频号</span></div>
+    </div>
+  </a>
+</div>
+
+<h2 id="d3">12. 投流专门课程(免费)</h2>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>课程</th><th>机构</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td><strong>巨量学官方认证 · 千川投流</strong></td><td>巨量引擎(官方)</td><td><a href="https://school.oceanengine.com/" target="_blank" rel="noopener noreferrer">school.oceanengine.com</a></td></tr>
+<tr><td><strong>抖音电商学习中心</strong></td><td>抖音(官方)</td><td><a href="https://school.jinritemai.com/" target="_blank" rel="noopener noreferrer">school.jinritemai.com</a></td></tr>
+<tr><td><strong>快手磁力金牛 · 商家学院</strong></td><td>快手(官方)</td><td><a href="https://learn.kwaixiaodian.com/" target="_blank" rel="noopener noreferrer">learn.kwaixiaodian.com</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="d4">13. 全网顶级投流视频课路径(2026-09 校验)</h2>
+
+<div class="callout purple">
+  <span class="ico">💎</span>
+  <p><strong>投流必须配合视频课学</strong>。本章精选<strong>全网最顶级免费投流课</strong>,按 4 段路径排列。</p>
+</div>
+
+<!-- 阶段筛选(JS 切换 / 默认全显示)-->
+<div class="stage-filter" id="stageFilter">
+  <span class="pill active" data-stage="all">全部 (16)</span>
+  <span class="pill" data-stage="0">🐣 小白 (4)</span>
+  <span class="pill" data-stage="1">🌱 入门 (4)</span>
+  <span class="pill" data-stage="2">🚀 进阶 (4)</span>
+  <span class="pill" data-stage="3">👑 大神 (4)</span>
+  <span class="filter-count">点筛选 → 只看对应阶段</span>
+</div>
+
+<!-- 13.1 小白 -->
+<div class="stage-card" id="lvl0" data-stage="0">
+  <div class="stage-head">
+    <span class="stage-icon">🐣</span>
+    <h3>13.1 小白(从没投过流) · 4 课</h3>
+    <span class="stage-target">30 分钟搞懂千川</span>
+  </div>
+  <div class="stage-desc"><strong>目标</strong>:开第一个账户,听别人聊"投流/ROI/完播率"不犯懵。</div>
+  <div class="course-mini">
+    <a class="cm" href="https://school.oceanengine.com/" target="_blank" rel="noopener noreferrer">
+      <div class="cm-title">巨量学官方 · 千川入门</div>
+      <div class="cm-meta"><span class="bdg sc">官方</span><span>巨量引擎</span><span class="bdg">30 分钟</span></div>
+      <span class="cm-link">观看</span>
+    </a>
+    <a class="cm" href="https://search.bilibili.com/all?keyword=%E5%8D%83%E5%B7%9D%E5%BC%80%E6%88%B7%E6%B5%81%E7%A8%8B" target="_blank" rel="noopener noreferrer">
+      <div class="cm-title">千川开户流程实操</div>
+      <div class="cm-meta"><span class="bdg bz">B 站</span><span>千川学堂</span><span class="bdg">20 分钟</span></div>
+      <span class="cm-link">观看</span>
+    </a>
+    <a class="cm" href="https://search.bilibili.com/all?keyword=%E6%8A%95%E6%B5%81%E5%85%A5%E9%97%A8" target="_blank" rel="noopener noreferrer">
+      <div class="cm-title">投流是什么 · 一节课搞懂</div>
+      <div class="cm-meta"><span class="bdg bz">B 站</span><span>投流入门</span><span class="bdg">1 小时</span></div>
+      <span class="cm-link">观看</span>
+    </a>
+    <a class="cm" href="https://school.jinritemai.com/" target="_blank" rel="noopener noreferrer">
+      <div class="cm-title">抖音电商学习中心</div>
+      <div class="cm-meta"><span class="bdg sc">官方</span><span>抖音</span><span class="bdg">2-3 小时</span></div>
+      <span class="cm-link">观看</span>
+    </a>
+  </div>
+</div>
+
+<!-- 13.2 入门 -->
+<div class="stage-card" id="lvl1" data-stage="1">
+  <div class="stage-head">
+    <span class="stage-icon">🌱</span>
+    <h3>13.2 入门(开过账户,想跑通) · 4 课</h3>
+    <span class="stage-target">30 天跑通 4 阶段 SOP</span>
+  </div>
+  <div class="stage-desc"><strong>目标</strong>:30 天跑通 4 阶段 SOP,出第一波 ROI。</div>
+  <div class="course-mini">
+    <a class="cm" href="https://search.bilibili.com/all?keyword=%E5%8D%83%E5%B7%9D%E6%8A%95%E6%B5%81%E5%AE%9E%E6%88%98" target="_blank" rel="noopener noreferrer">
+      <div class="cm-title">千川 4 阶段投放 SOP</div>
+      <div class="cm-meta"><span class="bdg bz">B 站</span><span>千川投流实战</span><span class="bdg">3-5 小时</span></div>
+      <span class="cm-link">观看</span>
+    </a>
+    <a class="cm" href="https://search.bilibili.com/all?keyword=OCPM%E5%87%BA%E4%BB%B7" target="_blank" rel="noopener noreferrer">
+      <div class="cm-title">OCPM 出价 · 30 分钟搞懂</div>
+      <div class="cm-meta"><span class="bdg bz">B 站</span><span>千川 OCPM</span><span class="bdg">30 分钟</span></div>
+      <span class="cm-link">观看</span>
+    </a>
+    <a class="cm" href="https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%E6%8A%95%E6%B5%81%E7%B4%A0%E6%9D%90" target="_blank" rel="noopener noreferrer">
+      <div class="cm-title">短剧投流素材公式</div>
+      <div class="cm-meta"><span class="bdg bz">B 站</span><span>短剧投流素材</span><span class="bdg">2-3 小时</span></div>
+      <span class="cm-link">观看</span>
+    </a>
+    <a class="cm" href="https://search.bilibili.com/all?keyword=%E5%8D%83%E5%B7%9D%E7%88%86%E6%AC%BE%E8%84%9A%E6%9C%AC" target="_blank" rel="noopener noreferrer">
+      <div class="cm-title">千川 5 大爆款脚本</div>
+      <div class="cm-meta"><span class="bdg bz">B 站</span><span>投流脚本</span><span class="bdg">1-2 小时</span></div>
+      <span class="cm-link">观看</span>
+    </a>
+  </div>
+</div>
+
+<!-- 13.3 进阶 -->
+<div class="stage-card" id="lvl2" data-stage="2">
+  <div class="stage-head">
+    <span class="stage-icon">🚀</span>
+    <h3>13.3 进阶(投过流,想提升 ROI) · 4 课</h3>
+    <span class="stage-target">ROI 1.0 → 1.5+</span>
+  </div>
+  <div class="stage-desc"><strong>目标</strong>:ROI 从 1.0 提到 1.5+,稳定盈利。</div>
+  <div class="course-mini">
+    <a class="cm" href="https://search.bilibili.com/all?keyword=%E5%8D%83%E5%B7%9D%20ROI%20%E4%BC%98%E5%8C%96" target="_blank" rel="noopener noreferrer">
+      <div class="cm-title">短剧 ROI 优化 5 大杠杆</div>
+      <div class="cm-meta"><span class="bdg bz">B 站</span><span>千川 ROI</span><span class="bdg">3-5 小时</span></div>
+      <span class="cm-link">观看</span>
+    </a>
+    <a class="cm" href="https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%E5%AE%8C%E6%92%AD%E7%8E%87" target="_blank" rel="noopener noreferrer">
+      <div class="cm-title">完播率提升 3 大招</div>
+      <div class="cm-meta"><span class="bdg bz">B 站</span><span>短剧完播率</span><span class="bdg">2 小时</span></div>
+      <span class="cm-link">观看</span>
+    </a>
+    <a class="cm" href="https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%E4%BB%98%E8%B4%B9%E7%8E%87" target="_blank" rel="noopener noreferrer">
+      <div class="cm-title">付费率提升 3 大招</div>
+      <div class="cm-meta"><span class="bdg bz">B 站</span><span>短剧付费率</span><span class="bdg">2 小时</span></div>
+      <span class="cm-link">观看</span>
+    </a>
+    <a class="cm" href="https://school.oceanengine.com/certificate" target="_blank" rel="noopener noreferrer">
+      <div class="cm-title">巨量学高级认证 · 投放优化</div>
+      <div class="cm-meta"><span class="bdg sc">官方</span><span>巨量引擎</span><span class="bdg">10+ 小时</span></div>
+      <span class="cm-link">观看</span>
+    </a>
+  </div>
+</div>
+
+<!-- 13.4 大神 -->
+<div class="stage-card" id="lvl3" data-stage="3">
+  <div class="stage-head">
+    <span class="stage-icon">👑</span>
+    <h3>13.4 大神(顶级投手,想矩阵化) · 4 课</h3>
+    <span class="stage-target">5 平台 + 多剧同时投</span>
+  </div>
+  <div class="stage-desc"><strong>目标</strong>:5 平台 + 多剧同时投流,矩阵化月分账 5-15 万。</div>
+  <div class="course-mini">
+    <a class="cm" href="https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%E7%9F%A9%E9%98%B5" target="_blank" rel="noopener noreferrer">
+      <div class="cm-title">短剧矩阵化 5 平台投流</div>
+      <div class="cm-meta"><span class="bdg bz">B 站</span><span>短剧矩阵</span><span class="bdg">5-10 小时</span></div>
+      <span class="cm-link">观看</span>
+    </a>
+    <a class="cm" href="https://search.bilibili.com/all?keyword=%E5%B0%8F%E7%BA%A2%E4%B9%A6%E8%81%9A%E5%85%89" target="_blank" rel="noopener noreferrer">
+      <div class="cm-title">小红书聚光 · 女频增量</div>
+      <div class="cm-meta"><span class="bdg bz">B 站</span><span>小红书聚光</span><span class="bdg">2-3 小时</span></div>
+      <span class="cm-link">观看</span>
+    </a>
+    <a class="cm" href="https://search.bilibili.com/all?keyword=%E7%A3%81%E5%8A%9B%E9%87%91%E7%89%9B" target="_blank" rel="noopener noreferrer">
+      <div class="cm-title">快手磁力金牛 · 实战</div>
+      <div class="cm-meta"><span class="bdg bz">B 站</span><span>快手磁力金牛</span><span class="bdg">2-3 小时</span></div>
+      <span class="cm-link">观看</span>
+    </a>
+    <a class="cm" href="https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%E6%93%8D%E7%9B%98%E6%89%8B" target="_blank" rel="noopener noreferrer">
+      <div class="cm-title">短剧头部操盘手分享</div>
+      <div class="cm-meta"><span class="bdg bz">B 站</span><span>头部操盘手</span><span class="bdg">3-5 小时</span></div>
+      <span class="cm-link">观看</span>
+    </a>
+  </div>
+</div>
+</main>
+</div>
+
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="扫码关注玉哥">
+      <img class="qr-img" src="../../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../../changelog.html">📅 更新日志</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  /* ============ 主题切换 ============ */
+  var themeBtn = document.getElementById('themeBtn');
+  var setTheme = function(t){
+    document.documentElement.dataset.theme = t;
+    try{ localStorage.setItem('qianchuan:theme', t); }catch(e){}
+  };
+  setTheme(localStorage.getItem('qianchuan:theme') || 'light');
+  if(themeBtn) themeBtn.addEventListener('click', function(){
+    var cur = document.documentElement.dataset.theme || 'light';
+    setTheme(cur === 'light' ? 'dark' : 'light');
+  });
+
+  /* ============ 阅读进度条 · scroll → width ============ */
+  var readProgress = document.getElementById('readProgress');
+  function updateReadProgress(){
+    if(!readProgress) return;
+    var doc = document.documentElement;
+    var body = document.body;
+    var scrollTop = window.pageYOffset || doc.scrollTop || body.scrollTop || 0;
+    var scrollHeight = Math.max(
+      body.scrollHeight, doc.scrollHeight,
+      body.offsetHeight, doc.offsetHeight,
+      body.clientHeight, doc.clientHeight
+    );
+    var winHeight = window.innerHeight || doc.clientHeight;
+    var trackable = Math.max(1, scrollHeight - winHeight);
+    var pct = Math.min(100, Math.max(0, (scrollTop / trackable) * 100));
+    readProgress.style.width = pct.toFixed(2) + '%';
+    readProgress.classList.toggle('show-end', pct > 95);
+  }
+
+  /* ============ Sidebar 联动 · 滚动正文高亮当前章节 ============ */
+  function initSidebarSync(){
+    var aside = document.querySelector('aside');
+    if(!aside) return;
+    // 收集 sidebar 链接 + 对应锚点
+    var linkMap = [];
+    aside.querySelectorAll('a[href^="#"]').forEach(function(a){
+      var id = a.getAttribute('href').slice(1);
+      if(!id) return;
+      var target = document.getElementById(id);
+      if(target) linkMap.push({link: a, target: target, id: id});
+    });
+    if(!linkMap.length) return;
+    // 当前激活的链接
+    var current = null;
+    function setActive(link){
+      if(current === link) return;
+      if(current) current.classList.remove('aside-current');
+      if(link){ link.classList.add('aside-current'); current = link; }
+    }
+    // scroll 监听:找最靠上但已滚过视口顶部的章节
+    function syncSidebar(){
+      var offset = 80; // 顶部偏移(topbar 56px + buffer)
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+      var active = null;
+      for(var i = 0; i < linkMap.length; i++){
+        var t = linkMap[i].target;
+        var top = t.getBoundingClientRect().top + scrollTop;
+        if(top - scrollTop <= offset) active = linkMap[i];
+      }
+      // 如果到页面底部,激活最后一个
+      var doc = document.documentElement;
+      if(window.innerHeight + scrollTop >= (doc.scrollHeight - 4)) active = linkMap[linkMap.length-1];
+      if(active){
+        setActive(active.link);
+        // 滚动 sidebar 让当前链接可见
+        var aRect = active.link.getBoundingClientRect();
+        var asideRect = aside.getBoundingClientRect();
+        if(aRect.top < asideRect.top || aRect.bottom > asideRect.bottom){
+          var scrollTo = active.link.offsetTop - 60;
+          aside.scrollTo({top: Math.max(0, scrollTo), behavior: 'smooth'});
+        }
+      }
+    }
+    window.addEventListener('scroll', syncSidebar, {passive:true});
+    syncSidebar();
+  }
+
+  window.addEventListener('scroll', updateReadProgress, {passive:true});
+  window.addEventListener('resize', updateReadProgress);
+  updateReadProgress();
+  if(document.readyState === 'complete') initSidebarSync();
+  else window.addEventListener('load', initSidebarSync);
+  var readProgress = document.getElementById('readProgress');
+  function updateReadProgress(){
+    if(!readProgress) return;
+    var doc = document.documentElement;
+    var body = document.body;
+    var scrollTop = window.pageYOffset || doc.scrollTop || body.scrollTop || 0;
+    var scrollHeight = Math.max(
+      body.scrollHeight, doc.scrollHeight,
+      body.offsetHeight, doc.offsetHeight,
+      body.clientHeight, doc.clientHeight
+    );
+    var winHeight = window.innerHeight || doc.clientHeight;
+    var trackable = Math.max(1, scrollHeight - winHeight);
+    var pct = Math.min(100, Math.max(0, (scrollTop / trackable) * 100));
+    readProgress.style.width = pct.toFixed(2) + '%';
+    readProgress.classList.toggle('show-end', pct > 95);
+  }
+  window.addEventListener('scroll', updateReadProgress, {passive:true});
+  window.addEventListener('resize', updateReadProgress);
+  updateReadProgress();
+
+  /* ============ §7.2 ROI 计算器 · 实时计算 ============ */
+  function calcRoi(){
+    var cpl = parseFloat(document.getElementById('roi-cpl').value) || 0;
+    var pay = parseFloat(document.getElementById('roi-pay').value) || 0;
+    var ltv = parseFloat(document.getElementById('roi-ltv').value) || 0;
+    var cpm = parseFloat(document.getElementById('roi-cpm').value) || 0;
+    var bud = parseFloat(document.getElementById('roi-bud').value) || 0;
+    if(cpm <= 0){ return; }
+    var cplR = cpl / 100, payR = pay / 100;
+    var roi = (cplR * payR * ltv) / cpm;
+    var total = bud * roi;
+    var net = total - bud - 4000; // 制作成本默认 ¥4000
+    var critPay = (cpm * 1.2) / (cplR * ltv) * 100; // 目标 ROI 1.2
+    var safeRoi = roi >= 1.5 ? '1.5+(拉满)' : (roi >= 1.2 ? '1.2+(可投)' : (roi >= 1.0 ? '1.0+(临界,小测)' : '≥1.2(别投)'));
+    var setOut = function(id, val, klass){
+      var el = document.getElementById(id);
+      if(!el) return;
+      el.querySelector('.val').textContent = val;
+      el.classList.remove('warn','caution','good','fire');
+      if(klass) el.classList.add(klass);
+    };
+    var roiKlass = roi >= 1.5 ? 'fire' : (roi >= 1.2 ? 'good' : (roi >= 1.0 ? 'caution' : 'warn'));
+    setOut('roi-out-roi', roi.toFixed(2), roiKlass);
+    setOut('roi-out-profit', '¥' + Math.round(total).toLocaleString(), total >= bud ? roiKlass : 'warn');
+    setOut('roi-out-net', (net >= 0 ? '+¥' : '-¥') + Math.abs(Math.round(net)).toLocaleString(), net >= 0 ? (roiKlass) : 'warn');
+    setOut('roi-out-crit', critPay.toFixed(1) + '%', pay >= critPay ? 'good' : 'warn');
+    setOut('roi-out-safe', safeRoi, roiKlass);
+    // verdict banner
+    var big = document.getElementById('roi-big');
+    var badge = document.getElementById('roi-badge');
+    var hint = document.getElementById('roi-hint');
+    if(big) big.textContent = roi.toFixed(2);
+    if(badge){
+      badge.className = 'badge ' + (roi >= 1.5 ? 'fire' : roi >= 1.2 ? 'good' : roi >= 1.0 ? 'warn' : 'bad');
+      badge.textContent = roi >= 1.5 ? '🚀 爆款 · 加预算拉满' : roi >= 1.2 ? '✅ 赚钱 · 投' : roi >= 1.0 ? '⚠️ 临界 · ¥1000 小测' : '❌ 亏本 · 别投';
+    }
+    if(hint){
+      hint.textContent = net >= 0
+        ? ('净利润 +¥' + Math.round(net).toLocaleString() + ' · 投流预算 ¥' + Math.round(bud).toLocaleString() + ' · 投!')
+        : ('亏损 -¥' + Math.abs(Math.round(net)).toLocaleString() + ' · 别投 · 先改完播率 / 付费率 / LTV');
+    }
+  }
+  ['roi-cpl','roi-pay','roi-ltv','roi-cpm','roi-bud'].forEach(function(id){
+    var el = document.getElementById(id);
+    if(el){
+      el.addEventListener('input', calcRoi);
+      el.addEventListener('change', calcRoi);
+    }
+  });
+  calcRoi();
+
+  /* ============ §13 阶段筛选 ============ */
+  var stageFilter = document.getElementById('stageFilter');
+  if(stageFilter){
+    stageFilter.querySelectorAll('.pill').forEach(function(p){
+      p.addEventListener('click', function(){
+        var stage = this.getAttribute('data-stage');
+        stageFilter.querySelectorAll('.pill').forEach(function(x){
+          x.classList.toggle('active', x===p);
+        });
+        document.querySelectorAll('.stage-card').forEach(function(c){
+          if(stage==='all' || c.getAttribute('data-stage')===stage) c.style.display='';
+          else c.style.display='none';
+        });
+        var sec = document.getElementById('d4');
+        if(sec) sec.scrollIntoView({behavior:'smooth', block:'start'});
+      });
+    });
+  }
+
+  /* ============ 旧的 sidebar 高亮(保留) ============ */
+  document.querySelectorAll('aside a').forEach(function(a){
+    a.addEventListener('click',function(){
+      document.querySelectorAll('aside a').forEach(function(x){
+        x.style.color='';x.style.background='';x.style.borderLeftColor='transparent';
+      });
+      a.style.color='var(--blue)';a.style.background='var(--bg3)';a.style.borderLeftColor='var(--blue)';
+    });
+  });
+})();
+</script>
+<script src="../../assets/site-enhance.js?v=fix20260927-2215" defer></script>
+</body>
+</html>

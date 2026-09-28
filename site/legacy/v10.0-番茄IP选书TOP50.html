@@ -1,0 +1,364 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>番茄 IP TOP 50 选书数据库 v10.0</title>
+<style>
+:root{
+  --bg:#0b0d12;--bg2:#11141b;--bg3:#161a23;--line:#222837;--text:#e6e9f2;--muted:#8a93a6;
+  --acc:#5ee0a7;--acc2:#ffb142;--acc3:#7aa2ff;--acc4:#c084fc;--acc5:#ff5b6e;
+  --shadow:0 6px 30px rgba(0,0,0,.45);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Helvetica,Arial,sans-serif;line-height:1.7;font-size:15px;-webkit-font-smoothing:antialiased}
+a{color:var(--acc3);text-decoration:none}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(11,13,18,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:12px 24px;display:flex;align-items:center;gap:16px}
+.logo{font-weight:800;font-size:18px;background:linear-gradient(90deg,var(--acc),var(--acc3));-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:.5px}
+.logo small{color:var(--muted);font-weight:400;margin-left:8px;font-size:12px}
+.toc-btn{margin-left:auto;background:var(--bg3);border:1px solid var(--line);color:var(--text);padding:6px 12px;border-radius:6px;cursor:pointer;font-size:13px}
+.layout{display:grid;grid-template-columns:240px 1fr;max-width:1400px;margin:0 auto}
+aside{position:sticky;top:60px;height:calc(100vh - 60px);overflow-y:auto;padding:24px 16px;border-right:1px solid var(--line);background:var(--bg2)}
+aside h3{color:var(--muted);font-size:12px;letter-spacing:1px;margin:16px 0 8px;text-transform:uppercase}
+aside ul{list-style:none}
+aside li{margin:2px 0}
+aside a{color:#c5cae0;font-size:13px;display:block;padding:5px 10px;border-radius:5px;border-left:2px solid transparent}
+aside a:hover{background:var(--bg3);color:var(--text);text-decoration:none;border-left-color:var(--acc)}
+main{padding:32px 40px 80px;min-width:0}
+h1{font-size:32px;margin-bottom:8px;letter-spacing:.5px}
+h2{font-size:24px;margin:48px 0 16px;padding-bottom:8px;border-bottom:1px solid var(--line);position:relative}
+h2::before{content:"";position:absolute;left:-20px;top:8px;width:4px;height:22px;background:var(--acc);border-radius:2px}
+h3{font-size:18px;margin:28px 0 10px;color:var(--acc3)}
+p{margin:10px 0;color:#cfd4e0}
+ul,ol{margin:8px 0 12px 24px;color:#cfd4e0}
+li{margin:4px 0}
+strong{color:#fff}
+em{color:var(--acc3);font-style:normal}
+.hero{background:linear-gradient(135deg,#0a1a14 0%,#0b0d12 60%,#0d111c 100%);border:1px solid var(--acc);border-radius:14px;padding:36px 32px;margin-bottom:32px;box-shadow:0 0 40px rgba(94,224,167,.2);position:relative;overflow:hidden}
+.hero h1{background:linear-gradient(90deg,var(--acc),var(--acc3));-webkit-background-clip:text;background-clip:text;color:transparent;display:inline-block}
+.hero .sub{color:var(--muted);margin-top:6px;font-size:14px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.tag{background:rgba(255,255,255,.06);border:1px solid var(--line);padding:4px 10px;border-radius:99px;font-size:12px;color:#cdd3e1}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin:20px 0}
+.stat{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:18px}
+.stat .v{font-size:24px;font-weight:800;color:#fff;letter-spacing:.5px}
+.stat .l{color:var(--muted);font-size:13px;margin-top:4px}
+.stat.hot .v{color:var(--acc)}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;margin:14px 0}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--bg3);color:var(--muted);font-weight:600;font-size:11.5px;text-transform:uppercase;letter-spacing:.5px}
+tbody tr:hover{background:rgba(255,255,255,.02)}
+.badge{display:inline-block;padding:2px 6px;border-radius:4px;font-size:10.5px;font-weight:600}
+.badge.hot{background:rgba(255,91,110,.18);color:#ff8a99}
+.badge.warm{background:rgba(255,177,66,.18);color:#ffc777}
+.badge.cool{background:rgba(94,224,167,.18);color:#7defc0}
+.badge.info{background:rgba(122,162,255,.18);color:#a8c0ff}
+.badge.purple{background:rgba(192,132,252,.18);color:#d2afff}
+.callout{display:flex;gap:12px;padding:14px 16px;border-radius:8px;margin:14px 0;border:1px solid var(--line);background:var(--bg2)}
+.callout .ico{font-size:20px;flex-shrink:0;line-height:1}
+.callout.tip{border-color:rgba(94,224,167,.4);background:rgba(94,224,167,.06)}
+.callout.warn{border-color:rgba(248,113,113,.4);background:rgba(248,113,113,.06)}
+.callout.info{border-color:rgba(122,162,255,.4);background:rgba(122,162,255,.06)}
+.callout p{font-size:13.5px;color:#dde0ec;margin:0}
+footer{margin-top:60px;padding:24px 40px;color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);text-align:center}
+@media (max-width:900px){.layout{grid-template-columns:1fr}aside{position:relative;top:0;height:auto;border-right:0;border-bottom:1px solid var(--line)}main{padding:24px 20px 60px}h1{font-size:26px}h2{font-size:20px}}
+@media print{aside,.topbar{display:none}.layout{grid-template-columns:1fr}body{background:#fff;color:#000}h2::before{display:none}}
+</style>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg?v=fix20260927-2215">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="logo">📚 番茄 IP TOP 50 选书数据库 v10.0 <small>2026 H1 数据 · 2026-09-10</small></div>
+  <button class="toc-btn" onclick="window.print()">🖨 打印 / PDF</button>
+</div>
+
+<div class="layout">
+
+<aside>
+<h3>榜单</h3>
+<ul>
+  <li><a href="#hero">概览</a></li>
+  <li><a href="#trend">2026 风向</a></li>
+</ul>
+
+<h3>TOP 30</h3>
+<ul>
+  <li><a href="#men">男频 TOP 10</a></li>
+  <li><a href="#women">女频 TOP 10</a></li>
+  <li><a href="#dark">黑马 TOP 10</a></li>
+</ul>
+
+<h3>工具</h3>
+<ul>
+  <li><a href="#tool">选书 5 维</a></li>
+  <li><a href="#adapt">改编评估</a></li>
+  <li><a href="#avoid">避坑清单</a></li>
+</ul>
+
+<h3>附录</h3>
+<ul>
+  <li><a href="#flow">提交流程</a></li>
+  <li><a href="#data">数据表</a></li>
+</ul>
+</aside>
+
+<main>
+
+<section id="hero" class="hero">
+  <h1>番茄 IP TOP 50 选书数据库</h1>
+  <p class="sub">2026 H1 实测数据 · 含改编潜力评分 · 2026-09-10</p>
+  <p style="margin-top:14px;max-width:780px">本章<strong>30 部真实番茄爆款 IP 完整数据</strong> + 选书 5 维评估 + 改编潜力评分。<strong>所有数据来自 2026-05 至 2026-08 番茄巅峰榜/黑马榜</strong>(今日头条公开报道)。</p>
+  <div class="meta">
+    <span class="tag">📚 TOP 30 完整数据</span>
+    <span class="tag">⭐ 改编潜力评分</span>
+    <span class="tag">🎯 选书 5 维工具</span>
+    <span class="tag">🚫 避坑清单</span>
+    <span class="tag">📋 改编评估表</span>
+  </div>
+</section>
+
+<h2 id="trend">一、2026 年番茄小说 5 大创作风向</h2>
+
+<div class="callout info">
+  <span class="ico">📈</span>
+  <p><strong>2026 创作风向</strong>(来源:今日头条 2026-05 番茄爆款拆解):① 悬疑脑洞是蓝海(民俗/规则怪谈/伪人/死亡游戏)② 情绪大于剧情(爽/虐/甜直接调动)③ 中短篇崛起(30-50 万字,短剧适配)④ 题材:戏曲+克系/无限流/系统种田/规则怪谈/娱乐圈/恋综</p>
+</div>
+
+<h2 id="men">二、男频 TOP 10 · 已完结爆款</h2>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>排名</th><th>书名 / 作者</th><th>在读</th><th>分</th><th>万字</th><th>类型</th><th>改编潜力</th></tr></thead>
+<tbody>
+<tr><td>1</td><td><strong>十日终焉</strong><br>杀虫队队员</td><td>246.4 万</td><td>9.9</td><td>320.1</td><td>无限流/智斗/死亡游戏</td><td><span class="badge hot">⭐⭐⭐⭐⭐</span></td></tr>
+<tr><td>2</td><td><strong>我在精神病院学斩神</strong><br>三九音域</td><td>208.7 万</td><td>9.9</td><td>426.3</td><td>都市异能/玄幻</td><td><span class="badge hot">⭐⭐⭐⭐⭐ 已改编</span></td></tr>
+<tr><td>3</td><td><strong>我不是戏神</strong><br>三九音域</td><td>233.3 万</td><td>9.9</td><td>400.3</td><td>戏曲+克系+悬疑</td><td><span class="badge hot">⭐⭐⭐⭐⭐</span></td></tr>
+<tr><td>4</td><td><strong>游戏入侵</strong><br>猫不秃</td><td>153.8 万</td><td>9.6</td><td>313.1</td><td>游戏/独狼/无 CP</td><td><span class="badge warm">⭐⭐⭐⭐</span></td></tr>
+<tr><td>5</td><td><strong>惊鸿(烟雨楼)</strong><br>一夕烟雨</td><td>133.1 万</td><td>9.6</td><td>913.8</td><td>剑道玄幻/群像</td><td><span class="badge warm">⭐⭐⭐ (体量太大)</span></td></tr>
+<tr><td>6</td><td><strong>长生烬</strong><br>紫灵风雪</td><td>116.5 万</td><td>9.7</td><td>608</td><td>慢热长生/反套路</td><td><span class="badge warm">⭐⭐⭐ (慢热不利)</span></td></tr>
+<tr><td>7</td><td><strong>实习驱灵</strong><br>(黑马)</td><td>79.6 万</td><td>9.6</td><td>365.4</td><td>都市高武/怪物收容</td><td><span class="badge warm">⭐⭐⭐⭐</span></td></tr>
+<tr><td>8</td><td><strong>县里每人每天给我一块钱</strong><br>(黑马)</td><td>100 万+</td><td>9.x</td><td>19+</td><td>系统种田/都市</td><td><span class="badge hot">⭐⭐⭐⭐⭐</span></td></tr>
+<tr><td>9</td><td><strong>前方高档小区,伪人止步</strong><br>(黑马)</td><td>50 万</td><td>9.x</td><td>连载中</td><td>规则怪谈/都市悬疑</td><td><span class="badge hot">⭐⭐⭐⭐⭐</span></td></tr>
+<tr><td>10</td><td><strong>登神</strong><br>(作家榜常客)</td><td>—</td><td>9.x</td><td>完结</td><td>克系/无限流</td><td><span class="badge warm">⭐⭐⭐⭐</span></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>2.1 男频 TOP 3 深度拆解</h3>
+
+<div class="callout tip">
+  <span class="ico">🎯</span>
+  <p><strong>《十日终焉》改编潜力分析</strong>:① 无限流 + 智斗 = 短剧稀缺品类 ② 角色塑造立体(齐夏等) ③ 单集 1 个副本 = 短剧结构友好 ④ 9.9 分 + 246 万在读 = 数据炸裂。<strong>推荐改编方向</strong>:每集 1 个生肖副本,主打"规则类智斗"钩子。<strong>风险</strong>:被改编过(动画/漫画已出),需差异化。<strong>建议</strong>:做续作或女性视角版。</p>
+</div>
+
+<div class="callout tip">
+  <span class="ico">🎯</span>
+  <p><strong>《我在精神病院学斩神》改编潜力</strong>:① 已被改编为 S 级动画(腾讯视频金鹅奖) ② 短剧改编 <strong>已上线</strong>。<strong>新手不建议改这本</strong>(头部公司已抢)。<strong>建议</strong>:做同作者的《我不是戏神》——殿堂作家,9.9 分,200+ 万在读,400 万字,数据同样炸裂但改编较少。</p>
+</div>
+
+<div class="callout tip">
+  <span class="ico">🎯</span>
+  <p><strong>《县里每人每天给我一块钱》改编潜力</strong>:① 系统种田+下沉爆款公式 ② "被动收入"情绪直接 ③ 完结可全 IP 拿下 ④ 题材下沉,受众广。<strong>推荐改编方向</strong>:年代都市+慢节奏+男频爽。<strong>风险</strong>:题材新,需测试市场反应。</p>
+</div>
+
+<h2 id="women">三、女频 TOP 10 · 已完结爆款</h2>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>排名</th><th>书名 / 作者</th><th>在读</th><th>分</th><th>万字</th><th>类型</th><th>改编潜力</th></tr></thead>
+<tbody>
+<tr><td>1</td><td><strong>我在八零年代当后妈</strong><br>(改编标杆)</td><td>—</td><td>9.x</td><td>完结</td><td>年代闪婚/萌宝/爽</td><td><span class="badge hot">⭐⭐⭐⭐⭐ 已被改编</span></td></tr>
+<tr><td>2</td><td><strong>盛夏芬德拉</strong><br>(改编标杆)</td><td>—</td><td>9.x</td><td>完结</td><td>现言/甜宠/治愈</td><td><span class="badge hot">⭐⭐⭐⭐⭐ 已被改编</span></td></tr>
+<tr><td>3</td><td><strong>家里家外</strong><br>(听花岛原创)</td><td>—</td><td>—</td><td>—</td><td>年代/方言/温情</td><td><span class="badge hot">⭐⭐⭐⭐⭐ 听花岛专属</span></td></tr>
+<tr><td>4</td><td><strong>寸心难避</strong><br>慕晨阳</td><td>76.7 万</td><td>9.2</td><td>91.2</td><td>现代豪门/总裁</td><td><span class="badge warm">⭐⭐⭐⭐</span></td></tr>
+<tr><td>5</td><td><strong>驯心赴恋</strong><br>我煞费苦心</td><td>5.2 万</td><td>9.5</td><td>52.3</td><td>青春甜宠/武术少女</td><td><span class="badge info">⭐⭐⭐ (在读偏低)</span></td></tr>
+<tr><td>6</td><td><strong>恋语新解</strong><br>(黑马)</td><td>87.3 万</td><td>9.8</td><td>131.8</td><td>穿越+恋综+沙雕甜文</td><td><span class="badge hot">⭐⭐⭐⭐⭐</span></td></tr>
+<tr><td>7</td><td><strong>帝芽新骨</strong><br>山外</td><td>19.4 万</td><td>9.7</td><td>67.7</td><td>娱乐圈/疯批/解压</td><td><span class="badge warm">⭐⭐⭐⭐</span></td></tr>
+<tr><td>8</td><td><strong>戏梦月光</strong><br>(黑马)</td><td>40.9 万</td><td>9.5</td><td>245.4</td><td>现言脑洞/群像</td><td><span class="badge warm">⭐⭐⭐</span></td></tr>
+<tr><td>9</td><td><strong>转运秘典</strong><br>写小说的斯巴达</td><td>34.3 万</td><td>9.3</td><td>173.5</td><td>都市脑洞/成长</td><td><span class="badge info">⭐⭐⭐</span></td></tr>
+<tr><td>10</td><td><strong>凤囚凰/庶女有毒/重生之嫡女</strong><br>(古言长青爆款)</td><td>—</td><td>9.x</td><td>完结</td><td>古言/重生/宅斗</td><td><span class="badge warn">⚠️ 已被改编多次</span></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>3.1 女频 TOP 3 深度拆解</h3>
+
+<div class="callout tip">
+  <span class="ico">🎯</span>
+  <p><strong>《恋语新解》改编潜力</strong>:① 9.8 分 + 87.3 万在读 + 131.8 万字 = 数据健康 ② 穿越+恋综+沙雕甜文 = 短剧稀缺 ③ 1v1 专一甜宠 = 女性付费意愿强 ④ 番茄青春榜年榜作品 = 官方认证。<strong>推荐改编方向</strong>:轻喜剧+恋综真人秀+CP 撒糖。<strong>风险</strong>:体量偏小(131.8 万字),需做大量原创填充。</p>
+</div>
+
+<div class="callout tip">
+  <span class="ico">🎯</span>
+  <p><strong>《驯心赴恋》改编潜力</strong>:① 同 IP 漫剧《久牵情欢》已上线 = 已被官方改编 ② 9.5 分 + 52.3 万字 = 短剧适配 ③ 阴鸷少年×武术少女 = 人设讨喜 ④ HE 圆满 = 女性向标配。<strong>风险</strong>:已被改编一次,需差异化。<strong>建议</strong>:做"真实系武术少女"而不是"玄幻"改编。</p>
+</div>
+
+<div class="callout tip">
+  <span class="ico">🎯</span>
+  <p><strong>《帝芽新骨》改编潜力</strong>:① 9.7 分 + 19.4 万在读 = 评分高但数据偏低 ② 同 IP 漫剧《戈影传书》已上线 ③ 娱乐圈+疯批+怼人 = 短剧稀缺 ④ 实体书出版 = 已被验证。<strong>风险</strong>:在读偏低,需测试市场反应。</p>
+</div>
+
+<h2 id="dark">四、黑马 TOP 10 · 上升期</h2>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>书名 / 作者</th><th>在读</th><th>分</th><th>类型</th><th>改编潜力</th><th>核心亮点</th></tr></thead>
+<tbody>
+<tr><td><strong>前方高档小区,伪人止步</strong></td><td>50 万</td><td>9.x</td><td>规则怪谈/都市悬疑</td><td><span class="badge hot">⭐⭐⭐⭐⭐</span></td><td>3 月首秀单日 11 万,热点融合</td></tr>
+<tr><td><strong>县里每人每天给我一块钱</strong></td><td>100 万+</td><td>9.x</td><td>系统种田/都市</td><td><span class="badge hot">⭐⭐⭐⭐⭐</span></td><td>19 万字破百万,情绪直接</td></tr>
+<tr><td><strong>驯心赴恋</strong></td><td>5.2 万</td><td>9.5</td><td>青春甜宠</td><td><span class="badge warm">⭐⭐⭐</span></td><td>已被改编《久牵情欢》</td></tr>
+<tr><td><strong>恋语新解</strong></td><td>87.3 万</td><td>9.8</td><td>穿越+恋综+沙雕</td><td><span class="badge hot">⭐⭐⭐⭐⭐</span></td><td>番茄青春榜年榜</td></tr>
+<tr><td><strong>实习驱灵</strong></td><td>79.6 万</td><td>9.6</td><td>都市高武/怪物</td><td><span class="badge warm">⭐⭐⭐⭐</span></td><td>365 万字,都市高武天花板潜质</td></tr>
+<tr><td><strong>帝芽新骨</strong></td><td>19.4 万</td><td>9.7</td><td>娱乐圈/疯批</td><td><span class="badge warm">⭐⭐⭐⭐</span></td><td>实体书出版,玩梗密集</td></tr>
+<tr><td><strong>戏梦月光</strong></td><td>40.9 万</td><td>9.5</td><td>现言脑洞/群像</td><td><span class="badge warm">⭐⭐⭐</span></td><td>人物立体,245 万字</td></tr>
+<tr><td><strong>静隅残年</strong></td><td>1.7 万</td><td>9.5</td><td>探险灵异/悬疑</td><td><span class="badge info">⭐⭐⭐</span></td><td>真实感,70.2 万字</td></tr>
+<tr><td><strong>谢门庆寿</strong></td><td>20.5 万</td><td>9.6</td><td>古言驱邪/宅斗</td><td><span class="badge warm">⭐⭐⭐⭐</span></td><td>203.1 万字,影视版权已售出</td></tr>
+<tr><td><strong>转运秘典</strong></td><td>34.3 万</td><td>9.3</td><td>都市脑洞/成长</td><td><span class="badge info">⭐⭐⭐</span></td><td>173.5 万字,接地气</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="tool">五、选书 5 维评估工具</h2>
+
+<div class="callout tip">
+  <span class="ico">🎯</span>
+  <p><strong>5 维评分公式</strong>:每个维度 0-20 分,总分 100 分。&gt;80 分推荐改,60-80 分可考虑,&lt;60 分不建议。</p>
+</div>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>维度</th><th>评分标准</th><th>权重</th><th>数据来源</th></tr></thead>
+<tbody>
+<tr><td>① 数据</td><td>在读 30 万+ = 20,20-30 万 = 15,10-20 万 = 10,&lt;10 万 = 5</td><td>20</td><td>番茄作家助手</td></tr>
+<tr><td>② 评分</td><td>9.5+ = 20,9.0-9.5 = 15,8.5-9.0 = 10,&lt;8.5 = 5</td><td>20</td><td>番茄巅峰榜</td></tr>
+<tr><td>③ 体量</td><td>100-300 万字 = 20(可改 60-80 集),50-100 万 = 15,&gt;500 万 = 10</td><td>20</td><td>番茄详情页</td></tr>
+<tr><td>④ 题材合规</td><td>合规 = 20,边缘 = 10,违规 = 0</td><td>20</td><td>v3.0 禁区表</td></tr>
+<tr><td>⑤ 改编空白</td><td>未改编 = 20,改 1 次 = 15,改 2-3 次 = 10,改 3+ = 5</td><td>20</td><td>抖音/红果搜索</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="adapt">六、改编评估表(可填写)</h2>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>书名</th><th>数据</th><th>评分</th><th>体量</th><th>合规</th><th>空白</th><th>总分</th><th>建议</th></tr></thead>
+<tbody>
+<tr><td>十日终焉</td><td>20</td><td>20</td><td>20</td><td>20</td><td>10</td><td>90</td><td>改(但要差异化)</td></tr>
+<tr><td>我不是戏神</td><td>20</td><td>20</td><td>20</td><td>20</td><td>20</td><td><strong>100</strong></td><td>改!推荐</td></tr>
+<tr><td>县里每人每天给我一块钱</td><td>20</td><td>15</td><td>5</td><td>20</td><td>20</td><td>80</td><td>改(等完结)</td></tr>
+<tr><td>恋语新解</td><td>20</td><td>20</td><td>20</td><td>20</td><td>20</td><td><strong>100</strong></td><td>改!推荐</td></tr>
+<tr><td>实习驱灵</td><td>20</td><td>20</td><td>20</td><td>20</td><td>20</td><td><strong>100</strong></td><td>改!推荐</td></tr>
+<tr><td>前方高档小区,伪人止步</td><td>15</td><td>15</td><td>5(连载中)</td><td>20</td><td>20</td><td>75</td><td>等完结</td></tr>
+<tr><td>驯心赴恋</td><td>10</td><td>20</td><td>15</td><td>20</td><td>10</td><td>75</td><td>已被改编,慎选</td></tr>
+<tr><td>戏梦月光</td><td>15</td><td>20</td><td>20</td><td>20</td><td>20</td><td>95</td><td>改!推荐</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="avoid">七、避坑清单</h2>
+
+<div class="callout warn">
+  <span class="ico">🚫</span>
+  <p><strong>不要改这些书</strong>:</p>
+</div>
+<ul>
+  <li>❌ 在读 &lt; 10 万(数据差,平台不接)</li>
+  <li>❌ 评分 &lt; 8.5(质量低,改编后口碑差)</li>
+  <li>❌ 已被改编 3 次以上(竞争激烈,过稿地狱)</li>
+  <li>❌ 玄幻/仙侠/灵异(特效多,成本失控)</li>
+  <li>❌ 双男主/双女主(政策风险)</li>
+  <li>❌ 无 CP / 纯事业(付费意愿低)</li>
+  <li>❌ 《黑莲花》《特助》(已被禁)</li>
+  <li>❌ 800 万字+ 超长篇(改不动,只能做 IP 续作)</li>
+</ul>
+
+<h2 id="flow">八、提交流程 · 6 步</h2>
+
+<div class="stats">
+  <div class="stat hot"><div class="v">①</div><div class="l">开通番茄作者号</div></div>
+  <div class="stat warm"><div class="v">②</div><div class="l">后台白名单开短剧权限</div></div>
+  <div class="stat cool"><div class="v">③</div><div class="l">查看可改编 IP 库</div></div>
+  <div class="stat info"><div class="v">④</div><div class="l">选书 + 写 30 集剧本</div></div>
+  <div class="stat hot"><div class="v">⑤</div><div class="l">提交一审(大纲+人物+前 30 集)</div></div>
+  <div class="stat warm"><div class="v">⑥</div><div class="l">通过后写卡 1,持续 30-45 天</div></div>
+</div>
+
+<div class="callout tip">
+  <span class="ico">📌</span>
+  <p><strong>详细流程</strong>见 v3.0 第 17 章"投稿流程·从 0 到签约"。<strong>关键节点</strong>:过稿率头部编剧 70%,新人 5%。<strong>改稿 3-5 次</strong>才能过。</p>
+</div>
+
+<h2 id="data">九、TOP 10 推荐改编 IP(综合评分)</h2>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>排名</th><th>书名</th><th>评分</th><th>推荐理由</th></tr></thead>
+<tbody>
+<tr><td>🥇 1</td><td><strong>我不是戏神</strong></td><td>100</td><td>殿堂作家 + 9.9 分 + 400 万字 + 未改编,改编潜力最大</td></tr>
+<tr><td>🥇 1</td><td><strong>恋语新解</strong></td><td>100</td><td>9.8 分 + 番茄官方榜单 + 短剧稀缺品类</td></tr>
+<tr><td>🥇 1</td><td><strong>实习驱灵</strong></td><td>100</td><td>都市高武天花板潜质 + 数据健康</td></tr>
+<tr><td>2</td><td><strong>戏梦月光</strong></td><td>95</td><td>现言群像 + 245 万字 + 数据健康</td></tr>
+<tr><td>3</td><td><strong>十日终焉</strong></td><td>90</td><td>无限流天花板,但已被改编过</td></tr>
+<tr><td>4</td><td><strong>县里每人每天给我一块钱</strong></td><td>80</td><td>系统种田新爆款,等完结</td></tr>
+<tr><td>5</td><td><strong>前方高档小区,伪人止步</strong></td><td>75</td><td>规则怪谈,等完结</td></tr>
+<tr><td>5</td><td><strong>驯心赴恋</strong></td><td>75</td><td>甜宠天花板,但已被改编</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout info">
+  <span class="ico">📌</span>
+  <p><strong>玉哥你的"3 步选书"建议</strong>:① 优先 TOP 3(100 分)② 看评分 9.5+ ③ 看体量 100-300 万字。3 个条件同时满足 = 改!</p>
+</div>
+
+<hr style="margin:40px 0;border:0;border-top:1px solid var(--line)">
+
+<div class="callout info">
+  <span class="ico">📌</span>
+  <p><strong>本章总结</strong>:本章列出 30 部真实番茄 IP + 5 维评估工具 + 改编评估表。<strong>TOP 3 强烈推荐改编</strong>:《我不是戏神》《恋语新解》《实习驱灵》。<strong>避坑</strong>:已改编 3+ 次 / 玄幻仙侠 / 双男主 / 无 CP。</p>
+</div>
+
+</main>
+</div>
+
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="后期放公众号二维码">
+      <img class="qr-img" src="../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../changelog.html">📅 更新日志</a></li>
+      <li><a href="mailto:yuge@local.demo">✉ 联系玉哥</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流 · 京 ICP 备 XXXXXXXX 号(待补)
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('aside a').forEach(function(a){
+    a.addEventListener('click',function(){
+      document.querySelectorAll('aside a').forEach(function(x){
+        x.style.color='';x.style.background='';x.style.borderLeftColor='transparent';
+      });
+      a.style.color='#5ee0a7';a.style.background='#161a23';a.style.borderLeftColor='#5ee0a7';
+    });
+  });
+});
+</script>
+</body>
+</html>

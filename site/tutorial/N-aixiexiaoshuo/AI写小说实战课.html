@@ -1,0 +1,2461 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="description" content="AI 写小说实战课：15 章完整教程、工具选型、提示词、世界观、大纲、章节创作、一致性检查与发布运营。">
+<title>AI 写小说实战课 · 玉哥漫剧教程站</title>
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg?v=fix20260927-2215">
+<link rel="stylesheet" href="../../assets/site.css?v=fix20260927-2215">
+<style>
+:root{--n-blue:#3b72f0;--n-soft:#eef3fb;--n-card:#fff;--n-line:#dbe5f4}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body.ainovel-page{background:linear-gradient(135deg,#eef3fb 0,#fafbfc 36%,#fffaf2 100%);color:#182235}
+.n-shell{width:min(1180px,calc(100% - 32px));margin:0 auto;padding:34px 0 80px}
+.n-hero{padding:54px clamp(22px,5vw,68px);border:1px solid var(--n-line);border-radius:24px;background:linear-gradient(135deg,#e8f0ff,#fafbfc 55%,#fff);box-shadow:0 18px 60px rgba(45,88,160,.10)}
+.n-hero h1{font-size:clamp(30px,5vw,56px);margin:0 0 14px;line-height:1.12}
+.n-hero p{max-width:760px;color:#536277;font-size:17px;line-height:1.8}
+.n-stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.n-stats span{padding:8px 14px;border-radius:999px;background:#fff;border:1px solid var(--n-line);font-weight:700}
+.n-panel,.lesson{margin-top:24px;padding:clamp(20px,4vw,42px);background:rgba(255,255,255,.94);border:1px solid var(--n-line);border-radius:20px;box-shadow:0 10px 34px rgba(45,88,160,.07)}
+.n-panel h2{margin-top:0}.chapter-grid,.article-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.chapter-grid a,.article-grid a{display:flex;gap:10px;align-items:center;min-height:52px;padding:12px 14px;border:1px solid var(--n-line);border-radius:12px;background:#f8fbff;color:#22395f;text-decoration:none}
+.chapter-grid a:hover,.article-grid a:hover{border-color:var(--n-blue);transform:translateY(-1px)}.chapter-grid span{color:var(--n-blue);font-weight:800}
+.lesson{line-height:1.85;overflow-wrap:anywhere}.lesson h1{font-size:clamp(26px,4vw,40px)}.lesson h2{margin-top:32px;border-left:4px solid var(--n-blue);padding-left:12px}.lesson h3{margin-top:24px}
+.lesson img{max-width:100%;height:auto}.lesson table{width:100%;border-collapse:collapse;display:block;overflow-x:auto}.lesson th,.lesson td{border:1px solid var(--n-line);padding:10px;text-align:left;min-width:110px}.lesson pre{overflow:auto;padding:16px;border-radius:12px;background:#13213a;color:#eef5ff}.lesson blockquote{margin:18px 0;padding:12px 18px;border-left:4px solid var(--n-blue);background:var(--n-soft)}
+.section-kicker{color:var(--n-blue);font-weight:800;letter-spacing:.08em}.back-top{display:inline-block;margin-top:24px;color:var(--n-blue)}
+@media(max-width:820px){.chapter-grid,.article-grid{grid-template-columns:1fr 1fr}.n-shell{width:min(100% - 20px,1180px);padding-top:18px}}
+@media(max-width:520px){.chapter-grid,.article-grid{grid-template-columns:1fr}.n-hero{border-radius:16px;padding:30px 20px}.n-panel,.lesson{border-radius:14px;padding:18px}}
+</style>
+</head>
+<body class="ainovel-page" id="course-top">
+<header class="topbar">
+  <div class="logo">🎬 漫剧教程站 <small>v3 · 玉哥</small></div>
+  <nav>
+    <a href="../../index.html">首页</a><a href="../all-courses.html" class="active">漫剧教程</a><a href="../../prompts/image-prompts.html">图片作品</a><a href="../../works/index.html">视频作品</a><a href="../../prompts/prompts.html">prompt 模板</a><a href="../../tools/toolkit.html">工具箱</a><a href="../../qa/troubleshooting.html">问题库</a><a href="../../news/industry.html">行业新闻</a>
+  </nav>
+  <button class="theme-toggle" id="yugeThemeBtn" title="深浅主题切换" aria-label="切换深浅主题">🌙</button>
+</header>
+<main class="n-shell">
+  <section class="n-hero"><div>📖 玉哥原创专题</div><h1>AI 写小说实战课</h1><p>从工具选择、提示词和世界观，到大纲、章节创作、一致性检查、润色、评估与发布运营。15 章完整路径，按顺序学，也可直接跳到当前问题。</p><div class="n-stats"><span>15 章教程</span><span>12 篇延伸阅读</span><span>本地静态 · 手机适配</span></div></section>
+  <section class="n-panel"><h2>课程目录</h2><div class="chapter-grid"><a href="#chapter-1"><span>01</span>tools</a><a href="#chapter-2"><span>02</span>prompts</a><a href="#chapter-3"><span>03</span>worldbuilding</a><a href="#chapter-4"><span>04</span>outline</a><a href="#chapter-5"><span>05</span>chapter-writing</a><a href="#chapter-6"><span>06</span>dialogue</a><a href="#chapter-7"><span>07</span>consistency</a><a href="#chapter-8"><span>08</span>style-polish</a><a href="#chapter-9"><span>09</span>publish</a><a href="#chapter-10"><span>10</span>evaluation</a><a href="#chapter-11"><span>11</span>webnovel-craft</a><a href="#chapter-12"><span>12</span>package-operate</a><a href="#chapter-13"><span>13</span>narrative-structure</a><a href="#chapter-14"><span>14</span>teardown</a><a href="#chapter-15"><span>15</span>testrun</a></div></section>
+  <article class="lesson" id="chapter-1"><div class="section-kicker">第 1 章</div><h1>第 1 章 工具选型与配置</h1>
+<blockquote>
+<p><strong>教学目标</strong>：学完本章，你能根据自己的写作语言（中文/英文）、目标（网文量产/严肃长篇）和预算，选出合适的 AI 工具组合，并完成 API 密钥、上下文、写作偏好的基础配置。</p>
+</blockquote>
+<hr>
+<h2>1.1 先搞清三层工具架构</h2>
+<p>市面上所有"AI 写小说工具"其实分三层，多数人只用了第一层：</p>
+<table>
+<thead>
+<tr>
+<th>层级</th>
+<th>代表</th>
+<th>干什么用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>通用大模型对话助手</td>
+<td>Claude、ChatGPT、DeepSeek、豆包、Kimi、通义、Gemini</td>
+<td>主力写作引擎：出大纲、写章节、润色、审稿</td>
+</tr>
+<tr>
+<td>专用写作工作台</td>
+<td>FeelFish、灵蟹创作、蛙蛙写作、AI_NovelGenerator</td>
+<td>自带设定库/章节管理/一致性检查，把长篇组织成工程</td>
+</tr>
+<tr>
+<td>写作工作流 / Agent</td>
+<td>chinese-novelist-skill、awesome-novel-skill、writing-agent</td>
+<td>把"写一本小说"拆成阶段流水线，自动跑完</td>
+</tr>
+</tbody>
+</table>
+<p><strong>结论先行</strong>：新手先用第一层免费版跑通"大纲→章节→润色"；写多卷长篇且要管设定时上第二层；要批量量产或自动化时再上第三层。别一开始就搭全套，工具只是手段。</p>
+<h2>1.2 选型三问</h2>
+<p>根据素材里交叉验证过的选型建议（<code>tools.md</code> 第四节 + 各工具官网数据），按三个问题对号入座：</p>
+<p><strong>Q1：写中文还是英文？</strong>
+- 中文：豆包、DeepSeek、Kimi、通义千问、文心一言（国产对中文语境与网文"网感"更好）
+- 英文：Claude、ChatGPT（非中文原生，且访问需自行解决网络；本教程以中文写作为主）</p>
+<p><strong>Q2：目标是什么？</strong>
+- 网文量产（中文）：主力选豆包（网感强、生态全）或 DeepSeek（免费/极便宜、可批量）；要管理多卷设定和大纲时用 Kimi 的超长上下文一次喂入全书梳理
+- 长篇严肃创作：中文用 Kimi（超长上下文）+ Claude（文笔打磨、克制润色）组合
+- 付费短篇/盐选：DeepSeek 或豆包起稿，靠提示词打爽点（见第 2 章）</p>
+<p><strong>Q3：预算多少？</strong>
+- 零预算：DeepSeek 网页版完全免费 + 豆包/通义免费额度即可起步
+- 低价档：通义办公助理 ¥19/月、Google AI Plus $4.99/月
+- 一步到位：Claude Pro $20/月 或 ChatGPT Plus $20/月 性价比最稳</p>
+<blockquote>
+<p>数据口径：价格核实时间 2026-09，以官网实时定价页为准（<code>tools.md</code> 已注明逐项来源）。</p>
+</blockquote>
+<p><strong>模型分工建议</strong>（来自自出版作者六步法）：头脑风暴、出高概念提案用轻量模型（免费档即可）；从写梗概开始切换到强模型（如 Claude、GPT-4o 档）；长篇连贯性依赖长上下文，Plus/Pro 档的长上下文是硬需求。</p>
+<h2>1.3 关键配置参数</h2>
+<p>不管用哪家，核心参数就三个：</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>推荐值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>temperature</td>
+<td>0.7 左右</td>
+<td>创意度。大纲/设定这类要稳定输出的任务降到 0.5 更稳；写作 0.7 左右是主流工具默认（AI_NovelGenerator 默认即 0.7）</td>
+</tr>
+<tr>
+<td>max_tokens</td>
+<td>8000–8192 起</td>
+<td>单次输出上限。写整章建议 8000+，否则会被截断</td>
+</tr>
+<tr>
+<td>上下文</td>
+<td>越长越好</td>
+<td>长篇连贯性的硬约束。Kimi 百万级上下文、Claude 超长上下文是写长篇选型的关键理由</td>
+</tr>
+</tbody>
+</table>
+<p>其他值得注意的配置：
+- <strong>模型切换</strong>：草稿用便宜快模型，正式写作、润色、审稿用强模型，甚至刻意换不同模型做"第二双眼睛"审稿（多 Agent 架构文章的做法）。
+- <strong>云端 vs 本地</strong>：要隐私或免费可跑本地（Ollama），灵蟹创作等工具支持 BYOK 接本地模型；国产开源（Qwen、DeepSeek）可私有化部署。</p>
+<h2>1.4 可直接复制的提示词模板</h2>
+<h3>模板 A：创作协作者系统提示词（配置到工具的"自定义指令 / 系统提示词 / 项目说明"里）</h3>
+<p>这个模板让 AI 从"一次性回答"变成"你的长期写作协作者"，是第 1 章最该先配好的东西：</p>
+<pre><code class="language-text">你是我的{小说类型}写作协作者，负责协助完成一部{预计字数}字的长篇小说创作。
+协作规则：
+1. 每轮只处理我指定的单一任务（出大纲 / 写章节 / 润色 / 审稿），不要擅自扩展；
+2. 涉及设定时，先引用我提供的设定材料，不得凭空新增未约定的人名、地名、能力；
+3. 输出正文时，严格遵循我给出的字数、视角、禁止项等约束；
+4. 我要求多个版本时，给出 N 个完全不同的走向，不要给同义改写；
+5. 发现前后文矛盾（人设、时间线、伏笔）时，先指出矛盾再继续，不要默默糊过去。
+</code></pre>
+<h3>模板 B：让 AI 自配专家（来自 DeepSeek-V4 提示词终极指南）</h3>
+<p>不指定具体大师，只描述领域和目标，让模型从知识库反向拼出专家人格——比硬说"你是个作家"有效得多：</p>
+<pre><code class="language-text">你是一位精通{领域描述，如：网络小说爽点节奏与章末悬念设计}的顶级专家。
+请以这个身份，为以下目标工作：
+{目标，如：为一本现代都市重生题材小说设计第 3–5 章的大纲}
+要求：
+- 先说明你会用哪些专业方法处理这个任务（两三句即可）；
+- 然后直接给出成品，不要解释过程。
+</code></pre>
+<h2>1.5 操作步骤</h2>
+<h3>路径 1：通用助手入门（零成本，10 分钟跑通）</h3>
+<ol>
+<li>任选 DeepSeek（chat.deepseek.com）、豆包（doubao.com）、通义（tongyi.com）、Kimi（kimi.com）注册，均为免费网页版。</li>
+<li>新建一个专门会话/项目（Kimi、Claude 的 Projects、ChatGPT 的 Projects 都支持长期资料挂载），把模板 A 贴进系统提示词或项目说明。</li>
+<li>把你的设定材料（第 3 章会教你建）作为首条消息喂进去，之后所有章节都在这个会话里写。</li>
+</ol>
+<h3>路径 2：本地开源工作台（AI_NovelGenerator 为例）</h3>
+<ol>
+<li><code>git clone https://github.com/YILING0013/AI_NovelGenerator</code>（素材已在 <code>E:\AI写小说\repos\AI_NovelGenerator</code>）。</li>
+<li><code>pip install -r requirements.txt</code>（Python 3.9+，推荐 3.10–3.12）。</li>
+<li>编辑 <code>config.json</code> 填入 API Key：支持 DeepSeek、OpenAI、Gemini 等，也可填本地 Ollama 兼容接口；模型默认 <code>deepseek-v4-flash</code>（temperature 0.7，max_tokens 8192）。</li>
+<li><code>python main.py</code> 启动 GUI，从"小说设定工坊"开始建世界观/角色/剧情蓝图。</li>
+<li>想要一键图形化、不折腾环境，可换 WenShape：下载 Windows Release 包双击 exe 即可。</li>
+</ol>
+<h2>1.6 常见坑 + 解决方法</h2>
+<table>
+<thead>
+<tr>
+<th>坑</th>
+<th>现象</th>
+<th>解法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>免费版上下文太小写长篇</td>
+<td>写到十几章，角色忘了早期设定、伏笔丢失</td>
+<td>换长上下文工具（Kimi 百万级）或升级付费档；同时必须维护设定集（第 3 章），不能只靠模型记忆</td>
+</tr>
+<tr>
+<td>一个模型用到底</td>
+<td>后文质量下滑、同一种 AI 味贯穿全书</td>
+<td>草稿用快模型、正式写作/润色用强模型；审稿刻意换一个模型做第二视角</td>
+</tr>
+<tr>
+<td>英文向工具不适合中文</td>
+<td>NovelAI 等英文向工具写中文效果差</td>
+<td>中文写作直接走国产工具</td>
+</tr>
+<tr>
+<td>temperature 拉满</td>
+<td>剧情乱飞、设定崩塌</td>
+<td>写作保持 0.7 左右，大纲/设定类任务降到 0.5</td>
+</tr>
+<tr>
+<td>API Key 泄露/费用失控</td>
+<td>账户被刷、账单爆炸</td>
+<td>Key 只放自己设备；平台开用量限额；BYOK 类工具（如灵蟹创作）注意按模型计费差异</td>
+</tr>
+<tr>
+<td>一次性让 AI 写一整本</td>
+<td>越写越糊、前后矛盾</td>
+<td>拆场景写（单次 800–1500 词，每章 3–6 个场景）；工程极限单次 2000–3000 字，别让它一次吐一万字</td>
+</tr>
+</tbody>
+</table>
+<h2>1.7 本章推荐素材</h2>
+<ul>
+<li><strong>工具对比表</strong>（价格/擅长/独特功能/适合人群全表）：<code>E:\AI写小说\tools.md</code></li>
+<li><strong>ChatGPT 写小说六步法</strong>（自出版作者的模型/套餐选型逻辑与提案提示词）：https://nerdynovelist.com/write-a-novel-with-chatgpt/</li>
+<li><strong>AI_NovelGenerator 仓库</strong>（中文圈 star 最高的小说生成工具，6104★，含全套配置示例）：https://github.com/YILING0013/AI_NovelGenerator</li>
+<li><strong>用 Claude 写 34 本小说的经验</strong>（工程化工具链 + 干净上下文逐章法）：https://triptych.writeas.com/what-i-learned-making-34-novels-with-claude-sonnet</li>
+</ul><a class="back-top" href="#course-top">返回目录 ↑</a></article><article class="lesson" id="chapter-2"><div class="section-kicker">第 2 章</div><h1>第 2 章 提示词基础</h1>
+<blockquote>
+<p><strong>教学目标</strong>：学完本章，你能用 CRISPE 框架写出"可直接执行"的写作提示词（而非"写得有文采"这种空话），并掌握反向提问、边界控制两个让 AI 高质量输出的关键技巧。</p>
+</blockquote>
+<hr>
+<h2>2.1 核心认知：提示词是合同，不是聊天</h2>
+<p>把提示词当成与 AI 签的一份"创作合同"（出自 DeepSeek-V4 提示词终极指南的 CRISPE 框架）。合同五要素缺一不可：</p>
+<table>
+<thead>
+<tr>
+<th>要素</th>
+<th>错</th>
+<th>对</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>C 角色</strong></td>
+<td>"你是作家"</td>
+<td>"你是擅长余华式冷静笔调写乡土文学的作家"</td>
+</tr>
+<tr>
+<td><strong>R 请求</strong></td>
+<td>"写个故事"</td>
+<td>"续写本章 3000 字，必须包含主角身世反转"</td>
+</tr>
+<tr>
+<td><strong>I 背景</strong></td>
+<td>不交代</td>
+<td>把前文、人物设定、世界观大纲一股脑丢进上下文</td>
+</tr>
+<tr>
+<td><strong>S 限制</strong></td>
+<td>"写得合理点"</td>
+<td>"禁止出现任何现代科技词汇""每段对话不超过三行""不用'然而'和'深邃的眼眸'"</td>
+</tr>
+<tr>
+<td><strong>P 风格</strong></td>
+<td>"有文采"</td>
+<td>"口语化像朋友聊天""模仿汪曾祺"</td>
+</tr>
+</tbody>
+</table>
+<p><strong>一句话判别标准</strong>：把提示词里的每个动词换成具体动作、每个形容词换成可检查的规则，做不到的提示词就是空话。</p>
+<h2>2.2 五个效率技巧（全部有来源，直接照用）</h2>
+<ol>
+<li><strong>用具体文风标签替代抽象形容词</strong>：写"模仿汪曾祺的克制短句"，不写"写得有文采"。</li>
+<li><strong>直接卡字数</strong>：写"本章 3000 字，每段不超过 3 行"，模型对字数要求执行得远比想象中好。</li>
+<li><strong>加防编造禁令</strong>：开头加粗写"禁止生成设定资料之外的人名、地名、数据"，防它瞎编。</li>
+<li><strong>结尾要多版本</strong>：加一句"请再给出一个完全不同的走向版本"，防止只出最安全的陈词滥调。</li>
+<li><strong>用反思做自我修正</strong>：输出后追加"反思刚才的回答，指出 3 个最明显的问题并重写"，比直接否定重来有效。</li>
+</ol>
+<p><strong>两个高级技巧</strong>：</p>
+<p><strong>反向提问法</strong>（出自《做故事架构师而非码字工》）：别问 AI"写什么"，而是给它一个设定，问"这样写行不行、有几个切入点"。AI 会变成高强度头脑风暴伙伴，而不是套路生成器。示例：给它"主角每天早上口袋多一张当天死亡预言纸条"的设定，让它列三个避开"阻止死亡"老套逻辑、侧重心理变化的切入点。</p>
+<p><strong>边界控制法</strong>（出自 GPT-4 从零写整本实验）：AI 写段落时总爱"往前冲"写到还没发生的情节。破解：先写该段的开头段落和结尾段落，再让 AI 填中间——用两端把它的发挥框住，就不会跑偏到后面章节去。</p>
+<h2>2.3 可直接复制的提示词模板</h2>
+<h3>模板 A：CRISPE 完整模板（通用，替换 {变量} 即用）</h3>
+<pre><code class="language-text">【角色】你是{具体的文风+领域描述，如：擅长余华式冷静笔调、专写都市现实题材的小说家}。
+【请求】{一个具体动作，如：续写本章正文 3000 字}，必须包含{必备要素，如：主角身世反转的揭示}。
+【背景】以下是前情与设定：{粘贴前文结尾 500–1000 字 + 相关人物/世界观设定条目}。
+【限制】禁止出现：{禁忌词/要素，如：现代科技词汇、'然而''深邃的眼眸'}；
+每{段/章}不超过{数字}字/行；视角限定{第一人称/第三人称限知}；
+结尾必须留下{悬念钩子类型，如：一个反常细节}。
+【风格】{具体风格描述，如：口语化、短句、克制，每章 3000 字}。
+【多版本】正文之外，另给一个完全不同的走向版本。
+</code></pre>
+<h3>模板 B：长篇小说章节续写任务书（基于 DeepSeek-V4 终极指南范例）</h3>
+<pre><code class="language-text">你是一位专写{类型，如：架空历史权谋}的长篇连载作者。
+请续写第 {N} 章正文，要求：
+1. 第三人称限知视角，跟随{主角名}，不少于 {1500–3000} 字；
+2. 承接上一章结尾：{一句话概括上一章结尾状态}；
+3. 本章必须推进{主线任务或冲突}，并让{配角名}的动机发生一次可见变化；
+4. 禁用现代词汇与设定外的新地名/人名/能力；
+5. 结尾用一个悬念钩子收束（悬念类型：{如：一个反常细节/未落地的决定}）；
+6. 另给一个截然不同的剧情走向版本（200 字概要即可）。
+</code></pre>
+<h3>模板 C：爆款开篇生成（来自知乎盐选实操手册，付费短篇向）</h3>
+<pre><code class="language-text">你是一位深谙网络小说付费逻辑的顶级策划。
+请生成第一章，1500 字，目标读者为{平台，如：知乎盐选}付费读者。要求：
+1. 拒绝平铺直叙，开篇直接从冲突切入，前 1000 字必须抛出最强悬念；
+2. 利用{重生/掉包/身份反转等}信息差制造悬念，逐层披露；
+3. 强化感官描写，对话带潜台词，避免交代式叙述；
+4. 结尾抛出一个意外钩子，逼读者点下一章。
+</code></pre>
+<h3>模板 D：反向提问法（头脑风暴专用）</h3>
+<pre><code class="language-text">我有一个故事设定：{一句话设定，如：主角每天早上口袋多一张当天死亡预言纸条}。
+请以&quot;资深剧情策划&quot;身份，给出 {3} 个不落俗套的剧情切入点，
+要求：避开{常见套路，如：努力阻止死亡最后成功}，侧重{方向，如：人物心理变化与信息差}。
+每个切入点用 2 句话说明它的核心张力在哪里。
+</code></pre>
+<h2>2.4 操作步骤</h2>
+<ol>
+<li><strong>写</strong>：按模板 A 填好五个要素，背景一定要贴实际前文，不要省略。</li>
+<li><strong>发</strong>：一次只发一个任务（续写就续写，不要"续写+润色+写大纲"）。</li>
+<li><strong>查</strong>：输出后对照【限制】逐条检查；字数不够/用词犯规直接指出来让它改。</li>
+<li><strong>迭代</strong>：不满意时用"强制要什么 + 禁止不要什么"的方式指出，反复打磨——首轮输出几乎不可能一次满意，这是正常现象（主流写作工具官方也强调这点）。</li>
+<li><strong>沉淀</strong>：改到满意后，把这条提示词存成一个文件（或工具的项目说明里），下次同类任务直接复用。</li>
+</ol>
+<h2>2.5 常见坑 + 解决方法</h2>
+<table>
+<thead>
+<tr>
+<th>坑</th>
+<th>现象</th>
+<th>解法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>把命令当聊天</td>
+<td>"帮我写点东西"→ 输出全是水</td>
+<td>用 CRISPE 五要素写完整合同</td>
+</tr>
+<tr>
+<td>约束太模糊</td>
+<td>"写得生动点"→ 模型自由发挥</td>
+<td>换成可检查规则：字数、句式、禁词、视角</td>
+</tr>
+<tr>
+<td>一次塞太多不搭边任务</td>
+<td>要它同时写大纲+正文+润色，输出每样都糊</td>
+<td>一次一个任务；要审稿就单独开一轮换角色</td>
+</tr>
+<tr>
+<td>AI 味高频词</td>
+<td>"然而""不可否认""深邃的眼眸""嘴角勾起弧度"反复出现</td>
+<td>建"AI 高频词黑名单"，写完后处理：命中词触发局部重写</td>
+</tr>
+<tr>
+<td>让 AI 自己定剧情走向</td>
+<td>它当章把冲突解决掉，后文没得写</td>
+<td>走向由你定，AI 只执行本章节拍（详见第 4 章大纲）</td>
+</tr>
+<tr>
+<td>不交代背景</td>
+<td>模型按自己的想象补设定，与前文矛盾</td>
+<td>每次续写都带上"前文结尾 + 相关设定条目"</td>
+</tr>
+</tbody>
+</table>
+<h2>2.6 本章推荐素材</h2>
+<ul>
+<li><strong>DeepSeek-V4 提示词终极指南</strong>（CRISPE 框架 + 长篇续写任务书 + 五个技巧全文）：https://developer.cloud.tencent.cn/article/2683058</li>
+<li><strong>知乎盐选实操手册与 AI 提示词</strong>（盐选大纲策划 + 爆款开篇两段现成提示词）：https://www.woshipm.com/share/6236681.html</li>
+<li><strong>做故事架构师而非码字工</strong>（反向提问 / 人格锚点 / 信息差钩子方法论）：https://segmentfault.com/a/1190000047904856</li>
+<li><strong>chinese-novelist-skill 仓库</strong>（3138★，三层递进问答与黄金法则的完整实现，本地可看）：<code>E:\AI写小说\repos\chinese-novelist-skill\SKILL.md</code></li>
+</ul><a class="back-top" href="#course-top">返回目录 ↑</a></article><article class="lesson" id="chapter-3"><div class="section-kicker">第 3 章</div><h1>第 3 章 世界观与角色设定</h1>
+<blockquote>
+<p><strong>教学目标</strong>：学完本章，你能建立一套"人物卡 + 世界观卡"的设定集（Story Bible / Codex），让 AI 在几十章内保持人设、时间线、世界规则不崩。</p>
+</blockquote>
+<hr>
+<h2>3.1 为什么必须有设定集：长篇失忆的根源</h2>
+<p>AI 写长篇必然出两类问题（多 Agent 架构文章给出了根因）：
+1. <strong>中间迷失（Lost in the Middle）</strong>：几十章前埋的伏笔在超长上下文里注意力被稀释，模型会漏掉甚至让角色"复活"；
+2. <strong>概率回归</strong>：模型总往最安全、最套路的方向靠——写到 4 万字后主角瞳色变了两次、第 5 章死的人第 12 章还在吃饭，都是这个原因（Claude 写作助手手册点名）。</p>
+<p><strong>解法不是靠模型记性好，而是把设定放到模型之外</strong>：建一个集中式设定集，每次写作前喂给它相关条目。所有高 star 工作流（WenShape、AI_NovelGenerator、FeelFish、灵蟹创作）本质都是干这一件事。</p>
+<h2>3.2 设定集的标准结构</h2>
+<p>参照 Claude 写作助手手册的 Story Bible 结构（国内 WenShape 的卡片系统与之等价，只是存储为 YAML 文件）：</p>
+<pre><code class="language-text">设定集（Story Bible）/
+├─ Characters/    人物：主角/反派/配角，每人一张人物卡
+├─ World/         世界观：地点、魔法体系/科技规则、历史、世界规则
+├─ Plot/          大纲：主线、时间线、线索/伏笔台账
+├─ Style/         文风：叙事声音、主题、禁词表
+└─ Chapters/      章节：各章正文 + 摘要（用于回看）
+</code></pre>
+<p><strong>人物卡必填字段</strong>（来自 Claude 手册 + CometAPI 角色档案，合并后的最小集）：</p>
+<pre><code class="language-text">- 基本信息：姓名/年龄/身份/外貌（写死，别让 AI 改）
+- 性格：核心特质、优缺点
+- 恐惧与欲望（驱动行为的内核）
+- 背景：出身、关键经历
+- 说话风格与口头禅（区分角色的第一武器）
+- 情感弧：弧光起点 → 终点（他在这本书里要变成什么样）
+- 一致性注意事项：容易写崩的点（如&quot;左撇子&quot;&quot;对 X 过敏&quot;）
+</code></pre>
+<p><strong>世界观卡</strong>采用"描述优先（description-first）"写法（WenShape 的做法）：一条设定用一段完整描述记录，而不是零散规则列表，这样 AI 更容易理解引用。<strong>世界物理规则和势力平衡</strong>是必须写死的两项（做故事架构师文章强调），它们是 AI 不瞎编的底线。</p>
+<p><strong>文风卡</strong>（WenShape 单独建 <code>cards/style.yaml</code>）：叙事视角、句式偏好、禁词表（第 2 章的 AI 高频词黑名单放这里）。</p>
+<h2>3.3 两个关键技巧</h2>
+<p><strong>人格锚点</strong>（做故事架构师文章）：用一句话定义角色核心特质，例如"极度理性但严重失眠""表面疯癫实则对数字敏感"。每章写作前喂入这句，AI 就不会把角色写成同一张脸。在此基础上你再注入情感细节（把"主角因风险拒绝"改写为"盯着地图手指微颤摇头"）。</p>
+<p><strong>情感弧图</strong>（CometAPI 文章）：写大纲时给主角定 30%/60%/100% 三个情绪落点——30% 处第一次打击、60% 处谷底/假胜利、100% 处终极转变。AI 逐章写作时按落点走，角色成长就不会变成"一路平"或"突兀黑化"。</p>
+<p><strong>防 AI 套路名</strong>（34 本小说经验）：AI 起名高度模板化——女角色爱叫 Lyra/Elara，男角色爱叫 Kyle，反派爱以 Mal- 开头，还执着"低语森林"和"开学校"开局。人物卡里直接写死名字，并在提示词里主动排除这些套路。</p>
+<h2>3.4 可直接复制的提示词模板</h2>
+<h3>模板 A：人物卡生成</h3>
+<pre><code class="language-text">你是一位资深小说设定策划。请为以下角色建立完整人物卡，输出为可直接存档的 markdown：
+
+角色定位：{主角/反派/关键配角}
+一句话原型：{如：表面疯癫实则对数字敏感的占卜师}
+所属作品背景：{一句话世界观，如：架空朝堂权谋世界}
+
+人物卡必须包含：基本信息（姓名/年龄/身份/外貌）、性格核心特质、
+恐惧与欲望、背景出身、说话风格与口头禅、情感弧（起点→终点）、
+一致性注意事项（列出最容易写崩的 3 个点）。
+注意：姓名不要使用 Lyra/Elara/Kyle/Mal- 开头等常见 AI 套路名；
+外貌必须具体到可核对（瞳色、疤痕、标志性物件）。
+</code></pre>
+<h3>模板 B：世界观卡</h3>
+<pre><code class="language-text">请以&quot;世界观架构师&quot;身份，为我的小说建立世界观卡，输出为可直接存档的 markdown。
+设定基线：{如：魔法体系需以&quot;等价交换&quot;为唯一规则；王朝三分天下；禁止出现现代科技}
+
+世界观卡必须包含：
+1. 世界一句话定位与地理概况（主要地点，各一句话）；
+2. 核心规则体系（力量/科技/魔法规则的运作方式与代价，必须具体到可检查）；
+3. 势力格局（主要势力、目标、彼此关系）；
+4. 历史大事记（影响当前局势的 2–3 个历史事件）；
+5. 常识禁忌（这个世界里&quot;不可能存在&quot;的事，防 AI 编造）。
+每条设定用完整描述句记录，不要用零散标签。
+</code></pre>
+<h3>模板 C：人格锚点</h3>
+<pre><code class="language-text">用一句话定义角色 {角色名} 的核心人格锚点，
+要求：一个核心特质 + 一个与之冲突的细节（如&quot;极度理性但严重失眠&quot;）。
+这句话将在每章写作前喂给 AI 稳定行为逻辑，所以必须：
+- 能被任何场景的行为描写直接检验；
+- 不包含外观描写（外观放人物卡）。
+</code></pre>
+<h3>模板 D：情感弧规划</h3>
+<pre><code class="language-text">以&quot;剧作顾问&quot;身份，为角色 {角色名} 规划全书情感弧，共 {章节数} 章。
+请给出：
+1. 弧光起点状态（开头他是怎样的人）；
+2. 30% 处（第 {X} 章）：第一次打击/转变事件；
+3. 60% 处（第 {Y} 章）：谷底或假胜利；
+4. 100% 处（第 {Z} 章）：终极转变后的状态；
+5. 每段用一句话说明情感落点与对应关键事件。
+</code></pre>
+<h2>3.5 操作步骤</h2>
+<h3>路径 1：通用助手 + 本地文件（最通用）</h3>
+<ol>
+<li>新建一个专门会话（如 Kimi 项目 / Claude Projects），建 <code>设定集/</code> 文件夹。</li>
+<li>用模板 A、B 逐个人物、逐条世界观生成卡片，存成 md 文件（<code>角色-林晚.md</code>、<code>世界观-魔法体系.md</code>）。</li>
+<li>每章写作前，把"本章出场人物的卡 + 相关世界观条目 + 上一章结尾"一起贴进提示词（模板 B 第 2 章）。</li>
+<li>每写完一章，用 1–2 句话回写该章摘要进 <code>Chapters/</code>，并更新人物状态（"第 5 章后林晚左臂受伤"）。</li>
+</ol>
+<h3>路径 2：FeelFish / 灵蟹创作（专用工作台，条目化设定）</h3>
+<ol>
+<li>在工具里逐条新建：人物、地点、世界观规则、支线，每条一个条目（FeelFish 的上下文管理器 / 灵蟹创作的项目结构）。</li>
+<li>写作时提示词里只需引用条目名（如 <code>@人物-林晚</code>），不必重复粘贴全文。</li>
+<li>想保留的支线单独建条目，生成场景节拍时引用它。</li>
+</ol>
+<h3>路径 3：WenShape（本地开源，卡片 + 百科导入）</h3>
+<ol>
+<li>下载 Windows Release 包双击启动（或 <code>git clone</code> 后 <code>start.bat</code>）。</li>
+<li>用"人物卡/世界观卡/文风卡"卡片系统建档（数据存 YAML，可版本管理）。</li>
+<li>同人向：用"搜索→预览→抓取→提案"流程，从萌娘百科/Fandom/Wikipedia 批量导入角色与世界观，先以 proposal 形式预览，确认后才写入项目。</li>
+</ol>
+<h2>3.6 常见坑 + 解决方法</h2>
+<table>
+<thead>
+<tr>
+<th>坑</th>
+<th>现象</th>
+<th>解法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>设定散落在聊天记录</td>
+<td>换会话后 AI 完全不记得设定</td>
+<td>设定全部落盘成 md/YAML 文件，每次写作前显式喂入</td>
+</tr>
+<tr>
+<td>角色外观漂移</td>
+<td>瞳色/发型/疤痕变来变去</td>
+<td>人物卡写死外观 + 一致性注意事项，写作前必带</td>
+</tr>
+<tr>
+<td>死人复活、时间线错乱</td>
+<td>第 5 章死的第 12 章还吃饭</td>
+<td>维护 <code>时间线.md</code>，每章回写；写作前核对（第 7 章展开）</td>
+</tr>
+<tr>
+<td>AI 起名全是套路</td>
+<td>Lyra/Kyle/低语森林</td>
+<td>名字写死在人物卡，提示词里主动排除套路</td>
+</tr>
+<tr>
+<td>世界观规则不写死</td>
+<td>魔法体系前后矛盾</td>
+<td>世界观卡用"描述优先"写清规则与代价，作为防编造底线</td>
+</tr>
+<tr>
+<td>人物弧光平</td>
+<td>角色从头到尾一个样</td>
+<td>用情感弧图定 30/60/100 三落点，逐章按落点推进</td>
+</tr>
+<tr>
+<td>新引入设定不归档</td>
+<td>本章新增的地点下章就忘</td>
+<td>写后把新元素回写设定集（Claude 手册"写后"步骤）</td>
+</tr>
+</tbody>
+</table>
+<h2>3.7 本章推荐素材</h2>
+<ul>
+<li><strong>Claude 长篇小说写作助手手册</strong>（Story Bible 结构 + 人物档案模板 + 一致性检查清单）：https://www.claudecodehq.com/playbooks/novel-writing-assistant</li>
+<li><strong>WenShape 仓库</strong>（417★，人物卡/世界观卡/文风卡 + 事实表 + 百科导入）：https://github.com/unitagain/WenShape</li>
+<li><strong>AI_NovelGenerator 仓库</strong>（6104★，小说设定工坊 + 伏笔/状态跟踪）：https://github.com/YILING0013/AI_NovelGenerator</li>
+<li><strong>做故事架构师而非码字工</strong>（人格锚点 / 设定库方法论）：https://segmentfault.com/a/1190000047904856</li>
+</ul><a class="back-top" href="#course-top">返回目录 ↑</a></article><article class="lesson" id="chapter-4"><div class="section-kicker">第 4 章</div><h1>第 4 章 大纲生成</h1>
+<blockquote>
+<p><strong>教学目标</strong>：学完本章，你能从一句话创意出发，产出"高概念提案 → 故事梗概 → 章节大纲"三层递进的完整大纲，并让每章大纲自带爽点、钩子和伏笔。</p>
+</blockquote>
+<hr>
+<h2>4.1 大纲为什么要三层递进</h2>
+<p>直接让 AI"写个大纲"得到的一定是空泛废话。正确做法是三层递进（与 GPT-4 从零写整本实验的四级递进相互印证）：</p>
+<pre><code class="language-text">第 1 层 摘要 Summary    一句话创意 → 覆盖&quot;激励事件 / 重大转折 / 高潮&quot;的故事梗概
+第 2 层 大纲 Outline    梗概 → 按经典结构（三幕剧 / 英雄之旅 / 三幕每幕五章）铺成章节骨架
+第 3 层 章节 Chapters   每章一句话摘要：本章目标 + 爽点/转折 + 章末钩子
+</code></pre>
+<p>每一层都必须在上一层确认满意后再往下走。<strong>首轮输出几乎不可能一次满意</strong>——主流写作工具官方明确说要用"强制要什么 / 禁止不要什么"反复打磨，这是正常流程，不是失败。</p>
+<h2>4.2 三个关键心法</h2>
+<ol>
+<li><strong>提案要批量</strong>（自出版作者六步法）：先让 AI 批量出高概念卖点（<code>高概念提案</code> 模板），反复跑几轮，直到挑出一个"有独特 twist + 强情感 stakes"的。选定了再进入梗概，不要一上来就深挖第一个点子。</li>
+<li><strong>大纲要故意写长</strong>（34 本小说经验）：AI 有"偷懒写短"的倾向，章节大纲至少 30 章、每章带字数与情节节拍，用清单/复选框结构逼它写完整，对抗它把故事越写越短的毛病。</li>
+<li><strong>大纲是活的，写完要回改</strong>（GPT-4 实验 + 多 Agent 架构）：AI 会即兴把后章场景挪到前章、当章解决冲突。所以每写完几章，就让它回头对照大纲修订——大纲不是一次性产物，是持续维护的文件。</li>
+</ol>
+<h2>4.3 可直接复制的提示词模板</h2>
+<h3>模板 A：高概念提案（批量头脑风暴）</h3>
+<pre><code class="language-text">给我 {5} 个适合{平台/读者，如：知乎盐选付费读者}的{题材，如：都市重生}高概念卖点。
+每个卖点要求：
+1. 一句话核心设定（含一个独特 twist，不能是常见套路）；
+2. 主角及其内在冲突（一句话）；
+3. 情感 stakes——读者为什么会在乎；
+4. 一句话开篇钩子（前 1000 字的强悬念）。
+不要解释过程，直接列 {5} 条。
+</code></pre>
+<h3>模板 B：故事梗概（三层第 1 层）</h3>
+<pre><code class="language-text">以下是选定的高概念卖点：{粘贴模板 A 选中的那一条}
+请把它展开成完整故事梗概，必须覆盖：
+1. 激励事件（故事从哪一刻真正开始）；
+2. 三个重大转折（各一句话，说明如何改变主角处境）；
+3. 高潮（最终对决/抉择是什么）；
+4. 结局走向（明确写死，不许留&quot;开放式&quot;糊弄）。
+梗概控制在 {800–1200} 字。
+注意：模糊的结局和转折必须写具体，不要用&quot;命运发生改变&quot;这类空话。
+</code></pre>
+<h3>模板 C：章节大纲（三层第 2 层，网文向）</h3>
+<pre><code class="language-text">你是一位深谙{平台}付费逻辑的顶级网文策划。
+请基于以下梗概，输出 {15–20} 章、约 {5–8} 万字的完整章节大纲：{粘贴梗概}
+强制要求：
+1. 第 1 章必须是开篇钩子，前 1000 字抛出最强悬念，直接从冲突切入；
+2. 每章必须标注&quot;本章爽点/打脸点&quot;和&quot;章末小钩子&quot;；
+3. 第 {3–4} 章之间埋一个超级悬念，作为付费卡点；
+4. 中段（第 7–12 章）安排一条功能性支线：既提供{战力/信息升级}，又为{配角/反派}成长或黑化埋伏笔；
+5. 明确高潮章与伏笔回收清单。
+输出格式（每章一行）：
+第 N 章｜一句话核心内容｜本章爽点/悬念｜章末钩子
+</code></pre>
+<h3>模板 D：单章细纲（三层第 3 层）</h3>
+<pre><code class="language-text">请把第 {N} 章扩展为详细写作细纲，供下一章扩写直接使用：
+章节目标：{一句话，本章要推进什么}
+出场人物：{名单，含各自本章状态}
+场景清单（每场景 3–6 个，每场景给：地点/一句话目标/关键动作/钩子收尾）：
+1. {场景名}：{地点}｜目标：{……}｜关键动作：{……}｜结尾钩子：{……}
+……
+本章结尾钩子：{用一个反常细节或未落地的决定收束，禁止&quot;主角获得胜利&quot;式收尾}
+</code></pre>
+<h3>模板 E：写完回改大纲（防跑偏）</h3>
+<pre><code class="language-text">以下是我刚写完的章节：{粘贴正文或章节摘要}
+请对照原有大纲：{粘贴原大纲}
+检查并输出：
+1. 本章实际发生的事件与原大纲的偏差（逐条列出）；
+2. 是否提前使用了后文伏笔或解决了本该后面解决的冲突；
+3. 修订版大纲（只改受影响章节，保持其余不变）。
+</code></pre>
+<h2>4.4 操作步骤</h2>
+<ol>
+<li><strong>跑提案</strong>：用模板 A 连跑 2–3 轮，每轮 5 个卖点，挑中意的那个。</li>
+<li><strong>定梗概</strong>：用模板 B 展开；不满意就用"强制要什么/禁止不要什么"的方式指出，反复打磨 2–3 轮，直到梗概的转折和结局都具体可查。</li>
+<li><strong>铺章节</strong>：用模板 C 出全书章节大纲（网文向）或模板 D 逐章细化（严肃向）；建议存成 <code>大纲.md</code> 文件，每章一行，方便后续回改。</li>
+<li><strong>建支线台账</strong>：想保留的支线单独列出来（做法是建独立条目），后续写章节时按需引用，避免写到中段忘掉。</li>
+<li><strong>写作中持续回改</strong>：每写 3–5 章，用模板 E 让 AI 对照大纲检查一次并修订大纲文件（GPT-4 实验的"回改大纲"机制）。</li>
+<li><strong>专用工具</strong>：FeelFish、灵蟹创作等专用工作台可由大纲一键生成章节框架，并随写随更大纲。</li>
+</ol>
+<h2>4.5 常见坑 + 解决方法</h2>
+<table>
+<thead>
+<tr>
+<th>坑</th>
+<th>现象</th>
+<th>解法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>一次要全文大纲</td>
+<td>输出空泛、套路化</td>
+<td>三层递进，逐层确认；首轮不满意就"强制/禁止"反复打磨</td>
+</tr>
+<tr>
+<td>大纲越写越短</td>
+<td>30 章的故事缩成 15 章</td>
+<td>大纲刻意写长：固定章节数、每章带字数与节拍、用清单逼全</td>
+</tr>
+<tr>
+<td>章节大纲没有钩子</td>
+<td>每章平铺直叙，读者不追</td>
+<td>每章强制标注"爽点 + 章末钩子"；章末禁止"主角胜利"式收尾</td>
+</tr>
+<tr>
+<td>AI 当章解决冲突</td>
+<td>后文没得写</td>
+<td>走向由你定，模板 E 定期回改大纲纠偏</td>
+</tr>
+<tr>
+<td>支线写着写着消失</td>
+<td>中段疲软、前文伏笔无人回收</td>
+<td>支线单独建台账，写章节前先查该章要推进哪条线</td>
+</tr>
+<tr>
+<td>梗概结局模糊</td>
+<td>"命运发生改变"式空话</td>
+<td>模板 B 明确要求写死结局与转折，不许开放式糊弄</td>
+</tr>
+</tbody>
+</table>
+<h2>4.6 本章推荐素材</h2>
+<ul>
+<li><strong>ChatGPT 写小说六步法</strong>（高概念提案提示词原文 + 提案→梗概流程）：https://nerdynovelist.com/write-a-novel-with-chatgpt/</li>
+<li><strong>知乎盐选实操手册与 AI 提示词</strong>（盐选大纲策划模板：爽点密度 + 付费卡点）：https://www.woshipm.com/share/6236681.html</li>
+<li><strong>用 GPT-4 从零写一整本小说</strong>（全书大纲→章纲→初稿→段落四级递进 + 回改大纲机制）：https://ai4all.me/2023/05/如何从零起步在chatgpt帮助下写一本小说（译文）/</li>
+</ul><a class="back-top" href="#course-top">返回目录 ↑</a></article><article class="lesson" id="chapter-5"><div class="section-kicker">第 5 章</div><h1>第 5 章 章节扩写</h1>
+<blockquote>
+<p><strong>教学目标</strong>：学完本章，你能把一条章纲拆成 3–6 个场景，用"分块 + 边界控制 + 四维描写"的方法写出画面感强、不跑偏、不糊弄的章节正文。</p>
+</blockquote>
+<hr>
+<h2>5.1 核心原则：一次只写一小块</h2>
+<p>AI 长篇写作最大的质量杀手是"一次写太多"。所有素材在同一件事上达成了共识：</p>
+<ul>
+<li><strong>分块写作</strong>（CometAPI 专业工作流）：只让模型一次写 <strong>800–1500 词</strong> 的一个场景，每章 3–6 个场景，每个场景给一句话目标 + 钩子收尾——分块是降低幻觉漂移的主要手段；</li>
+<li><strong>工程极限</strong>（多 Agent 架构）：单次生成别超过 2000–3000 字，超过后质量断崖；</li>
+<li><strong>干净上下文</strong>（34 本经验）：每章在独立上下文里跑，禁止一次写多章——上下文越长，质量越糊。</li>
+</ul>
+<p>所以"扩写一章"的正确动作不是"写一章"，而是"按细纲逐个场景写，每个场景单独发指令"。</p>
+<h2>5.2 三个关键技巧</h2>
+<ol>
+<li><strong>边界控制（由外向内）</strong>（GPT-4 从零写整本实验）：AI 写段落时爱"往前冲"写到后面才该发生的情节。破解：先写该段的<strong>开头段落和结尾段落</strong>，再让 AI 填中间——用两端把它框住，它就跑不到别的章节去。</li>
+<li><strong>四维拆解</strong>（51CTO 四步实战法）：AI 写作缺画面感，是因为指令太笼统。把每个子场景拆成四维单独下指令：<strong>环境设施、人物动作、心理活动、感官体验</strong>。一次只强化一维，画面感立刻上来。</li>
+<li><strong>上下文窗口</strong>（多 Agent 架构的滑动窗口）：写第 N 章时只喂"全局大纲 + 第 N-3 至 N-1 章摘要 + 本章细纲"，而不是把全书都贴进去。既有衔接，又不会让模型被旧文带偏或遗忘重点。</li>
+</ol>
+<h2>5.3 可直接复制的提示词模板</h2>
+<h3>模板 A：场景写作任务书（分块法核心模板）</h3>
+<pre><code class="language-text">请写一个场景，800–1500 字。
+【场景目标】{一句话：本章/本场景要达成什么}
+【场景位置】第 {N} 章 · 场景 {X}/{Y}（全章共 Y 个场景）
+【前情衔接】上一场景结尾：{一句话}
+【出场人物】{名单}（当前状态：{如：林晚左臂受伤，情绪压抑}）
+【本场景要求】
+1. 从上一场景结尾直接切入，不重复交代；
+2. 用动作和对话推动，禁止大段心理独白直述；
+3. 结尾用一个钩子收束（钩子类型：{如：一个反常细节/一句没说完的话}）；
+4. 遵守世界观规则：{粘贴相关设定条目}。
+</code></pre>
+<h3>模板 B：边界控制（先首尾后中间）</h3>
+<pre><code class="language-text">我需要写场景「{场景名}」。先按以下顺序工作：
+第 1 步：写这个场景的开头段落（{100–150} 字），定下情绪和切入点；
+第 2 步：写这个场景的结尾段落（{100–150} 字），定下钩子和落点；
+第 3 步：在两端之间填充中间内容（{600–1200} 字），只允许写首尾之间会发生的事，
+        不得写到结尾之后的情节，不得提前使用后续伏笔。
+</code></pre>
+<h3>模板 C：四维描写强化（画面感专项）</h3>
+<pre><code class="language-text">请强化以下段落（或场景）的画面感，输出改写版。
+原始内容：{粘贴正文或场景描述}
+按四维逐一强化，每维一个版本：
+1. 环境设施：明确空间布局、光线、声音、气味；
+2. 人物动作：具体到肢体细节（如&quot;手指敲桌面&quot;而非&quot;他思考着&quot;）；
+3. 心理活动：只写可见的心理外化（动作/表情/生理反应），不写&quot;他心想&quot;式直述；
+4. 感官体验：至少三种感官细节。
+每个版本一段，不要合并。
+</code></pre>
+<h3>模板 D：续写衔接（多 Agent 滑动窗口）</h3>
+<pre><code class="language-text">你现在要续写第 {N} 章（共 {M} 章）。
+可用上下文（只许用这些，不得自行补充）：
+- 全局大纲：{粘贴相关章节大纲}
+- 第 {N-3} 至 {N-1} 章摘要：{粘贴 3 段各约 200 字的摘要}
+- 本章细纲：{粘贴第 4 章模板 D 生成的细纲}
+要求：承接摘要结尾，严格按细纲推进；每完成一段正文，用 1 句话回写本章进度摘要。
+</code></pre>
+<h2>5.4 操作步骤</h2>
+<ol>
+<li><strong>取细纲</strong>：从第 4 章的章纲文件里取出当前章，确认场景清单（3–6 个）。</li>
+<li><strong>逐场景发指令</strong>：每个场景用模板 A 单独发一次（附上前一场景结尾）。不追求一次写完一章。</li>
+<li><strong>画面感不够时</strong>：用模板 C 做四维强化，一次只强化一维，改到满意为止。</li>
+<li><strong>怕跑偏时</strong>：用模板 B 边界控制，先定首尾再填中间。</li>
+<li><strong>续写新章</strong>：用模板 D 组织上下文（大纲 + 前 3 章摘要 + 本章细纲），保持每章独立上下文。</li>
+<li><strong>回写进度</strong>：每写完一章，把 1–2 句章节摘要回写进 <code>Chapters/</code>（下一章续写要用它，第 7 章详述）。</li>
+</ol>
+<h2>5.5 常见坑 + 解决方法</h2>
+<table>
+<thead>
+<tr>
+<th>坑</th>
+<th>现象</th>
+<th>解法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>一次让 AI 写整章/整本</td>
+<td>越写越糊、前后矛盾、AI 味集中</td>
+<td>分块：单次 800–1500 词，每章 3–6 个场景逐个发</td>
+</tr>
+<tr>
+<td>场景开头总重复交代</td>
+<td>每章开头都从"清晨，他醒来"开始</td>
+<td>模板 A 要求"从上一场景结尾直接切入"</td>
+</tr>
+<tr>
+<td>画面感缺失</td>
+<td>全是"他思考着/她感到"式概述</td>
+<td>四维拆解逐维强化；心理活动只写外化表现</td>
+</tr>
+<tr>
+<td>段落往前冲</td>
+<td>写到后面才该发生的剧情</td>
+<td>边界控制：先写首尾两端，再填中间</td>
+</tr>
+<tr>
+<td>续写时角色忘了前文</td>
+<td>行为与上一章断裂</td>
+<td>滑动窗口：喂"前 3 章摘要 + 本章细纲"而非全书</td>
+</tr>
+<tr>
+<td>输出被截断</td>
+<td>写到一半停了</td>
+<td>提高 max_tokens（8000+），或把场景再拆小</td>
+</tr>
+</tbody>
+</table>
+<h2>5.6 本章推荐素材</h2>
+<ul>
+<li><strong>用 ChatGPT 写长篇小说专业工作流</strong>（分块 800–1500 词 + 场景清单 + 行级改写）：https://www.cometapi.com/ai-and-the-novel-how-to-use-chatgpt-to-write-a-full-length-book/</li>
+<li><strong>用 GPT-4 从零写一整本小说</strong>（边界控制 + 单一大提示 + 连续性笔记）：https://ai4all.me/2023/05/如何从零起步在chatgpt帮助下写一本小说（译文）/</li>
+<li><strong>AI 写小说四步实战法</strong>（微观场景四维拆解 + 上下文回顾防跑题）：https://edu.51cto.com/article/note/59755.html</li>
+<li><strong>多 Agent 架构写连载小说</strong>（滑动窗口摘要 + 单次 2000–3000 字极限）：https://segmentfault.com/a/1190000047905047</li>
+</ul><a class="back-top" href="#course-top">返回目录 ↑</a></article><article class="lesson" id="chapter-6"><div class="section-kicker">第 6 章</div><h1>第 6 章 对话打磨</h1>
+<blockquote>
+<p><strong>教学目标</strong>：学完本章，你能为每个角色建立"说话声音"（风格/口头禅/句式），写出带潜台词、能区分角色、不啰嗦的对话，并清除对话里的 AI 味。</p>
+</blockquote>
+<hr>
+<h2>6.1 对话是角色区分的唯一武器</h2>
+<p>AI 写多人对话时最典型的毛病：<strong>所有人说话一个腔调</strong>。根因是它只按内容组织台词，不按人物声音组织。解法分两层：</p>
+<ol>
+<li><strong>建角色声音卡</strong>：每个人的说话方式写进人物卡（CometAPI 角色档案的"说话方式"字段：风格 + 口头禅 + 句式偏好），写作时喂给 AI；</li>
+<li><strong>潜台词优先</strong>（做故事架构师 + 多 Agent 架构都点名）：对话不能"问什么答什么"，要让台词背后藏着没说出来的动机——这既是真实感来源，也是章末钩子的素材。</li>
+</ol>
+<p>同时遵守 chinese-novelist 的黄金法则：<strong>用动作和对话表现，不要直接陈述</strong>（"她很生气"是陈述，"她摔了杯子"是表现）。对话要承担推动冲突的功能，不承担交代背景的功能——交代用动作和环境，不用对话直述。</p>
+<h2>6.2 三个关键技巧</h2>
+<ol>
+<li><strong>口头禅 + 句式锚定</strong>：给每个角色一句专属口头禅或句式特征（如"林晚句尾爱加'罢了'，反派说话爱用反问句"），对话输出就立刻能区分。</li>
+<li><strong>对话带潜台词</strong>：让 AI 先写出"表面说的"和"实际想的"两层，再落成台词——直接把潜台词写进对话里，而不是只写在旁白里。</li>
+<li><strong>压缩对话密度</strong>（DeepSeek-V4 指南）：限制"每段对话不超过三行"，强制对话短促有力，避免长篇大论的台词独白。</li>
+</ol>
+<h2>6.3 可直接复制的提示词模板</h2>
+<h3>模板 A：角色声音卡（并入人物卡）</h3>
+<pre><code class="language-text">为角色 {角色名} 建立对话声音档案，输出为可直接存档的 markdown：
+1. 说话风格：{如：短句、克制、从不表露情绪 / 话痨、爱比喻}
+2. 口头禅/口头语：{给出 2–3 个专属表达，如&quot;罢了&quot;&quot;有意思&quot;}
+3. 句式偏好：{如：爱用反问句 / 句尾爱加语气词 / 从不使用感叹号}
+4. 禁忌表达：{这个角色绝不会说的话，如：从不说&quot;我恨你&quot;，只说&quot;你欠我的&quot;}
+5. 对话示例：给 2 句符合该声音的台词示范（场景：{随便一个场景}）。
+</code></pre>
+<h3>模板 B：潜台词改写</h3>
+<pre><code class="language-text">请改写以下对话场景，让台词带上潜台词。
+原始内容：{粘贴对话}
+要求：
+1. 先列出本场景每个角色&quot;表面想说的&quot;和&quot;实际想说的&quot;（一行对照表）；
+2. 按对照表重写台词：字面上说 A，但读者能读出 B；
+3. 禁止把潜台词写进旁白直述，只能通过台词措辞和动作暗示；
+4. 每段对话不超过 3 行，用动作/表情穿插打断长台词；
+5. 保持每个角色的说话声音（口头禅与句式），不要统一腔调。
+</code></pre>
+<h3>模板 C：角色声音区分检查</h3>
+<pre><code class="language-text">以下是 {N} 个角色的对话片段：{粘贴对话}
+请以&quot;剧本医生&quot;身份逐条检查：
+1. 遮住角色名后，能否凭说话方式猜出是谁？把&quot;声音雷同&quot;的段落列出来；
+2. 哪些台词可以直接删除而不损失信息（说明理由）；
+3. 哪些台词可以换成动作/表情表现（给出替换动作）；
+4. 输出修改后的对话版本，保持各角色口头禅与句式。
+</code></pre>
+<h3>模板 D：冲突型对话升级</h3>
+<pre><code class="language-text">请把以下对话改写成一场冲突升级的对手戏：{粘贴对话或场景描述}
+要求：
+1. 两人目标直接对立，各自在对话中亮出底线；
+2. 对话分三个层次推进：试探 → 交锋 → 撕破（或达成危险共识）；
+3. 每轮对话附带一个动作细节（肢体/表情/环境），替代情绪直述；
+4. 结尾停在&quot;话没说完&quot;或&quot;反应出乎意料&quot;处，给下一场景留钩子；
+5. 每段对话不超过 3 行。
+</code></pre>
+<h2>6.4 操作步骤</h2>
+<ol>
+<li><strong>建档</strong>：用模板 A 给每个主要角色建声音卡，存入人物卡（第 3 章模板 A 的"说话风格与口头禅"字段），2–3 个口头禅 + 句式偏好即可。</li>
+<li><strong>写作时引用</strong>：场景写作任务书（第 5 章模板 A）里带上出场角色的声音卡条目。</li>
+<li><strong>写后打磨</strong>：初稿对话如果平直，用模板 B 做潜台词改写，先列"表面/实际"对照，再重写台词。</li>
+<li><strong>批量检查</strong>：一场多人戏写完，用模板 C 让 AI 做声音区分检查——专治"所有人一个腔调"。</li>
+<li><strong>关键对手戏</strong>：用模板 D 升级冲突，让对话承担推进剧情的功能而不是交代信息。</li>
+</ol>
+<h2>6.5 常见坑 + 解决方法</h2>
+<table>
+<thead>
+<tr>
+<th>坑</th>
+<th>现象</th>
+<th>解法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>所有人一个腔调</td>
+<td>遮住名字分不出谁在说话</td>
+<td>声音卡 + 模板 C 定期做区分检查</td>
+</tr>
+<tr>
+<td>对话是信息复读机</td>
+<td>角色互相交代背景（"你知道的，我们三年前…"）</td>
+<td>交代信息改用动作/环境；对话只推进冲突</td>
+</tr>
+<tr>
+<td>台词长篇大论</td>
+<td>一个人说一页</td>
+<td>限制每段 ≤3 行，用动作穿插打断</td>
+</tr>
+<tr>
+<td>潜台词写成旁白</td>
+<td>"他嘴上说好，心里却想…"</td>
+<td>模板 B：潜台词只能藏在措辞和动作里</td>
+</tr>
+<tr>
+<td>对话没有钩子</td>
+<td>章末对话把话说尽</td>
+<td>结尾停在"话没说完/反应出乎意料"，用对话收束做钩子</td>
+</tr>
+<tr>
+<td>情绪全靠形容词</td>
+<td>"她愤怒地说"</td>
+<td>换成动作表现（"她摔了杯子"），删除情绪副词</td>
+</tr>
+</tbody>
+</table>
+<h2>6.6 本章推荐素材</h2>
+<ul>
+<li><strong>Claude 长篇小说写作助手手册</strong>（人物档案"说话风格与口头禅"字段 + 声音区分检查）：https://www.claudecodehq.com/playbooks/novel-writing-assistant</li>
+<li><strong>做故事架构师而非码字工</strong>（对话潜台词 + 人格锚点方法论）：https://segmentfault.com/a/1190000047904856</li>
+<li><strong>多 Agent 架构写连载小说</strong>（别忽视对话潜台词 + AI 高频词黑名单）：https://segmentfault.com/a/1190000047905047</li>
+<li><strong>chinese-novelist-skill 仓库</strong>（"展示而非讲述/冲突驱动/悬念承上启下"三大黄金法则）：<code>E:\AI写小说\repos\chinese-novelist-skill\SKILL.md</code></li>
+</ul><a class="back-top" href="#course-top">返回目录 ↑</a></article><article class="lesson" id="chapter-7"><div class="section-kicker">第 7 章</div><h1>第 7 章 多章节一致性保持</h1>
+<blockquote>
+<p><strong>教学目标</strong>：学完本章，你写的长篇在第 30 章后依然不丢设定、不复活角色、不错时间线——靠的是"设定回写 + 滑动窗口摘要 + 三段式检查"三层防线，而不是赌模型记性好。</p>
+</blockquote>
+<hr>
+<h2>7.1 为什么长篇必然"失忆"</h2>
+<p>单核大模型写长篇，剧情暴走、人设崩塌是必然，不是概率。多 Agent 架构一文给出两个根因：</p>
+<ol>
+<li><strong>中间迷失（Lost in the Middle）</strong>：几十章前的伏笔在注意力里被稀释，模型越写越"只看得到最近几章"，于是角色复活、地点漂移、时间线错乱；</li>
+<li><strong>概率回归</strong>：next-token 生成永远往最安全的方向靠，不召回设定它就会用陈词滥调填坑。</li>
+</ol>
+<p>所以结论只有一个：<strong>一致性不能靠模型记忆，要靠外部系统</strong>。本章的三层防线全部来自素材库里验证过的工作流（多 Agent 架构、34 本小说经验、WenShape/NovelGenerator 等仓库），按成本从低到高排列，先做第一层就能解决 80% 的问题。</p>
+<h2>7.2 三层防线</h2>
+<p><strong>第一层：设定回写（外部事实库）</strong></p>
+<p>把"模型记不住的东西"搬到文件里：角色卡、世界观卡、时间线、伏笔表。每次写新章前，把相关条目<strong>摘抄进提示词</strong>（不是全文丢进去，是挑选本段涉及的）。对应工具：WenShape 的事实表、AI_NovelGenerator 的设定工坊、FeelFish 的上下文管理——本质都是同一件事：设定存在工具里，写作时引用，随写随更。</p>
+<p><strong>第二层：滑动窗口摘要</strong></p>
+<p>长篇上下文的正确喂法不是"把前 30 章全文塞进去"，而是维护<strong>章节摘要</strong>：每章写完后，用轻量模型把它压成 200 字结构化摘要（记事件进展、新设定、新伏笔、状态变化）。写第 N 章时只喂"全局大纲 + 第 N-3 至 N-1 章摘要 + 本章任务"。多 Agent 架构与 NovelGenerator（持久故事记忆 + 场景交接）都是这个思路——信息密度高、上下文干净，模型不会迷失。</p>
+<p><strong>第三层：写前/写中/写后三段式检查</strong></p>
+<ul>
+<li><strong>写前</strong>：把本章涉及的 {角色 / 地点 / 时间 / 未回收伏笔} 清单摆进提示词，让 AI 先引用设定再动笔；</li>
+<li><strong>写中</strong>：每章在"干净上下文"里单独跑，写完立刻回写进度（34 本小说经验的 loop.md 工作流）；</li>
+<li><strong>写后</strong>：跑一轮矛盾修正清单（模板 C），或用脚本对名称、时间线做程序化检查（CometAPI 工作流的做法），发现问题再改，而不是写完全书才查。</li>
+</ul>
+<h2>7.3 可直接复制的提示词模板</h2>
+<h3>模板 A：章节摘要生成器（滑动窗口核心）</h3>
+<pre><code class="language-text">以下是长篇小说第 {N} 章的正文：{粘贴本章正文}
+请把它压缩成 {200} 字以内的结构化摘要，按以下格式输出：
+- 事件进展：{2–3 句，本段剧情发生了什么，结局状态}
+- 新增设定：{本章新出现的设定，没有则写&quot;无&quot;}
+- 新增伏笔：{本章埋下的伏笔，没有则写&quot;无&quot;}
+- 状态变化：{角色状态/关系/装备/势力变化，逐条列出}
+- 章末钩子：{本章结尾的悬念，一句话}
+规则：只记&quot;变化&quot;不记&quot;重现&quot;；已在前几章摘要中出现过的设定不要重复写。
+</code></pre>
+<h3>模板 B：写前设定召回单</h3>
+<pre><code class="language-text">我要写第 {N} 章：{本章任务/节拍}
+动笔前，先按以下清单从设定集中召回相关内容，然后输出一份&quot;写前设定包&quot;：
+1. 出场角色：{列出角色名}——引用每个人物卡中的：当前状态、关系、说话声音（口头禅/句式）；
+2. 地点：{列出地点}——引用世界观卡中的方位、建筑、环境特征；
+3. 时间线：{本章发生在哪个时间点}——距上一章过去多久，季节/时辰是什么；
+4. 未回收伏笔：列出设定集中所有与本章相关的未回收伏笔，注明埋设章节；
+5. 禁忌：本段禁止出现 {如：现代科技词汇 / 角色 A 出现在他不在场的场景 / 使用已死亡角色}。
+输出设定包后，再开始写正文；正文中不得出现设定包之外的新人名、新地名、新能力。
+</code></pre>
+<h3>模板 C：矛盾修正清单（写后检查）</h3>
+<pre><code class="language-text">你是长篇小说的连续性审稿人。请审查以下材料，输出矛盾清单：
+前情摘要：{粘贴最近 3 章摘要}
+本章正文：{粘贴刚写完的章节}
+检查维度：
+1. 角色矛盾：姓名/年龄/关系/能力/伤疤/口头禅是否与设定卡一致，角色是否&quot;复活&quot;；
+2. 时间线矛盾：日期/季节/距上次事件天数是否自洽；
+3. 地点矛盾：方位/建筑/环境是否与世界观卡一致；
+4. 伏笔矛盾：本章是否错误回收了未到期的伏笔，或与已回收伏笔冲突。
+输出格式（每行一条）：[维度] 章节位置 | 矛盾内容 | 建议修正 | 影响等级（高/中/低）
+没有矛盾的维度写&quot;无&quot;。只列矛盾，不重写正文。
+</code></pre>
+<h3>模板 D：设定回写更新</h3>
+<pre><code class="language-text">以下是本章正文：{粘贴本章正文}
+请对照现有设定集更新条目，输出增量修改建议（不要重写整个设定集）：
+1. 新增条目：{本章新出现的角色/地点/能力/势力，给出要写入设定卡的字段}
+2. 修改条目：{本章改变了既有设定的，给出修改后的字段值}
+3. 伏笔表：{本章新埋的伏笔加入表：内容 | 埋设章 | 计划回收章；本章已回收的伏笔标记&quot;已回收&quot;}
+4. 状态表：{主要角色当前状态一行一个：角色 | 位置 | 状态 | 备注}
+输出为可直接追加到设定集文件的 markdown 块。
+</code></pre>
+<h2>7.4 操作步骤</h2>
+<ol>
+<li><strong>建设定集目录</strong>：在项目里建 <code>lore/</code> 文件夹（或使用工具自带的设定库），存放人物卡、世界观卡、时间线、伏笔表（第 3 章已建好人物卡/世界观卡，这里补伏笔表和状态表两张）。</li>
+<li><strong>每章动笔前</strong>：跑模板 B 生成写前设定包，把设定包放进场景写作任务书（第 5 章模板 A）一起发给 AI。</li>
+<li><strong>每章写完</strong>：跑模板 A 生成 200 字摘要，存进 <code>summaries/NN.md</code>；再跑模板 D 回写设定集。两步加起来不到一分钟，但这是 30 章不崩的根基。</li>
+<li><strong>每 3–5 章</strong>：跑一次模板 C 矛盾清单，把"高"级矛盾当场修掉；攒到全书写完再修，成本会翻几倍。</li>
+<li><strong>工程化进阶</strong>：用 NovelGenerator（本地持久故事记忆 + 场景交接）或 Novels 多 Agent 管线，让摘要与召回自动化；用 WenShape 的事实表做上下文自动评分排序。</li>
+</ol>
+<h2>7.5 常见坑 + 解决方法</h2>
+<table>
+<thead>
+<tr>
+<th>坑</th>
+<th>现象</th>
+<th>解法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>只靠模型记忆</td>
+<td>上下文很大但写到 20 章还是丢设定</td>
+<td>上下文长≠记得住；设定必须落到外部文件，写前显式引用（第一层防线）</td>
+</tr>
+<tr>
+<td>摘要写得太细</td>
+<td>摘要越长模型越抓不住重点</td>
+<td>压到 200 字以内，只记"变化"不记"重现"，格式固定（模板 A）</td>
+</tr>
+<tr>
+<td>回写滞后</td>
+<td>设定集还是 10 章前的，新章设定全乱</td>
+<td>每章写完立刻跑模板 D，别攒批处理</td>
+</tr>
+<tr>
+<td>写完不检查</td>
+<td>角色复活、时间线错乱直到完稿才发现</td>
+<td>每 3–5 章跑模板 C，当场修"高"级矛盾</td>
+</tr>
+<tr>
+<td>一次喂太多上下文</td>
+<td>模型被前文淹没，本段任务执行变形</td>
+<td>滑动窗口：只喂全局大纲 + 最近 3 章摘要 + 本章任务</td>
+</tr>
+<tr>
+<td>修矛盾时重写全文</td>
+<td>修一处引入三处新错</td>
+<td>模板 C 只出清单，修复时按"最小改动"原则逐条改（第 9 章会展开）</td>
+</tr>
+</tbody>
+</table>
+<h2>7.6 本章推荐素材</h2>
+<ul>
+<li><strong>NovelGenerator 仓库</strong>（本地长篇生成器：持久故事记忆、场景交接、连续性检查的完整实现）：https://github.com/KazKozDev/NovelGenerator</li>
+<li><strong>WenShape 仓库</strong>（事实表保证长篇一致性，支持百科批量导入设定卡）：https://github.com/unitagain/WenShape</li>
+<li><strong>《用 ChatGPT 写连载小说？多 Agent 架构让 AI 告别失忆与 AI 味》</strong>（滑动窗口摘要 + RAG 设定集的具体做法）：https://segmentfault.com/a/1190000047905047</li>
+</ul><a class="back-top" href="#course-top">返回目录 ↑</a></article><article class="lesson" id="chapter-8"><div class="section-kicker">第 8 章</div><h1>第 8 章 风格模仿与润色</h1>
+<blockquote>
+<p><strong>教学目标</strong>：学完本章，你能让 AI 模仿指定作者/文风写正文（不是空喊"写得有文采"），并掌握行级润色三件套：缩短 20%、副词减半、AI 高频词清理。</p>
+</blockquote>
+<hr>
+<h2>8.1 AI 味从哪来</h2>
+<p>"AI 味"不是玄学。多 Agent 架构一文点破：next-token 生成总往<strong>最安全的陈词滥调</strong>靠——"然而""不可否认""深邃的眼眸""嘴角勾起弧度"。因为模型训练语料里这些表达出现频率最高，采样时最容易命中。</p>
+<p>所以去 AI 味只有一条正路：<strong>在提示词里给模型更具体、更高频的风格约束，压过它的默认概率</strong>。按成本从低到高，有三层武器：提示词级（文风标签）、样本级（Few-Shot 风格锚定）、工程级（黑名单脚本 / LoRA 微调）。</p>
+<h2>8.2 三层风格武器</h2>
+<p><strong>第一层：文风标签（零成本，先做这个）</strong></p>
+<p>DeepSeek-V4 指南的核心心法：用<strong>具体文风标签</strong>替代空话。"模仿汪曾祺"有效，"写得有文采"无效——前者给了可检索的风格锚点，后者什么都没约束。写作提示词里固定带一句：<code>风格：{具体标签，如：余华式冷静笔调 / 汪曾祺式白描 / 猫腻式细腻心理}</code>。</p>
+<p><strong>第二层：风格样本（200–500 词 Few-Shot）</strong></p>
+<p>CometAPI 工作流：贴 200–500 词的风格样本（目标作者的一段原文，或你自己写的一段"理想文风"），让模型按样本的风格写。样本优于标签，因为样本里藏着句式长度、用词密度、比喻方式、节奏的全部信息。做法：先用模板 A 把样本提炼成规则卡，写作时再贴规则卡 + 样本。</p>
+<p><strong>第三层：工程级（黑名单 + 局部重写）</strong></p>
+<p>多 Agent 架构与 writing-agent 仓库的做法：建一份 <strong>AI 高频词黑名单</strong>（"然而""不可否认""深邃""嘴角勾起""淡淡道"……），用脚本扫描全文，命中片段<strong>只对命中处局部重写</strong>（模板 D），而不是整章重来。进阶玩家可以 LoRA 微调一个小模型当写手底座，但大多数人用不到这一步。</p>
+<h2>8.3 行级润色三件套</h2>
+<p>润色不重生成。CometAPI 工作流明确：<strong>"把句子缩短 20%、副词减半"这类行级改写指令，比"再写一遍"安全得多</strong>——保留原意和信息，只动表达。三个最常用的规则：</p>
+<ol>
+<li><strong>缩短 20%</strong>：删冗余连接词（然而/此外/与此同时）、合并重复信息；</li>
+<li><strong>副词减半</strong>：把"慢慢地""轻轻地"换成具体动作（"他推开门"优于"他轻轻地推开门"）；</li>
+<li><strong>动词替换</strong>：把万能动词（走/说/看/拿）换成有画面感的动词（踱/嘟囔/瞥/抄）。</li>
+</ol>
+<h2>8.4 可直接复制的提示词模板</h2>
+<h3>模板 A：风格样本提取（把原文变成规则卡）</h3>
+<pre><code class="language-text">以下是一段 {作者/作品} 的文本：{粘贴 200–500 词原文}
+请把它提炼成一张&quot;风格规则卡&quot;，输出为 markdown：
+1. 句式：{句长偏好，如：长短句交替 / 全部短句；平均句长约多少字}
+2. 用词：{常用词域，如：古白话词 / 现代口语 / 方言 / 术语；避免哪些词}
+3. 比喻与修辞：{比喻方式，如：以自然景物喻情 / 极少用比喻}
+4. 节奏：{段落密度，如：多短段 / 长段铺陈；对话与叙述的比例}
+5. 视角与口吻：{叙述者语气，如：冷静旁观 / 介入式评论 / 内心独白}
+6. 禁忌：{该风格绝不会出现的东西，如：华丽形容词堆砌 / 网络流行语}
+规则卡只许从样本里归纳，不许凭空添加样本中没有的特征。
+</code></pre>
+<h3>模板 B：Few-Shot 风格锚定写作</h3>
+<pre><code class="language-text">请按以下风格写作：
+风格样本（模仿对象）：{粘贴 200–500 词风格样本或风格规则卡}
+写作任务：{本章/本场景任务，含字数、内容要点、出场角色}
+要求：
+1. 严格模仿样本的句式长度、用词习惯、段落节奏，不要夹带自己的默认腔调；
+2. 先写一段 100 字左右的&quot;风格试写&quot;，我确认后再写正式正文；
+3. 正式正文 {字数} 字，人物对话保持各角色声音（第 6 章声音卡）；
+4. 禁用的 AI 高频词：{如：然而、不可否认、深邃、淡淡道、嘴角勾起弧度}。
+</code></pre>
+<h3>模板 C：行级润色指令</h3>
+<pre><code class="language-text">请对以下段落做行级润色，不要重写：{粘贴段落}
+规则（按顺序执行）：
+1. 缩短 20%：删冗余连接词与重复信息，保留全部事实和原意；
+2. 副词减半：把&quot;X地&quot;式副词改成具体动作或删掉，每句最多保留一个；
+3. 动词替换：把万能动词（走/说/看/拿/想）替换成更有画面感的动词，保持时代与身份设定；
+4. 句子节奏：把连续 3 句以上同长度句子的段落打散；
+5. 输出时先给一句&quot;改动说明&quot;，再给润色后的完整段落；不要新增情节、不要改对话内容。
+</code></pre>
+<h3>模板 D：AI 高频词清理（黑名单局部重写）</h3>
+<pre><code class="language-text">以下是正文片段：{粘贴需要检查的章节}
+请执行：
+1. 扫描全文，找出以下高频词的出现位置（每处一行）：{粘贴黑名单，如：然而 / 不可否认 / 深邃的眼眸 / 嘴角勾起弧度 / 淡淡道 / 这一刻 / 仿佛}
+2. 对每个命中位置，给出替换方案：删除 / 换词（给出替换词）/ 用动作表现（给出具体动作描写）；
+3. 只对命中片段做局部修改，输出修改后的完整段落；
+4. 保留原意、对话和情节不动。
+</code></pre>
+<h2>8.5 操作步骤</h2>
+<ol>
+<li><strong>建风格库</strong>：为你的目标风格收集 2–3 段 200–500 词样本（目标作者原文，或你自己最满意的旧稿），用模板 A 提炼成规则卡，存进 <code>styles/</code> 文件夹。</li>
+<li><strong>写作时锚定</strong>：正式写作提示词里固定带"风格标签 + 风格规则卡"（模板 B 的"风格试写"步骤别省——100 字试写能挡住 80% 的跑偏）。</li>
+<li><strong>初稿后行级润色</strong>：每章初稿跑一次模板 C，只动表达不动情节。</li>
+<li><strong>批量清 AI 味</strong>：攒 3–5 章后，用模板 D 跑一次黑名单扫描。writing-agent 仓库把这一步做成了流水线阶段，可以本地跑脚本。</li>
+<li><strong>进阶</strong>：同一段落给两个不同风格标签（如"汪曾祺式白描"和"猫腻式细腻"）各写一版，人工挑——风格是选择题，不是填空题。</li>
+</ol>
+<h2>8.6 常见坑 + 解决方法</h2>
+<table>
+<thead>
+<tr>
+<th>坑</th>
+<th>现象</th>
+<th>解法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>空话指令</td>
+<td>写"写得有文采、有画面感"，输出还是 AI 味</td>
+<td>换成具体文风标签（"模仿余华"）+ 风格规则卡（模板 A/B）</td>
+</tr>
+<tr>
+<td>全篇重写丢信息</td>
+<td>润色后情节、对话细节丢了</td>
+<td>行级指令（模板 C）：明确"保留全部事实和原意，不新增情节"</td>
+</tr>
+<tr>
+<td>模仿过火/失真</td>
+<td>学了个皮毛，用词堆砌</td>
+<td>样本压到 200–500 词，规则卡只许从样本归纳（模板 A 第 6 条）</td>
+</tr>
+<tr>
+<td>黑名单一刀切</td>
+<td>脚本删词把正常表达也误伤</td>
+<td>只对命中片段局部重写，替换方案人工确认（模板 D 第 3 条）</td>
+</tr>
+<tr>
+<td>风格只挂标签不贴样本</td>
+<td>标签经常失效</td>
+<td>标签 + 样本双保险；样本不足时先让 AI 提炼规则卡再写</td>
+</tr>
+<tr>
+<td>每章风格飘忽</td>
+<td>第 3 章像余华、第 4 章像猫腻</td>
+<td>风格规则卡写进创作协作者系统提示词（第 1 章模板 A），全局生效</td>
+</tr>
+</tbody>
+</table>
+<h2>8.7 本章推荐素材</h2>
+<ul>
+<li><strong>writing-agent 仓库</strong>（分阶段审稿 + 去 AI 味 + 导出终稿的完整流水线）：https://github.com/dongbeixiaohuo/writing-agent</li>
+<li><strong>《用 ChatGPT 写连载小说？多 Agent 架构让 AI 告别失忆与 AI 味》</strong>（AI 高频词黑名单 + LoRA 风格锚定）：https://segmentfault.com/a/1190000047905047</li>
+<li><strong>《别让 AI 把你气哭：2026 年 DeepSeek-V4 提示词终极指南》</strong>（文风标签替代"写得有文采"）：https://developer.cloud.tencent.cn/article/2683058</li>
+</ul><a class="back-top" href="#course-top">返回目录 ↑</a></article><article class="lesson" id="chapter-9"><div class="section-kicker">第 9 章</div><h1>第 9 章 完稿与发布</h1>
+<blockquote>
+<p><strong>教学目标</strong>：学完本章，你能在全书完成后跑一轮"无情审稿 + 最小改动修复"，把 Markdown 转成可发布的格式；写付费文时，知道怎么用付费卡点定位和完读率数据复盘。</p>
+</blockquote>
+<hr>
+<h2>9.1 完稿不是终点，是审稿起点</h2>
+<p>全书写完 ≠ 可以发。34 本小说经验里最重要的一步恰恰在最后：<strong>另起一个干净上下文，让 AI 当无情编辑</strong>，输出全书的问题清单；再开一个新上下文，按"最小改动"原则逐条修复。为什么必须另起上下文？因为写正文的上下文里全是前文残影，模型只会自我表扬；干净的上下文才能跳出文本看文本。</p>
+<p>CometAPI 工作流给了专业编辑的六遍 pass 顺序：<strong>起草 → 结构（情节/弧光）→ 角色一致性 → 行级 → 校对 → 试读</strong>。AI 写完初稿后，你自己按这个顺序跑 5–6 遍审查，每遍只干一件事，不要混在一起。</p>
+<h2>9.2 审稿与修复的正确姿势</h2>
+<ol>
+<li><strong>无情审稿（模板 A）</strong>：让 AI 输出矛盾、剧情漏洞、时间线问题清单，按严重程度排序。只出清单，不重写——审稿和修复必须分开，否则 AI 会边找边改、越改越乱。</li>
+<li><strong>最小改动修复（模板 B）</strong>：拿着清单逐条问 AI"这条怎么改最小"，改完回填。修一处只动一处，不顺手重写周边。</li>
+<li><strong>程序化检查</strong>：名称/时间线这类机械问题用脚本扫（脚本检查所有角色名是否拼写统一、日期是否倒挂），比人眼可靠。</li>
+<li><strong>试读反馈（模板 C）</strong>：让 AI 以目标读者视角读关键章节，报告读感而不是挑错——节奏、悬念、代入感、付费意愿。</li>
+</ol>
+<h2>9.3 付费文的卡点与复盘</h2>
+<p>如果目标是付费连载（知乎盐选、番茄等），盐选实操手册的核心逻辑：<strong>付费节点要卡在高潮将到未到的最痒处</strong>——真相将揭、阴谋将成时断更。三个动作：</p>
+<ol>
+<li><strong>定位卡点（模板 D）</strong>：让 AI 找出前 3–4 章里最适合断更的位置；</li>
+<li><strong>按数据迭代</strong>：发布后盯着<strong>完读率、互动率、评论区催更/开骂</strong>——催更说明卡点对了，开骂弃坑说明爽点密度不够；</li>
+<li><strong>前 1000 字定生死</strong>：开篇必须直接进冲突、抛最强悬念，拒绝"我叫 XX"式平铺（模板 C 可配合检查开篇）。</li>
+</ol>
+<h2>9.4 平台发布要点（起点 / 番茄 / 知乎盐选差异）</h2>
+<p>不同平台的"作品"根本不是同一种东西，发布前先选对赛道。通用规则如下（具体政策以各平台最新公告为准）：</p>
+<table>
+<thead>
+<tr>
+<th>平台</th>
+<th>读者与题材倾向</th>
+<th>收益模式</th>
+<th>关键指标</th>
+<th>AI 辅助的适配点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>起点中文网</td>
+<td>长篇追读型读者，玄幻/都市/历史等传统网文题材</td>
+<td>VIP 订阅制（按章收费）</td>
+<td>追读率、订阅比、月票</td>
+<td>卷纲/章纲管理、稳定日更产能（第 4 章大纲 + 第 5 章场景分块）</td>
+</tr>
+<tr>
+<td>番茄小说</td>
+<td>免费阅读、下沉流量，节奏快的爽文</td>
+<td>免费阅读 + 广告分成</td>
+<td>完读率、留存、翻页率</td>
+<td>开篇 3 章完读率优先，爽点密度拉满、单章短平快</td>
+</tr>
+<tr>
+<td>知乎盐选</td>
+<td>会员制付费短篇，情感/职场/悬疑类选题</td>
+<td>盐选会员分成（买断或分成）</td>
+<td>付费转化率、卡点质量</td>
+<td>付费卡点定位（本章模板 D）+ 前 1000 字强悬念（第 2 章模板 C）</td>
+</tr>
+</tbody>
+</table>
+<p>要点：<strong>起点拼追读（读者跟不跟）、番茄拼完读（读者读不读完）、盐选拼卡点（读者掏不掏钱）</strong>。写之前先定平台，因为开篇节奏、章长、卡点位置全部跟着平台走。</p>
+<p>格式导出（Markdown 主稿 → 多格式）：</p>
+<pre><code class="language-bash"># Pandoc 一键导出（34 本小说经验的发布管线）
+pandoc novel.md -o novel.epub --toc        # EPUB：电纸书/自出版发行
+pandoc novel.md -o novel.txt               # TXT：投稿/备份（起点、番茄均支持）
+pandoc novel.md -o novel.pdf               # PDF：打印/留档
+# 注意：epub 建议先合并封面（--epub-cover=cover.jpg），正文插图路径要相对主稿所在目录
+</code></pre>
+<h2>9.5 可直接复制的提示词模板</h2>
+<h3>模板 A：全书无情审稿（evaluation）</h3>
+<pre><code class="language-text">你是本书的无情编辑，目标是把这本书改到能出版。请审阅：{粘贴全书或全部章节摘要}
+输出《审稿报告》，按严重程度排序，格式：
+- 【致命】必须修：{矛盾/剧情漏洞/逻辑断裂/角色 OOC，逐条列出：位置 | 问题 | 为什么是问题}
+- 【重要】应该修：{节奏问题/悬念失效/伏笔未回收/重复描写}
+- 【建议】可以修：{行级瑕疵/用词重复/AI 高频词}
+- 【亮点】保留：{哪些段落最好，修改时不得动}
+只输出报告，不修改任何正文。
+</code></pre>
+<h3>模板 B：最小改动修复</h3>
+<pre><code class="language-text">以下是我书中的一处问题（来自审稿报告）：{粘贴问题条目}
+请给出修复方案，遵守：
+1. 最小改动：能改一个词就不改一句，能改一句就不改一段；不重写周边内容；
+2. 每处问题给出：修改位置 | 原文 | 修改后 | 为什么这样改；
+3. 如果此问题牵一发而动全身（改了这里会影响后面 N 处），先列出受影响位置清单再动手；
+4. 修复后必须自查：本次修改没有引入新的时间线/人设矛盾。
+</code></pre>
+<h3>模板 C：试读反馈模拟</h3>
+<pre><code class="language-text">请以 {目标读者，如：喜欢都市爽文的 25 岁上班族} 的视角，试读以下章节：{粘贴章节}
+输出试读报告：
+1. 读感曲线：从第几段开始觉得无聊/吸引/想弃书，标注位置；
+2. 悬念与钩子：本章结尾是否想立刻看下一章（是/否，为什么）；
+3. 代入感：哪些地方觉得假/出戏，哪些地方代入感强；
+4. 付费意愿：如果这是付费章节的第 {N} 章，你愿不愿意继续付费（给 0–10 分）；
+5. 一句话总评。
+</code></pre>
+<h3>模板 D：付费卡点定位</h3>
+<pre><code class="language-text">以下是连载前 {N} 章的大纲或正文：{粘贴材料}
+请以付费阅读运营的视角：
+1. 标出每个&quot;天然卡点&quot;：{高潮将到未到、真相将揭、阴谋将成} 的位置（第几章第几段）；
+2. 对每个卡点评分：付费吸引力（0–10）+ 理由；
+3. 选出最强的一个卡点，说明为什么它适合做付费节点；
+4. 若现有结构没有合格卡点，给出调整建议（往哪里埋悬念、在哪里断章）；
+5. 检查前 1000 字：是否直接进冲突、有无&quot;我叫 XX&quot;式平铺开头，给出开篇修改建议。
+</code></pre>
+<h2>9.6 操作步骤</h2>
+<ol>
+<li><strong>写完最后一章</strong>：先在正文上下文里跑一遍第 7 章模板 C（近期矛盾清单），把当场能修的小问题修掉。</li>
+<li><strong>另起干净上下文</strong>：新建会话，只喂设定集 + 全书（或逐卷），跑模板 A 输出审稿报告。</li>
+<li><strong>逐条修复</strong>：另开一个上下文，按模板 B 从【致命】修到【建议】；修完一章回填一章。</li>
+<li><strong>程序化检查</strong>：写个小脚本扫描角色名拼写统一性与时间线倒挂（名称表 + 时间线表是脚本的输入）。</li>
+<li><strong>试读</strong>：跑模板 C 检查关键章节与开篇；付费文再跑模板 D 定卡点。</li>
+<li><strong>转格式发布</strong>：Markdown 定稿后用 Pandoc 转 epub/PDF/HTML（34 本小说经验的发布管线）；需要封面/人物图时可用 AI 生图补视觉。发布到自出版（KDP 等）或连载平台后，按完读率数据复盘迭代。</li>
+</ol>
+<h2>9.7 常见坑 + 解决方法</h2>
+<table>
+<thead>
+<tr>
+<th>坑</th>
+<th>现象</th>
+<th>解法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>边写边改</td>
+<td>正文上下文里让 AI 自我审查，全是"写得很棒"</td>
+<td>审稿必须另起干净上下文（模板 A 起手先立人设"无情编辑"）</td>
+</tr>
+<tr>
+<td>修复引入新矛盾</td>
+<td>改了一处时间线，后面三处跟着错</td>
+<td>模板 B 第 3 条：先列受影响位置清单再动手</td>
+</tr>
+<tr>
+<td>审稿和修复混在一起</td>
+<td>报告没出全就开始改，漏掉致命问题</td>
+<td>两件事两个上下文，先清单后修改</td>
+</tr>
+<tr>
+<td>全篇推倒重写</td>
+<td>审稿后让 AI"重写一遍"，越写越差</td>
+<td>只按最小改动逐条修；推倒重写只用于个别失控章节</td>
+</tr>
+<tr>
+<td>不懂卡在哪</td>
+<td>读者弃坑率奇高，不知道哪章劝退</td>
+<td>模板 C 试读模拟定位 + 后台完读率数据交叉验证</td>
+</tr>
+<tr>
+<td>发布前没程序化检查</td>
+<td>角色名前后拼写不一致、日期倒挂漏网</td>
+<td>名称表 + 时间线表喂给脚本扫描，机械问题不靠人眼</td>
+</tr>
+</tbody>
+</table>
+<h2>9.8 本章推荐素材</h2>
+<ul>
+<li><strong>《What I Learned Making 34 Novels with Claude Sonnet》</strong>（evaluation 无情审稿 + 最小改动修复 + Pandoc 发布管线）：https://triptych.writeas.com/what-i-learned-making-34-novels-with-claude-sonnet</li>
+<li><strong>《AI and the novel: how to use ChatGPT to write a full-length book》</strong>（专业编辑六遍 pass + 程序化一致性检查）：https://www.cometapi.com/ai-and-the-novel-how-to-use-chatgpt-to-write-a-full-length-book/</li>
+<li><strong>《普通人搞副业，别再瞎摸索了！知乎盐选实操手册》</strong>（付费卡点 + 完读率复盘）：https://www.woshipm.com/share/6236681.html</li>
+</ul><a class="back-top" href="#course-top">返回目录 ↑</a></article><article class="lesson" id="chapter-10"><div class="section-kicker">第 10 章</div><h1>第 10 章 质量评测与合规发布</h1>
+<blockquote>
+<p>一句话教学目标：学完本章，你能用客观方法给 AI 小说"打分"（而不是全靠感觉），并清楚知道哪些 AI 用法会被网文平台封号、怎么合规地发布。</p>
+</blockquote>
+<hr>
+<h2>10.1 先搞清：为什么不能靠人感审稿</h2>
+<p>第 9 章的无情审稿解决"有没有问题"，这一章解决"问题有多严重、值不值得修"。人感审稿有两个硬伤：</p>
+<ol>
+<li><strong>人眼漏检率高</strong>。ConStory-Bench（首个长篇一致性评测基准，2,000 条提示词、5 类 19 子类错误分类）的自动化检测器比人类专家多发现 <strong>3.2 倍</strong>一致性错误；连目前最强模型每写 1 万字仍会出约 1 个一致性错误，且错误集中在文本中段——写到中间模型最"失忆" ["https://arxiv.org/html/2603.05890v1","https://mllog.dev/en/posts/constory-consistency-bugs-long-stories-llm/"]。</li>
+<li><strong>感觉没有刻度</strong>。"还行""差点意思"没法帮你决策哪里该改、改完有没有进步。客观评测给的是可复现的分数和清单。</li>
+</ol>
+<p>结论：评测 = 自动化评分（LLM-as-Judge）+ 一致性专项检测 + 人工快检三步，缺一不可。</p>
+<hr>
+<h2>10.2 核心评测维度（六维实用框架）</h2>
+<p>学术基准（WebNovelBench，4,000+ 中文网文、8 个叙事质量维度，LLM-as-Judge 自动评分 + PCA 聚合成百分位排名 ["https://arxiv.org/html/2505.14818v1"]；Inkfluence 的 7 维度 ["https://www.inkfluenceai.com/blog/how-to-evaluate-ai-novel-writer-quality-2026"]）合并去重后，落到日常够用的六维：</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>测什么</th>
+<th>典型翻车表现</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>长程连贯</td>
+<td>隔 10 章后设定/关系/伏笔是否还在</td>
+<td>角色忘了早期约定、地点名前后不一</td>
+</tr>
+<tr>
+<td>角色声音一致</td>
+<td>每个人说话是否可区分、性格是否漂移</td>
+<td>全员一个腔调、反派忽然圣母</td>
+</tr>
+<tr>
+<td>情节逻辑与回报</td>
+<td>伏笔是否回收、因果是否成立</td>
+<td>开篇埋的线索后文消失、动机断裂</td>
+</tr>
+<tr>
+<td>散文质量</td>
+<td>句子是否干净、有无 AI 腔</td>
+<td>副词堆砌、"深邃的眼眸"连发</td>
+</tr>
+<tr>
+<td>基调校准</td>
+<td>全书语气、类型感是否统一</td>
+<td>悬疑文忽然变搞笑、文白混杂</td>
+</tr>
+<tr>
+<td>节奏</td>
+<td>场景长短、悬念密度是否合理</td>
+<td>高潮草草带过、日常拖 3 章</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>10.3 自动化评测：LLM-as-Judge 评分卡</h2>
+<p>做法：把全书（或抽查的 N 章）交给一个<strong>与写作时不同的模型</strong>，按六维打分并给证据。评分卡提示词要固定维度、锚定刻度、强制引原文。</p>
+<h3>模板A：全书评测评分卡</h3>
+<pre><code class="language-text">你是一位只看作品不说客套的资深小说编辑。请对以下小说片段/章节按六个维度打分。
+
+【维度】1 长程连贯 2 角色声音一致 3 情节逻辑与回报 4 散文质量 5 基调校准 6 节奏
+【刻度】每维 1-10 分：1-3 硬伤；4-6 平庸；7-8 良好；9-10 出版级。
+【规则】
+- 每个维度必须先给 1 分句结论，再列最多 3 条证据，证据必须引用原文原句；
+- 只评给出的文本能证明的部分，看不到的不猜；
+- 最后给一行总分结论（如：6.5/10，硬伤在角色声音，人物B和人物C说话无法区分）。
+
+【待评文本】
+{小说章节或片段}
+</code></pre>
+<h3>模板B：一致性专项检测（ConStory 式分类 + 证据定位）</h3>
+<pre><code class="language-text">你是长篇小说一致性检测器。对照下面给出的&quot;设定基准&quot;检查正文，只报矛盾，不润色。
+
+【设定基准】
+{人物/地点/时间线/力量规则/已回收伏笔 列表}
+
+【检查规则】
+- 只报 5 类错误：人物属性矛盾 / 时间线矛盾 / 地点与空间矛盾 / 规则违背 / 伏笔状态错乱；
+- 每条错误必须给出：类别、正文原句引用、与基准哪一条冲突；
+- 查不到明确证据的疑似项标&quot;存疑&quot;，不冒充实锤；
+- 输出为清单，不写评语。
+
+【正文】
+{待检章节}
+</code></pre>
+<hr>
+<h2>10.4 人工快检：三章测试法</h2>
+<p>自动化评分看"分数"，人工快检看"读感"。最便宜的验收法（Inkfluence 推荐 ["https://www.inkfluenceai.com/blog/how-to-evaluate-ai-novel-writer-quality-2026"]）：</p>
+<ol>
+<li>生成连续 3 章，<strong>直接先读第 3 章</strong>；</li>
+<li>检查它是否记得第 1、2 章发生的事、人名角色是否对得上、声音是否稳；</li>
+<li>看它是在"落地一个节拍"还是在"概括前情"（概括 = 在偷懒）。</li>
+</ol>
+<p>三条都过，说明长程能力在线；不过，回到第 7 章设定回写 + 滑动窗口流程排查。</p>
+<hr>
+<h2>10.5 常见 AI 失败模式检查表</h2>
+<p>综合评测基准里反复出现的 AI 失败模式（WebNovelBench 维度 ["https://arxiv.org/html/2505.14818v1"]、AI Wiki 长篇创作评分细则 ["https://aiwiki.ai/wiki/longform_creative_writing/raw"]），做成查表：</p>
+<ul>
+<li>生硬的诗歌化/不合逻辑的比喻（如强行押韵、比喻与语境无关）</li>
+<li>连续单句成段（节奏碎、读感像弹幕）</li>
+<li>每章结尾都"反转""意味深长"（模板化钩子）</li>
+<li>概括代替场景（"他们争吵了起来"而不是争吵本身）</li>
+<li>对话全员书面语 + 讲解感</li>
+<li>情绪直给（"她感到难过"）而非行为/细节呈现</li>
+</ul>
+<p>对照第 8 章 AI 味黑名单一起用。</p>
+<hr>
+<h2>10.6 平台合规：番茄 / 起点 / 海外</h2>
+<p><strong>番茄小说（2026 年在执行的红线）</strong>：平台明令治理"AI 粗制滥造"——滥用 AI 批量生成、严重缺乏原创性属于低质违规 ["https://fanqienovel.com/writer/zone/article/7642544663915675672"]。治理力度是实打实的：2026 年 7 月拒绝签约低质书籍 16 万本、处置低质违规书籍 5.39 万本、处置账号 5,621 个 ["https://fanqienovel.com/writer/zone/article/7672294500500258840"]；8 月拒绝签约 16.3 万本、处置 6.1 万本 ["https://www.iesdouyin.com/share/video/7687864681609141497"]。纯 AI 批量生成会面临拒绝签约、限流、下架直至永久封号 ["https://fanqienovel.com/writer/zone/article/7602950185735438398"]。</p>
+<p><strong>允许 vs 禁止的边界（以番茄官方口径为准）</strong>：AI 辅助（灵感、优化大纲、润色句子、查错字语病）没问题；禁止的是扔给 AI 一个开头让它写几百万字、不看完直接发 ["https://www.iesdouyin.com/share/video/7642675744572788010"]。起点对 AI 辅助要求后台主动声明，严禁全篇 AI 代写（含 AI 写细纲和扩写正文）["https://www.iesdouyin.com/share/video/7652624529465937178"]。</p>
+<h3>模板C：平台合规自查</h3>
+<pre><code class="language-text">你是网文平台内容合规审读员。对照以下规则检查我的稿件与创作方式，输出风险清单：
+
+【红线检查】
+1 是否属于 AI 批量生成/粗制滥造（机械生硬、语言模板化、排版错乱）
+2 是否整篇 AI 代写且未人工审改
+3 是否水文注水（内容空泛、凑字数）
+4 是否在签约/声明环节隐瞒 AI 辅助
+
+【输出格式】
+每项给出：结论（通过/风险/违规）、依据、建议动作（重写哪些段落/如何补充人工痕迹）。
+
+【稿件片段或创作方式说明】
+{正文片段 + 你实际的 AI 使用方式}
+</code></pre>
+<p><strong>海外</strong>：Amazon KDP 要求作者披露 AI 生成内容，读者对纯 AI 书抵触明显，传统出版社基本不收纯 AI 书；自出版市场 2025 年约 42 亿美元、约 30% 独立作者在工作流里用 AI——重点是"用 AI 辅助而不是让 AI 代替你写" ["https://dupple.com/learn/best-ai-for-writing-books","https://shakespeareai.net/blog/top-ai-writing-tools-authors-2026"]。</p>
+<hr>
+<h2>10.7 操作步骤</h2>
+<ol>
+<li><strong>写稿期</strong>：每 10 章跑一次模板B（一致性专项检测），把新错误回写到设定集（联动第 7 章）；</li>
+<li><strong>完稿期</strong>：全书分卷切块，每卷用模板A（评分卡）评一次，汇总各维分数找最低维；</li>
+<li><strong>修改期</strong>：只修最低维和"硬伤"级问题（联动第 9 章最小改动修复原则），别为 7 分追 8 分推倒重写；</li>
+<li><strong>发布前</strong>：跑模板C（合规自查），确认 AI 使用方式符合目标平台规则；</li>
+<li><strong>发书后</strong>：用真实读者数据（完读率、评论）反向校准评测维度权重——评测标准要跟着平台反馈迭代。</li>
+</ol>
+<hr>
+<h2>10.8 常见坑 + 解决方法</h2>
+<table>
+<thead>
+<tr>
+<th>坑</th>
+<th>现象</th>
+<th>解法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>评分模型和写作模型是同一个</td>
+<td>自卖自夸、漏检自家毛病</td>
+<td>刻意换不同模型做评测（第二双眼睛）</td>
+</tr>
+<tr>
+<td>只评总分不看证据</td>
+<td>分数改不了，不知道改哪</td>
+<td>强制模板A引原文证据，按证据修</td>
+</tr>
+<tr>
+<td>一致性检测每章都跑</td>
+<td>成本高、误报多</td>
+<td>10 章一检 + 重大设定变更后立刻检</td>
+</tr>
+<tr>
+<td>把"AI 辅助"当"AI 代写"</td>
+<td>封号/拒签才知道</td>
+<td>发布前过一遍模板C，保留人工改写痕迹</td>
+</tr>
+<tr>
+<td>忽略中段失忆</td>
+<td>前 5 章完美、15 章起崩</td>
+<td>重点测中段章节（ConStory：错误集中在中段）["https://mllog.dev/en/posts/constory-consistency-bugs-long-stories-llm/"]</td>
+</tr>
+<tr>
+<td>用指标替代人读</td>
+<td>分数高但读着无聊</td>
+<td>三章测试法 + 试读模拟（模板 9C）兜底</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>10.9 本章推荐素材</h2>
+<ul>
+<li>ConStory-Bench：长篇一致性错误的第一手研究（每万字错误率、错误分布规律）：https://arxiv.org/html/2603.05890v1</li>
+<li>WebNovelBench：中文网文评测基准（8 维 LLM-as-Judge 思路可直接抄）：https://arxiv.org/html/2505.14818v1</li>
+<li>番茄小说低质治理公告（官方合规依据）：https://fanqienovel.com/writer/zone/article/7642544663915675672</li>
+<li>How to Evaluate AI Novel-Writing Quality（七维框架 + 三章测试法）：https://www.inkfluenceai.com/blog/how-to-evaluate-ai-novel-writer-quality-2026</li>
+</ul><a class="back-top" href="#course-top">返回目录 ↑</a></article><article class="lesson" id="chapter-11"><div class="section-kicker">第 11 章</div><h1>第 11 章 网文商业写作：黄金三章与爽点设计</h1>
+<blockquote>
+<p>一句话教学目标：学完本章，你能用 AI 设计出"前 300 字留人、三章内给爽点、章末逼人点下一章"的商业化开篇与节奏，而不是写一本没人读完的书。</p>
+</blockquote>
+<hr>
+<h2>11.1 先分清：文学写作 vs 商业写作</h2>
+<p>付费课反复强调同一件事：<strong>商业网文的第一指标是留存，不是文笔</strong>。读者点开第一章，前 300 字决定他看不看下去，前三章决定他订不订阅。所有技巧（钩子、爽点、断章）都服务于一个目标：让读者产生"下一章必须看"的冲动。</p>
+<p>文笔是放大器，不是入口。先把"留人"的工程做对，再谈风格。</p>
+<hr>
+<h2>11.2 前 300 字钩子：三选一，必须出现</h2>
+<p>阅文作家专区的高赞方法论：<strong>开篇 300 字内，悬念、冲突、金手指亮相，三选一必须出现</strong>；每章 3000 字，第 1 章 300 字内就要抓住人 ["https://write.qq.com/portal/community/topic/detail/96381521685955401"]。</p>
+<p>三种钩子：</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>作用</th>
+<th>示例思路</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>悬念</td>
+<td>让读者想知道"怎么回事"</td>
+<td>主角醒来发现自己在陌生房间，手机显示三天后</td>
+</tr>
+<tr>
+<td>冲突</td>
+<td>让读者替主角捏一把汗</td>
+<td>主角被当众退婚 + 家族断绝关系</td>
+</tr>
+<tr>
+<td>金手指</td>
+<td>让读者期待"这能力怎么用"</td>
+<td>重生者知道三个月后的灾难，但没人信他</td>
+</tr>
+</tbody>
+</table>
+<p>付费课口径（黄金三章 = 代入感 + 金手指 + 小爽点）：前 300 字必须抛出<strong>核心冲突、讲清主角缺什么、被逼到什么地步</strong> ["https://www.iesdouyin.com/share/video/7683643642099076361"]。新人常犯的错：前 3000 字还在介绍门派背景——读者早退出了。</p>
+<h3>模板A：黄金三章结构生成</h3>
+<pre><code class="language-text">你是爆款网文开篇策划。请为我的小说设计黄金三章的任务卡。
+
+【我的设定】
+题材：{题材，如：都市重生}
+主角：{主角身份与处境}
+金手指：{金手指能力}
+目标读者：{如：番茄小说男频 18-30 岁}
+
+【结构要求】
+第一章【留人】：前 300 字给出悬念/冲突/金手指三选一，讲清主角缺什么、被逼到什么地步；本章结尾一个钩子。
+第二章【立矛盾】：核心矛盾确立，读者要明白这本书要讲什么；安排一个打脸/反转场景。
+第三章【小高潮】：第一个爽点兑现，让读者觉得&quot;这书能看&quot;，结尾埋一个世界级秘密或更大的钩子。
+
+【输出格式】
+每章输出：章节任务 | 开篇 300 字设计（可直接用）| 本章情节要点（3 个 beat）| 章末钩子。
+不要解释过程，直接给成品。
+</code></pre>
+<hr>
+<h2>11.3 爽点设计：极限铺垫 + 情绪节拍</h2>
+<p>爽点不是"打脸"这么简单，它的核心公式是<strong>铺垫越狠，爆发越爽</strong>。网文创作方法论里的"极限铺垫原则"：一切爽点的爆发力都源于其反方向的极限铺垫——必须遵循"欲扬先抑"，且困境要立体化（主角个人 + 家庭 + 阶层 + 时代背景多层受压）["https://programnotes.cn/ai-deepseek-novel/index.html"]。</p>
+<p>情绪节拍表（付费课标准四拍）：</p>
+<table>
+<thead>
+<tr>
+<th>节拍</th>
+<th>作用</th>
+<th>时长控制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>起（铺垫/受辱/绝境）</td>
+<td>积累情绪势能</td>
+<td>1-3 章内完成一次循环</td>
+</tr>
+<tr>
+<td>承（反击准备）</td>
+<td>让读者看到反攻希望</td>
+<td>快节奏，不拖</td>
+</tr>
+<tr>
+<td>转（反转/打脸）</td>
+<td>情绪集中释放</td>
+<td>单章内给足细节</td>
+</tr>
+<tr>
+<td>结（阶段结算）</td>
+<td>收获 + 新目标</td>
+<td>让读者满足后再抛新钩子</td>
+</tr>
+</tbody>
+</table>
+<h3>模板B：爽点节拍设计</h3>
+<pre><code class="language-text">你是网文情绪节奏设计师。为下面的情节设计一段完整的爽点节拍。
+
+【情节】{要写的爽点情节，如：主角在宗门大比上被当众羞辱后绝地反击}
+
+【设计要求】
+- 按&quot;铺垫→反击→爆发→结算&quot;四拍输出；
+- 铺垫部分写清楚：主角被压到什么地步（至少两层压力：当众 + 深层原因）；
+- 爆发部分要求：打脸要有具体动作和围观者反应，不要一句带过；
+- 结算部分要求：给出物质收获 + 情绪出口 + 一个新悬念；
+- 每拍给出 200-400 字的正文示例（可直接用）。
+
+【输出格式】四拍小节标题 | 每拍正文示例 | 每拍结尾的情绪状态标注。
+</code></pre>
+<hr>
+<h2>11.4 期待感管理：让读者追更的底层机制</h2>
+<p>付费课反复讲的"读者期待感管理"：通过<strong>前置伏笔、明牌反派、阶段目标</strong>，让读者持续对后续兑现产生焦渴感 ["https://www.iesdouyin.com/share/video/7683202852226977060"]。</p>
+<p>三个落地手段：
+1. <strong>前置伏笔</strong>：第 1-3 章埋的伏笔，明确告诉读者"这个东西后面会用"（如神秘信件、玉佩、系统提示）；
+2. <strong>明牌反派</strong>：别把反派藏到最后，开头就亮出强大到绝望的反派/势力，读者等着主角翻身；
+3. <strong>阶段目标</strong>：每 20-30 章一个明确的大目标（复仇对象、势力争霸、秘境开启），让读者有"追到那个节点"的理由。</p>
+<hr>
+<h2>11.5 断章钩子：章末逼人点下一章</h2>
+<p>付费课"章末断章钩子"方法论：在单章结尾制造必须看下一章的理由 ["https://www.iesdouyin.com/share/video/7683202852226977060"]。三种经久不衰的钩子：</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>写法</th>
+<th>适用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>悬念型</td>
+<td>一个信息突然反转（"他不是……"）</td>
+<td>悬疑/玄幻/都市</td>
+</tr>
+<tr>
+<td>威胁逼近型</td>
+<td>危机倒计时（"三日后，大比开始"）</td>
+<td>升级流</td>
+</tr>
+<tr>
+<td>情感型</td>
+<td>关键人物表态/出现（"她终于认出我了"）</td>
+<td>情感/都市</td>
+</tr>
+</tbody>
+</table>
+<h3>模板C：章末断章钩子生成</h3>
+<pre><code class="language-text">你是断章钩子设计专家。请为本章内容设计 3 个不同方向的章末钩子。
+
+【本章内容摘要】
+{本章发生的事 + 当前角色的状态 + 你希望读者期待什么}
+
+【输出要求】
+- 给出 3 个钩子，类型分别偏：悬念反转 / 威胁逼近 / 情感冲击；
+- 每个钩子给：1 句正文示例（可直接贴在章末）+ 它能勾起读者什么期待；
+- 最后推荐 1 个最适合本作品类型的，说明理由。
+</code></pre>
+<hr>
+<h2>11.6 节奏管理：高潮的分布</h2>
+<p>付费课节奏规则（直接可用）：<strong>每 5-8 章一个小高潮，每 20-30 章一个大爆发点，避免连续超过 3 章"日常/过渡"</strong>；每章必须包含：章节标题（有悬念感）、核心事件（推进了什么）、情绪定位（燃/虐/甜/悬疑/日常）、结尾钩子（为什么看下一章）["https://www.iesdouyin.com/share/video/7664813384311820468"]。</p>
+<p>写大纲时就按这个节拍排布（联动第 4 章大纲模板，在卷纲里标出高潮章）。</p>
+<hr>
+<h2>11.7 操作步骤</h2>
+<ol>
+<li><strong>开篇前</strong>：用模板A 生成黄金三章任务卡，人工检查三章各自完成"留人/立矛盾/小高潮"；</li>
+<li><strong>写爽点</strong>：用模板B 设计节拍，重点检查铺垫层数（≥2 层压力）和打脸的具体度；</li>
+<li><strong>每章收尾</strong>：用模板C 出 3 个钩子选 1，禁止"无钩子收尾"；</li>
+<li><strong>卷纲排布</strong>：按 5-8 章小高潮 / 20-30 章大爆点标注全卷节奏（联动第 4 章卷纲模板）；</li>
+<li><strong>发书后</strong>：用真实数据验证——留存差优先改前 300 字，完读差优先改断章。</li>
+</ol>
+<hr>
+<h2>11.8 常见坑 + 解决方法</h2>
+<table>
+<thead>
+<tr>
+<th>坑</th>
+<th>现象</th>
+<th>解法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>前 300 字写背景</td>
+<td>读者 2 秒退出</td>
+<td>300 字内必给钩子（悬念/冲突/金手指三选一）</td>
+</tr>
+<tr>
+<td>铺垫不足直接爽</td>
+<td>爽感廉价、记不住</td>
+<td>极限铺垫：至少两层压力 + 欲扬先抑</td>
+</tr>
+<tr>
+<td>每章都平收</td>
+<td>追读率低</td>
+<td>模板C 出钩子，禁止无钩收尾</td>
+</tr>
+<tr>
+<td>连续日常章</td>
+<td>读者弃书</td>
+<td>单章即"日常"也要内嵌小冲突，超 3 章连续过渡必须砍</td>
+</tr>
+<tr>
+<td>爽点一句带过</td>
+<td>读者无满足感</td>
+<td>爆发要有具体动作 + 围观反应 + 结算收获</td>
+</tr>
+<tr>
+<td>埋了伏笔忘回收</td>
+<td>读者骂街</td>
+<td>伏笔登记进设定集（联动第 7 章），写明"预计第几章回收"</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>11.9 本章推荐素材</h2>
+<ul>
+<li>阅文作家专区高赞方法论（开篇 300 字钩子、三章结构、书名简介）：https://write.qq.com/portal/community/topic/detail/96381521685955401</li>
+<li>极限铺垫原则与多层级困境（DeepSeek 网文方法论）：https://programnotes.cn/ai-deepseek-novel/index.html</li>
+<li>网文情绪节拍表 / 期待感管理 / 断章钩子（付费课要点）：https://www.iesdouyin.com/share/video/7683202852226977060</li>
+<li>番茄 solo 30 万字实战 skill（章末钩子、番茄大数据风向标）：https://forum.trae.cn/t/topic/18429</li>
+</ul><a class="back-top" href="#course-top">返回目录 ↑</a></article><article class="lesson" id="chapter-12"><div class="section-kicker">第 12 章</div><h1>第 12 章 包装与连载运营：书名、简介、签约与数据</h1>
+<blockquote>
+<p>一句话教学目标：学完本章，你能给小说配一套能点击的书名/简介，知道怎么投稿签约，并用平台数据反向优化连载——把"写完一本书"变成"养起一本书"。</p>
+</blockquote>
+<hr>
+<h2>12.1 书名：标题是第一次点击</h2>
+<p>书名决定读者点不点进来，是转化率第一入口。阅文作家专区的方法论：<strong>书名要包含题材标签 + 核心卖点</strong>，让目标读者一眼知道"这是什么书、有什么可看的" ["https://write.qq.com/portal/community/topic/detail/96381521685955401"]。</p>
+<p>实操规律：
+- 题材前置：书名直接带"重生""系统""签到""赘婿"等题材关键词；
+- 卖点前置：点出金手指或爽点（"开局……""全球……我只……"）；
+- 长度克制：10 字内最佳，过长会被截断；
+- 避免文艺腔：商业网文书名要直给，别用诗集式命名。</p>
+<h3>模板A：书名批量生成</h3>
+<pre><code class="language-text">你是网文书名策划。请为我的小说生成 20 个候选书名。
+
+【题材】{题材，如：都市异能}
+【金手指/核心卖点】{如：签到就能获得一项技能}
+【主角开局】{一句话说清主角处境，如：被逐出家族的废柴}
+
+【规则】
+- 每个书名 4-12 个字，必须包含题材关键词或卖点词；
+- 优先句式：主角身份+反转（&quot;废物……&quot;）、开局梗（&quot;开局……&quot;）、金手指名（&quot;签到……&quot;）；
+- 给出 20 个，按&quot;点击欲&quot;从高到低排列；
+- 每个书名后附 5 字以内卖点注释。
+
+【输出格式】编号 | 书名 | 卖点注释
+</code></pre>
+<hr>
+<h2>12.2 简介：前 300 字决定追不追</h2>
+<p>简介（文案）是第二次转化。核心规律：<strong>卖点前置、悬念收尾、一段讲清"主角是谁 + 处境 + 金手指 + 一个钩子"</strong>。</p>
+<ul>
+<li>首句给最狠的卖点（不卖关子）；</li>
+<li>中间一段交代核心矛盾；</li>
+<li>结尾用一句悬念/反问逼出"点追读"动作；</li>
+<li>字数 200-400 字，手机上两屏内读完。</li>
+</ul>
+<h3>模板B：简介文案生成</h3>
+<pre><code class="language-text">你是网文编辑，负责写简介。请为下面的小说写一版简介。
+
+【题材】{题材}
+【主角】{主角身份、核心目标、最大的困境}
+【金手指】{能力 + 限制（如果有）}
+【核心悬念】{全书最勾人的一个问题}
+
+【规则】
+- 第一句必须是最强卖点，不用铺垫；
+- 全篇 200-400 字，两屏内读完；
+- 结尾一句悬念或反问；
+- 语气与题材匹配（爽文直接、悬疑克制）；
+- 给出 3 个版本，风格分别为：直给爽感版 / 悬念钩子版 / 代入共情版。
+
+【输出格式】版本名 | 简介全文
+</code></pre>
+<hr>
+<h2>12.3 投稿与签约：平台差异</h2>
+<p>不同平台规则不同（2026 年实测口径）：</p>
+<table>
+<thead>
+<tr>
+<th>平台</th>
+<th>签约模式</th>
+<th>关键指标</th>
+<th>AI 红线</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>番茄小说</td>
+<td>免费 + 广告分成</td>
+<td>完读率、追读率</td>
+<td>纯 AI 批量生成拒绝签约/封号，AI 辅助允许 ["https://fanqienovel.com/writer/zone/article/7642544663915675672"]</td>
+</tr>
+<tr>
+<td>起点（阅文）</td>
+<td>VIP 订阅</td>
+<td>收藏、追读、订阅比</td>
+<td>AI 辅助须后台主动声明，严禁全篇 AI 代写 ["https://www.iesdouyin.com/share/video/7652624529465937178"]</td>
+</tr>
+<tr>
+<td>晋江文学城</td>
+<td>原创向、会员/订阅</td>
+<td>收藏、作收</td>
+<td>平台长期定位原创，对 AI 内容态度保守 ["https://www.chinanews.com/cul/2026/03-09/10584016.shtml"]</td>
+</tr>
+</tbody>
+</table>
+<p>投稿实操要点：
+1. <strong>前 3 章 + 正文 2-3 章</strong>准备齐全再投（编辑主要看这个量）；
+2. 投稿前先过第 10 章合规自查 + 第 11 章黄金三章检查；
+3. 数据导向：番茄拼完读、起点拼追读、盐选拼卡点（联动第 9 章平台发布要点）。</p>
+<hr>
+<h2>12.4 连载数据运营：用数字改书</h2>
+<p>连载不是"写完发完"，是"看数据改书"。核心看四个数：</p>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>反映什么</th>
+<th>数据差时怎么改</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>完读率</td>
+<td>读者读没读完</td>
+<td>前 300 字钩子 + 断章（联动第 11 章）</td>
+</tr>
+<tr>
+<td>追读率</td>
+<td>读者跟不跟</td>
+<td>章末钩子 + 期待感管理</td>
+</tr>
+<tr>
+<td>收藏/书架</td>
+<td>读者愿不愿追完</td>
+<td>书名简介（本章）+ 前期爽点密度</td>
+</tr>
+<tr>
+<td>评论区催更/弃坑</td>
+<td>情绪与弃书点</td>
+<td>读弃坑评论找共因，改对应章节</td>
+</tr>
+</tbody>
+</table>
+<p>番茄平台治理数据也说明：行文机械、语言模板化、空洞水文会被判"AI 粗制滥造"拒绝签约——<strong>人工审改是连载的底线，不是可选</strong> ["https://www.iesdouyin.com/share/video/7687864681609141497"]。</p>
+<h3>模板C：数据复盘与修改建议</h3>
+<pre><code class="language-text">你是网文运营编辑。根据我的连载数据，输出下阶段的修改方案。
+
+【数据】
+- 完读率：{如：第 1 章 40%，第 3 章 12%}
+- 追读率：{如：8%}
+- 读者反馈摘要：{评论/弃坑原因摘录}
+
+【要求】
+- 定位流失最严重的章节节点（哪一章掉最多）；
+- 给出 3 条优先级最高的修改动作，每条写清：改哪里、怎么改、预期影响哪个指标；
+- 区分&quot;内容问题&quot;（钩子/节奏/爽点）和&quot;运营问题&quot;（更新频率/断更），不要混为一谈；
+- 输出：流失节点定位 | 修改清单（按优先级）| 下个数据观察周期与达标线。
+</code></pre>
+<hr>
+<h2>12.5 常见坑 + 解决方法</h2>
+<table>
+<thead>
+<tr>
+<th>坑</th>
+<th>现象</th>
+<th>解法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>书名文艺不直给</td>
+<td>目标读者搜不到、不想点</td>
+<td>模板A 批量生成，选带题材关键词的</td>
+</tr>
+<tr>
+<td>简介第一句不卖点</td>
+<td>点进来又划走</td>
+<td>首句给最强卖点，结尾留悬念</td>
+</tr>
+<tr>
+<td>一口气全发存稿</td>
+<td>没有数据可迭代</td>
+<td>分批更新，每批看数据再写下一批</td>
+</tr>
+<tr>
+<td>只追收藏不看留存</td>
+<td>收藏涨订阅崩</td>
+<td>主看完读/追读，用模板C 复盘</td>
+</tr>
+<tr>
+<td>忽视弃坑评论</td>
+<td>读者流失不知道原因</td>
+<td>定期汇总弃坑点，反查对应章</td>
+</tr>
+<tr>
+<td>平台规则变化</td>
+<td>莫名被限流/拒签</td>
+<td>每季度看平台官方公告（番茄低质治理每月更新）</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>12.6 本章推荐素材</h2>
+<ul>
+<li>阅文作家专区（书名/简介/三章方法论）：https://write.qq.com/portal/community/topic/detail/96381521685955401</li>
+<li>番茄小说官方低质治理公告（签约/封禁规则依据）：https://fanqienovel.com/writer/zone/article/7642544663915675672</li>
+<li>网文平台 AI 政策全景（番茄 AI 训练协议争议、晋江立场）：https://www.chinanews.com/cul/2026/03-09/10584016.shtml</li>
+<li>番茄 solo 实战 skill（热词植入、数据风向标）：https://forum.trae.cn/t/topic/18429</li>
+</ul><a class="back-top" href="#course-top">返回目录 ↑</a></article><article class="lesson" id="chapter-13"><div class="section-kicker">第 13 章</div><h1>第 13 章 经典叙事结构与 POV：让长篇不散架</h1>
+<blockquote>
+<p>一句话教学目标：学完本章，你能用三幕结构、Hero's Journey、24 章蓝图和 POV 视角规划，把任何题材组织成结构完整的长篇——结构不再靠灵感，而是可生成、可检查的工程。</p>
+</blockquote>
+<hr>
+<h2>13.1 三幕结构：一切结构的底座</h2>
+<p>三幕结构是所有叙事模型的公共底座：<strong>Setup（建立）→ Confrontation（对抗）→ Resolution（解决）</strong>，比例大致 25% / 50% / 25%。</p>
+<table>
+<thead>
+<tr>
+<th>幕</th>
+<th>内容</th>
+<th>关键节点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第一幕（建立）</td>
+<td>主角日常 → 激励事件 → 新世界</td>
+<td>第 1 转折点：主角做出不可逆选择</td>
+</tr>
+<tr>
+<td>第二幕（对抗）</td>
+<td>升级冲突、中间点转折、至暗时刻</td>
+<td>中点：伪胜利/伪失败；至暗时刻：最大挫败</td>
+</tr>
+<tr>
+<td>第三幕（解决）</td>
+<td>最终对决 → 回归 → 新常态</td>
+<td>高潮：正邪决战；结局：余波与新的开始</td>
+</tr>
+</tbody>
+</table>
+<h3>模板A：三幕结构映射</h3>
+<pre><code class="language-text">你是叙事结构设计师。请把我的小说大纲映射到三幕结构上。
+
+【小说设定与大纲要点】
+{题材 + 主角 + 核心冲突 + 已有关键情节（如有）}
+
+【输出要求】
+- 按第一幕/第二幕/第三幕输出；
+- 每幕标注：核心目标、该幕的关键转折节点（第一幕激励事件、中点转折、至暗时刻、高潮）；
+- 检查现有情节：哪些地方会&quot;结构塌陷&quot;（如第二幕空转、高潮过早），逐个指出；
+- 最后给一句结构诊断结论。
+</code></pre>
+<hr>
+<h2>13.2 Hero's Journey：英雄之旅 12 阶段</h2>
+<p>付费课（Udemy《AI-Powered Fiction》等）把 Hero's Journey 作为 AI 辅助结构化的标准框架 ["https://www.udemy.com/course/ai-powered-fiction-with-chatgpt/"]。12 阶段可直接当章节地图用：</p>
+<ol>
+<li>普通世界 → 2. 冒险召唤 → 3. 拒绝召唤 → 4. 遇见导师 → 5. 跨越门槛 → 6. 考验/盟友/敌人 → 7. 深入洞穴 → 8. 严峻考验（至暗时刻）→ 9. 获得奖赏 → 10. 回归之路 → 11. 复活（最终考验）→ 12. 带着灵药归来</li>
+</ol>
+<h3>模板B：Hero's Journey 章节映射</h3>
+<pre><code class="language-text">你是英雄之旅结构专家。请把我的小说按 12 阶段映射为章节蓝图。
+
+【小说设定】
+{题材 + 主角 + 金手指 + 最终目标}
+
+【输出要求】
+- 12 个阶段各对应哪几章（给出章节范围）；
+- 每个阶段标注：核心事件、主角状态变化（从 A 到 B）、该阶段必须完成的叙事功能；
+- 如果我的题材不适合英雄之旅（如群像/日常系），明确说明并建议替代结构；
+- 输出为 12 行表格：阶段 | 章节 | 核心事件 | 状态变化。
+</code></pre>
+<hr>
+<h2>13.3 24 章蓝图：长篇的标准化节拍</h2>
+<p>Derek Murphy 的 24 章小说蓝图（付费课在用）：把 9 万字上下的长篇标准化为 24 章，每 3 章一个 beat 块，8 个 beat 块组成全结构 ["https://www.udemy.com/course/ai-powered-fiction-with-chatgpt/"]。适合：把"写 24 章"变成"填 8 个节奏块"。</p>
+<table>
+<thead>
+<tr>
+<th>块</th>
+<th>章节</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1-3</td>
+<td>引入主角与世界、激励事件</td>
+</tr>
+<tr>
+<td>2</td>
+<td>4-6</td>
+<td>接受冒险、跨入新世界</td>
+</tr>
+<tr>
+<td>3</td>
+<td>7-9</td>
+<td>学习规则、初遇盟友与敌人</td>
+</tr>
+<tr>
+<td>4</td>
+<td>10-12</td>
+<td>首次重大考验、中点转折</td>
+</tr>
+<tr>
+<td>5</td>
+<td>13-15</td>
+<td>升级冲突、深化代价</td>
+</tr>
+<tr>
+<td>6</td>
+<td>16-18</td>
+<td>至暗时刻、最大挫败</td>
+</tr>
+<tr>
+<td>7</td>
+<td>19-21</td>
+<td>卷土重来、最终准备</td>
+</tr>
+<tr>
+<td>8</td>
+<td>22-24</td>
+<td>高潮决战、结局与新常态</td>
+</tr>
+</tbody>
+</table>
+<h3>模板C：24 章蓝图生成</h3>
+<pre><code class="language-text">你是长篇结构规划师。请把我的故事拆成 24 章蓝图。
+
+【故事设定与目标篇幅】
+{题材 + 主角 + 核心冲突 + 预计总字数（建议 8-12 万字）}
+
+【输出要求】
+- 按 8 个节奏块输出，每块 3 章；
+- 每章给出：章节功能（必须完成什么）+ 核心事件 + 章节情绪定位（燃/虐/甜/悬疑）+ 章末钩子方向；
+- 24 章全部输出，不要省略；
+- 完成后检查：中点转折是否在第 12 章附近、至暗时刻是否在第 16-18 章区间、高潮是否在第 22-24 章。
+</code></pre>
+<hr>
+<h2>13.4 Beats：章节内的故事节拍</h2>
+<p>宏观结构管章节分布，beats 管单章内部。付费课方法论（AI Bestsellers for Authors 的章节结构课）：<strong>每章由若干 beats 组成，每个 beat 是"一个明确的叙事节拍"</strong>——事件推进、角色状态变化、信息揭示 ["https://aibestsellersforauthors.com/"]。</p>
+<p>单章 beat 结构模板（可直接用）：
+- <strong>Opening Beat</strong>：承接上章 + 本章目标；
+- <strong>Conflict Beat</strong>：核心冲突推进（动作/对话/揭示）；
+- <strong>Escalation Beat</strong>：压力升级（新信息/新阻碍/选择时刻）；
+- <strong>Cliffhanger Beat</strong>：章末钩子（联动第 11 章）。</p>
+<p>用第 4 章单章细纲模板时，把每章拆成这 4 个 beat 填，写正文时逐 beat 执行，就不会"一章写飞"。</p>
+<hr>
+<h2>13.5 POV 视角规划：谁在讲这个故事</h2>
+<p>付费课把 POV 分配列为大纲阶段必做项（AI Bestsellers：章节 POV 要在角色间合理分配）["https://aibestsellersforauthors.com/"]。常见选项：</p>
+<table>
+<thead>
+<tr>
+<th>视角</th>
+<th>特点</th>
+<th>适用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第一人称（单主）</td>
+<td>代入感最强，信息受限</td>
+<td>悬疑、都市、言情</td>
+</tr>
+<tr>
+<td>第三人称有限（单主）</td>
+<td>代入 + 叙事自由平衡</td>
+<td>绝大多数网文</td>
+</tr>
+<tr>
+<td>多视角轮换</td>
+<td>多线叙事、信息量</td>
+<td>群像、权谋、群像升级流</td>
+</tr>
+</tbody>
+</table>
+<p>POV 规则（写入设定集，联动第 3 章）：
+1. <strong>一章一个视角</strong>为主，切换要隔章或明确分段；
+2. 每个视角角色要有<strong>专属信息域</strong>（他知道什么、不知道什么）；
+3. 视角切换点 = 信息优势切换点（换 POV 必须让读者看到新信息）。</p>
+<h3>模板D：POV 规划</h3>
+<pre><code class="language-text">你是叙事视角设计师。请为我的小说规划 POV 分配方案。
+
+【设定】
+{题材 + 主要角色（每个角色的立场/信息量）+ 多线程度}
+
+【输出要求】
+- 推荐主视角类型（第一/第三有限/多视角轮换），说明理由；
+- 列出每个承担视角的角色，标注：他的信息域、读者借他视角能知道什么、不能知道什么；
+- 给出前 10 章的视角分配表（哪章用谁）；
+- 标注容易&quot;视角泄露&quot;的坑（如用了甲的 POV 却写了乙才知道的信息）。
+</code></pre>
+<hr>
+<h2>13.6 操作步骤</h2>
+<ol>
+<li><strong>构思期</strong>：模板A 把想法映射到三幕，先确认结构成立再往下；</li>
+<li><strong>规划期</strong>：需要英雄之旅的用模板B，需要标准化篇幅的用模板C，产出章节蓝图；</li>
+<li><strong>大纲期</strong>：蓝图 → 第 4 章卷纲/章纲模板细化，每章按 4-beat 结构填；</li>
+<li><strong>POV 期</strong>：模板D 定视角分配，写进设定集，写正文时严格遵守；</li>
+<li><strong>检查期</strong>：第 10 章评测时加查"结构项"（中点/至暗/高潮位置是否到位）。</li>
+</ol>
+<hr>
+<h2>13.7 常见坑 + 解决方法</h2>
+<table>
+<thead>
+<tr>
+<th>坑</th>
+<th>现象</th>
+<th>解法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第二幕空转</td>
+<td>中段拖沓、主线消失</td>
+<td>检查中点转折是否在第 50% 处，空转段加支线冲突</td>
+</tr>
+<tr>
+<td>高潮过早</td>
+<td>后期平淡</td>
+<td>至暗时刻必须晚于 2/3 处，前期克制大高潮</td>
+</tr>
+<tr>
+<td>章内无 beats</td>
+<td>一章流水账</td>
+<td>每章拆 4-beat，冲突 beat 必须有推进</td>
+</tr>
+<tr>
+<td>POV 混乱</td>
+<td>读者分不清谁在想</td>
+<td>一章一视角，视角泄露逐条清（模板D 检查）</td>
+</tr>
+<tr>
+<td>结构模板硬套</td>
+<td>题材不适配</td>
+<td>群像/日常系明确换结构，别硬套英雄之旅</td>
+</tr>
+<tr>
+<td>24 章算死字数</td>
+<td>内容不够强拆</td>
+<td>蓝图是节拍不是字数，块可伸缩，功能不能缺</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>13.8 本章推荐素材</h2>
+<ul>
+<li>Udemy《AI-Powered Fiction with ChatGPT》（24 章结构 + Hero's Journey 的付费课公开大纲）：https://www.udemy.com/course/ai-powered-fiction-with-chatgpt/</li>
+<li>AI Bestsellers for Authors（章节结构、beats、POV 分配的付费课公开大纲）：https://aibestsellersforauthors.com/</li>
+<li>Rob Parnell Writing Academy《Writing Fiction with AI》（故事弧与 beats 课纲）：https://rob-parnell-writing-academy.thinkific.com/products/courses/writing-fiction-with-ai</li>
+</ul><a class="back-top" href="#course-top">返回目录 ↑</a></article><article class="lesson" id="chapter-14"><div class="section-kicker">第 14 章</div><h1>第 14 章 爆款拆书：从热榜学结构</h1>
+<blockquote>
+<p>教学目标：学完能对任何在榜爆款做五问结构化拆解，把钩子、黄金三章、爽点机制转成自己的写作清单。</p>
+</blockquote>
+<h2>为什么拆书</h2>
+<p>付费课讲"黄金三章"，但不告诉你爆款到底长什么样。拆书是把抽象方法论还原成具体案例：拿到一本在榜书，按固定问题逐条拆，拆完你就有了一张可以直接对照自己开篇的清单。方法比天赋可靠，因为热榜是平台读者用脚投票的结果。</p>
+<h2>拆什么：四个固定观察点</h2>
+<ol>
+<li><strong>开篇钩子（前 300 字）</strong>：第一个事件是什么？危机、悬念、反差还是金手指首秀？</li>
+<li><strong>黄金三章任务</strong>：三章各自完成什么？代入感 / 金手指 / 小爽点是否各就各位。</li>
+<li><strong>爽点驱动机制</strong>：爽感靠什么产生？规则漏洞、信息差、成长升级、打脸反击——找到引擎而不是场景。</li>
+<li><strong>人物与世界观设定</strong>：主角能力的"独特性和代价"，世界观哪条规则制造了冲突。</li>
+</ol>
+<h2>拆解卡 1：《十日终焉》（番茄 · 悬疑无限流）</h2>
+<ul>
+<li><strong>一句话卖点</strong>：开局困局 + 规则游戏 + 说谎者身份反转，几十亿阅读、完结后持续霸榜。</li>
+<li><strong>开篇钩子</strong>：开场即 10 人密室，主持人直接说"本次只有九位"，话音未落当场撞碎一个人脑袋立威。读者瞬间得到三条信息：这里很危险、规则会死人、别废话——没有一个字讲世界观。</li>
+<li><strong>黄金三章节奏</strong>：第 1 章规则初显 + 身份牌发给主角（读者被迫站在"说谎者"视角，看他怎么编过八个人）；第 2 章身份牌反转。每章结尾藏钩子。</li>
+<li><strong>爽点机制</strong>：规则即引擎——规则写得清楚但留漏洞，主角不是靠战力碾压，而是在规则里找漏洞、求生路、反杀。爽感有代价，不是一边倒。</li>
+<li><strong>可复用</strong>：开篇不介绍背景，直接扔进危险环境制造问题（"这到底是什么地方？不照做会怎样？"）；把规则写清楚再留一个能钻的洞；章末必须断在悬念上。</li>
+</ul>
+<h2>拆解卡 2：《玄鉴仙族》（起点 · 家族修仙群像）</h2>
+<ul>
+<li><strong>一句话卖点</strong>：全知旁观者 + 凡人家族百年创业史，月票榜常客。</li>
+<li><strong>开篇钩子</strong>：主角熬夜猝死，残魂附在一面裂痕古镜上，被河边小村一个家庭拾到——"传仙道授仙法"一句话就是钩子：他能干什么？代价是什么？</li>
+<li><strong>核心设定</strong>：主角不能动、不能修，只能当"全知旁观者"，靠赐下玄珠符种点化族人修行。符种上限六枚，每损一枚鉴灵根基动摇——<strong>能力有明确代价</strong>。</li>
+<li><strong>爽点机制</strong>：信息差 + 成长感。主角不强，家族从几亩薄田成长为紫府仙族，读者爽的是"我参与缔造了一个世家"。</li>
+<li><strong>可复用</strong>：主角能力可以是"信息/分配权"而不是战力（新手写战力极易崩，写信息差不容易崩）；成长对象可以是组织/家族而非个人；起点要低（凡人开局，天花板极高）。</li>
+</ul>
+<h2>拆解卡 3：《1984：从破产川菜馆开始》（起点 · 年代美食文）</h2>
+<ul>
+<li><strong>一句话卖点</strong>：美食博主重生 1984，接手破产川菜馆，给物资匮乏的年代一点美食震撼，月票榜前十。</li>
+<li><strong>开篇钩子</strong>：第 1 章"重生 1984"用对话体开场——"听说周砚那小子早上救的姑娘，是林副厂长来探亲的外甥女""鬼扯！周二娃这旱鸭子还救人？"——闲话里立人物、埋悬念（救人的是谁？上辈子发生了什么？），没有一句平铺。</li>
+<li><strong>黄金三章</strong>：第 1 章立人物处境（接盘破产馆、外债成山、人人看衰）；第 2 章金手指首秀（双椒牛肉面，加量不加价打价格战）。</li>
+<li><strong>爽点机制</strong>：具象美食 + 市井烟火 + 反差打脸。方言细节（"巴适""龟儿子""胎神"）大幅增强代入感。</li>
+<li><strong>可复用</strong>：用旁观者对话开场替代作者旁白；金手指首秀放在第 2 章而不是第 1 章（先让人物困境成立）；方言/年代细节比形容词有用。</li>
+</ul>
+<h2>拆解卡 4：《魔校学习指南》（番茄 · 女频穿书）</h2>
+<ul>
+<li><strong>一句话卖点</strong>：废柴穿书 + 出格操作立人设 + 群像救赎，北京青年报网文榜 2026 年 9 月榜入选。</li>
+<li><strong>开篇钩子</strong>：穿书进中式魔法学院，入学即被测出"废校生"身份面临清退，死局当前——主角选择死缠烂打：剪院旗做衣服、照昏睡魔药配方炒辣炒蛇草、偷练照明魔法火烧藏书。三连出格操作直接立住"废物但能搞事"的人设。</li>
+<li><strong>爽点机制</strong>：反差 + 操作秀。废柴身份配出格行为，每一次违规都是小爽点；同门是原书炮灰/反派，主角成为命运线变数——配角救赎线提供长期钩子。</li>
+<li><strong>可复用</strong>：用连续出格行为替代性格说明段；给炮灰配角也配善恶、挫折与高光（群像厚度是完读率的隐形加分项）。</li>
+</ul>
+<h3>模板 A：爆款拆书框架</h3>
+<p>对任意一本在榜书做五问拆解，输出可直接对照自己开篇的清单：</p>
+<pre><code class="language-markdown">请按以下五问拆解我提供的小说/章节，输出结构化拆书卡，每问结论后标注&quot;可抄进我的 {我的书名} 的具体动作&quot;。
+
+### 五问
+1. 开篇钩子：前 300 字发生了什么事件？属于哪种钩子（极端危机/致命悬念/颠覆反差/金手指首秀）？读者被迫产生的第一个问题是什么？
+2. 黄金三章任务：三章各自完成什么（代入感/金手指/小爽点）？哪一章最弱？
+3. 爽点机制：爽感由什么驱动（规则漏洞/信息差/成长升级/打脸反击/操作秀）？每 3000 字左右落一次什么类型的爽点？
+4. 人物设定：主角能力的独特性与代价是什么？配角中有没有&quot;炮灰也有弧光&quot;的设计？
+5. 世界观：哪一条规则直接制造了冲突？（没有冲突的设定删掉）
+
+### 输出格式
+- 书名/平台/类型/在榜数据（如有）
+- 五问逐条回答（每条 ≤120 字）
+- &quot;可抄动作&quot;清单（3-5 条，每条 = 具体做法 + 对应我的书的场景）
+</code></pre>
+<h3>模板 B：开篇钩子诊断</h3>
+<p>写完后用爆款标准自查，定位前 300 字的流失点：</p>
+<pre><code class="language-markdown">你是网文平台资深编辑。这是我的小说开篇（前 300 字）：
+---
+{粘贴你的开篇}
+---
+请按爆款标准逐项诊断并打分（1-5 分）：
+1. 前 100 字内是否发生&quot;事件&quot;？读者被迫产生的第一个问题是什么？——没有事件给 1 分。
+2. 开篇是否在讲设定/背景/人物来历？（超过 2 句即扣分，读者看的是&quot;我为什么必须读下去&quot;）
+3. 主角处境是否立即有压力（危险/债务/死局/倒计时）？
+4. 是否出现&quot;3 秒定生死&quot;画面感？（一个可想象的具象动作或画面，而非形容词堆叠）
+5. 章末是否留有悬念？
+输出：五项分数 + 总评（该不该重写前 300 字）+ 逐句修改建议（改动最小优先）。
+</code></pre>
+<h2>操作步骤</h2>
+<ol>
+<li><strong>选书</strong>：番茄/起点在榜前 30 里，选你目标题材的书（同题材拆解价值最高）。</li>
+<li><strong>只读前 3 章 + 每章末 2 段</strong>：记录每章最后一个画面，验证"章末钩子"密度。</li>
+<li><strong>填拆书卡</strong>：用模板 A 逐问作答，别凭感觉，答案必须能从原文找到依据。</li>
+<li><strong>转清单</strong>：把"可抄动作"合并进你自己的开篇/大纲，逐条打钩。</li>
+<li><strong>周更</strong>：每月拆 2-3 本，只保留高价值卡片，宁缺毋滥。</li>
+</ol>
+<h2>常见坑 + 解决方法</h2>
+<table>
+<thead>
+<tr>
+<th>坑</th>
+<th>表现</th>
+<th>解决</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>只抄设定不抄结构</td>
+<td>记住"符种、规则游戏"却不知道钩子怎么埋</td>
+<td>拆解时强制回答"读者被迫产生的第一个问题"，写进卡里</td>
+</tr>
+<tr>
+<td>把"火爆"当"好"</td>
+<td>照搬烂俗套路，丢了自己的题材优势</td>
+<td>拆解只取机制（信息差/规则漏洞），不照抄情节</td>
+</tr>
+<tr>
+<td>拆表面剧情不拆机制</td>
+<td>复述剧情，说不清爽点靠什么驱动</td>
+<td>每章爽点标注"驱动类型"，与场景分离</td>
+</tr>
+<tr>
+<td>脱离题材硬套</td>
+<td>悬疑书硬套美食文节奏</td>
+<td>只对标同题材书，跨题材书只看钩子类型学技巧</td>
+</tr>
+<tr>
+<td>拆完不落地</td>
+<td>卡片积灰，开篇照旧</td>
+<td>每张卡必须产出"可抄动作"，直接改进开篇再写</td>
+</tr>
+</tbody>
+</table>
+<h2>本章推荐素材</h2>
+<ul>
+<li>《十日终焉》官方第 1 章（番茄）：https://fanqienovel.com/reader/7565187856180724286</li>
+<li>《十日终焉》第 1-3 章写法拆解（抖音）：https://www.iesdouyin.com/share/video/7683171871769388486</li>
+<li>北京青年报网文榜 2026 年 9 月榜（中国作家网，含《魔校学习指南》等）：http://www.chinawriter.com.cn/n1/2026/0917/c404023-40800484.html</li>
+<li>《1984：从破产川菜馆开始》第 1 章（起点）：https://m.qidian.com/bookrecommend/sqe6e3bf2bae366a89/</li>
+<li>《玄鉴仙族》作品简介与目录（起点）：https://m.qidian.com/bookrecommend/3a36c21ccf3caa0a/</li>
+</ul><a class="back-top" href="#course-top">返回目录 ↑</a></article><article class="lesson" id="chapter-15"><div class="section-kicker">第 15 章</div><h1>第 15 章 投稿实测：发出去才有数据</h1>
+<blockquote>
+<p>教学目标：学完能完成一次真实投稿并正确解读后台数据，知道这本书该继续写还是及时止损。</p>
+</blockquote>
+<h2>为什么必须有实测</h2>
+<p>写完 10 万字只是第一步。数据会告诉你三件事：读者在哪儿流失、你的写法在平台上吃不吃得开、该不该继续投入。不看数据闷头写，和看数据迭代，差距是复利级的。本章三个真实案例给出参考坐标，工作台模板让你从第一天就建立数据习惯。</p>
+<h2>三个真实案例（公开晒出的数据）</h2>
+<p><strong>案例 A · 正面样本：首秀爆量路径</strong>（番茄站内实战书《我在番茄码字写小说》，作者自述）</p>
+<ul>
+<li>半年累计 4.2 万元分成稿费；单日最高收益出现在完结推流期，842 元。</li>
+<li>人气配角独立成篇，获平台星火计划奖励；IP 孵化（场景素材包置换分成合约）。</li>
+<li>参考点：<strong>收益大头在完结推流与衍生开发，不是首秀当天</strong>；长线经营才有复利。</li>
+<li>来源：https://fanqienovel.com/reader/7472782736978100760</li>
+</ul>
+<p><strong>案例 B · 全貌样本：四本书的起伏</strong>（搜狐作者复盘，2024 年）</p>
+<ul>
+<li>第一本扑街只拿全勤，写到 77 万字完结；一年四本共 200 万字，总收益不到 1 万。</li>
+<li>第二本年代文首秀第一天 3 万阅读量，最高一天约 6 万量、当天收益过千，随后回落。</li>
+<li>参考点：<strong>同一作者、不同书，数据天差地别</strong>；首秀量高不等于稳定，题材/写法影响远大于运气。</li>
+<li>来源：https://m.sohu.com/a/775672242_120277781</li>
+</ul>
+<p><strong>案例 C · 新人样本：首秀第一天的真实数字</strong>（大学生作者直播记录，2026 年）</p>
+<ul>
+<li>番茄首秀第一天：阅读人数 270，当日收益 2 元；验证期只是测试，真正的推荐期从 10 万字后才开始。</li>
+<li>参考点：<strong>首秀当天别当判决</strong>——平台流量池机制下，第 1-3 天数据低是常态，观察窗口至少一周。</li>
+<li>来源：https://www.iesdouyin.com/share/video/7624004905291762978</li>
+</ul>
+<h2>平台机制差异（投稿前必须知道）</h2>
+<table>
+<thead>
+<tr>
+<th>平台</th>
+<th>商业模式</th>
+<th>签约门槛</th>
+<th>关键节点</th>
+<th>适合类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>番茄小说</td>
+<td>免费阅读 + 广告分成</td>
+<td>较低，后台直接发文测数据</td>
+<td>验证期 → 10 万字首秀 → 推荐期；每日更新有全勤</td>
+<td>男频爽文、女频快节奏、下沉向</td>
+</tr>
+<tr>
+<td>起点中文网</td>
+<td>付费订阅</td>
+<td>较高，签约要过审+编辑评估</td>
+<td>上架（通常 20-30 章）、首订定生死</td>
+<td>付费向严肃长篇、老读者</td>
+</tr>
+<tr>
+<td>晋江文学城</td>
+<td>付费订阅（女频）</td>
+<td>申请制，审核周期长</td>
+<td>收藏/榜单爬升，签约后入V</td>
+<td>言情、耽美、群像感情线</td>
+</tr>
+</tbody>
+</table>
+<p>签约收益口径（番茄）：独家签 = 全版权 50% 收益分成；大神签 = 千字 30-3000 元保底或买断。签约前看清"独家/非独家、版权期限、自动续约"条款。</p>
+<h3>模板 A：投稿实测记录表</h3>
+<p>从发书第一天开始，每天 5 分钟填这张表，首秀和复盘时数据才说得清话：</p>
+<pre><code class="language-markdown">复制到你的笔记软件，每天更新一行。字段含义见注释。
+| 日期 | 章节数 | 当日字数 | 阅读量 | 在读 | 当日收益 | 完读率 | 追读率 | 评论摘要 | 备注 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| {2026-09-22} | {12} | {3000} | {——首秀前留空} | {——} | {——} | {——} | {——} | {——} | {今天断章钩子埋在第3节，看明早数据} |
+
+字段口径：
+- 阅读量/在读：平台后台&quot;作品数据&quot;页。
+- 完读率：读完某章的比例，重点看第 1 章和第 3 章。
+- 追读率：看完最新章的人数占比，平台不同叫法略异；这是番茄推荐的核心指标。
+- 备注：记当天的写法实验（换了钩子/删了铺垫），复盘时才能归因。
+</code></pre>
+<h3>模板 B：周数据复盘</h3>
+<p>每周日把一周记录丢给 AI，让它当数据编辑，输出流失节点与修改清单：</p>
+<pre><code class="language-markdown">你是网文平台数据编辑。以下是我一周的投稿数据（番茄小说，{题材}，当前{章节数}章，{首秀前/首秀中/推荐期}）：
+---
+{粘贴模板A的一周记录}
+---
+请输出：
+1. 流失节点定位：哪一章/哪一天数据下滑最明显？结合备注，指出最可能的原因（钩子失效/铺垫过长/更新不规律/断章位置）。
+2. 优先级修改清单：按&quot;改动最小、收益最大&quot;排序 3 条，每条给出具体改法（只动该改的地方）。
+3. 观察期达标线：以当前阶段数据，给出未来 7 天应该达到的数值线（阅读/追读），低于则建议怎么调整。
+4. 一句话结论：继续写 / 小改继续 / 建议止损换题材。
+注意：只基于我提供的数据推断，标注哪些是推测。
+</code></pre>
+<h2>操作步骤</h2>
+<ol>
+<li><strong>注册实名</strong>：番茄/起点后台注册 + 实名认证（提现必需）。</li>
+<li><strong>先发 3 万字试水</strong>：别急着签，平台会让你先测数据；用第 11 章黄金三章标准自检后再发。</li>
+<li><strong>每日更新 + 记表</strong>：番茄全勤要求每日更新；每天收摊前填模板 A。</li>
+<li><strong>首秀（番茄 10 万字）</strong>：流量池放量，观察 7 天，不因首日数据停更。</li>
+<li><strong>周日复盘</strong>：跑模板 B，按优先级清单执行修改。</li>
+<li><strong>签约决策</strong>：数据达标再谈签约；合同看独家/全版权/版权期限/自动续约四条。</li>
+</ol>
+<h2>常见坑 + 解决方法</h2>
+<table>
+<thead>
+<tr>
+<th>坑</th>
+<th>表现</th>
+<th>解决</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>首秀当天当判决</td>
+<td>首日 2 元就弃坑，错过推荐期</td>
+<td>观察窗口至少 7 天，达标线看模板 B</td>
+</tr>
+<tr>
+<td>断更</td>
+<td>数据差就停更，全勤没了流量更差</td>
+<td>番茄全勤是保底，数据再差保持日更，完结推还有一次机会</td>
+</tr>
+<tr>
+<td>不记录数据</td>
+<td>凭感觉判断好坏，无法归因</td>
+<td>模板 A 每天 5 分钟，备注里记写法实验</td>
+</tr>
+<tr>
+<td>签约前不看合同</td>
+<td>独家签/版权期限没看清，后续被锁</td>
+<td>四查：独家还是非独家、全版权比例、版权期限、自动续约</td>
+</tr>
+<tr>
+<td>只盯收益不盯追读</td>
+<td>阅读高收益低，不知问题在哪</td>
+<td>番茄推荐看追读率，第 1/3 章完读率先于收益恶化</td>
+</tr>
+<tr>
+<td>数据差就怪平台</td>
+<td>忽略题材/写法因素</td>
+<td>案例 B：同作者四本书数据天差地别，先归因自己</td>
+</tr>
+</tbody>
+</table>
+<h2>本章推荐素材</h2>
+<ul>
+<li>番茄站内实战书《我在番茄码字写小说》（半年 4.2 万分成自述）：https://fanqienovel.com/reader/7472782736978100760</li>
+<li>番茄扑街作者一年四本复盘（搜狐）：https://m.sohu.com/a/775672242_120277781</li>
+<li>大学生番茄首秀第一天记录（抖音）：https://www.iesdouyin.com/share/video/7624004905291762978</li>
+<li>番茄作家福利页（签约收益/全勤口径）：https://fanqienovel.com/welfare</li>
+</ul><a class="back-top" href="#course-top">返回目录 ↑</a></article>
+  <section class="n-panel" id="articles"><h2>延伸阅读</h2><div class="article-grid"><a href="#article-1">AI写小说四步实战法</a><a href="#article-2">ChatGPT写小说六步法</a><a href="#article-3">Claude长篇小说写作助手手册</a><a href="#article-4">DeepSeek-V4提示词终极指南</a><a href="#article-5">DeepSeek打造爆款知乎盐选</a><a href="#article-6">做故事架构师而非码字工</a><a href="#article-7">多Agent架构写连载小说</a><a href="#article-8">用AI构思情节-NovelCrafter官方</a><a href="#article-9">用ChatGPT写长篇小说专业工作流</a><a href="#article-10">用Claude写34本小说的经验</a><a href="#article-11">用GPT-4从零写一整本小说</a><a href="#article-12">知乎盐选实操手册与AI提示词</a></div></section>
+  <article class="lesson resource" id="article-1"><div class="section-kicker">延伸阅读 1</div><h1>AI 写小说构思难？四步实战法生成连贯长篇网文</h1>
+<ul>
+<li><strong>来源 URL</strong>: https://edu.51cto.com/article/note/59755.html</li>
+<li><strong>作者/站点</strong>: 51CTO 学堂（资深讲师实战教学经验）</li>
+<li><strong>发布日期</strong>: 2026-08-22</li>
+</ul>
+<h2>核心观点摘要（中文）</h2>
+<p>文章针对 AI 辅助写作中"逻辑断层、细节缺失"两大痛点，给出四步标准化提示词流程。第一步"角色设定与核心创意"：明确题材与主题、让 AI 扮演"拥有 20 年经验的资深畅销书小说家"、输入具体故事种子（如"现代 AI 工程师携带助手穿越到秦朝"），并要求输出含 10 章的书名与每章梗概，附完整可粘贴提示词。第二步"大纲细化与故事骨架"：从初步大纲中挑出最有潜力的章节，扩展为 300 字以上详细简介，指定主角姓名（李明）、配角（小智）、核心冲突（现代科技思维 vs 秦朝封建制度）和结局走向，形成闭环。第三步"微观场景拆解与画面感"：把大章拆成"实验室准备/穿越瞬间/初步探索"等子场景逐一生成，对每个子场景单独发送"环境设施、人物动作、心理活动、感官体验"四维描写指令，解决 AI 写作画面感缺失。第四步"长篇连贯性与防跑题"：每次只生成一个场景/段落避免一次性写长失控；新内容前先回顾上文关键情节或直接以上一段结尾作上下文；明确衔接指示；用"继续生成"指令保持节奏。文中还演示了如何修正不合理设定（把"黑客技术干扰通讯"改成符合时代的"烟雾弹+竹简作坊"），并强调要持续维护一个"故事状态摘要"防止 AI 遗忘早期设定。</p>
+<h2>一句话推荐理由</h2>
+<p>把"专家身份设定→大纲细化→子场景四维拆解→上下文回顾防跑题"四步配全提示词模板，尤其"微观场景拆解法"对提升画面感很实用。</p><a class="back-top" href="#articles">返回文章目录 ↑</a></article><article class="lesson resource" id="article-2"><div class="section-kicker">延伸阅读 2</div><h1>How to Write a Novel With ChatGPT: My 6 Step Process</h1>
+<ul>
+<li><strong>来源 URL</strong>: https://nerdynovelist.com/write-a-novel-with-chatgpt/</li>
+<li><strong>作者/站点</strong>: Jason（The Nerdy Novelist，自出版作家博客）</li>
+<li><strong>发布日期</strong>: 2025-05-30</li>
+</ul>
+<h2>核心观点摘要（中文）</h2>
+<p>一位真正做自出版的作者，批评网上"教人用 AI 写书"的人大多根本不是作家，给出自己以 ChatGPT 写长篇小说的六步流程。第 1 步"提案（Pitches）"：用提示词 <code>Give me [NUMBER] high-concept pitches for a bestselling [GENRE] story with a unique twist, intriguing characters, and gripping emotional stakes</code> 批量生成高概念卖点，反复跑直到挑出满意的一个（作者最终选了"亡者被复活为奴隶，年轻死灵法师要在救爱人与解放亡者之间抉择"）。第 2 步"梗概（Synopsis）"：把卖点喂回去展开成完整故事梗概，并强调从这一步起应切换到更强模型（GPT-4/4o），头脑风暴阶段才用轻量模型；作者还手动加粗改写了梗概里模糊的结局与关键转折，让大纲更具体。文章还横向对比了各模型（4o mini/4o/o1/o3-mini）与免费/Plus/Pro 套餐的取舍，指出 Plus 的长上下文对保持长篇连贯性至关重要。核心主张：AI 是生产力辅助而非自动写手，作者必须深度介入、逐条编辑提示词、把模糊结尾改清楚。</p>
+<h2>一句话推荐理由</h2>
+<p>真正自出版作者视角的六步实操，附带可直接复用的"高概念提案"提示词和模型/套餐选型建议，纠偏了大量非作者写的"一键写书"水文。</p><a class="back-top" href="#articles">返回文章目录 ↑</a></article><article class="lesson resource" id="article-3"><div class="section-kicker">延伸阅读 3</div><h1>Novel Writing Assistant（Claude Code 长篇小说写作助手 Playbook）</h1>
+<ul>
+<li><strong>来源 URL</strong>: https://www.claudecodehq.com/playbooks/novel-writing-assistant</li>
+<li><strong>作者/站点</strong>: Claude Code Playbooks（社区官方手册站）</li>
+<li><strong>发布日期</strong>: 2026（页面更新于 2026-07）</li>
+</ul>
+<h2>核心观点摘要（中文）</h2>
+<p>一份面向 Claude Code 的长篇小说一致性管理手册，直击"写到 4 万字后主角瞳色变了两次、第 5 章死的人第 12 章还在吃饭"的通病。核心是建一个集中式 <strong>Story Bible（故事圣经）</strong> 目录结构：Characters（主角/反派/配角）、World（地点、魔法体系、历史、规则）、Plot（大纲、时间线、线索）、Style（叙事声音、主题）、Chapters（各章正文）。手册给出了可直接套用的"人物档案模板"（基本信息、外貌、性格/优缺点/恐惧/欲望、背景、说话风格与口头禅、情感弧光起点终点、一致性注意事项）。工作流分三段：写前（查圣经相关条目、回顾上一章结尾、记下待收线索、确认 POV 角色当前状态）、写中（保持人物声音、核对时间线、遵守世界规则、记录新引入元素）、写后（把新元素回写圣经、标记潜在矛盾、记录线索开合、更新时间线）。每章交付前有一张一致性检查清单（名字拼写、外貌匹配、时间线合理、无矛盾、声音区分、遵守世界规则）。还提供了"写作命令/编辑命令/圣经管理命令"的指令样例，以及"人物声音雷同就补口头禅、剧情漏洞就跑时间线检查、与前文矛盾就修正新章或注明 retcon"的排错指南。</p>
+<h2>一句话推荐理由</h2>
+<p>把"故事圣经+写前/写中/写后三段式+一致性检查清单"模板化的现成手册，配人物档案模板和可直接复制的指令，专治长篇人设/时间线崩坏。</p><a class="back-top" href="#articles">返回文章目录 ↑</a></article><article class="lesson resource" id="article-4"><div class="section-kicker">延伸阅读 4</div><h1>别让 AI 把你气哭：2026 年 DeepSeek-V4 提示词终极指南</h1>
+<ul>
+<li><strong>来源 URL</strong>: https://developer.cloud.tencent.cn/article/2683058</li>
+<li><strong>作者/站点</strong>: 90 后小陈老师（腾讯云开发者社区）</li>
+<li><strong>发布日期</strong>: 2026-06-05</li>
+</ul>
+<h2>核心观点摘要（中文）</h2>
+<p>文章以国内创作圈主流的 DeepSeek-V4 为示范（强调其"快/省/长"：双模型自动切换、百万 Token 上下文、成本约为国外顶级模型七分之一、中文写作胜率高且开源可商用），系统讲解提示词框架。核心心法是 <strong>CRISPE 框架</strong>——把提示词当成与 AI 签的"创作合同"：C（角色）不要写"作家"，要写"擅长余华式冷静笔调写乡土文学的作家"；R（请求）不要写"写个故事"，要写"续写本章 3000 字，必须包含主角身世反转"；I（背景）把前文、人物设定、世界观大纲一股脑丢进百万上下文；S（要求/限制）如"禁止出现任何现代科技词汇""每段对话不超过三行"；P（风格）如"口语化像朋友聊天"；E（尝试）加一句"请提供三个完全不同的剧情走向"。进阶大招是"让 AI 自己选角色"——不指定具体大师，只描述领域与目标（"为缓震跑鞋写新手营销文案，请自配世界上最懂向新手卖运动装备的营销大师"），让 AI 从知识库反向拼出专家人格。文中给出长篇小说续写任务书范例：限定第三人称限知视角、不少于 1500 字、禁用现代词、结尾用悬念钩子、并要求另给一个截然不同走向版本。另附五个效率技巧：用具体文风标签（"模仿汪曾祺"）替代"写得有文采"、直接卡字数、开头加粗"禁止生成资料外的人名地名数据"防编造、结尾要多版本、用"反思刚才回答并重写"做自我修正；以及三坑：把命令当聊天、约束太模糊、一次塞太多不搭边任务。</p>
+<h2>一句话推荐理由</h2>
+<p>把 CRISPE 提示词框架、"让 AI 自配专家"和长篇续写任务书范例讲透，是国内大模型写作提示词工程最系统的入门之一。</p><a class="back-top" href="#articles">返回文章目录 ↑</a></article><article class="lesson resource" id="article-5"><div class="section-kicker">延伸阅读 5</div><h1>如何用 DeepSeek 打造爆款知乎盐选小说？抓住这 3 大核心技巧！</h1>
+<ul>
+<li><strong>来源 URL</strong>: https://www.bilibili.com/opus/1045898362814988311</li>
+<li><strong>作者/站点</strong>: 写小说的菠萝（哔哩哔哩专栏）</li>
+<li><strong>发布日期</strong>: 2025-03-19</li>
+</ul>
+<h2>核心观点摘要（中文）</h2>
+<p>文章定位知乎盐选为"快节奏、爆张力、强代入"的短篇付费文之王，并提炼出爆款公式：<strong>背景 + 矛盾 + 现状 + 反转</strong>。第一大要点是"一个引人入胜的开头"：盐选推荐页只展示前 300 字，因此必须简洁快速入题、迅速亮出悬念制造刺激感、用冲突勾起好奇，绝不能磨叽铺垫（文中以"大婚当日我攥着嫡姐掉包的合欢佩"这类高张力第一人称开局为例）。第二要点是金句生成与 Meta 元素植入：让 AI 按古言氛围生成"我不要做攀援的凌霄花，偏要当那焚尽腐朽的野火"式清醒女主宣言，并在男女主对峙场景植入原生家庭创伤自救、女性是否必须婚姻圆满、事业脑 vs 恋爱脑等社会热点话题，提升代入感与传播度。第三要点（避坑）：提醒 AI 写作有局限，需人工把控节奏与情感真实。整体思路是用 DeepSeek 的数据库与语言能力"精准打击"三大爆点，把盐选短篇拆成开头钩子、金句/情绪点、热点议题植入来批量复制爆款结构。</p>
+<h2>一句话推荐理由</h2>
+<p>把知乎盐选短篇的"前 300 字定生死"和"金句+社会热点植入"讲透，给出爆款公式与可模仿的高张力开局范例，适合短篇变现方向。</p><a class="back-top" href="#articles">返回文章目录 ↑</a></article><article class="lesson resource" id="article-6"><div class="section-kicker">延伸阅读 6</div><h1>用 ChatGPT 写连载小说：别只当码字工具，要做故事架构师</h1>
+<ul>
+<li><strong>来源 URL</strong>: https://segmentfault.com/a/1190000047904856</li>
+<li><strong>作者/站点</strong>: 有胆有识的四季豆（SegmentFault 思否）</li>
+<li><strong>发布日期</strong>: 2026-06-24</li>
+</ul>
+<h2>核心观点摘要（中文）</h2>
+<p>文章主张连载小说的本质是"节奏工程"而非文字堆砌，AI 最大价值不是替你写第 30 万字，而是维护从第 1 万到第 30 万字的世界观一致性——所以开篇前先建"设定库"（人物核心动机、世界物理规则、势力平衡），让 AI 当"故事档案管理员"，每开新章先回顾设定防崩坏。核心技巧包括：①<strong>反向提问法</strong>——别问 AI"写什么"，而问"这样写行不行"，例如给它一个"每天口袋多一张当天死亡预言纸条"的设定，让它列三个避开"阻止死亡"老套逻辑、侧重心理变化的切入点，把 AI 变成高强度头脑风暴伙伴；②<strong>人格锚点</strong>——用一句话定义角色核心特质（"极度理性但严重失眠""表面疯癫实则对数字敏感"），每章写作前喂入以稳住行为逻辑，作者再在此基础上注入情感（把"主角因风险拒绝"改写为"盯着地图手指微颤摇头"）；③<strong>功能性支线</strong>——中段疲软期让 AI 设计"既提供战力升级、又揭示男二童年创伤为黑化埋伏笔"的支线副本，把升级与人物塑造绑定；④<strong>热点隐喻转化</strong>——把"信息茧房"这类现实议题转译成玄幻世界的功法副作用，而非生硬植入；⑤<strong>信息差钩子</strong>——章末不让 AI 写"主角胜利"，而让它列"胜利背后三个反常细节"，选一个（尸体少了一只耳朵）作结尾。心态上从"码字工"转为"总编辑"，筛创意、审逻辑、润情感、控节奏，删掉 AI 90% 冗余只留 10% 金子。</p>
+<h2>一句话推荐理由</h2>
+<p>不讲提示词模板，专讲创作方法论：反向提问、人格锚点、功能性支线、信息差钩子，把人机协作定位成"人做总编辑、AI 做编排"。</p><a class="back-top" href="#articles">返回文章目录 ↑</a></article><article class="lesson resource" id="article-7"><div class="section-kicker">延伸阅读 7</div><h1>用 ChatGPT 写连载小说？这套多 Agent 架构让 AI 告别失忆与 AI 味</h1>
+<ul>
+<li><strong>来源 URL</strong>: https://segmentfault.com/a/1190000047905047</li>
+<li><strong>作者/站点</strong>: 八块腹肌的香菇（SegmentFault 思否）</li>
+<li><strong>发布日期</strong>: 2026-06-24</li>
+</ul>
+<h2>核心观点摘要（中文）</h2>
+<p>作者从工程视角指出：单核大模型写长篇连载必然"剧情暴走、人设崩塌、满屏 AI 塑料味"，根因有二——Transformer 的"中间迷失（Lost in the Middle）"导致几十章前埋的伏笔注意力稀释、角色复活；next-token 概率回归让模型总往最安全的陈词滥调靠（"然而""不可否认""深邃的眼眸""嘴角勾起弧度"）。解法是把创作拆成多 Agent 流水线：<strong>架构师 Agent</strong> 只负责全局大纲/世界观/力量体系的生成与校验；<strong>导演 Agent</strong> 把每卷拆成章节剧情节拍（beat）、分配出场人物与核心冲突；<strong>写手 Agent</strong> 只按导演给的 beat 和设定码字；<strong>审稿 Agent</strong> 负责查重、抓逻辑 Bug、去 AI 味。长篇"失忆"用 RAG+知识图谱解决：维护一个 JSON/向量版动态设定集（Lorebook），写手写新章时自动召回相关角色地点；同时用轻量模型把每章压成 200 字摘要，写手创作第 N 章只读取"全局大纲+第 N-3 至 N-1 章摘要+本章 beat"。去 AI 味两招：建"AI 高频词黑名单"后处理脚本触发局部重写；风格锚定——在提示词里给具体 Few-Shot 示例，甚至用 LoRA 微调一个模仿烽火戏诸侯/猫腻文风的小模型当写手底座。避坑三不要：别让 AI 自己定剧情走向（它会当章把冲突解决掉）、别忽视对话潜台词、别一次性生成一万字（工程极限单次 2000–3000 字）。</p>
+<h2>一句话推荐理由</h2>
+<p>最硬核的一篇：用多 Agent 分工 + RAG 滑动窗口摘要 + AI 高频词黑名单 + LoRA 风格锚定，系统解决"长篇失忆"和"AI 味"两大顽疾。</p><a class="back-top" href="#articles">返回文章目录 ↑</a></article><article class="lesson resource" id="article-8"><div class="section-kicker">延伸阅读 8</div><h1>Plotting a Story with AI（用 AI 构思情节）</h1>
+<ul>
+<li><strong>来源 URL</strong>: https://www.novelcrafter.com/blog/plotting-a-story-with-ai</li>
+<li><strong>作者/站点</strong>: Kate（NovelCrafter 官方博客）</li>
+<li><strong>发布日期</strong>: 2024-01-27</li>
+</ul>
+<h2>核心观点摘要（中文）</h2>
+<p>这是 AI 长篇写作工具 NovelCrafter 官方撰写的"构思与大纲"方法论，核心概念是 <strong>Codex（设定集）</strong>——它不只是笔记，而是把摘要、人物、地点、支线等条目写进知识库，之后每次提示词只需引用条目名而不必重复粘贴全文，所有写作阶段都受益于一个不断增长的 Codex。构思分三层推进：①<strong>摘要（Summary）</strong>——先让 AI 聊出一份覆盖"激励事件、重大转折、高潮"的故事梗概，并强调首轮输出几乎不可能一次满意，必须通过"强制要什么/禁止不要什么"反复打磨；②<strong>大纲（Outline）</strong>——让 AI 按经典结构原型生成（三幕剧、英雄之旅，或"三幕每幕五章"），也可用平台自带模板（3 Act、Save the Cat、Hero's Journey），还能把自创模板存成 Codex 条目供 AI 调用；③<strong>章节（Chapters）</strong>——逐章生成/扩写章节摘要，让每章都推动主线，并为想保留的支线单独建 Codex 条目，便于后续生成场景节拍时引用。文章还展示了"Create from Outline"一键由大纲生成全部幕/章/场景的用法。</p>
+<h2>一句话推荐理由</h2>
+<p>来自头部 AI 长篇写作工具的官方方法论，把"Codex 设定集驱动 + 经典结构模板 + 摘要→大纲→章节三层细化"讲得清楚，是理解 AI 长篇工程组织的入门标配。</p><a class="back-top" href="#articles">返回文章目录 ↑</a></article><article class="lesson resource" id="article-9"><div class="section-kicker">延伸阅读 9</div><h1>AI and the novel: how to use ChatGPT to write a full-length book</h1>
+<ul>
+<li><strong>来源 URL</strong>: https://www.cometapi.com/ai-and-the-novel-how-to-use-chatgpt-to-write-a-full-length-book/</li>
+<li><strong>作者/站点</strong>: CometAPI（AnnaAI 模型与 API 研究团队）</li>
+<li><strong>发布日期</strong>: 2026-09-03（更新）</li>
+</ul>
+<h2>核心观点摘要（中文）</h2>
+<p>一篇工程化、可复现的长篇小说写作指南，核心立场：不要说"写一本小说"，而要用"人在环中（human-in-the-loop）"的纪律化流程。六步专业工作流：①规划阶段先定类型/基调、目标字数（中篇 6–9 万、史诗 9–12 万+）、出版路径；②建角色档案（dossier：姓名、三个怪癖、说话方式、最深恐惧、三个转折点）与情感弧图（30%/60%/100% 情绪落点），并做逐章场景清单；③分块（Chunking）——只让模型一次写 800–1500 词的场景，每章 3–6 个场景，每场景一句话目标+钩子收尾，以降低幻觉漂移；④控制声音风格——贴 200–500 词风格样本、用"把句子缩短 20%、副词减半"这类行级改写指令而非重生成；⑤迭代式编辑：起草→结构（情节/弧光）→角色一致性→行级→校对→试读，并用脚本做名称/时间线冲突的程序化检查；⑥事实核查与文化敏感性。文章强调超大上下文窗口与文件上传/自定义指令等"生产工具特性"让长篇创作成为可能，但也警告幻觉、作者署名权争议与多 Agent 并行带来的认知负荷。给出了"项目系统提示词"和模块化场景写作提示词模板。</p>
+<h2>一句话推荐理由</h2>
+<p>结构最完整的"专业编辑流程"映射到 AI 写作的指南，把场景分块、角色档案、多轮编辑 pass 和程序化一致性检查讲得非常可落地。</p><a class="back-top" href="#articles">返回文章目录 ↑</a></article><article class="lesson resource" id="article-10"><div class="section-kicker">延伸阅读 10</div><h1>What I Learned Making 34 Novels with Claude Sonnet</h1>
+<ul>
+<li><strong>来源 URL</strong>: https://triptych.writeas.com/what-i-learned-making-34-novels-with-claude-sonnet</li>
+<li><strong>作者/站点</strong>: triptych（个人博客 writeas）</li>
+<li><strong>发布日期</strong>: 2026-01-27</li>
+</ul>
+<h2>核心观点摘要（中文）</h2>
+<p>作者把"用 AI 写小说"当成一个软件开发项目来做，一年用 Claude Sonnet（配合 Nano Banana、Cline、Claude Code）产出了 34 本科幻/奇幻小说。核心流程是一套基于 Markdown 文件的工程化管线：先定类型，让 AI 把类型特征研究存成 <code>research.md</code>；协作定高层剧情存 <code>plot.md</code>；再派生出 <code>emotional-arc.md</code>、<code>sensory-details.md</code>、<code>magic-system.md</code>、人物档案、<code>world-history.md</code>、<code>writing-style.md</code> 等支撑文档；然后生成至少 30 章的 <code>chapter-by-chapter.md</code>（带复选框、字数、情节节拍，刻意写长以对抗 AI"偷懒写短"的倾向）；最关键的是写一个 <code>loop.md</code> 工作流，让 AI 每次读全部文档、定位下一章、写完再回写进度。每章必须在"干净上下文"里单独跑，禁止一次写多章，否则上下文越长质量越糊。全书写完后另起上下文让 AI 当无情编辑输出 <code>evaluation.md</code>（矛盾、剧情漏洞、时间线问题），再开新上下文按最小改动原则修复。最后用 Pandoc 把 Markdown 转成 ePub/PDF/HTML，并生成封面、人物图和配套书站。作者还总结了 AI 的怪癖：女爱用 Lyra/Elara、男爱用 Kyle、反派爱叫 Mal- 开头、执着"低语森林"和"开学校"套路，且总爱搞"第三选项"折中结局——需在提示词里主动排除。</p>
+<h2>一句话推荐理由</h2>
+<p>实战产出 34 本小说的完整工程化工作流（多文件设定集 + loop 循环 + 干净上下文逐章 + 事后一致性审查），是目前最"可复刻"的 AI 长篇方法论之一。</p><a class="back-top" href="#articles">返回文章目录 ↑</a></article><article class="lesson resource" id="article-11"><div class="section-kicker">延伸阅读 11</div><h1>如何从零起步在 ChatGPT 帮助下写一本小说（译文，原作 Generating a full-length work of fiction with GPT-4）</h1>
+<ul>
+<li><strong>来源 URL</strong>: https://ai4all.me/2023/05/如何从零起步在chatgpt帮助下写一本小说（译文）/</li>
+<li><strong>作者/站点</strong>: Chiara Coetzee（原作首发于 Medium，本站为中文译文）</li>
+<li><strong>发布日期</strong>: 2023-05（原作）</li>
+</ul>
+<h2>核心观点摘要（中文）</h2>
+<p>作者用 GPT-4 在 10 天内从零生成了一部 12 章 115 页的奇幻小说《亚特兰蒂斯的回声》，验证"单条提示写不了整本书，但一套结构化提示链可以"。她把创作拆成四个递进层级：①全书大纲；②每章大纲；③写初稿；④写段落。关键心法有六条：<strong>迭代改进</strong>——从高层大纲→详细章纲→短初稿→逐场景扩写，逐级细化；<strong>边界控制（由外向内）</strong>——GPT-4 总爱"往前冲"写到还没发生的情节，破解法是先写该段的开头和结尾段落，再填中间，用两端框住它；<strong>单一大提示</strong>——用一次性大提示而非连续对话，便于精确控制上下文里放什么；<strong>连续性笔记</strong>——每写完场景就让 AI 提炼"需记住的细节"并与旧笔记合并压缩，只用最近场景+连续性笔记作上下文；<strong>回改大纲</strong>——AI 会即兴把后章场景挪到前章，所以每写完一章都让它回头修订高层大纲；<strong>数据清理</strong>——手动清理复制进来的标签、编号错乱等输出脏数据。文中给出了各级提示词的原文示例（顶级大纲、章节首末场景、初稿、段落边界、连续性笔记合并等）。作者也诚实反思了缺陷：情节突兀、首末段衔接生硬、"契诃夫之枪"式细节被遗忘、结构过于规则（每章都 6–8 场景）。</p>
+<h2>一句话推荐理由</h2>
+<p>最早一批"全流程纯提示链写整本书"的实验记录，"先写首尾段落再填中间"的边界控制法和连续性笔记机制至今仍是长篇防跑偏的核心技巧。</p><a class="back-top" href="#articles">返回文章目录 ↑</a></article><article class="lesson resource" id="article-12"><div class="section-kicker">延伸阅读 12</div><h1>普通人搞副业，别再瞎摸索了！这篇知乎盐选实操手册，喂到你嘴边</h1>
+<ul>
+<li><strong>来源 URL</strong>: https://www.woshipm.com/share/6236681.html</li>
+<li><strong>作者/站点</strong>: 抖知书（人人都是产品经理社区转载）</li>
+<li><strong>发布日期</strong>: 约 2024（"1 年前"）</li>
+</ul>
+<h2>核心观点摘要（中文）</h2>
+<p>文章把知乎盐选小说定位成"一款专门吸引人付费看下去的文字产品"，而非传统写作，强调要用做产品的思路。方法论链条：先拆解榜单爆款的"钩子"和爽点，选题挑有大众情绪基础的话题（婆媳、职场、逆袭反转）；开头即生死线，前 1000 字必须抛出最强悬念、直接从冲突切入，拒绝"我叫 XX"式平铺；节奏上追求"爽点密度"，每章一个小高潮/小反转；最关键的"付费节点（卡文）"要卡在高潮将到未到的最痒处（真相将揭、阴谋将成时断更）；并用后台完读率、互动率、评论区催更/开骂来复盘迭代。随后给出两段可直接复制的 AI 提示词：提示词 1"盐选故事大纲策划"——要求 AI 扮演顶级网文策划，输出 15–20 章、5–8 万字大纲，强制包含"开篇钩子（前 1000 字强悬念）、每章爽点/打脸、章末小钩子、第 3–4 章付费节点处的超级悬念、高潮与伏笔回收"，并规定"章节序号：一句话核心内容+本章爽点/悬念"的输出格式；提示词 2"爆款开篇生成"——1500 字第一章，要求拒绝平铺直叙、利用重生信息差制造悬念、强化感官描写、对话带潜台词、结尾抛意外钩子。</p>
+<h2>一句话推荐理由</h2>
+<p>少有的把"盐选产品逻辑（爽点密度+付费卡点）"和两段可直接复制的策划/开篇提示词结合的实操贴，对短篇付费文特别对症。</p><a class="back-top" href="#articles">返回文章目录 ↑</a></article>
+</main>
+<script src="../../assets/site-enhance.js?v=fix20260927-2215" defer></script>
+</body>
+</html>

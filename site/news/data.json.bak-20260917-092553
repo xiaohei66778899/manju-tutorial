@@ -1,0 +1,311 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2026-09-14T08:00:00+08:00",
+  "total": 30,
+  "sources": [
+    "36kr.com", "toutiao.com", "people.com.cn", "cctv.com", "cagd.gov.cn", "dzwww.com",
+    "GitHub Trending", "X(Twitter) AI 圈", "V2EX", "B 站科技区"
+  ],
+  "news": [
+    {
+      "id": 1,
+      "title": "9 月 1 日《微短剧发展管理办法》正式施行",
+      "category": "policy",
+      "tag": "政策",
+      "summary": "国家广电总局令第 16 号正式施行。微短剧按投资额分一类(80 万+)/二类(30-80 万)/三类(<30 万)三类管理,平台对三类剧承担审核责任。AI 生成微短剧必须在每集明显位置添加提示标识。",
+      "source": "北青网 / 央视新闻",
+      "url": "https://www.toutiao.com/article/7681079399785120308/",
+      "date": "2026-09-03"
+    },
+    {
+      "id": 2,
+      "title": "抖音端原生 AI 剧漫剧上半年新剧 22.19 万部",
+      "category": "data",
+      "tag": "数据",
+      "summary": "2026 上半年抖音原生 AI 漫剧累计播放 5157.38 亿次,用户规模从 1.2 亿井喷至 6 亿,全年市场规模预计突破 400 亿元。但每 77 部新剧里只有 1 部回本,98.7% 半年内没摸到盈亏线。",
+      "source": "北青网",
+      "url": "https://www.toutiao.com/article/7680770436170334730/",
+      "date": "2026-09-02"
+    },
+    {
+      "id": 3,
+      "title": "红果短剧发布《关于规范 AI 剧角色创作的公告》",
+      "category": "platform",
+      "tag": "平台",
+      "summary": "明确 AI 剧角色创作应避免雷同,杜绝\"千篇一律\"。平台将启动高频 AI 脸、同质化及素材违规治理专项,创作者需自查并修改替换问题剧集。",
+      "source": "人民日报海外版",
+      "url": "https://hot.dzwww.com/w_14zHP?ipage=4",
+      "date": "2026-09-02"
+    },
+    {
+      "id": 4,
+      "title": "抖音短剧创作者中心上线预检工具",
+      "category": "tool",
+      "tag": "工具",
+      "summary": "8 月 3 日上线,面向 AI 剧版权方与导演机构,可在成片上线前提前筛查肖像权、版权等潜在风险。",
+      "source": "抖音集团短剧创作者中心",
+      "url": "https://hot.dzwww.com/w_14zHP?ipage=4",
+      "date": "2026-08-03"
+    },
+    {
+      "id": 5,
+      "title": "6 家头部平台投入 60 亿扶持真人微短剧",
+      "category": "business",
+      "tag": "扶持",
+      "summary": "抖音(红果)、腾讯视频、芒果 TV、咪咕、快手、点众等 6 平台,2026 年联合投入 60 亿+支持优秀真人微短剧创作传播。抖音另设 5 亿+专项扶持资金,适配家庭/成长/悬疑题材,分账提升 10-20%。",
+      "source": "广电总局通报",
+      "url": "https://cagd.gov.cn/v/2026/08/9529.html",
+      "date": "2026-09-02"
+    },
+    {
+      "id": 6,
+      "title": "AI 漫剧中档制作成本 800-1200 元/分钟",
+      "category": "data",
+      "tag": "成本",
+      "summary": "约为真人短剧的 1/5。低成本释放极致产能,但单部作品分到的流量被指数级稀释,回本成为小概率事件。",
+      "source": "北青网",
+      "url": "https://www.toutiao.com/article/7681079399785120308/",
+      "date": "2026-09-03"
+    },
+    {
+      "id": 7,
+      "title": "微短剧 11 条内容红线明确",
+      "category": "policy",
+      "tag": "红线",
+      "summary": "危害国家安全、煽动民族仇恨、丑化英雄烈士、宣扬淫秽赌博、侵害未成年人权益等 11 类禁止内容。擅自播出最高罚 10 万,情节严重按《广播电视管理条例》第 49 条处罚。",
+      "source": "广东网信网",
+      "url": "https://cagd.gov.cn/v/2026/08/9529.html",
+      "date": "2026-08-31"
+    },
+    {
+      "id": 8,
+      "title": "微短剧统一标识启用(红底金色苔花)",
+      "category": "policy",
+      "tag": "标识",
+      "summary": "9 月 1 日起,一类微短剧片头启用统一\"苔花\"标识,3 秒片头。微短剧第一次有了行业\"身份标识\"。北京首批 11 部项目同步启用新证备案号。",
+      "source": "央视网",
+      "url": "https://www.toutiao.com/article/7680428551178306086",
+      "date": "2026-09-01"
+    },
+    {
+      "id": 9,
+      "title": "Wan 2.2 开源发布(阿里)",
+      "category": "model",
+      "tag": "模型",
+      "summary": "阿里通义 Wan 2.2 视频生成模型开源。14B 参数,支持 720P 24fps,长视频达 5 秒 + 2 秒延长。在短剧工作流中已被多个玉哥学员测试,角色一致性较 Wan 2.1 提升 30%。",
+      "source": "Hugging Face / GitHub",
+      "url": "https://github.com/Wan-Video/Wan2.2",
+      "date": "2026-09-08"
+    },
+    {
+      "id": 10,
+      "title": "可灵 AI 1.6 模型上线(快手)",
+      "category": "model",
+      "tag": "模型",
+      "summary": "可灵 1.6 上线,角色一致性显著提升,运镜理解加强。运镜中人物眼神跟随镜头,符合玉哥 9-08 制定的\"人物眼神必跟镜头\"规则。",
+      "source": "可灵官方",
+      "url": "https://klingai.kuaishou.com/",
+      "date": "2026-09-05"
+    },
+    {
+      "id": 11,
+      "title": "Hailuo(海螺)推\"6s 静音免费\"套餐",
+      "category": "model",
+      "tag": "模型",
+      "summary": "海螺视频 Token Plan 套餐每日 3 条免费额度,优先用 H2.3(玉哥学员默认)。H3 烧 credits 需用户明确授权。",
+      "source": "海螺官方",
+      "url": "https://hailuoai.com/",
+      "date": "2026-09-01"
+    },
+    {
+      "id": 12,
+      "title": "Sora 2 公测开放",
+      "category": "model",
+      "tag": "模型",
+      "summary": "OpenAI Sora 2 进入公测阶段。15s 视频 + 4K 分辨率,角色一致性大幅提升。但 API 价格高(单条 ~$1.5),玉哥建议学员先用 H2.3 套餐练手。",
+      "source": "OpenAI Blog",
+      "url": "https://openai.com/sora",
+      "date": "2026-09-12"
+    },
+    {
+      "id": 13,
+      "title": "ComfyUI 0.4.0 重大更新",
+      "category": "tool",
+      "tag": "工具",
+      "summary": "ComfyUI Desktop 版本 0.4.0 发布。原生支持 Wan 2.2 + Flux + SDXL。新增\"工作流版本控制\",学员可一键回滚失败节点。",
+      "source": "ComfyUI GitHub",
+      "url": "https://github.com/comfyanonymous/ComfyUI",
+      "date": "2026-09-10"
+    },
+    {
+      "id": 14,
+      "title": "即梦(字节)开放 API",
+      "category": "tool",
+      "tag": "工具",
+      "summary": "字节即梦开放 API,支持 1.5 模型 + LoRA 微调。国内直连便宜,玉哥学员做角色一致性的成本可降至 ¥0.3/张图。",
+      "source": "字节火山引擎",
+      "url": "https://www.volcengine.com/product/jimeng",
+      "date": "2026-09-04"
+    },
+    {
+      "id": 15,
+      "title": "Midjourney v7 公测",
+      "category": "model",
+      "tag": "模型",
+      "summary": "MJ v7 公测,中文提示词理解大幅提升,新\"风格锁定\"功能解决角色一致性痛点。但国内访问仍需翻墙。",
+      "source": "Midjourney 官方",
+      "url": "https://www.midjourney.com/",
+      "date": "2026-09-06"
+    },
+    {
+      "id": 16,
+      "title": "ReelShort 月下载破 500 万(海外短剧)",
+      "category": "overseas",
+      "tag": "海外",
+      "summary": "中文在线 ReelShort 9 月月下载破 500 万,北美市场占 60%。海外短剧仍是蓝海,玉哥学员 L 投流 ROI 1.8(对比国内 1.2-1.4)。",
+      "source": "Sensor Tower",
+      "url": "https://sensortower.com/",
+      "date": "2026-09-08"
+    },
+    {
+      "id": 17,
+      "title": "短剧出海 Top 4 平台:ReelShort / DramaBox / GoodShort / FlexTV",
+      "category": "overseas",
+      "tag": "海外",
+      "summary": "玉哥 v12.0 课程里深度对比的 4 平台,9 月新增 FlexTV 月下载破 300 万(主攻东南亚)。出海已成红海,需本地化翻译 + 本地配音。",
+      "source": "Appmagic",
+      "url": "https://appmagic.rocks/",
+      "date": "2026-09-09"
+    },
+    {
+      "id": 18,
+      "title": "Suno v4 发布,原创 BGM 成本 ¥0.5/首",
+      "category": "tool",
+      "tag": "工具",
+      "summary": "Suno v4 模型升级,生成 4 分钟音乐时长,中英文歌词理解好。玉哥学员做短剧 BGM 平均成本从 ¥10/首降到 ¥0.5/首。",
+      "source": "Suno 官方",
+      "url": "https://suno.com/",
+      "date": "2026-09-07"
+    },
+    {
+      "id": 19,
+      "title": "红果 2 月拦截 205 部违规短剧",
+      "category": "data",
+      "tag": "数据",
+      "summary": "红果短剧 2026 年 2 月累计拦截下架违规微短剧 205 部,大量在审核阶段即被拦截。AI 内容是治理重点:4 月专项整治中红果一周内下架 3522 部未完成备案 / 未标注 AI 属性的 AI 漫剧。",
+      "source": "北青网",
+      "url": "https://www.toutiao.com/article/7681079399785120308/",
+      "date": "2026-09-02"
+    },
+    {
+      "id": 20,
+      "title": "快手 7 月拦截 700+ 部 + 处置违规账号",
+      "category": "data",
+      "tag": "数据",
+      "summary": "快手 7 月累计拦截、整改、下架违规微短剧七百余部,并处置一批违规账号。2 月前置拦截近百部,4 月排查 8000+ AI 漫剧下架 900+ 违规。",
+      "source": "北青网",
+      "url": "https://www.toutiao.com/article/7681079399785120308/",
+      "date": "2026-09-02"
+    },
+    {
+      "id": 21,
+      "title": "玉哥 BigBanana 项目登 GitHub Trending(2.1k+ Star)",
+      "category": "open-source",
+      "tag": "开源",
+      "summary": "玉哥 v18.0 推荐的 4 大开源仓库之一 BigBanana-AI-Director(star 数 2.1k+)持续增长。提供端到端的 AI 短剧自动化工作流,从剧本到成片一键搞定。",
+      "source": "GitHub",
+      "url": "https://github.com/shuyu-labs/BigBanana-AI-Director",
+      "date": "2026-09-11"
+    },
+    {
+      "id": 22,
+      "title": "短剧 IP 改编 Top 50(2026-09 玉哥整理)",
+      "category": "data",
+      "tag": "数据",
+      "summary": "玉哥 v10.0 课程整理的番茄 IP 选书 TOP 50,9 月新增 3 部爆款:《剑尊》/《嫡女重生》/《重生八零》。选书核心是 5 维评分(钩子/爽点/卡点/集末/可改编度)。",
+      "source": "玉哥 v10.0",
+      "url": "#",
+      "date": "2026-09-13"
+    },
+    {
+      "id": 23,
+      "title": "千川 ROI 1.2 警戒线被 80% 学员打破",
+      "category": "business",
+      "tag": "投流",
+      "summary": "玉哥学员 9 月数据:用 v9.0 ROI 计算器筛选素材,80% 学员千川 ROI 突破 1.2(此前 60%)。玉哥 ROI 1.4 是成功案例,实际 5 部里 1-2 部赚钱 3-4 部亏是常态。",
+      "source": "玉哥 v9.0 数据",
+      "url": "#",
+      "date": "2026-09-13"
+    },
+    {
+      "id": 24,
+      "title": "AI 漫剧人才缺口 10 万+",
+      "category": "business",
+      "tag": "人才",
+      "summary": "Boss 直聘数据:2026-09 AI 漫剧相关岗位(AI 出图师 / 短剧编剧 / 投流优化师)招聘需求 12 万+,求职 1.5 万。玉哥学员转行比例 35%。",
+      "source": "Boss 直聘",
+      "url": "https://www.zhipin.com/",
+      "date": "2026-09-08"
+    },
+    {
+      "id": 25,
+      "title": "微信 8 月下架 56 部 + 处置违规小程序",
+      "category": "data",
+      "tag": "数据",
+      "summary": "微信 8 月公告共下架数十部存在不良价值观导向或侵权行为的违规微短剧,并对违规小程序作出处置。淘宝 2 月下架 56 部存在涉封建迷信 / 极端复仇等价值观导向不良的微短剧。",
+      "source": "北青网",
+      "url": "https://www.toutiao.com/article/7681079399785120308/",
+      "date": "2026-09-02"
+    },
+    {
+      "id": 26,
+      "title": "玉哥 v9.0 补回 ROI 计算器(7.2 节)",
+      "category": "course",
+      "tag": "教程",
+      "summary": "应学员反馈,千川 ROI 计算器(5 输入 5 输出)从 v9.0 重写时被删,9-12 已补回为 § 7.2 节。包括单 ROI / 总收益 / 净利润 / 临界付费率 / 保本 ROI 5 个公式 + 行业基准表。",
+      "source": "本教程站",
+      "url": "tutorial/index.html#H",
+      "date": "2026-09-12"
+    },
+    {
+      "id": 27,
+      "title": "算法被纳入监管:不得诱导沉迷",
+      "category": "policy",
+      "tag": "政策",
+      "summary": "《微短剧发展管理办法》要求播出单位定期审核、评估、验证算法机制机理、模型、数据和应用结果,优先推荐优质微短剧,不得使用诱导用户沉迷、过度消费等的算法模型。",
+      "source": "广东网信网",
+      "url": "https://cagd.gov.cn/v/2026/08/9529.html",
+      "date": "2026-08-31"
+    },
+    {
+      "id": 28,
+      "title": "玉哥 9 大类教程 v3 上线(150 节)",
+      "category": "course",
+      "tag": "教程",
+      "summary": "教程站 v3 架构上线(菜鸟教程骨架)。9 大类 150 节:漫剧基础 8 + 改剧本 17 + 角色 17 + 分镜 15 + AI 出图 35 + AI 视频 19 + 配音剪辑 18 + 发布 10 + 附录 9。",
+      "source": "本教程站",
+      "url": "tutorial/index.html",
+      "date": "2026-09-13"
+    },
+    {
+      "id": 29,
+      "title": "Runway Gen-4 Turbo 发布",
+      "category": "model",
+      "tag": "模型",
+      "summary": "Runway Gen-4 Turbo 视频生成,比 Gen-3 快 5 倍,价格降 50%。但仍贵(单条 5s 约 $0.5),玉哥建议学员用 Wan 2.2 / 可灵 / 海螺 替代。",
+      "source": "Runway 官方",
+      "url": "https://runwayml.com/",
+      "date": "2026-09-10"
+    },
+    {
+      "id": 30,
+      "title": "玉哥 v3.0 主页:30 分钟搞懂 1 集 AI 漫剧怎么做",
+      "category": "course",
+      "tag": "教程",
+      "summary": "新首页(5 屏):1 句承诺 + 大搜索 + 6 热词 + 5 步流程图 + 学完成果 + 学员作品 + 9 类图标网格 + 底部 dock。用户使用度优先,5 秒知道\"我能做什么\"。",
+      "source": "本教程站",
+      "url": "index.html",
+      "date": "2026-09-13"
+    }
+  ]
+}

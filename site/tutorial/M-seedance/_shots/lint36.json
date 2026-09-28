@@ -1,0 +1,900 @@
+﻿{
+  "src": "E:\\视频模板\\ai-drama-course.html",
+  "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/ai-drama-course.html",
+  "outdir": "E:\\视频模板\\_shots",
+  "include": [
+    "lint",
+    "screenshots",
+    "structure"
+  ],
+  "shots": {
+    "desktop": {
+      "screenshot": "E:\\视频模板\\_shots\\ai-drama-course_desktop.jpg",
+      "screenshotBytes": 606114,
+      "slices": [
+        "E:\\视频模板\\_shots\\ai-drama-course_desktop_p1of3.jpg",
+        "E:\\视频模板\\_shots\\ai-drama-course_desktop_p2of3.jpg",
+        "E:\\视频模板\\_shots\\ai-drama-course_desktop_p3of3.jpg"
+      ],
+      "sliceHint": "主图过阈值（字节>800KB 或 高度>4000px），已按 3200px 切片。若主图 Read 失败，改读 slices 里各分片。",
+      "truncated": false,
+      "structure": {
+        "title": "AI 短剧 & 漫剧实战课",
+        "firstH1": "AI 短剧 & 漫剧实战课",
+        "viewport": {
+          "w": 1440,
+          "h": 900
+        },
+        "fullpage": {
+          "w": 1440,
+          "h": 11265
+        },
+        "counts": {
+          "section": 15,
+          "h1": 1,
+          "h2": 15,
+          "img": 0,
+          "canvas": 0,
+          "svg": 2,
+          "links": 46,
+          "buttons": 10
+        }
+      },
+      "consoleErrors": [
+        {
+          "type": "error",
+          "text": "Uncaught SyntaxError: Unexpected token ','",
+          "location": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/ai-drama-course.html"
+        }
+      ],
+      "consoleWarnings": [],
+      "horizontalOverflow": [],
+      "resourceErrors": [],
+      "deadButtons": [
+        {
+          "tag": "button",
+          "text": "字幕: 中文",
+          "reason": "button-no-onclick",
+          "rect": [
+            16,
+            1367,
+            207,
+            35
+          ]
+        },
+        {
+          "tag": "button",
+          "text": "复制",
+          "reason": "button-no-onclick",
+          "rect": [
+            303,
+            7473,
+            42,
+            24
+          ]
+        },
+        {
+          "tag": "button",
+          "text": "复制",
+          "reason": "button-no-onclick",
+          "rect": [
+            881,
+            7357,
+            42,
+            24
+          ]
+        },
+        {
+          "tag": "button",
+          "text": "复制",
+          "reason": "button-no-onclick",
+          "rect": [
+            303,
+            7969,
+            42,
+            24
+          ]
+        },
+        {
+          "tag": "button",
+          "text": "复制",
+          "reason": "button-no-onclick",
+          "rect": [
+            881,
+            8002,
+            42,
+            24
+          ]
+        },
+        {
+          "tag": "button",
+          "text": "复制",
+          "reason": "button-no-onclick",
+          "rect": [
+            303,
+            8570,
+            42,
+            24
+          ]
+        },
+        {
+          "tag": "button",
+          "text": "复制",
+          "reason": "button-no-onclick",
+          "rect": [
+            881,
+            8549,
+            42,
+            24
+          ]
+        },
+        {
+          "tag": "div",
+          "text": "A · 基础入门▾",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            12,
+            384,
+            215,
+            32
+          ]
+        },
+        {
+          "tag": "div",
+          "text": "B · 视觉表达▾",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            12,
+            496,
+            215,
+            32
+          ]
+        },
+        {
+          "tag": "div",
+          "text": "C · 叙事制作▾",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            12,
+            607,
+            215,
+            32
+          ]
+        },
+        {
+          "tag": "div",
+          "text": "D · 出片上线▾",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            12,
+            719,
+            215,
+            32
+          ]
+        },
+        {
+          "tag": "div",
+          "text": "E · 方法论干货▾",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            12,
+            865,
+            215,
+            32
+          ]
+        },
+        {
+          "tag": "div",
+          "text": "F · GitHub 仓库▾",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            12,
+            1188,
+            215,
+            32
+          ]
+        }
+      ],
+      "deadButtonsHint": "含义：视觉上可点、但点了不发生任何事的元素。覆盖 6 种模式，reason 字段指明是哪种： | button-no-onclick：<button> 既无 onclick 也没被 addEventListener('click') 绑过。 | onclick-noop：onclick 属性是占位/无副作用字符串（`return false` / `void(0)` / 空串 / 分号 / 纯注释等），extra 字段 onclickAttr 展示原始值。这类写法在生产代码里几乎没有正当用途，视同没写。 | a-no-href / a-href-empty / a-href-hash-no-handler：<a> 无 href / href=\"\" / href=\"#\" 且无 handler。 | a-href-javascript-noop-no-handler：<a href=\"javascript:void(0)\" / \"javascript:;\">，作者显式关掉 native 导航，但 JS 侧也没人接手。收紧路径：祖先有 click listener 时，还要验证 listener 源码是否引用了本元素的 class/id/data-* 才放行；listener 源码不可读（native/bound/被 minify）时保守放行，避免误伤。extra 字段 hrefAttr 展示原始 href。 | a-broken-anchor：<a href=\"#foo\"> 但页面里没有 id=\"foo\" 也没有 name=\"foo\" 的元素。已排除 SPA hash 路由（href 含 / 或 ? 的形式，如 #/dashboard）。 | cursor-pointer-no-handler：<div>/<span> 等非交互标签加了 cursor:pointer 却没绑任何 click。 | input-no-handler：<input type=button|submit|reset|image> 无 onclick 也无 listener。form 里的 submit/reset 已豁免。 | label-for-not-found：<label for=\"xxx\"> 但页面里没有 id=\"xxx\"。用户点 label 期望 focus 到 input，实际什么都不发生。extra 字段 forAttr 展示 for 值。 | 已排除：form submit/reset、popover 触发器、role=button/link/tab/menuitem/option/switch/checkbox/radio、<label> 包裹、body/html 上继承 cursor:pointer；cursor-pointer-no-handler 只报尺寸 ≥ 24×16 且有可见文字的元素。 | 修法：给 <button>/<input> 加 onclick 或 addEventListener；给 <a> 补真实 href 或改成 <button>；把 <div class=\"nav-item\">…</div> 之类假按钮换成真 <button> 或 <a>，或给它加 role=button+tabindex+键盘 handler；onclick=\"return false\" 之类占位符要么删掉（配合真 handler），要么替换为 toast 提示「演示中」这类可感知反馈；断链锚点核对目标 id 拼写；label 断链核对 for 与 input id 是否一致。 | 豁免：(1) 带 note=ancestor-has-data-attr 的项可能是**祖先事件委托**目标（document/window 上的全局委托本规则查不到），对着代码核对，如果确实有 document.addEventListener('click', e => e.target.closest(...)) 之类的委托捕获就忽略；(2) 纯装饰按钮（无 hover/focus 反馈的 mock 页面）——但这本身也算 slop，建议改成非 <button>；(3) cursor-pointer-no-handler：如果元素只是 hover 变鼠标做微交互提示（如 tooltip trigger）而非真按钮，去掉 cursor:pointer 更合适；(4) a-href-javascript-noop-no-handler：如果确实有全局委托捕获（如 window.addEventListener 或 minify 后的框架 handler），本规则的 listener 源码启发式可能读不到明文标识 → 结合 note 字段和实际代码核对；(5) a-broken-anchor：如果目标 id 是运行时由 JS 动态注入的（比如懒加载章节），核对确认后可忽略。",
+      "emojiUsageWarning": [
+        {
+          "tag": "h3",
+          "chars": "📝",
+          "contextText": "📝 1. 提示词工程"
+        },
+        {
+          "tag": "p",
+          "chars": "❌✅",
+          "contextText": "❌ \"电影感\" → ✅ \"35mm 胶片，浅景深，侧光\""
+        },
+        {
+          "tag": "p",
+          "chars": "❌✅",
+          "contextText": "❌ \"他跑过来坐下说话\" → ✅ \"他缓慢坐下\""
+        },
+        {
+          "tag": "b",
+          "chars": "❌",
+          "contextText": "❌ 错误写法"
+        },
+        {
+          "tag": "b",
+          "chars": "✅",
+          "contextText": "✅ 正确写法"
+        },
+        {
+          "tag": "h3",
+          "chars": "🎬",
+          "contextText": "🎬 2. 分镜与导演思维"
+        },
+        {
+          "tag": "b",
+          "chars": "❌",
+          "contextText": "❌ 错误：每个镜头都很漂亮，但接起来没意义"
+        },
+        {
+          "tag": "b",
+          "chars": "✅",
+          "contextText": "✅ 正确：每个镜头都推进叙事"
+        },
+        {
+          "tag": "h3",
+          "chars": "👤",
+          "contextText": "👤 3. 角色一致性"
+        },
+        {
+          "tag": "h3",
+          "chars": "🎨",
+          "contextText": "🎨 4. 风格控制"
+        },
+        {
+          "tag": "h3",
+          "chars": "🏃",
+          "contextText": "🏃 5. 运动与物理"
+        },
+        {
+          "tag": "h3",
+          "chars": "🔗",
+          "contextText": "🔗 6. 连续性与连贯性"
+        },
+        {
+          "tag": "h3",
+          "chars": "🔧",
+          "contextText": "🔧 7. 故障排查速查表"
+        },
+        {
+          "tag": "h3",
+          "chars": "⚙",
+          "contextText": "⚙️ 8. 工作流与管线"
+        },
+        {
+          "tag": "b",
+          "chars": "🎬",
+          "contextText": "🎬 Director Skill · 分镜导演"
+        }
+      ],
+      "emojiUsageHint": "warning · 含义：页面正文里检出 emoji 字符（U+1F300–U+1FAFF 或 U+2600–U+27BF 平面）。SKILL.md 视觉设计段明确禁用 emoji——不作图标、不作装饰、不放进数据。 | 修法：换成内联 SVG 图标（<svg viewBox=\"0 0 24 24\">）建立风格连贯的图标语言。 | 豁免：(1) **用户品牌资产明确包含 emoji**（罕见，但如即时通讯、社交媒体主题的产物合理）；(2) 主题本身就是关于 emoji 的（emoji 历史 / 表情包研究 / Unicode 演进）；(3) 引用某条真实文本原文（如推文截图的文字版），emoji 是内容而非装饰——保留原文可接受，但仍应权衡；(4) 装饰性 dingbat（如 U+2713 勾选符 ✓、U+2192 箭头 →、U+2605 星 ★）落入 U+2600–U+27BF 平面被误报的，如确认是符号非 emoji 可忽略。",
+      "reportSource": "cdp"
+    },
+    "mobile": {
+      "screenshot": "E:\\视频模板\\_shots\\ai-drama-course_mobile.jpg",
+      "screenshotBytes": 951390,
+      "slices": [
+        "E:\\视频模板\\_shots\\ai-drama-course_mobile_p1of6.jpg",
+        "E:\\视频模板\\_shots\\ai-drama-course_mobile_p2of6.jpg",
+        "E:\\视频模板\\_shots\\ai-drama-course_mobile_p3of6.jpg",
+        "E:\\视频模板\\_shots\\ai-drama-course_mobile_p4of6.jpg",
+        "E:\\视频模板\\_shots\\ai-drama-course_mobile_p5of6.jpg",
+        "E:\\视频模板\\_shots\\ai-drama-course_mobile_p6of6.jpg"
+      ],
+      "sliceHint": "主图过阈值（字节>800KB 或 高度>4000px），已按 3200px 切片。若主图 Read 失败，改读 slices 里各分片。",
+      "truncated": false,
+      "structure": {
+        "title": "AI 短剧 & 漫剧实战课",
+        "firstH1": "AI 短剧 & 漫剧实战课",
+        "viewport": {
+          "w": 390,
+          "h": 844
+        },
+        "fullpage": {
+          "w": 390,
+          "h": 18024
+        },
+        "counts": {
+          "section": 15,
+          "h1": 1,
+          "h2": 15,
+          "img": 0,
+          "canvas": 0,
+          "svg": 2,
+          "links": 46,
+          "buttons": 10
+        }
+      },
+      "consoleErrors": [
+        {
+          "type": "error",
+          "text": "Uncaught SyntaxError: Unexpected token ','",
+          "location": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/ai-drama-course.html"
+        }
+      ],
+      "consoleWarnings": [],
+      "horizontalOverflow": [
+        {
+          "tag": "aside",
+          "cls": "sidebar",
+          "left": -240,
+          "right": 0,
+          "width": 240
+        }
+      ],
+      "resourceErrors": [],
+      "deadButtons": [
+        {
+          "tag": "button",
+          "text": "字幕: 中文",
+          "reason": "button-no-onclick",
+          "rect": [
+            -224,
+            2062,
+            207,
+            35
+          ]
+        },
+        {
+          "tag": "button",
+          "text": "复制",
+          "reason": "button-no-onclick",
+          "rect": [
+            53,
+            10135,
+            42,
+            24
+          ]
+        },
+        {
+          "tag": "button",
+          "text": "复制",
+          "reason": "button-no-onclick",
+          "rect": [
+            53,
+            10674,
+            42,
+            24
+          ]
+        },
+        {
+          "tag": "button",
+          "text": "复制",
+          "reason": "button-no-onclick",
+          "rect": [
+            53,
+            11230,
+            42,
+            24
+          ]
+        },
+        {
+          "tag": "button",
+          "text": "复制",
+          "reason": "button-no-onclick",
+          "rect": [
+            53,
+            11818,
+            42,
+            24
+          ]
+        },
+        {
+          "tag": "button",
+          "text": "复制",
+          "reason": "button-no-onclick",
+          "rect": [
+            53,
+            12423,
+            42,
+            24
+          ]
+        },
+        {
+          "tag": "button",
+          "text": "复制",
+          "reason": "button-no-onclick",
+          "rect": [
+            53,
+            13029,
+            42,
+            24
+          ]
+        },
+        {
+          "tag": "div",
+          "text": "A · 基础入门▾",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            -228,
+            1079,
+            215,
+            32
+          ]
+        },
+        {
+          "tag": "div",
+          "text": "B · 视觉表达▾",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            -228,
+            1191,
+            215,
+            32
+          ]
+        },
+        {
+          "tag": "div",
+          "text": "C · 叙事制作▾",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            -228,
+            1302,
+            215,
+            32
+          ]
+        },
+        {
+          "tag": "div",
+          "text": "D · 出片上线▾",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            -228,
+            1414,
+            215,
+            32
+          ]
+        },
+        {
+          "tag": "div",
+          "text": "E · 方法论干货▾",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            -228,
+            1560,
+            215,
+            32
+          ]
+        },
+        {
+          "tag": "div",
+          "text": "F · GitHub 仓库▾",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            -228,
+            1883,
+            215,
+            32
+          ]
+        }
+      ],
+      "deadButtonsHint": "含义：视觉上可点、但点了不发生任何事的元素。覆盖 6 种模式，reason 字段指明是哪种： | button-no-onclick：<button> 既无 onclick 也没被 addEventListener('click') 绑过。 | onclick-noop：onclick 属性是占位/无副作用字符串（`return false` / `void(0)` / 空串 / 分号 / 纯注释等），extra 字段 onclickAttr 展示原始值。这类写法在生产代码里几乎没有正当用途，视同没写。 | a-no-href / a-href-empty / a-href-hash-no-handler：<a> 无 href / href=\"\" / href=\"#\" 且无 handler。 | a-href-javascript-noop-no-handler：<a href=\"javascript:void(0)\" / \"javascript:;\">，作者显式关掉 native 导航，但 JS 侧也没人接手。收紧路径：祖先有 click listener 时，还要验证 listener 源码是否引用了本元素的 class/id/data-* 才放行；listener 源码不可读（native/bound/被 minify）时保守放行，避免误伤。extra 字段 hrefAttr 展示原始 href。 | a-broken-anchor：<a href=\"#foo\"> 但页面里没有 id=\"foo\" 也没有 name=\"foo\" 的元素。已排除 SPA hash 路由（href 含 / 或 ? 的形式，如 #/dashboard）。 | cursor-pointer-no-handler：<div>/<span> 等非交互标签加了 cursor:pointer 却没绑任何 click。 | input-no-handler：<input type=button|submit|reset|image> 无 onclick 也无 listener。form 里的 submit/reset 已豁免。 | label-for-not-found：<label for=\"xxx\"> 但页面里没有 id=\"xxx\"。用户点 label 期望 focus 到 input，实际什么都不发生。extra 字段 forAttr 展示 for 值。 | 已排除：form submit/reset、popover 触发器、role=button/link/tab/menuitem/option/switch/checkbox/radio、<label> 包裹、body/html 上继承 cursor:pointer；cursor-pointer-no-handler 只报尺寸 ≥ 24×16 且有可见文字的元素。 | 修法：给 <button>/<input> 加 onclick 或 addEventListener；给 <a> 补真实 href 或改成 <button>；把 <div class=\"nav-item\">…</div> 之类假按钮换成真 <button> 或 <a>，或给它加 role=button+tabindex+键盘 handler；onclick=\"return false\" 之类占位符要么删掉（配合真 handler），要么替换为 toast 提示「演示中」这类可感知反馈；断链锚点核对目标 id 拼写；label 断链核对 for 与 input id 是否一致。 | 豁免：(1) 带 note=ancestor-has-data-attr 的项可能是**祖先事件委托**目标（document/window 上的全局委托本规则查不到），对着代码核对，如果确实有 document.addEventListener('click', e => e.target.closest(...)) 之类的委托捕获就忽略；(2) 纯装饰按钮（无 hover/focus 反馈的 mock 页面）——但这本身也算 slop，建议改成非 <button>；(3) cursor-pointer-no-handler：如果元素只是 hover 变鼠标做微交互提示（如 tooltip trigger）而非真按钮，去掉 cursor:pointer 更合适；(4) a-href-javascript-noop-no-handler：如果确实有全局委托捕获（如 window.addEventListener 或 minify 后的框架 handler），本规则的 listener 源码启发式可能读不到明文标识 → 结合 note 字段和实际代码核对；(5) a-broken-anchor：如果目标 id 是运行时由 JS 动态注入的（比如懒加载章节），核对确认后可忽略。",
+      "emojiUsageWarning": [
+        {
+          "tag": "h3",
+          "chars": "📝",
+          "contextText": "📝 1. 提示词工程"
+        },
+        {
+          "tag": "p",
+          "chars": "❌✅",
+          "contextText": "❌ \"电影感\" → ✅ \"35mm 胶片，浅景深，侧光\""
+        },
+        {
+          "tag": "p",
+          "chars": "❌✅",
+          "contextText": "❌ \"他跑过来坐下说话\" → ✅ \"他缓慢坐下\""
+        },
+        {
+          "tag": "b",
+          "chars": "❌",
+          "contextText": "❌ 错误写法"
+        },
+        {
+          "tag": "b",
+          "chars": "✅",
+          "contextText": "✅ 正确写法"
+        },
+        {
+          "tag": "h3",
+          "chars": "🎬",
+          "contextText": "🎬 2. 分镜与导演思维"
+        },
+        {
+          "tag": "b",
+          "chars": "❌",
+          "contextText": "❌ 错误：每个镜头都很漂亮，但接起来没意义"
+        },
+        {
+          "tag": "b",
+          "chars": "✅",
+          "contextText": "✅ 正确：每个镜头都推进叙事"
+        },
+        {
+          "tag": "h3",
+          "chars": "👤",
+          "contextText": "👤 3. 角色一致性"
+        },
+        {
+          "tag": "h3",
+          "chars": "🎨",
+          "contextText": "🎨 4. 风格控制"
+        },
+        {
+          "tag": "h3",
+          "chars": "🏃",
+          "contextText": "🏃 5. 运动与物理"
+        },
+        {
+          "tag": "h3",
+          "chars": "🔗",
+          "contextText": "🔗 6. 连续性与连贯性"
+        },
+        {
+          "tag": "h3",
+          "chars": "🔧",
+          "contextText": "🔧 7. 故障排查速查表"
+        },
+        {
+          "tag": "h3",
+          "chars": "⚙",
+          "contextText": "⚙️ 8. 工作流与管线"
+        },
+        {
+          "tag": "b",
+          "chars": "🎬",
+          "contextText": "🎬 Director Skill · 分镜导演"
+        }
+      ],
+      "emojiUsageHint": "warning · 含义：页面正文里检出 emoji 字符（U+1F300–U+1FAFF 或 U+2600–U+27BF 平面）。SKILL.md 视觉设计段明确禁用 emoji——不作图标、不作装饰、不放进数据。 | 修法：换成内联 SVG 图标（<svg viewBox=\"0 0 24 24\">）建立风格连贯的图标语言。 | 豁免：(1) **用户品牌资产明确包含 emoji**（罕见，但如即时通讯、社交媒体主题的产物合理）；(2) 主题本身就是关于 emoji 的（emoji 历史 / 表情包研究 / Unicode 演进）；(3) 引用某条真实文本原文（如推文截图的文字版），emoji 是内容而非装饰——保留原文可接受，但仍应权衡；(4) 装饰性 dingbat（如 U+2713 勾选符 ✓、U+2192 箭头 →、U+2605 星 ★）落入 U+2600–U+27BF 平面被误报的，如确认是符号非 emoji 可忽略。",
+      "touchTargetTooSmallWarning": [
+        {
+          "tag": "button",
+          "text": "",
+          "width": 40,
+          "height": 40,
+          "rect": [
+            14,
+            956,
+            40,
+            40
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "工具地图",
+          "width": 197,
+          "height": 34,
+          "rect": [
+            -210,
+            1112,
+            197,
+            34
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "提示词",
+          "width": 197,
+          "height": 34,
+          "rect": [
+            -210,
+            1147,
+            197,
+            34
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "镜头语言",
+          "width": 197,
+          "height": 34,
+          "rect": [
+            -210,
+            1224,
+            197,
+            34
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "角色一致",
+          "width": 197,
+          "height": 34,
+          "rect": [
+            -210,
+            1259,
+            197,
+            34
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "音频口型",
+          "width": 197,
+          "height": 34,
+          "rect": [
+            -210,
+            1336,
+            197,
+            34
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "分镜叙事",
+          "width": 197,
+          "height": 34,
+          "rect": [
+            -210,
+            1371,
+            197,
+            34
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "端到端",
+          "width": 197,
+          "height": 34,
+          "rect": [
+            -210,
+            1447,
+            197,
+            34
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "后期剪辑",
+          "width": 197,
+          "height": 34,
+          "rect": [
+            -210,
+            1482,
+            197,
+            34
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "本地化",
+          "width": 197,
+          "height": 34,
+          "rect": [
+            -210,
+            1517,
+            197,
+            34
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "提示词工程",
+          "width": 197,
+          "height": 34,
+          "rect": [
+            -210,
+            1594,
+            197,
+            34
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "分镜导演",
+          "width": 197,
+          "height": 34,
+          "rect": [
+            -210,
+            1629,
+            197,
+            34
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "角色一致性",
+          "width": 197,
+          "height": 34,
+          "rect": [
+            -210,
+            1664,
+            197,
+            34
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "风格控制",
+          "width": 197,
+          "height": 34,
+          "rect": [
+            -210,
+            1699,
+            197,
+            34
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "运动物理",
+          "width": 197,
+          "height": 34,
+          "rect": [
+            -210,
+            1734,
+            197,
+            34
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "连续性",
+          "width": 197,
+          "height": 34,
+          "rect": [
+            -210,
+            1769,
+            197,
+            34
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "故障排查",
+          "width": 197,
+          "height": 34,
+          "rect": [
+            -210,
+            1804,
+            197,
+            34
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "工作流",
+          "width": 197,
+          "height": 34,
+          "rect": [
+            -210,
+            1839,
+            197,
+            34
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "精选仓库",
+          "width": 197,
+          "height": 34,
+          "rect": [
+            -210,
+            1916,
+            197,
+            34
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "学习路径",
+          "width": 197,
+          "height": 34,
+          "rect": [
+            -210,
+            1951,
+            197,
+            34
+          ]
+        }
+      ],
+      "touchTargetTooSmallHint": "warning · 含义（仅 mobile shot 触发）：按钮 / 链接 / 交互元素的命中区 < 44×44px（iOS HIG 下限）。手指宽约 7–10mm ≈ 44px，小于此手指点不准，且按下会误触相邻元素。已自动过滤纯正文里的 inline 超链接（<a> inline + 高度 < 26px）。 | 修法：给按钮/链接加 `min-width: 44px; min-height: 44px;` 或增大 padding；图标按钮特别注意，容易只给 16-20px。 | 豁免：(1) 密集工具栏 / 编辑器 UI（图标按钮 32px 是行业惯例），但需给周围留足 gap 保证不误触；(2) 装饰性小 icon（不响应 click，只有 hover tooltip）——本规则应该已过滤，若仍报出可忽略；(3) 主要面向桌面 + 键鼠操作的产物（管理后台 / 编辑器），但如果页面同时对手机用户开放就不能豁免。",
+      "mobileFontIssuesWarning": [
+        {
+          "kind": "small-body-text",
+          "tag": "div",
+          "fontSize": 12,
+          "text": "A · 基础入门▾"
+        },
+        {
+          "kind": "small-body-text",
+          "tag": "span",
+          "fontSize": 10,
+          "text": "▾"
+        },
+        {
+          "kind": "small-body-text",
+          "tag": "div",
+          "fontSize": 12,
+          "text": "B · 视觉表达▾"
+        },
+        {
+          "kind": "small-body-text",
+          "tag": "div",
+          "fontSize": 12,
+          "text": "C · 叙事制作▾"
+        },
+        {
+          "kind": "small-body-text",
+          "tag": "div",
+          "fontSize": 12,
+          "text": "D · 出片上线▾"
+        },
+        {
+          "kind": "small-body-text",
+          "tag": "div",
+          "fontSize": 12,
+          "text": "E · 方法论干货▾"
+        },
+        {
+          "kind": "small-body-text",
+          "tag": "div",
+          "fontSize": 12,
+          "text": "F · GitHub 仓库▾"
+        },
+        {
+          "kind": "small-body-text",
+          "tag": "span",
+          "fontSize": 13,
+          "text": "Seedance 2.0 / 2.5 · 即梦 Dreamina 主线"
+        },
+        {
+          "kind": "small-body-text",
+          "tag": "span",
+          "fontSize": 13,
+          "text": "精选素材"
+        },
+        {
+          "kind": "small-body-text",
+          "tag": "span",
+          "fontSize": 13,
+          "text": "教学章节"
+        },
+        {
+          "kind": "small-body-text",
+          "tag": "span",
+          "fontSize": 13,
+          "text": "实战案例"
+        },
+        {
+          "kind": "small-body-text",
+          "tag": "p",
+          "fontSize": 13,
+          "text": "视频为本地文件，静音自动轮播；悬停开启声音，点击卡片放大播放。"
+        },
+        {
+          "kind": "small-body-text",
+          "tag": "span",
+          "fontSize": 13,
+          "text": "第 1 章"
+        },
+        {
+          "kind": "small-body-text",
+          "tag": "span",
+          "fontSize": 13,
+          "text": "第 2 章"
+        },
+        {
+          "kind": "small-body-text",
+          "tag": "span",
+          "fontSize": 13,
+          "text": "第 3 章"
+        }
+      ],
+      "mobileFontIssuesHint": "warning · 含义（仅 mobile shot 触发）：两类问题合并——(a) kind=small-body-text：正文字号 < 14px，手机上难读；(b) kind=input-under-16px：<input> / <textarea> font-size < 16px，iOS Safari 聚焦时会自动缩放页面（那种一点输入框页面跳一下的贼恶心 UX）。 | 修法：正文 ≥ 14px（16px 更佳）；表单元素 ≥ 16px。可以在移动断点里针对性调大：`@media (max-width: 640px) { body { font-size: 16px; } input, textarea { font-size: 16px; } }`。 | 豁免：(1) 图例 / caption / footnote 类辅助文字，12–13px 可接受，但应控制在页面 5% 以内；(2) 数据密集型表格数字（如财务表 12px 是行业惯例）——需要该单元格开 `tnum` 等宽数字避免飘忽；(3) input 已设 `font-size: 16px` 但仍报出——可能是 inline style / 父级 rem 计算异常，检查实际 computed 值。",
+      "reportSource": "cdp"
+    }
+  },
+  "engine": "chrome_cli",
+  "chromiumExec": "C:\\Users\\Admin/AppData/Local/ms-playwright\\chromium_headless_shell-1234\\chrome-headless-shell-win64\\chrome-headless-shell.exe",
+  "engineDegraded": true,
+  "engineDegradedReason": "playwright 未装",
+  "elapsedSec": 10.85
+}

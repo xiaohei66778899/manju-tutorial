@@ -1,0 +1,8 @@
+来源URL: https://www.genaintel.com/guides/ai-filmmaking-with-sora-veo-kling-ultimate-guide
+作者: GenAIntel Team
+日期: 2025-11-24
+
+核心内容摘要:
+Sora 2/Veo 3.1/Kling 2.5三大模型的通用提示词工程指南。核心公式：[风格/格式]+[主体与动作]+[场景/背景]+[构图与镜头]+[灯光与色彩]。详细拆解了电影摄影术语库——灯光词汇（golden hour/film noir/volumetric/neon-drenched）、镜头运动词汇（static/tracking/dolly zoom/crane/FPV drone）、空间纵深词汇（shallow DOF/deep focus/extreme foreground）、以及物理真实感编码（水流/布料/碰撞/重量感）。附4个完整的商业级提示词示例（手表/美食/自然纪录片/叙事短片）。
+
+推荐教学点: 适合"电影摄影术语与提示词公式"章节——可作为提示词词汇表和公式模板直接使用，重点讲五步公式结构和专业摄影术语的翻译。

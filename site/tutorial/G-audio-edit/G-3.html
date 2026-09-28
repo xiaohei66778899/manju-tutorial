@@ -1,0 +1,348 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="G-3 AI 配音 4 工具 · 漫剧制作教程站。玉哥整理的 AI 漫剧与短剧制作实用教程，包含步骤、案例和练习。">
+<title>G-3 AI 配音 4 工具 · 漫剧制作教程站</title>
+<link rel="stylesheet" href="../../assets/site.css?v=fix20260927-2215">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg?v=fix20260927-2215">
+<link rel="stylesheet" href="../../assets/tutorial.css?v=fix20260927-2215">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="logo">🎬 漫剧教程站 <small>v3 · 玉哥</small></div>
+  <nav>
+    <a href="../../index.html">首页</a>
+    <a href="../all-courses.html" class="active">漫剧教程</a>
+    <a href="../../prompts/image-prompts.html">图片作品</a>
+    <a href="../../works/index.html">视频作品</a>
+    <a href="../../prompts/prompts.html">prompt 模板</a>
+    <a href="../../tools/toolkit.html">工具箱</a>
+    <a href="../../qa/troubleshooting.html">问题库</a>
+    <a href="../../news/industry.html">行业新闻</a>
+    </nav>
+  <div class="search"><input type="search" placeholder="🔍 搜…"></div>
+  <button class="theme-toggle" title="深浅主题切换" onclick="document.documentElement.classList.toggle('dark')">🌙</button>
+</header>
+
+<div class="layout-3col">
+  <aside class="sidebar-left" id="sidebar-left"></aside>
+
+  <main class="content">
+    <div class="breadcrumb">
+      <a href="../../index.html">首页</a> <span>›</span>
+      <a href="../all-courses.html">G 配音剪辑</a> <span>›</span>
+      G-3 AI 配音 4 工具
+    </div>
+
+    <h1>G-3 · AI 配音 4 工具</h1>
+    <h2 id="sec-1">1. 学员小林的配音翻车现场</h2>
+
+    <div class="example">
+      <span class="label">学员实操 · 玉哥整理</span>
+      <h4>👩‍💻 小林 · 2026 年 5 月 · 第一次配音</h4>
+      <p>小林第 1 集想做得"专业",在某宝找了个<strong>真人配音</strong>,¥350/集。结果:</p>
+      <ul>
+        <li>⏰ 等了 3 天</li>
+        <li>👂 配音演员没看过剧本,"龙王"读得像"龙王(yú)"</li>
+        <li>🔄 第 1 集改了 3 次,花了 ¥1050</li>
+        <li>💔 第 2 集小林再去找同一配音演员,涨价 ¥500</li>
+      </ul>
+      <p>小林第 3 集开始用 <strong>魔音工坊</strong>(中文)+ <strong>ElevenLabs</strong>(英文旁白)。</p>
+      <ul>
+        <li>⏰ <strong>2 小时搞定</strong></li>
+        <li>💰 <strong>成本 ¥0</strong>(魔音工坊免费版 1 万字/月)</li>
+        <li>🎭 80 集配音 <strong>音色一致</strong>(AI 不会变声)</li>
+      </ul>
+
+      <p class="src">📌 <strong>学员共识</strong>:<strong>95% 漫剧 = AI 配音</strong>。<strong>真人配音留给"百万元大作"</strong>(漫剧单集收益 ¥10-30,撑不起真人)。</p>
+    </div>
+
+    <h2 id="sec-2">2. 4 大 AI 配音工具横评</h2>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th>工具</th><th>语种</th><th>音色数</th><th>免费额度</th><th>付费价格</th><th>学员首选</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>1. 剪映自带</strong></td><td>中/英</td><td>30+</td><td>✅ 完全免费</td><td>—</td><td>✅ <strong>首选(基础)</strong></td></tr>
+          <tr><td><strong>2. 魔音工坊</strong></td><td>中文为主</td><td>500+</td><td>1 万字/月</td><td>¥99/月(10 万字)</td><td>✅ <strong>首选(进阶)</strong></td></tr>
+          <tr><td><strong>3. ElevenLabs</strong></td><td>英/中/29 国</td><td>50+</td><td>1 万字/月</td><td>$5/月(5 万字)</td><td>✅ 海外剧必备</td></tr>
+          <tr><td><strong>4. 微软 Azure</strong></td><td>中/英/130 国</td><td>300+</td><td>50 万字/月(免费 1 年)</td><td>$16/100 万字</td><td>🟡 企业级</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="sec-3">3. 工具 1 · 剪映自带配音(免费够用)</h2>
+
+    <div class="example">
+      <span class="label">玉哥工具 1</span>
+      <h4>✂️ 剪映自带 · 学员 60% 在用</h4>
+      <p><strong>位置</strong>:剪映 → 文本 → 添加文字 → 文本转语音。</p>
+
+      <p><strong>3 大音色</strong>:</p>
+      <ul>
+        <li><strong>男声 · 磁性</strong>(成熟男性角色,如"龙王")</li>
+        <li><strong>女声 · 温柔</strong>(女主 / 甜宠女主)</li>
+        <li><strong>男声 · 少年</strong>(年轻男主 / 反派年轻版)</li>
+      </ul>
+
+      <p><strong>优势</strong>:</p>
+      <ul>
+        <li>✅ 完全免费,无限使用</li>
+        <li>✅ 已经集成在剪映里,不用切换工具</li>
+        <li>✅ 中文识别率高</li>
+      </ul>
+
+      <p><strong>短板</strong>:</p>
+      <ul>
+        <li>❌ 音色只有 30+,多角色容易撞</li>
+        <li>❌ 不能调"语速 / 情绪 / 停顿"</li>
+        <li>❌ 英文发音一般</li>
+      </ul>
+
+      <p class="src">📌 <strong>适用</strong>:<strong>单角色漫剧 / 个人练习 / 学员试水</strong>。<strong>第 1 集用剪映</strong> = 0 成本起步。</p>
+    </div>
+
+    <h2 id="sec-4">4. 工具 2 · 魔音工坊(中文进阶)</h2>
+
+    <div class="example">
+      <span class="label">玉哥工具 2 · 中文最强</span>
+      <h4>🎙️ 魔音工坊 · 学员 80% 在用</h4>
+      <p><strong>官网</strong>:魔音工坊(国内,学员首选中文工具)。</p>
+
+      <p><strong>3 大优势</strong>:</p>
+      <ol>
+        <li><strong>500+ 音色</strong>:男女老少 / 二次元 / 严肃 / 搞笑全覆盖</li>
+        <li><strong>支持情绪调节</strong>:高兴 / 生气 / 悲伤 / 平静 4 种情绪</li>
+        <li><strong>支持停顿控制</strong>:在文字里加 "&lt;停顿 1s&gt;" 标记</li>
+      </ol>
+
+      <p><strong>学员最常用的 5 个音色</strong>:</p>
+      <div class="tbl-wrap">
+        <table>
+          <thead>
+            <tr><th>音色名</th><th>适用角色</th><th>玉哥使用频率</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>磁性男声 · 沉稳</td><td>中年男主 / 战神</td><td>⭐⭐⭐⭐⭐</td></tr>
+            <tr><td>温柔女声 · 甜美</td><td>甜宠女主</td><td>⭐⭐⭐⭐⭐</td></tr>
+            <tr><td>少年男声 · 清亮</td><td>青年男主 / 反派</td><td>⭐⭐⭐⭐</td></tr>
+            <tr><td>御姐女声 · 干练</td><td>女强 / 商战女主</td><td>⭐⭐⭐</td></tr>
+            <tr><td>老者男声 · 苍老</td><td>师父 / 长辈 / 反派 BOSS</td><td>⭐⭐⭐</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="src">📌 <strong>玉哥经验</strong>:<strong>多角色漫剧用魔音工坊</strong>。<strong>免费版 1 万字/月</strong>够跑 1 集(平均每集 800-1500 字)。<strong>80 集买 1 个月 ¥99 会员</strong> = 整个漫剧配音。</p>
+    </div>
+
+    <h2 id="sec-5">5. 工具 3 · ElevenLabs(海外剧)</h2>
+
+    <div class="example">
+      <span class="label">玉哥工具 3 · 海外必备</span>
+      <h4>🌍 ElevenLabs · 海外剧配音</h4>
+      <p><strong>官网</strong>:elevenlabs.io。<strong>29 国语言</strong>,英文 / 西语 / 日语 / 韩语配音效果最好。</p>
+
+      <p><strong>学员标准用法</strong>:</p>
+      <ol>
+        <li>写好中文剧本</li>
+        <li>用 ChatGPT 翻译成英文(让 GPT-4 翻译得更口语化)</li>
+        <li>把英文粘贴到 ElevenLabs → 选音色 → 生成</li>
+        <li>下载 MP3 → 拖进剪映对齐视频</li>
+      </ol>
+
+      <p><strong>学员海外 4 大平台</strong>用 ElevenLabs:</p>
+      <ul>
+        <li>ReelShort(英文短剧)—— 70% 用 ElevenLabs</li>
+        <li>DramaBox —— 50%</li>
+        <li>FlexTV —— 60%</li>
+        <li>GoodShort —— 80%(国产出海)</li>
+      </ul>
+
+      <p class="src">📌 <strong>玉哥经验</strong>:<strong>国内剧用魔音,海外剧用 ElevenLabs</strong>。<strong>英文配音首选 ElevenLabs</strong>(微软 Azure 太机械,魔音英文差)。</p>
+    </div>
+
+    <h2 id="sec-6">6. 工具 4 · 微软 Azure(企业级)</h2>
+
+    <div class="example">
+      <span class="label">玉哥工具 4</span>
+      <h4>🏢 微软 Azure · 企业级稳定</h4>
+      <p><strong>官网</strong>:speech.microsoft.com。<strong>130 国语言</strong>,音色 300+,<strong>新用户免费 1 年 50 万字</strong>。</p>
+
+      <p><strong>优势</strong>:</p>
+      <ul>
+        <li>✅ <strong>最稳定</strong>(微软 SLA 99.9%,企业级)</li>
+        <li>✅ 130 国语言</li>
+        <li>✅ <strong>新用户免费 50 万字</strong>(够跑 300 集)</li>
+      </ul>
+
+      <p><strong>短板</strong>:</p>
+      <ul>
+        <li>❌ <strong>情感弱</strong>(读起来像新闻播报)</li>
+        <li>❌ 中文音色不如魔音自然</li>
+      </ul>
+
+      <p><strong>学员用法</strong>:<strong>旁白 / 工具人 / 大场面配音</strong>(不挑音色挑稳定)。</p>
+    </div>
+
+    <h2 id="sec-7">7. 工具选择决策树</h2>
+
+    <div class="example">
+      <span class="label">玉哥决策树</span>
+      <h4>🌳 你是哪种情况?</h4>
+
+      <p><strong>情况 1:个人练习 / 第 1 集</strong> → <strong>剪映自带</strong>(免费)。</p>
+      <p><strong>情况 2:国内多角色漫剧</strong> → <strong>魔音工坊</strong>(¥99/月,500+ 音色)。</p>
+      <p><strong>情况 3:海外剧(ReelShort 等)</strong> → <strong>ElevenLabs</strong>($5/月,英文最强)。</p>
+      <p><strong>情况 4:大批量工业生产(每月 100+ 集)</strong> → <strong>微软 Azure</strong>(新用户免费 50 万字)。</p>
+      <p><strong>情况 5:旁白 / 工具人</strong> → <strong>Azure + 剪映混合</strong>(主用 Azure,偶尔剪映)。</p>
+
+      <p class="src">📌 <strong>玉哥经验</strong>:<strong>90% 学员只用前 3 个</strong>。Azure <strong>留给"工作室批量生产"</strong>(每月 200+ 集)。</p>
+    </div>
+
+    <h2 id="sec-8">8. 多角色配音流程(实战)</h2>
+
+    <div class="example">
+      <span class="label">玉哥实战 SOP</span>
+      <h4>🎬 1 集多角色配音 5 步走</h4>
+      <ol>
+        <li><strong>拆剧本</strong>:在 Excel 里给每句对白标"角色 A / B / C"</li>
+        <li><strong>角色音色分配</strong>:
+          <ul>
+            <li>主角:磁性男声 / 温柔女声</li>
+            <li>反派:御姐 / 老者(差异化)</li>
+            <li>工具人:少年 / 中性</li>
+          </ul>
+        </li>
+        <li><strong>逐角色生成</strong>:<strong>先主角再配角</strong>(主角音色记住 → 整集一致)</li>
+        <li><strong>导入剪映</strong>:按时间轴对位视频(台词文字 → 视频人物嘴部)</li>
+        <li><strong>微调</strong>:剪映"音频"→ 调音量(主角比配角高 3-5 dB)</li>
+      </ol>
+
+      <p><strong>耗时</strong>:80 集漫剧 1 集配音 = <strong>2 小时</strong>(纯 AI 生成)。</p>
+    </div>
+
+    <h2 id="sec-9">9. 数字和成本</h2>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th>工具</th><th>1 集成本(1500 字)</th><th>80 集成本</th><th>学员首选</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>剪映自带</strong></td><td>¥0</td><td>¥0</td><td>✅ 起步</td></tr>
+          <tr><td><strong>魔音工坊</strong>(免费版)</td><td>¥0</td><td>¥0</td><td>✅ 1 万字/月够 1 集</td></tr>
+          <tr><td><strong>魔音工坊</strong>(付费)</td><td>¥1.5</td><td>¥120(¥99 月费摊)</td><td>✅ 80 集 1 个月</td></tr>
+          <tr><td><strong>ElevenLabs</strong>(免费版)</td><td>¥0</td><td>¥0</td><td>✅ 1 万字/月够 1 集</td></tr>
+          <tr><td><strong>ElevenLabs</strong>(付费)</td><td>¥0.7</td><td>¥56($5 月费摊)</td><td>✅ 海外剧</td></tr>
+          <tr><td><strong>真人配音</strong></td><td>¥300-500</td><td>¥24,000-40,000</td><td>❌ 漫剧不划算</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout ok">
+      <span class="ico">✅</span>
+      <p><strong>成本对比</strong>:<strong>AI 配音 ¥0-120/80 集</strong> vs <strong>真人配音 ¥24,000-40,000/80 集</strong>。<strong>省 200-300 倍</strong>。<strong>95% 漫剧 = AI 配音</strong>。</p>
+    </div>
+
+    <h2 id="sec-10">10. 学完这节能做啥</h2>
+
+    <ul class="checklist">
+      <li>知道 4 大 AI 配音工具(剪映/魔音/ElevenLabs/Azure)</li>
+      <li>会选工具(国内 → 魔音,海外 → ElevenLabs,免费 → 剪映)</li>
+      <li>能给多角色漫剧做音色分配</li>
+      <li>会魔音工坊的情绪 / 停顿控制</li>
+      <li>懂 80 集配音成本 ¥0-120(用 AI)</li>
+    </ul>
+
+    <h2 id="sec-11">11. 常见误解</h2>
+
+    <div class="callout bad">
+      <span class="ico">❌</span>
+      <p><strong>"AI 配音听着假"</strong> · 部分对。<strong>剪映自带 = 较假</strong>,魔音工坊 ≈ 真人 80%,ElevenLabs ≈ 真人 90%。<strong>选对工具</strong> = 不假。</p>
+    </div>
+
+    <div class="callout bad">
+      <span class="ico">❌</span>
+      <p><strong>"漫剧必须有真人配音"</strong> · 错。<strong>95% 学员作品全 AI</strong>。<strong>抖音 / 红果 / ReelShort TOP 100 漫剧</strong> 中 <strong>80% 是 AI 配音</strong>(观众分不出来)。</p>
+    </div>
+
+    <div class="callout warn">
+      <span class="ico">⚠️</span>
+      <p><strong>"用 1 个音色跑全集"</strong> · 错。<strong>多角色漫剧 = 多音色</strong>。<strong>5 个角色 = 5 种音色</strong>(主角 + 女主 + 反派 + 配角 + 旁白)。<strong>单音色 = 全剧一个声音 = 观众立刻走</strong>。</p>
+    </div>
+
+    <div class="callout warn">
+      <span class="ico">⚠️</span>
+      <p><strong>"英文配音让 AI 直接生成"</strong> · 错。<strong>AI 直接读中文剧本 → 英文 = 蹩脚中式英语</strong>。<strong>玉哥标准</strong> = <strong>先翻译后配音</strong>(ChatGPT 翻 + ElevenLabs 读)。</p>
+    </div>
+
+    <h2 id="sec-12">12. 本节小练习</h2>
+
+    <ol>
+      <li>用剪映自带跑第 1 集对白(随便挑 10 句),听效果</li>
+      <li>注册魔音工坊免费版,挑 5 个不同音色跑同一句对白,对比差异</li>
+      <li>用魔音工坊给第 1 集 5 个角色分配不同音色</li>
+      <li>逐句生成配音,导入剪映对齐视频时间轴</li>
+      <li>导出第 1 集配音版,记录耗时 + 成本</li>
+      <li>(选做)注册 ElevenLabs,把第 1 集对白翻译成英文配音</li>
+    </ol>
+
+    <h2 id="sec-13">13. 玉哥说</h2>
+
+    <div class="callout warn">
+      <span class="ico">📢</span>
+      <p><strong>📢 玉哥说</strong>:<br>
+      1. <strong>AI 配音 = 漫剧标配</strong> · 95% 学员全 AI,省 200 倍成本<br>
+      2. <strong>国内首选魔音工坊</strong> · 500+ 音色 + 情绪调节 + ¥99 月费够 80 集<br>
+      3. <strong>海外首选 ElevenLabs</strong> · 英文最强,ReelShort 等海外平台 70% 在用<br>
+      4. <strong>多角色 = 多音色</strong> · 5 个角色 5 种音色,别省这点事<br>
+      5. <strong>英文配音必先翻译</strong> · ChatGPT 翻 + ElevenLabs 读,不要直接 AI 读中文剧本</p>
+    </div>
+
+    <nav class="bottom-nav">
+      <a class="prev" href="../F-ai-video/F-13.html">
+        <span class="label">← 上一节</span>
+        <span class="title">F-13 角色漂移</span>
+      </a>
+      <a class="next" href="G-7.html">
+        <span class="label">下一节 →</span>
+        <span class="title">G-7 口型同步(Sync.so)</span>
+      </a>
+    </nav>
+  </main>
+
+  <aside class="sidebar-right" id="sidebar-right"></aside>
+</div>
+
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="扫码关注玉哥">
+      <img class="qr-img" src="../../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../../changelog.html">📅 更新日志</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+
+<script src="../../assets/tutorial.js?v=fix20260927-2215"></script>
+<script src="../../assets/site-enhance.js?v=fix20260927-2215" defer></script>
+</body>
+</html>

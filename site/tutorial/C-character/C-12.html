@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="C-12 用参考图保持一致 · 漫剧制作教程站。玉哥整理的 AI 漫剧与短剧制作实用教程，包含步骤、案例和练习。">
+<title>C-12 用参考图保持一致 · 漫剧制作教程站</title>
+<link rel="stylesheet" href="../../assets/site.css?v=fix20260927-2215">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg?v=fix20260927-2215">
+<link rel="stylesheet" href="../../assets/tutorial.css?v=fix20260927-2215">
+</head>
+<body>
+<header class="topbar">
+  <div class="logo">🎬 漫剧教程站 <small>v3 · 玉哥</small></div>
+  <nav>
+    <a href="../../index.html">首页</a>
+    <a href="../all-courses.html" class="active">漫剧教程</a>
+    <a href="../../prompts/image-prompts.html">图片作品</a>
+    <a href="../../works/index.html">视频作品</a>
+    <a href="../../prompts/prompts.html">prompt 模板</a>
+    <a href="../../tools/toolkit.html">工具箱</a>
+    <a href="../../qa/troubleshooting.html">问题库</a>
+    <a href="../../news/industry.html">行业新闻</a>
+    </nav>
+  <div class="search"><input type="search" placeholder="🔍 搜…"></div>
+  <button class="theme-toggle" title="深浅主题切换" onclick="document.documentElement.classList.toggle('dark')">🌙</button>
+</header>
+<div class="layout-3col">
+  <aside class="sidebar-left" id="sidebar-left"></aside>
+  <main class="content">
+    <div class="breadcrumb"><a href="../../index.html">首页</a> <span>›</span> <a href="../all-courses.html">C 角色制作</a> <span>›</span> C-12 参考图保持一致</div>
+    <h1>C-12 · 用参考图保持一致</h1>
+    <h2 id="sec-1">1. 参考图 4 类</h2>
+    <div class="tbl-wrap"><table><thead><tr><th>类型</th><th>用途</th><th>数量</th></tr></thead><tbody>
+    <tr><td><strong>正面图</strong></td><td>基础参考</td><td>1 张</td></tr>
+    <tr><td><strong>侧面图</strong></td><td>侧脸镜头</td><td>1 张</td></tr>
+    <tr><td><strong>背面图</strong></td><td>背影镜头</td><td>1 张</td></tr>
+    <tr><td><strong>表情图</strong></td><td>喜怒哀乐</td><td>6 张</td></tr>
+    </tbody></table></div>
+
+    <h2 id="sec-2">2. Weight 调试</h2>
+    <div class="tbl-wrap"><table><thead><tr><th>Weight</th><th>效果</th></tr></thead><tbody>
+    <tr><td><strong>0.4</strong></td><td>脸松,姿势自由</td></tr>
+    <tr><td><strong>0.6-0.7</strong></td><td>✅ <strong>玉哥甜区</strong></td></tr>
+    <tr><td><strong>0.85+</strong></td><td>脸锁死,姿势受限</td></tr>
+    </tbody></table></div>
+
+    <h2 id="sec-3">3. Start At / End At</h2>
+    <p>控制 IP-Adapter 在采样过程中的<strong>介入时机</strong>:</p>
+    <ul>
+      <li>Start 0.0:从一开始介入</li>
+      <li>End 0.8:到 80% 步数停止</li>
+      <li><strong>End 提前(0.6)</strong> = 给 AI 更多自由发挥(构图更活)</li>
+      <li><strong>End 推后(0.9)</strong> = 锁脸更强</li>
+    </ul>
+
+    <h2 id="sec-4">4. 多参考图混合</h2>
+    <pre class="codebox"># 混合权重(各 50%)
+正面参考 × 1 (weight 1.0)
+侧面参考 × 1 (weight 0.8)
+→ 高级混合节点(权重平均)</pre>
+    <p class="src">📌 学员 50% 用"主图 + 表情"混合,效果更稳</p>
+
+    <h2 id="sec-5">5. 学完这能做啥</h2>
+    <ul class="checklist"><li>能用 4 类参考图</li><li>能调 Weight / Start / End</li><li>能混合多参考图</li></ul>
+
+    <h2 id="sec-6">6. 小结</h2>
+    <div class="callout warn"><span class="ico">📢</span><p><strong>📢 小结</strong>:<br>
+    1. <strong>4 类参考图</strong> · 正/侧/背/表情<br>
+    2. <strong>Weight 0.6-0.7</strong> · 玉哥甜区<br>
+    3. <strong>End 0.8</strong> · 给 AI 自由发挥<br>
+    4. <strong>多参考混合</strong> · 主图 + 表情 = 学员 50%</p></div>
+
+    <nav class="bottom-nav">
+      <a class="prev" href="C-11.html"><span class="label">← 上一节</span><span class="title">C-11 一致性</span></a>
+      <a class="next" href="C-13.html"><span class="label">下一节 →</span><span class="title">C-13 IP-Adapter</span></a>
+    </nav>
+  </main>
+  <aside class="sidebar-right" id="sidebar-right"></aside>
+</div>
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="扫码关注玉哥">
+      <img class="qr-img" src="../../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../../changelog.html">📅 更新日志</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+<script src="../../assets/tutorial.js?v=fix20260927-2215"></script>
+<script src="../../assets/site-enhance.js?v=fix20260927-2215" defer></script>
+</body>
+</html>

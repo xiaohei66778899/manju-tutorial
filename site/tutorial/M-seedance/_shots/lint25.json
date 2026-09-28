@@ -1,0 +1,2065 @@
+﻿{
+  "src": "E:\\视频模板\\ai-drama-course.html",
+  "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/ai-drama-course.html",
+  "outdir": "E:\\视频模板\\_shots",
+  "include": [
+    "lint",
+    "screenshots",
+    "structure"
+  ],
+  "shots": {
+    "desktop": {
+      "screenshot": "E:\\视频模板\\_shots\\ai-drama-course_desktop.jpg",
+      "screenshotBytes": 1202811,
+      "slices": [
+        "E:\\视频模板\\_shots\\ai-drama-course_desktop_p1of4.jpg",
+        "E:\\视频模板\\_shots\\ai-drama-course_desktop_p2of4.jpg",
+        "E:\\视频模板\\_shots\\ai-drama-course_desktop_p3of4.jpg",
+        "E:\\视频模板\\_shots\\ai-drama-course_desktop_p4of4.jpg"
+      ],
+      "sliceHint": "主图过阈值（字节>800KB 或 高度>4000px），已按 3200px 切片。若主图 Read 失败，改读 slices 里各分片。",
+      "truncated": false,
+      "structure": {
+        "title": "AI 短剧 & 漫剧实战课",
+        "firstH1": "AI 短剧 & 漫剧实战课",
+        "viewport": {
+          "w": 1440,
+          "h": 900
+        },
+        "fullpage": {
+          "w": 1440,
+          "h": 17222
+        },
+        "counts": {
+          "section": 16,
+          "h1": 1,
+          "h2": 16,
+          "img": 0,
+          "canvas": 0,
+          "svg": 57,
+          "links": 43,
+          "buttons": 4
+        }
+      },
+      "consoleErrors": [
+        {
+          "type": "error",
+          "text": "Uncaught TypeError: Cannot set properties of null (setting 'textContent')\n    at renderResources (file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/ai-drama-course.html:1000:49)\n    at file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/ai-drama-course.html:1006:1",
+          "location": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/ai-drama-course.html"
+        }
+      ],
+      "consoleWarnings": [],
+      "horizontalOverflow": [],
+      "resourceErrors": [
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/official-demos/BytePlus__ByteDance_s_Dreamina_Seedance_2.0_4K_-_Every_Detail_Has_a_Story%20[OlqRqjWGEAY].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/official-demos/BytePlus__ByteDance_s_Dreamina_Seedance_2.0_4K_-_Built_for_Every_Detail%20[Uh0hlPkwmGQ].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/official-demos/Dreamina__Dreamina_Seedance_2.0_4K_Now_Live_on_Dreamina_AI%20[1kZswC3rKrg].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/official-demos/Google_DeepMind__Veo_3.1_-_Designed_to_empower_creatives%20[I06Ef8alr2Y].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/official-demos/MiniMax_Design__Hailuo_AI_Video_02_Model%20[J18idUz87LA].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/official-demos/Runway__Introducing_Gen-4.5_Runway%20[ei2PsDpPbB4].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/official-demos/Kling_AI__Introducing_Kling_AI_2.5_Turbo_Video_Model%20[ZqxP616nvIE].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Tao_Prompts__The_ONLY_7_Prompts_You_Need_to_Create_Any_AI_Video%20[zzBmvzR-URg].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/AI%E6%BC%AB%E5%89%A7%E5%88%B6%E4%BD%9C%E5%B0%8F%E7%81%B5__%E5%8D%B3%E6%A2%A6Seedance2.5%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80_p01%E5%8A%9F%E8%83",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/AIGC%E8%A7%86%E9%A2%91%E5%88%9B%E4%BD%9C%E6%95%99%E7%A8%8B__Seedance2.0%E5%8D%B3%E6%A2%A6AI5.0%E6%95%99%E7%A8%8B_p01%E5%9F%BA%E7%A1%80%E5%8A%9",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Dom_the_AI_Tutor_Tech_Tutor_Zones__AI_Filmmaking_-_The_Ultimate_Guide_to_Cinematic_Lighting_20_Prompts%20[RCHw0PtE92M].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Noble_Goose__The_ULTIMATE_Sora_2_Prompting_Guide_Complete_Control_+_Amazing_Results%20[7tAwOtVTNlE].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Ai_with_Urooj__Seedance_2.5_-_My_Complete_AI_Filmmaking_Workflow_Dreamina%20[pE534VrFaCo].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Youri_van_Hofwegen__Prompt_Like_THIS_to_Master_Making_AI_Videos_5_Levels%20[P3cxhr8FJa8].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/official-demos/OpenAI__Introducing_Sora_2%20[gzneGhpXwjU].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Dan_Kieft__10+_Seedance_2.5_Prompts_You_Need_To_Try%20[StX3eflYq_o].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/AI%E8%A7%86%E9%A2%91%E5%88%B6%E4%BD%9C%E8%AF%BE%E7%A8%8B__%E5%8D%B3%E6%A2%A65.0%E5%88%9B%E4%BD%9C%E6%95%99%E7%A8%8B_p01%E5%B9%B3%E5%8F%B0%E9%A",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/%E5%8D%B3%E6%A2%A6AI%E5%85%A8%E5%A5%97%E6%95%99%E7%A8%8B__%E5%8D%B3%E6%A2%A6%E6%8F%90%E7%A4%BA%E8%AF%8D4%E6%AD%A5%E8%BF%9B%E9%98%B6_p01%E4%B9%",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Dan_Kieft__ALL_Camera_Movement_Prompts_for_AI_Filmmaking_Explained%20[7GWd4PV3hoA].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Youri_van_Hofwegen__28_Higgsfield_Prompts_to_Create_Highly_Cinematic_AI_Videos%20[L6HvJqW7knw].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/AI_Samson__This_One_Prompt_Fixes_AI_Character_Consistency_Use_This%20[G01kghX152g].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/B%E7%AB%99%E6%88%91%E6%80%95%E6%97%A0%E6%95%8C__100%E7%A7%8DAI%E8%BF%90%E9%95%9C%E6%8A%80%E5%B7%A7_Seedance%E4%B8%93%E9%A1%B9%20[BV1XvoJBJEgC]",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/official-demos/Kling_AI__Keep_Your_Character_Consistent_with_Elements_in_Kling_MCP%20[WQZjYq179uk].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/official-demos/OpenAI__Sound_on_for_Sora_2%20[1PaoWKvcJP0].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Sebastien_Jefferies__This_Is_How_To_Use_Google_Veo_3_Like_A_PRO_-_JSON_Prompt_The_Only_Guide_You_Need%20[6LhkvHfpjAY].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Dan_Kieft__How_I_Make_Ultra_Realistic_AI_Videos_using_Seedance_2.5%20[Zo8KaTs0l6k].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Creating_with_Conor__How_to_Make_Consistent_AI_Characters_with_Seedance_2.5_Full_Guide%20[YgDJDdFQZFY].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Higgsfield_AI__How_To_Make_an_AI_Animated_Short_Film_Full_Workflow%20[zYPgz6sOy74].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/%E9%98%BFP%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BC%9A%E4%BD%A0AI__%E5%AF%BC%E6%BC%94%E5%88%86%E9%95%9Cskill_Seedance%E6%8F%90%E7%A4%BA%E8%AF",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/AI_PIPELINE__How_to_Finally_Make_Long_Videos_with_VEO_3.1_Create_Consistent_Videos_of_Any_Length%20[c772SYf6k-4].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Rourke_Heath__Seedance_2.5_Tutorial_-_My_Full_Cinematic_AI_Film_Workflow%20[MY6f9xnYOwU].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/%E6%B4%8B%E6%B4%8B%E5%BD%A1%E4%B8%B6__%E4%B9%9D%E5%AE%AB%E6%A0%BC%E5%8D%B3%E6%A2%A6Seedance2.0%E6%8F%90%E7%A4%BA%E8%AF%8D_%E5%88%86%E9%95%9C%E",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Thomas_Lundstrom__How_to_Prompt_Seedance_2.5_for_Al_Filmmaking_Full_Workflow%20[RwhsE-GydKc].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Dan_the_creator__CapCut_s_new_AI_Video_Maker_is_INSANE_and_it_s_FREE%20[iz2nbCqcFUg].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/JSFILMZ__How_to_Use_Seedance_2.5_Long_Video_Mode_in_Dreamina_1-3_Min_AI_Clips%20[EJWUQpVl-xs].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/official-demos/Higgsfield_AI__GPT-6_Astra_+_Higgsfield_MCP_Made_This_ENTIRE_Video_in_One_Chat%20[NuvA32_dmtg].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Runway__Creating_an_AI_Short_Film_Full_Workflow_Runway%20[TM8hd2lnrEk].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/AIGC%E7%9F%AD%E5%89%A7%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B__AI%E5%8A%A8%E7%94%BB%E7%94%B5%E5%BD%B1%E5%88%B6%E4%BD%9C_ComfyUI%E8%B1%86%E5%8C%85",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Youri_van_Hofwegen__EXACTLY_How_to_Make_an_AI_Short_Film_Full_Workflow%20[0v534yAyhwg].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Affiliation__Seedance_2.5_Is_INSANE_for_Realistic_AI_Filmmaking_Full_Workflow%20[kC12eMs0SF0].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/AI__Seedance_2.0_AI%20[4dxEB6OR7E8].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/AI_Filmmaking_Academy__Dreamina_Seedance2.0_mini%20[ZeWY8qIpl70].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/JSFILMZ__400_LiveAction_ShortFilm_Seedance2.0%20[jwFfkFywpu8].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/jgutrt__AI_seedance2_0_AI_AI_AI_AIGC_AI%20[8PfOSPRrLHE].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Theoretically_Media__The_AI_Film_Workflow_No_One_is_Talking_About...Yet%20[ORuSQ0Fui-A].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/AI%E7%BB%98%E7%94%BB%E5%AD%A6%E4%B9%A0%E6%95%99%E7%A8%8B__AI%E7%9C%9F%E4%BA%BA%E7%9F%AD%E5%89%A7%E5%88%B6%E4%BD%9C%E4%BF%9D%E5%A7%86%E7%BA%A7%",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/0%E5%9F%BA%E7%A1%80%E7%AC%AC%E4%B8%80%E4%B8%AAAI%E8%A7%86%E9%A2%91%20[BV1Z28P6HEGa].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/YZ__Seedance2.0_AI_AI_AI%20[Sjiz5VxMdig].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Lennard_Smith__Seedance2.0_Kling3.0_ShortFilm_Breakdown%20[ocbwttMi72M].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Licbe_AI_Media__Cinematic_AI_Film_Seedance2.5_Breakdown%20[XU3HbLq7IDk].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Mickmumpitz__Build_your_own_AI_MOVIES_shot_by_shot_-_FREE_LOCAL_AI_Filmmaking_in_ComfyUI_-_2025%20[YpuSE9hcal8].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Prompt_Mastery__LTX_Video_2.3_Without_ComfyUI_WAN2GP_One-Click_Setup%20[RIU93w24y9A].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/%E7%BA%AF%E6%89%8B%E6%90%93AI%E6%BC%AB%E5%89%A7%E4%B8%80%E4%B8%AA%E6%9C%883.1w%20[BV1Vz3v6XE7w].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/fal__DaVinci_Resolve_21.1_plus_GPT-6_Astra_is_Editing_AGI%20[KPvVInEe4JQ].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/official-demos/Runway__Introducing_Runway_Aleph_A_new_way_to_edit_transform_and_generate_video.%20[KUHx-2uz_qI].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Tao_Prompts__The_ONLY_7_Prompts_You_Need_to_Create_Any_AI_Video%20[zzBmvzR-URg].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Youri_van_Hofwegen__Prompt_Like_THIS_to_Master_Making_AI_Videos_5_Levels%20[P3cxhr8FJa8].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Ai_with_Urooj__Seedance_2.5_-_My_Complete_AI_Filmmaking_Workflow_Dreamina%20[pE534VrFaCo].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/AIGC%E8%A7%86%E9%A2%91%E5%88%9B%E4%BD%9C%E6%95%99%E7%A8%8B__Seedance2.0%E5%8D%B3%E6%A2%A6AI5.0%E6%95%99%E7%A8%8B_p01%E5%9F%BA%E7%A1%80%E5%8A%9",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Noble_Goose__The_ULTIMATE_Sora_2_Prompting_Guide_Complete_Control_+_Amazing_Results%20[7tAwOtVTNlE].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/%E5%8D%B3%E6%A2%A6AI%E5%85%A8%E5%A5%97%E6%95%99%E7%A8%8B__%E5%8D%B3%E6%A2%A6%E6%8F%90%E7%A4%BA%E8%AF%8D4%E6%AD%A5%E8%BF%9B%E9%98%B6_p01%E4%B9%",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/AI%E8%A7%86%E9%A2%91%E5%88%B6%E4%BD%9C%E8%AF%BE%E7%A8%8B__%E5%8D%B3%E6%A2%A65.0%E5%88%9B%E4%BD%9C%E6%95%99%E7%A8%8B_p01%E5%B9%B3%E5%8F%B0%E9%A",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Dan_Kieft__ALL_Camera_Movement_Prompts_for_AI_Filmmaking_Explained%20[7GWd4PV3hoA].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Dom_the_AI_Tutor_Tech_Tutor_Zones__AI_Filmmaking_-_The_Ultimate_Guide_to_Cinematic_Lighting_20_Prompts%20[RCHw0PtE92M].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Youri_van_Hofwegen__28_Higgsfield_Prompts_to_Create_Highly_Cinematic_AI_Videos%20[L6HvJqW7knw].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Dan_Kieft__How_I_Make_Ultra_Realistic_AI_Videos_using_Seedance_2.5%20[Zo8KaTs0l6k].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/B%E7%AB%99%E6%88%91%E6%80%95%E6%97%A0%E6%95%8C__100%E7%A7%8DAI%E8%BF%90%E9%95%9C%E6%8A%80%E5%B7%A7_Seedance%E4%B8%93%E9%A1%B9%20[BV1XvoJBJEgC]",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Higgsfield_AI__How_To_Make_an_AI_Animated_Short_Film_Full_Workflow%20[zYPgz6sOy74].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Rourke_Heath__Seedance_2.5_Tutorial_-_My_Full_Cinematic_AI_Film_Workflow%20[MY6f9xnYOwU].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Creating_with_Conor__How_to_Make_Consistent_AI_Characters_with_Seedance_2.5_Full_Guide%20[YgDJDdFQZFY].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/AI_Samson__This_One_Prompt_Fixes_AI_Character_Consistency_Use_This%20[G01kghX152g].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/official-demos/OpenAI__Sound_on_for_Sora_2%20[1PaoWKvcJP0].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/official-demos/Kling_AI__Keep_Your_Character_Consistent_with_Elements_in_Kling_MCP%20[WQZjYq179uk].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Sebastien_Jefferies__This_Is_How_To_Use_Google_Veo_3_Like_A_PRO_-_JSON_Prompt_The_Only_Guide_You_Need%20[6LhkvHfpjAY].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Runway__Creating_an_AI_Short_Film_Full_Workflow_Runway%20[TM8hd2lnrEk].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Thomas_Lundstrom__How_to_Prompt_Seedance_2.5_for_Al_Filmmaking_Full_Workflow%20[RwhsE-GydKc].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/AI_PIPELINE__How_to_Finally_Make_Long_Videos_with_VEO_3.1_Create_Consistent_Videos_of_Any_Length%20[c772SYf6k-4].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/%E9%98%BFP%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BC%9A%E4%BD%A0AI__%E5%AF%BC%E6%BC%94%E5%88%86%E9%95%9Cskill_Seedance%E6%8F%90%E7%A4%BA%E8%AF",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/AI__Seedance_2.0_AI%20[4dxEB6OR7E8].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/%E6%B4%8B%E6%B4%8B%E5%BD%A1%E4%B8%B6__%E4%B9%9D%E5%AE%AB%E6%A0%BC%E5%8D%B3%E6%A2%A6Seedance2.0%E6%8F%90%E7%A4%BA%E8%AF%8D_%E5%88%86%E9%95%9C%E",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Theoretically_Media__The_AI_Film_Workflow_No_One_is_Talking_About...Yet%20[ORuSQ0Fui-A].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/official-demos/Higgsfield_AI__GPT-6_Astra_+_Higgsfield_MCP_Made_This_ENTIRE_Video_in_One_Chat%20[NuvA32_dmtg].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Dan_the_creator__CapCut_s_new_AI_Video_Maker_is_INSANE_and_it_s_FREE%20[iz2nbCqcFUg].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Youri_van_Hofwegen__EXACTLY_How_to_Make_an_AI_Short_Film_Full_Workflow%20[0v534yAyhwg].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/JSFILMZ__How_to_Use_Seedance_2.5_Long_Video_Mode_in_Dreamina_1-3_Min_AI_Clips%20[EJWUQpVl-xs].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Affiliation__Seedance_2.5_Is_INSANE_for_Realistic_AI_Filmmaking_Full_Workflow%20[kC12eMs0SF0].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/jgutrt__AI_seedance2_0_AI_AI_AI_AIGC_AI%20[8PfOSPRrLHE].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        }
+      ],
+      "deadButtons": [
+        {
+          "tag": "button",
+          "text": "字幕: 中文",
+          "reason": "button-no-onclick",
+          "rect": [
+            16,
+            1748,
+            207,
+            35
+          ]
+        },
+        {
+          "tag": "div",
+          "text": "A · 基础入门",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            12,
+            1032,
+            215,
+            32
+          ]
+        },
+        {
+          "tag": "div",
+          "text": "B · 视觉表达",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            12,
+            1143,
+            215,
+            32
+          ]
+        },
+        {
+          "tag": "div",
+          "text": "C · 叙事制作",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            12,
+            1253,
+            215,
+            32
+          ]
+        },
+        {
+          "tag": "div",
+          "text": "D · 出片上线",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            12,
+            1364,
+            215,
+            32
+          ]
+        },
+        {
+          "tag": "article",
+          "text": "59 秒主线模型Seedance 2.0 · 电影感叙事官方演示字节官方 Seedance 2.0 4K 演示短片，电影",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            270,
+            639,
+            369,
+            462
+          ]
+        },
+        {
+          "tag": "article",
+          "text": "48 秒主线平台即梦 Dreamina · Seedance 2.0 4K 上线即梦国际版官方发布 Seedance 2",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            655,
+            639,
+            369,
+            462
+          ]
+        },
+        {
+          "tag": "article",
+          "text": "34 秒主线模型Seedance 2.0 · 细节还原演示Seedance 2.0 4K 细节还原官方短片，展示纹理与动",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            1041,
+            639,
+            369,
+            462
+          ]
+        },
+        {
+          "tag": "article",
+          "text": "21 分钟对比参考Sora 2 · OpenAI 完整发布（对比）OpenAI 官方 21 分钟完整发布，含原生音频能力",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            270,
+            1117,
+            369,
+            442
+          ]
+        },
+        {
+          "tag": "article",
+          "text": "1.5 分钟对比参考Veo 3.1 · Google DeepMind（对比）官方宣传片，展示环境光与长视频能力。该视频",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            655,
+            1117,
+            369,
+            442
+          ]
+        },
+        {
+          "tag": "article",
+          "text": "1.7 分钟对比参考Kling 2.5 Turbo（对比）可灵海外版官方 2.5 Turbo 模型演示，人物/场景/动态",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            1041,
+            1117,
+            369,
+            442
+          ]
+        },
+        {
+          "tag": "article",
+          "text": "54 秒对比参考Hailuo Video 02（对比）MiniMax 官方 Hailuo 02 模型演示，播放量 616",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            270,
+            1576,
+            369,
+            442
+          ]
+        },
+        {
+          "tag": "article",
+          "text": "1.5 分钟对比参考Runway Gen-4.5（对比）Runway 官方 Gen-4.5 旗舰模型发布演示，多组高质量",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            655,
+            1576,
+            369,
+            442
+          ]
+        },
+        {
+          "tag": "article",
+          "text": "8 分钟中文主线即梦 Seedance 2.5 软件基础即梦 Seedance 2.5 功能介绍，中文平台入门。该视频暂",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            1041,
+            1576,
+            369,
+            442
+          ]
+        },
+        {
+          "tag": "article",
+          "text": "23 分钟主线案例Seedance 2.5 · 10+ 条可复用提示词逐条提示词 + 成片对照，覆盖写实/动画/复古/科",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            270,
+            2242,
+            369,
+            462
+          ]
+        },
+        {
+          "tag": "article",
+          "text": "18 分钟通用框架7 大类提示词框架（通用）电影感/时间戳/过场/GPT 辅助/锚定/图片/负面七类写法 + 成片对照。",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            655,
+            2242,
+            369,
+            462
+          ]
+        },
+        {
+          "tag": "article",
+          "text": "22 分钟方法通用提示词五级进阶（方法通用）同一场景从单行提示词到 Cinema Studio 级控制的五级递进对比。字",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            1041,
+            2242,
+            369,
+            462
+          ]
+        },
+        {
+          "tag": "article",
+          "text": "12 分钟对比参考Sora 2 提示词指南（对比）Sora 2 三级进阶 + GPT 提示词生成器，作为模型语法差异参考",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            270,
+            2720,
+            369,
+            462
+          ]
+        },
+        {
+          "tag": "article",
+          "text": "13 分钟主线案例Dreamina + Seedance 2.5 电影工作流提示词模板 + 参考图 + 一致性维护的完整",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            655,
+            2720,
+            369,
+            462
+          ]
+        },
+        {
+          "tag": "article",
+          "text": "13 分钟中文主线Seedance 2.0 即梦 AI 5.0 教程Seedance 2.0 + 即梦 AI 5.0 基",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            1041,
+            2720,
+            369,
+            462
+          ]
+        }
+      ],
+      "deadButtonsHint": "含义：视觉上可点、但点了不发生任何事的元素。覆盖 6 种模式，reason 字段指明是哪种： | button-no-onclick：<button> 既无 onclick 也没被 addEventListener('click') 绑过。 | onclick-noop：onclick 属性是占位/无副作用字符串（`return false` / `void(0)` / 空串 / 分号 / 纯注释等），extra 字段 onclickAttr 展示原始值。这类写法在生产代码里几乎没有正当用途，视同没写。 | a-no-href / a-href-empty / a-href-hash-no-handler：<a> 无 href / href=\"\" / href=\"#\" 且无 handler。 | a-href-javascript-noop-no-handler：<a href=\"javascript:void(0)\" / \"javascript:;\">，作者显式关掉 native 导航，但 JS 侧也没人接手。收紧路径：祖先有 click listener 时，还要验证 listener 源码是否引用了本元素的 class/id/data-* 才放行；listener 源码不可读（native/bound/被 minify）时保守放行，避免误伤。extra 字段 hrefAttr 展示原始 href。 | a-broken-anchor：<a href=\"#foo\"> 但页面里没有 id=\"foo\" 也没有 name=\"foo\" 的元素。已排除 SPA hash 路由（href 含 / 或 ? 的形式，如 #/dashboard）。 | cursor-pointer-no-handler：<div>/<span> 等非交互标签加了 cursor:pointer 却没绑任何 click。 | input-no-handler：<input type=button|submit|reset|image> 无 onclick 也无 listener。form 里的 submit/reset 已豁免。 | label-for-not-found：<label for=\"xxx\"> 但页面里没有 id=\"xxx\"。用户点 label 期望 focus 到 input，实际什么都不发生。extra 字段 forAttr 展示 for 值。 | 已排除：form submit/reset、popover 触发器、role=button/link/tab/menuitem/option/switch/checkbox/radio、<label> 包裹、body/html 上继承 cursor:pointer；cursor-pointer-no-handler 只报尺寸 ≥ 24×16 且有可见文字的元素。 | 修法：给 <button>/<input> 加 onclick 或 addEventListener；给 <a> 补真实 href 或改成 <button>；把 <div class=\"nav-item\">…</div> 之类假按钮换成真 <button> 或 <a>，或给它加 role=button+tabindex+键盘 handler；onclick=\"return false\" 之类占位符要么删掉（配合真 handler），要么替换为 toast 提示「演示中」这类可感知反馈；断链锚点核对目标 id 拼写；label 断链核对 for 与 input id 是否一致。 | 豁免：(1) 带 note=ancestor-has-data-attr 的项可能是**祖先事件委托**目标（document/window 上的全局委托本规则查不到），对着代码核对，如果确实有 document.addEventListener('click', e => e.target.closest(...)) 之类的委托捕获就忽略；(2) 纯装饰按钮（无 hover/focus 反馈的 mock 页面）——但这本身也算 slop，建议改成非 <button>；(3) cursor-pointer-no-handler：如果元素只是 hover 变鼠标做微交互提示（如 tooltip trigger）而非真按钮，去掉 cursor:pointer 更合适；(4) a-href-javascript-noop-no-handler：如果确实有全局委托捕获（如 window.addEventListener 或 minify 后的框架 handler），本规则的 listener 源码启发式可能读不到明文标识 → 结合 note 字段和实际代码核对；(5) a-broken-anchor：如果目标 id 是运行时由 JS 动态注入的（比如懒加载章节），核对确认后可忽略。",
+      "emojiUsageWarning": [
+        {
+          "tag": "b",
+          "chars": "☁",
+          "contextText": "☁️ 云端跑（推荐新手）"
+        },
+        {
+          "tag": "b",
+          "chars": "🖥",
+          "contextText": "🖥️ 本地跑（进阶玩家）"
+        },
+        {
+          "tag": "p",
+          "chars": "✅",
+          "contextText": "✅ 加约束词：\"面部清晰，五官不变形，保持人脸比例\""
+        },
+        {
+          "tag": "p",
+          "chars": "✅",
+          "contextText": "✅ 减少动作幅度：转头太快容易崩"
+        },
+        {
+          "tag": "p",
+          "chars": "✅",
+          "contextText": "✅ 用角色参考图（即梦/Kling 都支持）"
+        },
+        {
+          "tag": "p",
+          "chars": "✅",
+          "contextText": "✅ 生成后用 Runway / Pika 修复面部"
+        },
+        {
+          "tag": "p",
+          "chars": "✅",
+          "contextText": "✅ 把复杂动作拆成多个镜头，不要一个镜头做完"
+        },
+        {
+          "tag": "p",
+          "chars": "✅",
+          "contextText": "✅ 加运镜约束：\"缓慢推近，不要剧烈晃动\""
+        },
+        {
+          "tag": "p",
+          "chars": "✅",
+          "contextText": "✅ 用 Kling 生成运动镜头（物理真实强）"
+        },
+        {
+          "tag": "p",
+          "chars": "✅",
+          "contextText": "✅ 时长缩短到 3-5 秒，越长越容易崩"
+        },
+        {
+          "tag": "p",
+          "chars": "✅",
+          "contextText": "✅ 减少镜头里的物体数量，画面越简单越稳"
+        },
+        {
+          "tag": "p",
+          "chars": "✅",
+          "contextText": "✅ 加约束：\"物体保持形状，不融合，不穿插\""
+        },
+        {
+          "tag": "p",
+          "chars": "✅",
+          "contextText": "✅ 背景尽量干净，避免复杂纹理"
+        },
+        {
+          "tag": "p",
+          "chars": "✅",
+          "contextText": "✅ 换一个模型重试（Seedance 不行试 Kling）"
+        },
+        {
+          "tag": "p",
+          "chars": "✅",
+          "contextText": "✅ 用同一组参考图，每个镜头都带上"
+        }
+      ],
+      "emojiUsageHint": "warning · 含义：页面正文里检出 emoji 字符（U+1F300–U+1FAFF 或 U+2600–U+27BF 平面）。SKILL.md 视觉设计段明确禁用 emoji——不作图标、不作装饰、不放进数据。 | 修法：换成内联 SVG 图标（<svg viewBox=\"0 0 24 24\">）建立风格连贯的图标语言。 | 豁免：(1) **用户品牌资产明确包含 emoji**（罕见，但如即时通讯、社交媒体主题的产物合理）；(2) 主题本身就是关于 emoji 的（emoji 历史 / 表情包研究 / Unicode 演进）；(3) 引用某条真实文本原文（如推文截图的文字版），emoji 是内容而非装饰——保留原文可接受，但仍应权衡；(4) 装饰性 dingbat（如 U+2713 勾选符 ✓、U+2192 箭头 →、U+2605 星 ★）落入 U+2600–U+27BF 平面被误报的，如确认是符号非 emoji 可忽略。",
+      "reportSource": "cdp"
+    },
+    "mobile": {
+      "screenshot": "E:\\视频模板\\_shots\\ai-drama-course_mobile.jpg",
+      "screenshotBytes": 1893995,
+      "slices": [
+        "E:\\视频模板\\_shots\\ai-drama-course_mobile_p1of12.jpg",
+        "E:\\视频模板\\_shots\\ai-drama-course_mobile_p2of12.jpg",
+        "E:\\视频模板\\_shots\\ai-drama-course_mobile_p3of12.jpg",
+        "E:\\视频模板\\_shots\\ai-drama-course_mobile_p4of12.jpg",
+        "E:\\视频模板\\_shots\\ai-drama-course_mobile_p5of12.jpg",
+        "E:\\视频模板\\_shots\\ai-drama-course_mobile_p6of12.jpg",
+        "E:\\视频模板\\_shots\\ai-drama-course_mobile_p7of12.jpg",
+        "E:\\视频模板\\_shots\\ai-drama-course_mobile_p8of12.jpg",
+        "E:\\视频模板\\_shots\\ai-drama-course_mobile_p9of12.jpg",
+        "E:\\视频模板\\_shots\\ai-drama-course_mobile_p10of12.jpg",
+        "E:\\视频模板\\_shots\\ai-drama-course_mobile_p11of12.jpg",
+        "E:\\视频模板\\_shots\\ai-drama-course_mobile_p12of12.jpg"
+      ],
+      "sliceHint": "主图过阈值（字节>800KB 或 高度>4000px），已按 3200px 切片。若主图 Read 失败，改读 slices 里各分片。",
+      "truncated": false,
+      "structure": {
+        "title": "AI 短剧 & 漫剧实战课",
+        "firstH1": "AI 短剧 & 漫剧实战课",
+        "viewport": {
+          "w": 390,
+          "h": 844
+        },
+        "fullpage": {
+          "w": 390,
+          "h": 36575
+        },
+        "counts": {
+          "section": 16,
+          "h1": 1,
+          "h2": 16,
+          "img": 0,
+          "canvas": 0,
+          "svg": 57,
+          "links": 43,
+          "buttons": 4
+        }
+      },
+      "consoleErrors": [
+        {
+          "type": "error",
+          "text": "Uncaught TypeError: Cannot set properties of null (setting 'textContent')\n    at renderResources (file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/ai-drama-course.html:1000:49)\n    at file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/ai-drama-course.html:1006:1",
+          "location": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/ai-drama-course.html"
+        }
+      ],
+      "consoleWarnings": [],
+      "horizontalOverflow": [
+        {
+          "tag": "aside",
+          "cls": "sidebar",
+          "left": -240,
+          "right": 0,
+          "width": 240
+        }
+      ],
+      "resourceErrors": [
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/official-demos/BytePlus__ByteDance_s_Dreamina_Seedance_2.0_4K_-_Every_Detail_Has_a_Story%20[OlqRqjWGEAY].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/official-demos/Dreamina__Dreamina_Seedance_2.0_4K_Now_Live_on_Dreamina_AI%20[1kZswC3rKrg].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/official-demos/Google_DeepMind__Veo_3.1_-_Designed_to_empower_creatives%20[I06Ef8alr2Y].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/official-demos/MiniMax_Design__Hailuo_AI_Video_02_Model%20[J18idUz87LA].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/official-demos/BytePlus__ByteDance_s_Dreamina_Seedance_2.0_4K_-_Built_for_Every_Detail%20[Uh0hlPkwmGQ].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/official-demos/Kling_AI__Introducing_Kling_AI_2.5_Turbo_Video_Model%20[ZqxP616nvIE].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/official-demos/Runway__Introducing_Gen-4.5_Runway%20[ei2PsDpPbB4].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/AI%E6%BC%AB%E5%89%A7%E5%88%B6%E4%BD%9C%E5%B0%8F%E7%81%B5__%E5%8D%B3%E6%A2%A6Seedance2.5%E8%BD%AF%E4%BB%B6%E5%9F%BA%E7%A1%80_p01%E5%8A%9F%E8%83",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Tao_Prompts__The_ONLY_7_Prompts_You_Need_to_Create_Any_AI_Video%20[zzBmvzR-URg].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Ai_with_Urooj__Seedance_2.5_-_My_Complete_AI_Filmmaking_Workflow_Dreamina%20[pE534VrFaCo].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/AI%E8%A7%86%E9%A2%91%E5%88%B6%E4%BD%9C%E8%AF%BE%E7%A8%8B__%E5%8D%B3%E6%A2%A65.0%E5%88%9B%E4%BD%9C%E6%95%99%E7%A8%8B_p01%E5%B9%B3%E5%8F%B0%E9%A",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/%E5%8D%B3%E6%A2%A6AI%E5%85%A8%E5%A5%97%E6%95%99%E7%A8%8B__%E5%8D%B3%E6%A2%A6%E6%8F%90%E7%A4%BA%E8%AF%8D4%E6%AD%A5%E8%BF%9B%E9%98%B6_p01%E4%B9%",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/AIGC%E8%A7%86%E9%A2%91%E5%88%9B%E4%BD%9C%E6%95%99%E7%A8%8B__Seedance2.0%E5%8D%B3%E6%A2%A6AI5.0%E6%95%99%E7%A8%8B_p01%E5%9F%BA%E7%A1%80%E5%8A%9",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Dom_the_AI_Tutor_Tech_Tutor_Zones__AI_Filmmaking_-_The_Ultimate_Guide_to_Cinematic_Lighting_20_Prompts%20[RCHw0PtE92M].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Youri_van_Hofwegen__28_Higgsfield_Prompts_to_Create_Highly_Cinematic_AI_Videos%20[L6HvJqW7knw].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/official-demos/Kling_AI__Keep_Your_Character_Consistent_with_Elements_in_Kling_MCP%20[WQZjYq179uk].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Dan_Kieft__ALL_Camera_Movement_Prompts_for_AI_Filmmaking_Explained%20[7GWd4PV3hoA].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/AI_Samson__This_One_Prompt_Fixes_AI_Character_Consistency_Use_This%20[G01kghX152g].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Rourke_Heath__Seedance_2.5_Tutorial_-_My_Full_Cinematic_AI_Film_Workflow%20[MY6f9xnYOwU].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Sebastien_Jefferies__This_Is_How_To_Use_Google_Veo_3_Like_A_PRO_-_JSON_Prompt_The_Only_Guide_You_Need%20[6LhkvHfpjAY].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Higgsfield_AI__How_To_Make_an_AI_Animated_Short_Film_Full_Workflow%20[zYPgz6sOy74].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/official-demos/OpenAI__Sound_on_for_Sora_2%20[1PaoWKvcJP0].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Dan_Kieft__How_I_Make_Ultra_Realistic_AI_Videos_using_Seedance_2.5%20[Zo8KaTs0l6k].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/AI_PIPELINE__How_to_Finally_Make_Long_Videos_with_VEO_3.1_Create_Consistent_Videos_of_Any_Length%20[c772SYf6k-4].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Thomas_Lundstrom__How_to_Prompt_Seedance_2.5_for_Al_Filmmaking_Full_Workflow%20[RwhsE-GydKc].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/%E6%B4%8B%E6%B4%8B%E5%BD%A1%E4%B8%B6__%E4%B9%9D%E5%AE%AB%E6%A0%BC%E5%8D%B3%E6%A2%A6Seedance2.0%E6%8F%90%E7%A4%BA%E8%AF%8D_%E5%88%86%E9%95%9C%E",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/%E9%98%BFP%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BC%9A%E4%BD%A0AI__%E5%AF%BC%E6%BC%94%E5%88%86%E9%95%9Cskill_Seedance%E6%8F%90%E7%A4%BA%E8%AF",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Creating_with_Conor__How_to_Make_Consistent_AI_Characters_with_Seedance_2.5_Full_Guide%20[YgDJDdFQZFY].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/official-demos/Higgsfield_AI__GPT-6_Astra_+_Higgsfield_MCP_Made_This_ENTIRE_Video_in_One_Chat%20[NuvA32_dmtg].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Dan_the_creator__CapCut_s_new_AI_Video_Maker_is_INSANE_and_it_s_FREE%20[iz2nbCqcFUg].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Runway__Creating_an_AI_Short_Film_Full_Workflow_Runway%20[TM8hd2lnrEk].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/JSFILMZ__How_to_Use_Seedance_2.5_Long_Video_Mode_in_Dreamina_1-3_Min_AI_Clips%20[EJWUQpVl-xs].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/AI__Seedance_2.0_AI%20[4dxEB6OR7E8].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Affiliation__Seedance_2.5_Is_INSANE_for_Realistic_AI_Filmmaking_Full_Workflow%20[kC12eMs0SF0].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/jgutrt__AI_seedance2_0_AI_AI_AI_AIGC_AI%20[8PfOSPRrLHE].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/AIGC%E7%9F%AD%E5%89%A7%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B__AI%E5%8A%A8%E7%94%BB%E7%94%B5%E5%BD%B1%E5%88%B6%E4%BD%9C_ComfyUI%E8%B1%86%E5%8C%85",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Licbe_AI_Media__Cinematic_AI_Film_Seedance2.5_Breakdown%20[XU3HbLq7IDk].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/official-demos/Runway__Introducing_Runway_Aleph_A_new_way_to_edit_transform_and_generate_video.%20[KUHx-2uz_qI].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/0%E5%9F%BA%E7%A1%80%E7%AC%AC%E4%B8%80%E4%B8%AAAI%E8%A7%86%E9%A2%91%20[BV1Z28P6HEGa].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/JSFILMZ__400_LiveAction_ShortFilm_Seedance2.0%20[jwFfkFywpu8].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/AI_Filmmaking_Academy__Dreamina_Seedance2.0_mini%20[ZeWY8qIpl70].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/%E7%BA%AF%E6%89%8B%E6%90%93AI%E6%BC%AB%E5%89%A7%E4%B8%80%E4%B8%AA%E6%9C%883.1w%20[BV1Vz3v6XE7w].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Lennard_Smith__Seedance2.0_Kling3.0_ShortFilm_Breakdown%20[ocbwttMi72M].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Mickmumpitz__Build_your_own_AI_MOVIES_shot_by_shot_-_FREE_LOCAL_AI_Filmmaking_in_ComfyUI_-_2025%20[YpuSE9hcal8].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Prompt_Mastery__LTX_Video_2.3_Without_ComfyUI_WAN2GP_One-Click_Setup%20[RIU93w24y9A].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/fal__DaVinci_Resolve_21.1_plus_GPT-6_Astra_is_Editing_AGI%20[KPvVInEe4JQ].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Noble_Goose__The_ULTIMATE_Sora_2_Prompting_Guide_Complete_Control_+_Amazing_Results%20[7tAwOtVTNlE].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/B%E7%AB%99%E6%88%91%E6%80%95%E6%97%A0%E6%95%8C__100%E7%A7%8DAI%E8%BF%90%E9%95%9C%E6%8A%80%E5%B7%A7_Seedance%E4%B8%93%E9%A1%B9%20[BV1XvoJBJEgC]",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Youri_van_Hofwegen__Prompt_Like_THIS_to_Master_Making_AI_Videos_5_Levels%20[P3cxhr8FJa8].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/official-demos/OpenAI__Introducing_Sora_2%20[gzneGhpXwjU].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Dan_Kieft__10+_Seedance_2.5_Prompts_You_Need_To_Try%20[StX3eflYq_o].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Youri_van_Hofwegen__EXACTLY_How_to_Make_an_AI_Short_Film_Full_Workflow%20[0v534yAyhwg].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/AI%E7%BB%98%E7%94%BB%E5%AD%A6%E4%B9%A0%E6%95%99%E7%A8%8B__AI%E7%9C%9F%E4%BA%BA%E7%9F%AD%E5%89%A7%E5%88%B6%E4%BD%9C%E4%BF%9D%E5%A7%86%E7%BA%A7%",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Theoretically_Media__The_AI_Film_Workflow_No_One_is_Talking_About...Yet%20[ORuSQ0Fui-A].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/YZ__Seedance2.0_AI_AI_AI%20[Sjiz5VxMdig].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Tao_Prompts__The_ONLY_7_Prompts_You_Need_to_Create_Any_AI_Video%20[zzBmvzR-URg].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/%E5%8D%B3%E6%A2%A6AI%E5%85%A8%E5%A5%97%E6%95%99%E7%A8%8B__%E5%8D%B3%E6%A2%A6%E6%8F%90%E7%A4%BA%E8%AF%8D4%E6%AD%A5%E8%BF%9B%E9%98%B6_p01%E4%B9%",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/AIGC%E8%A7%86%E9%A2%91%E5%88%9B%E4%BD%9C%E6%95%99%E7%A8%8B__Seedance2.0%E5%8D%B3%E6%A2%A6AI5.0%E6%95%99%E7%A8%8B_p01%E5%9F%BA%E7%A1%80%E5%8A%9",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/AI%E8%A7%86%E9%A2%91%E5%88%B6%E4%BD%9C%E8%AF%BE%E7%A8%8B__%E5%8D%B3%E6%A2%A65.0%E5%88%9B%E4%BD%9C%E6%95%99%E7%A8%8B_p01%E5%B9%B3%E5%8F%B0%E9%A",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Dom_the_AI_Tutor_Tech_Tutor_Zones__AI_Filmmaking_-_The_Ultimate_Guide_to_Cinematic_Lighting_20_Prompts%20[RCHw0PtE92M].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Dan_Kieft__ALL_Camera_Movement_Prompts_for_AI_Filmmaking_Explained%20[7GWd4PV3hoA].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Dan_Kieft__How_I_Make_Ultra_Realistic_AI_Videos_using_Seedance_2.5%20[Zo8KaTs0l6k].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Higgsfield_AI__How_To_Make_an_AI_Animated_Short_Film_Full_Workflow%20[zYPgz6sOy74].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/B%E7%AB%99%E6%88%91%E6%80%95%E6%97%A0%E6%95%8C__100%E7%A7%8DAI%E8%BF%90%E9%95%9C%E6%8A%80%E5%B7%A7_Seedance%E4%B8%93%E9%A1%B9%20[BV1XvoJBJEgC]",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/official-demos/Kling_AI__Keep_Your_Character_Consistent_with_Elements_in_Kling_MCP%20[WQZjYq179uk].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/official-demos/OpenAI__Sound_on_for_Sora_2%20[1PaoWKvcJP0].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Thomas_Lundstrom__How_to_Prompt_Seedance_2.5_for_Al_Filmmaking_Full_Workflow%20[RwhsE-GydKc].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Sebastien_Jefferies__This_Is_How_To_Use_Google_Veo_3_Like_A_PRO_-_JSON_Prompt_The_Only_Guide_You_Need%20[6LhkvHfpjAY].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Runway__Creating_an_AI_Short_Film_Full_Workflow_Runway%20[TM8hd2lnrEk].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Youri_van_Hofwegen__EXACTLY_How_to_Make_an_AI_Short_Film_Full_Workflow%20[0v534yAyhwg].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/%E6%B4%8B%E6%B4%8B%E5%BD%A1%E4%B8%B6__%E4%B9%9D%E5%AE%AB%E6%A0%BC%E5%8D%B3%E6%A2%A6Seedance2.0%E6%8F%90%E7%A4%BA%E8%AF%8D_%E5%88%86%E9%95%9C%E",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Dan_the_creator__CapCut_s_new_AI_Video_Maker_is_INSANE_and_it_s_FREE%20[iz2nbCqcFUg].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/official-demos/Higgsfield_AI__GPT-6_Astra_+_Higgsfield_MCP_Made_This_ENTIRE_Video_in_One_Chat%20[NuvA32_dmtg].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Theoretically_Media__The_AI_Film_Workflow_No_One_is_Talking_About...Yet%20[ORuSQ0Fui-A].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/%E9%98%BFP%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BC%9A%E4%BD%A0AI__%E5%AF%BC%E6%BC%94%E5%88%86%E9%95%9Cskill_Seedance%E6%8F%90%E7%A4%BA%E8%AF",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/AI_PIPELINE__How_to_Finally_Make_Long_Videos_with_VEO_3.1_Create_Consistent_Videos_of_Any_Length%20[c772SYf6k-4].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Creating_with_Conor__How_to_Make_Consistent_AI_Characters_with_Seedance_2.5_Full_Guide%20[YgDJDdFQZFY].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/workflows/Rourke_Heath__Seedance_2.5_Tutorial_-_My_Full_Cinematic_AI_Film_Workflow%20[MY6f9xnYOwU].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/AI_Samson__This_One_Prompt_Fixes_AI_Character_Consistency_Use_This%20[G01kghX152g].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        },
+        {
+          "url": "file:///E:/%E8%A7%86%E9%A2%91%E6%A8%A1%E6%9D%BF/tutorials/Youri_van_Hofwegen__28_Higgsfield_Prompts_to_Create_Highly_Cinematic_AI_Videos%20[L6HvJqW7knw].mp4",
+          "resourceType": "Media",
+          "status": null,
+          "reason": "network_error"
+        }
+      ],
+      "deadButtons": [
+        {
+          "tag": "button",
+          "text": "字幕: 中文",
+          "reason": "button-no-onclick",
+          "rect": [
+            -224,
+            2756,
+            207,
+            35
+          ]
+        },
+        {
+          "tag": "div",
+          "text": "A · 基础入门",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            -228,
+            2096,
+            215,
+            32
+          ]
+        },
+        {
+          "tag": "div",
+          "text": "B · 视觉表达",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            -228,
+            2207,
+            215,
+            32
+          ]
+        },
+        {
+          "tag": "div",
+          "text": "C · 叙事制作",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            -228,
+            2317,
+            215,
+            32
+          ]
+        },
+        {
+          "tag": "div",
+          "text": "D · 出片上线",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            -228,
+            2428,
+            215,
+            32
+          ]
+        },
+        {
+          "tag": "article",
+          "text": "59 秒主线模型Seedance 2.0 · 电影感叙事官方演示字节官方 Seedance 2.0 4K 演示短片，电影",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            20,
+            677,
+            350,
+            451
+          ]
+        },
+        {
+          "tag": "article",
+          "text": "48 秒主线平台即梦 Dreamina · Seedance 2.0 4K 上线即梦国际版官方发布 Seedance 2",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            20,
+            1144,
+            350,
+            451
+          ]
+        },
+        {
+          "tag": "article",
+          "text": "34 秒主线模型Seedance 2.0 · 细节还原演示Seedance 2.0 4K 细节还原官方短片，展示纹理与动",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            20,
+            1612,
+            350,
+            431
+          ]
+        },
+        {
+          "tag": "article",
+          "text": "21 分钟对比参考Sora 2 · OpenAI 完整发布（对比）OpenAI 官方 21 分钟完整发布，含原生音频能力",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            20,
+            2059,
+            350,
+            431
+          ]
+        },
+        {
+          "tag": "article",
+          "text": "1.5 分钟对比参考Veo 3.1 · Google DeepMind（对比）官方宣传片，展示环境光与长视频能力。该视频",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            20,
+            2506,
+            350,
+            410
+          ]
+        },
+        {
+          "tag": "article",
+          "text": "1.7 分钟对比参考Kling 2.5 Turbo（对比）可灵海外版官方 2.5 Turbo 模型演示，人物/场景/动态",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            20,
+            2932,
+            350,
+            431
+          ]
+        },
+        {
+          "tag": "article",
+          "text": "54 秒对比参考Hailuo Video 02（对比）MiniMax 官方 Hailuo 02 模型演示，播放量 616",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            20,
+            3379,
+            350,
+            431
+          ]
+        },
+        {
+          "tag": "article",
+          "text": "1.5 分钟对比参考Runway Gen-4.5（对比）Runway 官方 Gen-4.5 旗舰模型发布演示，多组高质量",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            20,
+            3826,
+            350,
+            431
+          ]
+        },
+        {
+          "tag": "article",
+          "text": "8 分钟中文主线即梦 Seedance 2.5 软件基础即梦 Seedance 2.5 功能介绍，中文平台入门。该视频暂",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            20,
+            4273,
+            350,
+            430
+          ]
+        },
+        {
+          "tag": "article",
+          "text": "23 分钟主线案例Seedance 2.5 · 10+ 条可复用提示词逐条提示词 + 成片对照，覆盖写实/动画/复古/科",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            20,
+            4966,
+            350,
+            451
+          ]
+        },
+        {
+          "tag": "article",
+          "text": "18 分钟通用框架7 大类提示词框架（通用）电影感/时间戳/过场/GPT 辅助/锚定/图片/负面七类写法 + 成片对照。",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            20,
+            5433,
+            350,
+            431
+          ]
+        },
+        {
+          "tag": "article",
+          "text": "22 分钟方法通用提示词五级进阶（方法通用）同一场景从单行提示词到 Cinema Studio 级控制的五级递进对比。字",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            20,
+            5881,
+            350,
+            431
+          ]
+        },
+        {
+          "tag": "article",
+          "text": "12 分钟对比参考Sora 2 提示词指南（对比）Sora 2 三级进阶 + GPT 提示词生成器，作为模型语法差异参考",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            20,
+            6328,
+            350,
+            431
+          ]
+        },
+        {
+          "tag": "article",
+          "text": "13 分钟主线案例Dreamina + Seedance 2.5 电影工作流提示词模板 + 参考图 + 一致性维护的完整",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            20,
+            6775,
+            350,
+            451
+          ]
+        },
+        {
+          "tag": "article",
+          "text": "13 分钟中文主线Seedance 2.0 即梦 AI 5.0 教程Seedance 2.0 + 即梦 AI 5.0 基",
+          "reason": "cursor-pointer-no-handler",
+          "rect": [
+            20,
+            7242,
+            350,
+            451
+          ]
+        }
+      ],
+      "deadButtonsHint": "含义：视觉上可点、但点了不发生任何事的元素。覆盖 6 种模式，reason 字段指明是哪种： | button-no-onclick：<button> 既无 onclick 也没被 addEventListener('click') 绑过。 | onclick-noop：onclick 属性是占位/无副作用字符串（`return false` / `void(0)` / 空串 / 分号 / 纯注释等），extra 字段 onclickAttr 展示原始值。这类写法在生产代码里几乎没有正当用途，视同没写。 | a-no-href / a-href-empty / a-href-hash-no-handler：<a> 无 href / href=\"\" / href=\"#\" 且无 handler。 | a-href-javascript-noop-no-handler：<a href=\"javascript:void(0)\" / \"javascript:;\">，作者显式关掉 native 导航，但 JS 侧也没人接手。收紧路径：祖先有 click listener 时，还要验证 listener 源码是否引用了本元素的 class/id/data-* 才放行；listener 源码不可读（native/bound/被 minify）时保守放行，避免误伤。extra 字段 hrefAttr 展示原始 href。 | a-broken-anchor：<a href=\"#foo\"> 但页面里没有 id=\"foo\" 也没有 name=\"foo\" 的元素。已排除 SPA hash 路由（href 含 / 或 ? 的形式，如 #/dashboard）。 | cursor-pointer-no-handler：<div>/<span> 等非交互标签加了 cursor:pointer 却没绑任何 click。 | input-no-handler：<input type=button|submit|reset|image> 无 onclick 也无 listener。form 里的 submit/reset 已豁免。 | label-for-not-found：<label for=\"xxx\"> 但页面里没有 id=\"xxx\"。用户点 label 期望 focus 到 input，实际什么都不发生。extra 字段 forAttr 展示 for 值。 | 已排除：form submit/reset、popover 触发器、role=button/link/tab/menuitem/option/switch/checkbox/radio、<label> 包裹、body/html 上继承 cursor:pointer；cursor-pointer-no-handler 只报尺寸 ≥ 24×16 且有可见文字的元素。 | 修法：给 <button>/<input> 加 onclick 或 addEventListener；给 <a> 补真实 href 或改成 <button>；把 <div class=\"nav-item\">…</div> 之类假按钮换成真 <button> 或 <a>，或给它加 role=button+tabindex+键盘 handler；onclick=\"return false\" 之类占位符要么删掉（配合真 handler），要么替换为 toast 提示「演示中」这类可感知反馈；断链锚点核对目标 id 拼写；label 断链核对 for 与 input id 是否一致。 | 豁免：(1) 带 note=ancestor-has-data-attr 的项可能是**祖先事件委托**目标（document/window 上的全局委托本规则查不到），对着代码核对，如果确实有 document.addEventListener('click', e => e.target.closest(...)) 之类的委托捕获就忽略；(2) 纯装饰按钮（无 hover/focus 反馈的 mock 页面）——但这本身也算 slop，建议改成非 <button>；(3) cursor-pointer-no-handler：如果元素只是 hover 变鼠标做微交互提示（如 tooltip trigger）而非真按钮，去掉 cursor:pointer 更合适；(4) a-href-javascript-noop-no-handler：如果确实有全局委托捕获（如 window.addEventListener 或 minify 后的框架 handler），本规则的 listener 源码启发式可能读不到明文标识 → 结合 note 字段和实际代码核对；(5) a-broken-anchor：如果目标 id 是运行时由 JS 动态注入的（比如懒加载章节），核对确认后可忽略。",
+      "emojiUsageWarning": [
+        {
+          "tag": "b",
+          "chars": "☁",
+          "contextText": "☁️ 云端跑（推荐新手）"
+        },
+        {
+          "tag": "b",
+          "chars": "🖥",
+          "contextText": "🖥️ 本地跑（进阶玩家）"
+        },
+        {
+          "tag": "p",
+          "chars": "✅",
+          "contextText": "✅ 加约束词：\"面部清晰，五官不变形，保持人脸比例\""
+        },
+        {
+          "tag": "p",
+          "chars": "✅",
+          "contextText": "✅ 减少动作幅度：转头太快容易崩"
+        },
+        {
+          "tag": "p",
+          "chars": "✅",
+          "contextText": "✅ 用角色参考图（即梦/Kling 都支持）"
+        },
+        {
+          "tag": "p",
+          "chars": "✅",
+          "contextText": "✅ 生成后用 Runway / Pika 修复面部"
+        },
+        {
+          "tag": "p",
+          "chars": "✅",
+          "contextText": "✅ 把复杂动作拆成多个镜头，不要一个镜头做完"
+        },
+        {
+          "tag": "p",
+          "chars": "✅",
+          "contextText": "✅ 加运镜约束：\"缓慢推近，不要剧烈晃动\""
+        },
+        {
+          "tag": "p",
+          "chars": "✅",
+          "contextText": "✅ 用 Kling 生成运动镜头（物理真实强）"
+        },
+        {
+          "tag": "p",
+          "chars": "✅",
+          "contextText": "✅ 时长缩短到 3-5 秒，越长越容易崩"
+        },
+        {
+          "tag": "p",
+          "chars": "✅",
+          "contextText": "✅ 减少镜头里的物体数量，画面越简单越稳"
+        },
+        {
+          "tag": "p",
+          "chars": "✅",
+          "contextText": "✅ 加约束：\"物体保持形状，不融合，不穿插\""
+        },
+        {
+          "tag": "p",
+          "chars": "✅",
+          "contextText": "✅ 背景尽量干净，避免复杂纹理"
+        },
+        {
+          "tag": "p",
+          "chars": "✅",
+          "contextText": "✅ 换一个模型重试（Seedance 不行试 Kling）"
+        },
+        {
+          "tag": "p",
+          "chars": "✅",
+          "contextText": "✅ 用同一组参考图，每个镜头都带上"
+        }
+      ],
+      "emojiUsageHint": "warning · 含义：页面正文里检出 emoji 字符（U+1F300–U+1FAFF 或 U+2600–U+27BF 平面）。SKILL.md 视觉设计段明确禁用 emoji——不作图标、不作装饰、不放进数据。 | 修法：换成内联 SVG 图标（<svg viewBox=\"0 0 24 24\">）建立风格连贯的图标语言。 | 豁免：(1) **用户品牌资产明确包含 emoji**（罕见，但如即时通讯、社交媒体主题的产物合理）；(2) 主题本身就是关于 emoji 的（emoji 历史 / 表情包研究 / Unicode 演进）；(3) 引用某条真实文本原文（如推文截图的文字版），emoji 是内容而非装饰——保留原文可接受，但仍应权衡；(4) 装饰性 dingbat（如 U+2713 勾选符 ✓、U+2192 箭头 →、U+2605 星 ★）落入 U+2600–U+27BF 平面被误报的，如确认是符号非 emoji 可忽略。",
+      "touchTargetTooSmallWarning": [
+        {
+          "tag": "button",
+          "text": "",
+          "width": 40,
+          "height": 40,
+          "rect": [
+            14,
+            1973,
+            40,
+            40
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "工具地图",
+          "width": 197,
+          "height": 34,
+          "rect": [
+            -210,
+            2129,
+            197,
+            34
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "提示词",
+          "width": 197,
+          "height": 34,
+          "rect": [
+            -210,
+            2164,
+            197,
+            34
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "镜头语言",
+          "width": 197,
+          "height": 34,
+          "rect": [
+            -210,
+            2240,
+            197,
+            34
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "角色一致",
+          "width": 197,
+          "height": 34,
+          "rect": [
+            -210,
+            2275,
+            197,
+            34
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "音频口型",
+          "width": 197,
+          "height": 34,
+          "rect": [
+            -210,
+            2351,
+            197,
+            34
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "分镜叙事",
+          "width": 197,
+          "height": 34,
+          "rect": [
+            -210,
+            2386,
+            197,
+            34
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "端到端",
+          "width": 197,
+          "height": 34,
+          "rect": [
+            -210,
+            2461,
+            197,
+            34
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "后期剪辑",
+          "width": 197,
+          "height": 34,
+          "rect": [
+            -210,
+            2496,
+            197,
+            34
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "本地化",
+          "width": 197,
+          "height": 34,
+          "rect": [
+            -210,
+            2531,
+            197,
+            34
+          ]
+        },
+        {
+          "tag": "button",
+          "text": "字幕: 中文",
+          "width": 207,
+          "height": 35,
+          "rect": [
+            -224,
+            2756,
+            207,
+            35
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "GitHub 原仓库",
+          "width": 102,
+          "height": 30,
+          "rect": [
+            44,
+            27819,
+            102,
+            30
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "本地 README",
+          "width": 98,
+          "height": 30,
+          "rect": [
+            154,
+            27819,
+            98,
+            30
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "GitHub 原仓库",
+          "width": 102,
+          "height": 30,
+          "rect": [
+            44,
+            28139,
+            102,
+            30
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "本地 README",
+          "width": 98,
+          "height": 30,
+          "rect": [
+            154,
+            28139,
+            98,
+            30
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "GitHub 原仓库",
+          "width": 102,
+          "height": 30,
+          "rect": [
+            44,
+            28434,
+            102,
+            30
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "在线版",
+          "width": 60,
+          "height": 30,
+          "rect": [
+            154,
+            28434,
+            60,
+            30
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "GitHub 原仓库",
+          "width": 102,
+          "height": 30,
+          "rect": [
+            44,
+            28781,
+            102,
+            30
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "本地 README",
+          "width": 98,
+          "height": 30,
+          "rect": [
+            154,
+            28781,
+            98,
+            30
+          ]
+        },
+        {
+          "tag": "a",
+          "text": "GitHub 原仓库",
+          "width": 102,
+          "height": 30,
+          "rect": [
+            44,
+            29146,
+            102,
+            30
+          ]
+        }
+      ],
+      "touchTargetTooSmallHint": "warning · 含义（仅 mobile shot 触发）：按钮 / 链接 / 交互元素的命中区 < 44×44px（iOS HIG 下限）。手指宽约 7–10mm ≈ 44px，小于此手指点不准，且按下会误触相邻元素。已自动过滤纯正文里的 inline 超链接（<a> inline + 高度 < 26px）。 | 修法：给按钮/链接加 `min-width: 44px; min-height: 44px;` 或增大 padding；图标按钮特别注意，容易只给 16-20px。 | 豁免：(1) 密集工具栏 / 编辑器 UI（图标按钮 32px 是行业惯例），但需给周围留足 gap 保证不误触；(2) 装饰性小 icon（不响应 click，只有 hover tooltip）——本规则应该已过滤，若仍报出可忽略；(3) 主要面向桌面 + 键鼠操作的产物（管理后台 / 编辑器），但如果页面同时对手机用户开放就不能豁免。",
+      "mobileFontIssuesWarning": [
+        {
+          "kind": "small-body-text",
+          "tag": "div",
+          "fontSize": 12,
+          "text": "A · 基础入门"
+        },
+        {
+          "kind": "small-body-text",
+          "tag": "div",
+          "fontSize": 12,
+          "text": "B · 视觉表达"
+        },
+        {
+          "kind": "small-body-text",
+          "tag": "div",
+          "fontSize": 12,
+          "text": "C · 叙事制作"
+        },
+        {
+          "kind": "small-body-text",
+          "tag": "div",
+          "fontSize": 12,
+          "text": "D · 出片上线"
+        },
+        {
+          "kind": "small-body-text",
+          "tag": "span",
+          "fontSize": 13,
+          "text": "Seedance 2.0 / 2.5 · 即梦 Dreamina 主线"
+        },
+        {
+          "kind": "small-body-text",
+          "tag": "span",
+          "fontSize": 13,
+          "text": "精选素材"
+        },
+        {
+          "kind": "small-body-text",
+          "tag": "span",
+          "fontSize": 13,
+          "text": "教学章节"
+        },
+        {
+          "kind": "small-body-text",
+          "tag": "span",
+          "fontSize": 13,
+          "text": "实战案例"
+        },
+        {
+          "kind": "small-body-text",
+          "tag": "p",
+          "fontSize": 13,
+          "text": "视频为本地文件，静音自动轮播；悬停开启声音，点击卡片放大播放。"
+        },
+        {
+          "kind": "small-body-text",
+          "tag": "span",
+          "fontSize": 13,
+          "text": "第 1 章"
+        },
+        {
+          "kind": "small-body-text",
+          "tag": "span",
+          "fontSize": 12,
+          "text": "59 秒"
+        },
+        {
+          "kind": "small-body-text",
+          "tag": "span",
+          "fontSize": 12,
+          "text": "主线模型"
+        },
+        {
+          "kind": "small-body-text",
+          "tag": "p",
+          "fontSize": 13.5,
+          "text": "字节官方 Seedance 2.0 4K 演示短片，电影感镜头与叙事节奏的标杆参"
+        },
+        {
+          "kind": "small-body-text",
+          "tag": "div",
+          "fontSize": 13,
+          "text": "该视频暂无字幕"
+        },
+        {
+          "kind": "small-body-text",
+          "tag": "span",
+          "fontSize": 12,
+          "text": "BytePlus 官方"
+        }
+      ],
+      "mobileFontIssuesHint": "warning · 含义（仅 mobile shot 触发）：两类问题合并——(a) kind=small-body-text：正文字号 < 14px，手机上难读；(b) kind=input-under-16px：<input> / <textarea> font-size < 16px，iOS Safari 聚焦时会自动缩放页面（那种一点输入框页面跳一下的贼恶心 UX）。 | 修法：正文 ≥ 14px（16px 更佳）；表单元素 ≥ 16px。可以在移动断点里针对性调大：`@media (max-width: 640px) { body { font-size: 16px; } input, textarea { font-size: 16px; } }`。 | 豁免：(1) 图例 / caption / footnote 类辅助文字，12–13px 可接受，但应控制在页面 5% 以内；(2) 数据密集型表格数字（如财务表 12px 是行业惯例）——需要该单元格开 `tnum` 等宽数字避免飘忽；(3) input 已设 `font-size: 16px` 但仍报出——可能是 inline style / 父级 rem 计算异常，检查实际 computed 值。",
+      "reportSource": "cdp"
+    }
+  },
+  "engine": "chrome_cli",
+  "chromiumExec": "C:\\Users\\Admin/AppData/Local/ms-playwright\\chromium_headless_shell-1234\\chrome-headless-shell-win64\\chrome-headless-shell.exe",
+  "engineDegraded": true,
+  "engineDegradedReason": "playwright 未装",
+  "elapsedSec": 12.07
+}

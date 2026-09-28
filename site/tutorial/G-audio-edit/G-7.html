@@ -1,0 +1,276 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="G-7 口型同步(Sync.so) · 漫剧制作教程站。玉哥整理的 AI 漫剧与短剧制作实用教程，包含步骤、案例和练习。">
+<title>G-7 口型同步(Sync.so) · 漫剧制作教程站</title>
+<link rel="stylesheet" href="../../assets/site.css?v=fix20260927-2215">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg?v=fix20260927-2215">
+<link rel="stylesheet" href="../../assets/tutorial.css?v=fix20260927-2215">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="logo">🎬 漫剧教程站 <small>v3 · 玉哥</small></div>
+  <nav>
+    <a href="../../index.html">首页</a>
+    <a href="../all-courses.html" class="active">漫剧教程</a>
+    <a href="../../prompts/image-prompts.html">图片作品</a>
+    <a href="../../works/index.html">视频作品</a>
+    <a href="../../prompts/prompts.html">prompt 模板</a>
+    <a href="../../tools/toolkit.html">工具箱</a>
+    <a href="../../qa/troubleshooting.html">问题库</a>
+    <a href="../../news/industry.html">行业新闻</a>
+    </nav>
+  <div class="search"><input type="search" placeholder="🔍 搜…"></div>
+  <button class="theme-toggle" title="深浅主题切换" onclick="document.documentElement.classList.toggle('dark')">🌙</button>
+</header>
+
+<div class="layout-3col">
+  <aside class="sidebar-left" id="sidebar-left"></aside>
+
+  <main class="content">
+    <div class="breadcrumb">
+      <a href="../../index.html">首页</a> <span>›</span>
+      <a href="../all-courses.html">G 配音剪辑</a> <span>›</span>
+      G-7 口型同步(Sync.so)
+    </div>
+
+    <h1>G-7 · 口型同步(Sync.so)</h1>
+    <h2 id="sec-1">1. 学员小吴的"哑巴龙王"</h2>
+
+    <div class="example">
+      <span class="label">学员实操 · 玉哥整理</span>
+      <h4>👨‍💻 小吴 · 2026 年 6 月 · 第 1 集评论</h4>
+      <p>小吴第一次做完配音后,评论两极:</p>
+      <ul>
+        <li>👍 "剧情爽"</li>
+        <li>👎 "嘴不对音""龙王嘴在动但声音延迟 0.5 秒""看着难受"</li>
+      </ul>
+      <p>玉哥 review 后发现:<strong>小吴直接用了视频原速 + 配音贴在视频上,没做口型同步</strong>。<strong>嘴型 vs 声音差了 0.3-0.5s</strong>,观众大脑自动检测"不同步" → 立刻出戏。</p>
+      <p>小吴用 <strong>Sync.so</strong> 重做后,完播率从 <strong>42%</strong> → <strong>78%</strong>。</p>
+      <p class="src">📌 <strong>玉哥金句</strong>:<strong>嘴对不上 = 观众立刻划走</strong>。<strong>AI 视频的口型 = 随机生成</strong>(没听过你的配音),必须后期同步。</p>
+    </div>
+
+    <h2 id="sec-2">2. 4 大口型同步工具横评</h2>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th>工具</th><th>语种</th><th>中文口型</th><th>英文口型</th><th>免费额度</th><th>价格</th><th>学员首选</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>1. Sync.so</strong></td><td>中/英/日/韩 等</td><td>⭐⭐⭐⭐⭐</td><td>⭐⭐⭐⭐⭐</td><td>5 分钟/月</td><td>$9/月(60 分钟)</td><td>✅ <strong>首选</strong></td></tr>
+          <tr><td><strong>2. HeyGen</strong></td><td>40+ 语种</td><td>⭐⭐⭐⭐</td><td>⭐⭐⭐⭐⭐</td><td>1 视频</td><td>$29/月</td><td>✅ 海外首选</td></tr>
+          <tr><td><strong>3. D-ID</strong></td><td>100+ 语种</td><td>⭐⭐⭐</td><td>⭐⭐⭐⭐</td><td>5 分钟</td><td>$5.9/月</td><td>🟡 备选</td></tr>
+          <tr><td><strong>4. 剪映自带</strong></td><td>中文为主</td><td>⭐⭐⭐</td><td>⭐⭐</td><td>✅ 完全免费</td><td>—</td><td>🟡 应急用</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="sec-3">3. Sync.so 是什么(原理)</h2>
+
+    <div class="example">
+      <span class="label">玉哥拆解</span>
+      <h4>🧠 Sync.so 工作原理(3 步)</h4>
+      <ol>
+        <li><strong>上传视频</strong>(AI 生成的人物说话视频)</li>
+        <li><strong>上传配音</strong>(MP3 / WAV)</li>
+        <li><strong>AI 分析配音</strong>:把音频按音节切成时间段,识别每个音节对应的嘴型(a / o / e / i / u / 闭嘴 / 张嘴)</li>
+        <li><strong>重画嘴型</strong>:对视频每一帧,根据当前时间对应的音节,生成匹配的嘴型</li>
+      </ol>
+
+      <p><strong>输出</strong>:嘴型完全匹配配音的新视频(MP4)。</p>
+      <p class="src">📌 <strong>关键</strong>:<strong>Sync.so 不改音频</strong>,只改视频。<strong>声音不变,嘴变了</strong>。</p>
+    </div>
+
+    <h2 id="sec-4">4. Sync.so 5 步实战</h2>
+
+    <div class="example">
+      <span class="label">玉哥实战 SOP · 跟着做</span>
+      <h4>🛠️ 5 步让 AI 视频对得上音</h4>
+      <ol>
+        <li><strong>注册</strong>:sync.so → 用 Google 账号登录</li>
+        <li><strong>上传视频</strong>:点击 "Lip Sync" → 选 AI 生成的视频(MP4,≤ 60 秒免费版)</li>
+        <li><strong>上传音频</strong>:上传魔音工坊 / ElevenLabs 生成的 MP3</li>
+        <li><strong>选语种</strong>:中文选 "Chinese",英文选 "English"</li>
+        <li><strong>点击 Generate</strong>:等 1-3 分钟 → 预览 → 下载</li>
+      </ol>
+
+      <p><strong>输出时长</strong>:6 秒视频 ≈ <strong>1 分钟</strong>生成;60 秒视频 ≈ <strong>10 分钟</strong>生成。</p>
+
+      <p class="src">📌 <strong>玉哥经验</strong>:<strong>批量跑</strong> = 把 80 个镜头分成 4 批(每批 20 个)同时跑,<strong>总耗时 30 分钟</strong> vs 串行 2 小时。</p>
+    </div>
+
+    <div class="callout warn">
+      <span class="ico">⚠️</span>
+      <p><strong>玉哥提示</strong>:<strong>视频质量决定口型质量</strong>。<strong>低分辨率(512x512)视频 → 口型模糊</strong>。<strong>出图时设 1024x1024 或以上</strong>(E-5 学的)→ 口型同步效果明显提升。</p>
+    </div>
+
+    <h2 id="sec-5">5. 4 语种口型横评</h2>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th>语种</th><th>Sync.so 准确率</th><th>学员首选</th><th>特别提示</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>中文</strong></td><td>90%</td><td>✅ 国内漫剧</td><td>魔音工坊配音 + Sync.so 同步</td></tr>
+          <tr><td><strong>英文</strong></td><td>95%</td><td>✅ ReelShort 等</td><td>ElevenLabs 配音 + Sync.so</td></tr>
+          <tr><td><strong>日语</strong></td><td>85%</td><td>🟡 二次元剧</td><td>日剧口型元音少,同步容易</td></tr>
+          <tr><td><strong>韩语</strong></td><td>80%</td><td>🟡 漫画改编</td><td>韩语辅音复杂,误差较大</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout ok">
+      <span class="ico">✅</span>
+      <p><strong>玉哥经验</strong>:<strong>中文 + 英文口型同步最稳</strong>(90-95%)。<strong>日语 / 韩语</strong> 也行但要<strong>多校 1 轮</strong>。<strong>小语种</strong>(泰语 / 越南语)<strong>不建议做漫剧</strong>(口型同步误差大)。</p>
+    </div>
+
+    <h2 id="sec-6">6. 工具选择决策树</h2>
+
+    <div class="example">
+      <span class="label">玉哥决策</span>
+      <h4>🌳 你是哪种情况?</h4>
+
+      <p><strong>国内漫剧 + 中文配音</strong> → <strong>Sync.so</strong>(中文最强)。</p>
+      <p><strong>海外剧 + 英文配音</strong> → <strong>Sync.so</strong> 或 <strong>HeyGen</strong>(海外支付方便)。</p>
+      <p><strong>预算紧 + 中文</strong> → <strong>剪映自带</strong>(免费,但效果差一档)。</p>
+      <p><strong>小语种</strong>(日 / 韩 / 西班牙)→ <strong>Sync.so + HeyGen 混合</strong>(主 Sync,边角 HeyGen)。</p>
+      <p><strong>急用 + 5 分钟内出片</strong> → <strong>剪映自带</strong>(不切换工具)。</p>
+    </div>
+
+    <h2 id="sec-7">7. 数字和成本</h2>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th>工具</th><th>1 集(80 镜头 × 6s = 480s)</th><th>80 集成本</th><th>学员首选</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Sync.so 免费版</strong></td><td>5 分钟 → 不够</td><td>¥0(超量)</td><td>🟡 试水</td></tr>
+          <tr><td><strong>Sync.so $9/月</strong>(60 分钟)</td><td>8 分钟 → 够 1 集</td><td>¥65/月</td><td>✅ <strong>首选</strong></td></tr>
+          <tr><td><strong>HeyGen $29/月</strong></td><td>够 1 集</td><td>¥210/月</td><td>✅ 海外</td></tr>
+          <tr><td><strong>D-ID $5.9/月</strong></td><td>够 1 集</td><td>¥43/月</td><td>🟡 性价比</td></tr>
+          <tr><td><strong>剪映自带</strong></td><td>¥0</td><td>¥0</td><td>🟡 应急</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout ok">
+      <span class="ico">✅</span>
+      <p><strong>成本对比</strong>:<strong>Sync.so $9/月(¥65)</strong> 够 80 集口型同步。<strong>平均每集 ¥0.8</strong>。<strong>80 集漫剧 = ¥65 口型同步成本</strong>。<strong>性价比无敌</strong>。</p>
+    </div>
+
+    <h2 id="sec-8">8. 实战注意事项 4 件</h2>
+
+    <div class="example">
+      <span class="label">玉哥避坑</span>
+      <h4>⚠️ 口型同步 4 个坑</h4>
+      <ol>
+        <li><strong>音频质量要清晰</strong>:魔音 / ElevenLabs 生成直接用,<strong>不要二次压缩</strong>(MP3 128kbps 以上)</li>
+        <li><strong>视频不要加字幕</strong>:口型同步<strong>前</strong>不加字幕,同步完再加</li>
+        <li><strong>角色脸部要清晰</strong>:<strong>特写脸部镜头</strong> 同步效果最好,<strong>远景镜头</strong> 同步完观众也看不清</li>
+        <li><strong>批量跑不超时</strong>:免费版 5 分钟/天,<strong>超时会扣费</strong>(学员有 1 次扣 $9 的教训)</li>
+      </ol>
+    </div>
+
+    <h2 id="sec-9">9. 学完这节能做啥</h2>
+
+    <ul class="checklist">
+      <li>知道 4 大口型同步工具(Sync.so / HeyGen / D-ID / 剪映)</li>
+      <li>会用 Sync.so 5 步跑完一个视频</li>
+      <li>知道中英日韩 4 语种准确率排序</li>
+      <li>能算 80 集口型同步成本(¥65-¥210)</li>
+      <li>能避开 4 个常见坑(音频质量 / 字幕顺序 / 脸部特写 / 免费额度)</li>
+    </ul>
+
+    <h2 id="sec-10">10. 常见误解</h2>
+
+    <div class="callout bad">
+      <span class="ico">❌</span>
+      <p><strong>"AI 生成视频时已经对过口型"</strong> · 错。<strong>可灵 / Sora / Hailuo 生成时</strong>,<strong>没人知道你要什么配音</strong>。<strong>嘴型是"随机说话"</strong>,必须后期同步。</p>
+    </div>
+
+    <div class="callout bad">
+      <span class="ico">❌</span>
+      <p><strong>"口型同步 = 嘴动了就行"</strong> · 错。<strong>嘴动了但音节不对</strong> = 比不动还尴尬(观众大脑识别"嘴说 A 配 B 音")。<strong>必须用 Sync.so 这种按音节同步</strong>,不能手动。</p>
+    </div>
+
+    <div class="callout warn">
+      <span class="ico">⚠️</span>
+      <p><strong>"免费版够用"</strong> · 部分对。<strong>1 集漫剧 480 秒</strong>,免费版 5 分钟/天<strong>只够 1 集 1/16</strong>。<strong>80 集用免费版</strong> = 16 个月。<strong>必须付费</strong>。</p>
+    </div>
+
+    <div class="callout warn">
+      <span class="ico">⚠️</span>
+      <p><strong>"剪映自带口型就够了"</strong> · 错。<strong>剪映自带是"按时间拉伸"</strong>,<strong>不识别音节</strong>。<strong>简单对白</strong> 还行,<strong>复杂对话 / 多角色</strong> 一眼穿帮。</p>
+    </div>
+
+    <h2 id="sec-11">11. 本节小练习</h2>
+
+    <ol>
+      <li>用可灵跑 1 个 6 秒视频(主角说话)</li>
+      <li>用魔音工坊给这个视频配 1 段中文配音</li>
+      <li>用剪映自带做 1 版口型同步</li>
+      <li>用 Sync.so 做 1 版口型同步(免费版 5 分钟额度)</li>
+      <li>对比两版效果,记录哪个更自然</li>
+      <li>把好的版本保存,作为第 1 集的口型同步模板</li>
+    </ol>
+
+    <h2 id="sec-12">12. 玉哥说</h2>
+
+    <div class="callout warn">
+      <span class="ico">📢</span>
+      <p><strong>📢 玉哥说</strong>:<br>
+      1. <strong>嘴对不上 = 观众立刻划走</strong> · AI 视频必须做口型同步<br>
+      2. <strong>Sync.so 是学员标准</strong> · 中文最强,$9/月够 80 集<br>
+      3. <strong>海外剧用 HeyGen</strong> · 海外支付方便,40+ 语种<br>
+      4. <strong>剪映自带只应急</strong> · 复杂对话会穿帮<br>
+      5. <strong>口型同步前不加字幕</strong> · 同步完再加,顺序反了会卡顿</p>
+    </div>
+
+    <nav class="bottom-nav">
+      <a class="prev" href="G-3.html">
+        <span class="label">← 上一节</span>
+        <span class="title">G-3 AI 配音</span>
+      </a>
+      <a class="next" href="G-9.html">
+        <span class="label">下一节 →</span>
+        <span class="title">G-9 背景音乐(BGM)</span>
+      </a>
+    </nav>
+  </main>
+
+  <aside class="sidebar-right" id="sidebar-right"></aside>
+</div>
+
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="扫码关注玉哥">
+      <img class="qr-img" src="../../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../../changelog.html">📅 更新日志</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+
+<script src="../../assets/tutorial.js?v=fix20260927-2215"></script>
+<script src="../../assets/site-enhance.js?v=fix20260927-2215" defer></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="C-9 制作表情图 · 漫剧制作教程站。玉哥整理的 AI 漫剧与短剧制作实用教程，包含步骤、案例和练习。">
+<title>C-9 制作表情图 · 漫剧制作教程站</title>
+<link rel="stylesheet" href="../../assets/site.css?v=fix20260927-2215">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg?v=fix20260927-2215">
+<link rel="stylesheet" href="../../assets/tutorial.css?v=fix20260927-2215">
+</head>
+<body>
+<header class="topbar">
+  <div class="logo">🎬 漫剧教程站 <small>v3 · 玉哥</small></div>
+  <nav>
+    <a href="../../index.html">首页</a>
+    <a href="../all-courses.html" class="active">漫剧教程</a>
+    <a href="../../prompts/image-prompts.html">图片作品</a>
+    <a href="../../works/index.html">视频作品</a>
+    <a href="../../prompts/prompts.html">prompt 模板</a>
+    <a href="../../tools/toolkit.html">工具箱</a>
+    <a href="../../qa/troubleshooting.html">问题库</a>
+    <a href="../../news/industry.html">行业新闻</a>
+    </nav>
+  <div class="search"><input type="search" placeholder="🔍 搜…"></div>
+  <button class="theme-toggle" title="深浅主题切换" onclick="document.documentElement.classList.toggle('dark')">🌙</button>
+</header>
+<div class="layout-3col">
+  <aside class="sidebar-left" id="sidebar-left"></aside>
+  <main class="content">
+    <div class="breadcrumb"><a href="../../index.html">首页</a> <span>›</span> <a href="../all-courses.html">C 角色制作</a> <span>›</span> C-9 表情图</div>
+    <h1>C-9 · 制作表情图</h1>
+    <h2 id="sec-1">1. 6 大表情</h2>
+    <div class="tbl-wrap"><table><thead><tr><th>表情</th><th>英文</th><th>用在哪</th></tr></thead><tbody>
+    <tr><td>喜</strong></td><td>happy, smiling</td><td>小爽点</td></tr>
+    <tr><td>怒</strong></td><td>angry, furious</td><td>冲突爆发</td></tr>
+    <tr><td>哀</strong></td><td>sad, sorrowful</td><td>情感戏</td></tr>
+    <tr><td>乐</strong></td><td>laughing, joyful</td><td>轻喜剧</td></tr>
+    <tr><td>惊</strong></td><td>surprised, shocked</td><td>反转</td></tr>
+    <tr><td>惧</strong></td><td>scared, fearful</td><td>决战前</td></tr>
+    </tbody></table></div>
+
+    <h2 id="sec-2">2. 表情资源分配</h2>
+    <div class="tbl-wrap"><table><thead><tr><th>角色</th><th>表情数</th><th>必备</th></tr></thead><tbody>
+    <tr><td>主角</td><td>6</td><td>全套</td></tr>
+    <tr><td>女主</td><td>4</td><td>喜/哀/惊/乐</td></tr>
+    <tr><td>兄弟</td><td>2</td><td>怒/乐</td></tr>
+    <tr><td>反派 BOSS</td><td>3</td><td>怒/惊/冷笑</td></tr>
+    <tr><td>路人</td><td>1</td><td>中性</td></tr>
+    </tbody></table></div>
+
+    <h2 id="sec-3">3. prompt 模板</h2>
+    <pre class="codebox"># 主角"怒"表情
+the same man as in the reference, angry expression,
+furrowed eyebrows, clenched jaw, intense stare,
+white shirt and black pants, medium shot,
+white background, 9:16 aspect ratio
+
+# 主角"笑"表情
+the same man as in the reference, happy smile,
+slight upturn of lips, bright eyes,
+white shirt and black pants, medium shot,
+white background, 9:16 aspect ratio</pre>
+    <p class="src">📌 <strong>关键</strong>:用 "the same man as in the reference" + IP-Adapter 锁定角色</p>
+
+    <h2 id="sec-4">4. character expression sheet</h2>
+    <pre class="codebox"># 一键出 6 表情(单图)
+character expression sheet, multiple expressions of the same man,
+[happy, angry, sad, laughing, surprised, scared],
+30 year old Asian man with square face, short black hair,
+white shirt, white background, even lighting</pre>
+    <p class="src">📌 学员 50% 用 character expression sheet 一键出</p>
+
+    <h2 id="sec-5">5. 学完这能做啥</h2>
+    <ul class="checklist"><li>能出 6 大表情</li><li>会用 expression sheet workflow</li><li>能用 IP-Adapter 锁脸表情</li></ul>
+
+    <h2 id="sec-6">6. 小结</h2>
+    <div class="callout warn"><span class="ico">📢</span><p><strong>📢</strong>:<br>
+    1. <strong>主角 6 表情</strong> · 全套<br>
+    2. <strong>表情 sheet 一键出</strong> · 学员 50%<br>
+    3. <strong>"the same man as in the reference"</strong> · 锁脸<br>
+    4. <strong>反派 3 表情</strong> · 怒 / 惊 / 冷笑</p></div>
+
+    <nav class="bottom-nav">
+      <a class="prev" href="C-8.html"><span class="label">← 上一节</span><span class="title">C-8 三视图</span></a>
+      <a class="next" href="C-10.html"><span class="label">下一节 →</span><span class="title">C-10 多人角色</span></a>
+    </nav>
+  </main>
+  <aside class="sidebar-right" id="sidebar-right"></aside>
+</div>
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="扫码关注玉哥">
+      <img class="qr-img" src="../../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../../changelog.html">📅 更新日志</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+<script src="../../assets/tutorial.js?v=fix20260927-2215"></script>
+<script src="../../assets/site-enhance.js?v=fix20260927-2215" defer></script>
+</body>
+</html>

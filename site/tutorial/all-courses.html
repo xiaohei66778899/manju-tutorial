@@ -1,0 +1,876 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
+<meta name="description" content="玉哥漫剧教程 · 114 节系统课 + 6 大专题(13 大类基础 + M Seedance / N AI 写小说)">
+<meta name="keywords" content="漫剧教程, AI 短剧, 玉哥, Seedance, 即梦, ComfyUI, AI 写小说">
+<meta name="author" content="玉哥">
+<meta property="og:title" content="漫剧教程站 · 玉哥">
+<meta property="og:description" content="玉哥漫剧教程 · 114 节系统课 + 6 大专题(13 大类基础 + M Seedance / N AI 写小说)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="漫剧教程站 · 玉哥">
+<title>全部教程 · 漫剧制作教程站 · 玉哥</title>
+<link rel="stylesheet" href="../assets/site.css?v=fix20260927-2215">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg?v=fix20260927-2215">
+<link rel="stylesheet" href="../assets/tutorial.css?v=fix20260927-2215">
+<script src="../assets/site-enhance.js?v=fix20260927-2215" defer></script>
+<style>
+/* ============================================================
+   玉哥风格教程页 · 2026-09-17
+   - 玉哥风格大 hero(渐变 + stats + 渐变文字)
+   - 玉哥风格章节标题(渐变数字徽章 + 大标题)
+   - 玉哥风格卡片(渐变顶边 + hover 蓝紫阴影)
+   - 玉哥风格 sidebar(jyshare 原版)
+   - 完整 dark 主题(全用 CSS 变量)
+   - 6 档响应式(1680+/1280+/979/767/480/landscape)
+   ============================================================ */
+
+/* ========== 玉哥风格大 hero ========== */
+.yuge-hero {
+  position: relative;
+  padding: 56px 32px 36px;
+  background: linear-gradient(135deg, #FFE9D6 0%, #FFF7E8 50%, #ECE7FF 100%);
+  border-bottom: 1px solid var(--line);
+  overflow: hidden;
+}
+.yuge-hero::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 360px;
+  height: 360px;
+  background: radial-gradient(circle, rgba(99, 91, 255, .15), transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.yuge-hero::after {
+  content: '';
+  position: absolute;
+  bottom: -120px;
+  left: -80px;
+  width: 280px;
+  height: 280px;
+  background: radial-gradient(circle, rgba(244, 124, 60, .10), transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.yuge-hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+.yuge-hero .badge-row {
+  display: inline-flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.yuge-hero .badge-row .badge {
+  font-size: 11.5px;
+  padding: 4px 10px;
+  background: rgba(255, 255, 255, .75);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  color: var(--text);
+  font-weight: 500;
+}
+.yuge-hero .badge-row .badge i {
+  color: var(--blue);
+  margin-right: 4px;
+}
+.yuge-hero h1 {
+  font-size: 36px;
+  margin: 0 0 12px;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: var(--text);
+}
+.yuge-hero h1 .em {
+  background: linear-gradient(135deg, #635BFF, #F47C3C);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.yuge-hero .sub {
+  color: var(--muted);
+  font-size: 15px;
+  max-width: 640px;
+  margin: 0 auto 22px;
+  line-height: 1.7;
+}
+.yuge-hero .stats {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0;
+  font-size: 13px;
+  color: var(--muted);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .04);
+}
+.yuge-hero .stats .item {
+  padding: 8px 18px;
+  border-radius: 20px;
+}
+.yuge-hero .stats .item + .item {
+  border-left: 1px solid var(--line);
+}
+.yuge-hero .stats b {
+  color: var(--blue);
+  font-weight: 800;
+  font-size: 15px;
+}
+[data-theme="dark"] .yuge-hero {
+  background: linear-gradient(135deg, #1A1A2E 0%, #16213E 50%, #0F3460 100%);
+  border-bottom-color: var(--line);
+}
+[data-theme="dark"] .yuge-hero .badge-row .badge {
+  background: rgba(255, 255, 255, .05);
+  border-color: var(--line);
+}
+[data-theme="dark"] .yuge-hero .stats {
+  background: var(--bg2);
+  border-color: var(--line);
+}
+[data-theme="dark"] .yuge-hero .stats .item + .item {
+  border-left-color: var(--line);
+}
+
+/* ========== 教程页主体布局 ========== */
+.layout-runoob {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 24px 32px 48px;
+}
+
+/* ========== 左侧 sidebar(玉哥 jyshare 风格) ========== */
+.layout-runoob .sidebar-left {
+  width: 200px !important;
+  flex-shrink: 0;
+  position: sticky;
+  top: 80px;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  scrollbar-width: none;
+  background: var(--bg) !important;
+  border: 1px solid var(--line) !important;
+  padding: 0 !important;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .04);
+}
+.layout-runoob .sidebar-left::-webkit-scrollbar {
+  display: none;
+}
+.layout-runoob .sidebar-left .filter {
+  display: none;
+}
+.layout-runoob .sidebar-left .group-title {
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 12px 14px;
+  border-radius: 10px 10px 0 0;
+  background: linear-gradient(135deg, #635BFF 0%, #8B5CF6 100%);
+  color: #fff !important;
+  font-size: 13px;
+  margin: 0;
+  border-bottom: none;
+}
+.layout-runoob .sidebar-left ul {
+  list-style: none;
+  padding: 8px 0;
+  margin: 0;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 0 10px 10px;
+}
+.layout-runoob .sidebar-left ul ul {
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  background: transparent;
+}
+.layout-runoob .sidebar-left li a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  font-weight: 500;
+  font-size: 13px;
+  color: var(--text);
+  text-decoration: none;
+  border-left: 3px solid transparent;
+  transition: background .15s, border-color .15s, color .15s;
+  line-height: 1.4;
+  margin: 0;
+}
+.layout-runoob .sidebar-left li a:hover {
+  background: var(--blue-soft);
+  border-left-color: var(--blue);
+  color: var(--blue);
+  font-weight: 600;
+}
+.layout-runoob .sidebar-left li a.current {
+  background: var(--blue-soft);
+  border-left-color: var(--blue);
+  color: var(--blue);
+  font-weight: 700;
+}
+[data-theme="dark"] .layout-runoob .sidebar-left li a {
+  color: var(--text);
+}
+
+/* ========== 主区 ========== */
+.layout-runoob .tut-main {
+  flex: 1;
+  min-width: 0;
+}
+
+/* ========== 章节块(玉哥风格) ========== */
+.cat-block {
+  background: var(--bg);
+  border-radius: 12px;
+  margin-bottom: 22px;
+  padding: 22px 22px 18px;
+  border: 1px solid var(--line);
+  box-shadow: 0 2px 12px rgba(99, 91, 255, .04);
+  animation: fadeSlideUp 0.32s ease both;
+  position: relative;
+  overflow: hidden;
+}
+.cat-block::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, #635BFF 0%, #F47C3C 100%);
+}
+.cat-block:nth-child(1) { animation-delay: 0.00s; }
+.cat-block:nth-child(2) { animation-delay: 0.05s; }
+.cat-block:nth-child(3) { animation-delay: 0.10s; }
+.cat-block:nth-child(4) { animation-delay: 0.15s; }
+.cat-block:nth-child(5) { animation-delay: 0.20s; }
+.cat-block:nth-child(6) { animation-delay: 0.25s; }
+.cat-block:nth-child(7) { animation-delay: 0.30s; }
+.cat-block:nth-child(8) { animation-delay: 0.35s; }
+.cat-block:nth-child(9) { animation-delay: 0.40s; }
+.cat-block:nth-child(n+10) { animation-delay: 0.45s; }
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* 章节标题(玉哥风格:大渐变徽章 + 标题) */
+.cat-block .ch {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  padding: 0 0 14px;
+  margin: 0 0 14px;
+  border-bottom: 1px solid var(--line);
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.cat-block .ch .ic {
+  display: none; /* 隐藏原 emoji ic,用大渐变徽章替代 */
+}
+.cat-block .ch .num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #635BFF 0%, #F47C3C 100%);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(99, 91, 255, .25);
+}
+.cat-block .ch .ct {
+  margin-left: auto;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  background: var(--bg-soft);
+  padding: 5px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  white-space: nowrap;
+}
+
+/* 章节标题颜色微调(每章不同色) */
+.cat-block#A .ch .num { background: linear-gradient(135deg, #635BFF 0%, #8B5CF6 100%); }
+.cat-block#B .ch .num { background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%); }
+.cat-block#C .ch .num { background: linear-gradient(135deg, #EC4899 0%, #F47C3C 100%); }
+.cat-block#D .ch .num { background: linear-gradient(135deg, #F47C3C 0%, #F59E0B 100%); }
+.cat-block#E .ch .num { background: linear-gradient(135deg, #10B981 0%, #059669 100%); }
+.cat-block#F .ch .num { background: linear-gradient(135deg, #06B6D4 0%, #0EA5E9 100%); }
+.cat-block#G .ch .num { background: linear-gradient(135deg, #3B82F6 0%, #6366F1 100%); }
+.cat-block#H .ch .num { background: linear-gradient(135deg, #8B5CF6 0%, #635BFF 100%); }
+.cat-block#I .ch .num { background: linear-gradient(135deg, #F59E0B 0%, #F47C3C 100%); }
+.cat-block#J .ch .num { background: linear-gradient(135deg, #635BFF 0%, #06B6D4 100%); }
+.cat-block#K .ch .num { background: linear-gradient(135deg, #F47C3C 0%, #EF4444 100%); }
+.cat-block#L .ch .num { background: linear-gradient(135deg, #059669 0%, #10B981 100%); }
+
+/* ========== 章节卡片网格(玉哥风格 auto-fill) ========== */
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 10px;
+}
+.cat-grid a.card {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 12px 14px;
+  text-decoration: none;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  transition: all .2s;
+  min-height: 60px;
+  position: relative;
+  overflow: hidden;
+}
+.cat-grid a.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #635BFF, #F47C3C);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .25s;
+}
+.cat-grid a.card:hover {
+  border-color: var(--blue);
+  box-shadow: 0 6px 16px rgba(99, 91, 255, .12);
+  transform: translateY(-1px);
+}
+.cat-grid a.card:hover::before {
+  transform: scaleX(1);
+}
+.cat-grid a.card .ic {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid var(--line);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  line-height: 1;
+}
+.cat-grid a.card .txt {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+.cat-grid a.card .t {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0 0 2px;
+  line-height: 1.35;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cat-grid a.card .d {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--muted);
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+[data-theme="dark"] .cat-grid a.card {
+  background: var(--bg2);
+  border-color: var(--line);
+}
+[data-theme="dark"] .cat-grid a.card:hover {
+  background: var(--bg3);
+}
+
+/* ===== J/K/L 原版专题卡片(更突出) ===== */
+.cat-grid a.card.j-card {
+  background: linear-gradient(135deg, #FFE9D6 0%, #FFF7E8 50%, #FFF8F0 100%) !important;
+  border: 1px solid #C4B5FD !important;
+  position: relative;
+}
+.cat-grid a.card.j-card:hover {
+  background: linear-gradient(135deg, #E0DEFF 0%, #ECE7FF 50%, #FFE9D6 100%) !important;
+  border-color: var(--blue) !important;
+  box-shadow: 0 8px 24px rgba(99, 91, 255, .18);
+}
+.cat-grid a.card.j-card::before {
+  background: linear-gradient(90deg, #635BFF, #F47C3C);
+  height: 4px;
+  transform: scaleX(1);
+}
+.cat-grid a.card.j-card .ic {
+  background: #fff !important;
+  border: 1px solid #C4B5FD;
+  padding: 0;
+  font-size: 0;
+}
+.cat-grid a.card.j-card .ic img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  border-radius: 6px;
+}
+.cat-grid a.card.j-card .t {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: normal;
+  color: var(--blue);
+  font-weight: 700;
+}
+.cat-grid a.card.j-card .t .badge {
+  margin-left: 0;
+  background: linear-gradient(135deg, #635BFF, #F47C3C);
+  color: #fff;
+  font-size: 9px;
+  padding: 2px 7px;
+  border-radius: 6px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+[data-theme="dark"] .cat-grid a.card.j-card {
+  background: linear-gradient(135deg, rgba(99, 91, 255, .15) 0%, rgba(244, 124, 60, .10) 100%) !important;
+  border-color: var(--blue) !important;
+}
+[data-theme="dark"] .cat-grid a.card.j-card .ic {
+  background: var(--bg2) !important;
+  border-color: var(--line);
+}
+[data-theme="dark"] .cat-grid a.card.j-card .t {
+  color: #A5B4FC;
+}
+
+/* ========== 响应式断点(6 档) ========== */
+@media (min-width: 1680px) {
+  .layout-runoob { max-width: 1700px; padding: 32px 40px 56px; }
+  .yuge-hero { padding: 64px 40px 44px; }
+  .yuge-hero h1 { font-size: 42px; }
+  .cat-grid { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+}
+@media (min-width: 1280px) and (max-width: 1679px) {
+  .layout-runoob { max-width: 1440px; }
+  .cat-grid { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+}
+@media (max-width: 1279px) {
+  .layout-runoob .sidebar-left {
+    width: 180px !important;
+  }
+  .cat-grid { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+}
+@media (max-width: 979px) {
+  .layout-runoob { flex-direction: column; padding: 18px 18px 36px; }
+  .layout-runoob .sidebar-left {
+    position: static;
+    width: 100% !important;
+    max-height: none;
+    overflow-y: visible;
+    top: 0;
+  }
+  .layout-runoob .sidebar-left ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
+    gap: 6px;
+  }
+  .layout-runoob .sidebar-left li { width: auto; }
+  .layout-runoob .sidebar-left li a {
+    border-left: none;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 12px;
+    background: var(--bg);
+  }
+  .yuge-hero { padding: 40px 20px 28px; }
+  .yuge-hero h1 { font-size: 28px; }
+  .yuge-hero .sub { font-size: 14px; }
+  .yuge-hero .stats { font-size: 12px; }
+  .yuge-hero .stats .item { padding: 6px 12px; }
+  .cat-block { padding: 18px 16px 14px; }
+  .cat-block .ch { font-size: 18px; gap: 10px; }
+  .cat-block .ch .num { width: 32px; height: 32px; font-size: 16px; border-radius: 8px; }
+  .cat-grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px; }
+}
+@media (max-width: 767px) {
+  .yuge-hero { padding: 32px 16px 24px; }
+  .yuge-hero h1 { font-size: 24px; }
+  .yuge-hero .sub { font-size: 13px; max-width: 100%; }
+  .yuge-hero .stats { padding: 3px; }
+  .yuge-hero .stats .item { padding: 6px 10px; font-size: 11.5px; }
+  .yuge-hero .stats .item + .item { border-left: 1px solid var(--line); }
+  .yuge-hero .stats b { font-size: 13px; }
+  .yuge-hero .badge-row .badge { font-size: 11px; padding: 3px 8px; }
+  .cat-grid { grid-template-columns: 1fr; }
+  .cat-block .ch { font-size: 16px; }
+  .cat-block .ch .ct { font-size: 11px; padding: 4px 9px; }
+}
+@media (max-width: 480px) {
+  .layout-runoob { padding: 14px 12px 28px; }
+  .yuge-hero { padding: 28px 14px 22px; }
+  .yuge-hero h1 { font-size: 21px; }
+  .yuge-hero .stats { flex-direction: column; gap: 4px; padding: 6px; }
+  .yuge-hero .stats .item { width: 100%; text-align: center; border-radius: 6px; }
+  .yuge-hero .stats .item + .item { border-left: none; border-top: 1px solid var(--line); }
+  .cat-block { padding: 14px 12px 12px; }
+  .cat-block .ch { font-size: 15px; gap: 8px; padding-bottom: 10px; margin-bottom: 10px; }
+  .cat-block .ch .num { width: 28px; height: 28px; font-size: 14px; border-radius: 7px; }
+  .cat-grid { gap: 6px; }
+  .cat-grid a.card { padding: 10px 12px; min-height: 54px; }
+  .cat-grid a.card .ic { width: 28px; height: 28px; font-size: 15px; }
+}
+@media (max-height: 480px) and (orientation: landscape) {
+  .yuge-hero { padding: 24px 20px 18px; }
+  .yuge-hero h1 { font-size: 22px; margin-bottom: 6px; }
+  .yuge-hero .sub { display: none; }
+  .yuge-hero .stats { padding: 3px; }
+  .yuge-hero .stats .item { padding: 4px 10px; }
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="logo">🎬 漫剧教程站 <small>v3 · 玉哥</small></div>
+  <nav>
+    <a href="../index.html">首页</a>
+    <a href="all-courses.html" class="active">漫剧教程</a>
+    <a href="../prompts/image-prompts.html">图片作品</a>
+    <a href="../works/index.html">视频作品</a>
+    <a href="../prompts/prompts.html">prompt 模板</a>
+    <a href="../tools/toolkit.html">工具箱</a>
+    <a href="../qa/troubleshooting.html">问题库</a>
+    <a href="../news/industry.html">行业新闻</a>
+    </nav>
+  <div class="search"><input type="search" placeholder="🔍 搜…"></div>
+</header>
+
+<!-- 玉哥风格大 hero -->
+<section class="yuge-hero">
+  <div class="yuge-hero-inner">
+    <h1>漫剧教程 · <span class="em">从入门到上线</span></h1>
+    <div class="stats">
+      <div class="item"><b>9</b> 大类基础课</div>
+      <div class="item"><b>126</b> 节系统内容</div>
+      <div class="item"><b>4</b> 张专题</div>
+      <div class="item"><b>6</b> 部分 ComfyUI 工作流</div>
+      <div class="item"><b>v3</b> 当前版本</div>
+    </div>
+  </div>
+</section>
+
+<div class="layout-runoob">
+  <!-- 左侧 sidebar(tutorial.js 自动渲染) -->
+  <aside class="sidebar-left" id="sidebar-left"></aside>
+
+  <!-- 主区:12 大类直接展开 -->
+  <main class="tut-main">
+
+    <!-- A 漫剧基础 -->
+    <div class="cat-block" id="A">
+      <h2 class="ch"><span class="num">A</span>A · 漫剧基础<span class="ct">8 节</span></h2>
+      <div class="cat-grid">
+    <a class="card" href="A-manju-basic/A-1.html"><span class="ic">🎬</span><span class="txt"><span class="t">漫剧是啥</span><span class="d">一句话讲清</span></span></a>
+    <a class="card" href="A-manju-basic/A-2.html"><span class="ic">⚖️</span><span class="txt"><span class="t">和短剧区别</span><span class="d">核心差异</span></span></a>
+    <a class="card" href="A-manju-basic/A-3.html"><span class="ic">🛠</span><span class="txt"><span class="t">一集怎么做</span><span class="d">全流程</span></span></a>
+    <a class="card" href="A-manju-basic/A-4.html"><span class="ic">🧰</span><span class="txt"><span class="t">必备工具清单</span><span class="d">工具总览</span></span></a>
+    <a class="card" href="A-manju-basic/A-5.html"><span class="ic">👤</span><span class="txt"><span class="t">一个人能不能</span><span class="d">成本 + 时间</span></span></a>
+    <a class="card" href="A-manju-basic/A-6.html"><span class="ic">🌐</span><span class="txt"><span class="t">本地 vs 在线</span><span class="d">选型决策</span></span></a>
+    <a class="card" href="A-manju-basic/A-7.html"><span class="ic">🚀</span><span class="txt"><span class="t">第一个练习</span><span class="d">起步项目</span></span></a>
+    <a class="card" href="A-manju-basic/A-8.html"><span class="ic">📝</span><span class="txt"><span class="t">基础测验</span><span class="d">10 题自测</span></span></a>
+      </div>
+    </div>
+
+    <!-- B 剧本 -->
+    <div class="cat-block" id="B">
+      <h2 class="ch"><span class="num">B</span>B · 剧本<span class="ct">8 大子页面 · 原创 + 改编全流程</span></h2>
+      <div class="cat-grid">
+    <a class="card" href="../剧本.html#view-1-1"><span class="ic">🔍</span><span class="txt"><span class="t">选题库</span><span class="d">平台差异 + 题材适配</span></span></a>
+    <a class="card" href="../剧本.html#view-1-2"><span class="ic">🤖</span><span class="txt"><span class="t">AI 辅助原创</span><span class="d">模型 + 著作权边界</span></span></a>
+    <a class="card" href="../剧本.html#view-1-3"><span class="ic">🎯</span><span class="txt"><span class="t">爽点模板</span><span class="d">Save the Cat + 节奏公式</span></span></a>
+    <a class="card" href="../剧本.html#view-1-4"><span class="ic">✏️</span><span class="txt"><span class="t">改稿方法</span><span class="d">AI 播音腔解构 + 自检</span></span></a>
+    <a class="card" href="../剧本.html#view-2-1"><span class="ic">📜</span><span class="txt"><span class="t">怎么找授权</span><span class="d">5 平台政策 + 飞卢案</span></span></a>
+    <a class="card" href="../剧本.html#view-2-2"><span class="ic">📄</span><span class="txt"><span class="t">合同怎么看</span><span class="d">AI 条款 + 8 大陷阱</span></span></a>
+    <a class="card" href="../剧本.html#view-2-3"><span class="ic">🔄</span><span class="txt"><span class="t">改编流程</span><span class="d">7 步 SOP + 心理→动作</span></span></a>
+    <a class="card" href="../剧本.html#view-2-4"><span class="ic">🛡</span><span class="txt"><span class="t">相似度检查</span><span class="d">10% 标准 + 3 档改写</span></span></a>
+      </div>
+    </div>
+
+    <!-- C 角色制作 -->
+    <div class="cat-block" id="C">
+      <h2 class="ch"><span class="num">C</span>C · 角色制作<span class="ct">17 节</span></h2>
+      <div class="cat-grid">
+    <a class="card" href="C-character/C-1.html"><span class="ic">🎭</span><span class="txt"><span class="t">角色简介</span><span class="d">流程总览</span></span></a>
+    <a class="card" href="C-character/C-2.html"><span class="ic">🎨</span><span class="txt"><span class="t">选画风</span><span class="d">画风 vs 类型</span></span></a>
+    <a class="card" href="C-character/C-3.html"><span class="ic">✏️</span><span class="txt"><span class="t">设计外形</span><span class="d">5 要素</span></span></a>
+    <a class="card" href="C-character/C-4.html"><span class="ic">🔒</span><span class="txt"><span class="t">FaceID 锁脸</span><span class="d">脸不变形</span></span></a>
+    <a class="card" href="C-character/C-5.html"><span class="ic">💇</span><span class="txt"><span class="t">发型年龄</span><span class="d">一致性</span></span></a>
+    <a class="card" href="C-character/C-6.html"><span class="ic">👗</span><span class="txt"><span class="t">服装配饰</span><span class="d">角色卡</span></span></a>
+    <a class="card" href="C-character/C-7.html"><span class="ic">🖼</span><span class="txt"><span class="t">正面图</span><span class="d">提示词模板</span></span></a>
+    <a class="card" href="C-character/C-8.html"><span class="ic">📐</span><span class="txt"><span class="t">侧面三视图</span><span class="d">多角度</span></span></a>
+    <a class="card" href="C-character/C-9.html"><span class="ic">😊</span><span class="txt"><span class="t">表情图</span><span class="d">9 表情包</span></span></a>
+    <a class="card" href="C-character/C-10.html"><span class="ic">👨‍👩‍👧</span><span class="txt"><span class="t">多人角色</span><span class="d">多角色卡</span></span></a>
+    <a class="card" href="C-character/C-11.html"><span class="ic">🎯</span><span class="txt"><span class="t">一致性 8 项</span><span class="d">标准</span></span></a>
+    <a class="card" href="C-character/C-12.html"><span class="ic">📌</span><span class="txt"><span class="t">参考图一致</span><span class="d">图生图法</span></span></a>
+    <a class="card" href="C-character/C-13.html"><span class="ic">🔌</span><span class="txt"><span class="t">IP-Adapter</span><span class="d">一键锁脸</span></span></a>
+    <a class="card" href="C-character/C-14.html"><span class="ic">👤</span><span class="txt"><span class="t">FaceID</span><span class="d">InstantID</span></span></a>
+    <a class="card" href="C-character/C-15.html"><span class="ic">🧬</span><span class="txt"><span class="t">角色 LoRA</span><span class="d">最强一致</span></span></a>
+    <a class="card" href="C-character/C-16.html"><span class="ic">🔗</span><span class="txt"><span class="t">两个角色串脸</span><span class="d">混用方法</span></span></a>
+    <a class="card" href="C-character/C-17.html"><span class="ic">📚</span><span class="txt"><span class="t">角色提示词</span><span class="d">字典式</span></span></a>
+      </div>
+    </div>
+
+    <!-- D 分镜 -->
+    <div class="cat-block" id="D">
+      <h2 class="ch"><span class="num">D</span>D · 分镜<span class="ct">15 节</span></h2>
+      <div class="cat-grid">
+    <a class="card" href="D-storyboard/D-1.html"><span class="ic">🎞</span><span class="txt"><span class="t">分镜简介</span><span class="d">镜头语言</span></span></a>
+    <a class="card" href="D-storyboard/D-2.html"><span class="ic">🎬</span><span class="txt"><span class="t">剧本拆场</span><span class="d">场景切分</span></span></a>
+    <a class="card" href="D-storyboard/D-3.html"><span class="ic">🔪</span><span class="txt"><span class="t">场拆镜头</span><span class="d">每场镜头</span></span></a>
+    <a class="card" href="D-storyboard/D-4.html"><span class="ic">🔍</span><span class="txt"><span class="t">景别 4 种</span><span class="d">远/全/中/近</span></span></a>
+    <a class="card" href="D-storyboard/D-5.html"><span class="ic">📐</span><span class="txt"><span class="t">镜头角度</span><span class="d">俯仰平</span></span></a>
+    <a class="card" href="D-storyboard/D-6.html"><span class="ic">🔺</span><span class="txt"><span class="t">三角形构图</span><span class="d">构图法</span></span></a>
+    <a class="card" href="D-storyboard/D-7.html"><span class="ic">👁</span><span class="txt"><span class="t">人物视线</span><span class="d">视线一致</span></span></a>
+    <a class="card" href="D-storyboard/D-8.html"><span class="ic">🏃</span><span class="txt"><span class="t">动作设计</span><span class="d">动作表</span></span></a>
+    <a class="card" href="D-storyboard/D-9.html"><span class="ic">🎥</span><span class="txt"><span class="t">镜头运动</span><span class="d">推/拉/摇/移</span></span></a>
+    <a class="card" href="D-storyboard/D-10.html"><span class="ic">💬</span><span class="txt"><span class="t">对话镜头</span><span class="d">过肩正反打</span></span></a>
+    <a class="card" href="D-storyboard/D-11.html"><span class="ic">⚔️</span><span class="txt"><span class="t">动作镜头</span><span class="d">打斗追逐</span></span></a>
+    <a class="card" href="D-storyboard/D-12.html"><span class="ic">🎞</span><span class="txt"><span class="t">首尾帧</span><span class="d">AI 视频用</span></span></a>
+    <a class="card" href="D-storyboard/D-13.html"><span class="ic">🔗</span><span class="txt"><span class="t">镜头衔接</span><span class="d">转场逻辑</span></span></a>
+    <a class="card" href="D-storyboard/D-14.html"><span class="ic">📋</span><span class="txt"><span class="t">填写分镜表</span><span class="d">表格模板</span></span></a>
+    <a class="card" href="D-storyboard/D-15.html"><span class="ic">⭐</span><span class="txt"><span class="t">一集完整实例</span><span class="d">30 镜实战</span></span></a>
+      </div>
+    </div>
+
+    <!-- E AI 出图 -->
+    <div class="cat-block" id="E">
+      <h2 class="ch"><span class="num">E</span>E · AI 出图<span class="ct">19 节</span></h2>
+      <div class="cat-grid">
+    <a class="card" href="E-ai-image/E-1.html"><span class="ic">🎨</span><span class="txt"><span class="t">AI 出图简介</span><span class="d">4 工具对比</span></span></a>
+    <a class="card" href="E-ai-image/E-16.html"><span class="ic">🔍</span><span class="txt"><span class="t">高清放大</span><span class="d">4x-UltraSharp</span></span></a>
+    <a class="card" href="E-ai-image/E-17.html"><span class="ic">🧩</span><span class="txt"><span class="t">Tiled VAE</span><span class="d">2K 出图</span></span></a>
+    <a class="card" href="E-ai-image/E-18.html"><span class="ic">🟦</span><span class="txt"><span class="t">SDXL 工作流</span><span class="d">juggernautXL</span></span></a>
+    <a class="card" href="E-ai-image/E-19.html"><span class="ic">🌊</span><span class="txt"><span class="t">Flux 工作流</span><span class="d">cfg=3.5</span></span></a>
+    <a class="card" href="E-ai-image/E-20.html"><span class="ic">⭐</span><span class="txt"><span class="t">提示词 5 原则</span><span class="d">⭐ P0</span></span></a>
+    <a class="card" href="E-ai-image/E-21.html"><span class="ic">🎨</span><span class="txt"><span class="t">风格关键词</span><span class="d">30+ 词</span></span></a>
+    <a class="card" href="E-ai-image/E-22.html"><span class="ic">🎥</span><span class="txt"><span class="t">镜头关键词</span><span class="d">景别 + 视角</span></span></a>
+    <a class="card" href="E-ai-image/E-23.html"><span class="ic">💡</span><span class="txt"><span class="t">灯光氛围</span><span class="d">情绪渲染</span></span></a>
+    <a class="card" href="E-ai-image/E-25.html"><span class="ic">🌐</span><span class="txt"><span class="t">在线工具横评</span><span class="d">MJ V7 60%</span></span></a>
+    <a class="card" href="E-ai-image/E-26.html"><span class="ic">🧬</span><span class="txt"><span class="t">LoRA 训练</span><span class="d">15 张训 1h</span></span></a>
+    <a class="card" href="E-ai-image/E-27.html"><span class="ic">🔧</span><span class="txt"><span class="t">训练工具</span><span class="d">kohya_ss</span></span></a>
+    <a class="card" href="E-ai-image/E-28.html"><span class="ic">📂</span><span class="txt"><span class="t">数据集准备</span><span class="d">15 张图</span></span></a>
+    <a class="card" href="E-ai-image/E-29.html"><span class="ic">📊</span><span class="txt"><span class="t">批量出图</span><span class="d">CSV 驱动</span></span></a>
+    <a class="card" href="E-ai-image/E-30.html"><span class="ic">💰</span><span class="txt"><span class="t">商业化出图</span><span class="d">本地安全</span></span></a>
+    <a class="card" href="E-ai-image/E-32.html"><span class="ic">📚</span><span class="txt"><span class="t">提示词库</span><span class="d">200 条</span></span></a>
+    <a class="card" href="E-ai-image/E-33.html"><span class="ic">🔧</span><span class="txt"><span class="t">调试 30 招</span><span class="d">排错字典</span></span></a>
+    <a class="card" href="E-ai-image/E-34.html"><span class="ic">🔄</span><span class="txt"><span class="t">反推提示词</span><span class="d">图 → 词</span></span></a>
+    <a class="card" href="E-ai-image/E-35.html"><span class="ic">✅</span><span class="txt"><span class="t">出图审核</span><span class="d">玉哥案例</span></span></a>
+      </div>
+    </div>
+
+    <!-- F AI 视频 -->
+    <div class="cat-block" id="F">
+      <h2 class="ch"><span class="num">F</span>F · AI 视频<span class="ct">18 节</span></h2>
+      <div class="cat-grid">
+    <a class="card" href="F-ai-video/F-1.html"><span class="ic">🎬</span><span class="txt"><span class="t">图生视频简介</span><span class="d">4 模型</span></span></a>
+    <a class="card" href="F-ai-video/F-2.html"><span class="ic">⚖️</span><span class="txt"><span class="t">文生 vs 图生</span><span class="d">选对方式</span></span></a>
+    <a class="card" href="F-ai-video/F-3.html"><span class="ic">🖼</span><span class="txt"><span class="t">首帧生成</span><span class="d">60% 用法</span></span></a>
+    <a class="card" href="F-ai-video/F-4.html"><span class="ic">🎞</span><span class="txt"><span class="t">首尾帧生成</span><span class="d">30% 用法</span></span></a>
+    <a class="card" href="F-ai-video/F-5.html"><span class="ic">💬</span><span class="txt"><span class="t">动作提示词</span><span class="d">5 字段</span></span></a>
+    <a class="card" href="F-ai-video/F-6.html"><span class="ic">⭐</span><span class="txt"><span class="t">运镜提示词</span><span class="d">⭐ 眼神跟镜头</span></span></a>
+    <a class="card" href="F-ai-video/F-8.html"><span class="ic">🌊</span><span class="txt"><span class="t">Wan 2.x</span><span class="d">中文友好</span></span></a>
+    <a class="card" href="F-ai-video/F-9.html"><span class="ic">🐯</span><span class="txt"><span class="t">HunyuanVideo</span><span class="d">腾讯 13B</span></span></a>
+    <a class="card" href="F-ai-video/F-10.html"><span class="ic">⚡</span><span class="txt"><span class="t">LTX-Video</span><span class="d">快 5 分钟</span></span></a>
+    <a class="card" href="F-ai-video/F-11.html"><span class="ic">⚖️</span><span class="txt"><span class="t">4 模型横评</span><span class="d">⭐ 学员</span></span></a>
+    <a class="card" href="F-ai-video/F-12.html"><span class="ic">⭐</span><span class="txt"><span class="t">人物变形避坑</span><span class="d">⭐ P0</span></span></a>
+    <a class="card" href="F-ai-video/F-13.html"><span class="ic">⭐</span><span class="txt"><span class="t">角色漂移</span><span class="d">⭐ P0</span></span></a>
+    <a class="card" href="F-ai-video/F-14.html"><span class="ic">✨</span><span class="txt"><span class="t">背景闪烁</span><span class="d">3 大原因</span></span></a>
+    <a class="card" href="F-ai-video/F-15.html"><span class="ic">⏱</span><span class="txt"><span class="t">延长视频</span><span class="d">5s → 30s</span></span></a>
+    <a class="card" href="F-ai-video/F-16.html"><span class="ic">🔗</span><span class="txt"><span class="t">镜头转场</span><span class="d">5 种转场</span></span></a>
+    <a class="card" href="F-ai-video/F-17.html"><span class="ic">🎞</span><span class="txt"><span class="t">插帧 24→60</span><span class="d">RIFE</span></span></a>
+    <a class="card" href="F-ai-video/F-18.html"><span class="ic">🔍</span><span class="txt"><span class="t">视频放大</span><span class="d">720P → 4K</span></span></a>
+    <a class="card" href="F-ai-video/F-19.html"><span class="ic">⭐</span><span class="txt"><span class="t">17 失败模式</span><span class="d">⭐ 排错字典</span></span></a>
+      </div>
+    </div>
+
+    <!-- G 配音剪辑 -->
+    <div class="cat-block" id="G">
+      <h2 class="ch"><span class="num">G</span>G · 配音剪辑<span class="ct">18 节</span></h2>
+      <div class="cat-grid">
+    <a class="card" href="G-audio-edit/G-1.html"><span class="ic">🎞</span><span class="txt"><span class="t">后期简介</span><span class="d">6 大环节</span></span></a>
+    <a class="card" href="G-audio-edit/G-2.html"><span class="ic">🎙</span><span class="txt"><span class="t">选声音</span><span class="d">3 维度</span></span></a>
+    <a class="card" href="G-audio-edit/G-3.html"><span class="ic">⭐</span><span class="txt"><span class="t">AI 配音</span><span class="d">⭐ P0 4 工具</span></span></a>
+    <a class="card" href="G-audio-edit/G-4.html"><span class="ic">👥</span><span class="txt"><span class="t">多角色配音</span><span class="d">分配表</span></span></a>
+    <a class="card" href="G-audio-edit/G-5.html"><span class="ic">😀</span><span class="txt"><span class="t">情绪语速</span><span class="d">5 大情绪</span></span></a>
+    <a class="card" href="G-audio-edit/G-6.html"><span class="ic">🎤</span><span class="txt"><span class="t">旁白独白</span><span class="d">3 类型</span></span></a>
+    <a class="card" href="G-audio-edit/G-7.html"><span class="ic">⭐</span><span class="txt"><span class="t">口型同步</span><span class="d">⭐ Sync.so</span></span></a>
+    <a class="card" href="G-audio-edit/G-8.html"><span class="ic">🔊</span><span class="txt"><span class="t">环境声音效</span><span class="d">3 大类</span></span></a>
+    <a class="card" href="G-audio-edit/G-9.html"><span class="ic">⭐</span><span class="txt"><span class="t">BGM 配乐</span><span class="d">⭐ 玉哥原创</span></span></a>
+    <a class="card" href="G-audio-edit/G-10.html"><span class="ic">📝</span><span class="txt"><span class="t">自动字幕</span><span class="d">剪映 5 分钟</span></span></a>
+    <a class="card" href="G-audio-edit/G-11.html"><span class="ic">✅</span><span class="txt"><span class="t">字幕校对</span><span class="d">5 类错字</span></span></a>
+    <a class="card" href="G-audio-edit/G-12.html"><span class="ic">✂️</span><span class="txt"><span class="t">剪映基础</span><span class="d">7 大操作</span></span></a>
+    <a class="card" href="G-audio-edit/G-13.html"><span class="ic">🔄</span><span class="txt"><span class="t">15 种转场</span><span class="d">玉哥速查</span></span></a>
+    <a class="card" href="G-audio-edit/G-14.html"><span class="ic">⭐</span><span class="txt"><span class="t">节奏卡点</span><span class="d">⭐ 3 秒钩子</span></span></a>
+    <a class="card" href="G-audio-edit/G-15.html"><span class="ic">🎨</span><span class="txt"><span class="t">调色滤镜</span><span class="d">3 大滤镜</span></span></a>
+    <a class="card" href="G-audio-edit/G-16.html"><span class="ic">🖼</span><span class="txt"><span class="t">封面 3 工具</span><span class="d">爆款公式</span></span></a>
+    <a class="card" href="G-audio-edit/G-17.html"><span class="ic">📤</span><span class="txt"><span class="t">导出设置</span><span class="d">1080P 黄金</span></span></a>
+    <a class="card" href="G-audio-edit/G-18.html"><span class="ic">⭐</span><span class="txt"><span class="t">一集完整实例</span><span class="d">⭐ 玉哥原创</span></span></a>
+      </div>
+    </div>
+
+    <!-- H 发布运营 -->
+    <div class="cat-block" id="H">
+      <h2 class="ch"><span class="num">H</span>H · 发布运营<span class="ct">10 节</span></h2>
+      <div class="cat-grid">
+    <a class="card" href="H-publish/H-1.html"><span class="ic">✅</span><span class="txt"><span class="t">发布前检查</span><span class="d">12 项清单</span></span></a>
+    <a class="card" href="H-publish/H-2.html"><span class="ic">⭐</span><span class="txt"><span class="t">视频尺寸 9:16</span><span class="d">⭐ 玉哥比例</span></span></a>
+    <a class="card" href="H-publish/H-3.html"><span class="ic">✍️</span><span class="txt"><span class="t">标题 5 模板</span><span class="d">爆款标题</span></span></a>
+    <a class="card" href="H-publish/H-4.html"><span class="ic">📝</span><span class="txt"><span class="t">简介 3 模板</span><span class="d">钩子补充</span></span></a>
+    <a class="card" href="H-publish/H-5.html"><span class="ic">⭐</span><span class="txt"><span class="t">封面爆款公式</span><span class="d">⭐ P0</span></span></a>
+    <a class="card" href="H-publish/H-6.html"><span class="ic">⭐</span><span class="txt"><span class="t">4 平台对比</span><span class="d">⭐ P0</span></span></a>
+    <a class="card" href="H-publish/H-7.html"><span class="ic">📅</span><span class="txt"><span class="t">发布排期</span><span class="d">晚 7-10 点</span></span></a>
+    <a class="card" href="H-publish/H-8.html"><span class="ic">📊</span><span class="txt"><span class="t">7 维数据</span><span class="d">完播率 30%</span></span></a>
+    <a class="card" href="H-publish/H-9.html"><span class="ic">🔁</span><span class="txt"><span class="t">复盘数据表</span><span class="d">每周 30 分钟</span></span></a>
+    <a class="card" href="H-publish/H-10.html"><span class="ic">🚀</span><span class="txt"><span class="t">下一集迭代</span><span class="d">每集好 5%</span></span></a>
+    <a class="card j-card" href="H-publish/短剧创业SOP.html"><span class="ic">🚀</span><span class="txt"><span class="t">短剧创业 SOP<span class="badge">原</span></span><span class="d">团队搭建 / 项目流 / 月入 30 万路径 · 玉哥亲编完整版</span></span></a>
+      </div>
+    </div>
+
+    <!-- I 附录速查 -->
+    <div class="cat-block" id="I">
+      <h2 class="ch"><span class="num">I</span>I · 附录速查<span class="ct">9 节</span></h2>
+      <div class="cat-grid">
+    <a class="card" href="I-appendix/I-1.html"><span class="ic">📖</span><span class="txt"><span class="t">术语速查</span><span class="d">AI 漫剧词典</span></span></a>
+    <a class="card" href="I-appendix/I-2.html"><span class="ic">🎥</span><span class="txt"><span class="t">景别运镜速查</span><span class="d">镜头字典</span></span></a>
+    <a class="card" href="I-appendix/I-3.html"><span class="ic">🔲</span><span class="txt"><span class="t">节点速查</span><span class="d">ComfyUI 节点</span></span></a>
+    <a class="card" href="I-appendix/I-4.html"><span class="ic">📦</span><span class="txt"><span class="t">模型速查</span><span class="d">20+ 模型</span></span></a>
+    <a class="card" href="I-appendix/I-5.html"><span class="ic">📐</span><span class="txt"><span class="t">视频规格速查</span><span class="d">10 项参数</span></span></a>
+    <a class="card" href="I-appendix/I-6.html"><span class="ic">🌐</span><span class="txt"><span class="t">平台规格速查</span><span class="d">4 平台对比</span></span></a>
+    <a class="card" href="I-appendix/I-7.html"><span class="ic">🔗</span><span class="txt"><span class="t">工具网址大全</span><span class="d">50+ 网址</span></span></a>
+    <a class="card" href="I-appendix/I-8.html"><span class="ic">⚠️</span><span class="txt"><span class="t">错误关键词</span><span class="d">反向词库</span></span></a>
+    <a class="card" href="I-appendix/I-9.html"><span class="ic">📂</span><span class="txt"><span class="t">开源仓库入口</span><span class="d">GitHub 地图</span></span></a>
+      </div>
+    </div>
+
+    <!-- J ComfyUI 专题(原版 → 直接跳原网页) -->
+    <div class="cat-block" id="J">
+      <h2 class="ch"><span class="num">J</span>J · ComfyUI 专题<span class="ct">原版 · 17 章 / 6 部分 🆕</span></h2>
+      <div class="cat-grid">
+    <a class="card j-card" href="J-comfyui/ComfyUI漫剧工作流.html"><span class="ic"><img src="../assets/icons/comfyui-app-c-blue.png" alt="ComfyUI"></span><span class="txt"><span class="t">J · ComfyUI 漫剧工作流<span class="badge">原</span></span><span class="d">原版 · 17 章 / 6 部分 · 离线数字教科书</span></span></a>
+      </div>
+    </div>
+
+    <!-- K 千川投流 SOP 专题(原版 → 直接跳原网页) -->
+    <div class="cat-block" id="K">
+      <h2 class="ch"><span class="num">K</span>K · 千川投流 SOP<span class="ct">14 章 + 16 课视频路径 🆕</span></h2>
+      <div class="cat-grid">
+    <a class="card j-card" href="K-投流/千川投流SOP.html"><span class="ic"><img src="../assets/icons/qianchuan-target.png" alt="千川"></span><span class="txt"><span class="t">K · 千川投流 SOP<span class="badge">原</span></span><span class="d">4 阶段 + 16 课顶级视频路径</span></span></a>
+      </div>
+    </div>
+
+    <!-- L 短剧 AI 仓库汇总(原版 → 直接跳原网页) -->
+    <div class="cat-block" id="L">
+      <h2 class="ch"><span class="num">L</span>L · 短剧 AI 仓库<span class="ct">工具 / 项目 / 脚本 / GitHub 🆕</span></h2>
+      <div class="cat-grid">
+    <a class="card j-card" href="L-airepo/短剧AI仓库.html"><span class="ic">📦</span><span class="txt"><span class="t">L · 短剧 AI 仓库<span class="badge">原</span></span><span class="d">AI 工具 / 自动化脚本 / GitHub 优质仓库清单 · 一份顶 100 篇收藏</span></span></a>
+      </div>
+    </div>
+
+    <!-- M 漫剧实战课 Seedance / 即梦(原版专题 → 直接跳原网页) -->
+    <div class="cat-block" id="M">
+      <h2 class="ch"><span class="num">M</span>M · Seedance / 即梦 实操课<span class="ct">9 章实战 + 110 视频 🆕</span></h2>
+      <div class="cat-grid">
+    <a class="card j-card" href="M-seedance/Seedance即梦实操课.html"><span class="ic">🎬</span><span class="txt"><span class="t">M · Seedance / 即梦 实操课<span class="badge">原</span></span><span class="d">9 章主线 + 110 视频 + 25 GitHub · 字节 Seedance 2.0/2.5 端到端 · 玉哥亲编课程</span></span></a>
+      </div>
+    </div>
+
+    <!-- N AI 写小说实战课(原版专题 → 直接跳原网页) -->
+    <div class="cat-block" id="N">
+      <h2 class="ch"><span class="num">N</span>N · AI 写小说实战课<span class="ct">15 章实战 + 10 GitHub + 12 文章 🆕</span></h2>
+      <div class="cat-grid">
+    <a class="card j-card" href="N-aixiexiaoshuo/AI写小说实战课.html"><span class="ic">📖</span><span class="txt"><span class="t">N · AI 写小说实战课<span class="badge">原</span></span><span class="d">15 章从 0 到一本完整长篇 · 10 GitHub 仓库 + 12 写作工作流文章 · 玉哥同款模板独立专题</span></span></a>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="扫码关注玉哥">
+      <img class="qr-img" src="../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../index.html">🏠 回到首页</a></li>
+      <li><a href="../changelog.html">📅 更新日志</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+
+<script src="../assets/tutorial.js?v=fix20260927-2215"></script>
+<script>
+// RUNOOB 风格:滚动到对应大类时,左侧对应项变 active
+document.querySelectorAll('.cat-block').forEach(block => {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        document.querySelectorAll('.sidebar-left li a').forEach(a => {
+          a.classList.remove('current');
+          if (a.getAttribute('href') === '#' + id) a.classList.add('current');
+        });
+      }
+    });
+  }, { rootMargin: '-100px 0px -60% 0px', threshold: 0 });
+  observer.observe(block);
+});
+</script>
+</body>
+</html>

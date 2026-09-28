@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="E-28 LoRA 数据集准备 · 漫剧制作教程站。玉哥整理的 AI 漫剧与短剧制作实用教程，包含步骤、案例和练习。">
+<title>E-28 LoRA 数据集准备 · 漫剧制作教程站</title>
+<link rel="stylesheet" href="../../assets/site.css?v=fix20260927-2215">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg?v=fix20260927-2215">
+<link rel="stylesheet" href="../../assets/tutorial.css?v=fix20260927-2215">
+</head>
+<body>
+<header class="topbar">
+  <div class="logo">🎬 漫剧教程站 <small>v3 · 玉哥</small></div>
+  <nav>
+    <a href="../../index.html">首页</a>
+    <a href="../all-courses.html" class="active">漫剧教程</a>
+    <a href="../../prompts/image-prompts.html">图片作品</a>
+    <a href="../../works/index.html">视频作品</a>
+    <a href="../../prompts/prompts.html">prompt 模板</a>
+    <a href="../../tools/toolkit.html">工具箱</a>
+    <a href="../../qa/troubleshooting.html">问题库</a>
+    <a href="../../news/industry.html">行业新闻</a>
+    </nav>
+  <div class="search"><input type="search" placeholder="🔍 搜…"></div>
+  <button class="theme-toggle" title="深浅主题切换" onclick="document.documentElement.classList.toggle('dark')">🌙</button>
+</header>
+<div class="layout-3col">
+  <aside class="sidebar-left" id="sidebar-left"></aside>
+  <main class="content">
+    <div class="breadcrumb"><a href="../../index.html">首页</a> <span>›</span> <a href="../all-courses.html">E AI 出图</a> <span>›</span> E-28 数据集准备</div>
+    <h1>E-28 · LoRA 数据集准备(质量 > 数量)</h1>
+    <h2 id="sec-1">1. 数据集 3 原则</h2>
+    <ol>
+      <li><strong>多样性</strong>:角度 / 表情 / 服装 / 背景</li>
+      <li><strong>一致性</strong>:主体清晰,角色可识别</li>
+      <li><strong>质量</strong>:构图好,光线好,无瑕疵</li>
+    </ol>
+
+    <h2 id="sec-2">2. 学员图片清单</h2>
+    <div class="tbl-wrap"><table><thead><tr><th>类型</th><th>数量</th><th>学员标准</th></tr></thead><tbody>
+    <tr><td>正面</td><td>3 张</td><td>不同表情</td></tr>
+    <tr><td>侧面</td><td>3 张</td><td>左 + 右</td></tr>
+    <tr><td>背面</td><td>1 张</td><td>展示发型</td></tr>
+    <tr><td>俯视 / 仰视</td><td>2 张</td><td>头部特写</td></tr>
+    <tr><td>半身</td><td>3 张</td><td>服装展示</td></tr>
+    <tr><td>全身</td><td>3 张</td><td>比例展示</td></tr>
+    <tr><td><strong>合计</strong></td><td><strong>15 张</strong></td><td>学员黄金数</td></tr>
+    </tbody></table></div>
+
+    <h2 id="sec-3">3. 标签写法</h2>
+    <p>每张图配一个 .txt 标签文件。</p>
+    <p><strong>格式</strong>:</p>
+<pre><code>xiaohong_girl, 1girl, long black hair, red eyes,
+white qipao, smiling, garden, masterpiece, best quality
+# 触发词 + 描述 + 质量词</code></pre>
+
+    <h2 id="sec-4">4. 打标签工具</h2>
+    <ul>
+      <li><strong>BBoT / WD Tagger</strong>:自动打(学员 80% 用)</li>
+      <li><strong>手打</strong>:精准但慢</li>
+      <li><strong>混合</strong>:自动 + 手改</li>
+    </ul>
+
+    <h2 id="sec-5">5. 数据预处理(Bucketing)</h2>
+    <p>kohya_ss 自动 bucketing:把不同比例图分桶到统一分辨率。</p>
+    <ul>
+      <li>竖图(9:16) → 桶 1</li>
+      <li>横图(16:9) → 桶 2</li>
+      <li>方图(1:1) → 桶 3</li>
+    </ul>
+
+    <h2 id="sec-6">6. 学员数据集目录结构</h2>
+<pre><code>train_data/
+├── 10_xiaohong/
+│   ├── 01.png
+│   ├── 01.txt
+│   ├── 02.png
+│   ├── 02.txt
+│   └── ... (15 张)
+└── 20_xiaohong/
+    └── ... (另一概念 LoRA)</code></pre>
+
+    <h2 id="sec-7">7. 数据集禁忌</h2>
+    <ul>
+      <li>❌ 多角色同框(角色混淆)</li>
+      <li>❌ 模糊 / 曝光图</li>
+      <li>❌ 复杂背景(抢角色)</li>
+      <li>❌ 表情雷同(模型学不到变化)</li>
+    </ul>
+
+    <h2 id="sec-8">8. 学完能做啥</h2>
+    <ul class="checklist"><li>能准备玉哥级数据集</li><li>会打标签</li><li>懂 bucketing</li></ul>
+
+    <h2 id="sec-9">9. 玉哥说</h2>
+    <div class="callout warn"><span class="ico">📢</span><p><strong>📢 玉哥说</strong>:<br>
+    1. <strong>15 张是学员黄金数</strong> · 别堆 50 张<br>
+    2. <strong>自动打标签 + 手改</strong> · 80% 学员<br>
+    3. <strong>多角度 + 多表情 + 多服装</strong><br>
+    4. <strong>数据集坏 = LoRA 坏</strong> · 别偷懒</p></div>
+
+    <nav class="bottom-nav">
+      <a class="prev" href="E-27.html"><span class="label">← 上一节</span><span class="title">E-27 训练工具</span></a>
+      <a class="next" href="E-29.html"><span class="label">下一节 →</span><span class="title">E-29 批量出图</span></a>
+    </nav>
+  </main>
+  <aside class="sidebar-right" id="sidebar-right"></aside>
+</div>
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="扫码关注玉哥">
+      <img class="qr-img" src="../../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../../changelog.html">📅 更新日志</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+<script src="../../assets/tutorial.js?v=fix20260927-2215"></script>
+<script src="../../assets/site-enhance.js?v=fix20260927-2215" defer></script>
+</body>
+</html>

@@ -1,0 +1,2735 @@
+1
+00:00:00,000 --> 00:00:02,070
+
+If you want your AI videos to feel like
+
+2
+00:00:02,070 --> 00:00:02,080
+If you want your AI videos to feel like
+ 
+
+3
+00:00:02,080 --> 00:00:03,950
+If you want your AI videos to feel like
+they belong on the big screen, you have
+
+4
+00:00:03,950 --> 00:00:03,960
+they belong on the big screen, you have
+ 
+
+5
+00:00:03,960 --> 00:00:06,230
+they belong on the big screen, you have
+to master the light. So, I refined 20
+
+6
+00:00:06,230 --> 00:00:06,240
+to master the light. So, I refined 20
+ 
+
+7
+00:00:06,240 --> 00:00:08,070
+to master the light. So, I refined 20
+professional prompts to help you achieve
+
+8
+00:00:08,070 --> 00:00:08,080
+professional prompts to help you achieve
+ 
+
+9
+00:00:08,080 --> 00:00:10,070
+professional prompts to help you achieve
+that high-end Hollywood look in every
+
+10
+00:00:10,070 --> 00:00:10,080
+that high-end Hollywood look in every
+ 
+
+11
+00:00:10,080 --> 00:00:12,030
+that high-end Hollywood look in every
+single frame. So, let's get started. So,
+
+12
+00:00:12,030 --> 00:00:12,040
+single frame. So, let's get started. So,
+ 
+
+13
+00:00:12,040 --> 00:00:13,990
+single frame. So, let's get started. So,
+first we have the hero glow in mixed
+
+14
+00:00:13,990 --> 00:00:14,000
+first we have the hero glow in mixed
+ 
+
+15
+00:00:14,000 --> 00:00:15,790
+first we have the hero glow in mixed
+temperature. The key light is around
+
+16
+00:00:15,790 --> 00:00:15,800
+temperature. The key light is around
+ 
+
+17
+00:00:15,800 --> 00:00:19,510
+temperature. The key light is around
+5,000 Kelvins from 45° camera left. Then
+
+18
+00:00:19,510 --> 00:00:19,520
+5,000 Kelvins from 45° camera left. Then
+ 
+
+19
+00:00:19,520 --> 00:00:21,750
+5,000 Kelvins from 45° camera left. Then
+we have fill light, powerful rim light
+
+20
+00:00:21,750 --> 00:00:21,760
+we have fill light, powerful rim light
+ 
+
+21
+00:00:21,760 --> 00:00:24,350
+we have fill light, powerful rim light
+at 3K. I'll explain all of that later.
+
+22
+00:00:24,350 --> 00:00:24,360
+at 3K. I'll explain all of that later.
+ 
+
+23
+00:00:24,360 --> 00:00:26,030
+at 3K. I'll explain all of that later.
+So, this is our hero now. Let's look at
+
+24
+00:00:26,030 --> 00:00:26,040
+So, this is our hero now. Let's look at
+ 
+
+25
+00:00:26,040 --> 00:00:28,470
+So, this is our hero now. Let's look at
+her. You see how the lights are coming
+
+26
+00:00:28,470 --> 00:00:28,480
+her. You see how the lights are coming
+ 
+
+27
+00:00:28,480 --> 00:00:30,710
+her. You see how the lights are coming
+from this side and from this side, and
+
+28
+00:00:30,710 --> 00:00:30,720
+from this side and from this side, and
+ 
+
+29
+00:00:30,720 --> 00:00:32,910
+from this side and from this side, and
+I'll explain now everything. This is how
+
+30
+00:00:32,910 --> 00:00:32,920
+I'll explain now everything. This is how
+ 
+
+31
+00:00:32,920 --> 00:00:34,870
+I'll explain now everything. This is how
+could that look like in real life. Now
+
+32
+00:00:34,870 --> 00:00:34,880
+could that look like in real life. Now
+ 
+
+33
+00:00:34,880 --> 00:00:36,950
+could that look like in real life. Now
+comes the mood or the Kelvin color
+
+34
+00:00:36,950 --> 00:00:36,960
+comes the mood or the Kelvin color
+ 
+
+35
+00:00:36,960 --> 00:00:39,350
+comes the mood or the Kelvin color
+temperature. Basically, Kelvin defines
+
+36
+00:00:39,350 --> 00:00:39,360
+temperature. Basically, Kelvin defines
+ 
+
+37
+00:00:39,360 --> 00:00:42,590
+temperature. Basically, Kelvin defines
+how light feels. Lower values around 3K
+
+38
+00:00:42,590 --> 00:00:42,600
+how light feels. Lower values around 3K
+ 
+
+39
+00:00:42,600 --> 00:00:44,750
+how light feels. Lower values around 3K
+are warm and cinematic like tungsten,
+
+40
+00:00:44,750 --> 00:00:44,760
+are warm and cinematic like tungsten,
+ 
+
+41
+00:00:44,760 --> 00:00:47,350
+are warm and cinematic like tungsten,
+and higher values like 5K are cool and
+
+42
+00:00:47,350 --> 00:00:47,360
+and higher values like 5K are cool and
+ 
+
+43
+00:00:47,360 --> 00:00:49,350
+and higher values like 5K are cool and
+clean like daylight or blue. So, when
+
+44
+00:00:49,350 --> 00:00:49,360
+clean like daylight or blue. So, when
+ 
+
+45
+00:00:49,360 --> 00:00:51,270
+clean like daylight or blue. So, when
+you prompt an AI video model, you're not
+
+46
+00:00:51,270 --> 00:00:51,280
+you prompt an AI video model, you're not
+ 
+
+47
+00:00:51,280 --> 00:00:52,990
+you prompt an AI video model, you're not
+just placing the lights, you're telling
+
+48
+00:00:52,990 --> 00:00:53,000
+just placing the lights, you're telling
+ 
+
+49
+00:00:53,000 --> 00:00:55,390
+just placing the lights, you're telling
+it how the scene should feel. So, then
+
+50
+00:00:55,390 --> 00:00:55,400
+it how the scene should feel. So, then
+ 
+
+51
+00:00:55,400 --> 00:00:56,670
+it how the scene should feel. So, then
+we also have something that I call
+
+52
+00:00:56,670 --> 00:00:56,680
+we also have something that I call
+ 
+
+53
+00:00:56,680 --> 00:00:58,710
+we also have something that I call
+dramatic cold night setup. And here we
+
+54
+00:00:58,710 --> 00:00:58,720
+dramatic cold night setup. And here we
+ 
+
+55
+00:00:58,720 --> 00:01:00,870
+dramatic cold night setup. And here we
+have the key light at mid higher Kelvins
+
+56
+00:01:00,870 --> 00:01:00,880
+have the key light at mid higher Kelvins
+ 
+
+57
+00:01:00,880 --> 00:01:02,990
+have the key light at mid higher Kelvins
+creating moonlight blue, then casting
+
+58
+00:01:02,990 --> 00:01:03,000
+creating moonlight blue, then casting
+ 
+
+59
+00:01:03,000 --> 00:01:05,229
+creating moonlight blue, then casting
+shadows on her side, and then we have
+
+60
+00:01:05,229 --> 00:01:05,239
+shadows on her side, and then we have
+ 
+
+61
+00:01:05,239 --> 00:01:08,270
+shadows on her side, and then we have
+also kind of a icy white rim light from
+
+62
+00:01:08,270 --> 00:01:08,280
+also kind of a icy white rim light from
+ 
+
+63
+00:01:08,280 --> 00:01:10,350
+also kind of a icy white rim light from
+behind. And this is exactly how does
+
+64
+00:01:10,350 --> 00:01:10,360
+behind. And this is exactly how does
+ 
+
+65
+00:01:10,360 --> 00:01:12,710
+behind. And this is exactly how does
+that look like. So, this side here is
+
+66
+00:01:12,710 --> 00:01:12,720
+that look like. So, this side here is
+ 
+
+67
+00:01:12,720 --> 00:01:15,030
+that look like. So, this side here is
+completely illuminated by the blue
+
+68
+00:01:15,030 --> 00:01:15,040
+completely illuminated by the blue
+ 
+
+69
+00:01:15,040 --> 00:01:18,310
+completely illuminated by the blue
+light. This side is almost completely in
+
+70
+00:01:18,310 --> 00:01:18,320
+light. This side is almost completely in
+ 
+
+71
+00:01:18,320 --> 00:01:20,830
+light. This side is almost completely in
+the shadows, and by that AI video model
+
+72
+00:01:20,830 --> 00:01:20,840
+the shadows, and by that AI video model
+ 
+
+73
+00:01:20,840 --> 00:01:22,750
+the shadows, and by that AI video model
+followed the prompt exactly. Then we
+
+74
+00:01:22,750 --> 00:01:22,760
+followed the prompt exactly. Then we
+ 
+
+75
+00:01:22,760 --> 00:01:24,470
+followed the prompt exactly. Then we
+have category two, which I would call
+
+76
+00:01:24,470 --> 00:01:24,480
+have category two, which I would call
+ 
+
+77
+00:01:24,480 --> 00:01:27,110
+have category two, which I would call
+classical face shaping or portraiture.
+
+78
+00:01:27,110 --> 00:01:27,120
+classical face shaping or portraiture.
+ 
+
+79
+00:01:27,120 --> 00:01:28,910
+classical face shaping or portraiture.
+One of the most famous is butterfly
+
+80
+00:01:28,910 --> 00:01:28,920
+One of the most famous is butterfly
+ 
+
+81
+00:01:28,920 --> 00:01:30,670
+One of the most famous is butterfly
+lighting or the Paramount look. So, this
+
+82
+00:01:30,670 --> 00:01:30,680
+lighting or the Paramount look. So, this
+ 
+
+83
+00:01:30,680 --> 00:01:32,030
+lighting or the Paramount look. So, this
+look is a classic technique where a
+
+84
+00:01:32,030 --> 00:01:32,040
+look is a classic technique where a
+ 
+
+85
+00:01:32,040 --> 00:01:34,710
+look is a classic technique where a
+single key light is placed directly in
+
+86
+00:01:34,710 --> 00:01:34,720
+single key light is placed directly in
+ 
+
+87
+00:01:34,720 --> 00:01:37,270
+single key light is placed directly in
+front and slightly above the subject
+
+88
+00:01:37,270 --> 00:01:37,280
+front and slightly above the subject
+ 
+
+89
+00:01:37,280 --> 00:01:38,990
+front and slightly above the subject
+creating a small symmetrical
+
+90
+00:01:38,990 --> 00:01:39,000
+creating a small symmetrical
+ 
+
+91
+00:01:39,000 --> 00:01:41,070
+creating a small symmetrical
+butterfly-shaped shadow directly beneath
+
+92
+00:01:41,070 --> 00:01:41,080
+butterfly-shaped shadow directly beneath
+ 
+
+93
+00:01:41,080 --> 00:01:43,510
+butterfly-shaped shadow directly beneath
+the nose and emphasizing cheekbones. So,
+
+94
+00:01:43,510 --> 00:01:43,520
+the nose and emphasizing cheekbones. So,
+ 
+
+95
+00:01:43,520 --> 00:01:45,190
+the nose and emphasizing cheekbones. So,
+here is our model.
+
+96
+00:01:45,190 --> 00:01:45,200
+here is our model.
+ 
+
+97
+00:01:45,200 --> 00:01:47,030
+here is our model.
+And now notice something. Look at the
+
+98
+00:01:47,030 --> 00:01:47,040
+And now notice something. Look at the
+ 
+
+99
+00:01:47,040 --> 00:01:49,110
+And now notice something. Look at the
+video closely.
+
+100
+00:01:49,110 --> 00:01:49,120
+video closely.
+ 
+
+101
+00:01:49,120 --> 00:01:51,590
+video closely.
+And then you will notice that butterfly
+
+102
+00:01:51,590 --> 00:01:51,600
+And then you will notice that butterfly
+ 
+
+103
+00:01:51,600 --> 00:01:53,830
+And then you will notice that butterfly
+effect exactly
+
+104
+00:01:53,830 --> 00:01:53,840
+effect exactly
+ 
+
+105
+00:01:53,840 --> 00:01:56,270
+effect exactly
+here. So, as I mentioned, it is
+
+106
+00:01:56,270 --> 00:01:56,280
+here. So, as I mentioned, it is
+ 
+
+107
+00:01:56,280 --> 00:01:58,830
+here. So, as I mentioned, it is
+appearing under the nose and you can see
+
+108
+00:01:58,830 --> 00:01:58,840
+appearing under the nose and you can see
+ 
+
+109
+00:01:58,840 --> 00:02:02,510
+appearing under the nose and you can see
+it like butterfly wings exactly here.
+
+110
+00:02:02,510 --> 00:02:02,520
+it like butterfly wings exactly here.
+ 
+
+111
+00:02:02,520 --> 00:02:04,390
+it like butterfly wings exactly here.
+So, this is achieved with the light as I
+
+112
+00:02:04,390 --> 00:02:04,400
+So, this is achieved with the light as I
+ 
+
+113
+00:02:04,400 --> 00:02:06,630
+So, this is achieved with the light as I
+mentioned previously. And you notice her
+
+114
+00:02:06,630 --> 00:02:06,640
+mentioned previously. And you notice her
+ 
+
+115
+00:02:06,640 --> 00:02:09,950
+mentioned previously. And you notice her
+cheekbones how emphasized they are. Then
+
+116
+00:02:09,950 --> 00:02:09,960
+cheekbones how emphasized they are. Then
+ 
+
+117
+00:02:09,960 --> 00:02:11,510
+cheekbones how emphasized they are. Then
+we have the Rembrandt lighting.
+
+118
+00:02:11,510 --> 00:02:11,520
+we have the Rembrandt lighting.
+ 
+
+119
+00:02:11,520 --> 00:02:13,550
+we have the Rembrandt lighting.
+Basically, it creates a signature small
+
+120
+00:02:13,550 --> 00:02:13,560
+Basically, it creates a signature small
+ 
+
+121
+00:02:13,560 --> 00:02:16,310
+Basically, it creates a signature small
+triangle of light on the shadowed cheek.
+
+122
+00:02:16,310 --> 00:02:16,320
+triangle of light on the shadowed cheek.
+ 
+
+123
+00:02:16,320 --> 00:02:17,910
+triangle of light on the shadowed cheek.
+And it is used a lot in dramatic
+
+124
+00:02:17,910 --> 00:02:17,920
+And it is used a lot in dramatic
+ 
+
+125
+00:02:17,920 --> 00:02:20,350
+And it is used a lot in dramatic
+thrillers and prestige dramas. So, here
+
+126
+00:02:20,350 --> 00:02:20,360
+thrillers and prestige dramas. So, here
+ 
+
+127
+00:02:20,360 --> 00:02:23,350
+thrillers and prestige dramas. So, here
+is our model. Now, look at this closely.
+
+128
+00:02:23,350 --> 00:02:23,360
+is our model. Now, look at this closely.
+ 
+
+129
+00:02:23,360 --> 00:02:24,470
+is our model. Now, look at this closely.
+Okay?
+
+130
+00:02:24,470 --> 00:02:24,480
+Okay?
+ 
+
+131
+00:02:24,480 --> 00:02:26,630
+Okay?
+You didn't notice the triangle probably
+
+132
+00:02:26,630 --> 00:02:26,640
+You didn't notice the triangle probably
+ 
+
+133
+00:02:26,640 --> 00:02:28,550
+You didn't notice the triangle probably
+at the first time, but you'll notice it
+
+134
+00:02:28,550 --> 00:02:28,560
+at the first time, but you'll notice it
+ 
+
+135
+00:02:28,560 --> 00:02:31,550
+at the first time, but you'll notice it
+now. So, let's stop exactly here. And
+
+136
+00:02:31,550 --> 00:02:31,560
+now. So, let's stop exactly here. And
+ 
+
+137
+00:02:31,560 --> 00:02:35,910
+now. So, let's stop exactly here. And
+here is that famous triangle used a lot
+
+138
+00:02:35,910 --> 00:02:35,920
+here is that famous triangle used a lot
+ 
+
+139
+00:02:35,920 --> 00:02:38,550
+here is that famous triangle used a lot
+in cinematography. And now it can be
+
+140
+00:02:38,550 --> 00:02:38,560
+in cinematography. And now it can be
+ 
+
+141
+00:02:38,560 --> 00:02:40,710
+in cinematography. And now it can be
+used in AI filmmaking. So, then let's
+
+142
+00:02:40,710 --> 00:02:40,720
+used in AI filmmaking. So, then let's
+ 
+
+143
+00:02:40,720 --> 00:02:42,270
+used in AI filmmaking. So, then let's
+continue to the category three, which I
+
+144
+00:02:42,270 --> 00:02:42,280
+continue to the category three, which I
+ 
+
+145
+00:02:42,280 --> 00:02:43,870
+continue to the category three, which I
+would call natural and atmospheric
+
+146
+00:02:43,870 --> 00:02:43,880
+would call natural and atmospheric
+ 
+
+147
+00:02:43,880 --> 00:02:46,070
+would call natural and atmospheric
+light. Those are very popular ones. So,
+
+148
+00:02:46,070 --> 00:02:46,080
+light. Those are very popular ones. So,
+ 
+
+149
+00:02:46,080 --> 00:02:47,910
+light. Those are very popular ones. So,
+first we have the golden hour, which is
+
+150
+00:02:47,910 --> 00:02:47,920
+first we have the golden hour, which is
+ 
+
+151
+00:02:47,920 --> 00:02:49,630
+first we have the golden hour, which is
+basically called like that because of
+
+152
+00:02:49,630 --> 00:02:49,640
+basically called like that because of
+ 
+
+153
+00:02:49,640 --> 00:02:52,510
+basically called like that because of
+the period shortly after the sunrise or
+
+154
+00:02:52,510 --> 00:02:52,520
+the period shortly after the sunrise or
+ 
+
+155
+00:02:52,520 --> 00:02:55,110
+the period shortly after the sunrise or
+before the sunset when sunlight is
+
+156
+00:02:55,110 --> 00:02:55,120
+before the sunset when sunlight is
+ 
+
+157
+00:02:55,120 --> 00:02:57,710
+before the sunset when sunlight is
+softer, warmer, and rather. Here is our
+
+158
+00:02:57,710 --> 00:02:57,720
+softer, warmer, and rather. Here is our
+ 
+
+159
+00:02:57,720 --> 00:03:00,030
+softer, warmer, and rather. Here is our
+new model and you can notice what is
+
+160
+00:03:00,030 --> 00:03:00,040
+new model and you can notice what is
+ 
+
+161
+00:03:00,040 --> 00:03:02,590
+new model and you can notice what is
+happening here exactly.
+
+162
+00:03:02,590 --> 00:03:02,600
+happening here exactly.
+ 
+
+163
+00:03:02,600 --> 00:03:04,350
+happening here exactly.
+Yeah.
+
+164
+00:03:04,350 --> 00:03:04,360
+Yeah.
+ 
+
+165
+00:03:04,360 --> 00:03:06,229
+Yeah.
+Sometimes it is enough just to type the
+
+166
+00:03:06,229 --> 00:03:06,239
+Sometimes it is enough just to type the
+ 
+
+167
+00:03:06,239 --> 00:03:08,270
+Sometimes it is enough just to type the
+golden hour. Sometimes you need to be
+
+168
+00:03:08,270 --> 00:03:08,280
+golden hour. Sometimes you need to be
+ 
+
+169
+00:03:08,280 --> 00:03:10,670
+golden hour. Sometimes you need to be
+more specific. Then kind of a opposite
+
+170
+00:03:10,670 --> 00:03:10,680
+more specific. Then kind of a opposite
+ 
+
+171
+00:03:10,680 --> 00:03:12,310
+more specific. Then kind of a opposite
+of that, we have the blue hour that
+
+172
+00:03:12,310 --> 00:03:12,320
+of that, we have the blue hour that
+ 
+
+173
+00:03:12,320 --> 00:03:14,910
+of that, we have the blue hour that
+creates those twilight mystery. You see,
+
+174
+00:03:14,910 --> 00:03:14,920
+creates those twilight mystery. You see,
+ 
+
+175
+00:03:14,920 --> 00:03:17,190
+creates those twilight mystery. You see,
+of course, completely different look
+
+176
+00:03:17,190 --> 00:03:17,200
+of course, completely different look
+ 
+
+177
+00:03:17,200 --> 00:03:20,630
+of course, completely different look
+happening here. So, the sun is nowhere
+
+178
+00:03:20,630 --> 00:03:20,640
+happening here. So, the sun is nowhere
+ 
+
+179
+00:03:20,640 --> 00:03:23,270
+happening here. So, the sun is nowhere
+to be seen and those bluish colors
+
+180
+00:03:23,270 --> 00:03:23,280
+to be seen and those bluish colors
+ 
+
+181
+00:03:23,280 --> 00:03:25,790
+to be seen and those bluish colors
+before the night are appearing in our
+
+182
+00:03:25,790 --> 00:03:25,800
+before the night are appearing in our
+ 
+
+183
+00:03:25,800 --> 00:03:28,110
+before the night are appearing in our
+image creating kind of a mysticism. Then
+
+184
+00:03:28,110 --> 00:03:28,120
+image creating kind of a mysticism. Then
+ 
+
+185
+00:03:28,120 --> 00:03:30,830
+image creating kind of a mysticism. Then
+we have the volumetric or god rays and
+
+186
+00:03:30,830 --> 00:03:30,840
+we have the volumetric or god rays and
+ 
+
+187
+00:03:30,840 --> 00:03:32,750
+we have the volumetric or god rays and
+those makes the light beams visible
+
+188
+00:03:32,750 --> 00:03:32,760
+those makes the light beams visible
+ 
+
+189
+00:03:32,760 --> 00:03:34,990
+those makes the light beams visible
+through the air as if shining through
+
+190
+00:03:34,990 --> 00:03:35,000
+through the air as if shining through
+ 
+
+191
+00:03:35,000 --> 00:03:37,270
+through the air as if shining through
+the dust or the fog. It is used a lot in
+
+192
+00:03:37,270 --> 00:03:37,280
+the dust or the fog. It is used a lot in
+ 
+
+193
+00:03:37,280 --> 00:03:39,949
+the dust or the fog. It is used a lot in
+fantasy, sci-fi, and discovery seen in
+
+194
+00:03:39,949 --> 00:03:39,959
+fantasy, sci-fi, and discovery seen in
+ 
+
+195
+00:03:39,959 --> 00:03:41,910
+fantasy, sci-fi, and discovery seen in
+ancient ruins, for example. This is the
+
+196
+00:03:41,910 --> 00:03:41,920
+ancient ruins, for example. This is the
+ 
+
+197
+00:03:41,920 --> 00:03:44,990
+ancient ruins, for example. This is the
+scene created in VO3 and you notice
+
+198
+00:03:44,990 --> 00:03:45,000
+scene created in VO3 and you notice
+ 
+
+199
+00:03:45,000 --> 00:03:48,070
+scene created in VO3 and you notice
+those volumetric lightings coming from
+
+200
+00:03:48,070 --> 00:03:48,080
+those volumetric lightings coming from
+ 
+
+201
+00:03:48,080 --> 00:03:50,710
+those volumetric lightings coming from
+above. I also tried the same prompt in
+
+202
+00:03:50,710 --> 00:03:50,720
+above. I also tried the same prompt in
+ 
+
+203
+00:03:50,720 --> 00:03:53,630
+above. I also tried the same prompt in
+Sora 2 Pro. It worked good, but
+
+204
+00:03:53,630 --> 00:03:53,640
+Sora 2 Pro. It worked good, but
+ 
+
+205
+00:03:53,640 --> 00:03:55,910
+Sora 2 Pro. It worked good, but
+something happening with the camera here
+
+206
+00:03:55,910 --> 00:03:55,920
+something happening with the camera here
+ 
+
+207
+00:03:55,920 --> 00:03:57,790
+something happening with the camera here
+on Sora. I don't know what they're doing
+
+208
+00:03:57,790 --> 00:03:57,800
+on Sora. I don't know what they're doing
+ 
+
+209
+00:03:57,800 --> 00:04:00,190
+on Sora. I don't know what they're doing
+here, but you also notice those shining
+
+210
+00:04:00,190 --> 00:04:00,200
+here, but you also notice those shining
+ 
+
+211
+00:04:00,200 --> 00:04:02,470
+here, but you also notice those shining
+from above coming here. Of course, we
+
+212
+00:04:02,470 --> 00:04:02,480
+from above coming here. Of course, we
+ 
+
+213
+00:04:02,480 --> 00:04:04,390
+from above coming here. Of course, we
+also need to show the natural moonlight
+
+214
+00:04:04,390 --> 00:04:04,400
+also need to show the natural moonlight
+ 
+
+215
+00:04:04,400 --> 00:04:06,510
+also need to show the natural moonlight
+reflection or the lunar glow, and here
+
+216
+00:04:06,510 --> 00:04:06,520
+reflection or the lunar glow, and here
+ 
+
+217
+00:04:06,520 --> 00:04:08,870
+reflection or the lunar glow, and here
+always be careful while prompting not
+
+218
+00:04:08,870 --> 00:04:08,880
+always be careful while prompting not
+ 
+
+219
+00:04:08,880 --> 00:04:11,230
+always be careful while prompting not
+just to say moonlight because this often
+
+220
+00:04:11,230 --> 00:04:11,240
+just to say moonlight because this often
+ 
+
+221
+00:04:11,240 --> 00:04:14,150
+just to say moonlight because this often
+results in a flat blue image. Use the
+
+222
+00:04:14,150 --> 00:04:14,160
+results in a flat blue image. Use the
+ 
+
+223
+00:04:14,160 --> 00:04:16,590
+results in a flat blue image. Use the
+word specular reflection or skin
+
+224
+00:04:16,590 --> 00:04:16,600
+word specular reflection or skin
+ 
+
+225
+00:04:16,600 --> 00:04:18,590
+word specular reflection or skin
+moisture, which basically tells the eye
+
+226
+00:04:18,590 --> 00:04:18,600
+moisture, which basically tells the eye
+ 
+
+227
+00:04:18,600 --> 00:04:21,030
+moisture, which basically tells the eye
+to create that shimmer on the face that
+
+228
+00:04:21,030 --> 00:04:21,040
+to create that shimmer on the face that
+ 
+
+229
+00:04:21,040 --> 00:04:23,670
+to create that shimmer on the face that
+makes it look more realistic. And here
+
+230
+00:04:23,670 --> 00:04:23,680
+makes it look more realistic. And here
+ 
+
+231
+00:04:23,680 --> 00:04:25,830
+makes it look more realistic. And here
+is our guy looking at the sky, and you
+
+232
+00:04:25,830 --> 00:04:25,840
+is our guy looking at the sky, and you
+ 
+
+233
+00:04:25,840 --> 00:04:28,590
+is our guy looking at the sky, and you
+see reflection of the moonlight on his
+
+234
+00:04:28,590 --> 00:04:28,600
+see reflection of the moonlight on his
+ 
+
+235
+00:04:28,600 --> 00:04:32,190
+see reflection of the moonlight on his
+face with pretty much great details. So,
+
+236
+00:04:32,190 --> 00:04:32,200
+face with pretty much great details. So,
+ 
+
+237
+00:04:32,200 --> 00:04:33,909
+face with pretty much great details. So,
+I'm creating all of these videos in
+
+238
+00:04:33,909 --> 00:04:33,919
+I'm creating all of these videos in
+ 
+
+239
+00:04:33,919 --> 00:04:36,310
+I'm creating all of these videos in
+all-in-one AI platform so make AI
+
+240
+00:04:36,310 --> 00:04:36,320
+all-in-one AI platform so make AI
+ 
+
+241
+00:04:36,320 --> 00:04:38,430
+all-in-one AI platform so make AI
+because it lets me use many different AI
+
+242
+00:04:38,430 --> 00:04:38,440
+because it lets me use many different AI
+ 
+
+243
+00:04:38,440 --> 00:04:40,990
+because it lets me use many different AI
+video and image models in one place.
+
+244
+00:04:40,990 --> 00:04:41,000
+video and image models in one place.
+ 
+
+245
+00:04:41,000 --> 00:04:44,230
+video and image models in one place.
+From VO 3.1 to Sora 2, to Nano Banana
+
+246
+00:04:44,230 --> 00:04:44,240
+From VO 3.1 to Sora 2, to Nano Banana
+ 
+
+247
+00:04:44,240 --> 00:04:46,830
+From VO 3.1 to Sora 2, to Nano Banana
+Pro, GPT, Image Z, Image, you name it.
+
+248
+00:04:46,830 --> 00:04:46,840
+Pro, GPT, Image Z, Image, you name it.
+ 
+
+249
+00:04:46,840 --> 00:04:48,270
+Pro, GPT, Image Z, Image, you name it.
+So, if you'd like to try the platform
+
+250
+00:04:48,270 --> 00:04:48,280
+So, if you'd like to try the platform
+ 
+
+251
+00:04:48,280 --> 00:04:49,710
+So, if you'd like to try the platform
+for free, you'll find the link in the
+
+252
+00:04:49,710 --> 00:04:49,720
+for free, you'll find the link in the
+ 
+
+253
+00:04:49,720 --> 00:04:53,110
+for free, you'll find the link in the
+description down below along with my 10%
+
+254
+00:04:53,110 --> 00:04:53,120
+description down below along with my 10%
+ 
+
+255
+00:04:53,120 --> 00:04:55,150
+description down below along with my 10%
+discount code. I would call the fourth
+
+256
+00:04:55,150 --> 00:04:55,160
+discount code. I would call the fourth
+ 
+
+257
+00:04:55,160 --> 00:04:57,310
+discount code. I would call the fourth
+category professional studio and color
+
+258
+00:04:57,310 --> 00:04:57,320
+category professional studio and color
+ 
+
+259
+00:04:57,320 --> 00:05:00,390
+category professional studio and color
+styles starting with the cyberpunk BI
+
+260
+00:05:00,390 --> 00:05:00,400
+styles starting with the cyberpunk BI
+ 
+
+261
+00:05:00,400 --> 00:05:02,430
+styles starting with the cyberpunk BI
+color neon contrast, which basically
+
+262
+00:05:02,430 --> 00:05:02,440
+color neon contrast, which basically
+ 
+
+263
+00:05:02,440 --> 00:05:04,310
+color neon contrast, which basically
+uses two opposing saturated colors
+
+264
+00:05:04,310 --> 00:05:04,320
+uses two opposing saturated colors
+ 
+
+265
+00:05:04,320 --> 00:05:07,070
+uses two opposing saturated colors
+magenta and cyan to light the scene. So,
+
+266
+00:05:07,070 --> 00:05:07,080
+magenta and cyan to light the scene. So,
+ 
+
+267
+00:05:07,080 --> 00:05:10,909
+magenta and cyan to light the scene. So,
+I created this car in LTX 2 Pro, and you
+
+268
+00:05:10,909 --> 00:05:10,919
+I created this car in LTX 2 Pro, and you
+ 
+
+269
+00:05:10,919 --> 00:05:13,470
+I created this car in LTX 2 Pro, and you
+obviously notice the color grading and
+
+270
+00:05:13,470 --> 00:05:13,480
+obviously notice the color grading and
+ 
+
+271
+00:05:13,480 --> 00:05:15,710
+obviously notice the color grading and
+the lightning in this scene exactly as
+
+272
+00:05:15,710 --> 00:05:15,720
+the lightning in this scene exactly as
+ 
+
+273
+00:05:15,720 --> 00:05:17,710
+the lightning in this scene exactly as
+we prompted. He also created that
+
+274
+00:05:17,710 --> 00:05:17,720
+we prompted. He also created that
+ 
+
+275
+00:05:17,720 --> 00:05:20,750
+we prompted. He also created that
+lightning scene in VO 3.1 fast, and this
+
+276
+00:05:20,750 --> 00:05:20,760
+lightning scene in VO 3.1 fast, and this
+ 
+
+277
+00:05:20,760 --> 00:05:22,990
+lightning scene in VO 3.1 fast, and this
+is how it looks like. So, we have this
+
+278
+00:05:22,990 --> 00:05:23,000
+is how it looks like. So, we have this
+ 
+
+279
+00:05:23,000 --> 00:05:25,190
+is how it looks like. So, we have this
+female warrior illuminated with the
+
+280
+00:05:25,190 --> 00:05:25,200
+female warrior illuminated with the
+ 
+
+281
+00:05:25,200 --> 00:05:27,390
+female warrior illuminated with the
+mentioned colors. Then we have the TV
+
+282
+00:05:27,390 --> 00:05:27,400
+mentioned colors. Then we have the TV
+ 
+
+283
+00:05:27,400 --> 00:05:29,470
+mentioned colors. Then we have the TV
+glow or electronic ambience, and this
+
+284
+00:05:29,470 --> 00:05:29,480
+glow or electronic ambience, and this
+ 
+
+285
+00:05:29,480 --> 00:05:31,350
+glow or electronic ambience, and this
+basically simulates the cool flickering
+
+286
+00:05:31,350 --> 00:05:31,360
+basically simulates the cool flickering
+ 
+
+287
+00:05:31,360 --> 00:05:33,790
+basically simulates the cool flickering
+light of screen reflecting on the
+
+288
+00:05:33,790 --> 00:05:33,800
+light of screen reflecting on the
+ 
+
+289
+00:05:33,800 --> 00:05:36,310
+light of screen reflecting on the
+subject. So, here is our close-up, and
+
+290
+00:05:36,310 --> 00:05:36,320
+subject. So, here is our close-up, and
+ 
+
+291
+00:05:36,320 --> 00:05:38,670
+subject. So, here is our close-up, and
+you see the reflection in her eyes for
+
+292
+00:05:38,670 --> 00:05:38,680
+you see the reflection in her eyes for
+ 
+
+293
+00:05:38,680 --> 00:05:41,030
+you see the reflection in her eyes for
+some flickering screen. Then we also
+
+294
+00:05:41,030 --> 00:05:41,040
+some flickering screen. Then we also
+ 
+
+295
+00:05:41,040 --> 00:05:42,830
+some flickering screen. Then we also
+have something called high key or
+
+296
+00:05:42,830 --> 00:05:42,840
+have something called high key or
+ 
+
+297
+00:05:42,840 --> 00:05:44,630
+have something called high key or
+commercial cleanliness, and this floods
+
+298
+00:05:44,630 --> 00:05:44,640
+commercial cleanliness, and this floods
+ 
+
+299
+00:05:44,640 --> 00:05:47,190
+commercial cleanliness, and this floods
+the screen with bright very even light
+
+300
+00:05:47,190 --> 00:05:47,200
+the screen with bright very even light
+ 
+
+301
+00:05:47,200 --> 00:05:49,190
+the screen with bright very even light
+and removing almost all of the shadows.
+
+302
+00:05:49,190 --> 00:05:49,200
+and removing almost all of the shadows.
+ 
+
+303
+00:05:49,200 --> 00:05:50,710
+and removing almost all of the shadows.
+And of course, this is used in product
+
+304
+00:05:50,710 --> 00:05:50,720
+And of course, this is used in product
+ 
+
+305
+00:05:50,720 --> 00:05:52,990
+And of course, this is used in product
+commercials. So, I created this one in
+
+306
+00:05:52,990 --> 00:05:53,000
+commercials. So, I created this one in
+ 
+
+307
+00:05:53,000 --> 00:05:56,630
+commercials. So, I created this one in
+VUE 3.1 fast, and you see there almost
+
+308
+00:05:56,630 --> 00:05:56,640
+VUE 3.1 fast, and you see there almost
+ 
+
+309
+00:05:56,640 --> 00:05:59,990
+VUE 3.1 fast, and you see there almost
+no shadows or no shadows at all behind
+
+310
+00:05:59,990 --> 00:06:00,000
+no shadows or no shadows at all behind
+ 
+
+311
+00:06:00,000 --> 00:06:02,710
+no shadows or no shadows at all behind
+the subject, this perfume here. I also
+
+312
+00:06:02,710 --> 00:06:02,720
+the subject, this perfume here. I also
+ 
+
+313
+00:06:02,720 --> 00:06:05,990
+the subject, this perfume here. I also
+recreated the same scene in Halion 2.3,
+
+314
+00:06:05,990 --> 00:06:06,000
+recreated the same scene in Halion 2.3,
+ 
+
+315
+00:06:06,000 --> 00:06:08,390
+recreated the same scene in Halion 2.3,
+and it looks pretty nice. You see no
+
+316
+00:06:08,390 --> 00:06:08,400
+and it looks pretty nice. You see no
+ 
+
+317
+00:06:08,400 --> 00:06:10,910
+and it looks pretty nice. You see no
+shadows behind the object. Then
+
+318
+00:06:10,910 --> 00:06:10,920
+shadows behind the object. Then
+ 
+
+319
+00:06:10,920 --> 00:06:13,230
+shadows behind the object. Then
+something kind of opposite is rim light
+
+320
+00:06:13,230 --> 00:06:13,240
+something kind of opposite is rim light
+ 
+
+321
+00:06:13,240 --> 00:06:15,710
+something kind of opposite is rim light
+or the halo separation. So, it places a
+
+322
+00:06:15,710 --> 00:06:15,720
+or the halo separation. So, it places a
+ 
+
+323
+00:06:15,720 --> 00:06:17,790
+or the halo separation. So, it places a
+bright outline around the edges of the
+
+324
+00:06:17,790 --> 00:06:17,800
+bright outline around the edges of the
+ 
+
+325
+00:06:17,800 --> 00:06:19,870
+bright outline around the edges of the
+subject to separate it from the
+
+326
+00:06:19,870 --> 00:06:19,880
+subject to separate it from the
+ 
+
+327
+00:06:19,880 --> 00:06:21,670
+subject to separate it from the
+background. So, once again, we have the
+
+328
+00:06:21,670 --> 00:06:21,680
+background. So, once again, we have the
+ 
+
+329
+00:06:21,680 --> 00:06:24,430
+background. So, once again, we have the
+perfume bottle. I created this also in
+
+330
+00:06:24,430 --> 00:06:24,440
+perfume bottle. I created this also in
+ 
+
+331
+00:06:24,440 --> 00:06:27,590
+perfume bottle. I created this also in
+LTX 2 fast, and it looks pretty good.
+
+332
+00:06:27,590 --> 00:06:27,600
+LTX 2 fast, and it looks pretty good.
+ 
+
+333
+00:06:27,600 --> 00:06:30,150
+LTX 2 fast, and it looks pretty good.
+You see the separation coming exactly
+
+334
+00:06:30,150 --> 00:06:30,160
+You see the separation coming exactly
+ 
+
+335
+00:06:30,160 --> 00:06:32,470
+You see the separation coming exactly
+from the borders of this perfume. I
+
+336
+00:06:32,470 --> 00:06:32,480
+from the borders of this perfume. I
+ 
+
+337
+00:06:32,480 --> 00:06:34,830
+from the borders of this perfume. I
+created this also in the C dance, and
+
+338
+00:06:34,830 --> 00:06:34,840
+created this also in the C dance, and
+ 
+
+339
+00:06:34,840 --> 00:06:37,390
+created this also in the C dance, and
+here the separation is more obvious and
+
+340
+00:06:37,390 --> 00:06:37,400
+here the separation is more obvious and
+ 
+
+341
+00:06:37,400 --> 00:06:39,710
+here the separation is more obvious and
+animated here, but it also looks kind of
+
+342
+00:06:39,710 --> 00:06:39,720
+animated here, but it also looks kind of
+ 
+
+343
+00:06:39,720 --> 00:06:41,670
+animated here, but it also looks kind of
+a nice to play with the lightning. So,
+
+344
+00:06:41,670 --> 00:06:41,680
+a nice to play with the lightning. So,
+ 
+
+345
+00:06:41,680 --> 00:06:43,030
+a nice to play with the lightning. So,
+we're arriving at the category five,
+
+346
+00:06:43,030 --> 00:06:43,040
+we're arriving at the category five,
+ 
+
+347
+00:06:43,040 --> 00:06:44,990
+we're arriving at the category five,
+which I would call specialty narrative
+
+348
+00:06:44,990 --> 00:06:45,000
+which I would call specialty narrative
+ 
+
+349
+00:06:45,000 --> 00:06:47,590
+which I would call specialty narrative
+techniques. And the famous one is gobo
+
+350
+00:06:47,590 --> 00:06:47,600
+techniques. And the famous one is gobo
+ 
+
+351
+00:06:47,600 --> 00:06:49,670
+techniques. And the famous one is gobo
+projection. What it does, it basically
+
+352
+00:06:49,670 --> 00:06:49,680
+projection. What it does, it basically
+ 
+
+353
+00:06:49,680 --> 00:06:52,110
+projection. What it does, it basically
+projects a pattern, like for example, a
+
+354
+00:06:52,110 --> 00:06:52,120
+projects a pattern, like for example, a
+ 
+
+355
+00:06:52,120 --> 00:06:54,750
+projects a pattern, like for example, a
+window blinds onto the scene, and it is
+
+356
+00:06:54,750 --> 00:06:54,760
+window blinds onto the scene, and it is
+ 
+
+357
+00:06:54,760 --> 00:06:56,230
+window blinds onto the scene, and it is
+used a lot in crime noir or
+
+358
+00:06:56,230 --> 00:06:56,240
+used a lot in crime noir or
+ 
+
+359
+00:06:56,240 --> 00:06:58,110
+used a lot in crime noir or
+psychological thrillers. And here we
+
+360
+00:06:58,110 --> 00:06:58,120
+psychological thrillers. And here we
+ 
+
+361
+00:06:58,120 --> 00:07:00,470
+psychological thrillers. And here we
+have our female detective created in VUE
+
+362
+00:07:00,470 --> 00:07:00,480
+have our female detective created in VUE
+ 
+
+363
+00:07:00,480 --> 00:07:04,030
+have our female detective created in VUE
+3.1 fast, and here you see those
+
+364
+00:07:04,030 --> 00:07:04,040
+3.1 fast, and here you see those
+ 
+
+365
+00:07:04,040 --> 00:07:06,150
+3.1 fast, and here you see those
+patterns behind her creating that
+
+366
+00:07:06,150 --> 00:07:06,160
+patterns behind her creating that
+ 
+
+367
+00:07:06,160 --> 00:07:08,270
+patterns behind her creating that
+special light scene and kind of a mystic
+
+368
+00:07:08,270 --> 00:07:08,280
+special light scene and kind of a mystic
+ 
+
+369
+00:07:08,280 --> 00:07:11,270
+special light scene and kind of a mystic
+scene. Most noir films look like that. I
+
+370
+00:07:11,270 --> 00:07:11,280
+scene. Most noir films look like that. I
+ 
+
+371
+00:07:11,280 --> 00:07:14,150
+scene. Most noir films look like that. I
+also created the similar in Sora 2, and
+
+372
+00:07:14,150 --> 00:07:14,160
+also created the similar in Sora 2, and
+ 
+
+373
+00:07:14,160 --> 00:07:16,750
+also created the similar in Sora 2, and
+here you see those lights and patterns
+
+374
+00:07:16,750 --> 00:07:16,760
+here you see those lights and patterns
+ 
+
+375
+00:07:16,760 --> 00:07:19,790
+here you see those lights and patterns
+coming from the Venetian blinds.
+
+376
+00:07:19,790 --> 00:07:19,800
+coming from the Venetian blinds.
+ 
+
+377
+00:07:19,800 --> 00:07:21,590
+coming from the Venetian blinds.
+Let's look at that one.
+
+378
+00:07:21,590 --> 00:07:21,600
+Let's look at that one.
+ 
+
+379
+00:07:21,600 --> 00:07:23,830
+Let's look at that one.
+And the smoky scenes always needs to
+
+380
+00:07:23,830 --> 00:07:23,840
+And the smoky scenes always needs to
+ 
+
+381
+00:07:23,840 --> 00:07:25,750
+And the smoky scenes always needs to
+happen in those kind of movies. And I
+
+382
+00:07:25,750 --> 00:07:25,760
+happen in those kind of movies. And I
+ 
+
+383
+00:07:25,760 --> 00:07:29,030
+happen in those kind of movies. And I
+also created that in Van 2.6 video, and
+
+384
+00:07:29,030 --> 00:07:29,040
+also created that in Van 2.6 video, and
+ 
+
+385
+00:07:29,040 --> 00:07:31,390
+also created that in Van 2.6 video, and
+you see those lights coming in special
+
+386
+00:07:31,390 --> 00:07:31,400
+you see those lights coming in special
+ 
+
+387
+00:07:31,400 --> 00:07:34,350
+you see those lights coming in special
+degree angle from the window.
+
+388
+00:07:34,350 --> 00:07:34,360
+degree angle from the window.
+ 
+
+389
+00:07:34,360 --> 00:07:36,270
+degree angle from the window.
+Looks also pretty, pretty good, and
+
+390
+00:07:36,270 --> 00:07:36,280
+Looks also pretty, pretty good, and
+ 
+
+391
+00:07:36,280 --> 00:07:37,590
+Looks also pretty, pretty good, and
+pretty nice.
+
+392
+00:07:37,590 --> 00:07:37,600
+pretty nice.
+ 
+
+393
+00:07:37,600 --> 00:07:39,950
+pretty nice.
+And our female detective is excited.
+
+394
+00:07:39,950 --> 00:07:39,960
+And our female detective is excited.
+ 
+
+395
+00:07:39,960 --> 00:07:41,430
+And our female detective is excited.
+Then we also have the under lighting or
+
+396
+00:07:41,430 --> 00:07:41,440
+Then we also have the under lighting or
+ 
+
+397
+00:07:41,440 --> 00:07:43,310
+Then we also have the under lighting or
+the villain glow, and basically it
+
+398
+00:07:43,310 --> 00:07:43,320
+the villain glow, and basically it
+ 
+
+399
+00:07:43,320 --> 00:07:45,990
+the villain glow, and basically it
+places light below the face casting
+
+400
+00:07:45,990 --> 00:07:46,000
+places light below the face casting
+ 
+
+401
+00:07:46,000 --> 00:07:48,550
+places light below the face casting
+shadows upward. And it is used a lot in
+
+402
+00:07:48,550 --> 00:07:48,560
+shadows upward. And it is used a lot in
+ 
+
+403
+00:07:48,560 --> 00:07:50,710
+shadows upward. And it is used a lot in
+horror and villain monologues. So, here
+
+404
+00:07:50,710 --> 00:07:50,720
+horror and villain monologues. So, here
+ 
+
+405
+00:07:50,720 --> 00:07:52,630
+horror and villain monologues. So, here
+is our character. As first, you see
+
+406
+00:07:52,630 --> 00:07:52,640
+is our character. As first, you see
+ 
+
+407
+00:07:52,640 --> 00:07:54,870
+is our character. As first, you see
+almost no lighting coming, and of course
+
+408
+00:07:54,870 --> 00:07:54,880
+almost no lighting coming, and of course
+ 
+
+409
+00:07:54,880 --> 00:07:56,670
+almost no lighting coming, and of course
+we would alight this with, for example,
+
+410
+00:07:56,670 --> 00:07:56,680
+we would alight this with, for example,
+ 
+
+411
+00:07:56,680 --> 00:07:58,950
+we would alight this with, for example,
+the match here, and those are those
+
+412
+00:07:58,950 --> 00:07:58,960
+the match here, and those are those
+ 
+
+413
+00:07:58,960 --> 00:08:01,390
+the match here, and those are those
+interesting famous scenes for this
+
+414
+00:08:01,390 --> 00:08:01,400
+interesting famous scenes for this
+ 
+
+415
+00:08:01,400 --> 00:08:03,430
+interesting famous scenes for this
+detective. In this category, we could
+
+416
+00:08:03,430 --> 00:08:03,440
+detective. In this category, we could
+ 
+
+417
+00:08:03,440 --> 00:08:05,470
+detective. In this category, we could
+kind of include also dynamic firework
+
+418
+00:08:05,470 --> 00:08:05,480
+kind of include also dynamic firework
+ 
+
+419
+00:08:05,480 --> 00:08:07,590
+kind of include also dynamic firework
+reflection, which is pretty hard to
+
+420
+00:08:07,590 --> 00:08:07,600
+reflection, which is pretty hard to
+ 
+
+421
+00:08:07,600 --> 00:08:10,110
+reflection, which is pretty hard to
+achieve for the AI because of the multi
+
+422
+00:08:10,110 --> 00:08:10,120
+achieve for the AI because of the multi
+ 
+
+423
+00:08:10,120 --> 00:08:12,190
+achieve for the AI because of the multi
+colored light source. So, here is our
+
+424
+00:08:12,190 --> 00:08:12,200
+colored light source. So, here is our
+ 
+
+425
+00:08:12,200 --> 00:08:14,790
+colored light source. So, here is our
+struggling hero. He's not happy with the
+
+426
+00:08:14,790 --> 00:08:14,800
+struggling hero. He's not happy with the
+ 
+
+427
+00:08:14,800 --> 00:08:17,550
+struggling hero. He's not happy with the
+New Year, and we can see the fireworks
+
+428
+00:08:17,550 --> 00:08:17,560
+New Year, and we can see the fireworks
+ 
+
+429
+00:08:17,560 --> 00:08:20,710
+New Year, and we can see the fireworks
+behind and his face changing the colors
+
+430
+00:08:20,710 --> 00:08:20,720
+behind and his face changing the colors
+ 
+
+431
+00:08:20,720 --> 00:08:22,470
+behind and his face changing the colors
+depending on the fireworks. Now, this is
+
+432
+00:08:22,470 --> 00:08:22,480
+depending on the fireworks. Now, this is
+ 
+
+433
+00:08:22,480 --> 00:08:24,430
+depending on the fireworks. Now, this is
+a complicated one, and in many cases you
+
+434
+00:08:24,430 --> 00:08:24,440
+a complicated one, and in many cases you
+ 
+
+435
+00:08:24,440 --> 00:08:25,870
+a complicated one, and in many cases you
+would need to have many different
+
+436
+00:08:25,870 --> 00:08:25,880
+would need to have many different
+ 
+
+437
+00:08:25,880 --> 00:08:27,990
+would need to have many different
+iterations to really follow your prompt
+
+438
+00:08:27,990 --> 00:08:28,000
+iterations to really follow your prompt
+ 
+
+439
+00:08:28,000 --> 00:08:30,030
+iterations to really follow your prompt
+completely. Here we also have the book
+
+440
+00:08:30,030 --> 00:08:30,040
+completely. Here we also have the book
+ 
+
+441
+00:08:30,040 --> 00:08:32,310
+completely. Here we also have the book
+light or the creamiest soft light. So,
+
+442
+00:08:32,310 --> 00:08:32,320
+light or the creamiest soft light. So,
+ 
+
+443
+00:08:32,320 --> 00:08:33,950
+light or the creamiest soft light. So,
+we could say that the book light is the
+
+444
+00:08:33,950 --> 00:08:33,960
+we could say that the book light is the
+ 
+
+445
+00:08:33,960 --> 00:08:36,230
+we could say that the book light is the
+luxury version of a key light, and the
+
+446
+00:08:36,230 --> 00:08:36,240
+luxury version of a key light, and the
+ 
+
+447
+00:08:36,240 --> 00:08:38,110
+luxury version of a key light, and the
+name comes from the physical setup,
+
+448
+00:08:38,110 --> 00:08:38,120
+name comes from the physical setup,
+ 
+
+449
+00:08:38,120 --> 00:08:40,390
+name comes from the physical setup,
+which looks like an open book. This kind
+
+450
+00:08:40,390 --> 00:08:40,400
+which looks like an open book. This kind
+ 
+
+451
+00:08:40,400 --> 00:08:42,270
+which looks like an open book. This kind
+of scenario and lightning look like
+
+452
+00:08:42,270 --> 00:08:42,280
+of scenario and lightning look like
+ 
+
+453
+00:08:42,280 --> 00:08:43,870
+of scenario and lightning look like
+this.
+
+454
+00:08:43,870 --> 00:08:43,880
+this.
+ 
+
+455
+00:08:43,880 --> 00:08:46,390
+this.
+And it's used a lot in those interview
+
+456
+00:08:46,390 --> 00:08:46,400
+And it's used a lot in those interview
+ 
+
+457
+00:08:46,400 --> 00:08:47,550
+And it's used a lot in those interview
+scenes.
+
+458
+00:08:47,550 --> 00:08:47,560
+scenes.
+ 
+
+459
+00:08:47,560 --> 00:08:49,270
+scenes.
+Then we have the negative fill or the
+
+460
+00:08:49,270 --> 00:08:49,280
+Then we have the negative fill or the
+ 
+
+461
+00:08:49,280 --> 00:08:51,590
+Then we have the negative fill or the
+shadow shape. Here is our video. It
+
+462
+00:08:51,590 --> 00:08:51,600
+shadow shape. Here is our video. It
+ 
+
+463
+00:08:51,600 --> 00:08:53,750
+shadow shape. Here is our video. It
+looks really, really good. And here's
+
+464
+00:08:53,750 --> 00:08:53,760
+looks really, really good. And here's
+ 
+
+465
+00:08:53,760 --> 00:08:55,430
+looks really, really good. And here's
+one tip also. So, if you want your AI
+
+466
+00:08:55,430 --> 00:08:55,440
+one tip also. So, if you want your AI
+ 
+
+467
+00:08:55,440 --> 00:08:57,510
+one tip also. So, if you want your AI
+videos to look like a high-budget movies
+
+468
+00:08:57,510 --> 00:08:57,520
+videos to look like a high-budget movies
+ 
+
+469
+00:08:57,520 --> 00:08:59,790
+videos to look like a high-budget movies
+or simply look better, so you should
+
+470
+00:08:59,790 --> 00:08:59,800
+or simply look better, so you should
+ 
+
+471
+00:08:59,800 --> 00:09:02,310
+or simply look better, so you should
+stop adding more lights and start taking
+
+472
+00:09:02,310 --> 00:09:02,320
+stop adding more lights and start taking
+ 
+
+473
+00:09:02,320 --> 00:09:04,070
+stop adding more lights and start taking
+light away. So, now we arrived at
+
+474
+00:09:04,070 --> 00:09:04,080
+light away. So, now we arrived at
+ 
+
+475
+00:09:04,080 --> 00:09:05,829
+light away. So, now we arrived at
+category six, which I would call
+
+476
+00:09:05,829 --> 00:09:05,839
+category six, which I would call
+ 
+
+477
+00:09:05,839 --> 00:09:08,470
+category six, which I would call
+advanced separation. First, we have the
+
+478
+00:09:08,470 --> 00:09:08,480
+advanced separation. First, we have the
+ 
+
+479
+00:09:08,480 --> 00:09:11,030
+advanced separation. First, we have the
+cameo lightning or the void isolation.
+
+480
+00:09:11,030 --> 00:09:11,040
+cameo lightning or the void isolation.
+ 
+
+481
+00:09:11,040 --> 00:09:12,430
+cameo lightning or the void isolation.
+It basically lights the subject
+
+482
+00:09:12,430 --> 00:09:12,440
+It basically lights the subject
+ 
+
+483
+00:09:12,440 --> 00:09:14,190
+It basically lights the subject
+intensely while keeping the background
+
+484
+00:09:14,190 --> 00:09:14,200
+intensely while keeping the background
+ 
+
+485
+00:09:14,200 --> 00:09:16,950
+intensely while keeping the background
+in total crushed blackness. So, this is
+
+486
+00:09:16,950 --> 00:09:16,960
+in total crushed blackness. So, this is
+ 
+
+487
+00:09:16,960 --> 00:09:19,590
+in total crushed blackness. So, this is
+it, and it is obvious that his face is
+
+488
+00:09:19,590 --> 00:09:19,600
+it, and it is obvious that his face is
+ 
+
+489
+00:09:19,600 --> 00:09:21,430
+it, and it is obvious that his face is
+illuminated and the background is
+
+490
+00:09:21,430 --> 00:09:21,440
+illuminated and the background is
+ 
+
+491
+00:09:21,440 --> 00:09:23,510
+illuminated and the background is
+completely black. Something kind of the
+
+492
+00:09:23,510 --> 00:09:23,520
+completely black. Something kind of the
+ 
+
+493
+00:09:23,520 --> 00:09:25,350
+completely black. Something kind of the
+opposite from that is silhouette
+
+494
+00:09:25,350 --> 00:09:25,360
+opposite from that is silhouette
+ 
+
+495
+00:09:25,360 --> 00:09:27,829
+opposite from that is silhouette
+lighting or geometric form. It basically
+
+496
+00:09:27,829 --> 00:09:27,839
+lighting or geometric form. It basically
+ 
+
+497
+00:09:27,839 --> 00:09:29,990
+lighting or geometric form. It basically
+lights only the background leaving the
+
+498
+00:09:29,990 --> 00:09:30,000
+lights only the background leaving the
+ 
+
+499
+00:09:30,000 --> 00:09:32,470
+lights only the background leaving the
+subject as a pitch-black shape. And this
+
+500
+00:09:32,470 --> 00:09:32,480
+subject as a pitch-black shape. And this
+ 
+
+501
+00:09:32,480 --> 00:09:34,829
+subject as a pitch-black shape. And this
+is how does that look like. It is pretty
+
+502
+00:09:34,829 --> 00:09:34,839
+is how does that look like. It is pretty
+ 
+
+503
+00:09:34,839 --> 00:09:37,190
+is how does that look like. It is pretty
+nice and interesting way of manipulating
+
+504
+00:09:37,190 --> 00:09:37,200
+nice and interesting way of manipulating
+ 
+
+505
+00:09:37,200 --> 00:09:39,150
+nice and interesting way of manipulating
+the lighting in AI. Then we have
+
+506
+00:09:39,150 --> 00:09:39,160
+the lighting in AI. Then we have
+ 
+
+507
+00:09:39,160 --> 00:09:40,630
+the lighting in AI. Then we have
+something what I would call the dual
+
+508
+00:09:40,630 --> 00:09:40,640
+something what I would call the dual
+ 
+
+509
+00:09:40,640 --> 00:09:43,350
+something what I would call the dual
+subject color silhouette or the noir
+
+510
+00:09:43,350 --> 00:09:43,360
+subject color silhouette or the noir
+ 
+
+511
+00:09:43,360 --> 00:09:45,310
+subject color silhouette or the noir
+standoff, for example. Now, as an
+
+512
+00:09:45,310 --> 00:09:45,320
+standoff, for example. Now, as an
+ 
+
+513
+00:09:45,320 --> 00:09:48,070
+standoff, for example. Now, as an
+environment here I use the photo studio,
+
+514
+00:09:48,070 --> 00:09:48,080
+environment here I use the photo studio,
+ 
+
+515
+00:09:48,080 --> 00:09:50,310
+environment here I use the photo studio,
+so that's why it looks like like this,
+
+516
+00:09:50,310 --> 00:09:50,320
+so that's why it looks like like this,
+ 
+
+517
+00:09:50,320 --> 00:09:52,830
+so that's why it looks like like this,
+but it reminds on the noir film for
+
+518
+00:09:52,830 --> 00:09:52,840
+but it reminds on the noir film for
+ 
+
+519
+00:09:52,840 --> 00:09:55,030
+but it reminds on the noir film for
+sure. And that wraps our guide on AI
+
+520
+00:09:55,030 --> 00:09:55,040
+sure. And that wraps our guide on AI
+ 
+
+521
+00:09:55,040 --> 00:09:56,990
+sure. And that wraps our guide on AI
+lighting. By mastering these 20 prompts,
+
+522
+00:09:56,990 --> 00:09:57,000
+lighting. By mastering these 20 prompts,
+ 
+
+523
+00:09:57,000 --> 00:09:58,590
+lighting. By mastering these 20 prompts,
+you now have the tools to dramatically
+
+524
+00:09:58,590 --> 00:09:58,600
+you now have the tools to dramatically
+ 
+
+525
+00:09:58,600 --> 00:10:00,830
+you now have the tools to dramatically
+improve the cinematic quality of your
+
+526
+00:10:00,830 --> 00:10:00,840
+improve the cinematic quality of your
+ 
+
+527
+00:10:00,840 --> 00:10:02,310
+improve the cinematic quality of your
+projects. If you found this tutorial
+
+528
+00:10:02,310 --> 00:10:02,320
+projects. If you found this tutorial
+ 
+
+529
+00:10:02,320 --> 00:10:04,030
+projects. If you found this tutorial
+useful, you definitely want to check out
+
+530
+00:10:04,030 --> 00:10:04,040
+useful, you definitely want to check out
+ 
+
+531
+00:10:04,040 --> 00:10:07,030
+useful, you definitely want to check out
+my other video where I explain 38 camera
+
+532
+00:10:07,030 --> 00:10:07,040
+my other video where I explain 38 camera
+ 
+
+533
+00:10:07,040 --> 00:10:09,510
+my other video where I explain 38 camera
+moves in AI filmmaking. Combining those
+
+534
+00:10:09,510 --> 00:10:09,520
+moves in AI filmmaking. Combining those
+ 
+
+535
+00:10:09,520 --> 00:10:11,310
+moves in AI filmmaking. Combining those
+movement techniques with this lighting
+
+536
+00:10:11,310 --> 00:10:11,320
+movement techniques with this lighting
+ 
+
+537
+00:10:11,320 --> 00:10:13,510
+movement techniques with this lighting
+will make your AI generations look truly
+
+538
+00:10:13,510 --> 00:10:13,520
+will make your AI generations look truly
+ 
+
+539
+00:10:13,520 --> 00:10:14,950
+will make your AI generations look truly
+professionals. If you found this
+
+540
+00:10:14,950 --> 00:10:14,960
+professionals. If you found this
+ 
+
+541
+00:10:14,960 --> 00:10:16,950
+professionals. If you found this
+helpful, please hit the like button and
+
+542
+00:10:16,950 --> 00:10:16,960
+helpful, please hit the like button and
+ 
+
+543
+00:10:16,960 --> 00:10:19,150
+helpful, please hit the like button and
+subscribe for more filmmaking tips.
+
+544
+00:10:19,150 --> 00:10:19,160
+subscribe for more filmmaking tips.
+ 
+
+545
+00:10:19,160 --> 00:10:20,870
+subscribe for more filmmaking tips.
+Thanks for watching and I'll see you in
+
+546
+00:10:20,870 --> 00:10:20,880
+Thanks for watching and I'll see you in
+ 
+
+547
+00:10:20,880 --> 00:10:24,040
+Thanks for watching and I'll see you in
+the next one. Bye-bye.
+

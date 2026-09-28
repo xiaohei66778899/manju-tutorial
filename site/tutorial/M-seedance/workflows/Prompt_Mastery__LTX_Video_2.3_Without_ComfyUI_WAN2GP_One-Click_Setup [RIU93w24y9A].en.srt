@@ -1,0 +1,3075 @@
+1
+00:00:00,000 --> 00:00:03,230
+
+LTX video 2.3 is released.
+
+2
+00:00:03,230 --> 00:00:03,240
+LTX video 2.3 is released.
+ 
+
+3
+00:00:03,240 --> 00:00:04,710
+LTX video 2.3 is released.
+And honestly,
+
+4
+00:00:04,710 --> 00:00:04,720
+And honestly,
+ 
+
+5
+00:00:04,720 --> 00:00:07,110
+And honestly,
+I think this model is a huge improving
+
+6
+00:00:07,110 --> 00:00:07,120
+I think this model is a huge improving
+ 
+
+7
+00:00:07,120 --> 00:00:10,270
+I think this model is a huge improving
+quality to LTX 2.0.
+
+8
+00:00:10,270 --> 00:00:10,280
+quality to LTX 2.0.
+ 
+
+9
+00:00:10,280 --> 00:00:13,190
+quality to LTX 2.0.
+But how can you run it on your local PC?
+
+10
+00:00:13,190 --> 00:00:13,200
+But how can you run it on your local PC?
+ 
+
+11
+00:00:13,200 --> 00:00:14,470
+But how can you run it on your local PC?
+And there's so many people trying to
+
+12
+00:00:14,470 --> 00:00:14,480
+And there's so many people trying to
+ 
+
+13
+00:00:14,480 --> 00:00:15,950
+And there's so many people trying to
+figure it out.
+
+14
+00:00:15,950 --> 00:00:15,960
+figure it out.
+ 
+
+15
+00:00:15,960 --> 00:00:17,350
+figure it out.
+>> You know,
+
+16
+00:00:17,350 --> 00:00:17,360
+>> You know,
+ 
+
+17
+00:00:17,360 --> 00:00:19,550
+>> You know,
+the traditional method is using comfy
+
+18
+00:00:19,550 --> 00:00:19,560
+the traditional method is using comfy
+ 
+
+19
+00:00:19,560 --> 00:00:22,270
+the traditional method is using comfy
+UI. But there are so many different
+
+20
+00:00:22,270 --> 00:00:22,280
+UI. But there are so many different
+ 
+
+21
+00:00:22,280 --> 00:00:25,150
+UI. But there are so many different
+versions and workflows.
+
+22
+00:00:25,150 --> 00:00:25,160
+versions and workflows.
+ 
+
+23
+00:00:25,160 --> 00:00:28,510
+versions and workflows.
+>> Waiting hours just to see a crash?
+
+24
+00:00:28,510 --> 00:00:28,520
+>> Waiting hours just to see a crash?
+ 
+
+25
+00:00:28,520 --> 00:00:30,790
+>> Waiting hours just to see a crash?
+Nah, man.
+
+26
+00:00:30,790 --> 00:00:30,800
+Nah, man.
+ 
+
+27
+00:00:30,800 --> 00:00:33,830
+Nah, man.
+Comfy UI ain't worth the headache.
+
+28
+00:00:33,830 --> 00:00:33,840
+Comfy UI ain't worth the headache.
+ 
+
+29
+00:00:33,840 --> 00:00:38,110
+Comfy UI ain't worth the headache.
+>> What you should try is this one, 1 2 GP.
+
+30
+00:00:38,110 --> 00:00:38,120
+>> What you should try is this one, 1 2 GP.
+ 
+
+31
+00:00:38,120 --> 00:00:40,830
+>> What you should try is this one, 1 2 GP.
+It's easy to install and automatically
+
+32
+00:00:40,830 --> 00:00:40,840
+It's easy to install and automatically
+ 
+
+33
+00:00:40,840 --> 00:00:43,150
+It's easy to install and automatically
+downloads everything.
+
+34
+00:00:43,150 --> 00:00:43,160
+downloads everything.
+ 
+
+35
+00:00:43,160 --> 00:00:47,230
+downloads everything.
+>> One click generation. Just sit back and
+
+36
+00:00:47,230 --> 00:00:47,240
+>> One click generation. Just sit back and
+ 
+
+37
+00:00:47,240 --> 00:00:48,470
+>> One click generation. Just sit back and
+wait.
+
+38
+00:00:48,470 --> 00:00:48,480
+wait.
+ 
+
+39
+00:00:48,480 --> 00:00:52,030
+wait.
+The program does all the hard work for
+
+40
+00:00:52,030 --> 00:00:52,040
+The program does all the hard work for
+ 
+
+41
+00:00:52,040 --> 00:00:53,430
+The program does all the hard work for
+you.
+
+42
+00:00:53,430 --> 00:00:53,440
+you.
+ 
+
+43
+00:00:53,440 --> 00:00:55,790
+you.
+>> All the footage you see right now was
+
+44
+00:00:55,790 --> 00:00:55,800
+>> All the footage you see right now was
+ 
+
+45
+00:00:55,800 --> 00:01:00,310
+>> All the footage you see right now was
+generated through LTX 2.3 via 1 2 GP.
+
+46
+00:01:00,310 --> 00:01:00,320
+generated through LTX 2.3 via 1 2 GP.
+ 
+
+47
+00:01:00,320 --> 00:01:03,510
+generated through LTX 2.3 via 1 2 GP.
+720p, 10 seconds, only take 2 minutes.
+
+48
+00:01:03,510 --> 00:01:03,520
+720p, 10 seconds, only take 2 minutes.
+ 
+
+49
+00:01:03,520 --> 00:01:06,030
+720p, 10 seconds, only take 2 minutes.
+>> If you want to learn how to do this in 5
+
+50
+00:01:06,030 --> 00:01:06,040
+>> If you want to learn how to do this in 5
+ 
+
+51
+00:01:06,040 --> 00:01:11,230
+>> If you want to learn how to do this in 5
+minutes, stay tuned.
+
+52
+00:01:11,230 --> 00:01:11,240
+
+ 
+
+53
+00:01:11,240 --> 00:01:13,790
+
+>> We're now in the 1 2 GP interface. This
+
+54
+00:01:13,790 --> 00:01:13,800
+>> We're now in the 1 2 GP interface. This
+ 
+
+55
+00:01:13,800 --> 00:01:17,150
+>> We're now in the 1 2 GP interface. This
+is a web-based UI. And please be aware
+
+56
+00:01:17,150 --> 00:01:17,160
+is a web-based UI. And please be aware
+ 
+
+57
+00:01:17,160 --> 00:01:19,670
+is a web-based UI. And please be aware
+this video is not to teach you how to
+
+58
+00:01:19,670 --> 00:01:19,680
+this video is not to teach you how to
+ 
+
+59
+00:01:19,680 --> 00:01:22,310
+this video is not to teach you how to
+generate better results by using 1 2 GP
+
+60
+00:01:22,310 --> 00:01:22,320
+generate better results by using 1 2 GP
+ 
+
+61
+00:01:22,320 --> 00:01:24,830
+generate better results by using 1 2 GP
+and that will be next video. And so once
+
+62
+00:01:24,830 --> 00:01:24,840
+and that will be next video. And so once
+ 
+
+63
+00:01:24,840 --> 00:01:27,030
+and that will be next video. And so once
+you get to interface, just come to here,
+
+64
+00:01:27,030 --> 00:01:27,040
+you get to interface, just come to here,
+ 
+
+65
+00:01:27,040 --> 00:01:31,910
+you get to interface, just come to here,
+choose LTX 2 and 2.3 22B distilled
+
+66
+00:01:31,910 --> 00:01:31,920
+choose LTX 2 and 2.3 22B distilled
+ 
+
+67
+00:01:31,920 --> 00:01:35,630
+choose LTX 2 and 2.3 22B distilled
+version. And you can choose text prompt
+
+68
+00:01:35,630 --> 00:01:35,640
+version. And you can choose text prompt
+ 
+
+69
+00:01:35,640 --> 00:01:38,590
+version. And you can choose text prompt
+or video to image or continue video. All
+
+70
+00:01:38,590 --> 00:01:38,600
+or video to image or continue video. All
+ 
+
+71
+00:01:38,600 --> 00:01:40,070
+or video to image or continue video. All
+right, so we're going to stick to text
+
+72
+00:01:40,070 --> 00:01:40,080
+right, so we're going to stick to text
+ 
+
+73
+00:01:40,080 --> 00:01:43,550
+right, so we're going to stick to text
+prompt only just as a demonstration. And
+
+74
+00:01:43,550 --> 00:01:43,560
+prompt only just as a demonstration. And
+ 
+
+75
+00:01:43,560 --> 00:01:45,950
+prompt only just as a demonstration. And
+then you come here, you just type in
+
+76
+00:01:45,950 --> 00:01:45,960
+then you come here, you just type in
+ 
+
+77
+00:01:45,960 --> 00:01:48,910
+then you come here, you just type in
+your prompt. And this is my prompt that
+
+78
+00:01:48,910 --> 00:01:48,920
+your prompt. And this is my prompt that
+ 
+
+79
+00:01:48,920 --> 00:01:51,750
+your prompt. And this is my prompt that
+I've prepared. And then under here you
+
+80
+00:01:51,750 --> 00:01:51,760
+I've prepared. And then under here you
+ 
+
+81
+00:01:51,760 --> 00:01:54,190
+I've prepared. And then under here you
+change your resolution. So depends on
+
+82
+00:01:54,190 --> 00:01:54,200
+change your resolution. So depends on
+ 
+
+83
+00:01:54,200 --> 00:01:56,830
+change your resolution. So depends on
+your hardware, you can go for 1080p,
+
+84
+00:01:56,830 --> 00:01:56,840
+your hardware, you can go for 1080p,
+ 
+
+85
+00:01:56,840 --> 00:01:59,230
+your hardware, you can go for 1080p,
+720p yes. I suggest starting with the
+
+86
+00:01:59,230 --> 00:01:59,240
+720p yes. I suggest starting with the
+ 
+
+87
+00:01:59,240 --> 00:02:02,230
+720p yes. I suggest starting with the
+480p just to experiment. I will I will
+
+88
+00:02:02,230 --> 00:02:02,240
+480p just to experiment. I will I will
+ 
+
+89
+00:02:02,240 --> 00:02:04,670
+480p just to experiment. I will I will
+stay with a 720p and then in here you
+
+90
+00:02:04,670 --> 00:02:04,680
+stay with a 720p and then in here you
+ 
+
+91
+00:02:04,680 --> 00:02:07,110
+stay with a 720p and then in here you
+can change all your resolutions.
+
+92
+00:02:07,110 --> 00:02:07,120
+can change all your resolutions.
+ 
+
+93
+00:02:07,120 --> 00:02:09,389
+can change all your resolutions.
+And now this is the time how long you
+
+94
+00:02:09,389 --> 00:02:09,399
+And now this is the time how long you
+ 
+
+95
+00:02:09,399 --> 00:02:10,749
+And now this is the time how long you
+want to generate. I want to generate
+
+96
+00:02:10,749 --> 00:02:10,759
+want to generate. I want to generate
+ 
+
+97
+00:02:10,759 --> 00:02:13,270
+want to generate. I want to generate
+10-second videos. And
+
+98
+00:02:13,270 --> 00:02:13,280
+10-second videos. And
+ 
+
+99
+00:02:13,280 --> 00:02:15,070
+10-second videos. And
+and everything else let's just leave as
+
+100
+00:02:15,070 --> 00:02:15,080
+and everything else let's just leave as
+ 
+
+101
+00:02:15,080 --> 00:02:18,270
+and everything else let's just leave as
+default. And all you need to do is just
+
+102
+00:02:18,270 --> 00:02:18,280
+default. And all you need to do is just
+ 
+
+103
+00:02:18,280 --> 00:02:21,470
+default. And all you need to do is just
+hit it generate. And that's all to what
+
+104
+00:02:21,470 --> 00:02:21,480
+hit it generate. And that's all to what
+ 
+
+105
+00:02:21,480 --> 00:02:24,030
+hit it generate. And that's all to what
+now the 12 GP Python script will do all
+
+106
+00:02:24,030 --> 00:02:24,040
+now the 12 GP Python script will do all
+ 
+
+107
+00:02:24,040 --> 00:02:26,190
+now the 12 GP Python script will do all
+the heavy lifting. And then if this is
+
+108
+00:02:26,190 --> 00:02:26,200
+the heavy lifting. And then if this is
+ 
+
+109
+00:02:26,200 --> 00:02:27,470
+the heavy lifting. And then if this is
+the first time you're running this
+
+110
+00:02:27,470 --> 00:02:27,480
+the first time you're running this
+ 
+
+111
+00:02:27,480 --> 00:02:30,990
+the first time you're running this
+software, you have to wait for the LTX 2
+
+112
+00:02:30,990 --> 00:02:31,000
+software, you have to wait for the LTX 2
+ 
+
+113
+00:02:31,000 --> 00:02:34,910
+software, you have to wait for the LTX 2
+2.3 to load and you will it's about 50
+
+114
+00:02:34,910 --> 00:02:34,920
+2.3 to load and you will it's about 50
+ 
+
+115
+00:02:34,920 --> 00:02:35,750
+2.3 to load and you will it's about 50
+GB
+
+116
+00:02:35,750 --> 00:02:35,760
+GB
+ 
+
+117
+00:02:35,760 --> 00:02:38,870
+GB
+so it will take us some time, but just
+
+118
+00:02:38,870 --> 00:02:38,880
+so it will take us some time, but just
+ 
+
+119
+00:02:38,880 --> 00:02:40,270
+so it will take us some time, but just
+have a coffee, come back, it will be
+
+120
+00:02:40,270 --> 00:02:40,280
+have a coffee, come back, it will be
+ 
+
+121
+00:02:40,280 --> 00:02:42,430
+have a coffee, come back, it will be
+done. And now we're just waiting for the
+
+122
+00:02:42,430 --> 00:02:42,440
+done. And now we're just waiting for the
+ 
+
+123
+00:02:42,440 --> 00:02:44,670
+done. And now we're just waiting for the
+generate.
+
+124
+00:02:44,670 --> 00:02:44,680
+generate.
+ 
+
+125
+00:02:44,680 --> 00:02:47,430
+generate.
+And so here is my setup. As you guys can
+
+126
+00:02:47,430 --> 00:02:47,440
+And so here is my setup. As you guys can
+ 
+
+127
+00:02:47,440 --> 00:02:48,670
+And so here is my setup. As you guys can
+see
+
+128
+00:02:48,670 --> 00:02:48,680
+see
+ 
+
+129
+00:02:48,680 --> 00:02:52,350
+see
+the 12 GP has put lots of files under my
+
+130
+00:02:52,350 --> 00:02:52,360
+the 12 GP has put lots of files under my
+ 
+
+131
+00:02:52,360 --> 00:02:55,350
+the 12 GP has put lots of files under my
+RAM. So as I can see the RAM is being
+
+132
+00:02:55,350 --> 00:02:55,360
+RAM. So as I can see the RAM is being
+ 
+
+133
+00:02:55,360 --> 00:02:57,790
+RAM. So as I can see the RAM is being
+almost full. So 30 GB
+
+134
+00:02:57,790 --> 00:02:57,800
+almost full. So 30 GB
+ 
+
+135
+00:02:57,800 --> 00:03:00,509
+almost full. So 30 GB
+RAM has been used. And now if you if you
+
+136
+00:03:00,509 --> 00:03:00,519
+RAM has been used. And now if you if you
+ 
+
+137
+00:03:00,519 --> 00:03:02,310
+RAM has been used. And now if you if you
+have a lower VRAM machine, come to
+
+138
+00:03:02,310 --> 00:03:02,320
+have a lower VRAM machine, come to
+ 
+
+139
+00:03:02,320 --> 00:03:03,910
+have a lower VRAM machine, come to
+configuration,
+
+140
+00:03:03,910 --> 00:03:03,920
+configuration,
+ 
+
+141
+00:03:03,920 --> 00:03:07,550
+configuration,
+performance, and under here is you can
+
+142
+00:03:07,550 --> 00:03:07,560
+performance, and under here is you can
+ 
+
+143
+00:03:07,560 --> 00:03:10,030
+performance, and under here is you can
+choose a different kind of profile. So
+
+144
+00:03:10,030 --> 00:03:10,040
+choose a different kind of profile. So
+ 
+
+145
+00:03:10,040 --> 00:03:12,470
+choose a different kind of profile. So
+I'm choosing the number one, but then if
+
+146
+00:03:12,470 --> 00:03:12,480
+I'm choosing the number one, but then if
+ 
+
+147
+00:03:12,480 --> 00:03:15,509
+I'm choosing the number one, but then if
+you have a different VRAMs, like say if
+
+148
+00:03:15,509 --> 00:03:15,519
+you have a different VRAMs, like say if
+ 
+
+149
+00:03:15,519 --> 00:03:18,470
+you have a different VRAMs, like say if
+you have only 8 GB of VRAM or something,
+
+150
+00:03:18,470 --> 00:03:18,480
+you have only 8 GB of VRAM or something,
+ 
+
+151
+00:03:18,480 --> 00:03:20,910
+you have only 8 GB of VRAM or something,
+choose the lower profile. And once you
+
+152
+00:03:20,910 --> 00:03:20,920
+choose the lower profile. And once you
+ 
+
+153
+00:03:20,920 --> 00:03:22,790
+choose the lower profile. And once you
+choose the one you liked,
+
+154
+00:03:22,790 --> 00:03:22,800
+choose the one you liked,
+ 
+
+155
+00:03:22,800 --> 00:03:26,350
+choose the one you liked,
+and don't forget to save the settings.
+
+156
+00:03:26,350 --> 00:03:26,360
+and don't forget to save the settings.
+ 
+
+157
+00:03:26,360 --> 00:03:28,550
+and don't forget to save the settings.
+Well, the wait is over. So the video is
+
+158
+00:03:28,550 --> 00:03:28,560
+Well, the wait is over. So the video is
+ 
+
+159
+00:03:28,560 --> 00:03:31,110
+Well, the wait is over. So the video is
+generated and let's have a look.
+
+160
+00:03:31,110 --> 00:03:31,120
+generated and let's have a look.
+ 
+
+161
+00:03:31,120 --> 00:03:34,430
+generated and let's have a look.
+>> LTX video 2.3 is released.
+
+162
+00:03:34,430 --> 00:03:34,440
+>> LTX video 2.3 is released.
+ 
+
+163
+00:03:34,440 --> 00:03:35,870
+>> LTX video 2.3 is released.
+And honestly,
+
+164
+00:03:35,870 --> 00:03:35,880
+And honestly,
+ 
+
+165
+00:03:35,880 --> 00:03:38,229
+And honestly,
+I think this model is a huge improving
+
+166
+00:03:38,229 --> 00:03:38,239
+I think this model is a huge improving
+ 
+
+167
+00:03:38,239 --> 00:03:42,190
+I think this model is a huge improving
+quality to LTX 2.0.
+
+168
+00:03:42,190 --> 00:03:42,200
+quality to LTX 2.0.
+ 
+
+169
+00:03:42,200 --> 00:03:44,390
+quality to LTX 2.0.
+>> Oh, that. I think I think the overall
+
+170
+00:03:44,390 --> 00:03:44,400
+>> Oh, that. I think I think the overall
+ 
+
+171
+00:03:44,400 --> 00:03:45,949
+>> Oh, that. I think I think the overall
+quality is good, but there's definitely
+
+172
+00:03:45,949 --> 00:03:45,959
+quality is good, but there's definitely
+ 
+
+173
+00:03:45,959 --> 00:03:48,229
+quality is good, but there's definitely
+room for improvement because we're using
+
+174
+00:03:48,229 --> 00:03:48,239
+room for improvement because we're using
+ 
+
+175
+00:03:48,239 --> 00:03:51,229
+room for improvement because we're using
+720p. I think 1080p will be better. You
+
+176
+00:03:51,229 --> 00:03:51,239
+720p. I think 1080p will be better. You
+ 
+
+177
+00:03:51,239 --> 00:03:54,150
+720p. I think 1080p will be better. You
+can still see a little bit teeth um kind
+
+178
+00:03:54,150 --> 00:03:54,160
+can still see a little bit teeth um kind
+ 
+
+179
+00:03:54,160 --> 00:03:55,310
+can still see a little bit teeth um kind
+of morphing.
+
+180
+00:03:55,310 --> 00:03:55,320
+of morphing.
+ 
+
+181
+00:03:55,320 --> 00:03:57,070
+of morphing.
+But then let's have a look the result.
+
+182
+00:03:57,070 --> 00:03:57,080
+But then let's have a look the result.
+ 
+
+183
+00:03:57,080 --> 00:03:58,230
+But then let's have a look the result.
+So,
+
+184
+00:03:58,230 --> 00:03:58,240
+So,
+ 
+
+185
+00:03:58,240 --> 00:04:02,310
+So,
+overall it takes 241 frames, 10 seconds,
+
+186
+00:04:02,310 --> 00:04:02,320
+overall it takes 241 frames, 10 seconds,
+ 
+
+187
+00:04:02,320 --> 00:04:05,510
+overall it takes 241 frames, 10 seconds,
+24 frame 24 FPS of frame. I think I
+
+188
+00:04:05,510 --> 00:04:05,520
+24 frame 24 FPS of frame. I think I
+ 
+
+189
+00:04:05,520 --> 00:04:06,990
+24 frame 24 FPS of frame. I think I
+heard people saying if you bump it to
+
+190
+00:04:06,990 --> 00:04:07,000
+heard people saying if you bump it to
+ 
+
+191
+00:04:07,000 --> 00:04:09,550
+heard people saying if you bump it to
+six frames per seconds, you get much
+
+192
+00:04:09,550 --> 00:04:09,560
+six frames per seconds, you get much
+ 
+
+193
+00:04:09,560 --> 00:04:12,270
+six frames per seconds, you get much
+better smooth motion. And the most
+
+194
+00:04:12,270 --> 00:04:12,280
+better smooth motion. And the most
+ 
+
+195
+00:04:12,280 --> 00:04:14,230
+better smooth motion. And the most
+important part is guys, look at this.
+
+196
+00:04:14,230 --> 00:04:14,240
+important part is guys, look at this.
+ 
+
+197
+00:04:14,240 --> 00:04:15,830
+important part is guys, look at this.
+So, the whole process only take 2
+
+198
+00:04:15,830 --> 00:04:15,840
+So, the whole process only take 2
+ 
+
+199
+00:04:15,840 --> 00:04:19,110
+So, the whole process only take 2
+minutes on my um local computer and this
+
+200
+00:04:19,110 --> 00:04:19,120
+minutes on my um local computer and this
+ 
+
+201
+00:04:19,120 --> 00:04:20,710
+minutes on my um local computer and this
+is the unheard of.
+
+202
+00:04:20,710 --> 00:04:20,720
+is the unheard of.
+ 
+
+203
+00:04:20,720 --> 00:04:23,710
+is the unheard of.
+Um and then I think LTX 2 can do it, but
+
+204
+00:04:23,710 --> 00:04:23,720
+Um and then I think LTX 2 can do it, but
+ 
+
+205
+00:04:23,720 --> 00:04:26,990
+Um and then I think LTX 2 can do it, but
+this is a huge leap forward. And and the
+
+206
+00:04:26,990 --> 00:04:27,000
+this is a huge leap forward. And and the
+ 
+
+207
+00:04:27,000 --> 00:04:30,110
+this is a huge leap forward. And and the
+whole 1 2 GP is pretty much uh you can
+
+208
+00:04:30,110 --> 00:04:30,120
+whole 1 2 GP is pretty much uh you can
+ 
+
+209
+00:04:30,120 --> 00:04:32,310
+whole 1 2 GP is pretty much uh you can
+works out of the box. Just come in
+
+210
+00:04:32,310 --> 00:04:32,320
+works out of the box. Just come in
+ 
+
+211
+00:04:32,320 --> 00:04:34,870
+works out of the box. Just come in
+typing a prompt and hit generate getting
+
+212
+00:04:34,870 --> 00:04:34,880
+typing a prompt and hit generate getting
+ 
+
+213
+00:04:34,880 --> 00:04:38,230
+typing a prompt and hit generate getting
+your VRAM setting right and then it's
+
+214
+00:04:38,230 --> 00:04:38,240
+your VRAM setting right and then it's
+ 
+
+215
+00:04:38,240 --> 00:04:40,750
+your VRAM setting right and then it's
+pretty much generates automatically. If
+
+216
+00:04:40,750 --> 00:04:40,760
+pretty much generates automatically. If
+ 
+
+217
+00:04:40,760 --> 00:04:43,110
+pretty much generates automatically. If
+you want to learn how to install the 1 2
+
+218
+00:04:43,110 --> 00:04:43,120
+you want to learn how to install the 1 2
+ 
+
+219
+00:04:43,120 --> 00:04:46,710
+you want to learn how to install the 1 2
+GP to run LTX 2.3 on your own computer,
+
+220
+00:04:46,710 --> 00:04:46,720
+GP to run LTX 2.3 on your own computer,
+ 
+
+221
+00:04:46,720 --> 00:04:50,190
+GP to run LTX 2.3 on your own computer,
+uh I'm going to show you guys now. It's
+
+222
+00:04:50,190 --> 00:04:50,200
+uh I'm going to show you guys now. It's
+ 
+
+223
+00:04:50,200 --> 00:04:52,470
+uh I'm going to show you guys now. It's
+Hey guys, LTX 2.3 video engine just
+
+224
+00:04:52,470 --> 00:04:52,480
+Hey guys, LTX 2.3 video engine just
+ 
+
+225
+00:04:52,480 --> 00:04:55,590
+Hey guys, LTX 2.3 video engine just
+released. And 1 GP team yesterday on the
+
+226
+00:04:55,590 --> 00:04:55,600
+released. And 1 GP team yesterday on the
+ 
+
+227
+00:04:55,600 --> 00:04:59,030
+released. And 1 GP team yesterday on the
+March 7th has officially supporting LTX
+
+228
+00:04:59,030 --> 00:04:59,040
+March 7th has officially supporting LTX
+ 
+
+229
+00:04:59,040 --> 00:05:02,790
+March 7th has officially supporting LTX
+2.3 from the day zero. All you guys
+
+230
+00:05:02,790 --> 00:05:02,800
+2.3 from the day zero. All you guys
+ 
+
+231
+00:05:02,800 --> 00:05:06,830
+2.3 from the day zero. All you guys
+loved my last LTX 2 and 1 2 GP video, so
+
+232
+00:05:06,830 --> 00:05:06,840
+loved my last LTX 2 and 1 2 GP video, so
+ 
+
+233
+00:05:06,840 --> 00:05:08,990
+loved my last LTX 2 and 1 2 GP video, so
+it's time to make another one. And to
+
+234
+00:05:08,990 --> 00:05:09,000
+it's time to make another one. And to
+ 
+
+235
+00:05:09,000 --> 00:05:11,310
+it's time to make another one. And to
+install it, now we have to do the manual
+
+236
+00:05:11,310 --> 00:05:11,320
+install it, now we have to do the manual
+ 
+
+237
+00:05:11,320 --> 00:05:13,350
+install it, now we have to do the manual
+mode. There's no more one click
+
+238
+00:05:13,350 --> 00:05:13,360
+mode. There's no more one click
+ 
+
+239
+00:05:13,360 --> 00:05:15,110
+mode. There's no more one click
+Pinocchio anymore. I think it's better
+
+240
+00:05:15,110 --> 00:05:15,120
+Pinocchio anymore. I think it's better
+ 
+
+241
+00:05:15,120 --> 00:05:17,230
+Pinocchio anymore. I think it's better
+this way because we can easily update
+
+242
+00:05:17,230 --> 00:05:17,240
+this way because we can easily update
+ 
+
+243
+00:05:17,240 --> 00:05:18,790
+this way because we can easily update
+it.
+
+244
+00:05:18,790 --> 00:05:18,800
+it.
+ 
+
+245
+00:05:18,800 --> 00:05:21,470
+it.
+So, first click installation.
+
+246
+00:05:21,470 --> 00:05:21,480
+So, first click installation.
+ 
+
+247
+00:05:21,480 --> 00:05:24,230
+So, first click installation.
+And depends on if you have Nvidia or
+
+248
+00:05:24,230 --> 00:05:24,240
+And depends on if you have Nvidia or
+ 
+
+249
+00:05:24,240 --> 00:05:26,590
+And depends on if you have Nvidia or
+AMD. I have Nvidia, so click
+
+250
+00:05:26,590 --> 00:05:26,600
+AMD. I have Nvidia, so click
+ 
+
+251
+00:05:26,600 --> 00:05:28,430
+AMD. I have Nvidia, so click
+installation guide. You might need to
+
+252
+00:05:28,430 --> 00:05:28,440
+installation guide. You might need to
+ 
+
+253
+00:05:28,440 --> 00:05:31,350
+installation guide. You might need to
+log in your GitHub account to access the
+
+254
+00:05:31,350 --> 00:05:31,360
+log in your GitHub account to access the
+ 
+
+255
+00:05:31,360 --> 00:05:33,350
+log in your GitHub account to access the
+installation guide for some unknown
+
+256
+00:05:33,350 --> 00:05:33,360
+installation guide for some unknown
+ 
+
+257
+00:05:33,360 --> 00:05:35,750
+installation guide for some unknown
+reason.
+
+258
+00:05:35,750 --> 00:05:35,760
+reason.
+ 
+
+259
+00:05:35,760 --> 00:05:37,830
+reason.
+So, once you are in here, you can see
+
+260
+00:05:37,830 --> 00:05:37,840
+So, once you are in here, you can see
+ 
+
+261
+00:05:37,840 --> 00:05:40,070
+So, once you are in here, you can see
+all the stuff you need to do. So, first
+
+262
+00:05:40,070 --> 00:05:40,080
+all the stuff you need to do. So, first
+ 
+
+263
+00:05:40,080 --> 00:05:42,950
+all the stuff you need to do. So, first
+we go get download. So, you need to
+
+264
+00:05:42,950 --> 00:05:42,960
+we go get download. So, you need to
+ 
+
+265
+00:05:42,960 --> 00:05:49,190
+we go get download. So, you need to
+install get. All right.
+
+266
+00:05:49,190 --> 00:05:49,200
+
+ 
+
+267
+00:05:49,200 --> 00:05:51,950
+
+And once you install Git, you have to
+
+268
+00:05:51,950 --> 00:05:51,960
+And once you install Git, you have to
+ 
+
+269
+00:05:51,960 --> 00:05:54,710
+And once you install Git, you have to
+create a folder named 1 to GP,
+
+270
+00:05:54,710 --> 00:05:54,720
+create a folder named 1 to GP,
+ 
+
+271
+00:05:54,720 --> 00:05:57,030
+create a folder named 1 to GP,
+then open it, right click, select open
+
+272
+00:05:57,030 --> 00:05:57,040
+then open it, right click, select open
+ 
+
+273
+00:05:57,040 --> 00:05:59,190
+then open it, right click, select open
+in terminal, and copy paste the
+
+274
+00:05:59,190 --> 00:05:59,200
+in terminal, and copy paste the
+ 
+
+275
+00:05:59,200 --> 00:06:01,470
+in terminal, and copy paste the
+following commands. All right, let's go.
+
+276
+00:06:01,470 --> 00:06:01,480
+following commands. All right, let's go.
+ 
+
+277
+00:06:01,480 --> 00:06:03,590
+following commands. All right, let's go.
+I get to my D drive,
+
+278
+00:06:03,590 --> 00:06:03,600
+I get to my D drive,
+ 
+
+279
+00:06:03,600 --> 00:06:05,230
+I get to my D drive,
+right click,
+
+280
+00:06:05,230 --> 00:06:05,240
+right click,
+ 
+
+281
+00:06:05,240 --> 00:06:06,670
+right click,
+folders,
+
+282
+00:06:06,670 --> 00:06:06,680
+folders,
+ 
+
+283
+00:06:06,680 --> 00:06:08,270
+folders,
+1 2
+
+284
+00:06:08,270 --> 00:06:08,280
+1 2
+ 
+
+285
+00:06:08,280 --> 00:06:10,230
+1 2
+GP.
+
+286
+00:06:10,230 --> 00:06:10,240
+GP.
+ 
+
+287
+00:06:10,240 --> 00:06:12,790
+GP.
+And right click,
+
+288
+00:06:12,790 --> 00:06:12,800
+And right click,
+ 
+
+289
+00:06:12,800 --> 00:06:15,350
+And right click,
+open in terminals.
+
+290
+00:06:15,350 --> 00:06:15,360
+open in terminals.
+ 
+
+291
+00:06:15,360 --> 00:06:17,870
+open in terminals.
+Now, let's clone this command. Git
+
+292
+00:06:17,870 --> 00:06:17,880
+Now, let's clone this command. Git
+ 
+
+293
+00:06:17,880 --> 00:06:19,510
+Now, let's clone this command. Git
+clone.
+
+294
+00:06:19,510 --> 00:06:19,520
+clone.
+ 
+
+295
+00:06:19,520 --> 00:06:21,510
+clone.
+Come to back to your terminal, paste
+
+296
+00:06:21,510 --> 00:06:21,520
+Come to back to your terminal, paste
+ 
+
+297
+00:06:21,520 --> 00:06:26,670
+Come to back to your terminal, paste
+that, and run it.
+
+298
+00:06:26,670 --> 00:06:26,680
+
+ 
+
+299
+00:06:26,680 --> 00:06:28,790
+
+Well, that should be done.
+
+300
+00:06:28,790 --> 00:06:28,800
+Well, that should be done.
+ 
+
+301
+00:06:28,800 --> 00:06:30,790
+Well, that should be done.
+Let's have a look.
+
+302
+00:06:30,790 --> 00:06:30,800
+Let's have a look.
+ 
+
+303
+00:06:30,800 --> 00:06:35,190
+Let's have a look.
+Yeah, so
+
+304
+00:06:35,190 --> 00:06:35,200
+
+ 
+
+305
+00:06:35,200 --> 00:06:37,590
+
+So, it's under 1 to GP and 1 to GP
+
+306
+00:06:37,590 --> 00:06:37,600
+So, it's under 1 to GP and 1 to GP
+ 
+
+307
+00:06:37,600 --> 00:06:40,630
+So, it's under 1 to GP and 1 to GP
+again.
+
+308
+00:06:40,630 --> 00:06:40,640
+
+ 
+
+309
+00:06:40,640 --> 00:06:42,750
+
+Okay. All right, now I can see you now
+
+310
+00:06:42,750 --> 00:06:42,760
+Okay. All right, now I can see you now
+ 
+
+311
+00:06:42,760 --> 00:06:44,830
+Okay. All right, now I can see you now
+have all the files here.
+
+312
+00:06:44,830 --> 00:06:44,840
+have all the files here.
+ 
+
+313
+00:06:44,840 --> 00:06:47,430
+have all the files here.
+The next step is creating Python
+
+314
+00:06:47,430 --> 00:06:47,440
+The next step is creating Python
+ 
+
+315
+00:06:47,440 --> 00:06:49,790
+The next step is creating Python
+environment using conda. Well,
+
+316
+00:06:49,790 --> 00:06:49,800
+environment using conda. Well,
+ 
+
+317
+00:06:49,800 --> 00:06:51,190
+environment using conda. Well,
+unfortunately, I don't have conda, so I
+
+318
+00:06:51,190 --> 00:06:51,200
+unfortunately, I don't have conda, so I
+ 
+
+319
+00:06:51,200 --> 00:06:53,230
+unfortunately, I don't have conda, so I
+have to install it. So, come to here,
+
+320
+00:06:53,230 --> 00:06:53,240
+have to install it. So, come to here,
+ 
+
+321
+00:06:53,240 --> 00:06:55,150
+have to install it. So, come to here,
+they have a mini conda download. Let's
+
+322
+00:06:55,150 --> 00:06:55,160
+they have a mini conda download. Let's
+ 
+
+323
+00:06:55,160 --> 00:06:57,630
+they have a mini conda download. Let's
+click this link.
+
+324
+00:06:57,630 --> 00:06:57,640
+click this link.
+ 
+
+325
+00:06:57,640 --> 00:06:59,190
+click this link.
+And you should start downloading.
+
+326
+00:06:59,190 --> 00:06:59,200
+And you should start downloading.
+ 
+
+327
+00:06:59,200 --> 00:07:00,909
+And you should start downloading.
+Already done.
+
+328
+00:07:00,909 --> 00:07:00,919
+Already done.
+ 
+
+329
+00:07:00,919 --> 00:07:04,230
+Already done.
+All right, let's run this installation.
+
+330
+00:07:04,230 --> 00:07:04,240
+All right, let's run this installation.
+ 
+
+331
+00:07:04,240 --> 00:07:06,750
+All right, let's run this installation.
+Next, I agree.
+
+332
+00:07:06,750 --> 00:07:06,760
+Next, I agree.
+ 
+
+333
+00:07:06,760 --> 00:07:10,190
+Next, I agree.
+Uh install for just me.
+
+334
+00:07:10,190 --> 00:07:10,200
+Uh install for just me.
+ 
+
+335
+00:07:10,200 --> 00:07:12,590
+Uh install for just me.
+Next.
+
+336
+00:07:12,590 --> 00:07:12,600
+Next.
+ 
+
+337
+00:07:12,600 --> 00:07:13,270
+Next.
+All right,
+
+338
+00:07:13,270 --> 00:07:13,280
+All right,
+ 
+
+339
+00:07:13,280 --> 00:07:15,110
+All right,
+install the conda. All right, now that's
+
+340
+00:07:15,110 --> 00:07:15,120
+install the conda. All right, now that's
+ 
+
+341
+00:07:15,120 --> 00:07:21,150
+install the conda. All right, now that's
+complete. Click next.
+
+342
+00:07:21,150 --> 00:07:21,160
+
+ 
+
+343
+00:07:21,160 --> 00:07:23,630
+
+And finish. And now let's copy this
+
+344
+00:07:23,630 --> 00:07:23,640
+And finish. And now let's copy this
+ 
+
+345
+00:07:23,640 --> 00:07:25,790
+And finish. And now let's copy this
+code, conda create. So, pretty much
+
+346
+00:07:25,790 --> 00:07:25,800
+code, conda create. So, pretty much
+ 
+
+347
+00:07:25,800 --> 00:07:28,350
+code, conda create. So, pretty much
+create a Python environment. So, now
+
+348
+00:07:28,350 --> 00:07:28,360
+create a Python environment. So, now
+ 
+
+349
+00:07:28,360 --> 00:07:30,790
+create a Python environment. So, now
+we're going to your Windows search a lot
+
+350
+00:07:30,790 --> 00:07:30,800
+we're going to your Windows search a lot
+ 
+
+351
+00:07:30,800 --> 00:07:34,030
+we're going to your Windows search a lot
+conda prompt, and open this one.
+
+352
+00:07:34,030 --> 00:07:34,040
+conda prompt, and open this one.
+ 
+
+353
+00:07:34,040 --> 00:07:36,390
+conda prompt, and open this one.
+And wait for it to load.
+
+354
+00:07:36,390 --> 00:07:36,400
+And wait for it to load.
+ 
+
+355
+00:07:36,400 --> 00:07:41,390
+And wait for it to load.
+And then paste the same prompt.
+
+356
+00:07:41,390 --> 00:07:41,400
+
+ 
+
+357
+00:07:41,400 --> 00:07:43,870
+
+The conda create.
+
+358
+00:07:43,870 --> 00:07:43,880
+The conda create.
+ 
+
+359
+00:07:43,880 --> 00:07:46,190
+The conda create.
+and paste that. Do you accept the term
+
+360
+00:07:46,190 --> 00:07:46,200
+and paste that. Do you accept the term
+ 
+
+361
+00:07:46,200 --> 00:07:48,550
+and paste that. Do you accept the term
+of service?
+
+362
+00:07:48,550 --> 00:07:48,560
+of service?
+ 
+
+363
+00:07:48,560 --> 00:07:51,350
+of service?
+Yes, we accept.
+
+364
+00:07:51,350 --> 00:07:51,360
+Yes, we accept.
+ 
+
+365
+00:07:51,360 --> 00:07:54,790
+Yes, we accept.
+Do you accept term of service?
+
+366
+00:07:54,790 --> 00:07:54,800
+Do you accept term of service?
+ 
+
+367
+00:07:54,800 --> 00:07:56,910
+Do you accept term of service?
+Yes, we accept.
+
+368
+00:07:56,910 --> 00:07:56,920
+Yes, we accept.
+ 
+
+369
+00:07:56,920 --> 00:08:02,150
+Yes, we accept.
+And yes, we accept.
+
+370
+00:08:02,150 --> 00:08:02,160
+
+ 
+
+371
+00:08:02,160 --> 00:08:04,430
+
+And now they're telling you the
+
+372
+00:08:04,430 --> 00:08:04,440
+And now they're telling you the
+ 
+
+373
+00:08:04,440 --> 00:08:06,110
+And now they're telling you the
+following new
+
+374
+00:08:06,110 --> 00:08:06,120
+following new
+ 
+
+375
+00:08:06,120 --> 00:08:07,590
+following new
+package will be installed. Do you want
+
+376
+00:08:07,590 --> 00:08:07,600
+package will be installed. Do you want
+ 
+
+377
+00:08:07,600 --> 00:08:17,470
+package will be installed. Do you want
+to install? Yes.
+
+378
+00:08:17,470 --> 00:08:17,480
+
+ 
+
+379
+00:08:17,480 --> 00:08:20,950
+
+And now we have create the environment.
+
+380
+00:08:20,950 --> 00:08:20,960
+And now we have create the environment.
+ 
+
+381
+00:08:20,960 --> 00:08:23,670
+And now we have create the environment.
+So, next one is we have to activate the
+
+382
+00:08:23,670 --> 00:08:23,680
+So, next one is we have to activate the
+ 
+
+383
+00:08:23,680 --> 00:08:27,270
+So, next one is we have to activate the
+1 2 GP conda environment. So, copy
+
+384
+00:08:27,270 --> 00:08:27,280
+1 2 GP conda environment. So, copy
+ 
+
+385
+00:08:27,280 --> 00:08:28,710
+1 2 GP conda environment. So, copy
+this one
+
+386
+00:08:28,710 --> 00:08:28,720
+this one
+ 
+
+387
+00:08:28,720 --> 00:08:30,310
+this one
+and come to your
+
+388
+00:08:30,310 --> 00:08:30,320
+and come to your
+ 
+
+389
+00:08:30,320 --> 00:08:33,110
+and come to your
+Anaconda prompt. Don't get it wrong.
+
+390
+00:08:33,110 --> 00:08:33,120
+Anaconda prompt. Don't get it wrong.
+ 
+
+391
+00:08:33,120 --> 00:08:34,510
+Anaconda prompt. Don't get it wrong.
+And paste that.
+
+392
+00:08:34,510 --> 00:08:34,520
+And paste that.
+ 
+
+393
+00:08:34,520 --> 00:08:37,990
+And paste that.
+And just hit enter.
+
+394
+00:08:37,990 --> 00:08:38,000
+And just hit enter.
+ 
+
+395
+00:08:38,000 --> 00:08:40,230
+And just hit enter.
+And now we are under When you see you
+
+396
+00:08:40,230 --> 00:08:40,240
+And now we are under When you see you
+ 
+
+397
+00:08:40,240 --> 00:08:43,630
+And now we are under When you see you
+have 1 2 GP in the front, means we have
+
+398
+00:08:43,630 --> 00:08:43,640
+have 1 2 GP in the front, means we have
+ 
+
+399
+00:08:43,640 --> 00:08:45,470
+have 1 2 GP in the front, means we have
+entered the room of this conda
+
+400
+00:08:45,470 --> 00:08:45,480
+entered the room of this conda
+ 
+
+401
+00:08:45,480 --> 00:08:48,510
+entered the room of this conda
+environment. So, that's all done.
+
+402
+00:08:48,510 --> 00:08:48,520
+environment. So, that's all done.
+ 
+
+403
+00:08:48,520 --> 00:08:51,390
+environment. So, that's all done.
+Oh, and then now we choose Now, the next
+
+404
+00:08:51,390 --> 00:08:51,400
+Oh, and then now we choose Now, the next
+ 
+
+405
+00:08:51,400 --> 00:08:53,870
+Oh, and then now we choose Now, the next
+step will be choose the installation
+
+406
+00:08:53,870 --> 00:08:53,880
+step will be choose the installation
+ 
+
+407
+00:08:53,880 --> 00:08:56,190
+step will be choose the installation
+according to you GPU.
+
+408
+00:08:56,190 --> 00:08:56,200
+according to you GPU.
+ 
+
+409
+00:08:56,200 --> 00:08:57,670
+according to you GPU.
+All right, so
+
+410
+00:08:57,670 --> 00:08:57,680
+All right, so
+ 
+
+411
+00:08:57,680 --> 00:08:59,550
+All right, so
+So, guys, you can go through this.
+
+412
+00:08:59,550 --> 00:08:59,560
+So, guys, you can go through this.
+ 
+
+413
+00:08:59,560 --> 00:09:01,790
+So, guys, you can go through this.
+Depends on which GPU you have.
+
+414
+00:09:01,790 --> 00:09:01,800
+Depends on which GPU you have.
+ 
+
+415
+00:09:01,800 --> 00:09:05,550
+Depends on which GPU you have.
+And I have a 3000 series. So, Windows
+
+416
+00:09:05,550 --> 00:09:05,560
+And I have a 3000 series. So, Windows
+ 
+
+417
+00:09:05,560 --> 00:09:08,670
+And I have a 3000 series. So, Windows
+installation for RTX 3000 series. So,
+
+418
+00:09:08,670 --> 00:09:08,680
+installation for RTX 3000 series. So,
+ 
+
+419
+00:09:08,680 --> 00:09:10,790
+installation for RTX 3000 series. So,
+then this is what we need to do. So, I'm
+
+420
+00:09:10,790 --> 00:09:10,800
+then this is what we need to do. So, I'm
+ 
+
+421
+00:09:10,800 --> 00:09:13,270
+then this is what we need to do. So, I'm
+using this installation. And please
+
+422
+00:09:13,270 --> 00:09:13,280
+using this installation. And please
+ 
+
+423
+00:09:13,280 --> 00:09:17,230
+using this installation. And please
+note, do not paste this command into
+
+424
+00:09:17,230 --> 00:09:17,240
+note, do not paste this command into
+ 
+
+425
+00:09:17,240 --> 00:09:18,870
+note, do not paste this command into
+your
+
+426
+00:09:18,870 --> 00:09:18,880
+your
+ 
+
+427
+00:09:18,880 --> 00:09:20,990
+your
+PowerShell. No, no, big no, no. We have
+
+428
+00:09:20,990 --> 00:09:21,000
+PowerShell. No, no, big no, no. We have
+ 
+
+429
+00:09:21,000 --> 00:09:22,350
+PowerShell. No, no, big no, no. We have
+to come to
+
+430
+00:09:22,350 --> 00:09:22,360
+to come to
+ 
+
+431
+00:09:22,360 --> 00:09:24,750
+to come to
+the Anaconda prompt. And then you have
+
+432
+00:09:24,750 --> 00:09:24,760
+the Anaconda prompt. And then you have
+ 
+
+433
+00:09:24,760 --> 00:09:27,030
+the Anaconda prompt. And then you have
+to see there's 1 2 GP in front of it.
+
+434
+00:09:27,030 --> 00:09:27,040
+to see there's 1 2 GP in front of it.
+ 
+
+435
+00:09:27,040 --> 00:09:28,630
+to see there's 1 2 GP in front of it.
+Otherwise, it will be installed into
+
+436
+00:09:28,630 --> 00:09:28,640
+Otherwise, it will be installed into
+ 
+
+437
+00:09:28,640 --> 00:09:30,110
+Otherwise, it will be installed into
+your Windows, which you don't want that.
+
+438
+00:09:30,110 --> 00:09:30,120
+your Windows, which you don't want that.
+ 
+
+439
+00:09:30,120 --> 00:09:32,910
+your Windows, which you don't want that.
+You want it to install under 1 2 GP
+
+440
+00:09:32,910 --> 00:09:32,920
+You want it to install under 1 2 GP
+ 
+
+441
+00:09:32,920 --> 00:09:34,910
+You want it to install under 1 2 GP
+conda environment. So, let's just paste
+
+442
+00:09:34,910 --> 00:09:34,920
+conda environment. So, let's just paste
+ 
+
+443
+00:09:34,920 --> 00:09:36,030
+conda environment. So, let's just paste
+that.
+
+444
+00:09:36,030 --> 00:09:36,040
+that.
+ 
+
+445
+00:09:36,040 --> 00:09:44,590
+that.
+And hit enter.
+
+446
+00:09:44,590 --> 00:09:44,600
+
+ 
+
+447
+00:09:44,600 --> 00:09:46,310
+
+And that will be pretty straightforward
+
+448
+00:09:46,310 --> 00:09:46,320
+And that will be pretty straightforward
+ 
+
+449
+00:09:46,320 --> 00:09:48,670
+And that will be pretty straightforward
+from now on. So, now we just wait for
+
+450
+00:09:48,670 --> 00:09:48,680
+from now on. So, now we just wait for
+ 
+
+451
+00:09:48,680 --> 00:09:53,430
+from now on. So, now we just wait for
+you to download.
+
+452
+00:09:53,430 --> 00:09:53,440
+
+ 
+
+453
+00:09:53,440 --> 00:09:56,790
+
+And as you can see, the file is 2.5 GB.
+
+454
+00:09:56,790 --> 00:09:56,800
+And as you can see, the file is 2.5 GB.
+ 
+
+455
+00:09:56,800 --> 00:09:58,790
+And as you can see, the file is 2.5 GB.
+So, it takes some time to download. All
+
+456
+00:09:58,790 --> 00:09:58,800
+So, it takes some time to download. All
+ 
+
+457
+00:09:58,800 --> 00:10:00,310
+So, it takes some time to download. All
+right, the first command has been
+
+458
+00:10:00,310 --> 00:10:00,320
+right, the first command has been
+ 
+
+459
+00:10:00,320 --> 00:10:02,790
+right, the first command has been
+complete. Now, let's
+
+460
+00:10:02,790 --> 00:10:02,800
+complete. Now, let's
+ 
+
+461
+00:10:02,800 --> 00:10:05,190
+complete. Now, let's
+let's install the second command. Just
+
+462
+00:10:05,190 --> 00:10:05,200
+let's install the second command. Just
+ 
+
+463
+00:10:05,200 --> 00:10:08,430
+let's install the second command. Just
+uh copy-paste one.
+
+464
+00:10:08,430 --> 00:10:08,440
+uh copy-paste one.
+ 
+
+465
+00:10:08,440 --> 00:10:11,350
+uh copy-paste one.
+And come back to your Anaconda
+
+466
+00:10:11,350 --> 00:10:11,360
+And come back to your Anaconda
+ 
+
+467
+00:10:11,360 --> 00:10:12,870
+And come back to your Anaconda
+prompt.
+
+468
+00:10:12,870 --> 00:10:12,880
+prompt.
+ 
+
+469
+00:10:12,880 --> 00:10:15,630
+prompt.
+And paste pip install.
+
+470
+00:10:15,630 --> 00:10:15,640
+And paste pip install.
+ 
+
+471
+00:10:15,640 --> 00:10:18,430
+And paste pip install.
+And then hit enter.
+
+472
+00:10:18,430 --> 00:10:18,440
+And then hit enter.
+ 
+
+473
+00:10:18,440 --> 00:10:30,830
+And then hit enter.
+And now we have to wait again.
+
+474
+00:10:30,830 --> 00:10:30,840
+
+ 
+
+475
+00:10:30,840 --> 00:10:33,030
+
+All right, that was quick. And now let's
+
+476
+00:10:33,030 --> 00:10:33,040
+All right, that was quick. And now let's
+ 
+
+477
+00:10:33,040 --> 00:10:35,590
+All right, that was quick. And now let's
+come to the third step, which is install
+
+478
+00:10:35,590 --> 00:10:35,600
+come to the third step, which is install
+ 
+
+479
+00:10:35,600 --> 00:10:37,870
+come to the third step, which is install
+Sage to attention.
+
+480
+00:10:37,870 --> 00:10:37,880
+Sage to attention.
+ 
+
+481
+00:10:37,880 --> 00:10:42,750
+Sage to attention.
+All right, let's copy this.
+
+482
+00:10:42,750 --> 00:10:42,760
+
+ 
+
+483
+00:10:42,760 --> 00:10:44,070
+
+And
+
+484
+00:10:44,070 --> 00:10:44,080
+And
+ 
+
+485
+00:10:44,080 --> 00:10:46,230
+And
+paste. And then All right, so Sage
+
+486
+00:10:46,230 --> 00:10:46,240
+paste. And then All right, so Sage
+ 
+
+487
+00:10:46,240 --> 00:10:48,310
+paste. And then All right, so Sage
+attention has been installed. That was
+
+488
+00:10:48,310 --> 00:10:48,320
+attention has been installed. That was
+ 
+
+489
+00:10:48,320 --> 00:10:49,590
+attention has been installed. That was
+pretty quick.
+
+490
+00:10:49,590 --> 00:10:49,600
+pretty quick.
+ 
+
+491
+00:10:49,600 --> 00:10:57,310
+pretty quick.
+And now we're down to the last steps.
+
+492
+00:10:57,310 --> 00:10:57,320
+
+ 
+
+493
+00:10:57,320 --> 00:10:59,910
+
+And then copy that.
+
+494
+00:10:59,910 --> 00:10:59,920
+And then copy that.
+ 
+
+495
+00:10:59,920 --> 00:11:07,790
+And then copy that.
+Again, paste.
+
+496
+00:11:07,790 --> 00:11:07,800
+
+ 
+
+497
+00:11:07,800 --> 00:11:10,310
+
+And now I hit a error message. So, now
+
+498
+00:11:10,310 --> 00:11:10,320
+And now I hit a error message. So, now
+ 
+
+499
+00:11:10,320 --> 00:11:12,390
+And now I hit a error message. So, now
+we're hitting a error message. I think
+
+500
+00:11:12,390 --> 00:11:12,400
+we're hitting a error message. I think
+ 
+
+501
+00:11:12,400 --> 00:11:14,150
+we're hitting a error message. I think
+because in the in this environment, we
+
+502
+00:11:14,150 --> 00:11:14,160
+because in the in this environment, we
+ 
+
+503
+00:11:14,160 --> 00:11:17,230
+because in the in this environment, we
+do not have the requirement TXT files.
+
+504
+00:11:17,230 --> 00:11:17,240
+do not have the requirement TXT files.
+ 
+
+505
+00:11:17,240 --> 00:11:19,630
+do not have the requirement TXT files.
+So, we need to So, remember in the first
+
+506
+00:11:19,630 --> 00:11:19,640
+So, we need to So, remember in the first
+ 
+
+507
+00:11:19,640 --> 00:11:22,230
+So, we need to So, remember in the first
+we installed a 1-2-GP in the D drive.
+
+508
+00:11:22,230 --> 00:11:22,240
+we installed a 1-2-GP in the D drive.
+ 
+
+509
+00:11:22,240 --> 00:11:25,190
+we installed a 1-2-GP in the D drive.
+So, it's actually 1-2-GP and then 1-2-GP
+
+510
+00:11:25,190 --> 00:11:25,200
+So, it's actually 1-2-GP and then 1-2-GP
+ 
+
+511
+00:11:25,200 --> 00:11:27,470
+So, it's actually 1-2-GP and then 1-2-GP
+folder. So, you need to type in where it
+
+512
+00:11:27,470 --> 00:11:27,480
+folder. So, you need to type in where it
+ 
+
+513
+00:11:27,480 --> 00:11:30,870
+folder. So, you need to type in where it
+is. Look here, guys. So, and then type
+
+514
+00:11:30,870 --> 00:11:30,880
+is. Look here, guys. So, and then type
+ 
+
+515
+00:11:30,880 --> 00:11:33,030
+is. Look here, guys. So, and then type
+in the same code as this one, just
+
+516
+00:11:33,030 --> 00:11:33,040
+in the same code as this one, just
+ 
+
+517
+00:11:33,040 --> 00:11:34,670
+in the same code as this one, just
+change your directory to where you
+
+518
+00:11:34,670 --> 00:11:34,680
+change your directory to where you
+ 
+
+519
+00:11:34,680 --> 00:11:38,590
+change your directory to where you
+install 1 2 GP, and then hit enter.
+
+520
+00:11:38,590 --> 00:11:38,600
+install 1 2 GP, and then hit enter.
+ 
+
+521
+00:11:38,600 --> 00:11:41,630
+install 1 2 GP, and then hit enter.
+And so, now we are in 1 2 GP, and then
+
+522
+00:11:41,630 --> 00:11:41,640
+And so, now we are in 1 2 GP, and then
+ 
+
+523
+00:11:41,640 --> 00:11:45,070
+And so, now we are in 1 2 GP, and then
+we change directory to D drive to 1 2 GP
+
+524
+00:11:45,070 --> 00:11:45,080
+we change directory to D drive to 1 2 GP
+ 
+
+525
+00:11:45,080 --> 00:11:48,030
+we change directory to D drive to 1 2 GP
+and 1 2 GP. And now we can run the PP
+
+526
+00:11:48,030 --> 00:11:48,040
+and 1 2 GP. And now we can run the PP
+ 
+
+527
+00:11:48,040 --> 00:11:50,110
+and 1 2 GP. And now we can run the PP
+install.
+
+528
+00:11:50,110 --> 00:11:50,120
+install.
+ 
+
+529
+00:11:50,120 --> 00:11:52,070
+install.
+And
+
+530
+00:11:52,070 --> 00:11:52,080
+And
+ 
+
+531
+00:11:52,080 --> 00:11:53,790
+And
+And then you will install everything we
+
+532
+00:11:53,790 --> 00:11:53,800
+And then you will install everything we
+ 
+
+533
+00:11:53,800 --> 00:11:57,910
+And then you will install everything we
+require for the RTX 3000 cards. All
+
+534
+00:11:57,910 --> 00:11:57,920
+require for the RTX 3000 cards. All
+ 
+
+535
+00:11:57,920 --> 00:12:00,270
+require for the RTX 3000 cards. All
+right, so now the whole installation has
+
+536
+00:12:00,270 --> 00:12:00,280
+right, so now the whole installation has
+ 
+
+537
+00:12:00,280 --> 00:12:02,310
+right, so now the whole installation has
+been complete. After installation
+
+538
+00:12:02,310 --> 00:12:02,320
+been complete. After installation
+ 
+
+539
+00:12:02,320 --> 00:12:04,190
+been complete. After installation
+complete, now it's time to start the
+
+540
+00:12:04,190 --> 00:12:04,200
+complete, now it's time to start the
+ 
+
+541
+00:12:04,200 --> 00:12:06,550
+complete, now it's time to start the
+engine. So, let's type in this code. All
+
+542
+00:12:06,550 --> 00:12:06,560
+engine. So, let's type in this code. All
+ 
+
+543
+00:12:06,560 --> 00:12:07,990
+engine. So, let's type in this code. All
+right, guys, so now we just have to
+
+544
+00:12:07,990 --> 00:12:08,000
+right, guys, so now we just have to
+ 
+
+545
+00:12:08,000 --> 00:12:09,350
+right, guys, so now we just have to
+wait.
+
+546
+00:12:09,350 --> 00:12:09,360
+wait.
+ 
+
+547
+00:12:09,360 --> 00:12:10,670
+wait.
+And
+
+548
+00:12:10,670 --> 00:12:10,680
+And
+ 
+
+549
+00:12:10,680 --> 00:12:12,390
+And
+in the first time you starting, they
+
+550
+00:12:12,390 --> 00:12:12,400
+in the first time you starting, they
+ 
+
+551
+00:12:12,400 --> 00:12:15,110
+in the first time you starting, they
+will need to downloading some files.
+
+552
+00:12:15,110 --> 00:12:15,120
+will need to downloading some files.
+ 
+
+553
+00:12:15,120 --> 00:12:16,910
+will need to downloading some files.
+So, we'll we'll come back and have a
+
+554
+00:12:16,910 --> 00:12:16,920
+So, we'll we'll come back and have a
+ 
+
+555
+00:12:16,920 --> 00:12:19,030
+So, we'll we'll come back and have a
+coffee and come back and check.
+
+556
+00:12:19,030 --> 00:12:19,040
+coffee and come back and check.
+ 
+
+557
+00:12:19,040 --> 00:12:20,510
+coffee and come back and check.
+First time you open, I waited for about
+
+558
+00:12:20,510 --> 00:12:20,520
+First time you open, I waited for about
+ 
+
+559
+00:12:20,520 --> 00:12:22,990
+First time you open, I waited for about
+3 minutes. Don't Do not worry. So, now
+
+560
+00:12:22,990 --> 00:12:23,000
+3 minutes. Don't Do not worry. So, now
+ 
+
+561
+00:12:23,000 --> 00:12:25,550
+3 minutes. Don't Do not worry. So, now
+we should be able to launch our local
+
+562
+00:12:25,550 --> 00:12:25,560
+we should be able to launch our local
+ 
+
+563
+00:12:25,560 --> 00:12:28,470
+we should be able to launch our local
+web UI.
+
+564
+00:12:28,470 --> 00:12:28,480
+
+ 
+
+565
+00:12:28,480 --> 00:12:31,430
+
+All right, copy that and paste.
+
+566
+00:12:31,430 --> 00:12:31,440
+All right, copy that and paste.
+ 
+
+567
+00:12:31,440 --> 00:12:35,510
+All right, copy that and paste.
+And here we go, guys. So, 1 GP version
+
+568
+00:12:35,510 --> 00:12:35,520
+And here we go, guys. So, 1 GP version
+ 
+
+569
+00:12:35,520 --> 00:12:37,550
+And here we go, guys. So, 1 GP version
+10.981
+
+570
+00:12:37,550 --> 00:12:37,560
+10.981
+ 
+
+571
+00:12:37,560 --> 00:12:40,870
+10.981
+is officially installed. And now let's
+
+572
+00:12:40,870 --> 00:12:40,880
+is officially installed. And now let's
+ 
+
+573
+00:12:40,880 --> 00:12:45,990
+is officially installed. And now let's
+check for LTX 2.3. So, under LTX 2,
+
+574
+00:12:45,990 --> 00:12:46,000
+check for LTX 2.3. So, under LTX 2,
+ 
+
+575
+00:12:46,000 --> 00:12:49,710
+check for LTX 2.3. So, under LTX 2,
+click on LTX 2.3 22B,
+
+576
+00:12:49,710 --> 00:12:49,720
+click on LTX 2.3 22B,
+ 
+
+577
+00:12:49,720 --> 00:12:52,510
+click on LTX 2.3 22B,
+and choose the distilled version,
+
+578
+00:12:52,510 --> 00:12:52,520
+and choose the distilled version,
+ 
+
+579
+00:12:52,520 --> 00:12:53,990
+and choose the distilled version,
+and
+
+580
+00:12:53,990 --> 00:12:54,000
+and
+ 
+
+581
+00:12:54,000 --> 00:12:57,190
+and
+attention mode is auto seg 2, data type
+
+582
+00:12:57,190 --> 00:12:57,200
+attention mode is auto seg 2, data type
+ 
+
+583
+00:12:57,200 --> 00:12:59,630
+attention mode is auto seg 2, data type
+is FB16.
+
+584
+00:12:59,630 --> 00:12:59,640
+is FB16.
+ 
+
+585
+00:12:59,640 --> 00:13:02,390
+is FB16.
+And same user face as before. All right,
+
+586
+00:13:02,390 --> 00:13:02,400
+And same user face as before. All right,
+ 
+
+587
+00:13:02,400 --> 00:13:04,390
+And same user face as before. All right,
+guys, so now we're in. So, the first
+
+588
+00:13:04,390 --> 00:13:04,400
+guys, so now we're in. So, the first
+ 
+
+589
+00:13:04,400 --> 00:13:06,070
+guys, so now we're in. So, the first
+time when you trying to use this model,
+
+590
+00:13:06,070 --> 00:13:06,080
+time when you trying to use this model,
+ 
+
+591
+00:13:06,080 --> 00:13:08,070
+time when you trying to use this model,
+they need to downloading some essential
+
+592
+00:13:08,070 --> 00:13:08,080
+they need to downloading some essential
+ 
+
+593
+00:13:08,080 --> 00:13:10,829
+they need to downloading some essential
+files, and it will take a lot of time.
+
+594
+00:13:10,829 --> 00:13:10,839
+files, and it will take a lot of time.
+ 
+
+595
+00:13:10,839 --> 00:13:12,350
+files, and it will take a lot of time.
+So, um
+
+596
+00:13:12,350 --> 00:13:12,360
+So, um
+ 
+
+597
+00:13:12,360 --> 00:13:14,550
+So, um
+let's just use the default setting for
+
+598
+00:13:14,550 --> 00:13:14,560
+let's just use the default setting for
+ 
+
+599
+00:13:14,560 --> 00:13:15,710
+let's just use the default setting for
+everything.
+
+600
+00:13:15,710 --> 00:13:15,720
+everything.
+ 
+
+601
+00:13:15,720 --> 00:13:16,910
+everything.
+All right, guys, hope you guys enjoyed
+
+602
+00:13:16,910 --> 00:13:16,920
+All right, guys, hope you guys enjoyed
+ 
+
+603
+00:13:16,920 --> 00:13:19,030
+All right, guys, hope you guys enjoyed
+this video. If this video helps you in
+
+604
+00:13:19,030 --> 00:13:19,040
+this video. If this video helps you in
+ 
+
+605
+00:13:19,040 --> 00:13:21,030
+this video. If this video helps you in
+any way, please don't forget to like and
+
+606
+00:13:21,030 --> 00:13:21,040
+any way, please don't forget to like and
+ 
+
+607
+00:13:21,040 --> 00:13:23,390
+any way, please don't forget to like and
+subscribe to the channel. I'll close the
+
+608
+00:13:23,390 --> 00:13:23,400
+subscribe to the channel. I'll close the
+ 
+
+609
+00:13:23,400 --> 00:13:25,150
+subscribe to the channel. I'll close the
+this video now and start to stress
+
+610
+00:13:25,150 --> 00:13:25,160
+this video now and start to stress
+ 
+
+611
+00:13:25,160 --> 00:13:28,470
+this video now and start to stress
+testing the LTX 2.3. And once I found
+
+612
+00:13:28,470 --> 00:13:28,480
+testing the LTX 2.3. And once I found
+ 
+
+613
+00:13:28,480 --> 00:13:30,230
+testing the LTX 2.3. And once I found
+out the tips and tricks, I'll upload
+
+614
+00:13:30,230 --> 00:13:30,240
+out the tips and tricks, I'll upload
+ 
+
+615
+00:13:30,240 --> 00:13:34,040
+out the tips and tricks, I'll upload
+another videos and stay tuned.
+

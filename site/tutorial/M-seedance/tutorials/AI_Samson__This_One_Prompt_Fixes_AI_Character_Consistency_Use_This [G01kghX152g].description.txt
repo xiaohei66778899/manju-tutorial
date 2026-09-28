@@ -1,0 +1,15 @@
+﻿The single prompt that keeps the same face across every generation. Build a character reference sheet once, then reuse it in any image or video model without the face drifting between shots.
+
+Chapters:
+0:00 One prompt for consistency
+0:32 Creating the character sheet
+1:16 Tools and setup workflow
+2:02 Using Midjourney references
+3:02 Fixing full-body generation issues
+4:14 Testing scars and tattoos
+5:00 Turning characters into videos
+6:30 Multi-character scene creation
+7:29 Changing lighting and outfits
+8:47 Stress testing face tattoos
+9:33 Aging characters over time
+10:58 Building AI influencer personas

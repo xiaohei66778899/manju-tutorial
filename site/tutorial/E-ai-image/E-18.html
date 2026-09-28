@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="E-18 SDXL 工作流 · 漫剧制作教程站。玉哥整理的 AI 漫剧与短剧制作实用教程，包含步骤、案例和练习。">
+<title>E-18 SDXL 工作流 · 漫剧制作教程站</title>
+<link rel="stylesheet" href="../../assets/site.css?v=fix20260927-2215">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg?v=fix20260927-2215">
+<link rel="stylesheet" href="../../assets/tutorial.css?v=fix20260927-2215">
+</head>
+<body>
+<header class="topbar">
+  <div class="logo">🎬 漫剧教程站 <small>v3 · 玉哥</small></div>
+  <nav>
+    <a href="../../index.html">首页</a>
+    <a href="../all-courses.html" class="active">漫剧教程</a>
+    <a href="../../prompts/image-prompts.html">图片作品</a>
+    <a href="../../works/index.html">视频作品</a>
+    <a href="../../prompts/prompts.html">prompt 模板</a>
+    <a href="../../tools/toolkit.html">工具箱</a>
+    <a href="../../qa/troubleshooting.html">问题库</a>
+    <a href="../../news/industry.html">行业新闻</a>
+    </nav>
+  <div class="search"><input type="search" placeholder="🔍 搜…"></div>
+  <button class="theme-toggle" title="深浅主题切换" onclick="document.documentElement.classList.toggle('dark')">🌙</button>
+</header>
+<div class="layout-3col">
+  <aside class="sidebar-left" id="sidebar-left"></aside>
+  <main class="content">
+    <div class="breadcrumb"><a href="../../index.html">首页</a> <span>›</span> <a href="../all-courses.html">E AI 出图</a> <span>›</span> E-18 SDXL 工作流</div>
+    <h1>E-18 · SDXL 工作流与学员推荐模型</h1>
+    <h2 id="sec-1">1. SDXL vs SD 1.5</h2>
+    <div class="tbl-wrap"><table><thead><tr><th>指标</th><th>SD 1.5</th><th>SDXL</th></tr></thead><tbody>
+    <tr><td>分辨率</td><td>512×512</td><td>1024×1024</td></tr>
+    <tr><td>模型大小</td><td>2-4 GB</td><td>6-7 GB</td></tr>
+    <tr><td>显存</td><td>4 GB+</td><td>8 GB+</td></tr>
+    <tr><td>细节</td><td>一般</td><td><strong>4 倍</strong></td></tr>
+    <tr><td>提示词遵循</td><td>中</td><td>高</td></tr>
+    </tbody></table></div>
+
+    <h2 id="sec-2">2. 学员推荐 SDXL 模型</h2>
+    <ul>
+      <li><strong>juggernautXL</strong>:写实 / 漫剧通吃(学员 60% 用)</li>
+      <li><strong>realvisXL</strong>:极致写实</li>
+      <li><strong>dreamShaperXL</strong>:动漫 / 风格化</li>
+      <li><strong>counterfeitXL</strong>:二次元</li>
+      <li><strong>ponyDiffusionXL</strong>:欧美动漫</li>
+    </ul>
+
+    <h2 id="sec-3">3. SDXL 双 CLIP 提示词</h2>
+    <p>SDXL 有 <strong>2 个 CLIP</strong>:CLIP-L(主)+ CLIP-G(辅助)。</p>
+    <ul>
+      <li><strong>学员 70%</strong>:用双 CLIP(节点默认)</li>
+      <li><strong>30%</strong>:用单 CLIP-L(老 prompt 习惯)</li>
+    </ul>
+
+    <h2 id="sec-4">4. SDXL 玉哥黄金参数</h2>
+    <div class="tbl-wrap"><table><thead><tr><th>参数</th><th>玉哥推荐</th></tr></thead><tbody>
+    <tr><td>steps</td><td>25-30</td></tr>
+    <tr><td>cfg</td><td>7-8</td></tr>
+    <tr><td>sampler</td><td>dpmpp_2m / dpmpp_sde</td></tr>
+    <tr><td>scheduler</td><td>karras</td></tr>
+    <tr><td>分辨率</td><td>1024×1024 / 832×1472</td></tr>
+    </tbody></table></div>
+
+    <h2 id="sec-5">5. SDXL 必装 LoRA</h2>
+    <ul>
+      <li>角色 LoRA(学员每人 5-10 个)</li>
+      <li>风格 LoRA(动漫 / 写实)</li>
+      <li>细节 LoRA(皮肤 / 眼睛)</li>
+      <li>姿势 LoRA(配合 ControlNet)</li>
+    </ul>
+
+    <h2 id="sec-6">6. SDXL 工作流(8 节点)</h2>
+    <ol>
+      <li>Load Checkpoint(SDXL 模型)</li>
+      <li>CLIP Text Encode(正向,连双 CLIP)</li>
+      <li>CLIP Text Encode(反向,连双 CLIP)</li>
+      <li>Empty Latent Image(1024×1024)</li>
+      <li>KSampler</li>
+      <li>Load LoRA(可选)</li>
+      <li>VAE Decode</li>
+      <li>Save Image</li>
+    </ol>
+
+    <h2 id="sec-7">7. 数字时间</h2>
+    <div class="tbl-wrap"><table><thead><tr><th>分辨率</th><th>RTX 4060 8G</th><th>RTX 4090 24G</th></tr></thead><tbody>
+    <tr><td>1024×1024</td><td>20 秒</td><td>8 秒</td></tr>
+    <tr><td>832×1472(9:16)</td><td>25 秒</td><td>10 秒</td></tr>
+    <tr><td>1472×1472</td><td>35 秒</td><td>15 秒</td></tr>
+    </tbody></table></div>
+
+    <h2 id="sec-8">8. 常见误解</h2>
+    <div class="callout bad"><span class="ico">❌</span><p><strong>误解</strong>:SDXL LoRA 通用 SD 1.5 —— 错。完全不通用。</p></div>
+    <div class="callout bad"><span class="ico">❌</span><p><strong>误解</strong>:SDXL 越慢越好 —— 错。同参数下比 SD 1.5 慢 50%,但细节提升 4 倍。</p></div>
+
+    <h2 id="sec-9">9. 本节小练习</h2>
+    <ol>
+      <li>下载 juggernautXL</li>
+      <li>加载 SDXL 工作流</li>
+      <li>用双 CLIP 写提示词</li>
+      <li>对比 SD 1.5 vs SDXL 同提示词出图</li>
+    </ol>
+
+    <h2 id="sec-10">10. 学完能做啥</h2>
+    <ul class="checklist"><li>能玩转 SDXL</li><li>会选 SDXL 模型</li><li>懂双 CLIP 机制</li></ul>
+
+    <h2 id="sec-11">11. 玉哥说</h2>
+    <div class="callout warn"><span class="ico">📢</span><p><strong>📢 玉哥说</strong>:<br>
+    1. <strong>juggernautXL 一招鲜</strong> · 60% 学员用<br>
+    2. <strong>SDXL 1024 起步</strong><br>
+    3. <strong>双 CLIP 必开</strong><br>
+    4. <strong>8G 显存够跑</strong> · 别犹豫</p></div>
+
+    <nav class="bottom-nav">
+      <a class="prev" href="E-17.html"><span class="label">← 上一节</span><span class="title">E-17 Tiled VAE</span></a>
+      <a class="next" href="E-19.html"><span class="label">下一节 →</span><span class="title">E-19 Flux 工作流</span></a>
+    </nav>
+  </main>
+  <aside class="sidebar-right" id="sidebar-right"></aside>
+</div>
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="扫码关注玉哥">
+      <img class="qr-img" src="../../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../../changelog.html">📅 更新日志</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+<script src="../../assets/tutorial.js?v=fix20260927-2215"></script>
+<script src="../../assets/site-enhance.js?v=fix20260927-2215" defer></script>
+</body>
+</html>

@@ -1,0 +1,367 @@
+﻿<!DOCTYPE html><html lang="zh-CN"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
+<meta name="description" content="漫剧制作教程站 · 玉哥 · 114 节全完成 · 13 大类 + 6 大专题:漫剧基础 / 剧本创作 / 角色制作 / 分镜 / AI 出图 / AI 视频 / 配音剪辑 / 发布运营 / 附录速查 / ComfyUI 专题 / 千川投流 SOP / AI 仓库汇总">
+<meta property="og:title" content="漫剧教程站 · 玉哥 · 114 节 + 6 专题">
+<meta property="og:description" content="漫剧制作教程站 · 玉哥 · 114 节全完成 · 13 大类 + 6 大专题:漫剧基础 / 剧本创作 / 角色制作 / 分镜 / AI 出图 / AI 视频 / 配音剪辑 / 发布运营 / 附录速查 / ComfyUI 专题 / 千川投流 SOP / AI 仓库汇总">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="漫剧教程站 · 玉哥">
+<title>漫剧制作教程站 · 玉哥 · 114 节 + M/N 专题</title>
+<link rel="stylesheet" href="assets/site.css?v=fix20260927-2215">
+<link rel="icon" type="image/svg+xml" href="favicon.svg?v=fix20260927-2215">
+<style>
+/* ========== 玉哥风格首页(2026-09-17 精修) ========== */
+
+/* 玉哥风格大 hero(跟 tools/news 同款) */
+.yuge-hero {
+  position: relative;
+  padding: 56px 32px 36px;
+  background: linear-gradient(135deg, #FFE9D6 0%, #FFF7E8 50%, #ECE7FF 100%);
+  border-bottom: 1px solid var(--line);
+  overflow: hidden;
+}
+.yuge-hero::before { content:''; position:absolute; top:-100px; right:-100px; width:320px; height:320px; background:radial-gradient(circle, rgba(244,124,60,.18), transparent 70%); border-radius:50%; pointer-events:none; }
+.yuge-hero::after { content:''; position:absolute; bottom:-80px; left:-80px; width:240px; height:240px; background:radial-gradient(circle, rgba(244,124,60,.10), transparent 70%); border-radius:50%; pointer-events:none; }
+.yuge-hero-inner { position: relative; max-width: 1100px; margin: 0 auto; text-align: center; }
+.yuge-hero .badge-row { display: inline-flex; gap: 6px; flex-wrap: wrap; justify-content: center; margin-bottom: 16px; }
+.yuge-hero .badge-row .badge { font-size: 11.5px; padding: 4px 10px; background: rgba(255,255,255,.7); backdrop-filter: blur(8px); border: 1px solid var(--line); border-radius: 12px; color: var(--text); font-weight: 500; }
+.yuge-hero .badge-row .badge i { color: var(--blue); margin-right: 4px; font-size: 10px; }
+.yuge-hero h1 { font-size: 36px; color: var(--text); margin: 0 0 12px; font-weight: 800; letter-spacing: -0.025em; line-height: 1.15; }
+.yuge-hero h1 .em { background: linear-gradient(135deg, #635BFF, #F47C3C); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.yuge-hero .sub { color: var(--muted); font-size: 15.5px; max-width: 720px; margin: 0 auto 22px; line-height: 1.7; }
+.yuge-hero .stats { display: inline-flex; gap: 0; font-size: 13px; color: var(--muted); background: #fff; border: 1px solid var(--line); border-radius: 24px; padding: 4px; box-shadow: 0 2px 8px rgba(0,0,0,.04); }
+.yuge-hero .stats .item { padding: 8px 18px; border-radius: 20px; display: flex; align-items: center; gap: 4px; }
+.yuge-hero .stats .item + .item { border-left: 1px solid var(--line); }
+.yuge-hero .stats b { color: var(--blue); font-weight: 800; font-size: 15px; }
+.yuge-hero .cta { margin-top: 22px; }
+
+/* dark 主题 hero */
+[data-theme="dark"] .yuge-hero { background: linear-gradient(135deg, #1A1A2E 0%, #16213E 50%, #0F3460 100%); border-bottom-color: var(--line); }
+[data-theme="dark"] .yuge-hero h1 { color: var(--text); }
+[data-theme="dark"] .yuge-hero .sub { color: var(--muted); }
+[data-theme="dark"] .yuge-hero .stats { background: var(--bg2); border-color: var(--line); }
+[data-theme="dark"] .yuge-hero .stats .item { color: var(--muted); }
+[data-theme="dark"] .yuge-hero .stats .item + .item { border-left-color: var(--line); }
+[data-theme="dark"] .yuge-hero .stats b { color: var(--blue); }
+
+/* CTA 按钮 */
+.btn {
+  display: inline-block;
+  padding: 11px 28px;
+  font-size: 14.5px;
+  font-weight: 600;
+  border-radius: 22px;
+  text-decoration: none;
+  margin: 0 6px;
+  transition: all .15s;
+}
+.btn-primary { background: var(--blue); color: #fff; }
+.btn-primary:hover { background: var(--blue-deep); transform: translateY(-1px); text-decoration: none; box-shadow: 0 6px 16px rgba(244,124,60,.25); }
+.btn-ghost { background: #fff; color: var(--text); border: 1px solid var(--blue); }
+.btn-ghost:hover { background: var(--blue-soft); text-decoration: none; }
+[data-theme="dark"] .btn-ghost { background: var(--bg2); color: var(--text); border-color: var(--blue); }
+
+/* 12 大类分区 */
+.cat-section { max-width: 1440px; margin: 0 auto; padding: 40px 32px 20px; }
+.cat-section h2 {
+  font-size: 24px;
+  color: var(--text);
+  margin: 0 0 8px;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.cat-section h2 small {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 400;
+  margin-left: 4px;
+}
+.cat-section .sub {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0 0 24px;
+}
+
+/* 12 大类卡片 */
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+.cat-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 20px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--text);
+  transition: all .2s ease;
+  position: relative;
+  overflow: hidden;
+}
+.cat-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #635BFF, #F47C3C);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .2s ease;
+}
+.cat-card:hover {
+  border-color: var(--blue);
+  background: var(--bg-soft);
+  box-shadow: 0 6px 20px rgba(99, 91, 255, 0.12);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+.cat-card:hover::before { transform: scaleX(1); }
+.cat-card .ic {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #635BFF, #8B5CF6);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(244,124,60,.25);
+}
+.cat-card .txt { flex: 1; min-width: 0; }
+.cat-card .t {
+  font-size: 15.5px;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 4px;
+  letter-spacing: -0.005em;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.cat-card .d {
+  font-size: 12.5px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+.cat-card .badge {
+  display: inline-block;
+  font-size: 10.5px;
+  padding: 2px 7px;
+  border-radius: 6px;
+  background: var(--blue);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+/* 原版专题卡片(ComfyUI / 千川 / L / H)— 渐变背景突出 */
+.cat-card.yuge-card {
+  background: linear-gradient(135deg, #FFE9D6 0%, #FFF7E8 50%, #ECE7FF 100%);
+  border-color: #C4B5FD;
+}
+.cat-card.yuge-card .ic {
+  background: #fff;
+  border: 1px solid #C4B5FD;
+  padding: 6px;
+  font-size: 0;
+}
+.cat-card.yuge-card .ic img { width: 100%; height: 100%; display: block; object-fit: contain; border-radius: 6px; }
+[data-theme="dark"] .cat-card { background: var(--bg2); border-color: var(--line); }
+[data-theme="dark"] .cat-card:hover { background: var(--bg3); }
+[data-theme="dark"] .cat-card .d { color: var(--muted); }
+[data-theme="dark"] .cat-card.yuge-card { background: linear-gradient(135deg, #1A1A2E 0%, #16213E 50%, #0F3460 100%); border-color: var(--line); }
+[data-theme="dark"] .cat-card.yuge-card .ic { background: var(--bg2); border-color: var(--line); }
+
+/* ===== 响应式 ===== */
+@media (min-width: 1680px) {
+  .yuge-hero { padding: 64px 40px 40px; }
+  .yuge-hero-inner { max-width: 1200px; }
+  .cat-section { max-width: 1600px; padding: 48px 40px 32px; }
+  .cat-grid { gap: 18px; }
+}
+@media (max-width: 979px) {
+  .yuge-hero { padding: 40px 20px 28px; }
+  .yuge-hero h1 { font-size: 28px; }
+  .yuge-hero .sub { font-size: 14px; max-width: 100%; }
+  .cat-section { padding: 28px 20px 16px; }
+  .cat-section h2 { font-size: 20px; }
+  .cat-grid { gap: 14px; }
+}
+@media (max-width: 767px) {
+  .yuge-hero { padding: 32px 16px 24px; }
+  .yuge-hero h1 { font-size: 24px; }
+  .yuge-hero .stats { font-size: 12px; }
+  .yuge-hero .stats .item { padding: 6px 12px; }
+  .yuge-hero .cta { margin-top: 16px; }
+  .btn { padding: 10px 20px; font-size: 13px; margin: 4px; display: inline-block; }
+  .cat-section { padding: 24px 16px; }
+  .cat-card { padding: 14px 16px; }
+  .cat-card .ic { width: 40px; height: 40px; font-size: 18px; }
+  .cat-card .t { font-size: 14px; }
+  .cat-card .d { font-size: 11.5px; }
+}
+@media (max-width: 479px) {
+  .yuge-hero { padding: 24px 12px 20px; }
+  .yuge-hero h1 { font-size: 20px; }
+  .yuge-hero .stats .item { padding: 5px 10px; font-size: 11px; }
+  .yuge-hero .stats b { font-size: 13px; }
+  .cat-grid { grid-template-columns: 1fr; }
+  .cat-card { padding: 12px 14px; }
+  .cat-card .ic { width: 36px; height: 36px; font-size: 16px; border-radius: 9px; }
+}
+</style>
+</head><body>
+
+<header class="topbar">
+  <div class="logo">🎬 漫剧教程站 <small>v3 · 玉哥</small></div>
+  <nav>
+    <a href="index.html" class="active">首页</a>
+    <a href="tutorial/all-courses.html">漫剧教程</a>
+    <a href="prompts/image-prompts.html">图片作品</a>
+    <a href="works/index.html">视频作品</a>
+    <a href="prompts/prompts.html">prompt 模板</a>
+    <a href="tools/toolkit.html">工具箱</a>
+    <a href="qa/troubleshooting.html">问题库</a>
+    <a href="news/industry.html">行业新闻</a>
+  </nav>
+  <div class="search"><input type="search" placeholder="🔍 搜教程 / 工具 / Prompt…"></div>
+  <button class="theme-toggle" id="yugeThemeBtn" title="深浅主题切换" aria-label="切换深浅主题">🌙</button>
+</header>
+
+<main class="yuge-page">
+
+  <!-- 玉哥风格 hero -->
+  <section class="yuge-hero">
+    <div class="yuge-hero-inner">
+      <h1>📖 <span class="em">漫剧制作教程站</span></h1>
+      <div class="stats">
+        <span class="item"><b>114</b> 节</span>
+        <span class="item"><b>13</b> 大类</span>
+        <span class="item"><b>6</b> 专题</span>
+        <span class="item"><b>80+</b> 工具</span>
+        <span class="item"><b>100+</b> 新闻</span>
+      </div>
+      <div class="cta">
+    <a class="btn btn-primary" href="tutorial/all-courses.html">🎬 进入教程(114 节)</a>
+    <a class="btn btn-ghost" href="#cats">📚 速通 12 大类</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12 大类速通卡片(精简版,详细见 tutorial/all-courses.html) -->
+  <section class="cat-section" id="cats">
+    <h2>📚 13 大类速通 <small style="font-size:12px; color:var(--muted); font-weight:400; margin-left:8px;">点击进入详细目录</small></h2>
+    <div class="cat-grid">
+
+      <a class="cat-card" href="tutorial/A-manju-basic/A-1.html">
+        <span class="ic">🎬</span>
+        <span class="txt"><span class="t">A · 漫剧基础</span><span class="d">8 节 · 一句话讲清 + 一集怎么做</span></span>
+      </a>
+
+      <a class="cat-card" href="剧本.html">
+        <span class="ic">📜</span>
+        <span class="txt"><span class="t">B · 剧本</span><span class="d">8 大子页面 · 原创 + 改编全流程 · SPA</span></span>
+      </a>
+
+      <a class="cat-card" href="tutorial/C-character/C-1.html">
+        <span class="ic">🎭</span>
+        <span class="txt"><span class="t">C · 角色制作</span><span class="d">17 节 · 锁脸 + LoRA + 多角色一致</span></span>
+      </a>
+
+      <a class="cat-card" href="tutorial/D-storyboard/D-1.html">
+        <span class="ic">🎞</span>
+        <span class="txt"><span class="t">D · 分镜</span><span class="d">15 节 · 景别 + 运镜 + 一集实例</span></span>
+      </a>
+
+      <a class="cat-card" href="tutorial/E-ai-image/E-1.html">
+        <span class="ic">🎨</span>
+        <span class="txt"><span class="t">E · AI 出图</span><span class="d">19 节 · SD/MJ/Flux/即梦 + 提示词</span></span>
+      </a>
+
+      <a class="cat-card" href="tutorial/F-ai-video/F-1.html">
+        <span class="ic">🎥</span>
+        <span class="txt"><span class="t">F · AI 视频</span><span class="d">18 节 · 4 模型横评 + 失败模式</span></span>
+      </a>
+
+      <a class="cat-card" href="tutorial/G-audio-edit/G-1.html">
+        <span class="ic">🎙</span>
+        <span class="txt"><span class="t">G · 配音剪辑</span><span class="d">18 节 · 配音 + 字幕 + 转场</span></span>
+      </a>
+
+      <a class="cat-card" href="tutorial/H-publish/H-1.html">
+        <span class="ic">🚀</span>
+        <span class="txt"><span class="t">H · 发布运营</span><span class="d">11 节 · 9:16 + 4 平台 + 数据复盘</span></span>
+      </a>
+
+      <a class="cat-card" href="tutorial/I-appendix/I-1.html">
+        <span class="ic">📚</span>
+        <span class="txt"><span class="t">I · 附录速查</span><span class="d">9 节 · 词典 + 工具 + GitHub 地图</span></span>
+      </a>
+
+      <a class="cat-card yuge-card" href="tutorial/J-comfyui/ComfyUI漫剧工作流.html">
+        <span class="ic"><img src="assets/icons/comfyui-app-c-blue.png" alt="ComfyUI"></span>
+        <span class="txt"><span class="t">J · ComfyUI 专题 🆕<span class="badge">原</span></span><span class="d">17 章 / 6 部分 · 离线数字教科书</span></span>
+      </a>
+
+      <a class="cat-card yuge-card" href="tutorial/K-投流/千川投流SOP.html">
+        <span class="ic"><img src="assets/icons/qianchuan-target.png" alt="千川"></span>
+        <span class="txt"><span class="t">K · 千川投流 SOP 🆕<span class="badge">原</span></span><span class="d">14 章 + 16 课视频路径</span></span>
+      </a>
+
+      <a class="cat-card yuge-card" href="tutorial/L-airepo/短剧AI仓库.html">
+        <span class="ic"><img src="assets/icons/lucide-package.svg" alt=""></span>
+        <span class="txt"><span class="t">L · 短剧 AI 仓库 🆕<span class="badge">原</span></span><span class="d">工具/项目/脚本/GitHub 资源清单</span></span>
+      </a>
+
+      <a class="cat-card yuge-card" href="tutorial/H-publish/短剧创业SOP.html">
+        <span class="ic"><img src="assets/icons/target.svg" alt=""></span>
+        <span class="txt"><span class="t">H · 短剧创业 SOP 🆕<span class="badge">原</span></span><span class="d">团队搭建 / 项目流 / 月入 30 万路径</span></span>
+      </a>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="扫码关注玉哥">
+      <img class="qr-img" src="assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="changelog.html">📅 更新日志</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+<script src="assets/site-enhance.js?v=fix20260927-2215" defer></script>
+</body></html>
+
+
+
+
+
+
+

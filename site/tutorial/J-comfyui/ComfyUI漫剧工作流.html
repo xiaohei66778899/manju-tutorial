@@ -1,0 +1,1386 @@
+﻿<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="ComfyUI 漫剧工作流 · 原版 · 16 章全流程 + §17 顶级视频课 + §18 顶级工作流 JSON · 从安装到工业化批量产出 · 离线可读">
+<meta name="author" content="玉哥">
+<meta name="theme-color" content="#0F0F12">
+<title>ComfyUI 漫剧工作流 · 原版 · 16 章 + §17 顶级视频课 + §18 顶级工作流 JSON</title>
+<style>
+/* ==================== 配色 v3 · Stripe 风蓝紫调 · 暗/亮双主题 ==================== */
+:root{
+  --bg:#0F0F12;--bg2:#1A1A1F;--bg3:#24242C;
+  --text:#FFF7E8;--muted:#A1A1AA;
+  --acc:#7B7AFF;--blue:#635BFF;--purple:#9F94FF;
+  --warm:#FFBE63;--danger:#FF7D91;
+  --line:#2A2A33;--line-soft:rgba(123,122,255,.18);
+  --shadow:0 16px 42px #00000060,0 1px 0 #ffffff08 inset;
+  --radius:14px;
+  color-scheme:dark;
+}
+[data-theme="light"]{
+  --bg:#FFF7E8;--bg2:#FFFCF6;--bg3:#ECE7FF;
+  --text:#1F1A14;--muted:#6F6657;
+  --acc:#635BFF;--blue:#4F46E5;--purple:#9F94FF;
+  --warm:#FF8C42;--danger:#b52c44;
+  --line:#E8DFC8;--line-soft:rgba(244,124,60,.18);
+  --shadow:0 14px 34px #2c425514,0 1px 0 #ffffff inset;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:62px}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.72 system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;letter-spacing:.005em;
+  background:
+    radial-gradient(900px 520px at 76% -90px,#184f7133,transparent 67%),
+    radial-gradient(700px 420px at 4% 22%,#38256325,transparent 68%),
+    var(--bg);
+}
+
+/* ==================== 顶部进度条 ==================== */
+.progress-track{position:fixed;top:0;left:0;right:0;height:3px;background:var(--line);z-index:30}
+.progress-bar{height:100%;width:0%;background:linear-gradient(90deg,var(--blue),var(--purple),var(--acc));transition:width .25s ease}
+
+/* ==================== 顶部 nav ==================== */
+.topbar{position:sticky;top:0;z-index:20;height:56px;background:var(--bg)f2;border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 22px;backdrop-filter:blur(10px);box-shadow:0 1px 22px #0004}
+.topbar .brand{font-size:16px;letter-spacing:.02em;font-weight:700;color:var(--text)}
+.topbar .brand small{color:var(--muted);font-weight:400;margin-left:6px;font-size:12px}
+.topbar .brand strong{color:var(--acc);font-weight:700}
+.topbar .topin{display:flex;align-items:center;gap:10px;max-width:1400px;margin:auto;width:100%}
+.searchbox{margin-left:auto;display:flex;align-items:center;gap:6px;background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:0 10px;height:36px;min-width:200px;max-width:320px;flex:1}
+.searchbox input{flex:1;background:transparent;border:none;outline:none;font:inherit;color:var(--text);padding:0}
+.searchbox input::placeholder{color:var(--muted)}
+.searchbox kbd{font:11px ui-monospace,SFMono-Regular;background:var(--bg3);border:1px solid var(--line);border-radius:4px;padding:1px 5px;color:var(--muted)}
+.iconbtn{background:var(--bg2);border:1px solid var(--line);color:var(--text);height:36px;padding:0 12px;border-radius:8px;cursor:pointer;font-size:13px;font-family:inherit;transition:.18s}
+.iconbtn:hover{background:var(--bg3);border-color:var(--acc);color:var(--acc)}
+.print-only{display:none}
+@media(max-width:820px){.searchbox{display:none}.print-only{display:inline-block}}
+
+/* ==================== 任务导航卡片 ==================== */
+.quick-nav{max-width:1280px;margin:24px auto 0;padding:0 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.entry{position:relative;text-align:left;cursor:pointer;background:linear-gradient(145deg,color-mix(in srgb,var(--bg2) 94%,var(--blue)),var(--bg2));border:1px solid var(--line);border-radius:12px;padding:18px 20px;min-height:96px;display:flex;flex-direction:column;justify-content:center;text-decoration:none;color:inherit;transition:.2s ease;box-shadow:0 8px 22px #0002}
+.entry:hover{transform:translateY(-3px);border-color:var(--acc);box-shadow:0 14px 30px #0003}
+.entry::before{content:"";display:block;width:24px;height:3px;background:var(--acc);border-radius:2px;margin-bottom:10px}
+.entry strong{font-size:15px;color:var(--text);display:block;margin-bottom:4px}
+.entry small{color:var(--muted);font-size:12px;line-height:1.5;display:block}
+.entry .arrow{margin-left:auto;color:var(--acc);font-weight:900;font-size:18px;margin-top:6px}
+
+/* ==================== 主体布局 ==================== */
+.layout{display:grid;grid-template-columns:248px minmax(0,1fr);max-width:1400px;margin:0 auto;padding:24px;gap:42px}
+@media(max-width:860px){.layout{display:block;padding:16px}}
+
+aside{position:sticky;top:72px;height:calc(100vh - 88px);overflow:auto;padding:18px 14px 28px;border:1px solid var(--line);border-radius:var(--radius);background:var(--bg2);box-shadow:0 8px 22px #0002;scrollbar-width:none}
+aside::-webkit-scrollbar{display:none}
+aside h3{margin:14px 8px 5px;font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:600}
+aside h3:first-child{margin-top:0}
+aside ul{list-style:none;margin:0 0 8px;padding:0}
+aside a{display:flex;align-items:center;gap:6px;color:var(--muted);text-decoration:none;padding:7px 11px;border-left:2px solid transparent;border-radius:0 6px 6px 0;font-size:13px;line-height:1.5;transition:.15s}
+aside a:hover{color:var(--text);background:var(--bg3);border-left-color:var(--acc)}
+aside a.active{color:var(--text);background:linear-gradient(90deg,color-mix(in srgb,var(--acc) 14%,var(--bg2)),transparent);border-left-color:var(--blue);font-weight:600}
+aside .progress-label{font-size:11px;color:var(--muted);padding:0 11px 10px}
+
+main{min-width:0;padding:0;max-width:970px;margin:0 auto}
+
+/* ==================== hero / 标题 ==================== */
+.hero{position:relative;isolation:isolate;overflow:hidden;padding:46px 50px;border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(128deg,var(--bg2) 0%,var(--bg) 60%,var(--bg3) 100%);margin-bottom:30px;box-shadow:var(--shadow)}
+.hero::before{content:"";position:absolute;z-index:-1;width:340px;height:340px;right:-80px;top:-110px;border:1px solid var(--acc)55;border-radius:50%;box-shadow:0 0 0 52px var(--blue)0b,0 0 0 104px var(--purple)08}
+.hero::after{content:"17";position:absolute;right:55px;bottom:-30px;color:#ffffff08;font:900 180px/1 system-ui;pointer-events:none}
+.hero h1{font-size:clamp(34px,4.5vw,48px);line-height:1.18;margin:0 0 8px;font-weight:700;background:linear-gradient(105deg,#fff 20%,color-mix(in srgb,var(--acc) 70%,#fff) 64%,var(--purple));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .sub{color:var(--muted);font-size:15px;margin-bottom:14px}
+.hero>p{margin:8px 0 14px;line-height:1.75}
+.hero .meta{display:flex;gap:7px;flex-wrap:wrap;margin-top:14px}
+
+/* ==================== 标签 / 章节 ==================== */
+.tag{display:inline-flex;align-items:center;gap:3px;border:1px solid var(--line);background:var(--bg3);color:var(--text);border-radius:999px;padding:3px 10px;font-size:12px;font-weight:500}
+.tag.cold{color:var(--blue);border-color:color-mix(in srgb,var(--blue) 35%,var(--line));background:color-mix(in srgb,var(--blue) 12%,var(--bg2))}
+.tag.warm{color:var(--warm);border-color:color-mix(in srgb,var(--warm) 35%,var(--line));background:color-mix(in srgb,var(--warm) 10%,var(--bg2))}
+.tag.god{color:var(--purple);border-color:color-mix(in srgb,var(--purple) 35%,var(--line));background:color-mix(in srgb,var(--purple) 10%,var(--bg2))}
+
+h2{font-size:clamp(24px,3vw,30px);margin:52px 0 18px;padding-bottom:10px;border-bottom:1px solid var(--line);font-weight:700;letter-spacing:-.015em;color:var(--text)}
+h2 .anchor{opacity:0;font-size:.6em;color:var(--muted);margin-left:8px;cursor:pointer;transition:.18s}
+h2:hover .anchor{opacity:1}
+h3{font-size:18px;margin:26px 0 10px;color:var(--text);font-weight:600}
+h4{font-size:14px;margin:10px 0 6px;color:var(--text);font-weight:600}
+p{margin:8px 0 14px;line-height:1.75}
+strong{color:var(--text)}
+em{color:var(--acc);font-style:normal}
+code{color:#b9d8ff;background:#172033;padding:1px 6px;border-radius:4px;font-size:.92em}
+[data-theme="light"] code{color:#315fc4;background:#edf3fa}
+ol,ul{padding-left:23px}
+ol li,ul li{margin:4px 0}
+a{color:var(--acc);text-decoration:none;border-bottom:1px dotted var(--acc)66}
+a:hover{color:var(--blue);border-bottom-color:var(--blue)}
+
+/* ==================== callout ==================== */
+.callout{display:flex;gap:12px;border:1px solid var(--line);border-left:4px solid var(--blue);background:linear-gradient(110deg,color-mix(in srgb,var(--bg2) 96%,var(--blue)),var(--bg2));padding:14px 16px;border-radius:8px;margin:16px 0;box-shadow:0 4px 14px #0001}
+.callout .ico{font-size:20px;flex-shrink:0}
+.callout p{margin:0;line-height:1.7}
+.callout.tip{border-left-color:var(--acc)}
+.callout.warn{border-left-color:var(--warm)}
+.callout.purple{border-left-color:var(--purple)}
+.callout.info{border-left-color:var(--blue)}
+
+/* ==================== 表格 ==================== */
+.tbl-wrap{overflow:auto;border:1px solid var(--line);border-radius:10px;margin:14px 0 22px;background:var(--bg2);box-shadow:0 6px 18px #0001}
+table{border-collapse:collapse;width:100%;min-width:560px;background:transparent}
+th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--line);vertical-align:top;font-size:13.5px;line-height:1.55}
+th{background:var(--bg3);color:var(--acc);font-size:11.5px;font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+tr:last-child td{border-bottom:0}
+tr:hover td{background:color-mix(in srgb,var(--bg3) 50%,transparent)}
+
+/* ==================== steps ==================== */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:16px 0}
+.step{position:relative;background:linear-gradient(130deg,var(--bg2),color-mix(in srgb,var(--bg2) 96%,var(--blue)));border:1px solid var(--line);border-radius:10px;padding:14px 16px 14px 50px;box-shadow:0 4px 12px #0001}
+.step .n{position:absolute;left:14px;top:14px;width:26px;height:26px;display:grid;place-items:center;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;font-weight:800;font-size:13px;box-shadow:0 2px 8px var(--blue)44}
+.step h4{margin-top:2px}
+
+/* ==================== 代码块 / template ==================== */
+.template{white-space:pre-wrap;overflow:auto;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:14px 0 22px;color:#d9e5f3;font:13px/1.65 ui-monospace,SFMono-Regular,Consolas,monospace;box-shadow:inset 0 1px 0 #ffffff05}
+[data-theme="light"] .template{color:#1a2540;background:#f5f8fc}
+.template .k{color:var(--acc);font-weight:600}
+.template .v{color:var(--blue);font-weight:500}
+.template .c{color:var(--muted);font-style:italic}
+
+/* ==================== level-card ==================== */
+.level-card{border:1px solid var(--line);border-radius:12px;background:linear-gradient(150deg,var(--bg2),color-mix(in srgb,var(--bg2) 92%,var(--purple)));padding:18px 20px;margin:18px 0;box-shadow:0 6px 18px #0002;transition:.18s}
+.level-card:hover{border-color:var(--acc)}
+.level-card .count{color:var(--muted);font-size:12px;font-weight:400;margin-left:6px}
+
+/* ==================== §17 顶级视频课路径 · 卡片化 ==================== */
+.stage-filter{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 22px;padding:12px 16px;background:var(--bg2);border:1px solid var(--line);border-radius:12px;align-items:center;box-shadow:0 4px 14px #0001}
+.stage-filter .pill{padding:5px 12px;background:var(--bg3);border:1px solid var(--line);border-radius:999px;font-size:12px;color:var(--muted);cursor:default;font-weight:500;transition:.15s}
+.stage-filter .pill.active{background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;border-color:transparent;box-shadow:0 2px 8px var(--blue)44}
+.stage-filter .pill:hover{color:var(--text);border-color:var(--acc)}
+.stage-filter .filter-count{margin-left:auto;color:var(--muted);font-size:11.5px}
+
+.stage-card{border:1px solid var(--line);border-radius:14px;background:linear-gradient(150deg,var(--bg2),color-mix(in srgb,var(--bg2) 92%,var(--purple)));padding:22px 24px;margin:24px 0;box-shadow:0 8px 22px #0002;transition:.18s}
+.stage-card:hover{border-color:var(--acc)}
+.stage-card .stage-head{display:flex;align-items:center;gap:14px;margin-bottom:6px;flex-wrap:wrap}
+.stage-card .stage-icon{font-size:28px;flex-shrink:0}
+.stage-card h3{margin:0;font-size:18px}
+.stage-card .stage-target{margin-left:auto;padding:4px 10px;background:color-mix(in srgb,var(--blue) 14%,var(--bg2));border:1px solid color-mix(in srgb,var(--blue) 35%,var(--line));color:var(--blue);border-radius:999px;font-size:12px;font-weight:500}
+.stage-card .stage-desc{margin:4px 0 16px;color:var(--text);font-size:13.5px;line-height:1.6;padding-left:42px}
+.stage-card .stage-desc strong{color:var(--acc);font-weight:600}
+
+.course-mini{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}
+.course-mini a.cm{border:1px solid var(--line);border-radius:10px;background:var(--bg);padding:12px 14px;display:flex;flex-direction:column;gap:6px;transition:.18s;color:inherit;text-decoration:none;min-height:118px}
+.course-mini a.cm:hover{border-color:var(--blue);background:color-mix(in srgb,var(--bg3) 80%,var(--bg));transform:translateY(-2px);box-shadow:0 8px 18px #0002}
+.course-mini .cm-title{font-size:13.5px;font-weight:600;color:var(--text);line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.course-mini .cm-meta{display:flex;gap:6px;flex-wrap:wrap;align-items:center;color:var(--muted);font-size:11.5px}
+.course-mini .cm-meta .bdg{background:var(--bg3);border:1px solid var(--line);padding:1px 7px;border-radius:6px;font-weight:500}
+.course-mini .cm-meta .bdg.bz{color:var(--warm);border-color:color-mix(in srgb,var(--warm) 35%,var(--line))}
+.course-mini .cm-meta .bdg.yt{color:#FF7D91;border-color:rgba(255,125,125,.35)}
+.course-mini .cm-meta .bdg.tt{color:var(--purple);border-color:color-mix(in srgb,var(--purple) 35%,var(--line))}
+.course-mini .cm-link{margin-top:auto;color:var(--blue);font-size:12px;font-weight:600;display:inline-flex;align-items:center;gap:4px}
+.course-mini a.cm:hover .cm-link{color:var(--purple)}
+.course-mini a.cm:hover .cm-link::after{content:" →"}
+
+/* ==================== §18 顶级工作流 JSON 下载 ==================== */
+.wf-featured{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin:18px 0 26px}
+.wf-featured a.wf-card{border:1px solid var(--line);border-radius:14px;background:linear-gradient(150deg,var(--bg2),color-mix(in srgb,var(--bg2) 90%,var(--blue)));padding:18px 20px;display:flex;flex-direction:column;gap:10px;transition:.18s;color:inherit;text-decoration:none;position:relative;overflow:hidden}
+.wf-featured a.wf-card::before{content:"";position:absolute;top:0;left:0;width:4px;height:100%;background:var(--blue);opacity:.6;transition:.18s}
+.wf-featured a.wf-card:hover{border-color:var(--blue);transform:translateY(-2px);box-shadow:0 10px 24px #0002}
+.wf-featured a.wf-card:hover::before{opacity:1;width:6px}
+.wf-featured .wf-icon{font-size:32px;line-height:1}
+.wf-featured .wf-title{font-size:15px;font-weight:600;color:var(--text);line-height:1.45}
+.wf-featured .wf-desc{font-size:12.5px;color:var(--muted);line-height:1.55;flex:1}
+.wf-featured .wf-tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:6px;background:color-mix(in srgb,var(--blue) 14%,var(--bg2));border:1px solid color-mix(in srgb,var(--blue) 35%,var(--line));color:var(--blue);font-weight:600;letter-spacing:.5px}
+.wf-featured .wf-tag.warn{background:color-mix(in srgb,var(--warm) 14%,var(--bg2));border-color:color-mix(in srgb,var(--warm) 40%,var(--line));color:var(--warm)}
+.wf-featured .wf-tag.ok{background:color-mix(in srgb,#10B981 14%,var(--bg2));border-color:color-mix(in srgb,#10B981 40%,var(--line));color:#10B981}
+.wf-featured .wf-action{margin-top:auto;font-size:12.5px;color:var(--blue);font-weight:600;display:inline-flex;align-items:center;gap:5px}
+.wf-featured a.wf-card:hover .wf-action::after{content:" →"}
+
+.wf-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin:14px 0 24px}
+.wf-grid a.wf-mini{border:1px solid var(--line);border-radius:10px;background:var(--bg);padding:12px 14px;display:flex;flex-direction:column;gap:6px;transition:.18s;color:inherit;text-decoration:none;min-height:104px;position:relative}
+.wf-grid a.wf-mini:hover{border-color:var(--blue);background:color-mix(in srgb,var(--bg3) 70%,var(--bg));transform:translateY(-2px);box-shadow:0 6px 16px #0002}
+.wf-grid .wf-mini-num{position:absolute;top:8px;right:10px;color:var(--muted);font-size:11px;font-weight:600;background:var(--bg3);padding:1px 7px;border-radius:5px}
+.wf-grid .wf-mini-title{font-size:13px;font-weight:600;color:var(--text);line-height:1.4;padding-right:30px}
+.wf-grid .wf-mini-meta{display:flex;gap:5px;flex-wrap:wrap;align-items:center;color:var(--muted);font-size:11px}
+.wf-grid .wf-mini-meta .wf-bdg{background:var(--bg3);border:1px solid var(--line);padding:1px 6px;border-radius:5px;font-weight:500}
+.wf-grid .wf-mini-meta .wf-bdg.sd{color:var(--blue);border-color:color-mix(in srgb,var(--blue) 35%,var(--line))}
+.wf-grid .wf-mini-meta .wf-bdg.sdxl{color:var(--purple);border-color:color-mix(in srgb,var(--purple) 35%,var(--line))}
+.wf-grid .wf-mini-meta .wf-bdg.fmt{color:var(--warm);border-color:color-mix(in srgb,var(--warm) 40%,var(--line))}
+.wf-grid .wf-mini-dl{margin-top:auto;color:var(--blue);font-size:11.5px;font-weight:600;display:inline-flex;align-items:center;gap:4px}
+.wf-grid a.wf-mini:hover .wf-mini-dl::after{content:" ↓"}
+
+.wf-platform{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:14px 0 24px}
+.wf-platform a.wf-pf{border:1px solid var(--line);border-radius:10px;background:var(--bg);padding:12px 14px;display:flex;align-items:center;gap:10px;transition:.18s;color:inherit;text-decoration:none}
+.wf-platform a.wf-pf:hover{border-color:var(--blue);transform:translateY(-1px);box-shadow:0 4px 12px #0002}
+.wf-platform .wf-pf-icon{font-size:22px;line-height:1;flex-shrink:0}
+.wf-platform .wf-pf-info{display:flex;flex-direction:column;gap:2px;flex:1;min-width:0}
+.wf-platform .wf-pf-name{font-size:13px;font-weight:600;color:var(--text)}
+.wf-platform .wf-pf-desc{font-size:11.5px;color:var(--muted);line-height:1.45}
+
+.wf-note{border:1px dashed var(--line);border-radius:10px;padding:14px 18px;background:color-mix(in srgb,var(--blue) 6%,var(--bg2));margin:16px 0;font-size:12.5px;color:var(--muted);line-height:1.7}
+.wf-note strong{color:var(--text)}
+.wf-note code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;background:var(--bg3);padding:1px 6px;border-radius:5px;color:var(--blue)}
+
+/* ==================== 返回顶部 ==================== */
+.back-top{position:fixed;bottom:30px;right:30px;width:44px;height:44px;display:grid;place-items:center;background:var(--bg2);border:1px solid var(--line);border-radius:50%;cursor:pointer;font-size:18px;color:var(--muted);box-shadow:0 6px 18px #0004;opacity:0;visibility:hidden;transition:.2s;z-index:15}
+.back-top.visible{opacity:1;visibility:visible}
+.back-top:hover{color:var(--acc);border-color:var(--acc);transform:translateY(-2px)}
+
+/* ==================== footer ==================== */
+footer{border-top:1px solid var(--line);background:var(--bg2);text-align:center;padding:28px 20px;font-size:13px;color:var(--muted);margin-top:60px}
+footer p{margin:4px 0}
+footer .sign{color:var(--text);font-weight:600}
+footer .copy-sub{margin-top:8px;font-size:12px;color:var(--muted)}
+[data-theme="light"] footer{background:var(--bg2)}
+
+/* ==================== 响应式 ==================== */
+@media(max-width:860px){
+  .layout{padding-top:20px}
+  .hero{padding:30px 24px}
+  .hero::after{font-size:120px;right:10px}
+  .hero h1{font-size:30px}
+  .quick-nav{padding:0 16px}
+}
+@media print{
+  html[data-theme="dark"]{color-scheme:light}
+  body{background:#fff !important;color:#111 !important}
+  .topbar,.progress-track,.back-top,.quick-nav,aside{display:none !important}
+  .layout{display:block;max-width:none;padding:0}
+  .hero,.callout,.level-card,.step,.tbl-wrap{background:#fff !important;border-color:#bbb !important;box-shadow:none !important;color:#111}
+  .hero h1{color:#111 !important;background:none !important;-webkit-background-clip:initial !important}
+  .hero::before,.hero::after{display:none}
+  h2{break-before:page;color:#111;border-color:#bbb}
+  th,td{color:#111}
+  .template{background:#f5f5f5;color:#111}
+  code{background:#eee;color:#315fc4}
+  a:after{content:" (" attr(href) ")"}
+}
+</style>
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg?v=fix20260927-2215">
+</head>
+<body>
+<div class="progress-track" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+
+<header class="topbar">
+  <div class="topin">
+    <div class="brand">🎨 <strong>ComfyUI 漫剧工作流</strong> <small>原版 · v7.0</small></div>
+    <div class="searchbox">
+      <span style="color:var(--muted);font-size:14px">🔍</span>
+      <input type="search" placeholder="搜索章节 · 节点 · 报错,如「角色一致性」" id="searchInput" autocomplete="off" aria-label="搜索全站">
+      <kbd>/</kbd>
+    </div>
+    <button class="iconbtn" id="themeBtn" aria-label="切换明暗主题" title="切换明暗主题">◐ 主题</button>
+    <button class="iconbtn" id="printBtn" aria-label="打印 / PDF" title="打印 / PDF">🖨 打印</button>
+    <a class="iconbtn home-btn" href="../../index.html" aria-label="返回首页" title="返回首页">🏠 返回首页</a>
+  </div>
+</header>
+
+<!-- ==================== 任务导航卡片 ==================== -->
+<section class="quick-nav" aria-label="任务导航">
+  <a class="entry" href="#c3"><strong>30 分钟入门</strong><small>安装 + 跑出第 1 张图</small><span class="arrow">→</span></a>
+  <button class="entry" id="dramaBtn" type="button"><strong>我想做一集漫剧</strong><small>按 9 个交付物串联章节</small><span class="arrow">→</span></button>
+  <a class="entry" href="#c15"><strong>带着报错来</strong><small>按中文描述定位诊断</small><span class="arrow">→</span></a>
+</section>
+
+<div class="layout">
+<aside id="sidebar" aria-label="章节目录">
+  <div class="progress-label" id="progressLabel">已读 0 / 17 章</div>
+  <h3>1-6 章 · 基础</h3>
+  <ul>
+    <li><a href="#c1">1. ComfyUI 是什么</a></li>
+    <li><a href="#c2">2. 硬件要求</a></li>
+    <li><a href="#c3">3. 安装流程</a></li>
+    <li><a href="#c4">4. 文生图 SDXL</a></li>
+    <li><a href="#c5">5. 图生视频</a></li>
+    <li><a href="#c6">6. 提示词工程</a></li>
+  </ul>
+  <h3>7-9 章 · 进阶</h3>
+  <ul>
+    <li><a href="#c7">7. 角色一致性 5 方案</a></li>
+    <li><a href="#c8">8. LoRA 训练</a></li>
+    <li><a href="#c9">9. IP-Adapter 高级</a></li>
+  </ul>
+  <h3>10-12 章 · 实战</h3>
+  <ul>
+    <li><a href="#c10">10. 30 秒长视频</a></li>
+    <li><a href="#c11">11. 完整漫剧工作流</a></li>
+    <li><a href="#c12">12. 漫剧分镜</a></li>
+  </ul>
+  <h3>13-16 章 · 工具</h3>
+  <ul>
+    <li><a href="#c13">13. 节点大全</a></li>
+    <li><a href="#c14">14. 性能优化</a></li>
+    <li><a href="#c15">15. 故障排除</a></li>
+    <li><a href="#c16">16. 顶级资源池</a></li>
+  </ul>
+  <h3>§ 17 · 顶级视频课路径</h3>
+  <ul>
+    <li><a href="#lvl0">🐣 小白入门</a></li>
+    <li><a href="#lvl1">🌱 入门基础</a></li>
+    <li><a href="#lvl2">🚀 进阶实战</a></li>
+    <li><a href="#lvl3">👑 大神精进</a></li>
+  </ul>
+  <h3>§ 18 · 顶级工作流 JSON</h3>
+  <ul>
+    <li><a href="#c18">🎬 玉哥点名 3 大工作流</a></li>
+    <li><a href="#c18-yuge">📦 cubiq 10 个基础 JSON</a></li>
+    <li><a href="#c18-platform">🌐 工作流平台导航</a></li>
+  </ul>
+</aside>
+
+<main>
+
+<section class="hero">
+  <h1>🎨 ComfyUI 漫剧工作流</h1>
+  <p class="sub">v7.0 原版 · 16 章全流程 + §17 顶级视频课 + §18 顶级工作流 JSON · 2026-09-16 重构</p>
+  <p>本章 = <strong>ComfyUI 学习唯一入口</strong>。<strong>先看 §17 全网顶级视频课路径</strong>(从小白到顶级,4 段路径),再按需翻 1-16 章内容。<strong>§18 顶级工作流 JSON</strong> 点开直达官网,下载 → 拖入 ComfyUI 即跑。<strong>学完这页,不用看任何其他网页了</strong>。</p>
+  <div class="meta">
+    <span class="tag cold">🐣 小白</span>
+    <span class="tag">🌱 入门</span>
+    <span class="tag warm">🚀 进阶</span>
+    <span class="tag god">👑 大神</span>
+    <span class="tag">17 章全流程</span>
+    <span class="tag">50+ 工作流</span>
+    <span class="tag">100+ 节点</span>
+    <span class="tag">✍️ 玉哥</span>
+  </div>
+</section>
+
+<div class="callout info">
+<span class="ico">📚</span>
+<p>本章节已重排:<strong>ComfyUI 主内容 1-16 章按学习顺序</strong>。<strong>全网顶级视频课路径</strong>移至文末 § 17,作为补充资源使用。<strong>v7 升级</strong>:融合原版骨架 + SPA 版精华(主题切换 / 进度 / 任务导航 / 搜索 / 书签)。</p>
+</div>
+
+<!-- ==================== §1 ComfyUI 是什么 ==================== -->
+
+<h2 id="c1">1. ComfyUI 是什么 · 为什么选它</h2>
+
+<div class="callout info">
+  <span class="ico">💡</span>
+  <p><strong>ComfyUI</strong> = <strong>节点式 Stable Diffusion 工作流工具</strong>。把图片生成拆成"模型加载 + 提示词编码 + 采样器 + 解码"等可视化节点,拖拽连线就能跑。<strong>优势</strong>:可复现 / 可批量 / 可集成视频/LoRA/IP-Adapter;比 WebUI 更底层、更强大。</p>
+</div>
+
+<h3>1.1 ComfyUI vs WebUI vs Fooocus 对比</h3>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>维度</th><th>WebUI (A1111)</th><th>ComfyUI</th><th>Fooocus</th></tr></thead>
+<tbody>
+<tr><td>界面</td><td>表单式</td><td>节点式</td><td>表单 + 自动化</td></tr>
+<tr><td>上手难度</td><td>低</td><td>中</td><td>极低</td>
+</tr>
+<tr><td>工作流复用</td><td>差</td><td><strong>强(JSON 一键导入)</strong></td><td>中</td></tr>
+<tr><td>视频/动画</td><td>需插件</td><td><strong>原生支持</strong></td><td>不支持</td></tr>
+<tr><td>角色一致性</td><td>需插件</td><td><strong>原生 IP-Adapter + LoRA</strong></td><td>弱</td></tr>
+<tr><td>适合人群</td><td>新手 / 单图</td><td><strong>短剧/漫剧(必须)</strong></td><td>完全新手</td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- ==================== §2 硬件 ==================== -->
+
+<h2 id="c2">2. 硬件要求</h2>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>预算</th><th>显卡</th><th>VRAM</th><th>能做什么</th></tr></thead>
+<tbody>
+<tr><td>¥0(云端)</td><td>AutoDL / 揽梦星云</td><td>租 4090 ¥2/小时</td><td>短期试水</td></tr>
+<tr><td>¥2000</td><td>RTX 3060 12G</td><td>12 GB</td><td>SDXL / 图生图 / AnimateDiff</td></tr>
+<tr><td>¥4500</td><td>RTX 4070 Ti 12G</td><td>12 GB</td><td>Flux GGUF 量化 / 视频生成</td></tr>
+<tr><td>¥12000</td><td>RTX 4090 24G</td><td>24 GB</td><td>工业化批量产出 / 30 秒长视频</td></tr>
+<tr><td>¥25000</td><td>RTX 5090 32G</td><td>32 GB</td><td>原生 NVFP4 / 4K 60fps</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout tip">
+  <span class="ico">💡</span>
+  <p><strong>漫剧推荐</strong>:<strong>RTX 4070 Ti 12G(¥4500 主流)</strong>跑 Flux 量化 + AnimateDiff + LoRA 训练。<strong>1 万预算</strong>建议云端(¥2/小时 × 100 小时 = ¥200),不投硬件。</p>
+</div>
+
+<!-- ==================== §3 安装 ==================== -->
+
+<h2 id="c3">3. 安装流程(3 种方法)</h2>
+
+<h3>3.1 官方桌面端(推荐小白 · 一键安装)</h3>
+<div class="steps">
+  <div class="step"><div class="n">1</div><h4>下载</h4><p>访问 <a href="https://www.comfy.org/download/" target="_blank" rel="noopener noreferrer">comfy.org/download</a>,下 Windows / Mac 安装包</p></div>
+  <div class="step"><div class="n">2</div><h4>安装</h4><p>双击 .exe,选路径,等 5 分钟</p></div>
+  <div class="step"><div class="n">3</div><h4>启动</h4><p>双击 ComfyUI 桌面图标,浏览器自动开 <a href="http://127.0.0.1:8188" target="_blank" rel="noopener noreferrer">127.0.0.1:8188</a></p></div>
+  <div class="step"><div class="n">4</div><h4>第 1 张图</h4><p>点 "Load Default" → 输入提示词 → "Queue Prompt" → 等 30 秒</p></div>
+</div>
+
+<h3>3.2 Windows 手动(进阶用户)</h3>
+<div class="template"><span class="k"># 推荐用 Pinokio(老用户,更稳定)</span>
+git clone https://github.com/pinokiocomputer/pinokio
+cd pinokio
+pinokio  # 启动 GUI
+<span class="c"># Pinokio GUI → 搜 ComfyUI → 一键安装 + 模型</span></div>
+
+<h3>3.3 Linux / Mac 命令行</h3>
+<div class="template"><span class="k"># Mac (Apple Silicon)</span>
+git clone https://github.com/comfyanonymous/ComfyUI
+cd ComfyUI
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python main.py
+
+<span class="k"># Linux (NVIDIA)</span>
+git clone https://github.com/comfyanonymous/ComfyUI
+cd ComfyUI
+python3 -m venv venv
+source venv/bin/activate
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+pip install -r requirements.txt
+python main.py</div>
+
+<!-- ==================== §4 文生图 ==================== -->
+
+<h2 id="c4">4. 基础 1:文生图工作流(SDXL)</h2>
+
+<p><strong>核心</strong>:5 节点 = Checkpoint 加载 + CLIP Text Encode × 2 + KSampler + VAE Decode → Save Image。</p>
+
+<div class="template"><span class="k">[ComfyUI 默认工作流节点树]</span>
+
+<span class="v">CheckpointLoaderSimple</span>  → <span class="v">CLIPTextEncodeSDXL</span> (positive)
+                ↓
+          <span class="v">KSampler</span> ←  ←  <span class="v">CLIPTextEncodeSDXL</span> (negative)
+                ↓
+          <span class="v">VAEDecode</span> → <span class="v">SaveImage</span>
+
+<span class="c"># 关键参数</span>
+steps: 20-30  |  cfg: 7-8  |  sampler: euler_ancestral
+denoise: 1.0  |  size: 1024x1024  |  batch_size: 4</div>
+
+<h3>4.1 推荐 SDXL 模型(2026 主流)</h3>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>模型</th><th>大小</th><th>特长</th><th>下载</th></tr></thead>
+<tbody>
+<tr><td>SDXL Base 1.0</td><td>6.9 GB</td><td>通用基础</td><td><a href="https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0" target="_blank" rel="noopener noreferrer">HuggingFace</a></td></tr>
+<tr><td>Juggernaut XL v9</td><td>6.9 GB</td><td>写实人像</td><td><a href="https://civitai.com/models/133005" target="_blank" rel="noopener noreferrer">Civitai</a></td></tr>
+<tr><td>RealVisXL V4.0</td><td>6.9 GB</td><td>真人/电影感</td><td><a href="https://civitai.com/models/139562" target="_blank" rel="noopener noreferrer">Civitai</a></td></tr>
+<tr><td>DynaVision XL</td><td>6.9 GB</td><td>动漫</td><td><a href="https://civitai.com/models/122606" target="_blank" rel="noopener noreferrer">Civitai</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- ==================== §5 图生视频 ==================== -->
+
+<h2 id="c5">5. 基础 2:图生视频(AnimateDiff / SVD / LTX)</h2>
+
+<p><strong>2026 H1 主流 4 大方案</strong>:</p>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>方案</th><th>公司</th><th>开源</th><th>时长</th><th>画质</th><th>速度</th></tr></thead>
+<tbody>
+<tr><td><strong>AnimateDiff</strong></td><td>社区</td><td>✅ MIT</td><td>2-4 秒</td><td>中等</td><td>快</td></tr>
+<tr><td><strong>Stable Video Diffusion(SVD)</strong></td><td>Stability</td><td>✅ 有限</td><td>2-4 秒</td><td>高</td><td>中</td></tr>
+<tr><td><strong>LTX-Video 2.3</strong></td><td>Lightricks</td><td>✅</td><td><strong>30-50 秒</strong></td><td>4K 50fps</td><td>中</td></tr>
+<tr><td><strong>CogVideoX</strong></td><td>智谱</td><td>✅ Apache</td><td>5-10 秒</td><td>高</td><td>中</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>5.1 AnimateDiff 节点工作流(开源免费)</h3>
+<div class="template"><span class="k">[AnimateDiff 漫剧节点树]</span>
+
+<span class="v">CheckpointLoaderSimple</span>(SD 1.5)
+  ↓
+<span class="v">ADE_LoadAnimateDiffModel</span>(mm_sd15_v3.ckpt)
+  ↓
+<span class="v">CLIPTextEncode</span> (motion module)
+  ↓
+<span class="v">KSampler</span> (frames=16, steps=12, denoise=1.0)
+  ↓
+<span class="v">VAEDecode</span>
+  ↓
+<span class="v">VideoCombine</span> (fps=8, format=gif/mp4)
+
+<span class="c"># 提示词模板</span>
+masterpiece, best quality, {场景}, {动作},
+smooth motion, consistent character</div>
+
+<!-- ==================== §6 提示词 ==================== -->
+
+<h2 id="c6">6. 基础 3:提示词工程</h2>
+
+<h3>6.1 提示词结构(权重顺序)</h3>
+<div class="template">质量词(20%) + 主体(40%) + 细节(20%) + 风格(10%) + 负面词
+
+<span class="k">正例(漫剧女角色)</span>:
+masterpiece, best quality, ultra-detailed, 
+1girl, 25 years old, long black hair, school uniform, 
+standing in classroom, looking at camera, slight smile,
+soft lighting, cinematic composition,
+<span class="c"># 负面词</span>
+ugly, blurry, lowres, bad anatomy, extra fingers,
+watermark, text, deformed</div>
+
+<h3>6.2 权重语法</h3>
+<div class="template">(keyword:1.5)   <span class="c"># 权重提升 50%</span>
+[keyword1:keyword2:0.3]  <span class="c"># 0.3-1.0 之间过渡</span>
+AND / BREAK  <span class="c"># 分段控制</span>
+[red:blue:0.5]  <span class="c"># 50% 红 + 50% 蓝混合</span></div>
+
+<!-- ==================== §7 角色一致性 ==================== -->
+
+<h2 id="c7">7. 进阶 1:角色一致性 · 5 大方案</h2>
+
+<p><strong>核心</strong>:AI 漫剧最大难点 = 同一角色 30 集中长相一致。<strong>5 大方案按成本递增</strong>:</p>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>方案</th><th>原理</th><th>工具</th><th>成本</th><th>效果</th></tr></thead>
+<tbody>
+<tr><td>① IP-Adapter</td><td>用参考图控制</td><td>ComfyUI + IP-Adapter</td><td>¥0</td><td>70% 一致(够用)</td></tr>
+<tr><td>② IP-Adapter + 参考图</td><td>高质量参考图 + 多角度</td><td>IP-Adapter Plus</td><td>¥0</td><td>80% 一致</td></tr>
+<tr><td>③ IP-Adapter Face ID</td><td>面部 ID 提取</td><td>IP-Adapter FaceID</td><td>¥0</td><td>85% 一致</td></tr>
+<tr><td>④ LoRA 训练</td><td>20-50 张图学角色</td><td>ComfyUI + Kohya</td><td>¥0(算力费)</td><td>90% 一致</td></tr>
+<tr><td>⑤ InstantID / PulID</td><td>商业级换脸</td><td>InstantID / PulID</td><td>¥0</td><td>95% 一致</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>7.1 方案 2:IP-Adapter + 参考图(漫剧主流)</h3>
+<div class="template"><span class="k">[IP-Adapter 漫剧节点树]</span>
+
+<span class="v">LoadImage</span>(角色参考图)
+  ↓
+<span class="v">IPAdapterUnifiedLoader</span>(plus face)
+  ↓
+<span class="v">CLIPTextEncode</span> (新场景)
+  ↓
+<span class="v">KSampler</span>(weight=0.8, denoise=0.6)
+  ↓
+<span class="v">VAEDecode</span> → <span class="v">SaveImage</span>
+
+<span class="c"># 关键参数</span>
+weight: 0.7-0.8  <span class="c"># 太大变形,太小不一致</span>
+weight_type: linear  <span class="c"># 比 cosine 更稳</span>
+start_at: 0.0  end_at: 0.8  <span class="c"># 80% 步数控制,留 20% 自由发挥</span></div>
+
+<h3>7.2 方案 3:IP-Adapter Face ID(更专业)</h3>
+<p>提取面部 ID 而非整图。<strong>优点</strong>:不受服装/姿势影响,只锁脸。<strong>缺点</strong>:需装 InsightFace + buffalo_l 模型。</p>
+
+<!-- ==================== §8 LoRA ==================== -->
+
+<h2 id="c8">8. 进阶 2:LoRA 训练(角色专属)</h2>
+
+<h3>8.1 LoRA 训练硬件要求</h3>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>角色 LoRA 规模</th><th>推荐 VRAM</th><th>训练时长</th></tr></thead>
+<tbody>
+<tr><td>20 张图(简)</td><td>8 GB</td><td>30 分钟</td></tr>
+<tr><td>30-50 张图(标准)</td><td>12 GB</td><td>1-2 小时</td></tr>
+<tr><td>100+ 张图(精)</td><td>24 GB</td><td>3-4 小时</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>8.2 数据集准备(关键)</h3>
+<div class="callout warn">
+  <span class="ico">⚠️</span>
+  <p><strong>数据集质量决定 LoRA 质量</strong>。<strong>规则</strong>:① 20+ 张不同角度/表情/服装;② <strong>背景纯色或干净</strong>(避免学习背景);③ 图片 ≥ 1024×1024;④ 命名用触发词(例如"ych_")。</p>
+</div>
+
+<h3>8.3 训练参数(标准)</h3>
+<div class="template"><span class="k">[Kohya GUI 训练参数(SDXL LoRA)]</span>
+pretrained_model: stabilityai/stable-diffusion-xl-base-1.0
+output_dir: ./output/ych_lora/
+resolution: 1024
+train_batch_size: 4
+num_epochs: 10
+learning_rate: 1e-4
+lr_scheduler: cosine
+network_rank: 32  <span class="c"># 32-64 平衡容量和速度</span>
+network_alpha: 16
+save_every_n_epochs: 2
+mixed_precision: fp16</div>
+
+<h3>8.4 训练流程 5 步</h3>
+<ol>
+  <li><strong>打标</strong>:用 JoyCaption2/BLIP 自动生成每张图描述</li>
+  <li><strong>配置</strong>:Kohya GUI 填好参数</li>
+  <li><strong>训练</strong>:跑 1-2 小时</li>
+  <li><strong>测试</strong>:用 ComfyUI 加载 LoRA,出 5 张图对比</li>
+  <li><strong>微调</strong>:效果不好改参数再训</li>
+</ol>
+
+<!-- ==================== §9 IP-Adapter 高级 ==================== -->
+
+<h2 id="c9">9. 进阶 3:IP-Adapter 高级用法</h2>
+
+<h3>9.1 多人角色场景(双 IP-Adapter)</h3>
+<p>两张参考图,每张对应一个角色。<strong>关键</strong>:用 <code>IPAdapterRegional</code> 节点 + 遮罩控制角色区域。</p>
+
+<h3>9.2 角色姿态控制(IP-Adapter + ControlNet)</h3>
+<div class="template"><span class="k">[角色姿态控制节点树]</span>
+
+<span class="v">LoadImage</span>(参考姿势图)
+  ↓
+<span class="v">DWPoseEstimator</span>  →  <span class="v">ControlNetApply</span>
+  ↓                                       ↓
+<span class="v">IPAdapterUnifiedLoader</span>  <span class="v">KSampler</span>
+  ↓
+<span class="v">CLIPTextEncode</span>
+  ↓
+<span class="v">KSampler</span> (combined)
+  ↓
+<span class="v">VAEDecode</span> → <span class="v">SaveImage</span></div>
+
+<!-- ==================== §10 30 秒长视频 ==================== -->
+
+<h2 id="c10">10. 实战 1:30 秒长视频生成(LTX 2.3 风格)</h2>
+
+<p>传统 AnimateDiff/SVD 只能 2-4 秒。<strong>2026 主流:LTX 2.3(30-50 秒,4K 50fps)</strong>。</p>
+
+<div class="template"><span class="k">[LTX 2.3 长视频节点树]</span>
+
+<span class="v">CheckpointLoaderSimple</span>(ltx-video-2b-v0.9.5.safetensors)
+  ↓
+<span class="v">CLIPTextEncode</span> (长镜头描述)
+  ↓
+<span class="v">LTXVScheduler</span> (frames=120, fps=24)
+  ↓
+<span class="v">KSampler</span> (steps=30, cfg=3.5)
+  ↓
+<span class="v">VAEDecodeTiled</span>  <span class="c"># 必须 tiled,否则 OOM</span>
+  ↓
+<span class="v">VideoCombine</span> (fps=24, format=mp4)
+
+<span class="c"># 关键</span>
+frames=120 = 5 秒(24fps) | frames=720 = 30 秒
+LTX GGUF 量化版 8GB VRAM 可跑!</div>
+
+<!-- ==================== §11 完整工作流 ==================== -->
+
+<h2 id="c11">11. 实战 2:完整漫剧工作流 JSON</h2>
+
+<p>本章最核心的实战。<strong>完整 5 步工作流</strong>从分镜到成片:</p>
+
+<div class="steps">
+  <div class="step"><div class="n">1</div><h4>分镜生成</h4><p>LLM(ChatGPT/Claude)把 1 集剧本拆成 8-12 镜(景别+运镜+台词)</p></div>
+  <div class="step"><div class="n">2</div><h4>关键帧出图</h4><p>ComfyUI IP-Adapter 出每镜主视觉(用角色 LoRA)</p></div>
+  <div class="step"><div class="n">3</div><h4>首尾帧 → 长视频</h4><p>LTX 2.3 / 海螺 / Runway 生成 5-15 秒视频</p></div>
+  <div class="step"><div class="n">4</div><h4>配音 + 字幕</h4><p>ElevenLabs 配音 + 剪映自动字幕</p></div>
+  <div class="step"><div class="n">5</div><h4>合成 + 导出</h4><p>剪映拼接 + 转场 + BGM + 导出 1080p mp4</p></div>
+</div>
+
+<div class="callout purple">
+  <span class="ico">📋</span>
+  <p><strong>完整工作流 JSON</strong>:打开 <a href="https://openart.ai/workflows" target="_blank" rel="noopener noreferrer">openart.ai/workflows</a> 搜"ComfyUI 漫剧"或"ComfyUI 短剧",下载 .json 直接拖到 ComfyUI 跑。<strong>推荐 3 个工作流</strong>:① ComfyUI 官方 AI 短剧模板 ② OpenArt "Text-to-Image MVP" ③ Pixlr "Short Drama Pipeline"。</p>
+</div>
+
+<!-- ==================== §12 分镜 ==================== -->
+
+<h2 id="c12">12. 实战 3:漫剧分镜生成完整流程</h2>
+
+<h3>12.1 9 宫格分镜(漫剧核心)</h3>
+<p>1 集拆 8-12 镜,每镜 1 个 9 宫格(9 个候选帧),选 1 个主帧。<strong>节省 70% 出图时间</strong>。</p>
+
+<h3>12.2 景别 + 运镜速查</h3>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>景别</th><th>用途</th><th>提示词</th></tr></thead>
+<tbody>
+<tr><td>全景(establishing)</td><td>开场定调</td><td>wide shot, full body, scene</td></tr>
+<tr><td>中景(medium)</td><td>人物对话</td><td>medium shot, upper body</td></tr>
+<tr><td>近景(close-up)</td><td>情绪特写</td><td>close-up, face only</td></tr>
+<tr><td>特写(extreme close-up)</td><td>关键道具</td><td>extreme close-up, detail</td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- ==================== §13 节点大全 ==================== -->
+
+<h2 id="c13">13. ComfyUI 节点大全(2026 主流 50+)</h2>
+
+<p><strong>核心节点按功能分 5 类</strong>。学员不需要全记住,需要时回来查。</p>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>类别</th><th>节点</th><th>作用</th></tr></thead>
+<tbody>
+<tr><td rowspan="6">模型加载</td><td>CheckpointLoaderSimple</td><td>加载 SD/SDXL/Flux 模型</td></tr>
+<tr><td>VAELoader</td><td>加载 VAE(图像解码器)</td></tr>
+<tr><td>LoraLoader</td><td>加载 LoRA</td></tr>
+<tr><td>UpscaleModelLoader</td><td>加载放大模型</td></tr>
+<tr><td>ControlNetLoader</td><td>加载 ControlNet</td></tr>
+<tr><td>ADE_LoadAnimateDiffModel</td><td>加载 AnimateDiff 模块</td></tr>
+<tr><td rowspan="4">提示词</td><td>CLIPTextEncode</td><td>提示词编码</td></tr>
+<tr><td>CLIPTextEncodeSDXL</td><td>SDXL 双编码</td></tr>
+<tr><td>CLIPSetLastLayer</td><td>设置 CLIP 停止层</td></tr>
+<tr><td>PromptSR / JoyCaption</td><td>自动反推 / 提示词优化</td></tr>
+<tr><td rowspan="5">采样 / 解码</td><td>KSampler</td><td>核心采样器</td></tr>
+<tr><td>KSamplerAdvanced</td><td>高级采样器(start/end step)</td></tr>
+<tr><td>VAEDecode / VAEEncode</td><td>图像/潜空间转换</td></tr>
+<tr><td>VAEDecodeTiled</td><td>分块解码(防 OOM)</td></tr>
+<tr><td>LatentRotate / Flip</td><td>潜空间旋转翻转</td></tr>
+<tr><td rowspan="4">图像处理</td><td>ImageScale</td><td>缩放</td></tr>
+<tr><td>ImageCrop / Pad</td><td>裁剪 / 填充</td></tr>
+<tr><td>ImageCompositeMasked</td><td>遮罩合成</td></tr>
+<tr><td>ImageBlend / MaskBlur</td><td>混合 / 模糊</td></tr>
+<tr><td rowspan="5">控制 / 条件</td><td>ControlNetApply</td><td>应用 ControlNet</td></tr>
+<tr><td>IPAdapterUnifiedLoader</td><td>加载 IP-Adapter</td></tr>
+<tr><td>IPAdapterApply</td><td>应用 IP-Adapter</td></tr>
+<tr><td>IPAdapterFaceID</td><td>Face ID 模式</td></tr>
+<tr><td>IPAdapterRegional</td><td>区域 IP-Adapter</td></tr>
+<tr><td rowspan="4">保存 / 输出</td><td>SaveImage</td><td>保存单图</td></tr>
+<tr><td>PreviewImage</td><td>预览(不保存)</td></tr>
+<tr><td>SaveAnimatedWEBP / PNG</td><td>保存动画</td></tr>
+<tr><td>VideoCombine</td><td>合成视频</td></tr>
+<tr><td rowspan="4">逻辑 / 工具</td><td>Reroute / RerouteList</td><td>整理连线路径</td></tr>
+<tr><td>Math / String / Primitive</td><td>数学/字符串/常量</td></tr>
+<tr><td>If / Else / Switch</td><td>条件分支</td></tr>
+<tr><td>Loop / Batch</td><td>循环 / 批量</td></tr>
+<tr><td rowspan="3">视频专项</td><td>LoadVideo / SaveVideo</td><td>视频读写</td></tr>
+<tr><td>VideoFrameIterator</td><td>逐帧处理</td></tr>
+<tr><td>LTXVSampler / AnimateDiff</td><td>长视频采样</td></tr>
+<tr><td rowspan="3">人脸专项</td><td>FaceDetect / FaceRestore</td><td>检测/修复</td></tr>
+<tr><td>ReActor / InstantID</td><td>换脸</td></tr>
+<tr><td>IPAdapterFaceID</td><td>面部 ID 提取</td></tr>
+<tr><td rowspan="3">LoRA / 模型管理</td><td>ComfyUI-Manager</td><td>必备节点管理器</td></tr>
+<tr><td>ModelDownloader</td><td>一键下模型</td></tr>
+<tr><td>Efficiency Nodes</td><td>效率提升</td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- ==================== §14 性能优化 ==================== -->
+
+<h2 id="c14">14. 性能优化技巧</h2>
+
+<div class="callout tip">
+  <span class="ico">⚡</span>
+  <p><strong>10 个实测优化</strong>:<br>
+  ① <strong>FP8/GGUF 量化</strong> — 大模型显存减半<br>
+  ② <strong>VAE Tiled</strong> — 防止 OOM<br>
+  ③ <strong>Batch Size</strong> — 一次跑 4 张,GPU 利用率提升<br>
+  ④ <strong>关闭预览</strong> — Preview 节点拖到 disable<br>
+  ⑤ <strong>xFormers / SDPA</strong> — 加速 attention<br>
+  ⑥ <strong>卸载模型</strong> — ModelMerge / FreeU<br>
+  ⑦ <strong>CFG 适中</strong> — 7-8 不要 12+<br>
+  ⑧ <strong>Steps 控制</strong> — 20-30 步够用<br>
+  ⑨ <strong>缓存 LoRA</strong> — 同 LoRA 不重复加载<br>
+  ⑩ <strong>RTX 50 系列开 NVFP4</strong> — 4 倍加速</p>
+</div>
+
+<!-- ==================== §15 故障 ==================== -->
+
+<h2 id="c15">15. 常见故障排除(7 大类)</h2>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>故障</th><th>原因</th><th>解决</th></tr></thead>
+<tbody>
+<tr><td>黑屏 / 没反应</td><td>浏览器缓存</td><td>Ctrl+Shift+R 硬刷新 / 换 Chrome</td></tr>
+<tr><td>CUDA Out of Memory</td><td>VRAM 不足</td><td>降低 batch / 启用 VAE Tiled / 量化</td></tr>
+<tr><td>模型加载失败</td><td>路径错</td><td>放 ComfyUI/models/checkpoints/</td></tr>
+<tr><td>插件冲突</td><td>版本不兼容</td><td>ComfyUI-Manager → Install Missing → 重启</td></tr>
+<tr><td>出图全黑/全噪</td><td>采样器错</td><td>换 euler_ancestral 或 dpmpp_2m</td></tr>
+<tr><td>提示词不生效</td><td>CLIP 错</td><td>检查 SDXL 双 CLIP 设置</td></tr>
+<tr><td>视频生成失败</td><td>显存爆</td><td>用 LTX GGUF 量化版 / 减少 frames</td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- ==================== §16 顶级资源池 ==================== -->
+
+<h2 id="c16">16. 顶级资源池(全网汇总)</h2>
+
+<p>ComfyUI 是开源生态,资源极丰富。<strong>学员不用到处找,这里都列了</strong>。</p>
+
+<h3>16.1 官方 / 文档</h3>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>资源</th><th>链接</th><th>说明</th></tr></thead>
+<tbody>
+<tr><td>ComfyUI 官方文档(中文)</td><td><a href="https://www.comfyuidoc.com/zh/" target="_blank" rel="noopener noreferrer">comfyuidoc.com/zh/</a></td><td>必看入门 + 节点大全</td></tr>
+<tr><td>ComfyUI GitHub</td><td><a href="https://github.com/comfyanonymous/ComfyUI" target="_blank" rel="noopener noreferrer">github.com/comfyanonymous/ComfyUI</a></td><td>源码 + Issue</td></tr>
+<tr><td>ComfyUI 官方桌面端</td><td><a href="https://www.comfy.org/download/" target="_blank" rel="noopener noreferrer">comfy.org/download</a></td><td>一键安装包</td></tr>
+<tr><td>ComfyUI Wiki</td><td><a href="https://comfyui-wiki.com/en" target="_blank" rel="noopener noreferrer">comfyui-wiki.com</a></td><td>节点库 + 教程</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>16.2 工作流分享平台</h3>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>平台</th><th>链接</th><th>特长</th></tr></thead>
+<tbody>
+<tr><td>OpenArt</td><td><a href="https://openart.ai/workflows" target="_blank" rel="noopener noreferrer">openart.ai/workflows</a></td><td>ComfyUI 工作流最全</td></tr>
+<tr><td>Civitai</td><td><a href="https://civitai.com/models?types=CHECKPOINT" target="_blank" rel="noopener noreferrer">civitai.com</a></td><td>模型 + LoRA + 工作流</td></tr>
+<tr><td>ComfyUI Workflows(官方)</td><td><a href="https://comfy.org/workflows" target="_blank" rel="noopener noreferrer">comfy.org/workflows</a></td><td>官方精选</td></tr>
+<tr><td>Hugging Face</td><td><a href="https://huggingface.co/models" target="_blank" rel="noopener noreferrer">huggingface.co</a></td><td>模型 + Space 在线跑</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>16.3 模型下载源</h3>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>站点</th><th>特长</th></tr></thead>
+<tbody>
+<tr><td><a href="https://huggingface.co/models" target="_blank" rel="noopener">🤗 HuggingFace</a></td><td>官方 / 学术 / 最全</td></tr>
+<tr><td><a href="https://civitai.com/models" target="_blank" rel="noopener">🎨 Civitai</a></td><td>社区 / LoRA / 风格化</td></tr>
+<tr><td><a href="https://www.modelscope.cn/models" target="_blank" rel="noopener">🇨🇳 魔搭(ModelScope)</a></td><td>国内镜像 / 速度快</td></tr>
+<tr><td><a href="https://www.lanmeng.cloud/" target="_blank" rel="noopener">⭐ 揽梦星云</a></td><td>国内 / ComfyUI 模型包</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>16.4 必备插件</h3>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>插件</th><th>作用</th></tr></thead>
+<tbody>
+<tr><td><a href="https://github.com/Comfy-Org/ComfyUI-Manager" target="_blank" rel="noopener">ComfyUI-Manager</a></td><td>节点管理器(必装)</td></tr>
+<tr><td><a href="https://github.com/ltdrdata/ComfyUI-Impact-Pack" target="_blank" rel="noopener">ComfyUI-Impact-Pack</a></td><td>面部检测 / 修复</td></tr>
+<tr><td><a href="https://github.com/cubiq/ComfyUI_IPAdapter" target="_blank" rel="noopener">ComfyUI-IPAdapter</a></td><td>角色一致性</td></tr>
+<tr><td><a href="https://github.com/Fannovel16/comfy_controlnet_preprocessors" target="_blank" rel="noopener">ComfyUI-ControlNet-Aux</a></td><td>ControlNet 预处理器</td></tr>
+<tr><td><a href="https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet" target="_blank" rel="noopener">ComfyUI-Advanced-ControlNet</a></td><td>高级 ControlNet</td></tr>
+<tr><td><a href="https://github.com/Kosinkadink/ComfyUI-Animatediff-Evolved" target="_blank" rel="noopener">ComfyUI-AnimateDiff-Evolved</a></td><td>动画视频</td></tr>
+<tr><td><a href="https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite" target="_blank" rel="noopener">ComfyUI-VideoHelperSuite</a></td><td>视频读写</td></tr>
+<tr><td><a href="https://github.com/kijai/ComfyUI-KJNodes" target="_blank" rel="noopener">ComfyUI-KJNodes</a></td><td>杂项工具节点</td></tr>
+<tr><td><a href="https://github.com/ltdrdata/ComfyUI-Inspire-Pack" target="_blank" rel="noopener">ComfyUI-Inspire-Pack</a></td><td>效率提升</td></tr>
+<tr><td><a href="https://github.com/city96/ComfyUI-GGUF" target="_blank" rel="noopener">ComfyUI-gguf</a></td><td>GGUF 量化支持</td></tr>
+</tbody>
+</table>
+</div>
+
+
+<!-- ==================== §17 顶级视频课 ==================== -->
+
+<h2 id="c17">§ 17 · 全网顶级 ComfyUI 视频课路径(2026-09 校验)</h2>
+
+<div class="callout purple">
+  <span class="ico">💎</span>
+  <p><strong>理念</strong>:ComfyUI <strong>必须配合视频课学</strong>(工具太复杂,纯文字学不会)。本章精选<strong>全网最顶级免费视频课</strong>18 个,按 4 段路径排列。<strong>学员按自己段位挑课</strong>,不要全看。</p>
+</div>
+
+<!-- 阶段筛选(JS 切换 / 默认全显示)-->
+<div class="stage-filter" id="stageFilter">
+  <span class="pill active" data-stage="all">全部 (18)</span>
+  <span class="pill" data-stage="0">🐣 小白 (5)</span>
+  <span class="pill" data-stage="1">🌱 入门 (4)</span>
+  <span class="pill" data-stage="2">🚀 进阶 (5)</span>
+  <span class="pill" data-stage="3">👑 大神 (4)</span>
+  <span class="filter-count">点 tab 切换 · 玉哥 18 课精选</span>
+</div>
+
+<!-- 0.1 小白 -->
+<div class="stage-card" id="lvl0" data-stage="0">
+  <div class="stage-head">
+    <span class="stage-icon">🐣</span>
+    <h3>0.1 小白 · 从没碰过 ComfyUI</h3>
+    <span class="stage-target">30 分钟装好 + 跑出第 1 张图</span>
+  </div>
+  <div class="stage-desc"><strong>目标</strong>:用 5 课从 0 跑通 <strong>安装 → 第 1 张图 → 第 1 个工作流</strong>。看完能独立跑图。</div>
+  <div class="course-mini">
+    <a class="cm" href="https://www.bilibili.com/video/BV1D7421N7xN/" target="_blank" rel="noopener noreferrer">
+      <div class="cm-title">ComfyUI 入门教程</div>
+      <div class="cm-meta"><span class="bdg bz">B 站</span><span>NENLY 同学</span><span class="bdg">1-2 小时</span></div>
+      <span class="cm-link">观看</span>
+    </a>
+    <a class="cm" href="https://search.bilibili.com/all?keyword=%E7%A7%8B%E5%8F%B6%20ComfyUI%20%E9%9B%B6%E5%9F%BA%E7%A1%80" target="_blank" rel="noopener noreferrer">
+      <div class="cm-title">ComfyUI 零基础入门全解</div>
+      <div class="cm-meta"><span class="bdg bz">B 站</span><span>秋叶 aaaki</span><span class="bdg">3-4 小时</span></div>
+      <span class="cm-link">观看</span>
+    </a>
+    <a class="cm" href="https://search.bilibili.com/all?keyword=Jay%20ComfyUI%20%E5%AE%98%E6%96%B9%E6%A1%8C%E9%9D%A2%E7%AB%AF" target="_blank" rel="noopener noreferrer">
+      <div class="cm-title">ComfyUI 官方桌面端安装</div>
+      <div class="cm-meta"><span class="bdg bz">B 站</span><span>AI 小王子 Jay</span><span class="bdg">1 集</span></div>
+      <span class="cm-link">观看</span>
+    </a>
+    <a class="cm" href="https://www.youtube.com/results?search_query=developedbyed+comfyui+crash+course" target="_blank" rel="noopener noreferrer">
+      <div class="cm-title">ComfyUI Crash Course For Beginners</div>
+      <div class="cm-meta"><span class="bdg yt">YouTube</span><span>developedbyed</span><span class="bdg">30 分钟</span><span class="bdg">933K</span></div>
+      <span class="cm-link">观看</span>
+    </a>
+    <a class="cm" href="https://www.youtube.com/results?search_query=Kevin+Stratvert+ComfyUI" target="_blank" rel="noopener noreferrer">
+      <div class="cm-title">How to Use ComfyUI Step-by-Step</div>
+      <div class="cm-meta"><span class="bdg yt">YouTube</span><span>Kevin Stratvert</span><span class="bdg">1 小时</span><span class="bdg">4.4M</span></div>
+      <span class="cm-link">观看</span>
+    </a>
+  </div>
+</div>
+
+<!-- 0.0 小白 -->
+<div class="stage-card" id="lvl1" data-stage="1">
+  <div class="stage-head">
+    <span class="stage-icon">🌱</span>
+    <h3>0.2 入门 · 会文生图,想学图生图</h3>
+    <span class="stage-target">做出第 1 部 10 秒 AI 漫剧短片</span>
+  </div>
+  <div class="stage-desc"><strong>目标</strong>:用 4 课掌握 <strong>自定义节点 + 工作流拆解 + 提示词 + Flux 安装</strong>。</div>
+  <div class="course-mini">
+    <a class="cm" href="https://www.bilibili.com/video/BV1pZ421b7t7/" target="_blank" rel="noopener noreferrer">
+      <div class="cm-title">ComfyUI 自定义节点的秘密</div>
+      <div class="cm-meta"><span class="bdg bz">B 站</span><span>NENLY 同学</span><span class="bdg">1 小时</span></div>
+      <span class="cm-link">观看</span>
+    </a>
+    <a class="cm" href="https://www.bilibili.com/video/BV1ab42187er/" target="_blank" rel="noopener noreferrer">
+      <div class="cm-title">拆解 ComfyUI 工作流</div>
+      <div class="cm-meta"><span class="bdg bz">B 站</span><span>NENLY 同学</span><span class="bdg">1.5 小时</span></div>
+      <span class="cm-link">观看</span>
+    </a>
+    <a class="cm" href="https://search.bilibili.com/all?keyword=Nenly%20%E6%8F%90%E7%A4%BA%E8%AF%8D%E7%82%BC%E9%87%91" target="_blank" rel="noopener noreferrer">
+      <div class="cm-title">SD 提示词炼金术</div>
+      <div class="cm-meta"><span class="bdg bz">B 站</span><span>Nenly 同学</span><span class="bdg">3-5 小时</span></div>
+      <span class="cm-link">观看</span>
+    </a>
+    <a class="cm" href="https://www.youtube.com/results?search_query=ComfyUI+Flux.1+installation+tutorial" target="_blank" rel="noopener noreferrer">
+      <div class="cm-title">ComfyUI With Flux.1 Detailed Installation</div>
+      <div class="cm-meta"><span class="bdg yt">YouTube</span><span>Next Tech and AI</span><span class="bdg">38 分钟</span><span class="bdg">33K</span></div>
+      <span class="cm-link">观看</span>
+    </a>
+  </div>
+</div>
+
+<!-- 0.3 进阶 -->
+<div class="stage-card" id="lvl2" data-stage="2">
+  <div class="stage-head">
+    <span class="stage-icon">🚀</span>
+    <h3>0.3 进阶 · 熟练文生图,学角色一致性 / LoRA</h3>
+    <span class="stage-target">30 集 AI 漫剧 + 角色跨集一致</span>
+  </div>
+  <div class="stage-desc"><strong>目标</strong>:5 课覆盖 <strong>影视级工作流 + LoRA 训练 + ControlNet + IP-Adapter + 系统课</strong>。</div>
+  <div class="course-mini">
+    <a class="cm" href="https://ke.qq.com/course/package/CG" target="_blank" rel="noopener noreferrer">
+      <div class="cm-title">ComfyUI 影视级工作流</div>
+      <div class="cm-meta"><span class="bdg tt">腾讯课堂</span><span>CG 艺术家联盟</span><span class="bdg">8-12 小时</span></div>
+      <span class="cm-link">观看</span>
+    </a>
+    <a class="cm" href="https://search.bilibili.com/all?keyword=Jay%20ComfyUI%20LoRA%20%E8%AE%AD%E7%BB%83" target="_blank" rel="noopener noreferrer">
+      <div class="cm-title">LoRA 训练:数据集 + 训练器 + 参数</div>
+      <div class="cm-meta"><span class="bdg bz">B 站</span><span>AI 小王子 Jay</span><span class="bdg">3 集</span></div>
+      <span class="cm-link">观看</span>
+    </a>
+    <a class="cm" href="https://www.youtube.com/results?search_query=Master+ControlNet+FLUX+SDXL+ComfyUI" target="_blank" rel="noopener noreferrer">
+      <div class="cm-title">Master ControlNet FLUX & SDXL</div>
+      <div class="cm-meta"><span class="bdg yt">YouTube</span><span>Next Tech and AI</span><span class="bdg">25 分钟</span></div>
+      <span class="cm-link">观看</span>
+    </a>
+    <a class="cm" href="https://www.youtube.com/results?search_query=IP-Adapter+Face+Swap+ControlNet+ComfyUI" target="_blank" rel="noopener noreferrer">
+      <div class="cm-title">Master Face Swap & Pose Mimicry IP-Adapter v2</div>
+      <div class="cm-meta"><span class="bdg yt">YouTube</span><span>JarvisLabs AI</span><span class="bdg">16 分钟</span></div>
+      <span class="cm-link">观看</span>
+    </a>
+    <a class="cm" href="https://search.bilibili.com/all?keyword=CG%E8%BF%B7%E6%9D%8E%E8%BE%B0%20ComfyUI" target="_blank" rel="noopener noreferrer">
+      <div class="cm-title">CG 迷李辰 · 全面掌握 Comfyui 系统教程</div>
+      <div class="cm-meta"><span class="bdg bz">B 站</span><span>CG 迷李辰</span><span class="bdg">40+ 集</span></div>
+      <span class="cm-link">观看</span>
+    </a>
+  </div>
+</div>
+
+<!-- 0.4 大神 -->
+<div class="stage-card" id="lvl3" data-stage="3">
+  <div class="stage-head">
+    <span class="stage-icon">👑</span>
+    <h3>0.4 大神 · 30 秒+ 长视频 / 矩阵化 / 自定义节点</h3>
+    <span class="stage-target">工业化批量 + 商业化变现</span>
+  </div>
+  <div class="stage-desc"><strong>目标</strong>:4 课冲击 <strong>系统课全程陪跑 + LoRA 精通 + 商业变现 + 长视频 4K</strong>。</div>
+  <div class="course-mini">
+    <a class="cm" href="https://search.bilibili.com/all?keyword=AI%E5%B0%8F%E7%8E%8B%E5%AD%90%20Jay%20ComfyUI" target="_blank" rel="noopener noreferrer">
+      <div class="cm-title">AI 小王子 Jay · 77 课系统课全程陪跑</div>
+      <div class="cm-meta"><span class="bdg bz">B 站</span><span>AI 小王子 Jay</span><span class="bdg">77 集</span></div>
+      <span class="cm-link">观看</span>
+    </a>
+    <a class="cm" href="https://www.youtube.com/results?search_query=DreamingAI+Mastering+ComfyUI+LoRA" target="_blank" rel="noopener noreferrer">
+      <div class="cm-title">Mastering ComfyUI: Embedding, LoRA & Hypernetworks</div>
+      <div class="cm-meta"><span class="bdg yt">YouTube</span><span>DreamingAI</span><span class="bdg">1 小时</span><span class="bdg">65K</span></div>
+      <span class="cm-link">观看</span>
+    </a>
+    <a class="cm" href="https://www.youtube.com/results?search_query=AI+Jason+ComfyUI+E-commerce" target="_blank" rel="noopener noreferrer">
+      <div class="cm-title">From $0 to $4m with just 2 people(ComfyUI E-commerce)</div>
+      <div class="cm-meta"><span class="bdg yt">YouTube</span><span>AI Jason</span><span class="bdg">28 分钟</span><span class="bdg">67K</span></div>
+      <span class="cm-link">观看</span>
+    </a>
+    <a class="cm" href="https://www.youtube.com/results?search_query=Tensor+Alchemist+LTX+ComfyUI+8GB" target="_blank" rel="noopener noreferrer">
+      <div class="cm-title">LTX 2.3 v1.1 on 8GB VRAM · 4K 50fps ComfyUI</div>
+      <div class="cm-meta"><span class="bdg yt">YouTube</span><span>Tensor Alchemist</span><span class="bdg">12 分钟</span><span class="bdg">99K</span></div>
+      <span class="cm-link">观看</span>
+    </a>
+  </div>
+</div>
+
+<div class="callout info">
+  <span class="ico">📌</span>
+  <p><strong>路径选择</strong>:① 不知道选哪个 → 从 §0.1 小白开始,5 课看完能跑出图;② 已经会文生图 → 跳到 §0.2 入门;③ 想做完整短剧 → 直接看 §0.3 进阶 + §0.4 大神;<strong>视频 + 上面 16 章文字</strong>配合用,效率翻倍。</p>
+</div>
+
+
+<!-- ==================== §18 顶级工作流 JSON 下载 ==================== -->
+
+<h2 id="c18">§ 18 · 顶级工作流 JSON 直接下载</h2>
+
+<p>点开每个卡片 → 直达官网浏览 → 找到对应 .json → <strong>下载 → 拖入 ComfyUI → 跑图</strong>。</p>
+
+<h3 id="c18-featured">18.1 玉哥点名 · 漫剧方向 3 大工作流入口</h3>
+
+<div class="wf-featured">
+  <a class="wf-card" href="https://comfy.org/workflows" target="_blank" rel="noopener">
+    <span class="wf-icon">🎬</span>
+    <span class="wf-tag ok">✅ ComfyUI 官方</span>
+    <div class="wf-title">ComfyUI 官方 AI 短剧模板</div>
+    <div class="wf-desc">ComfyUI 官方精选,搜 "short drama / video / animatediff"。</div>
+    <span class="wf-action">直达 comfy.org/workflows →</span>
+  </a>
+
+  <a class="wf-card" href="https://openart.ai/workflows" target="_blank" rel="noopener">
+    <span class="wf-icon">🎨</span>
+    <span class="wf-tag">🔎 OpenArt</span>
+    <div class="wf-title">OpenArt · 漫剧 / Text-to-Image</div>
+    <div class="wf-desc">全球最大 ComfyUI 工作流库。注册免费,搜 "ComfyUI short drama"。</div>
+    <span class="wf-action">直达 openart.ai/workflows →</span>
+  </a>
+
+  <a class="wf-card" href="https://www.pixlr.com" target="_blank" rel="noopener">
+    <span class="wf-icon">🌈</span>
+    <span class="wf-tag warn">⚠️ 风格参考</span>
+    <div class="wf-title">Pixlr · AI 短剧风格</div>
+    <div class="wf-desc">在线 AI 图/视频,搜 "short drama / AI video"。JSON 无法导出,仅风格参考。</div>
+    <span class="wf-action">直达 pixlr.com →</span>
+  </a>
+</div>
+
+<h3 id="c18-yuge">18.2 cubiq/ComfyUI_Workflows · 10 个基础 JSON(882 ⭐ Apache-2.0)</h3>
+
+<p>ComfyUI 生态最经典仓库,点开看 README + 同目录其他工作流。</p>
+
+<div class="wf-grid">
+  <a class="wf-mini" href="https://github.com/cubiq/ComfyUI_Workflows/blob/main/basic/basic_workflow.json" target="_blank" rel="noopener">
+    <span class="wf-mini-num">01</span>
+    <div class="wf-mini-title">Basic SD1.x Workflow</div>
+    <div class="wf-mini-meta"><span class="wf-bdg sd">SD1.x</span><span class="wf-bdg fmt">基础文生图</span></div>
+    <span class="wf-mini-dl">官网 ↓</span>
+  </a>
+
+  <a class="wf-mini" href="https://github.com/cubiq/ComfyUI_Workflows/blob/main/basic/basic_workflow_ext_vae.json" target="_blank" rel="noopener">
+    <span class="wf-mini-num">02</span>
+    <div class="wf-mini-title">Basic SD1.x + 外接 VAE</div>
+    <div class="wf-mini-meta"><span class="wf-bdg sd">SD1.x</span><span class="wf-bdg fmt">VAE 优化</span></div>
+    <span class="wf-mini-dl">官网 ↓</span>
+  </a>
+
+  <a class="wf-mini" href="https://github.com/cubiq/ComfyUI_Workflows/blob/main/basic/basic_latent_batch.json" target="_blank" rel="noopener">
+    <span class="wf-mini-num">03</span>
+    <div class="wf-mini-title">批量出图 4 选 1</div>
+    <div class="wf-mini-meta"><span class="wf-bdg sd">SD1.x</span><span class="wf-bdg fmt">Batch</span></div>
+    <span class="wf-mini-dl">官网 ↓</span>
+  </a>
+
+  <a class="wf-mini" href="https://github.com/cubiq/ComfyUI_Workflows/blob/main/basic/basic_lora.json" target="_blank" rel="noopener">
+    <span class="wf-mini-num">04</span>
+    <div class="wf-mini-title">Apply LoRA</div>
+    <div class="wf-mini-meta"><span class="wf-bdg sd">SD1.x</span><span class="wf-bdg fmt">单 LoRA</span></div>
+    <span class="wf-mini-dl">官网 ↓</span>
+  </a>
+
+  <a class="wf-mini" href="https://github.com/cubiq/ComfyUI_Workflows/blob/main/basic/multiple_loras.json" target="_blank" rel="noopener">
+    <span class="wf-mini-num">05</span>
+    <div class="wf-mini-title">多 LoRA 叠加</div>
+    <div class="wf-mini-meta"><span class="wf-bdg sd">SD1.x</span><span class="wf-bdg fmt">多 LoRA</span></div>
+    <span class="wf-mini-dl">官网 ↓</span>
+  </a>
+
+  <a class="wf-mini" href="https://github.com/cubiq/ComfyUI_Workflows/blob/main/basic/clip_skip.json" target="_blank" rel="noopener">
+    <span class="wf-mini-num">06</span>
+    <div class="wf-mini-title">CLIP skip 调整</div>
+    <div class="wf-mini-meta"><span class="wf-bdg sd">SD1.x</span><span class="wf-bdg fmt">CLIP</span></div>
+    <span class="wf-mini-dl">官网 ↓</span>
+  </a>
+
+  <a class="wf-mini" href="https://github.com/cubiq/ComfyUI_Workflows/blob/main/basic/SDXL_simple.json" target="_blank" rel="noopener">
+    <span class="wf-mini-num">07</span>
+    <div class="wf-mini-title">SDXL Simple(B+R)</div>
+    <div class="wf-mini-meta"><span class="wf-bdg sdxl">SDXL</span><span class="wf-bdg fmt">基础文生图</span></div>
+    <span class="wf-mini-dl">官网 ↓</span>
+  </a>
+
+  <a class="wf-mini" href="https://github.com/cubiq/ComfyUI_Workflows/blob/main/basic/SDXL_advanced.json" target="_blank" rel="noopener">
+    <span class="wf-mini-num">08</span>
+    <div class="wf-mini-title">SDXL Advanced</div>
+    <div class="wf-mini-meta"><span class="wf-bdg sdxl">SDXL</span><span class="wf-bdg fmt">进阶提示词</span></div>
+    <span class="wf-mini-dl">官网 ↓</span>
+  </a>
+
+  <a class="wf-mini" href="https://github.com/cubiq/ComfyUI_Workflows/blob/main/basic/SDXL_text_g-l.json" target="_blank" rel="noopener">
+    <span class="wf-mini-num">09</span>
+    <div class="wf-mini-title">SDXL Text_G + Text_L</div>
+    <div class="wf-mini-meta"><span class="wf-bdg sdxl">SDXL</span><span class="wf-bdg fmt">双提示词</span></div>
+    <span class="wf-mini-dl">官网 ↓</span>
+  </a>
+
+  <a class="wf-mini" href="https://github.com/cubiq/ComfyUI_Workflows/blob/main/basic/SDXL_base_only.json" target="_blank" rel="noopener">
+    <span class="wf-mini-num">10</span>
+    <div class="wf-mini-title">SDXL Base Only</div>
+    <div class="wf-mini-meta"><span class="wf-bdg sdxl">SDXL</span><span class="wf-bdg fmt">低显存</span></div>
+    <span class="wf-mini-dl">官网 ↓</span>
+  </a>
+</div>
+
+<h3 id="c18-platform">18.3 工作流平台导航</h3>
+
+<p>动画 / 视频 / ControlNet / Flux 等更多 → 这 6 个平台搜。</p>
+
+<div class="wf-platform">
+  <a class="wf-pf" href="https://comfy.org/workflows" target="_blank" rel="noopener">
+    <span class="wf-pf-icon">🎬</span>
+    <span class="wf-pf-info">
+      <span class="wf-pf-name">comfy.org/workflows</span>
+      <span class="wf-pf-desc">ComfyUI 官方精选</span>
+    </span>
+  </a>
+  <a class="wf-pf" href="https://openart.ai/workflows" target="_blank" rel="noopener">
+    <span class="wf-pf-icon">🎨</span>
+    <span class="wf-pf-info">
+      <span class="wf-pf-name">OpenArt</span>
+      <span class="wf-pf-desc">全球最大 ComfyUI 工作流库</span>
+    </span>
+  </a>
+  <a class="wf-pf" href="https://civitai.com/models?types=WORKFLOW" target="_blank" rel="noopener">
+    <span class="wf-pf-icon">🏛️</span>
+    <span class="wf-pf-info">
+      <span class="wf-pf-name">Civitai</span>
+      <span class="wf-pf-desc">社区模型 + 工作流</span>
+    </span>
+  </a>
+  <a class="wf-pf" href="https://github.com/cubiq/ComfyUI_Workflows" target="_blank" rel="noopener">
+    <span class="wf-pf-icon">📦</span>
+    <span class="wf-pf-info">
+      <span class="wf-pf-name">cubiq/ComfyUI_Workflows</span>
+      <span class="wf-pf-desc">882 ⭐ Apache-2.0</span>
+    </span>
+  </a>
+  <a class="wf-pf" href="https://github.com/comfyui-wiki/workflows" target="_blank" rel="noopener">
+    <span class="wf-pf-icon">📚</span>
+    <span class="wf-pf-info">
+      <span class="wf-pf-name">comfyui-wiki/workflows</span>
+      <span class="wf-pf-desc">官方 Wiki · 分类工作流</span>
+    </span>
+  </a>
+  <a class="wf-pf" href="https://github.com/mcphub-com/awesome-comfyui-templates" target="_blank" rel="noopener">
+    <span class="wf-pf-icon">🌟</span>
+    <span class="wf-pf-info">
+      <span class="wf-pf-name">awesome-comfyui-templates</span>
+      <span class="wf-pf-desc">44 模板 · MIT</span>
+    </span>
+  </a>
+</div>
+
+<div class="callout info">
+  <span class="ico">📌</span>
+  <p><strong>玉哥的话</strong>:JSON 是骨架,<strong>提示词 + 模型 + 参数</strong> 才是灵魂。同样 SDXL_simple.json,新人跑出来是风景图,玉哥跑出来是漫剧关键帧。<strong>会改 JSON 不如会改提示词</strong>。</p>
+</div>
+
+
+</main>
+</div>
+
+<button class="back-top" id="backTop" aria-label="返回顶部">↑</button>
+
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="扫码关注玉哥">
+      <img class="qr-img" src="../../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../../changelog.html">📅 更新日志</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+
+<script>
+"use strict";
+(function(){
+  const $ = (s,r=document)=>r.querySelector(s);
+  const $$ = (s,r=document)=>Array.from(r.querySelectorAll(s));
+
+  /* ============ 主题切换 ============ */
+  const themeBtn = $('#themeBtn');
+  const setTheme = (t)=>{
+    document.documentElement.dataset.theme = t;
+    try{ localStorage.setItem('comfyui:theme', t); }catch(e){}
+  };
+  setTheme(localStorage.getItem('comfyui:theme') || 'dark');
+  themeBtn?.addEventListener('click', ()=>{
+    const cur = document.documentElement.dataset.theme || 'dark';
+    setTheme(cur === 'dark' ? 'light' : 'dark');
+  });
+
+  /* ============ 打印 ============ */
+  $('#printBtn')?.addEventListener('click', ()=>window.print());
+
+  /* ============ 进度条 + 章节激活 + 章节计数 ============ */
+  const sections = $$('main h2[id]');
+  const progressBar = $('#progressBar');
+  const progressLabel = $('#progressLabel');
+  const sideLinks = $$('aside a[href^="#c"], aside a[href^="#lvl"]');
+  let seen = new Set();
+
+  const updateProgress = ()=>{
+    const seenCount = seen.size;
+    if (progressLabel) progressLabel.textContent = `已读 ${seenCount} / ${sections.length} 章`;
+  };
+
+  const setActive = (id)=>{
+    sideLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+  };
+
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if (e.isIntersecting){
+        const id = e.target.id;
+        setActive(id);
+        seen.add(id);
+        updateProgress();
+      }
+    });
+  }, { rootMargin: '-30% 0px -50% 0px', threshold: 0 });
+  sections.forEach(s => io.observe(s));
+
+  /* ============ 阅读进度条 ============ */
+  const scrollProgress = ()=>{
+    const h = document.documentElement;
+    const scrolled = (h.scrollTop) / Math.max(1, (h.scrollHeight - h.clientHeight));
+    if (progressBar) progressBar.style.width = Math.min(100, scrolled * 100) + '%';
+  };
+  window.addEventListener('scroll', scrollProgress, { passive:true });
+  scrollProgress();
+
+  /* ============ 返回顶部 ============ */
+  const backTop = $('#backTop');
+  window.addEventListener('scroll', ()=>{
+    backTop?.classList.toggle('visible', (window.scrollY || document.documentElement.scrollTop) > 600);
+  }, { passive:true });
+  backTop?.addEventListener('click', ()=>window.scrollTo({top:0, behavior:'smooth'}));
+
+  /* ============ 搜索(章节标题 / 段落文字) ============ */
+  const searchInput = $('#searchInput');
+  searchInput?.addEventListener('keydown', (e)=>{
+    if (e.key === 'Enter'){
+      e.preventDefault();
+      const q = searchInput.value.trim().toLowerCase();
+      if (!q) return;
+      const hits = [];
+      $$('main h2[id], main h3').forEach(h=>{
+        if ((h.textContent || '').toLowerCase().includes(q)) hits.push(h);
+      });
+      $$('main p, main td, main li, main code').forEach(p=>{
+        const t = (p.textContent || '').toLowerCase();
+        if (t.includes(q)){
+          let sec = p.closest('h2[id], main');
+          if (!sec) return;
+          if (sec.tagName !== 'H2') sec = sec.closest('h2[id]') || p.parentElement;
+          if (sec && sec.id) hits.push(sec);
+        }
+      });
+      const first = hits[0];
+      if (first){
+        if (first.id) first.scrollIntoView({ behavior:'smooth', block:'start' });
+        else first.scrollIntoView({ behavior:'smooth', block:'center' });
+      } else {
+        alert('未找到匹配「' + q + '」的章节,可尝试简化关键词');
+      }
+    }
+    if (e.key === 'Escape'){ searchInput.value=''; searchInput.blur(); }
+  });
+  // 全局 / 快捷键聚焦搜索框
+  window.addEventListener('keydown', (e)=>{
+    if (e.key === '/' && document.activeElement !== searchInput && !['INPUT','TEXTAREA'].includes(document.activeElement?.tagName)){
+      e.preventDefault(); searchInput?.focus();
+    }
+  });
+
+  /* ============ 书签(localStorage) ============ */
+  const STORAGE_KEY = 'comfyui:bookmarks:v1';
+  const loadBookmarks = ()=>{
+    try{ return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'); }catch(e){ return []; }
+  };
+  const saveBookmarks = (b)=>{ try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(b)); }catch(e){} };
+  const updateBmCount = ()=>{
+    const c = loadBookmarks().length;
+    const el = $('#bmCount');
+    if (el) el.textContent = c ? `(${c})` : '';
+  };
+  const bookmarkBtn = $('#bookmarkBtn');
+  bookmarkBtn?.addEventListener('click', (e)=>{
+    e.preventDefault();
+    let cur = loadBookmarks();
+    const here = location.hash || '#hero';
+    if (!here || here === '#hero'){
+      // 默认书签当前阅读章节
+      const visible = sections.find(s => {
+        const r = s.getBoundingClientRect();
+        return r.top >= 0 && r.top < window.innerHeight / 2;
+      });
+      if (visible) cur.push({ id: visible.id, title: visible.textContent.trim(), ts: Date.now() });
+    }
+    cur = cur.filter((v,i,a)=>a.findIndex(x=>x.id===v.id)===i).slice(-10);
+    saveBookmarks(cur);
+    updateBmCount();
+    showBookmarkList(cur);
+  });
+  function showBookmarkList(b){
+    const win = window.open('', '_blank', 'width=480,height=480');
+    if (!win) return;
+    win.document.write(`<!doctype html><html><head><meta charset="utf-8"><title>我的书签</title>
+      <style>body{font:14px/1.6 system-ui;background:#0F0F12;color:#FFF7E8;padding:24px;margin:0}
+        h1{color:#7B7AFF;font-size:18px;margin:0 0 16px}
+        a{color:#7B7AFF;display:block;padding:8px 12px;background:#1A1A1F;border-radius:6px;margin:6px 0;text-decoration:none;border-left:3px solid #635BFF}
+        a:hover{background:#24242C}
+        .empty{color:#A1A1AA;text-align:center;padding:30px 0}
+        .ts{font-size:11px;color:#6F6657;margin-left:8px}
+        .clear{background:#FF7D91;color:#fff;border:none;padding:6px 12px;border-radius:6px;cursor:pointer;margin-top:14px;font-size:12px}
+        </style></head><body>
+      <h1>📑 我的书签 · ${b.length} 条</h1>
+      ${b.length === 0 ? '<div class="empty">暂无书签</div>' :
+        b.map(x=>`<a href="#${x.id}">${x.title}<span class="ts">${new Date(x.ts).toLocaleString('zh-CN')}</span></a>`).join('')}
+      ${b.length ? `<button class="clear" onclick="localStorage.removeItem('${STORAGE_KEY}');window.close()">清空所有书签</button>` : ''}
+      <script src="../../assets/site-enhance.js?v=fix20260927-2215" defer><\/script>
+</body></html>`);
+    win.document.close();
+  }
+  updateBmCount();
+
+  /* ============ §17 阶段筛选 ============ */
+const stageFilter = $('#stageFilter');
+stageFilter?.addEventListener('click', (e) => {
+  const pill = e.target.closest('.pill');
+  if (!pill) return;
+  const stage = pill.dataset.stage;
+  $$('.pill', stageFilter).forEach(p => p.classList.toggle('active', p === pill));
+  $$('.stage-card').forEach(card => {
+    card.style.display = (stage === 'all' || card.dataset.stage === stage) ? '' : 'none';
+  });
+  // 切换后回到 §17 顶部
+  const sec = $('#c17');
+  if (sec) sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+
+/* ============ 任务导航 → 跳到 §11 完整工作流 ============ */
+  $('#dramaBtn')?.addEventListener('click', ()=>{
+    location.hash = '#c11';
+    setTimeout(()=>{
+      alert('🎬 一集漫剧的 9 个交付物:\n\n① 分镜(ChatGPT/Claude 拆 8-12 镜)\n② 关键帧(§11 IP-Adapter 出图)\n③ 角色 LoRA(§8 训练)\n④ 图生视频(§10 LTX 2.3)\n⑤ 配音(§11 Eleven 4)\n⑥ 字幕(§11 剪映)\n⑦ 合成(§11 剪映)\n⑧ BGM(§16.4)\n⑨ 1080p mp4 导出');
+    }, 400);
+  });
+
+  /* ============ 完成初始进度显示 ============ */
+  updateProgress();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+﻿const content = require('fs').readFileSync('E:/AIGC/课件/12小说/site/assets/tutorial.js','utf-8'); try { new Function(content); console.log('JS 语法 OK'); } catch(e) { console.log('JS 语法错误:', e.message); }

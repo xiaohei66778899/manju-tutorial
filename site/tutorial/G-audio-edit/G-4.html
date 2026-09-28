@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="G-4 多角色配音 · 漫剧制作教程站。玉哥整理的 AI 漫剧与短剧制作实用教程，包含步骤、案例和练习。">
+<title>G-4 多角色配音 · 漫剧制作教程站</title>
+<link rel="stylesheet" href="../../assets/site.css?v=fix20260927-2215">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg?v=fix20260927-2215">
+<link rel="stylesheet" href="../../assets/tutorial.css?v=fix20260927-2215">
+</head>
+<body>
+<header class="topbar">
+  <div class="logo">🎬 漫剧教程站 <small>v3 · 玉哥</small></div>
+  <nav>
+    <a href="../../index.html">首页</a>
+    <a href="../all-courses.html" class="active">漫剧教程</a>
+    <a href="../../prompts/image-prompts.html">图片作品</a>
+    <a href="../../works/index.html">视频作品</a>
+    <a href="../../prompts/prompts.html">prompt 模板</a>
+    <a href="../../tools/toolkit.html">工具箱</a>
+    <a href="../../qa/troubleshooting.html">问题库</a>
+    <a href="../../news/industry.html">行业新闻</a>
+    </nav>
+  <div class="search"><input type="search" placeholder="🔍 搜…"></div>
+  <button class="theme-toggle" title="深浅主题切换" onclick="document.documentElement.classList.toggle('dark')">🌙</button>
+</header>
+<div class="layout-3col">
+  <aside class="sidebar-left" id="sidebar-left"></aside>
+  <main class="content">
+    <div class="breadcrumb"><a href="../../index.html">首页</a> <span>›</span> <a href="../all-courses.html">G 配音剪辑</a> <span>›</span> G-4 多角色配音</div>
+    <h1>G-4 · 多角色配音(角色分配)</h1>
+    <h2 id="sec-1">1. 学员角色分配表</h2>
+    <div class="tbl-wrap"><table><thead><tr><th>角色</th><th>声音 ID</th><th>性格</th><th>语速</th></tr></thead><tbody>
+    <tr><td>女 1(小美)</td><td>剪映 young_female_01</td><td>活泼</td><td>中快</td></tr>
+    <tr><td>女 2(翠花)</td><td>剪映 mature_female_01</td><td>温柔</td><td>中</td></tr>
+    <tr><td>男 1(阿杰)</td><td>剪映 young_male_01</td><td>热血</td><td>中</td></tr>
+    <tr><td>反派</td><td>剪映 deep_male_01</td><td>阴沉</td><td>慢</td></tr>
+    </tbody></table></div>
+
+    <h2 id="sec-2">2. 多角色配音 3 步</h2>
+    <ol>
+      <li>剧本中标注说话角色</li>
+      <li>每角色一个声音文件</li>
+      <li>剪辑软件合并</li>
+    </ol>
+
+    <h2 id="sec-3">3. 剧本标注法</h2>
+<pre><code>小美: "你来了"
+阿杰: "我等你好久了"
+反派: "哼,来得正好"</code></pre>
+
+    <h2 id="sec-4">4. 学员批量配音</h2>
+    <ol>
+      <li>用 ChatGPT 把剧本转 JSON</li>
+      <li>JSON 含 role + text</li>
+      <li>Python 脚本循环调 API</li>
+      <li>输出 wav 文件</li>
+    </ol>
+
+    <h2 id="sec-5">5. 数字时间</h2>
+    <div class="tbl-wrap"><table><thead><tr><th>操作</th><th>耗时</th></tr></thead><tbody>
+    <tr><td>5 角色对话配音</td><td>30 分钟</td></tr>
+    <tr><td>10 角色对话配音</td><td>60 分钟</td></tr>
+    <tr><td>批量脚本生成</td><td>10 分钟</td></tr>
+    </tbody></table></div>
+
+    <h2 id="sec-6">6. 学员避坑</h2>
+    <ul>
+      <li>❌ 同一角色跨集换声音(观众混乱)</li>
+      <li>❌ 反派用活泼声音</li>
+      <li>❌ 主角声音弱</li>
+    </ul>
+
+    <h2 id="sec-7">7. 学完能做啥</h2>
+    <ul class="checklist"><li>能处理多角色配音</li><li>会剧本标注</li><li>懂玉哥批量</li></ul>
+
+    <h2 id="sec-8">8. 玉哥说</h2>
+    <div class="callout warn"><span class="ico">📢</span><p><strong>📢 玉哥说</strong>:<br>
+    1. <strong>角色分配表必做</strong><br>
+    2. <strong>同一角色固定声音</strong><br>
+    3. <strong>批量脚本提效</strong><br>
+    4. <strong>主角声音要突出</strong></p></div>
+
+    <nav class="bottom-nav">
+      <a class="prev" href="G-3.html"><span class="label">← 上一节</span><span class="title">G-3 AI 配音</span></a>
+      <a class="next" href="G-5.html"><span class="label">下一节 →</span><span class="title">G-5 情绪语速</span></a>
+    </nav>
+  </main>
+  <aside class="sidebar-right" id="sidebar-right"></aside>
+</div>
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="扫码关注玉哥">
+      <img class="qr-img" src="../../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../../changelog.html">📅 更新日志</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+<script src="../../assets/tutorial.js?v=fix20260927-2215"></script>
+<script src="../../assets/site-enhance.js?v=fix20260927-2215" defer></script>
+</body>
+</html>

@@ -1,0 +1,354 @@
+﻿﻿﻿﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
+<meta name="description" content="玉哥漫剧教程站 · 每日 AI 短剧/漫剧/Seedance/ComfyUI 行业新闻聚合">
+<meta name="keywords" content="AI 短剧, 漫剧, Seedance, 即梦, ComfyUI, 行业新闻, 玉哥">
+<meta name="author" content="玉哥">
+<meta property="og:title" content="漫剧教程站 · 玉哥">
+<meta property="og:description" content="玉哥漫剧教程站 · 每日 AI 短剧/漫剧/Seedance/ComfyUI 行业新闻聚合">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="漫剧教程站 · 玉哥">
+<title>行业新闻 · 漫剧制作教程站</title>
+<link rel="stylesheet" href="../assets/site.css?v=fix20260927-2215">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg?v=fix20260927-2215">
+<link rel="stylesheet" href="../assets/page.css?v=fix20260927-2215">
+<style>
+/* ========== 玉哥风格行业新闻页面 ========== */
+.news-hero {
+  position: relative;
+  padding: 56px 32px 36px;
+  background: linear-gradient(135deg, #FFE9D6 0%, #FFF7E8 50%, #ECE7FF 100%);
+  border-bottom: 1px solid var(--line);
+  overflow: hidden;
+}
+.news-hero::before { content:''; position:absolute; top:-100px; right:-100px; width:320px; height:320px; background:radial-gradient(circle, rgba(244,124,60,.18), transparent 70%); border-radius:50%; pointer-events:none; }
+.news-hero-inner { max-width: 1100px; margin: 0 auto; text-align: center; position: relative; }
+.news-hero .badge-row { display: inline-flex; gap: 6px; flex-wrap: wrap; justify-content: center; margin-bottom: 16px; }
+.news-hero .badge-row .badge { font-size: 11.5px; padding: 4px 10px; background: rgba(255,255,255,.7); backdrop-filter: blur(8px); border: 1px solid var(--line); border-radius: 12px; color: var(--text); font-weight: 500; }
+.news-hero .badge-row .badge i { color: var(--blue); margin-right: 4px; }
+.news-hero h1 { font-size: 36px; color: var(--text); margin: 0 0 12px; font-weight: 800; letter-spacing: -0.025em; }
+.news-hero .em { background: linear-gradient(135deg, #635BFF, #F47C3C); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.news-hero .sub { color: var(--muted); font-size: 15px; max-width: 640px; margin: 0 auto 22px; line-height: 1.7; }
+.news-hero .stats { display: inline-flex; gap: 0; font-size: 13px; color: var(--muted); background: #fff; border: 1px solid var(--line); border-radius: 24px; padding: 4px; box-shadow: 0 2px 8px rgba(0,0,0,.04); }
+.news-hero .stats .item { padding: 8px 18px; border-radius: 20px; }
+.news-hero .stats .item + .item { border-left: 1px solid var(--line); }
+.news-hero .stats b { color: var(--blue); font-weight: 800; font-size: 15px; }
+[data-theme="dark"] .news-hero { background: linear-gradient(135deg, #1A1A2E 0%, #16213E 50%, #0F3460 100%); border-bottom-color: var(--line); }
+[data-theme="dark"] .news-hero h1 { color: var(--text); }
+[data-theme="dark"] .news-hero .sub { color: var(--muted); }
+[data-theme="dark"] .news-hero .stats { background: var(--bg2); border-color: var(--line); }
+[data-theme="dark"] .news-hero .stats .item { color: var(--muted); }
+[data-theme="dark"] .news-hero .stats .item + .item { border-left-color: var(--line); }
+[data-theme="dark"] .news-hero .stats b { color: var(--blue); }
+
+.news-layout { display: flex; gap: 20px; max-width: 1440px; margin: 0 auto; padding: 24px 32px 48px; align-items: flex-start; }
+.news-side { width: 208px; flex-shrink: 0; position: sticky; top: 80px; background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 12px 10px; max-height: calc(100vh - 100px); overflow-y: auto; box-shadow: 0 2px 8px rgba(0,0,0,.04); }
+.news-side .side-title { font-size: 12px; font-weight: 700; color: var(--muted); padding: 6px 8px 10px; border-bottom: 1px solid var(--line); margin-bottom: 6px; letter-spacing: 0.04em; text-transform: uppercase; }
+.news-side a { display: flex; align-items: center; gap: 9px; padding: 9px 10px; font-size: 13px; color: var(--text); text-decoration: none; border-radius: 6px; line-height: 1.4; transition: all .15s; border-left: 3px solid transparent; margin: 1px 0; cursor: pointer; }
+.news-side a:hover { background: var(--bg-soft); color: var(--blue); border-left-color: var(--blue); }
+.news-side a.active { background: var(--blue); color: #fff; border-left-color: var(--blue); font-weight: 700; box-shadow: 0 2px 6px rgba(244,124,60,.3); }
+.news-side a .ic { width: 18px; flex-shrink: 0; text-align: center; font-size: 12px; color: var(--muted); }
+.news-side a.active .ic { color: #fff; }
+.news-side a .count { margin-left: auto; font-size: 11px; color: var(--muted); background: var(--bg-soft); padding: 1px 7px; border-radius: 8px; }
+.news-side a.active .count { background: rgba(255,255,255,.2); color: #fff; }
+[data-theme="dark"] .news-side { background: var(--bg2); border-color: var(--line); }
+[data-theme="dark"] .news-side a { color: var(--text); }
+[data-theme="dark"] .news-side a.active { background: var(--blue); }
+[data-theme="dark"] .news-side a .ic { color: var(--muted); }
+
+.news-main { flex: 1; min-width: 0; }
+
+.news-toolbar { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 16px; padding: 14px 18px; background: var(--bg-soft); border-radius: 10px; border: 1px solid var(--line); }
+.news-toolbar .search-input { flex: 1; min-width: 220px; position: relative; }
+.news-toolbar .search-input i { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--muted); font-size: 14px; }
+.news-toolbar .search-input input { width: 100%; padding: 10px 14px 10px 36px; border: 1px solid var(--line); border-radius: 8px; background: #fff; font-size: 14px; }
+.news-toolbar .search-input input:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 3px rgba(244,124,60,.14); }
+.news-toolbar .meta-info { font-size: 12px; color: var(--muted); }
+[data-theme="dark"] .news-toolbar { background: var(--bg-soft); border-color: var(--line); }
+[data-theme="dark"] .news-toolbar .search-input input { background: var(--bg2); border-color: var(--line); color: var(--text); }
+
+.news-list { margin: 16px 0; }
+.news-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 18px 20px;
+  margin: 0 0 12px;
+  transition: all 0.2s ease;
+  display: grid;
+  grid-template-columns: 88px 1fr;
+  gap: 18px;
+  position: relative;
+  overflow: hidden;
+}
+.news-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0;
+  height: 3px; background: var(--blue);
+  transform: scaleX(0); transform-origin: left;
+  transition: transform 0.2s ease;
+}
+.news-card:hover { border-color: var(--blue); box-shadow: 0 6px 20px rgba(244,124,60,.18); transform: translateY(-2px); }
+.news-card:hover::before { transform: scaleX(1); }
+.news-card .date {
+  text-align: center;
+  color: var(--muted);
+  font-size: 11.5px;
+  padding-top: 4px;
+  border-right: 1px solid var(--line);
+  padding-right: 14px;
+}
+.news-card .date .day { font-size: 24px; color: var(--blue); font-weight: 800; line-height: 1.2; }
+.news-card .body h3 { font-size: 16px; color: var(--text); margin: 0 0 6px; font-weight: 700; line-height: 1.45; }
+.news-card .body h3 a { color: inherit; text-decoration: none; }
+.news-card .body h3 a:hover { color: var(--blue); }
+.news-card .summary { font-size: 13px; color: var(--muted); line-height: 1.6; margin: 0 0 10px; }
+.news-card .meta { display: flex; gap: 8px; font-size: 11px; color: var(--muted); flex-wrap: wrap; align-items: center; }
+.news-card .tag { background: var(--blue-soft); color: var(--blue); padding: 3px 10px; border-radius: 6px; font-weight: 700; font-size: 11px; }
+.news-card .tag.policy { background: #FEE2E2; color: #B91C1C; }
+.news-card .tag.model { background: #DCF4A2; color: #166534; }
+.news-card .tag.tool { background: #E0E7FF; color: #3730A3; }
+.news-card .tag.data { background: #FEF3C7; color: #92400E; }
+.news-card .tag.business { background: #FCE7F3; color: #9D174D; }
+.news-card .tag.platform { background: #F3E8FF; color: #6B21A8; }
+.news-card .tag.overseas { background: #CFFAFE; color: #155E75; }
+.news-card .tag.open-source { background: #D1FAE5; color: #065F46; }
+.news-card .tag.course { background: var(--blue); color: #fff; }
+.news-card .source { color: var(--muted); font-size: 12px; }
+[data-theme="dark"] .news-card { background: var(--bg2); border-color: var(--line); }
+[data-theme="dark"] .news-card .date { border-right-color: var(--line); }
+
+.empty { text-align: center; padding: 60px 20px; color: var(--muted); }
+.loading { text-align: center; padding: 40px; color: var(--muted); }
+
+/* ========== 响应式 ========== */
+@media (min-width: 1680px) {
+  .news-layout { max-width: 1600px; padding: 32px 40px 56px; }
+  .news-hero-inner { max-width: 1200px; }
+  .news-hero { padding: 64px 40px 40px; }
+}
+@media (max-width: 979px) {
+  .news-layout { flex-direction: column; padding: 20px 20px 36px; }
+  .news-side { width: 100%; position: static; max-height: none; display: flex; flex-wrap: wrap; padding: 10px; }
+  .news-side .side-title { width: 100%; }
+  .news-side a { flex: 1 1 calc(33% - 6px); padding: 10px 12px; min-height: 44px; font-size: 13px; border-left: none; border-bottom: 2px solid transparent; }
+  .news-hero { padding: 40px 20px 28px; }
+  .news-hero h1 { font-size: 28px; }
+  .news-toolbar { flex-direction: column; align-items: stretch; }
+  .news-toolbar .search-input { min-width: 0; }
+}
+@media (max-width: 767px) {
+  .news-hero { padding: 32px 16px 24px; }
+  .news-hero h1 { font-size: 24px; }
+  .news-hero .stats { font-size: 12px; }
+  .news-card { grid-template-columns: 64px 1fr; gap: 12px; padding: 14px; }
+  .news-card .date { padding-right: 10px; }
+  .news-card .date .day { font-size: 20px; }
+}
+@media (max-width: 479px) {
+  .news-side a { flex: 1 1 calc(50% - 4px); padding: 8px 10px; font-size: 12px; min-height: 40px; }
+  .news-hero { padding: 24px 12px 20px; }
+  .news-hero h1 { font-size: 20px; }
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="logo">🎬 漫剧教程站 <small>v3 · 玉哥</small></div>
+  <nav>
+    <a href="../index.html">首页</a>
+    <a href="../tutorial/all-courses.html">漫剧教程</a>
+    <a href="../prompts/image-prompts.html">图片作品</a>
+    <a href="../works/index.html">视频作品</a>
+    <a href="../prompts/prompts.html">prompt 模板</a>
+    <a href="../tools/toolkit.html">工具箱</a>
+    <a href="../qa/troubleshooting.html">问题库</a>
+    <a href="../news/industry.html" class="active">行业新闻</a>
+  </nav>
+  <div class="search"><input type="search" placeholder="🔍 搜…"></div>
+</header>
+
+<main class="yuge-page">
+
+<section class="news-hero">
+    <div class="news-hero-inner">
+            <h1>📰 <span class="em">行业新闻</span></h1>
+            <div class="stats">
+        <span class="item"><b>9</b>分类</span>
+        <span class="item"><b id="statTotal">100+</b>条</span>
+        <span class="item"><b>6</b>源</span>
+        <span class="item"><b>每日</b>更新</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="news-layout">
+    <aside class="news-side" id="newsSide">
+      <div class="side-title"><i class="fas fa-filter"></i>分类筛选</div>
+      <a class="active" data-cat="" data-ic="📋"><span class="ic">📋</span>全部<span class="count" id="cnt-all">0</span></a>
+      <a data-cat="policy" data-ic="📜"><span class="ic">📜</span>政策<span class="count" id="cnt-policy">0</span></a>
+      <a data-cat="platform" data-ic="🏛"><span class="ic">🏛</span>平台<span class="count" id="cnt-platform">0</span></a>
+      <a data-cat="model" data-ic="🧠"><span class="ic">🧠</span>模型<span class="count" id="cnt-model">0</span></a>
+      <a data-cat="tool" data-ic="🛠"><span class="ic">🛠</span>工具<span class="count" id="cnt-tool">0</span></a>
+      <a data-cat="data" data-ic="📊"><span class="ic">📊</span>数据<span class="count" id="cnt-data">0</span></a>
+      <a data-cat="business" data-ic="💰"><span class="ic">💰</span>商业<span class="count" id="cnt-business">0</span></a>
+      <a data-cat="overseas" data-ic="🌍"><span class="ic">🌍</span>海外<span class="count" id="cnt-overseas">0</span></a>
+      <a data-cat="open-source" data-ic="📦"><span class="ic">📦</span>开源<span class="count" id="cnt-open-source">0</span></a>
+      <a data-cat="course" data-ic="📚"><span class="ic">📚</span>教程<span class="count" id="cnt-course">0</span></a>
+    </aside>
+
+    <div class="news-main">
+      <div class="news-toolbar">
+        <div class="search-input">
+          <i class="fas fa-search"></i>
+          <input type="search" id="search-box" placeholder="搜新闻标题或内容…">
+        </div>
+        <span class="meta-info" id="meta">加载中…</span>
+      </div>
+
+      <div id="news-list" class="news-list">
+        <div class="loading">⏳ 加载新闻…</div>
+      </div>
+
+      <p style="margin-top:32px;color:var(--muted);font-size:13px;">
+        📌 数据源:36 氪 / 今日头条 / 央视 / 人民日报 / GitHub / 玉哥整理 ·
+        ⏰ 自动更新:GitHub Actions 每日 9:00 UTC 跑 ·
+        📩 想推荐新闻?<a href="../commercial/monetize.html#contact">联系玉哥</a>
+      </p>
+    </div>
+  </div>
+</main>
+
+<script src="../assets/site-enhance.js?v=fix20260927-2215" defer></script>
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="扫码关注玉哥">
+      <img class="qr-img" src="../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../changelog.html">📅 更新日志</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+
+<script>
+async function loadNews() {
+  const list = document.getElementById('news-list');
+  const meta = document.getElementById('meta');
+  let data;
+  try {
+    const r = await fetch('data.json?v=' + Date.now());
+    data = await r.json();
+  } catch (e) {
+    list.innerHTML = '<div class="empty">❌ 加载失败 · 请刷新页面重试</div>';
+    meta.textContent = '';
+    return;
+  }
+
+  // 更新分类计数
+  const counts = { all: data.news.length };
+  data.news.forEach(n => { counts[n.category] = (counts[n.category] || 0) + 1; });
+  Object.keys(counts).forEach(k => {
+    const el = document.getElementById('cnt-' + k);
+    if (el) el.textContent = counts[k];
+  });
+  const statTotal = document.getElementById('statTotal');
+  if (statTotal) statTotal.textContent = data.news.length + '+';
+
+  let currentFilter = '';
+  let currentQuery = '';
+
+  function render() {
+    let items = data.news;
+    if (currentFilter) items = items.filter(n => n.category === currentFilter);
+    if (currentQuery) {
+      const s = currentQuery.toLowerCase();
+      items = items.filter(n =>
+        (n.title || '').toLowerCase().includes(s) ||
+        (n.summary || '').toLowerCase().includes(s)
+      );
+    }
+    items.sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+
+    if (items.length === 0) {
+      list.innerHTML = '<div class="empty">🔍 没有匹配的新闻</div>';
+      meta.textContent = '共 0 条';
+      return;
+    }
+
+    list.innerHTML = items.map(n => {
+      const d = (n.date || '0000-00-00').split('-');
+      return `
+        <div class="news-card">
+          <div class="date">
+            <div class="day">${d[2] || ''}</div>
+            <div>${d[0] || ''}-${d[1] || ''}</div>
+          </div>
+          <div class="body">
+            <h3><a href="${n.url}" ${n.url.startsWith('http') ? 'target="_blank" rel="noopener"' : ''}>${n.title}</a></h3>
+            <p class="summary">${n.summary || ''}</p>
+            <div class="meta">
+              <span class="tag ${n.category}">${n.tag || n.category}</span>
+              <span class="source">📰 ${n.source || ''}</span>
+            </div>
+          </div>
+        </div>
+      `;
+    }).join('');
+    const lastUpd = (data.lastUpdated || '').substring(0, 10);
+    meta.textContent = `共 ${items.length} 条 · 上次更新 ${lastUpd}`;
+  }
+
+  render();
+
+  // sidebar 分类点击
+  document.querySelectorAll('#newsSide a[data-cat]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      document.querySelectorAll('#newsSide a').forEach(x => x.classList.remove('active'));
+      a.classList.add('active');
+      currentFilter = a.getAttribute('data-cat');
+      render();
+    });
+  });
+
+  // 搜索框
+  const searchBox = document.getElementById('search-box');
+  if (searchBox) {
+    searchBox.addEventListener('input', e => {
+      currentQuery = e.target.value.trim().toLowerCase();
+      render();
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === '/' && document.activeElement !== searchBox) {
+        e.preventDefault();
+        searchBox.focus();
+      }
+      if (e.key === 'Escape' && document.activeElement === searchBox) {
+        searchBox.value = '';
+        currentQuery = '';
+        render();
+        searchBox.blur();
+      }
+    });
+  }
+}
+loadNews();
+</script>
+</body>
+</html>
+

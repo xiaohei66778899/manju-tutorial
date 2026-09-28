@@ -1,0 +1,9 @@
+来源URL: https://prompthero.com/runway-prompts
+作者: PromptHero社区
+日期: 2026（实时页面，2026-09-20访问）
+所用模型: Runway
+
+核心内容摘要:
+PromptHero社区Runway提示词精选6条：360度旋转（face consistent简洁约束）、走路3/4后视（参考图保持）、演唱会慢镜头（完整舞台描述：服装/灯光/观众/运镜）、精华液广告（[VISUAL]标签格式）、精华液滴落微距、科幻监狱场景（:1.9权重标注）。总结了Runway社区特点：[VISUAL]标签用于广告场景、一致性约束比Kling简洁、舞台演唱会描述完整、权重标注语法。
+
+推荐教学点: 适合"Runway专项提示词"章节——重点讲[VISUAL]标签格式在广告场景的应用，以及Runway简洁一致性约束的写法。

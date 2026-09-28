@@ -1,0 +1,9 @@
+来源URL: https://openart.ai/features/ai-storyboard-generator/
+作者: OpenArt
+日期: 2026-09-17
+所用模型: OpenArt Image Generator + Character Builder
+
+核心内容摘要:
+OpenArt官方AI分镜生成器功能介绍。三步工作流：(1)为每个镜头写提示词（场景+动作+镜头角度），通过Character Builder锁定角色面部；(2)逐格生成并优化，一次只修一格不影响其他；(3)预览完整序列，在投入制作前检查镜头角度/走位/节奏。核心卖点是"无需绘画技能"——粘贴剧本或想法即可获得一致的视觉分镜面板。
+
+推荐教学点: 适合"AI分镜工具实操"章节——作为分镜工具的入门演示，重点讲"逐格生成+独立优化"的工作流，以及Character Builder在分镜一致性中的作用。

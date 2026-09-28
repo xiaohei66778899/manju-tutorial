@@ -1,0 +1,906 @@
+﻿﻿<!DOCTYPE html><html lang="zh-CN"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
+<title>AI 漫剧工具大全 · 玉哥 · 7 阶段 80+ 工具</title>
+<meta name="description" content="全网 80+ 工具汇总 · 按剧本/角色/视频/配音/剪辑/一站式/开源 7 阶段分类 · 含搜索筛选 · 学员实测清单">
+<meta property="og:title" content="玉哥工具箱 · 全网 80+ 工具汇总">
+<meta property="og:description" content="全网 80+ 工具汇总 · 按剧本/角色/视频/配音/剪辑/一站式/开源 7 阶段分类 · 含搜索筛选 · 学员实测清单">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="漫剧教程站 · 玉哥">
+<meta name="theme-color" content="#635BFF">
+<link rel="stylesheet" href="../assets/site.css?v=fix20260927-2215">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg?v=fix20260927-2215">
+<link rel="stylesheet" href="../assets/page.css?v=fix20260927-2215">
+<link rel="stylesheet" href="../assets/classroom-picker.css?v=fix20260927-2215">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+<style>
+:root {
+  --acc: #F47C3C;
+  --acc-soft: #FFE9D6;
+  --acc-deep: #C2410C;
+}
+
+/* ========== 工具页 main 覆盖(去掉全站 main 的 820px 限制) ========== */
+main.tools-page { max-width: none; padding: 0; width: 100%; }
+
+/* ========== Logo ========== */
+.site-logo { display: flex; align-items: center; gap: 8px; padding: 4px 0; }
+.site-logo .logo-mark { width: 30px; height: 30px; border-radius: 8px; background: linear-gradient(135deg, #635BFF 0%, #8B5CF6 100%); display: flex; align-items: center; justify-content: center; color: #fff; font-size: 16px; box-shadow: 0 2px 6px rgba(244,124,60,.3); }
+.site-logo .logo-text { font-weight: 700; font-size: 15px; color: var(--text); letter-spacing: -0.01em; }
+.site-logo .logo-text small { font-weight: 400; font-size: 11px; color: var(--muted); margin-left: 4px; }
+[data-theme="dark"] .site-logo .logo-mark { box-shadow: 0 2px 8px rgba(244,124,60,.18); }
+
+/* ========== Hero ========== */
+.tool-hero { position: relative; padding: 56px 32px 36px; background: linear-gradient(135deg, #ECE7FF 0%, #FAFAFF 50%, #FFFCF6 100%); border-bottom: 1px solid var(--line); overflow: hidden; }
+.tool-hero::before { content: ''; position: absolute; top: -100px; right: -100px; width: 320px; height: 320px; background: radial-gradient(circle, rgba(244,124,60,.18) 0%, transparent 70%); border-radius: 50%; pointer-events: none; }
+.tool-hero::after { content: ''; position: absolute; bottom: -80px; left: -80px; width: 240px; height: 240px; background: radial-gradient(circle, rgba(244,124,60,.08) 0%, transparent 70%); border-radius: 50%; pointer-events: none; }
+.tool-hero-inner { position: relative; max-width: 1100px; margin: 0 auto; text-align: center; }
+.tool-hero .badge-row { display: inline-flex; gap: 6px; flex-wrap: wrap; justify-content: center; margin-bottom: 16px; }
+.tool-hero .badge-row .badge { font-size: 11.5px; padding: 4px 10px; background: rgba(255,255,255,.7); backdrop-filter: blur(8px); border: 1px solid var(--line); border-radius: 12px; color: var(--text); font-weight: 500; }
+.tool-hero .badge-row .badge i { color: var(--blue); margin-right: 4px; font-size: 10px; }
+.tool-hero h1 { font-size: 36px; color: var(--text); margin: 0 0 12px; font-weight: 800; letter-spacing: -0.025em; line-height: 1.15; }
+.tool-hero h1 .em { background: linear-gradient(135deg, #635BFF, #F47C3C); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.tool-hero .sub { color: var(--muted); font-size: 15px; max-width: 640px; margin: 0 auto 22px; line-height: 1.7; }
+.tool-hero .stats { display: inline-flex; gap: 0; font-size: 13px; color: var(--muted); background: #fff; border: 1px solid var(--line); border-radius: 24px; padding: 4px; box-shadow: 0 2px 8px rgba(0,0,0,.04); }
+.tool-hero .stats .item { padding: 8px 18px; border-radius: 20px; display: flex; align-items: center; gap: 6px; }
+.tool-hero .stats .item + .item { border-left: 1px solid var(--line); }
+.tool-hero .stats b { color: var(--blue); font-weight: 800; font-size: 15px; }
+
+/* ========== 搜索栏 ========== */
+.search-bar { max-width: 1440px; margin: 0 auto; padding: 16px 32px; background: var(--bg-soft); border-bottom: 1px solid var(--line); display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.search-bar .search-input { flex: 1; min-width: 200px; position: relative; }
+.search-bar .search-input i { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--muted); font-size: 14px; }
+.search-bar .search-input input { width: 100%; max-width: 100%; box-sizing: border-box; padding: 10px 14px 10px 36px; border: 1px solid var(--line); border-radius: 8px; background: #fff; font-size: 14px; transition: border-color .15s; }
+.search-bar .search-input input:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 3prgba(244,124,60,.14)1); }
+.search-bar .search-input .kbd { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 11px; color: var(--muted); background: var(--bg-soft); padding: 2px 6px; border-radius: 4px; border: 1px solid var(--line); }
+.filter-chips { display: flex; gap: 6px; flex-wrap: wrap; }
+.filter-chip { font-size: 12px; padding: 6px 12px; background: #fff; border: 1px solid var(--line); border-radius: 16px; color: var(--text); cursor: pointer; transition: all .15s; user-select: none; }
+.filter-chip:hover { border-color: var(--blue); color: var(--blue); }
+.filter-chip.active { background: var(--blue); border-color: var(--blue); color: #fff; }
+
+/* ========== 主布局 ========== */
+.tools-layout { display: flex; gap: 20px; max-width: 1440px; margin: 0 auto; padding: 28px 32px 48px; align-items: flex-start; }
+
+/* ========== 左侧 sidebar ========== */
+.tools-side { width: 208px; flex-shrink: 0; position: sticky; top: 80px; background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 12px 10px; max-height: calc(100vh - 100px); overflow-y: auto; box-shadow: 0 2px 8px rgba(0,0,0,.04); }
+.tools-side::-webkit-scrollbar { width: 4px; }
+.tools-side::-webkit-scrollbar-thumb { background: var(--line); border-radius: 2px; }
+.tools-side .side-title { font-size: 12px; font-weight: 700; color: var(--muted); padding: 6px 8px 10px; border-bottom: 1px solid var(--line); margin-bottom: 6px; letter-spacing: 0.04em; text-transform: uppercase; }
+.tools-side .side-title i { margin-right: 5px; color: var(--blue); }
+.tools-side a { display: flex; align-items: center; gap: 9px; padding: 9px 10px; font-size: 13px; color: var(--text); text-decoration: none; border-radius: 6px; line-height: 1.4; transition: all .15s; border-left: 3px solid transparent; margin: 1px 0; }
+.tools-side a:hover { background: var(--bg-soft); color: var(--blue); border-left-color: var(--blue); }
+.tools-side a.active { background: var(--blue); color: #fff; border-left-color: var(--blue); font-weight: 700; box-shadow: 0 2px 6px rgba(244,124,60,.3); }
+.tools-side a.active .ic { color: #fff; }
+.tools-side a .ic { width: 18px; flex-shrink: 0; text-align: center; font-size: 12px; color: var(--muted); }
+.tools-side a:hover .ic { color: var(--blue); }
+.tools-side a .count { margin-left: auto; font-size: 11px; color: var(--muted); background: var(--bg-soft); padding: 1px 7px; border-radius: 8px; }
+.tools-side a.active .count { background: rgba(255,255,255,.2); color: #fff; }
+[data-theme="dark"] .tools-side { background: var(--bg2); border-color: var(--line); }
+[data-theme="dark"] .tools-side a { color: var(--text); }
+[data-theme="dark"] .tools-side a.active { background: var(--blue); }
+
+/* ========== 主区 ========== */
+.tools-main { flex: 1; min-width: 0; position: relative; }
+
+/* ========== 顶部阅读进度条(全站统一:ComfyUI/千川同款) ========== */
+.read-progress { position: fixed; top: 0; left: 0; width: 100%; height: 3px; background: transparent; z-index: 9999; pointer-events: none; }
+.read-progress .bar { width: 0%; height: 100%; background: linear-gradient(90deg, #635BFF 0%, #8B5CF6 50%, #F47C3C 100%); box-shadow: 0 1px rgba(244,124,60,.18),.4); transition: width 80ms ease-out; }
+
+/* ========== Stage 块 ========== */
+.stage-block { padding: 28px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 80px; }
+.stage-block:first-of-type { padding-top: 0; }
+.stage-block:last-of-type { border-bottom: none; }
+.stage-block.hidden { display: none; }
+.stage-head { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; flex-wrap: wrap; }
+.stage-head .num-badge { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 10px; background: linear-gradient(135deg, #635BFF, #8B5CF6); color: #fff; font-size: 18px; font-weight: 800; box-shadow: 0 4px 10px rgba(244,124,60,.25); flex-shrink: 0; }
+.stage-head h2 { font-size: 22px; color: var(--text); margin: 0; font-weight: 700; letter-spacing: -0.01em; }
+.stage-head .ct { font-size: 12.5px; color: var(--muted); padding: 4px 10px; background: var(--bg-soft); border-radius: 12px; font-weight: 500; }
+.stage-head .count-tag { font-size: 12px; color: var(--blue); font-weight: 600; padding: 4px 10px; background: var(--blue-soft); border-radius: 12px; }
+.stage-scenario { color: var(--muted); font-size: 13.5px; line-height: 1.75; margin: 8px 0 18px; padding: 12px 14px 12px 18px; background: var(--bg-soft); border-left: 3px solid var(--blue); border-radius: 0 6px 6px 0; }
+.stage-scenario b { color: var(--blue); font-weight: 700; }
+.stage-scenario .em { color: var(--acc); font-weight: 700; }
+
+/* ========== 工具卡片 ========== */
+.tool-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.tool-card { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 16px; transition: all .2s ease; position: relative; overflow: hidden; display: flex; flex-direction: column; }
+.tool-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--blue); transform: scaleX(0); transform-origin: left; transition: transform .2s ease; }
+.tool-card:hover { border-color: var(--blue); box-shadow: 0 6px 20px rgba(244,124,60,.18); transform: translateY(-2px); }
+.tool-card:hover::before { transform: scaleX(1); }
+.tool-card.hidden { display: none; }
+.tool-card .head { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.tool-card .ic { width: 40px; height: 40px; border-radius: 9px; display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; color: #fff; overflow: hidden; }
+.tool-card .ic img { width: 26px; height: 26px; object-fit: contain; display: block; }
+.tool-card .ic.ic-yuge { background: linear-gradient(135deg, #635BFF, #8B5CF6); box-shadow: 0 2px 6px rgba(244,124,60,.3); }
+.tool-card .ic.ic-cn { background: linear-gradient(135deg, #DC2626, #F59E0B); }
+.tool-card .ic.ic-open { background: linear-gradient(135deg, #059669, #10B981); }
+.tool-card .ic.ic-intl { background: linear-gradient(135deg, #2563EB, #7C3AED); }
+.tool-card .ic.ic-default { background: linear-gradient(135deg, #6B7280, #9CA3AF); }
+.tool-card .ic.ic-acc { background: linear-gradient(135deg, #F47C3C, #FB923C); }
+/* 工具专属类(ic-kling / ic-deepseek / ic-chatgpt / ic-claude 等)统一白底兜底,让彩色 logo 更突出 */
+.tool-card .ic:not(.ic-yuge):not(.ic-cn):not(.ic-open):not(.ic-intl):not(.ic-default):not(.ic-acc) {
+  background: #FFFCF6;
+  border: 1px solid var(--line);
+  color: var(--text);
+}
+.tool-card h3 { font-size: 15px; color: var(--text); margin: 0; font-weight: 700; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; flex: 1; min-width: 0; line-height: 1.35; }
+.tool-card h3 > .badge { flex-shrink: 0; }
+.tool-card .t { color: var(--muted); font-size: 12.5px; line-height: 1.6; flex: 1; }
+.tool-card .meta { display: flex; gap: 5px; margin-top: 10px; flex-wrap: wrap; }
+.tool-card .badge { font-size: 10.5px; padding: 2px 7px; border-radius: 6px; background: var(--bg-soft); color: var(--muted); font-weight: 600; }
+.tool-card .badge.hot { background: #FEE2E2; color: #DC2626; }
+.tool-card .badge.free { background: #DCFCE7; color: #15803D; }
+.tool-card .badge.cn { background: #FEF3C7; color: #B45309; }
+.tool-card .badge.intl { background: #DBEAFE; color: #1E40AF; }
+.tool-card .badge.open { background: #E0E7FF; color: #4338CA; }
+.tool-card .badge.yuge { background: #635BFF; color: #fff; letter-spacing: 0.02em; }
+.tool-card .badge.stars { background: #FEF3C7; color: #B45309; }
+
+[data-theme="dark"] .tool-card { background: var(--bg2); border-color: var(--line); }
+[data-theme="dark"] .tool-card:hover { background: var(--bg3); border-color: var(--blue); }
+[data-theme="dark"] .tool-card .t { color: var(--muted); }
+[data-theme="dark"] .tool-card .meta .badge { background: var(--bg3); color: var(--muted); }
+[data-theme="dark"] .stage-scenario { background: rgba(244,124,60,.12); color: var(--text); }
+[data-theme="dark"] .tool-hero { background: linear-gradient(135deg, #1A1A2E 0%, #16213E 50%, #0F3460 100%); border-bottom-color: var(--line); }
+[data-theme="dark"] .tool-hero h1 { color: var(--text); }
+[data-theme="dark"] .tool-hero .sub { color: var(--muted); }
+[data-theme="dark"] .tool-hero .badge-row .badge { background: rgba(255,255,255,.06); border-color: var(--line); color: var(--text); }
+[data-theme="dark"] .tool-hero .stats { background: var(--bg2); border-color: var(--line); }
+[data-theme="dark"] .tool-hero .stats .item { color: var(--muted); }
+[data-theme="dark"] .tool-hero .stats .item + .item { border-left-color: var(--line); }
+[data-theme="dark"] .tool-hero .stats b { color: var(--blue); }
+[data-theme="dark"] .search-bar { background: var(--bg-soft); border-bottom-color: var(--line); }
+[data-theme="dark"] .search-bar .search-input input { background: var(--bg2); border-color: var(--line); color: var(--text); }
+[data-theme="dark"] .search-bar .search-input input::placeholder { color: var(--muted); }
+[data-theme="dark"] .search-bar .search-input .kbd { background: var(--bg2); border-color: var(--line); color: var(--muted); }
+[data-theme="dark"] .filter-chip { background: var(--bg2); border-color: var(--line); color: var(--text); }
+[data-theme="dark"] .filter-chip:hover { border-color: var(--blue); color: var(--blue); background: var(--blue-soft); }
+[data-theme="dark"] .filter-chip.active { background: var(--blue); border-color: var(--blue); color: #fff; }
+[data-theme="dark"] .stage-head h2 { color: var(--text); }
+[data-theme="dark"] .stage-head .ct { background: var(--bg2); color: var(--muted); }
+[data-theme="dark"] .stage-head .count-tag { background: var(--blue-soft); color: var(--blue); }
+[data-theme="dark"] .legend { background: var(--bg-soft); color: var(--muted); }
+[data-theme="dark"] .empty-state { color: var(--muted); }
+[data-theme="dark"] .empty-state i { color: var(--line); }
+
+/* ========== 图例 ========== */
+.legend { max-width: 1440px; margin: 0 auto; padding: 24px 32px; font-size: 12px; color: var(--muted); display: flex; gap: 18px; flex-wrap: wrap; align-items: center; background: var(--bg-soft); border-radius: 10px; }
+.legend .item { display: flex; align-items: center; gap: 4px; }
+
+/* ========== 空状态 ========== */
+.empty-state { text-align: center; padding: 60px 20px; color: var(--muted); display: none; }
+.empty-state.show { display: block; }
+.empty-state i { font-size: 48px; color: var(--line); margin-bottom: 16px; }
+
+/* ========== 响应式 ========== */
+/* 6 档断点:1680+ 宽屏 / 1280+ 标准 / 980-1279 小屏笔记本 / 768-979 平板横屏 / 480-767 手机 / <480 极小屏 */
+
+/* ≥1680 宽屏显示器 */
+@media (min-width: 1680px) {
+  .tools-layout { max-width: 1600px; padding: 32px 40px 56px; gap: 24px; }
+  .tools-side { width: 220px; padding: 14px 12px; }
+  .search-bar { max-width: 1600px; padding: 18px 40px; }
+  .legend { max-width: 1600px; padding: 24px 40px; }
+  .tool-hero { padding: 64px 40px 40px; }
+  .tool-hero-inner { max-width: 1200px; }
+}
+
+/* 1280-1679 标准屏 */
+@media (min-width: 1280px) {
+  .tool-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* 980-1279 小屏笔记本 */
+@media (max-width: 1279px) {
+  .tool-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* 768-979 平板横屏 / 小屏笔记本 */
+@media (max-width: 979px) {
+  .tools-layout { flex-direction: column; gap: 16px; padding: 20px 20px 36px; }
+  .tools-side { width: 100%; position: static; max-height: none; display: flex; flex-wrap: wrap; padding: 10px; border-radius: 12px; }
+  .tools-side .side-title { width: 100%; padding: 4px 8px 8px; font-size: 11px; }
+  .tools-side a { flex: 1 1 calc(33% - 6px); padding: 10px 12px; border-left: none; border-bottom: 2px solid transparent; min-width: 120px; font-size: 13px; min-height: 44px; }
+  .tools-side a .ic { font-size: 14px; }
+  .tools-side a .count { display: inline-block; font-size: 11px; padding: 1px 7px; }
+  .tools-side a.active { border-bottom-color: var(--blue); }
+  .tool-hero { padding: 40px 20px 28px; }
+  .tool-hero h1 { font-size: 28px; line-height: 1.2; }
+  .tool-hero .sub { font-size: 14px; max-width: 100%; }
+  .search-bar { flex-direction: column; align-items: stretch; padding: 14px 20px; gap: 10px; }
+  .search-bar .search-input { min-width: 0; }
+  .filter-chips { width: 100%; max-width: 100%; overflow-x: auto; flex-wrap: nowrap; padding-bottom: 4px; -webkit-overflow-scrolling: touch; }
+  .filter-chips::-webkit-scrollbar { display: none; }
+  .filter-chip { white-space: nowrap; flex-shrink: 0; padding: 8px 14px; min-height: 36px; }
+  .tool-grid { gap: 14px; }
+  .stage-block { padding: 24px 0; }
+  .stage-head { gap: 12px; }
+  .stage-head h2 { font-size: 20px; }
+  .stage-head .num-badge { width: 40px; height: 40px; font-size: 16px; }
+  .stage-scenario { font-size: 13px; padding: 10px 12px 10px 14px; }
+  .read-progress { display: none; }
+}
+
+/* 480-767 手机横屏 */
+@media (max-width: 767px) {
+  .tools-layout { padding: 16px 16px 32px; }
+  .tools-side a { flex: 1 1 calc(50% - 6px); padding: 10px 10px; font-size: 12.5px; min-height: 44px; }
+  .tools-side a .ic { font-size: 13px; }
+  .tools-side a .count { font-size: 10px; padding: 0 6px; }
+  .tool-hero { padding: 32px 16px 24px; }
+  .tool-hero h1 { font-size: 24px; letter-spacing: -0.02em; }
+  .tool-hero .sub { font-size: 13px; }
+  .tool-hero .badge-row .badge { font-size: 11px; padding: 3px 8px; }
+  .tool-hero .stats { font-size: 12px; padding: 3px; }
+  .tool-hero .stats .item { padding: 6px 14px; }
+  .tool-hero .stats b { font-size: 14px; }
+  .search-bar { padding: 12px 16px; }
+  .search-bar .search-input input { padding: 11px 14px 11px 36px; font-size: 15px; }
+  .tool-grid { grid-template-columns: 1fr; gap: 12px; }
+  .tool-card { padding: 14px; }
+  .tool-card .ic { width: 36px; height: 36px; font-size: 16px; }
+  .tool-card h3 { font-size: 14.5px; }
+  .tool-card .t { font-size: 12.5px; line-height: 1.55; }
+  .tool-card .badge { font-size: 10px; padding: 2px 6px; }
+  .stage-block { padding: 20px 0; }
+  .stage-head { gap: 10px; margin-bottom: 6px; }
+  .stage-head .num-badge { width: 36px; height: 36px; font-size: 15px; border-radius: 8px; }
+  .stage-head h2 { font-size: 18px; }
+  .stage-head .ct { font-size: 11.5px; padding: 3px 8px; }
+  .stage-head .count-tag { font-size: 11px; padding: 3px 8px; }
+  .stage-scenario { font-size: 12.5px; padding: 10px 12px; }
+  .legend { padding: 18px 16px; font-size: 11.5px; gap: 12px; }
+}
+
+/* <480 极小屏(iPhone SE / 公众号嵌入 375px) */
+@media (max-width: 479px) {
+  .tools-layout { padding: 12px 12px 24px; }
+  .tools-side { padding: 8px; border-radius: 10px; }
+  .tools-side .side-title { font-size: 10.5px; padding: 2px 6px 6px; }
+  .tools-side a { flex: 1 1 calc(50% - 4px); padding: 8px 8px; font-size: 12px; min-height: 42px; }
+  .tools-side a .ic { font-size: 12px; }
+  .tools-side a .count { display: none; }
+  .tool-hero { padding: 24px 12px 20px; }
+  .tool-hero h1 { font-size: 20px; }
+  .tool-hero .sub { font-size: 12.5px; line-height: 1.6; }
+  .tool-hero .badge-row { gap: 4px; margin-bottom: 12px; }
+  .tool-hero .badge-row .badge { font-size: 10.5px; padding: 2px 7px; }
+  .tool-hero .stats { font-size: 11.5px; width: 100%; }
+  .tool-hero .stats .item { padding: 6px 10px; }
+  .tool-hero .stats .item + .item { border-left: none; border-top: 1px solid var(--line); width: 100%; justify-content: center; }
+  .tool-hero .stats { flex-direction: column; padding: 0; border-radius: 12px; }
+  .tool-hero .stats b { font-size: 13.5px; }
+  .search-bar { padding: 10px 12px; }
+  .search-bar .search-input input { padding: 10px 12px 10px 34px; font-size: 14px; }
+  .search-bar .search-input .kbd { display: none; }
+  .filter-chip { font-size: 11.5px; padding: 7px 12px; }
+  .tool-grid { gap: 10px; }
+  .tool-card { padding: 12px; border-radius: 9px; }
+  .tool-card .ic { width: 32px; height: 32px; font-size: 14px; border-radius: 7px; }
+  .tool-card .head { gap: 8px; margin-bottom: 6px; }
+  .tool-card h3 { font-size: 14px; }
+  .tool-card .t { font-size: 12px; }
+  .tool-card .meta { gap: 4px; margin-top: 8px; }
+  .stage-block { padding: 16px 0; }
+  .stage-head .num-badge { width: 32px; height: 32px; font-size: 14px; }
+  .stage-head h2 { font-size: 17px; }
+  .legend { padding: 14px 12px; font-size: 11px; gap: 10px; }
+}
+</style>
+</head><body>
+
+<header class="topbar">
+  <a href="../index.html" class="site-logo">
+    <span class="logo-mark"><i class="fas fa-clapperboard"></i></span>
+    <span class="logo-text">漫剧教程站<small>v3 · 玉哥</small></span>
+  </a>
+  <nav>
+    <a href="../index.html">首页</a>
+    <a href="../tutorial/all-courses.html">漫剧教程</a>
+    <a href="../prompts/image-prompts.html">图片作品</a>
+    <a href="../works/index.html">视频作品</a>
+    <a href="../prompts/prompts.html">prompt 模板</a>
+    <a href="../tools/toolkit.html" class="active">工具箱</a>
+    <a href="../qa/troubleshooting.html">问题库</a>
+    <a href="../news/industry.html">行业新闻</a>
+    </nav>
+  <div class="search"><input type="search" placeholder="🔍 搜…"></div>
+  <button class="theme-toggle" id="themeBtn" title="深浅主题切换">🌙</button>
+</header>
+
+<main class="tools-page">
+
+  <section class="tool-hero">
+    <div class="tool-hero-inner">
+            <h1>🛠 AI <span class="em">漫剧工具</span>大全</h1>
+            <div class="stats">
+        <span class="item"><b>7</b>阶段</span>
+        <span class="item"><b id="statTotal">80+</b>工具</span>
+        <span class="item"><b>10+</b>开源</span>
+        <span class="item"><b>50+</b>国内直连</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="search-bar">
+    <div class="search-input">
+      <i class="fas fa-search"></i>
+      <input type="search" id="toolSearch" placeholder="搜工具名 / 标签 / 简介…(按 / 聚焦)">
+      <span class="kbd">/</span>
+    </div>
+    <div class="filter-chips">
+      <span class="filter-chip active" data-filter="all">全部</span>
+      <span class="filter-chip" data-filter="yuge">⭐ 玉哥</span>
+      <span class="filter-chip" data-filter="open">🔓 开源</span>
+      <span class="filter-chip" data-filter="cn">🇨🇳 国产</span>
+      <span class="filter-chip" data-filter="intl">🌐 海外</span>
+      <span class="filter-chip" data-filter="free">💰 免费</span>
+    </div>
+  </div>
+
+  <div class="tools-layout">
+
+    <aside class="tools-side" id="toolsSide">
+      <div class="side-title"><i class="fas fa-list-ul"></i>快速导航</div>
+      <a href="#stage-1" data-stage="stage-1"><span class="ic"><i class="fas fa-book"></i></span>① 剧本分镜<span class="count">7</span></a>
+      <a href="#stage-2" data-stage="stage-2"><span class="ic"><i class="fas fa-image"></i></span>② 角色画面<span class="count">7</span></a>
+      <a href="#stage-3" data-stage="stage-3"><span class="ic"><i class="fas fa-video"></i></span>③ 图转视频<span class="count">11</span></a>
+      <a href="#stage-4" data-stage="stage-4"><span class="ic"><i class="fas fa-microphone"></i></span>④ 配音音效<span class="count">8</span></a>
+      <a href="#stage-5" data-stage="stage-5"><span class="ic"><i class="fas fa-cut"></i></span>⑤ 剪辑成片<span class="count">8</span></a>
+      <a href="#stage-6" data-stage="stage-6"><span class="ic"><i class="fas fa-rocket"></i></span>⑥ 一站式<span class="count">12</span></a>
+      <a href="#stage-7" data-stage="stage-7"><span class="ic"><i class="fas fa-code-branch"></i></span>⑦ 开源自部署<span class="count">15</span></a>
+      <a href="#classroom-lab" data-stage="classroom-lab"><span class="ic">🎲</span>课堂互动<span class="count">玩</span></a>
+    </aside>
+
+    <div class="tools-main">
+      <div class="read-progress" id="readProgress" aria-hidden="true">
+        <div class="bar" id="readProgressBar"></div>
+        <div class="marker" id="readProgressMarker" data-pct="0%"></div>
+      </div>
+
+      <div class="empty-state" id="emptyState">
+        <i class="fas fa-search"></i>
+        <div>没有匹配的工具 · 试试其他关键词或筛选条件</div>
+      </div>
+
+      <section class="stage-block" id="stage-1">
+        <div class="stage-head">
+          <span class="num-badge">①</span>
+          <h2>剧本与分镜</h2>
+          <span class="count-tag">7 个工具</span>
+          <span class="ct">把故事变成可执行的镜头表</span>
+        </div>
+        <div class="stage-scenario"><b>用户场景:</b>番茄小说 → 80 集拆解 → 角色小传 → 场景表 → 镜头清单。主力是 <span class="em">LLM</span>(对话式拆解),辅以剧本格式工具和分镜表模板。</div>
+        <div class="tool-grid">
+          <div class="tool-card" data-tags="yuge free cn"><div class="head"><div class="ic ic-deepseek"><img src="../assets/icons/tools/deepseek.png" alt="DeepSeek"></div><h3>DeepSeek <span class="badge yuge">玉哥</span></h3></div><div class="t">国产开源 LLM,中文小说理解力顶。学员主力拆剧本用,价格低,API 兼容 OpenAI 格式。</div><div class="meta"><span class="badge free">免费档</span><span class="badge cn">国产</span></div></div>
+          <div class="tool-card" data-tags="free cn"><div class="head"><div class="ic ic-doubao"><img src="../assets/icons/tools/doubao.png" alt="豆包(字节)"></div><h3>豆包(字节)</h3></div><div class="t">字节 LLM,中文能力一流,APP 端直接对话,免 API。适合零基础学员随手拆。</div><div class="meta"><span class="badge free">免费</span><span class="badge cn">国产</span></div></div>
+          <div class="tool-card" data-tags="intl"><div class="head"><div class="ic ic-chatgpt"><img src="../assets/icons/tools/chatgpt.png" alt="ChatGPT"></div><h3>ChatGPT</h3></div><div class="t">OpenAI GPT-4o / o1。英文资料首选;中文小说需提示词工程。学员备用工具。</div><div class="meta"><span class="badge hot">付费</span><span class="badge intl">海外</span></div></div>
+          <div class="tool-card" data-tags="intl"><div class="head"><div class="ic ic-claude"><img src="../assets/icons/tools/claude.png" alt="Claude"></div><h3>Claude</h3></div><div class="t">Anthropic Claude 3.5/4。长文本(整本小说)解析能力顶,适合 80 集整体规划。</div><div class="meta"><span class="badge intl">海外</span></div></div>
+          <div class="tool-card" data-tags="cn"><div class="head"><div class="ic ic-cn"><img src="../assets/icons/tools/liblib.png" alt="liblib.tv"></div><h3>liblib.tv</h3></div><div class="t">国内头部 AI 图像/视频生成工作流平台。海量 ComfyUI 工作流 + Stable Diffusion 模型 + LoRA 微调,学员主力出图工具之一。</div><div class="meta"><span class="badge cn">国产</span><span class="badge free">新户免费</span></div></div>
+          <div class="tool-card" data-tags="cn"><div class="head"><div class="ic ic-cn"><img src="../assets/icons/tools/xiaoyunque.png" alt="小云雀"></div><h3>小云雀</h3></div><div class="t">字节跳动 AI Agent 平台,接入 Seedance 2.0 + 可灵 + Vidu。短剧 Agent 全球首个支持 Seedance 2.0,支持 100+ 集连续创作。</div><div class="meta"><span class="badge cn">国产</span></div></div>
+          <div class="tool-card" data-tags="open intl"><div class="head"><div class="ic ic-vimax"><img src="../assets/icons/tools/vimax.png" alt="ViMax"></div><h3>ViMax <span class="badge open">开源</span></h3></div><div class="t">港大 Data Intelligence Lab 出品。导演 + 编剧 + 制片人三 Agent 协作框架,idea-to-video / script-to-video / novel-to-video 三种工作流。</div><div class="meta"><span class="badge stars">12.3k⭐</span><span class="badge intl">学术</span></div></div>
+        </div>
+      </section>
+
+      <section class="stage-block" id="stage-2">
+        <div class="stage-head">
+          <span class="num-badge">②</span>
+          <h2>角色与画面</h2>
+          <span class="count-tag">7 个工具</span>
+          <span class="ct">生成角色设定图、分镜静帧</span>
+        </div>
+        <div class="stage-scenario"><b>用户场景:</b>角色设定图、场景氛围图、分镜静帧、表情包。主力是 <span class="em">文生图 + LoRA 训练</span>,国产云端 + 本地 ComfyUI 双轨。</div>
+        <div class="tool-grid">
+          <div class="tool-card" data-tags="yuge free cn"><div class="head"><div class="ic ic-jimeng"><img src="../assets/icons/tools/jimeng.png" alt="即梦(字节)"></div><h3>即梦(字节) <span class="badge yuge">玉哥主力</span></h3></div><div class="t">国内直连,¥0.3/张图(学员出图成本最低)。支持 LoRA 微调、角色一致性。3.0 模型中文理解大幅提升。</div><div class="meta"><span class="badge yuge">玉哥</span><span class="badge cn">国产</span><span class="badge free">新户免费</span></div></div>
+          <div class="tool-card" data-tags="intl"><div class="head"><div class="ic ic-midjourney"><img src="../assets/icons/tools/midjourney.png" alt="Midjourney"></div><h3>Midjourney</h3></div><div class="t">v7 公测,中文提示词大幅提升,"风格锁定"解决角色一致性。国内需翻墙。25 风格关键词玉哥 v11 已整理。</div><div class="meta"><span class="badge hot">付费</span><span class="badge intl">海外</span></div></div>
+          <div class="tool-card" data-tags="open free"><div class="head"><div class="ic ic-stability"><img src="../assets/icons/tools/stability.png" alt="Stable Diffusion WebUI"></div><h3>Stable Diffusion WebUI</h3></div><div class="t">经典开源出图。LoRA 生态丰富,本地 GPU 跑 4G 显存即可。学员做角色一致性首选本地工具。</div><div class="meta"><span class="badge open">开源</span><span class="badge free">免费</span></div></div>
+          <div class="tool-card" data-tags="yuge open free"><div class="head"><div class="ic ic-comfyui"><img src="../assets/icons/tools/comfyui.png" alt="ComfyUI"></div><h3>ComfyUI <span class="badge yuge">玉哥首选</span></h3></div><div class="t">节点式工作流。原生支持 Wan 2.2 + Flux + SDXL + 可灵 + 海螺。0.4.0 起新增"工作流版本控制",可一键回滚。玉哥 17 章离线数字教科书。</div><div class="meta"><span class="badge open">开源</span><span class="badge free">免费</span><span class="badge yuge">玉哥专题</span></div></div>
+          <div class="tool-card" data-tags="open intl"><div class="head"><div class="ic ic-flux"><img src="../assets/icons/tools/flux.png" alt="Flux"></div><h3>Flux</h3></div><div class="t">Black Forest Labs 文生图,cfg=3.5,写实风格顶。ComfyUI 原生支持。学员测试:人像质量高于 SDXL。</div><div class="meta"><span class="badge open">开源</span><span class="badge intl">海外</span></div></div>
+          <div class="tool-card" data-tags="open"><div class="head"><div class="ic ic-sdxl"><img src="../assets/icons/tools/sdxl.png" alt="SDXL + JuggernautXL"></div><h3>SDXL + JuggernautXL</h3></div><div class="t">SDXL 工作流 + JuggernautXL 模型。写实人像稳定,ComfyUI 主流配置。玉哥教程站 E-18 节详解。</div><div class="meta"><span class="badge open">开源</span></div></div>
+          <div class="tool-card" data-tags="open"><div class="head"><div class="ic ic-toonflow"><img src="../assets/icons/tools/toonflow.png" alt="Toonflow"></div><h3>Toonflow</h3></div><div class="t">开源桌面端,小说/剧本 → AI 漫剧。3 层 Agent 协作(策略/执行/监督),角色一致性 + ONNX 长期记忆。</div><div class="meta"><span class="badge stars">15.1k⭐</span><span class="badge open">开源</span></div></div>
+        </div>
+      </section>
+
+      <section class="stage-block" id="stage-3">
+        <div class="stage-head">
+          <span class="num-badge">③</span>
+          <h2>图转视频</h2>
+          <span class="count-tag">11 个工具</span>
+          <span class="ct">让静态画面动起来</span>
+        </div>
+        <div class="stage-scenario"><b>用户场景:</b>分镜静帧 → 5-15s 动态镜头。学员默认 <span class="em">H2.3 套餐</span>(H3 烧 credits 需用户授权)。运镜中人物眼神必跟镜头(玉哥 9-08 规则)。</div>
+        <div class="tool-grid">
+          <div class="tool-card" data-tags="yuge cn"><div class="head"><div class="ic ic-kling"><img src="../assets/icons/tools/kling.png" alt="可灵(快手)"></div><h3>可灵(快手) <span class="badge yuge">玉哥主力</span></h3></div><div class="t">Kling 1.6 角色一致性大幅提升,运镜理解加强。学员出片首选,国内直连,3.0 起内测 Agent。</div><div class="meta"><span class="badge yuge">玉哥</span><span class="badge cn">国产</span></div></div>
+          <div class="tool-card" data-tags="cn"><div class="head"><div class="ic ic-jimeng"><img src="../assets/icons/tools/jimeng.png" alt="即梦视频(字节)"></div><h3>即梦视频(字节)</h3></div><div class="t">字节图生视频,接入 LoRA 微调,角色一致性比 1.0 提升 40%。国内直连便宜。</div><div class="meta"><span class="badge cn">国产</span></div></div>
+          <div class="tool-card" data-tags="intl"><div class="head"><div class="ic ic-runway"><img src="../assets/icons/tools/runway.png" alt="Runway Gen-4 Turbo"></div><h3>Runway Gen-4 Turbo</h3></div><div class="t">Gen-4 比 Gen-3 快 5 倍,价格降 50%。单条 5s 约 $0.5。玉哥建议学员用 Wan 2.2 / 可灵 / 海螺 替代。</div><div class="meta"><span class="badge hot">贵</span><span class="badge intl">海外</span></div></div>
+          <div class="tool-card" data-tags="cn"><div class="head"><div class="ic ic-vidu"><img src="../assets/icons/tools/vidu.png" alt="Vidu"></div><h3>Vidu</h3></div><div class="t">清华 + 生数科技,国内直连,接入小云雀等平台。Agent 模式支持多模态编排。</div><div class="meta"><span class="badge cn">国产</span></div></div>
+          <div class="tool-card" data-tags="yuge free cn"><div class="head"><div class="ic ic-hailuo"><img src="../assets/icons/tools/hailuo.png" alt="Hailuo 海螺"></div><h3>Hailuo 海螺 <span class="badge yuge">玉哥套餐</span></h3></div><div class="t">Token Plan 每日 3 条免费额度,优先用 H2.3(学员默认)。H3 烧 credits 需用户明确授权。</div><div class="meta"><span class="badge yuge">玉哥套餐</span><span class="badge cn">国产</span><span class="badge free">套餐免费</span></div></div>
+          <div class="tool-card" data-tags="open free"><div class="head"><div class="ic ic-wan"><img src="../assets/icons/tools/wan.png" alt="Wan 2.x(阿里)"></div><h3>Wan 2.x(阿里)</h3></div><div class="t">开源 + 免费,720P 24fps,5s + 2s 延长。学员实测角色一致性比 Wan 2.1 提升 30%。</div><div class="meta"><span class="badge open">开源</span><span class="badge free">免费</span></div></div>
+          <div class="tool-card" data-tags="intl"><div class="head"><div class="ic ic-sora"><img src="../assets/icons/tools/sora.png" alt="Sora 2(OpenAI)"></div><h3>Sora 2(OpenAI)</h3></div><div class="t">15s 4K 视频,角色一致性大幅提升。但 API 单条 ~$1.5。玉哥建议学员先用 H2.3 套餐练手。</div><div class="meta"><span class="badge hot">贵</span><span class="badge intl">海外</span></div></div>
+          <div class="tool-card" data-tags="open cn"><div class="head"><div class="ic ic-hunyuanvideo"><img src="../assets/icons/tools/hunyuanvideo.png" alt="HunyuanVideo(腾讯)"></div><h3>HunyuanVideo(腾讯)</h3></div><div class="t">腾讯 13B 开源视频模型,中文友好。本地 4G 显存可跑 LoRA 微调。</div><div class="meta"><span class="badge open">开源</span><span class="badge cn">国产</span></div></div>
+          <div class="tool-card" data-tags="open"><div class="head"><div class="ic ic-ltx"><img src="../assets/icons/tools/ltx.png" alt="LTX-Video"></div><h3>LTX-Video</h3></div><div class="t">快 5 分钟出片,玉哥 F-10 节详解。本地 6G 显存可跑。适合快速试错。</div><div class="meta"><span class="badge open">开源</span></div></div>
+          <div class="tool-card" data-tags="open"><div class="head"><div class="ic ic-animatediff"><img src="../assets/icons/tools/animatediff.png" alt="AnimateDiff"></div><h3>AnimateDiff</h3></div><div class="t">本地 4G 显存可跑,SDXL + ControlNet 驱动动作。玉哥 F-7 节详解。</div><div class="meta"><span class="badge open">开源</span></div></div>
+          <div class="tool-card" data-tags="open cn"><div class="head"><div class="ic ic-seedance"><img src="../assets/icons/tools/seedance.png" alt="Seedance 2.0"></div><h3>Seedance 2.0</h3></div><div class="t">字节豆包旗下四模态电影流水线。可被巨日禄/小云雀/Catimind/60 端集成。</div><div class="meta"><span class="badge open">开源</span><span class="badge cn">字节</span></div></div>
+        </div>
+      </section>
+
+      <section class="stage-block" id="stage-4">
+        <div class="stage-head">
+          <span class="num-badge">④</span>
+          <h2>配音与音效</h2>
+          <span class="count-tag">8 个工具</span>
+          <span class="ct">生成对白、旁白、背景音乐</span>
+        </div>
+        <div class="stage-scenario"><b>用户场景:</b>剧本 → 角色配音 / 旁白 / BGM。多角色音色管理 + 情绪语速 + 自动字幕 + 口型同步。</div>
+        <div class="tool-grid">
+          <div class="tool-card" data-tags="yuge"><div class="head"><div class="ic ic-suno"><img src="../assets/icons/tools/suno.png" alt="Suno"></div><h3>Suno <span class="badge yuge">玉哥</span></h3></div><div class="t">v4 升级,生成 4 分钟音乐,中英文歌词理解好。学员做短剧 BGM 平均成本从 ¥10/首降到 ¥0.5/首。</div><div class="meta"><span class="badge yuge">玉哥原创</span><span class="badge free">新户免费</span></div></div>
+          <div class="tool-card" data-tags="free cn"><div class="head"><div class="ic ic-jianying"><img src="../assets/icons/tools/jianying.png" alt="剪映(字节)"></div><h3>剪映(字节)</h3></div><div class="t">国内剪辑标配。AI 配音、TTS、字幕一键生成。免费,玉哥 G-10/G-12 节详解。</div><div class="meta"><span class="badge free">免费</span><span class="badge cn">国产</span></div></div>
+          <div class="tool-card" data-tags="intl"><div class="head"><div class="ic ic-elevenlabs"><img src="../assets/icons/tools/elevenlabs.png" alt="ElevenLabs"></div><h3>ElevenLabs</h3></div><div class="t">英文 TTS 顶级,声音克隆 + 情绪控制。中文支持一般。海外短剧/ReelShort 首选。</div><div class="meta"><span class="badge intl">海外</span></div></div>
+          <div class="tool-card" data-tags="cn"><div class="head"><div class="ic ic-cn">🗣</div><h3>魔音工坊</h3></div><div class="t">多角色音色管理,国内直连,学员主力 TTS 工具。情绪语速精细调节。</div><div class="meta"><span class="badge cn">国产</span></div></div>
+          <div class="tool-card" data-tags="open free"><div class="head"><div class="ic ic-chattts"><img src="../assets/icons/tools/chattts.png" alt="ChatTTS"></div><h3>ChatTTS</h3></div><div class="t">开源免费,本地可跑。中文 TTS 替代方案,适合自部署。玉哥 F 章节备选。</div><div class="meta"><span class="badge open">开源</span><span class="badge free">免费</span></div></div>
+          <div class="tool-card" data-tags="yuge intl"><div class="head"><div class="ic ic-syncso"><img src="../assets/icons/tools/syncso.png" alt="Sync.so"></div><h3>Sync.so <span class="badge yuge">玉哥主力</span></h3></div><div class="t">口型同步顶流。视频 + 音频 → 自动对齐嘴型。玉哥 G-7 节详解,漫剧必备。</div><div class="meta"><span class="badge yuge">玉哥</span><span class="badge intl">海外</span></div></div>
+          <div class="tool-card" data-tags="intl"><div class="head"><div class="ic ic-udio"><img src="../assets/icons/tools/udio.png" alt="Udio"></div><h3>Udio</h3></div><div class="t">Suno 竞品,英文音乐质量高。适合海外短剧 BGM。中文弱。</div><div class="meta"><span class="badge intl">海外</span></div></div>
+          <div class="tool-card" data-tags="free"><div class="head"><div class="ic ic-freesound"><img src="../assets/icons/tools/freesound.png" alt="Freesound 音效库"></div><h3>Freesound 音效库</h3></div><div class="t">免费音效库,CC 协议可商用。环境声 + 脚步声 + 关门声等。玉哥 G-8 节推荐。</div><div class="meta"><span class="badge free">免费</span><span class="badge open">CC 协议</span></div></div>
+        </div>
+      </section>
+
+      <section class="stage-block" id="stage-5">
+        <div class="stage-head">
+          <span class="num-badge">⑤</span>
+          <h2>剪辑与成片</h2>
+          <span class="count-tag">8 个工具</span>
+          <span class="ct">合成最终成片</span>
+        </div>
+        <div class="stage-scenario"><b>用户场景:</b>多镜头拼接 + 转场 + 字幕 + 卡点 + BGM 节奏 + 调色 + 导出。国内首选剪映,海外/专业用 PR 或达芬奇。</div>
+        <div class="tool-grid">
+          <div class="tool-card" data-tags="yuge free cn"><div class="head"><div class="ic ic-jianying"><img src="../assets/icons/tools/jianying.png" alt="剪映(字节)"></div><h3>剪映(字节) <span class="badge yuge">玉哥首选</span></h3></div><div class="t">国内剪辑标配。15 种转场玉哥速查、3 秒钩子节奏、自动字幕。免费 + 国内直连 + 一键 1080P 导出。</div><div class="meta"><span class="badge yuge">玉哥</span><span class="badge free">免费</span><span class="badge cn">国产</span></div></div>
+          <div class="tool-card" data-tags="intl"><div class="head"><div class="ic ic-premiere"><img src="../assets/icons/tools/premiere.png" alt="Premiere Pro(Adobe)"></div><h3>Premiere Pro(Adobe)</h3></div><div class="t">专业剪辑标杆。学员进阶用。Dynamic Link 与 AE/AU 联动。订阅制付费。</div><div class="meta"><span class="badge hot">付费</span><span class="badge intl">海外</span></div></div>
+          <div class="tool-card" data-tags="intl"><div class="head"><div class="ic ic-davinci"><img src="../assets/icons/tools/davinci.png" alt="DaVinci Resolve"></div><h3>DaVinci Resolve</h3></div><div class="t">免费版即专业级调色。Fusion 合成 + Fairlight 音频 + Cut/Edit 页面。短剧调色首选。</div><div class="meta"><span class="badge free">免费版可用</span><span class="badge intl">海外</span></div></div>
+          <div class="tool-card" data-tags="intl"><div class="head"><div class="ic ic-finalcut"><img src="../assets/icons/tools/finalcut.png" alt="Final Cut Pro"></div><h3>Final Cut Pro</h3></div><div class="t">苹果生态专属。Mac 端磁力时间线 + 性能优化。学员 macOS 用户备选。</div><div class="meta"><span class="badge hot">付费</span></div></div>
+          <div class="tool-card" data-tags="free"><div class="head"><div class="ic ic-capcut"><img src="../assets/icons/tools/capcut.png" alt="CapCut 国际版"></div><h3>CapCut 国际版</h3></div><div class="t">剪映海外版。TikTok / YouTube Shorts 创作者首选。多语言字幕 + 模板。</div><div class="meta"><span class="badge free">免费</span></div></div>
+          <div class="tool-card" data-tags="free"><div class="head"><div class="ic ic-canva"><img src="../assets/icons/tools/canva.png" alt="Canva 可画"></div><h3>Canva 可画</h3></div><div class="t">封面 3 工具之一。玉哥 G-16 节推荐。9000+ 模板 + 爆款封面公式。短剧封面必备。</div><div class="meta"><span class="badge free">基础免费</span></div></div>
+          <div class="tool-card" data-tags="open free"><div class="head"><div class="ic ic-rife"><img src="../assets/icons/tools/rife.png" alt="RIFE 插帧"></div><h3>RIFE 插帧</h3></div><div class="t">开源免费,24fps → 60fps 流畅化。玉哥 F-17 节详解。本地 GPU 跑。</div><div class="meta"><span class="badge open">开源</span><span class="badge free">免费</span></div></div>
+          <div class="tool-card" data-tags="open free"><div class="head"><div class="ic ic-ultrasharp"><img src="../assets/icons/tools/ultrasharp.png" alt="4x-UltraSharp 高清放大"></div><h3>4x-UltraSharp 高清放大</h3></div><div class="t">开源免费,720P → 4K 超分。玉哥 E-16/F-18 节详解。本地 GPU 跑。</div><div class="meta"><span class="badge open">开源</span><span class="badge free">免费</span></div></div>
+        </div>
+      </section>
+
+      <section class="stage-block" id="stage-6">
+        <div class="stage-head">
+          <span class="num-badge">⑥</span>
+          <h2>一站式平台</h2>
+          <span class="count-tag">12 个工具</span>
+          <span class="ct">不想拼工具,一个平台全流程</span>
+        </div>
+        <div class="stage-scenario"><b>用户场景:</b>创作者只想专注故事本身,不想学 7 阶段工具链。一站式平台封装全流程,学员省时间首选。</div>
+        <div class="tool-grid">
+          <div class="tool-card" data-tags="yuge cn"><div class="head"><div class="ic ic-yuge"><img src="../assets/icons/tools/xiaoyunque.png" alt="小云雀"></div><h3>小云雀 <span class="badge yuge">玉哥</span></h3></div><div class="t">字节跳动短剧 Agent 平台。全球首个支持 Seedance 2.0 的短剧 Agent。100+ 集连续创作,服务超 100 万创作者。</div><div class="meta"><span class="badge yuge">玉哥</span><span class="badge cn">国产</span></div></div>
+          <div class="tool-card" data-tags="yuge"><div class="head"><div class="ic ic-yuge">📺</div><h3>libtv <span class="badge yuge">玉哥</span></h3></div><div class="t">玉哥 v18 课程整理的短剧工作流平台。剧本拆解 + 角色一致性 + 视频合成一体化。</div><div class="meta"><span class="badge yuge">玉哥</span></div></div>
+          <div class="tool-card" data-tags="cn"><div class="head"><div class="ic ic-cn"><img src="../assets/icons/tools/seko.png" alt="商汤 Seko"></div><h3>商汤 Seko</h3></div><div class="t">商汤科技"一编多存"AI 视频创作智能体。2-4 月用户从 0 涨至近 70 万,70%+ 视频产出为 AI 短剧作品。</div><div class="meta"><span class="badge cn">国产</span></div></div>
+          <div class="tool-card" data-tags="yuge"><div class="head"><div class="ic ic-yuge">🎭</div><h3>有戏 AI <span class="badge yuge">玉哥</span></h3></div><div class="t">玉哥提到的 AI 短剧/漫剧一站式平台。剧本到成片,降低门槛,适合学员新手。</div><div class="meta"><span class="badge yuge">玉哥</span></div></div>
+          <div class="tool-card" data-tags="cn"><div class="head"><div class="ic ic-cn"><img src="../assets/icons/tools/catimind.png" alt="Catimind"></div><h3>Catimind(神经猫 AI)</h3></div><div class="t">专业 AI 漫剧/短剧平台。深度整合 Seedance 2.0。角色锁定 + IP 资产管理,支持万集长剧本自动提取。</div><div class="meta"><span class="badge cn">国产</span></div></div>
+          <div class="tool-card" data-tags="cn"><div class="head"><div class="ic ic-cn"><img src="../assets/icons/tools/pixmax.png" alt="Pixmax"></div><h3>Pixmax</h3></div><div class="t">一站式 AI 短剧/漫剧工作流平台。可视化拖拽,4 步流程可调整。无限画布支持超长集分镜管理。</div><div class="meta"><span class="badge cn">国产</span></div></div>
+          <div class="tool-card" data-tags="cn"><div class="head"><div class="ic ic-cn">🔟</div><h3>60 端漫剧流水线</h3></div><div class="t">360 集团国内首个工业级 AI 漫剧流水线。接入 Seedance 2.0,三维场景 + 四维视听空间。生成时间压缩至 30-60 分钟。</div><div class="meta"><span class="badge cn">国产</span></div></div>
+          <div class="tool-card" data-tags="cn"><div class="head"><div class="ic ic-cn">📱</div><h3>字狐跳跳</h3></div><div class="t">字节跳动 Agent 平台。短剧 Agent 全球首个集成 Seedance 2.0 的智能体,自动从剧本 → 分镜 → 镜头 → 视频。</div><div class="meta"><span class="badge cn">国产</span></div></div>
+          <div class="tool-card" data-tags="cn"><div class="head"><div class="ic ic-minimax"><img src="../assets/icons/tools/minimax.png" alt="海螺 AI Agent"></div><h3>海螺 AI Agent</h3></div><div class="t">海螺视频 AI Agent。整合海螺视频能力,智能体式内容创作。</div><div class="meta"><span class="badge cn">国产</span></div></div>
+          <div class="tool-card" data-tags="intl"><div class="head"><div class="ic ic-tapnow"><img src="../assets/icons/tools/tapnow.png" alt="TapNow 长视频"></div><h3>TapNow 长视频</h3></div><div class="t">TapNow 智能体,长视频平台。脚本 + 视频 + 后期一站式。</div><div class="meta"><span class="badge intl">海外</span></div></div>
+          <div class="tool-card" data-tags="cn"><div class="head"><div class="ic ic-zhipu"><img src="../assets/icons/tools/zhipu.png" alt="智谱清影"></div><h3>智谱清影</h3></div><div class="t">智谱 AI 视频生成。清影 app + 开放 API。集成到企业 Agent 工作流。</div><div class="meta"><span class="badge cn">国产</span></div></div>
+        </div>
+      </section>
+
+      <section class="stage-block" id="stage-7">
+        <div class="stage-head">
+          <span class="num-badge">⑦</span>
+          <h2>开源 / 自部署</h2>
+          <span class="count-tag">15 个工具</span>
+          <span class="ct">有技术能力,想自己搭</span>
+        </div>
+        <div class="stage-scenario"><b>用户场景:</b>技术人员 + 成本敏感团队 + 数据隐私需求。GitHub 自部署,学员技术路线首选。</div>
+        <div class="tool-grid">
+          <div class="tool-card" data-tags="yuge open"><div class="head"><div class="ic ic-aid-studio"><img src="../assets/icons/tools/aid-studio.png" alt="aid-studio"></div><h3>aid-studio <span class="badge yuge">玉哥</span></h3></div><div class="t">玉哥 v18 推荐的开源 AI 短剧/漫剧创作平台。端到端 AI 短剧自动化工作流。</div><div class="meta"><span class="badge yuge">玉哥</span><span class="badge open">开源</span></div></div>
+          <div class="tool-card" data-tags="yuge open cn"><div class="head"><div class="ic ic-lumenx"><img src="../assets/icons/tools/lumenx.png" alt="LumenX Studio"></div><h3>LumenX Studio <span class="badge yuge">玉哥</span></h3></div><div class="t">玉哥 v18 推荐的阿里开源项目。小说 → 短动画剧全链路。</div><div class="meta"><span class="badge yuge">玉哥</span><span class="badge open">开源</span><span class="badge cn">阿里</span></div></div>
+          <div class="tool-card" data-tags="open free"><div class="head"><div class="ic ic-toonflow"><img src="../assets/icons/tools/toonflow.png" alt="Toonflow"></div><h3>Toonflow</h3></div><div class="t">开源桌面 AI 短剧工厂。小说/剧本 → 智能分镜 + 角色生成 + 视频合成。3 层 Agent 协作。GitHub: HBAI-Ltd/Toonflow-app。</div><div class="meta"><span class="badge stars">15.1k⭐</span><span class="badge open">开源</span><span class="badge free">免费</span></div></div>
+          <div class="tool-card" data-tags="open free"><div class="head"><div class="ic ic-mpt"><img src="../assets/icons/tools/mpt.png" alt="MoneyPrinterTurbo"></div><h3>MoneyPrinterTurbo</h3></div><div class="t">关键词 → 短视频(老一代)。GitHub 最火 AI 视频项目。短视频自动化入门。</div><div class="meta"><span class="badge stars">120.4k⭐</span><span class="badge open">开源</span><span class="badge free">免费</span></div></div>
+          <div class="tool-card" data-tags="open"><div class="head"><div class="ic ic-huobao"><img src="../assets/icons/tools/huobao.png" alt="huobao-drama"></div><h3>huobao-drama</h3></div><div class="t">一句话 → 完整短剧,端到端流水线。中文社区学员讨论度高。</div><div class="meta"><span class="badge stars">14.8k⭐</span><span class="badge open">开源</span></div></div>
+          <div class="tool-card" data-tags="open"><div class="head"><div class="ic ic-vimax"><img src="../assets/icons/tools/vimax.png" alt="ViMax"></div><h3>ViMax</h3></div><div class="t">港大 Data Intelligence Lab 出品。导演 + 编剧 + 制片人三 Agent 框架。学术派。</div><div class="meta"><span class="badge stars">12.3k⭐</span><span class="badge open">开源</span></div></div>
+          <div class="tool-card" data-tags="open"><div class="head"><div class="ic ic-narratoai"><img src="../assets/icons/tools/narratoai.png" alt="NarratoAI"></div><h3>NarratoAI</h3></div><div class="t">一键解说视频。脚本 + 剪辑 + 配音 + 字幕一站式。适合书评/影评/解说短剧。</div><div class="meta"><span class="badge stars">11.0k⭐</span><span class="badge open">开源</span></div></div>
+          <div class="tool-card" data-tags="open cn"><div class="head"><div class="ic ic-seedance"><img src="../assets/icons/tools/seedance.png" alt="seedance-2.0"></div><h3>seedance-2.0</h3></div><div class="t">基于字节 Seedance 2.0 的四模态电影流水线。可被多平台集成。</div><div class="meta"><span class="badge stars">7.2k⭐</span><span class="badge open">开源</span><span class="badge cn">字节</span></div></div>
+          <div class="tool-card" data-tags="open"><div class="head"><div class="ic ic-jellyfish"><img src="../assets/icons/tools/jellyfish.png" alt="Jellyfish"></div><h3>Jellyfish</h3></div><div class="t">剧本 → 结构化分镜 → 跨镜头一致 → 成片。跨镜头一致性技术突出。</div><div class="meta"><span class="badge stars">6.3k⭐</span><span class="badge open">开源</span></div></div>
+          <div class="tool-card" data-tags="open"><div class="head"><div class="ic ic-arcreel"><img src="../assets/icons/tools/arcreel.png" alt="ArcReel"></div><h3>ArcReel</h3></div><div class="t">小说 → 资产/分镜/视频/编辑草稿 + 成本跟踪。适合团队项目管理。</div><div class="meta"><span class="badge stars">4.3k⭐</span><span class="badge open">开源</span></div></div>
+          <div class="tool-card" data-tags="open cn"><div class="head"><div class="ic ic-firered"><img src="../assets/icons/tools/firered.png" alt="FireRed-OpenStoryline"></div><h3>FireRed-OpenStoryline</h3></div><div class="t">小红书出品。意图驱动视频编辑 Agent。小红书生态适配。</div><div class="meta"><span class="badge stars">3.4k⭐</span><span class="badge open">开源</span><span class="badge cn">小红书</span></div></div>
+          <div class="tool-card" data-tags="open cn"><div class="head"><div class="ic ic-lumenx"><img src="../assets/icons/tools/lumenx.png" alt="lumenx"></div><h3>lumenx</h3></div><div class="t">阿里出品。小说 → 短动画剧全链路。ComfyUI 友好。</div><div class="meta"><span class="badge stars">1.2k⭐</span><span class="badge open">开源</span><span class="badge cn">阿里</span></div></div>
+          <div class="tool-card" data-tags="open free"><div class="head"><div class="ic ic-wan"><img src="../assets/icons/tools/wan.png" alt="Wan 2.2(阿里)"></div><h3>Wan 2.2(阿里)</h3></div><div class="t">14B 参数开源视频模型。720P 24fps + 5s + 2s 延长。角色一致性 Wan 2.1 → 2.2 提升 30%。</div><div class="meta"><span class="badge open">开源</span><span class="badge free">免费</span></div></div>
+          <div class="tool-card" data-tags="open cn"><div class="head"><div class="ic ic-hunyuanvideo"><img src="../assets/icons/tools/hunyuanvideo.png" alt="HunyuanVideo(腾讯)"></div><h3>HunyuanVideo(腾讯)</h3></div><div class="t">13B 开源视频模型。本地 4G 显存可跑 LoRA 微调。</div><div class="meta"><span class="badge open">开源</span><span class="badge cn">腾讯</span></div></div>
+          <div class="tool-card" data-tags="open free"><div class="head"><div class="ic ic-animatediff"><img src="../assets/icons/tools/animatediff.png" alt="AnimateDiff + SDXL"></div><h3>AnimateDiff + SDXL</h3></div><div class="t">本地 4G 显存可跑。SDXL + ControlNet 驱动动作。玉哥 F-7 节详解。</div><div class="meta"><span class="badge open">开源</span><span class="badge free">免费</span></div></div>
+        </div>
+      </section>
+
+      <section class="classroom-section" id="classroom-lab">
+        <div class="classroom-launch">
+          <div class="classroom-launch-copy">
+            <div class="classroom-launch-icon" aria-hidden="true">🎲</div>
+            <div>
+              <h2>课堂互动 · 随机摇号器</h2>
+              <p>随机抽学号，支持不重复、多人数、缺席排除、求助卡和趣味挑战。设置只保存在当前浏览器，断网也能使用。</p>
+              <div class="classroom-launch-tags" aria-label="功能标签">
+                <span>公平随机</span><span>全屏投影</span><span>求助卡</span><span>趣味挑战</span><span>快捷键空格</span>
+              </div>
+            </div>
+          </div>
+          <button class="classroom-open-btn" id="openClassroomPicker" type="button">开始课堂摇号 →</button>
+        </div>
+      </section>
+
+      <div class="legend">
+        <strong style="color:var(--text); font-weight:600; font-size:13px;">徽章含义:</strong>
+        <span class="item"><span class="badge yuge">玉哥</span>课件推荐</span>
+        <span class="item"><span class="badge open">开源</span>GitHub 可自部署</span>
+        <span class="item"><span class="badge free">免费</span>有免费层/新户免费</span>
+        <span class="item"><span class="badge cn">国产</span>国内直连</span>
+        <span class="item"><span class="badge intl">海外</span>需科学上网</span>
+        <span class="item"><span class="badge hot">付费</span>热门/需付费</span>
+        <span class="item"><span class="badge stars">⭐</span>GitHub Star 数</span>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<dialog class="classroom-picker-dialog" id="classroomPicker" aria-labelledby="pickerTitle">
+  <div class="picker-shell">
+    <div class="picker-head">
+      <div class="picker-head-title">
+        <strong id="pickerTitle">🎲 课堂随机摇号器</strong>
+        <small>公平抽取 · 活跃课堂 · 不让不会回答变成尴尬</small>
+      </div>
+      <button class="picker-icon-btn" id="pickerFullscreen" type="button" title="全屏投影" aria-label="全屏投影">⛶</button>
+      <button class="picker-icon-btn" id="pickerClose" type="button" title="关闭" aria-label="关闭摇号器">×</button>
+    </div>
+    <div class="picker-body">
+      <aside class="picker-settings" aria-label="摇号设置">
+        <h3>摇号设置</h3>
+        <div class="picker-row">
+          <div class="picker-field">
+            <label for="pickerMin">起始号码</label>
+            <input id="pickerMin" type="number" min="1" max="9999" value="1" inputmode="numeric">
+          </div>
+          <div class="picker-field">
+            <label for="pickerMax">结束号码</label>
+            <input id="pickerMax" type="number" min="1" max="9999" value="30" inputmode="numeric">
+          </div>
+        </div>
+        <div class="picker-field">
+          <label for="pickerQuantity">每次抽取人数</label>
+          <select id="pickerQuantity">
+            <option value="1">1 人</option><option value="2">2 人</option><option value="3">3 人</option><option value="4">4 人</option><option value="5">5 人</option>
+          </select>
+        </div>
+        <div class="picker-field">
+          <label for="pickerExclusions">缺席 / 排除号码</label>
+          <input id="pickerExclusions" type="text" placeholder="例如：3、8、17 或 20-25">
+          <span class="picker-hint">支持逗号、顿号和连续范围，排除后不会抽中。</span>
+        </div>
+        <label class="picker-check"><input id="pickerUnique" type="checkbox" checked> 本轮不重复抽取</label>
+        <div class="picker-field">
+          <label for="pickerSound">摇号音效</label>
+          <select id="pickerSound">
+            <option value="light">轻快提示</option>
+            <option value="game">游戏节目</option>
+            <option value="hype">热血庆祝</option>
+            <option value="off">关闭音效</option>
+          </select>
+          <span class="picker-hint">“热血庆祝”适合活动课和公开课，普通课堂推荐轻快提示。</span>
+        </div>
+        <div class="picker-settings-actions">
+          <button class="picker-secondary" id="pickerReset" type="button">重新开始本轮</button>
+          <button class="picker-secondary" id="pickerDemo" type="button">恢复 30 人示例</button>
+        </div>
+        <div class="picker-history">
+          <h3>本轮已抽</h3>
+          <div class="picker-history-list" id="pickerHistoryList" aria-live="polite"></div>
+        </div>
+      </aside>
+
+      <section class="picker-stage" aria-label="摇号舞台">
+        <div class="picker-confetti" id="pickerConfetti" aria-hidden="true"></div>
+        <div class="picker-status" id="pickerStatus" aria-live="polite">设置今天到场人数，然后开始摇号</div>
+        <div class="picker-ball" id="pickerBall" aria-hidden="true"><span class="picker-number" id="pickerNumber">?</span></div>
+        <div class="picker-result-list" id="pickerResults" aria-label="本次抽取结果"></div>
+        <button class="picker-primary" id="pickerDraw" type="button">🎲 开始摇号</button>
+        <div class="picker-shortcut">按空格键也可以开始</div>
+        <div class="picker-game-actions">
+          <button class="picker-ghost" id="pickerAid" type="button">🆘 随机求助卡</button>
+          <button class="picker-ghost" id="pickerChallenge" type="button">🎭 随机趣味挑战</button>
+        </div>
+        <div class="picker-card-result" id="pickerCardResult" aria-live="polite"></div>
+      </section>
+    </div>
+  </div>
+</dialog>
+
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="扫码关注玉哥">
+      <img class="qr-img" src="../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../changelog.html">📅 更新日志</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+
+<script>
+// ========== 主题切换(同时兼容 data-theme 属性和 html.dark 类) ==========
+(function(){
+  function applyTheme(t){
+    document.documentElement.setAttribute('data-theme', t);
+    document.documentElement.classList.toggle('dark', t === 'dark');
+    try { localStorage.setItem('tools:theme', t); } catch(e){}
+    var btn = document.getElementById('themeBtn');
+    if (btn) btn.textContent = t === 'dark' ? '☀️' : '🌙';
+  }
+  function bind(){
+    var btn = document.getElementById('themeBtn');
+    if (!btn) return false;
+    btn.addEventListener('click', function(){
+      var cur = document.documentElement.getAttribute('data-theme') || 'light';
+      applyTheme(cur === 'light' ? 'dark' : 'light');
+    });
+    return true;
+  }
+  var saved = null;
+  try { saved = localStorage.getItem('tools:theme'); } catch(e){}
+  applyTheme(saved || 'light');
+  if (!bind()) {
+    document.addEventListener('DOMContentLoaded', bind);
+  }
+})();
+
+// ========== 工具卡跳转(主要工具跳官网,其他原版课件) ==========
+(function(){
+  // 工具名 → URL 映射(常见海外/国产/开源,小平台/原版用 # 占位)
+  var URL_MAP = {
+    'DeepSeek': 'https://chat.deepseek.com/',
+    '豆包(字节)': 'https://www.doubao.com/chat/',
+    'ChatGPT': 'https://chatgpt.com/',
+    'Claude': 'https://claude.ai/',
+    '可灵(快手)': 'https://klingai.kuaishou.com/',
+    '即梦(字节)': 'https://jimeng.jianying.com/',
+    '即梦视频(字节)': 'https://jimeng.jianying.com/ai-video',
+    'Midjourney': 'https://www.midjourney.com/',
+    'Runway Gen-4 Turbo': 'https://app.runwayml.com/',
+    'Vidu': 'https://www.vidu.studio/',
+    'Hailuo 海螺': 'https://hailuoai.video/',
+    'Wan 2.x(阿里)': 'https://tongyi.aliyun.com/wanxiang/',
+    'Wan 2.2(阿里)': 'https://tongyi.aliyun.com/wanxiang/',
+    'Sora 2(OpenAI)': 'https://sora.com/',
+    'HunyuanVideo(腾讯)': 'https://hunyuan.tencent.com/video',
+    'LTX-Video': 'https://ltx-video.com/',
+    'AnimateDiff': 'https://github.com/guoyww/AnimateDiff',
+    'AnimateDiff + SDXL': 'https://github.com/guoyww/AnimateDiff',
+    'Seedance 2.0': 'https://seedance.bytedance.com/',
+    'seedance-2.0': 'https://seedance.bytedance.com/',
+    'Suno': 'https://suno.com/',
+    '剪映(字节)': 'https://www.capcut.cn/',
+    'ElevenLabs': 'https://elevenlabs.io/',
+    'ChatTTS': 'https://github.com/2noise/ChatTTS',
+    'Sync.so': 'https://sync.so/',
+    'Udio': 'https://udio.com/',
+    'Freesound': 'https://freesound.org/',
+    'Freesound 音效库': 'https://freesound.org/',
+    'Premiere Pro(Adobe)': 'https://www.adobe.com/products/premiere.html',
+    'DaVinci Resolve': 'https://www.blackmagicdesign.com/products/davinciresolve',
+    'Final Cut Pro': 'https://www.apple.com/final-cut-pro/',
+    'CapCut': 'https://www.capcut.com/',
+    'CapCut 国际版': 'https://www.capcut.com/',
+    'Canva': 'https://www.canva.com/',
+    'Canva 可画': 'https://www.canva.com/',
+    'RIFE': 'https://github.com/megvii-research/ECCV2022-RIFE',
+    'RIFE 插帧': 'https://github.com/megvii-research/ECCV2022-RIFE',
+    'UltraSharp': 'https://github.com/longxiaofei/spatial-anti-aliasing',
+    '4x-UltraSharp 高清放大': 'https://github.com/longxiaofei/spatial-anti-aliasing',
+    'ComfyUI': 'https://github.com/comfyanonymous/ComfyUI',
+    'Flux': 'https://github.com/black-forest-labs/flux',
+    'SDXL': 'https://github.com/Stability-AI/generative-models',
+    'SDXL + JuggernautXL': 'https://github.com/Stability-AI/generative-models',
+    'Stable Diffusion WebUI': 'https://github.com/AUTOMATIC1111/stable-diffusion-webui',
+    'ToonFlow': 'https://toonflow.com/',
+    'Toonflow': 'https://toonflow.com/',
+    '智谱': 'https://www.zhipuai.cn/',
+    '智谱清影': 'https://www.zhipuai.cn/',
+    'Tapnow': 'https://www.tapnow.cn/',
+    'TapNow 长视频': 'https://www.tapnow.cn/',
+    'ViMax': 'https://github.com/HKUDS/ViMax',
+    'aid-studio': 'https://github.com/lkmvip/aid',
+    'LumenX': 'https://lumix-code.github.io/LumenX/',
+    'LumenX Studio': 'https://lumix-code.github.io/LumenX/',
+    'lumenx': 'https://lumix-code.github.io/LumenX/',
+    'NarratoAI': 'https://github.com/linyqh/NarratoAI',
+    'Jellyfish': 'https://github.com/lsgxs/jellyfish',
+    'Arcreel': 'https://arcreel.com/',
+    'ArcReel': 'https://arcreel.com/',
+    'FireRed': 'https://github.com/FireRedTeam/FireRedASR',
+    'FireRed-OpenStoryline': 'https://github.com/FireRedTeam/FireRedOpenStoryline',
+    '海螺 AI Agent': 'https://hailuoai.video/',
+    'MoneyPrinterTurbo': 'https://github.com/harry0703/MoneyPrinterTurbo',
+    'huobao-drama': 'https://www.huobaochat.com/',
+    '商汤 Seko': 'https://seko.sensetime.com/',
+    '巨日禄': '../tutorial/L-airepo/短剧AI仓库.html',
+    '小云雀': 'https://www.volcengine.com/',
+    '有戏 AI': '../tutorial/L-airepo/短剧AI仓库.html',
+    'libtv': 'https://www.volcengine.com/',
+    'Catimind(神经猫 AI)': '../tutorial/L-airepo/短剧AI仓库.html',
+    'Pixmax': '../tutorial/L-airepo/短剧AI仓库.html',
+    '60 端漫剧流水线': '../tutorial/L-airepo/短剧AI仓库.html',
+    '字狐跳跳': '../tutorial/L-airepo/短剧AI仓库.html',
+    '魔音工坊': '../tutorial/L-airepo/短剧AI仓库.html',
+    'liblib.tv': 'https://www.liblib.tv/'
+  };
+
+  // 给每个 .tool-card 加 cursor pointer + click handler
+  document.querySelectorAll('.tool-card').forEach(function(card){
+    card.style.cursor = 'pointer';
+    card.addEventListener('click', function(e){
+      // 不要拦截 badge / a 内部点击
+      if (e.target.tagName === 'A' || e.target.tagName === 'IMG') return;
+      var h3 = card.querySelector('h3');
+      if (!h3) return;
+      // 提取主标题(去掉 badge 干扰)
+      var title = (h3.firstChild && h3.firstChild.textContent ? h3.firstChild.textContent : h3.textContent).trim();
+      // 去掉括号内说明(如 "(快手)" "(字节)" "(OpenAI)" "(腾讯)" "(阿里)" "(字节)" "(神经猫 AI)")
+      var cleanTitle = title.replace(/[(（][^)）]*[)）]/g, '').trim();
+      // 再尝试原 title
+      var url = URL_MAP[title] || URL_MAP[cleanTitle] || '#';
+      if (url === '#') {
+        // 没找到对应,显示友好提示
+        var t = card.querySelector('h3').textContent.trim();
+        console.log('[玉哥工具卡] 未配置 URL:', t);
+        return;
+      }
+      window.open(url, '_blank', 'noopener,noreferrer');
+    });
+    // 键盘可访问
+    card.setAttribute('tabindex', '0');
+    card.setAttribute('role', 'link');
+    card.addEventListener('keydown', function(e){
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        card.click();
+      }
+    });
+  });
+})();
+
+// ========== 搜索 + 筛选 ==========
+(function(){
+  var search = document.getElementById('toolSearch');
+  var chips = document.querySelectorAll('.filter-chip');
+  var cards = document.querySelectorAll('.tool-card');
+  var stages = document.querySelectorAll('.stage-block');
+  var empty = document.getElementById('emptyState');
+  var currentFilter = 'all';
+  var currentQuery = '';
+
+  function apply() {
+    var visibleCount = 0;
+    cards.forEach(function(c){
+      var tags = (c.getAttribute('data-tags') || '').split(/\s+/);
+      var text = (c.textContent || '').toLowerCase();
+      var matchFilter = currentFilter === 'all' || tags.indexOf(currentFilter) >= 0;
+      var matchQuery = !currentQuery || text.indexOf(currentQuery) >= 0;
+      if (matchFilter && matchQuery) { c.classList.remove('hidden'); visibleCount++; }
+      else c.classList.add('hidden');
+    });
+    stages.forEach(function(s){
+      var visible = s.querySelectorAll('.tool-card:not(.hidden)');
+      s.classList.toggle('hidden', visible.length === 0);
+    });
+    empty.classList.toggle('show', visibleCount === 0);
+  }
+
+  if (search) {
+    search.addEventListener('input', function(e){
+      currentQuery = e.target.value.trim().toLowerCase();
+      apply();
+    });
+    document.addEventListener('keydown', function(e){
+      if (e.key === '/' && document.activeElement !== search && !e.ctrlKey && !e.metaKey) {
+        e.preventDefault();
+        search.focus();
+        search.select();
+      }
+      if (e.key === 'Escape' && document.activeElement === search) {
+        search.value = '';
+        currentQuery = '';
+        apply();
+        search.blur();
+      }
+    });
+  }
+
+  chips.forEach(function(chip){
+    chip.addEventListener('click', function(){
+      chips.forEach(function(c){ c.classList.remove('active'); });
+      chip.classList.add('active');
+      currentFilter = chip.getAttribute('data-filter');
+      apply();
+    });
+  });
+
+  apply();
+})();
+
+// ========== 左侧导航 + 阅读进度条 ==========
+(function(){
+  var links = document.querySelectorAll('.tools-side a[data-stage]');
+  var bar = document.getElementById('readProgressBar');
+  var marker = document.getElementById('readProgressMarker');
+  if (links.length === 0) return;
+  var sections = [];
+  links.forEach(function(l){
+    var id = l.getAttribute('data-stage');
+    var el = document.getElementById(id);
+    if (el) sections.push({ id: id, el: el });
+  });
+
+  function activate(id) {
+    links.forEach(function(l){ l.classList.remove('active'); });
+    var target = document.querySelector('.tools-side a[data-stage="' + id + '"]');
+    if (target) target.classList.add('active');
+  }
+
+  var raf = 0;
+  function onScroll() {
+    if (raf) return;
+    raf = requestAnimationFrame(function(){
+      raf = 0;
+      var scrollY = window.scrollY + 140;
+      var current = sections[0] ? sections[0].id : null;
+      for (var i = 0; i < sections.length; i++) {
+        if (sections[i].el.offsetTop <= scrollY) current = sections[i].id;
+      }
+      if (current) activate(current);
+
+      var main = document.querySelector('.tools-main');
+      if (bar) {
+        var rect = main ? main.getBoundingClientRect() : { top: 0, height: document.body.scrollHeight };
+        var total = (rect.height || document.body.scrollHeight) - window.innerHeight;
+        var scrolled = window.scrollY;
+        var pct = Math.max(0, Math.min(100, total > 0 ? (scrolled / total) * 100 : 0));
+        bar.style.width = pct + '%';
+      }
+    });
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll, { passive: true });
+  onScroll();
+
+  links.forEach(function(l){
+    l.addEventListener('click', function(){
+      var id = l.getAttribute('data-stage');
+      activate(id);
+      var el = document.getElementById(id);
+      if (el) {
+        setTimeout(function(){
+          window.scrollTo({ top: el.offsetTop - 70, behavior: 'smooth' });
+        }, 50);
+      }
+    });
+  });
+})();
+</script>
+
+<script src="../assets/classroom-picker.js?v=fix20260927-2215" defer></script>
+<script src="../assets/site-enhance.js?v=fix20260927-2215" defer></script>
+</body></html>

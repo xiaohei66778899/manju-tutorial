@@ -1,0 +1,21 @@
+﻿/* 通用页面样式 — 顶栏 + 主体 + 底部 dock */
+/* 顶栏统一由 site.css 管理，避免页面间重复覆盖。 */
+
+main.page { max-width: 980px; margin: 0 auto; padding: 40px 32px 60px; }
+main.page h1 { font-size: 32px; color: var(--blue); margin: 0 0 8px; }
+main.page .lead { font-size: 16px; color: var(--text); background: var(--lime); padding: 14px 18px; border-left: 4px solid var(--blue); border-radius: 4px; margin: 20px 0 32px; }
+main.page h2 { font-size: 22px; color: var(--blue); margin: 36px 0 14px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin: 16px 0; }
+.card { border: 1px solid var(--line); border-radius: 6px; padding: 18px 20px; background: var(--bg); transition: all 0.15s; }
+.card:hover { border-color: var(--blue); transform: translateY(-2px); text-decoration: none; }
+.card a { color: inherit; text-decoration: none; display: block; }
+.card .tag { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+.card h3 { color: var(--blue); font-size: 16px; margin: 4px 0 6px; }
+.card p { color: var(--muted); font-size: 13px; margin: 0; }
+
+footer.dock { background: var(--bg2); border-top: 1px solid var(--line); padding: 24px; text-align: center; margin-top: 60px; }
+footer.dock .row { display: flex; justify-content: center; gap: 18px; flex-wrap: wrap; margin-bottom: 12px; font-size: 13px; }
+footer.dock .row a { color: var(--muted); }
+footer.dock .row a:hover { color: var(--blue); }
+footer.dock .copy { color: var(--muted); font-size: 12px; }

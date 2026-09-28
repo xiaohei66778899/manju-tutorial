@@ -1,0 +1,5 @@
+﻿In this tutorial, I show 20 real video examples of cinematic lighting prompts used in AI filmmaking, along with the exact prompts for each professional lighting setup.
+
+I cover the full range of cinematic lighting, from classical filmmaking techniques like the Rembrandt triangle and Butterfly lighting to atmospheric natural light and advanced studio styles.
+
+You'll see 3-point lighting systems, Kelvin color temperature manipulation, Gobo projections, Volumetric God Rays, and professional techniques like Negative Fill to give your AI generations a high-end Hollywood look.

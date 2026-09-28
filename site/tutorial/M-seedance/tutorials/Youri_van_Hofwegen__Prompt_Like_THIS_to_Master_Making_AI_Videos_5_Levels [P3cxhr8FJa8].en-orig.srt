@@ -1,0 +1,5985 @@
+1
+00:00:00,000 --> 00:00:01,630
+
+You're probably wondering why your AI
+
+2
+00:00:01,630 --> 00:00:01,640
+You're probably wondering why your AI
+ 
+
+3
+00:00:01,640 --> 00:00:03,950
+You're probably wondering why your AI
+videos keep coming out mediocre, even
+
+4
+00:00:03,950 --> 00:00:03,960
+videos keep coming out mediocre, even
+ 
+
+5
+00:00:03,960 --> 00:00:05,830
+videos keep coming out mediocre, even
+when you're using all the best models.
+
+6
+00:00:05,830 --> 00:00:05,840
+when you're using all the best models.
+ 
+
+7
+00:00:05,840 --> 00:00:07,070
+when you're using all the best models.
+And the biggest thing I've learned is
+
+8
+00:00:07,070 --> 00:00:07,080
+And the biggest thing I've learned is
+ 
+
+9
+00:00:07,080 --> 00:00:08,630
+And the biggest thing I've learned is
+that the reason you're not creating
+
+10
+00:00:08,630 --> 00:00:08,640
+that the reason you're not creating
+ 
+
+11
+00:00:08,640 --> 00:00:10,630
+that the reason you're not creating
+cinematic outputs, no matter what tool
+
+12
+00:00:10,630 --> 00:00:10,640
+cinematic outputs, no matter what tool
+ 
+
+13
+00:00:10,640 --> 00:00:12,830
+cinematic outputs, no matter what tool
+you use, always comes down to how you
+
+14
+00:00:12,830 --> 00:00:12,840
+you use, always comes down to how you
+ 
+
+15
+00:00:12,840 --> 00:00:14,390
+you use, always comes down to how you
+prompt. So, after working with these
+
+16
+00:00:14,390 --> 00:00:14,400
+prompt. So, after working with these
+ 
+
+17
+00:00:14,400 --> 00:00:16,150
+prompt. So, after working with these
+tools for months, I've been able to come
+
+18
+00:00:16,150 --> 00:00:16,160
+tools for months, I've been able to come
+ 
+
+19
+00:00:16,160 --> 00:00:18,430
+tools for months, I've been able to come
+up with five levels of prompting. And in
+
+20
+00:00:18,430 --> 00:00:18,440
+up with five levels of prompting. And in
+ 
+
+21
+00:00:18,440 --> 00:00:20,310
+up with five levels of prompting. And in
+this video, I'll walk you through all of
+
+22
+00:00:20,310 --> 00:00:20,320
+this video, I'll walk you through all of
+ 
+
+23
+00:00:20,320 --> 00:00:22,030
+this video, I'll walk you through all of
+them, so you can finally go from a
+
+24
+00:00:22,030 --> 00:00:22,040
+them, so you can finally go from a
+ 
+
+25
+00:00:22,040 --> 00:00:24,310
+them, so you can finally go from a
+beginner to a pro who's mastered AI
+
+26
+00:00:24,310 --> 00:00:24,320
+beginner to a pro who's mastered AI
+ 
+
+27
+00:00:24,320 --> 00:00:26,350
+beginner to a pro who's mastered AI
+video creation. We're starting at level
+
+28
+00:00:26,350 --> 00:00:26,360
+video creation. We're starting at level
+ 
+
+29
+00:00:26,360 --> 00:00:28,390
+video creation. We're starting at level
+one, which is exactly where most people
+
+30
+00:00:28,390 --> 00:00:28,400
+one, which is exactly where most people
+ 
+
+31
+00:00:28,400 --> 00:00:29,870
+one, which is exactly where most people
+are. And it's important to go through
+
+32
+00:00:29,870 --> 00:00:29,880
+are. And it's important to go through
+ 
+
+33
+00:00:29,880 --> 00:00:31,710
+are. And it's important to go through
+this stage to show you what works and
+
+34
+00:00:31,710 --> 00:00:31,720
+this stage to show you what works and
+ 
+
+35
+00:00:31,720 --> 00:00:33,590
+this stage to show you what works and
+what doesn't. For this whole video, I'll
+
+36
+00:00:33,590 --> 00:00:33,600
+what doesn't. For this whole video, I'll
+ 
+
+37
+00:00:33,600 --> 00:00:35,510
+what doesn't. For this whole video, I'll
+be working inside Hexfield, which is an
+
+38
+00:00:35,510 --> 00:00:35,520
+be working inside Hexfield, which is an
+ 
+
+39
+00:00:35,520 --> 00:00:37,710
+be working inside Hexfield, which is an
+all-in-one platform that keeps every AI
+
+40
+00:00:37,710 --> 00:00:37,720
+all-in-one platform that keeps every AI
+ 
+
+41
+00:00:37,720 --> 00:00:39,870
+all-in-one platform that keeps every AI
+tool I need in one place. So, if you
+
+42
+00:00:39,870 --> 00:00:39,880
+tool I need in one place. So, if you
+ 
+
+43
+00:00:39,880 --> 00:00:41,470
+tool I need in one place. So, if you
+want to follow along, I've left a link
+
+44
+00:00:41,470 --> 00:00:41,480
+want to follow along, I've left a link
+ 
+
+45
+00:00:41,480 --> 00:00:43,270
+want to follow along, I've left a link
+for it in the description below. Once
+
+46
+00:00:43,270 --> 00:00:43,280
+for it in the description below. Once
+ 
+
+47
+00:00:43,280 --> 00:00:45,150
+for it in the description below. Once
+you log in, everything's laid out along
+
+48
+00:00:45,150 --> 00:00:45,160
+you log in, everything's laid out along
+ 
+
+49
+00:00:45,160 --> 00:00:46,750
+you log in, everything's laid out along
+the top navigation [music] bar, and
+
+50
+00:00:46,750 --> 00:00:46,760
+the top navigation [music] bar, and
+ 
+
+51
+00:00:46,760 --> 00:00:48,590
+the top navigation [music] bar, and
+since we're making video, you just click
+
+52
+00:00:48,590 --> 00:00:48,600
+since we're making video, you just click
+ 
+
+53
+00:00:48,600 --> 00:00:50,950
+since we're making video, you just click
+on video to open the video generation
+
+54
+00:00:50,950 --> 00:00:50,960
+on video to open the video generation
+ 
+
+55
+00:00:50,960 --> 00:00:52,910
+on video to open the video generation
+workspace. From the model selector, I'll
+
+56
+00:00:52,910 --> 00:00:52,920
+workspace. From the model selector, I'll
+ 
+
+57
+00:00:52,920 --> 00:00:55,510
+workspace. From the model selector, I'll
+pick Seed N 2.0, because right now, it's
+
+58
+00:00:55,510 --> 00:00:55,520
+pick Seed N 2.0, because right now, it's
+ 
+
+59
+00:00:55,520 --> 00:00:57,070
+pick Seed N 2.0, because right now, it's
+one of [music] the best video models out
+
+60
+00:00:57,070 --> 00:00:57,080
+one of [music] the best video models out
+ 
+
+61
+00:00:57,080 --> 00:00:58,710
+one of [music] the best video models out
+there. And it's the one model we'll use
+
+62
+00:00:58,710 --> 00:00:58,720
+there. And it's the one model we'll use
+ 
+
+63
+00:00:58,720 --> 00:01:00,310
+there. And it's the one model we'll use
+throughout this video, so the only
+
+64
+00:01:00,310 --> 00:01:00,320
+throughout this video, so the only
+ 
+
+65
+00:01:00,320 --> 00:01:02,310
+throughout this video, so the only
+difference will come down to the prompt.
+
+66
+00:01:02,310 --> 00:01:02,320
+difference will come down to the prompt.
+ 
+
+67
+00:01:02,320 --> 00:01:03,910
+difference will come down to the prompt.
+And to test this properly, I'll run the
+
+68
+00:01:03,910 --> 00:01:03,920
+And to test this properly, I'll run the
+ 
+
+69
+00:01:03,920 --> 00:01:06,470
+And to test this properly, I'll run the
+exact same ideas through all five levels
+
+70
+00:01:06,470 --> 00:01:06,480
+exact same ideas through all five levels
+ 
+
+71
+00:01:06,480 --> 00:01:08,190
+exact same ideas through all five levels
+with the same settings. So, I'll set the
+
+72
+00:01:08,190 --> 00:01:08,200
+with the same settings. So, I'll set the
+ 
+
+73
+00:01:08,200 --> 00:01:09,990
+with the same settings. So, I'll set the
+duration to eight seconds, the
+
+74
+00:01:09,990 --> 00:01:10,000
+duration to eight seconds, the
+ 
+
+75
+00:01:10,000 --> 00:01:13,110
+duration to eight seconds, the
+resolution to 1080p, the aspect ratio to
+
+76
+00:01:13,110 --> 00:01:13,120
+resolution to 1080p, the aspect ratio to
+ 
+
+77
+00:01:13,120 --> 00:01:15,830
+resolution to 1080p, the aspect ratio to
+16x9, and turn the sound on. Level one
+
+78
+00:01:15,830 --> 00:01:15,840
+16x9, and turn the sound on. Level one
+ 
+
+79
+00:01:15,840 --> 00:01:17,270
+16x9, and turn the sound on. Level one
+prompting is just [music] describing
+
+80
+00:01:17,270 --> 00:01:17,280
+prompting is just [music] describing
+ 
+
+81
+00:01:17,280 --> 00:01:19,310
+prompting is just [music] describing
+your idea with a simple sentence. So,
+
+82
+00:01:19,310 --> 00:01:19,320
+your idea with a simple sentence. So,
+ 
+
+83
+00:01:19,320 --> 00:01:21,310
+your idea with a simple sentence. So,
+for the first idea, I'll write a boxer
+
+84
+00:01:21,310 --> 00:01:21,320
+for the first idea, I'll write a boxer
+ 
+
+85
+00:01:21,320 --> 00:01:23,270
+for the first idea, I'll write a boxer
+walking to the ring and generate. And
+
+86
+00:01:23,270 --> 00:01:23,280
+walking to the ring and generate. And
+ 
+
+87
+00:01:23,280 --> 00:01:25,030
+walking to the ring and generate. And
+this exact prompt, along with every
+
+88
+00:01:25,030 --> 00:01:25,040
+this exact prompt, along with every
+ 
+
+89
+00:01:25,040 --> 00:01:26,710
+this exact prompt, along with every
+other level, is in the description
+
+90
+00:01:26,710 --> 00:01:26,720
+other level, is in the description
+ 
+
+91
+00:01:26,720 --> 00:01:28,630
+other level, is in the description
+completely for free, so you can follow
+
+92
+00:01:28,630 --> 00:01:28,640
+completely for free, so you can follow
+ 
+
+93
+00:01:28,640 --> 00:01:37,586
+completely for free, so you can follow
+along and try each level yourself.
+
+94
+00:01:37,586 --> 00:01:37,596
+
+ 
+
+95
+00:01:37,596 --> 00:01:38,790
+
+>> [cheering]
+
+96
+00:01:38,790 --> 00:01:38,800
+>> [cheering]
+ 
+
+97
+00:01:38,800 --> 00:01:40,750
+>> [cheering]
+>> And honestly, for a few words, it looks
+
+98
+00:01:40,750 --> 00:01:40,760
+>> And honestly, for a few words, it looks
+ 
+
+99
+00:01:40,760 --> 00:01:42,950
+>> And honestly, for a few words, it looks
+good. A fighter is walking down a tunnel
+
+100
+00:01:42,950 --> 00:01:42,960
+good. A fighter is walking down a tunnel
+ 
+
+101
+00:01:42,960 --> 00:01:44,790
+good. A fighter is walking down a tunnel
+with the ring glowing at the end, and it
+
+102
+00:01:44,790 --> 00:01:44,800
+with the ring glowing at the end, and it
+ 
+
+103
+00:01:44,800 --> 00:01:46,550
+with the ring glowing at the end, and it
+even added its own crowd noise
+
+104
+00:01:46,550 --> 00:01:46,560
+even added its own crowd noise
+ 
+
+105
+00:01:46,560 --> 00:01:48,470
+even added its own crowd noise
+underneath. So, I'll keep every setting
+
+106
+00:01:48,470 --> 00:01:48,480
+underneath. So, I'll keep every setting
+ 
+
+107
+00:01:48,480 --> 00:01:50,550
+underneath. So, I'll keep every setting
+the same and just swap the prompt for a
+
+108
+00:01:50,550 --> 00:01:50,560
+the same and just swap the prompt for a
+ 
+
+109
+00:01:50,560 --> 00:01:57,236
+the same and just swap the prompt for a
+busy Tokyo street at night.
+
+110
+00:01:57,236 --> 00:01:57,246
+
+ 
+
+111
+00:01:57,246 --> 00:02:00,550
+
+>> [music]
+
+112
+00:02:00,550 --> 00:02:00,560
+
+ 
+
+113
+00:02:00,560 --> 00:02:02,630
+
+>> And again, it looks the part. Wet neon
+
+114
+00:02:02,630 --> 00:02:02,640
+>> And again, it looks the part. Wet neon
+ 
+
+115
+00:02:02,640 --> 00:02:04,390
+>> And again, it looks the part. Wet neon
+streets with the signs stacked
+
+116
+00:02:04,390 --> 00:02:04,400
+streets with the signs stacked
+ 
+
+117
+00:02:04,400 --> 00:02:06,390
+streets with the signs stacked
+everywhere. Then, I'll change it to a
+
+118
+00:02:06,390 --> 00:02:06,400
+everywhere. Then, I'll change it to a
+ 
+
+119
+00:02:06,400 --> 00:02:14,870
+everywhere. Then, I'll change it to a
+car drifting around the corner.
+
+120
+00:02:14,870 --> 00:02:14,880
+
+ 
+
+121
+00:02:14,880 --> 00:02:16,630
+
+And I get a car sliding through a bend
+
+122
+00:02:16,630 --> 00:02:16,640
+And I get a car sliding through a bend
+ 
+
+123
+00:02:16,640 --> 00:02:18,550
+And I get a car sliding through a bend
+with smoke pouring off the tires. And
+
+124
+00:02:18,550 --> 00:02:18,560
+with smoke pouring off the tires. And
+ 
+
+125
+00:02:18,560 --> 00:02:20,430
+with smoke pouring off the tires. And
+the last one, a woman making coffee in
+
+126
+00:02:20,430 --> 00:02:20,440
+the last one, a woman making coffee in
+ 
+
+127
+00:02:20,440 --> 00:02:22,126
+the last one, a woman making coffee in
+her kitchen, comes out as this calm
+
+128
+00:02:22,126 --> 00:02:22,136
+her kitchen, comes out as this calm
+ 
+
+129
+00:02:22,136 --> 00:02:26,711
+her kitchen, comes out as this calm
+[music] warm morning scene.
+
+130
+00:02:26,711 --> 00:02:26,721
+
+ 
+
+131
+00:02:26,721 --> 00:02:29,190
+
+>> [music]
+
+132
+00:02:29,190 --> 00:02:29,200
+
+ 
+
+133
+00:02:29,200 --> 00:02:30,790
+
+>> None of these look bad on their own.
+
+134
+00:02:30,790 --> 00:02:30,800
+>> None of these look bad on their own.
+ 
+
+135
+00:02:30,800 --> 00:02:32,430
+>> None of these look bad on their own.
+SeeDance 2 [music] is good enough where
+
+136
+00:02:32,430 --> 00:02:32,440
+SeeDance 2 [music] is good enough where
+ 
+
+137
+00:02:32,440 --> 00:02:34,150
+SeeDance 2 [music] is good enough where
+it can understand what a scene needs
+
+138
+00:02:34,150 --> 00:02:34,160
+it can understand what a scene needs
+ 
+
+139
+00:02:34,160 --> 00:02:35,870
+it can understand what a scene needs
+when you describe something and it fills
+
+140
+00:02:35,870 --> 00:02:35,880
+when you describe something and it fills
+ 
+
+141
+00:02:35,880 --> 00:02:37,630
+when you describe something and it fills
+the gaps. But, that's also what you're
+
+142
+00:02:37,630 --> 00:02:37,640
+the gaps. But, that's also what you're
+ 
+
+143
+00:02:37,640 --> 00:02:39,630
+the gaps. But, that's also what you're
+sacrificing. With a lazy prompt like
+
+144
+00:02:39,630 --> 00:02:39,640
+sacrificing. With a lazy prompt like
+ 
+
+145
+00:02:39,640 --> 00:02:41,430
+sacrificing. With a lazy prompt like
+that, you hand over all the control to
+
+146
+00:02:41,430 --> 00:02:41,440
+that, you hand over all the control to
+ 
+
+147
+00:02:41,440 --> 00:02:43,190
+that, you hand over all the control to
+the model. So, the shots, the camera
+
+148
+00:02:43,190 --> 00:02:43,200
+the model. So, the shots, the camera
+ 
+
+149
+00:02:43,200 --> 00:02:44,750
+the model. So, the shots, the camera
+angle, the environment, and the
+
+150
+00:02:44,750 --> 00:02:44,760
+angle, the environment, and the
+ 
+
+151
+00:02:44,760 --> 00:02:46,710
+angle, the environment, and the
+characters will always end up looking
+
+152
+00:02:46,710 --> 00:02:46,720
+characters will always end up looking
+ 
+
+153
+00:02:46,720 --> 00:02:48,830
+characters will always end up looking
+different every time you generate. So,
+
+154
+00:02:48,830 --> 00:02:48,840
+different every time you generate. So,
+ 
+
+155
+00:02:48,840 --> 00:02:50,990
+different every time you generate. So,
+if I run each prompt two more times with
+
+156
+00:02:50,990 --> 00:02:51,000
+if I run each prompt two more times with
+ 
+
+157
+00:02:51,000 --> 00:02:52,870
+if I run each prompt two more times with
+the exact same words, you'll notice that
+
+158
+00:02:52,870 --> 00:02:52,880
+the exact same words, you'll notice that
+ 
+
+159
+00:02:52,880 --> 00:02:54,470
+the exact same words, you'll notice that
+they look like completely different
+
+160
+00:02:54,470 --> 00:02:54,480
+they look like completely different
+ 
+
+161
+00:02:54,480 --> 00:02:56,949
+they look like completely different
+videos. The boxer's a different guy each
+
+162
+00:02:56,949 --> 00:02:56,959
+videos. The boxer's a different guy each
+ 
+
+163
+00:02:56,959 --> 00:02:58,630
+videos. The boxer's a different guy each
+time in a different tunnel with a
+
+164
+00:02:58,630 --> 00:02:58,640
+time in a different tunnel with a
+ 
+
+165
+00:02:58,640 --> 00:03:00,949
+time in a different tunnel with a
+completely different feel. The Tokyo one
+
+166
+00:03:00,949 --> 00:03:00,959
+completely different feel. The Tokyo one
+ 
+
+167
+00:03:00,959 --> 00:03:02,910
+completely different feel. The Tokyo one
+does something different with the camera
+
+168
+00:03:02,910 --> 00:03:02,920
+does something different with the camera
+ 
+
+169
+00:03:02,920 --> 00:03:04,590
+does something different with the camera
+every run, whether it's speeding through
+
+170
+00:03:04,590 --> 00:03:04,600
+every run, whether it's speeding through
+ 
+
+171
+00:03:04,600 --> 00:03:06,590
+every run, whether it's speeding through
+the city, walking along with the people,
+
+172
+00:03:06,590 --> 00:03:06,600
+the city, walking along with the people,
+ 
+
+173
+00:03:06,600 --> 00:03:08,350
+the city, walking along with the people,
+or coming in from above. And the city
+
+174
+00:03:08,350 --> 00:03:08,360
+or coming in from above. And the city
+ 
+
+175
+00:03:08,360 --> 00:03:10,110
+or coming in from above. And the city
+itself looks different, too. The car
+
+176
+00:03:10,110 --> 00:03:10,120
+itself looks different, too. The car
+ 
+
+177
+00:03:10,120 --> 00:03:11,990
+itself looks different, too. The car
+comes out with a different design every
+
+178
+00:03:11,990 --> 00:03:12,000
+comes out with a different design every
+ 
+
+179
+00:03:12,000 --> 00:03:14,190
+comes out with a different design every
+time, in a different setting, and even
+
+180
+00:03:14,190 --> 00:03:14,200
+time, in a different setting, and even
+ 
+
+181
+00:03:14,200 --> 00:03:16,310
+time, in a different setting, and even
+the time of day changes. And the coffee
+
+182
+00:03:16,310 --> 00:03:16,320
+the time of day changes. And the coffee
+ 
+
+183
+00:03:16,320 --> 00:03:18,030
+the time of day changes. And the coffee
+one, the order she does things is
+
+184
+00:03:18,030 --> 00:03:18,040
+one, the order she does things is
+ 
+
+185
+00:03:18,040 --> 00:03:19,310
+one, the order she does things is
+completely different. [music] And
+
+186
+00:03:19,310 --> 00:03:19,320
+completely different. [music] And
+ 
+
+187
+00:03:19,320 --> 00:03:21,590
+completely different. [music] And
+between the three videos, these outputs
+
+188
+00:03:21,590 --> 00:03:21,600
+between the three videos, these outputs
+ 
+
+189
+00:03:21,600 --> 00:03:23,509
+between the three videos, these outputs
+have completely different shots. So, if
+
+190
+00:03:23,509 --> 00:03:23,519
+have completely different shots. So, if
+ 
+
+191
+00:03:23,519 --> 00:03:25,470
+have completely different shots. So, if
+you've ever made a video that worked for
+
+192
+00:03:25,470 --> 00:03:25,480
+you've ever made a video that worked for
+ 
+
+193
+00:03:25,480 --> 00:03:27,150
+you've ever made a video that worked for
+you and tried to build upon it, but
+
+194
+00:03:27,150 --> 00:03:27,160
+you and tried to build upon it, but
+ 
+
+195
+00:03:27,160 --> 00:03:29,190
+you and tried to build upon it, but
+everything kept falling apart, this is
+
+196
+00:03:29,190 --> 00:03:29,200
+everything kept falling apart, this is
+ 
+
+197
+00:03:29,200 --> 00:03:31,190
+everything kept falling apart, this is
+exactly why. And that's level one. You
+
+198
+00:03:31,190 --> 00:03:31,200
+exactly why. And that's level one. You
+ 
+
+199
+00:03:31,200 --> 00:03:33,190
+exactly why. And that's level one. You
+hand over a rough idea and the model
+
+200
+00:03:33,190 --> 00:03:33,200
+hand over a rough idea and the model
+ 
+
+201
+00:03:33,200 --> 00:03:35,229
+hand over a rough idea and the model
+actually designs everything for you. So,
+
+202
+00:03:35,229 --> 00:03:35,239
+actually designs everything for you. So,
+ 
+
+203
+00:03:35,239 --> 00:03:36,750
+actually designs everything for you. So,
+you just end up burning through your
+
+204
+00:03:36,750 --> 00:03:36,760
+you just end up burning through your
+ 
+
+205
+00:03:36,760 --> 00:03:38,750
+you just end up burning through your
+credits on videos you didn't actually
+
+206
+00:03:38,750 --> 00:03:38,760
+credits on videos you didn't actually
+ 
+
+207
+00:03:38,760 --> 00:03:40,590
+credits on videos you didn't actually
+control, which is fine when you just
+
+208
+00:03:40,590 --> 00:03:40,600
+control, which is fine when you just
+ 
+
+209
+00:03:40,600 --> 00:03:42,030
+control, which is fine when you just
+want something quick. But, the second
+
+210
+00:03:42,030 --> 00:03:42,040
+want something quick. But, the second
+ 
+
+211
+00:03:42,040 --> 00:03:44,070
+want something quick. But, the second
+you want to work on an actual project, a
+
+212
+00:03:44,070 --> 00:03:44,080
+you want to work on an actual project, a
+ 
+
+213
+00:03:44,080 --> 00:03:46,390
+you want to work on an actual project, a
+one-liner can't do it. And the first fix
+
+214
+00:03:46,390 --> 00:03:46,400
+one-liner can't do it. And the first fix
+ 
+
+215
+00:03:46,400 --> 00:03:48,270
+one-liner can't do it. And the first fix
+is what you actually say to the model.
+
+216
+00:03:48,270 --> 00:03:48,280
+is what you actually say to the model.
+ 
+
+217
+00:03:48,280 --> 00:03:50,030
+is what you actually say to the model.
+So, level two is where you stop giving
+
+218
+00:03:50,030 --> 00:03:50,040
+So, level two is where you stop giving
+ 
+
+219
+00:03:50,040 --> 00:03:51,990
+So, level two is where you stop giving
+it a sentence and actually start
+
+220
+00:03:51,990 --> 00:03:52,000
+it a sentence and actually start
+ 
+
+221
+00:03:52,000 --> 00:03:53,910
+it a sentence and actually start
+describing the shot. And there are five
+
+222
+00:03:53,910 --> 00:03:53,920
+describing the shot. And there are five
+ 
+
+223
+00:03:53,920 --> 00:03:55,870
+describing the shot. And there are five
+things you add here: the subject, the
+
+224
+00:03:55,870 --> 00:03:55,880
+things you add here: the subject, the
+ 
+
+225
+00:03:55,880 --> 00:03:58,110
+things you add here: the subject, the
+action, the setting, the lighting, and
+
+226
+00:03:58,110 --> 00:03:58,120
+action, the setting, the lighting, and
+ 
+
+227
+00:03:58,120 --> 00:04:00,270
+action, the setting, the lighting, and
+the mood. So, instead of a boxer, I'll
+
+228
+00:04:00,270 --> 00:04:00,280
+the mood. So, instead of a boxer, I'll
+ 
+
+229
+00:04:00,280 --> 00:04:02,230
+the mood. So, instead of a boxer, I'll
+describe who he actually is, a lean
+
+230
+00:04:02,230 --> 00:04:02,240
+describe who he actually is, a lean
+ 
+
+231
+00:04:02,240 --> 00:04:04,350
+describe who he actually is, a lean
+welterweight with cropped black hair and
+
+232
+00:04:04,350 --> 00:04:04,360
+welterweight with cropped black hair and
+ 
+
+233
+00:04:04,360 --> 00:04:06,510
+welterweight with cropped black hair and
+worn oxblood gloves. And instead of just
+
+234
+00:04:06,510 --> 00:04:06,520
+worn oxblood gloves. And instead of just
+ 
+
+235
+00:04:06,520 --> 00:04:08,030
+worn oxblood gloves. And instead of just
+walking to the ring, I'll say what he
+
+236
+00:04:08,030 --> 00:04:08,040
+walking to the ring, I'll say what he
+ 
+
+237
+00:04:08,040 --> 00:04:10,230
+walking to the ring, I'll say what he
+does the whole way, moving down a narrow
+
+238
+00:04:10,230 --> 00:04:10,240
+does the whole way, moving down a narrow
+ 
+
+239
+00:04:10,240 --> 00:04:11,949
+does the whole way, moving down a narrow
+concrete tunnel with the ring light
+
+240
+00:04:11,949 --> 00:04:11,959
+concrete tunnel with the ring light
+ 
+
+241
+00:04:11,959 --> 00:04:13,590
+concrete tunnel with the ring light
+growing at the end. Then, I'll name
+
+242
+00:04:13,590 --> 00:04:13,600
+growing at the end. Then, I'll name
+ 
+
+243
+00:04:13,600 --> 00:04:15,230
+growing at the end. Then, I'll name
+where the light comes from, the caged
+
+244
+00:04:15,230 --> 00:04:15,240
+where the light comes from, the caged
+ 
+
+245
+00:04:15,240 --> 00:04:17,030
+where the light comes from, the caged
+fluorescents overhead, instead of
+
+246
+00:04:17,030 --> 00:04:17,040
+fluorescents overhead, instead of
+ 
+
+247
+00:04:17,040 --> 00:04:18,990
+fluorescents overhead, instead of
+leaving it up to the model. And the mood
+
+248
+00:04:18,990 --> 00:04:19,000
+leaving it up to the model. And the mood
+ 
+
+249
+00:04:19,000 --> 00:04:21,069
+leaving it up to the model. And the mood
+is the one everyone gets wrong, because
+
+250
+00:04:21,069 --> 00:04:21,079
+is the one everyone gets wrong, because
+ 
+
+251
+00:04:21,079 --> 00:04:22,790
+is the one everyone gets wrong, because
+if you just write the word tense, you
+
+252
+00:04:22,790 --> 00:04:22,800
+if you just write the word tense, you
+ 
+
+253
+00:04:22,800 --> 00:04:24,670
+if you just write the word tense, you
+get nothing. The model can't turn a word
+
+254
+00:04:24,670 --> 00:04:24,680
+get nothing. The model can't turn a word
+ 
+
+255
+00:04:24,680 --> 00:04:26,750
+get nothing. The model can't turn a word
+like that into anything on screen. So,
+
+256
+00:04:26,750 --> 00:04:26,760
+like that into anything on screen. So,
+ 
+
+257
+00:04:26,760 --> 00:04:28,710
+like that into anything on screen. So,
+instead of naming the mood, I show it.
+
+258
+00:04:28,710 --> 00:04:28,720
+instead of naming the mood, I show it.
+ 
+
+259
+00:04:28,720 --> 00:04:30,750
+instead of naming the mood, I show it.
+His jaw is set, his breathing is short
+
+260
+00:04:30,750 --> 00:04:30,760
+His jaw is set, his breathing is short
+ 
+
+261
+00:04:30,760 --> 00:04:32,350
+His jaw is set, his breathing is short
+through his nose, his gloves tap
+
+262
+00:04:32,350 --> 00:04:32,360
+through his nose, his gloves tap
+ 
+
+263
+00:04:32,360 --> 00:04:34,110
+through his nose, his gloves tap
+together as he walks. And that's what
+
+264
+00:04:34,110 --> 00:04:34,120
+together as he walks. And that's what
+ 
+
+265
+00:04:34,120 --> 00:04:35,748
+together as he walks. And that's what
+actually comes across as tension.
+
+266
+00:04:35,748 --> 00:04:35,758
+actually comes across as tension.
+ 
+
+267
+00:04:35,758 --> 00:04:37,230
+actually comes across as tension.
+[music] So, I'll paste that in and
+
+268
+00:04:37,230 --> 00:04:37,240
+[music] So, I'll paste that in and
+ 
+
+269
+00:04:37,240 --> 00:04:45,950
+[music] So, I'll paste that in and
+generate.
+
+270
+00:04:45,950 --> 00:04:45,960
+
+ 
+
+271
+00:04:45,960 --> 00:04:47,190
+
+And right away, it's completely
+
+272
+00:04:47,190 --> 00:04:47,200
+And right away, it's completely
+ 
+
+273
+00:04:47,200 --> 00:04:49,510
+And right away, it's completely
+different from level one. I get exactly
+
+274
+00:04:49,510 --> 00:04:49,520
+different from level one. I get exactly
+ 
+
+275
+00:04:49,520 --> 00:04:51,590
+different from level one. I get exactly
+the fighter I described, in the tunnel I
+
+276
+00:04:51,590 --> 00:04:51,600
+the fighter I described, in the tunnel I
+ 
+
+277
+00:04:51,600 --> 00:04:53,150
+the fighter I described, in the tunnel I
+described, with the light coming from
+
+278
+00:04:53,150 --> 00:04:53,160
+described, with the light coming from
+ 
+
+279
+00:04:53,160 --> 00:04:54,550
+described, with the light coming from
+where I put it. So, I'll keep the
+
+280
+00:04:54,550 --> 00:04:54,560
+where I put it. So, I'll keep the
+ 
+
+281
+00:04:54,560 --> 00:04:56,350
+where I put it. So, I'll keep the
+settings the same and do the same for
+
+282
+00:04:56,350 --> 00:04:56,360
+settings the same and do the same for
+ 
+
+283
+00:04:56,360 --> 00:04:58,510
+settings the same and do the same for
+the others, describing the Tokyo street
+
+284
+00:04:58,510 --> 00:04:58,520
+the others, describing the Tokyo street
+ 
+
+285
+00:04:58,520 --> 00:05:00,590
+the others, describing the Tokyo street
+down to the wet asphalt and the neon,
+
+286
+00:05:00,590 --> 00:05:00,600
+down to the wet asphalt and the neon,
+ 
+
+287
+00:05:00,600 --> 00:05:02,150
+down to the wet asphalt and the neon,
+and the car down to the model, and the
+
+288
+00:05:02,150 --> 00:05:02,160
+and the car down to the model, and the
+ 
+
+289
+00:05:02,160 --> 00:05:20,110
+and the car down to the model, and the
+smoke coming off the tires.
+
+290
+00:05:20,110 --> 00:05:20,120
+
+ 
+
+291
+00:05:20,120 --> 00:05:21,830
+
+And now, every one of them sticks to
+
+292
+00:05:21,830 --> 00:05:21,840
+And now, every one of them sticks to
+ 
+
+293
+00:05:21,840 --> 00:05:23,870
+And now, every one of them sticks to
+what I wrote, the subject, the setting,
+
+294
+00:05:23,870 --> 00:05:23,880
+what I wrote, the subject, the setting,
+ 
+
+295
+00:05:23,880 --> 00:05:25,550
+what I wrote, the subject, the setting,
+and the lighting, so it feels a lot more
+
+296
+00:05:25,550 --> 00:05:25,560
+and the lighting, so it feels a lot more
+ 
+
+297
+00:05:25,560 --> 00:05:27,390
+and the lighting, so it feels a lot more
+intentional. And for the coffee one,
+
+298
+00:05:27,390 --> 00:05:27,400
+intentional. And for the coffee one,
+ 
+
+299
+00:05:27,400 --> 00:05:29,070
+intentional. And for the coffee one,
+I'll go even further and describe her
+
+300
+00:05:29,070 --> 00:05:29,080
+I'll go even further and describe her
+ 
+
+301
+00:05:29,080 --> 00:05:43,230
+I'll go even further and describe her
+actual movements step by step.
+
+302
+00:05:43,230 --> 00:05:43,240
+
+ 
+
+303
+00:05:43,240 --> 00:05:45,030
+
+She lifts the jar and tips the grounds
+
+304
+00:05:45,030 --> 00:05:45,040
+She lifts the jar and tips the grounds
+ 
+
+305
+00:05:45,040 --> 00:05:46,950
+She lifts the jar and tips the grounds
+into the basket, levels them off with
+
+306
+00:05:46,950 --> 00:05:46,960
+into the basket, levels them off with
+ 
+
+307
+00:05:46,960 --> 00:05:48,950
+into the basket, levels them off with
+her thumb, locks it into the machine,
+
+308
+00:05:48,950 --> 00:05:48,960
+her thumb, locks it into the machine,
+ 
+
+309
+00:05:48,960 --> 00:05:50,670
+her thumb, locks it into the machine,
+and presses the switch, all in that
+
+310
+00:05:50,670 --> 00:05:50,680
+and presses the switch, all in that
+ 
+
+311
+00:05:50,680 --> 00:05:52,270
+and presses the switch, all in that
+exact order. But, we've already
+
+312
+00:05:52,270 --> 00:05:52,280
+exact order. But, we've already
+ 
+
+313
+00:05:52,280 --> 00:05:54,350
+exact order. But, we've already
+established that for a one-off video.
+
+314
+00:05:54,350 --> 00:05:54,360
+established that for a one-off video.
+ 
+
+315
+00:05:54,360 --> 00:05:56,430
+established that for a one-off video.
+Seedance 2 is already pretty good, even
+
+316
+00:05:56,430 --> 00:05:56,440
+Seedance 2 is already pretty good, even
+ 
+
+317
+00:05:56,440 --> 00:05:58,470
+Seedance 2 is already pretty good, even
+with lazy prompts. So, obviously with
+
+318
+00:05:58,470 --> 00:05:58,480
+with lazy prompts. So, obviously with
+ 
+
+319
+00:05:58,480 --> 00:05:59,990
+with lazy prompts. So, obviously with
+these, it would work better. The real
+
+320
+00:05:59,990 --> 00:06:00,000
+these, it would work better. The real
+ 
+
+321
+00:06:00,000 --> 00:06:01,790
+these, it would work better. The real
+test, though, is running them again to
+
+322
+00:06:01,790 --> 00:06:01,800
+test, though, is running them again to
+ 
+
+323
+00:06:01,800 --> 00:06:03,670
+test, though, is running them again to
+see what actually holds up. Now, the
+
+324
+00:06:03,670 --> 00:06:03,680
+see what actually holds up. Now, the
+ 
+
+325
+00:06:03,680 --> 00:06:05,990
+see what actually holds up. Now, the
+boxer stays right, the same fighter in
+
+326
+00:06:05,990 --> 00:06:06,000
+boxer stays right, the same fighter in
+ 
+
+327
+00:06:06,000 --> 00:06:07,590
+boxer stays right, the same fighter in
+the same tunnel, but the camera doesn't
+
+328
+00:06:07,590 --> 00:06:07,600
+the same tunnel, but the camera doesn't
+ 
+
+329
+00:06:07,600 --> 00:06:09,510
+the same tunnel, but the camera doesn't
+hold at all. One run stays behind him
+
+330
+00:06:09,510 --> 00:06:09,520
+hold at all. One run stays behind him
+ 
+
+331
+00:06:09,520 --> 00:06:11,110
+hold at all. One run stays behind him
+the whole way, and the next swings
+
+332
+00:06:11,110 --> 00:06:11,120
+the whole way, and the next swings
+ 
+
+333
+00:06:11,120 --> 00:06:13,070
+the whole way, and the next swings
+around to his face. And the shots, the
+
+334
+00:06:13,070 --> 00:06:13,080
+around to his face. And the shots, the
+ 
+
+335
+00:06:13,080 --> 00:06:15,310
+around to his face. And the shots, the
+angle, and the movement change every
+
+336
+00:06:15,310 --> 00:06:15,320
+angle, and the movement change every
+ 
+
+337
+00:06:15,320 --> 00:06:17,190
+angle, and the movement change every
+single time. The Tokyo street and the
+
+338
+00:06:17,190 --> 00:06:17,200
+single time. The Tokyo street and the
+ 
+
+339
+00:06:17,200 --> 00:06:19,150
+single time. The Tokyo street and the
+car do the exact same thing. They're a
+
+340
+00:06:19,150 --> 00:06:19,160
+car do the exact same thing. They're a
+ 
+
+341
+00:06:19,160 --> 00:06:21,110
+car do the exact same thing. They're a
+lot more similar than before with lots
+
+342
+00:06:21,110 --> 00:06:21,120
+lot more similar than before with lots
+ 
+
+343
+00:06:21,120 --> 00:06:23,150
+lot more similar than before with lots
+of elements actually holding up, but the
+
+344
+00:06:23,150 --> 00:06:23,160
+of elements actually holding up, but the
+ 
+
+345
+00:06:23,160 --> 00:06:25,590
+of elements actually holding up, but the
+camera angle changes between videos, and
+
+346
+00:06:25,590 --> 00:06:25,600
+camera angle changes between videos, and
+ 
+
+347
+00:06:25,600 --> 00:06:27,590
+camera angle changes between videos, and
+the model controls it for me. But, the
+
+348
+00:06:27,590 --> 00:06:27,600
+the model controls it for me. But, the
+ 
+
+349
+00:06:27,600 --> 00:06:29,670
+the model controls it for me. But, the
+coffee is the exception, and this is the
+
+350
+00:06:29,670 --> 00:06:29,680
+coffee is the exception, and this is the
+ 
+
+351
+00:06:29,680 --> 00:06:31,670
+coffee is the exception, and this is the
+part that matters, because I described
+
+352
+00:06:31,670 --> 00:06:31,680
+part that matters, because I described
+ 
+
+353
+00:06:31,680 --> 00:06:34,110
+part that matters, because I described
+her steps so tightly that it comes back
+
+354
+00:06:34,110 --> 00:06:34,120
+her steps so tightly that it comes back
+ 
+
+355
+00:06:34,120 --> 00:06:36,430
+her steps so tightly that it comes back
+almost the same on every single run. And
+
+356
+00:06:36,430 --> 00:06:36,440
+almost the same on every single run. And
+ 
+
+357
+00:06:36,440 --> 00:06:38,550
+almost the same on every single run. And
+that's the whole lesson of level 2 right
+
+358
+00:06:38,550 --> 00:06:38,560
+that's the whole lesson of level 2 right
+ 
+
+359
+00:06:38,560 --> 00:06:40,150
+that's the whole lesson of level 2 right
+there. Describe it loosely, and the
+
+360
+00:06:40,150 --> 00:06:40,160
+there. Describe it loosely, and the
+ 
+
+361
+00:06:40,160 --> 00:06:42,150
+there. Describe it loosely, and the
+model picks the camera for you. Describe
+
+362
+00:06:42,150 --> 00:06:42,160
+model picks the camera for you. Describe
+ 
+
+363
+00:06:42,160 --> 00:06:44,070
+model picks the camera for you. Describe
+it tightly like the coffee video, and
+
+364
+00:06:44,070 --> 00:06:44,080
+it tightly like the coffee video, and
+ 
+
+365
+00:06:44,080 --> 00:06:45,550
+it tightly like the coffee video, and
+your description leaves it almost
+
+366
+00:06:45,550 --> 00:06:45,560
+your description leaves it almost
+ 
+
+367
+00:06:45,560 --> 00:06:47,430
+your description leaves it almost
+nothing to decide. But, either way, you
+
+368
+00:06:47,430 --> 00:06:47,440
+nothing to decide. But, either way, you
+ 
+
+369
+00:06:47,440 --> 00:06:49,390
+nothing to decide. But, either way, you
+still never actually control the camera
+
+370
+00:06:49,390 --> 00:06:49,400
+still never actually control the camera
+ 
+
+371
+00:06:49,400 --> 00:06:51,390
+still never actually control the camera
+yourself. And once you start doing that,
+
+372
+00:06:51,390 --> 00:06:51,400
+yourself. And once you start doing that,
+ 
+
+373
+00:06:51,400 --> 00:06:53,030
+yourself. And once you start doing that,
+you're beginning to work a lot more like
+
+374
+00:06:53,030 --> 00:06:53,040
+you're beginning to work a lot more like
+ 
+
+375
+00:06:53,040 --> 00:06:54,950
+you're beginning to work a lot more like
+a director rather than someone who
+
+376
+00:06:54,950 --> 00:06:54,960
+a director rather than someone who
+ 
+
+377
+00:06:54,960 --> 00:06:56,950
+a director rather than someone who
+randomly generates videos. And that's
+
+378
+00:06:56,950 --> 00:06:56,960
+randomly generates videos. And that's
+ 
+
+379
+00:06:56,960 --> 00:06:59,270
+randomly generates videos. And that's
+exactly what level 3 is about. You're at
+
+380
+00:06:59,270 --> 00:06:59,280
+exactly what level 3 is about. You're at
+ 
+
+381
+00:06:59,280 --> 00:07:00,590
+exactly what level 3 is about. You're at
+the stage where you're beginning to
+
+382
+00:07:00,590 --> 00:07:00,600
+the stage where you're beginning to
+ 
+
+383
+00:07:00,600 --> 00:07:02,790
+the stage where you're beginning to
+understand exactly what the generator
+
+384
+00:07:02,790 --> 00:07:02,800
+understand exactly what the generator
+ 
+
+385
+00:07:02,800 --> 00:07:04,990
+understand exactly what the generator
+needs and try taking control of those
+
+386
+00:07:04,990 --> 00:07:05,000
+needs and try taking control of those
+ 
+
+387
+00:07:05,000 --> 00:07:06,909
+needs and try taking control of those
+elements, like the camera control. And
+
+388
+00:07:06,909 --> 00:07:06,919
+elements, like the camera control. And
+ 
+
+389
+00:07:06,919 --> 00:07:08,990
+elements, like the camera control. And
+that comes down to four things: the shot
+
+390
+00:07:08,990 --> 00:07:09,000
+that comes down to four things: the shot
+ 
+
+391
+00:07:09,000 --> 00:07:11,030
+that comes down to four things: the shot
+type, the angle, the movement, and the
+
+392
+00:07:11,030 --> 00:07:11,040
+type, the angle, the movement, and the
+ 
+
+393
+00:07:11,040 --> 00:07:13,030
+type, the angle, the movement, and the
+lens. The shot type is how much you
+
+394
+00:07:13,030 --> 00:07:13,040
+lens. The shot type is how much you
+ 
+
+395
+00:07:13,040 --> 00:07:15,270
+lens. The shot type is how much you
+actually fit in the frame. The angle is
+
+396
+00:07:15,270 --> 00:07:15,280
+actually fit in the frame. The angle is
+ 
+
+397
+00:07:15,280 --> 00:07:16,710
+actually fit in the frame. The angle is
+where you put the camera and how the
+
+398
+00:07:16,710 --> 00:07:16,720
+where you put the camera and how the
+ 
+
+399
+00:07:16,720 --> 00:07:18,950
+where you put the camera and how the
+subject comes across. For example, a low
+
+400
+00:07:18,950 --> 00:07:18,960
+subject comes across. For example, a low
+ 
+
+401
+00:07:18,960 --> 00:07:20,750
+subject comes across. For example, a low
+one makes it look powerful, and a high
+
+402
+00:07:20,750 --> 00:07:20,760
+one makes it look powerful, and a high
+ 
+
+403
+00:07:20,760 --> 00:07:22,790
+one makes it look powerful, and a high
+one makes it look small. The movement is
+
+404
+00:07:22,790 --> 00:07:22,800
+one makes it look small. The movement is
+ 
+
+405
+00:07:22,800 --> 00:07:24,550
+one makes it look small. The movement is
+whether the camera pushes in, tracks
+
+406
+00:07:24,550 --> 00:07:24,560
+whether the camera pushes in, tracks
+ 
+
+407
+00:07:24,560 --> 00:07:26,350
+whether the camera pushes in, tracks
+along, or just stays still, which is
+
+408
+00:07:26,350 --> 00:07:26,360
+along, or just stays still, which is
+ 
+
+409
+00:07:26,360 --> 00:07:28,670
+along, or just stays still, which is
+exactly what the model kept making up on
+
+410
+00:07:28,670 --> 00:07:28,680
+exactly what the model kept making up on
+ 
+
+411
+00:07:28,680 --> 00:07:30,750
+exactly what the model kept making up on
+its own back in level 1. And the lens is
+
+412
+00:07:30,750 --> 00:07:30,760
+its own back in level 1. And the lens is
+ 
+
+413
+00:07:30,760 --> 00:07:32,590
+its own back in level 1. And the lens is
+the one almost nobody writes, where a
+
+414
+00:07:32,590 --> 00:07:32,600
+the one almost nobody writes, where a
+ 
+
+415
+00:07:32,600 --> 00:07:34,630
+the one almost nobody writes, where a
+wide one stretches the space out, and a
+
+416
+00:07:34,630 --> 00:07:34,640
+wide one stretches the space out, and a
+ 
+
+417
+00:07:34,640 --> 00:07:36,710
+wide one stretches the space out, and a
+long one compresses everything flat.
+
+418
+00:07:36,710 --> 00:07:36,720
+long one compresses everything flat.
+ 
+
+419
+00:07:36,720 --> 00:07:38,110
+long one compresses everything flat.
+But, the important part is that the
+
+420
+00:07:38,110 --> 00:07:38,120
+But, the important part is that the
+ 
+
+421
+00:07:38,120 --> 00:07:40,110
+But, the important part is that the
+moment you start directing the camera,
+
+422
+00:07:40,110 --> 00:07:40,120
+moment you start directing the camera,
+ 
+
+423
+00:07:40,120 --> 00:07:41,750
+moment you start directing the camera,
+you have to structure the whole prompt
+
+424
+00:07:41,750 --> 00:07:41,760
+you have to structure the whole prompt
+ 
+
+425
+00:07:41,760 --> 00:07:43,750
+you have to structure the whole prompt
+around it. And every shot now locks to a
+
+426
+00:07:43,750 --> 00:07:43,760
+around it. And every shot now locks to a
+ 
+
+427
+00:07:43,760 --> 00:07:45,750
+around it. And every shot now locks to a
+single continuous take. So, let me go
+
+428
+00:07:45,750 --> 00:07:45,760
+single continuous take. So, let me go
+ 
+
+429
+00:07:45,760 --> 00:07:47,310
+single continuous take. So, let me go
+through each one. For the boxer, I'll
+
+430
+00:07:47,310 --> 00:07:47,320
+through each one. For the boxer, I'll
+ 
+
+431
+00:07:47,320 --> 00:07:49,310
+through each one. For the boxer, I'll
+describe the camera as a medium shot
+
+432
+00:07:49,310 --> 00:07:49,320
+describe the camera as a medium shot
+ 
+
+433
+00:07:49,320 --> 00:07:51,590
+describe the camera as a medium shot
+with a wide lens, low, just below his
+
+434
+00:07:51,590 --> 00:07:51,600
+with a wide lens, low, just below his
+ 
+
+435
+00:07:51,600 --> 00:07:53,670
+with a wide lens, low, just below his
+shoulder, traveling alongside him as the
+
+436
+00:07:53,670 --> 00:07:53,680
+shoulder, traveling alongside him as the
+ 
+
+437
+00:07:53,680 --> 00:08:00,110
+shoulder, traveling alongside him as the
+ring light rises up his face.
+
+438
+00:08:00,110 --> 00:08:00,120
+
+ 
+
+439
+00:08:00,120 --> 00:08:03,590
+
+>> [snorts]
+
+440
+00:08:03,590 --> 00:08:03,600
+
+ 
+
+441
+00:08:03,600 --> 00:08:05,830
+
+>> That low angle is doing all the work
+
+442
+00:08:05,830 --> 00:08:05,840
+>> That low angle is doing all the work
+ 
+
+443
+00:08:05,840 --> 00:08:07,470
+>> That low angle is doing all the work
+because it actually makes him feel
+
+444
+00:08:07,470 --> 00:08:07,480
+because it actually makes him feel
+ 
+
+445
+00:08:07,480 --> 00:08:09,270
+because it actually makes him feel
+intimidating, like a real fighter. And
+
+446
+00:08:09,270 --> 00:08:09,280
+intimidating, like a real fighter. And
+ 
+
+447
+00:08:09,280 --> 00:08:10,990
+intimidating, like a real fighter. And
+for the first time, it looks like a real
+
+448
+00:08:10,990 --> 00:08:11,000
+for the first time, it looks like a real
+ 
+
+449
+00:08:11,000 --> 00:08:12,990
+for the first time, it looks like a real
+shot from a film instead of a random
+
+450
+00:08:12,990 --> 00:08:13,000
+shot from a film instead of a random
+ 
+
+451
+00:08:13,000 --> 00:08:15,110
+shot from a film instead of a random
+generation. The Tokyo one, I'll rewrite
+
+452
+00:08:15,110 --> 00:08:15,120
+generation. The Tokyo one, I'll rewrite
+ 
+
+453
+00:08:15,120 --> 00:08:17,390
+generation. The Tokyo one, I'll rewrite
+completely because now the camera pushes
+
+454
+00:08:17,390 --> 00:08:17,400
+completely because now the camera pushes
+ 
+
+455
+00:08:17,400 --> 00:08:19,110
+completely because now the camera pushes
+slowly forward down the middle of the
+
+456
+00:08:19,110 --> 00:08:19,120
+slowly forward down the middle of the
+ 
+
+457
+00:08:19,120 --> 00:08:21,190
+slowly forward down the middle of the
+street. So, I describe everything in the
+
+458
+00:08:21,190 --> 00:08:21,200
+street. So, I describe everything in the
+ 
+
+459
+00:08:21,200 --> 00:08:23,230
+street. So, I describe everything in the
+order the camera actually reaches it.
+
+460
+00:08:23,230 --> 00:08:23,240
+order the camera actually reaches it.
+ 
+
+461
+00:08:23,240 --> 00:08:25,110
+order the camera actually reaches it.
+From the wet asphalt right in front to
+
+462
+00:08:25,110 --> 00:08:25,120
+From the wet asphalt right in front to
+ 
+
+463
+00:08:25,120 --> 00:08:27,190
+From the wet asphalt right in front to
+the neon signs stacking up further
+
+464
+00:08:27,190 --> 00:08:27,200
+the neon signs stacking up further
+ 
+
+465
+00:08:27,200 --> 00:08:35,709
+the neon signs stacking up further
+ahead.
+
+466
+00:08:35,709 --> 00:08:35,719
+
+ 
+
+467
+00:08:35,719 --> 00:08:37,190
+
+And it comes back gliding through the
+
+468
+00:08:37,190 --> 00:08:37,200
+And it comes back gliding through the
+ 
+
+469
+00:08:37,200 --> 00:08:39,750
+And it comes back gliding through the
+street exactly the way I laid it out.
+
+470
+00:08:39,750 --> 00:08:39,760
+street exactly the way I laid it out.
+ 
+
+471
+00:08:39,760 --> 00:08:41,230
+street exactly the way I laid it out.
+And that's the whole point. The camera
+
+472
+00:08:41,230 --> 00:08:41,240
+And that's the whole point. The camera
+ 
+
+473
+00:08:41,240 --> 00:08:42,909
+And that's the whole point. The camera
+isn't something you add on at the end.
+
+474
+00:08:42,909 --> 00:08:42,919
+isn't something you add on at the end.
+ 
+
+475
+00:08:42,919 --> 00:08:44,790
+isn't something you add on at the end.
+It changes how you write the entire
+
+476
+00:08:44,790 --> 00:08:44,800
+It changes how you write the entire
+ 
+
+477
+00:08:44,800 --> 00:08:46,829
+It changes how you write the entire
+prompt. The car is all about the lens,
+
+478
+00:08:46,829 --> 00:08:46,839
+prompt. The car is all about the lens,
+ 
+
+479
+00:08:46,839 --> 00:08:48,670
+prompt. The car is all about the lens,
+so I put it on a wide shot with a long
+
+480
+00:08:48,670 --> 00:08:48,680
+so I put it on a wide shot with a long
+ 
+
+481
+00:08:48,680 --> 00:08:50,910
+so I put it on a wide shot with a long
+lens, low at road level, locked off on
+
+482
+00:08:50,910 --> 00:08:50,920
+lens, low at road level, locked off on
+ 
+
+483
+00:08:50,920 --> 00:09:00,230
+lens, low at road level, locked off on
+the outside of the corner.
+
+484
+00:09:00,230 --> 00:09:00,240
+
+ 
+
+485
+00:09:00,240 --> 00:09:02,030
+
+That long lens is the thing hardly
+
+486
+00:09:02,030 --> 00:09:02,040
+That long lens is the thing hardly
+ 
+
+487
+00:09:02,040 --> 00:09:03,590
+That long lens is the thing hardly
+anyone thinks to write, and it
+
+488
+00:09:03,590 --> 00:09:03,600
+anyone thinks to write, and it
+ 
+
+489
+00:09:03,600 --> 00:09:05,350
+anyone thinks to write, and it
+completely changes the shot. It
+
+490
+00:09:05,350 --> 00:09:05,360
+completely changes the shot. It
+ 
+
+491
+00:09:05,360 --> 00:09:07,510
+completely changes the shot. It
+compresses the depth and stacks the tire
+
+492
+00:09:07,510 --> 00:09:07,520
+compresses the depth and stacks the tire
+ 
+
+493
+00:09:07,520 --> 00:09:09,590
+compresses the depth and stacks the tire
+smoke into a solid wall against the
+
+494
+00:09:09,590 --> 00:09:09,600
+smoke into a solid wall against the
+ 
+
+495
+00:09:09,600 --> 00:09:11,150
+smoke into a solid wall against the
+trees. And that compression you're
+
+496
+00:09:11,150 --> 00:09:11,160
+trees. And that compression you're
+ 
+
+497
+00:09:11,160 --> 00:09:13,070
+trees. And that compression you're
+seeing is nothing but the lens. It's the
+
+498
+00:09:13,070 --> 00:09:13,080
+seeing is nothing but the lens. It's the
+ 
+
+499
+00:09:13,080 --> 00:09:14,910
+seeing is nothing but the lens. It's the
+difference between a flat video and
+
+500
+00:09:14,910 --> 00:09:14,920
+difference between a flat video and
+ 
+
+501
+00:09:14,920 --> 00:09:16,430
+difference between a flat video and
+something that looks shot on a real
+
+502
+00:09:16,430 --> 00:09:16,440
+something that looks shot on a real
+ 
+
+503
+00:09:16,440 --> 00:09:18,110
+something that looks shot on a real
+camera. And for the coffee one, I'll
+
+504
+00:09:18,110 --> 00:09:18,120
+camera. And for the coffee one, I'll
+ 
+
+505
+00:09:18,120 --> 00:09:19,750
+camera. And for the coffee one, I'll
+name a locked wide from across the
+
+506
+00:09:19,750 --> 00:09:19,760
+name a locked wide from across the
+ 
+
+507
+00:09:19,760 --> 00:09:21,110
+name a locked wide from across the
+kitchen with all the things on the
+
+508
+00:09:21,110 --> 00:09:21,120
+kitchen with all the things on the
+ 
+
+509
+00:09:21,120 --> 00:09:23,310
+kitchen with all the things on the
+counter sitting between the camera and
+
+510
+00:09:23,310 --> 00:09:23,320
+counter sitting between the camera and
+ 
+
+511
+00:09:23,320 --> 00:09:35,710
+counter sitting between the camera and
+her.
+
+512
+00:09:35,710 --> 00:09:35,720
+
+ 
+
+513
+00:09:35,720 --> 00:09:37,390
+
+And on the first go, it actually pulls
+
+514
+00:09:37,390 --> 00:09:37,400
+And on the first go, it actually pulls
+ 
+
+515
+00:09:37,400 --> 00:09:39,550
+And on the first go, it actually pulls
+back and gives me the width I asked for.
+
+516
+00:09:39,550 --> 00:09:39,560
+back and gives me the width I asked for.
+ 
+
+517
+00:09:39,560 --> 00:09:41,630
+back and gives me the width I asked for.
+So, now I run each of these again to see
+
+518
+00:09:41,630 --> 00:09:41,640
+So, now I run each of these again to see
+ 
+
+519
+00:09:41,640 --> 00:09:43,710
+So, now I run each of these again to see
+how much of the camera really held. And
+
+520
+00:09:43,710 --> 00:09:43,720
+how much of the camera really held. And
+ 
+
+521
+00:09:43,720 --> 00:09:45,190
+how much of the camera really held. And
+here's the catch. Since you're just
+
+522
+00:09:45,190 --> 00:09:45,200
+here's the catch. Since you're just
+ 
+
+523
+00:09:45,200 --> 00:09:46,790
+here's the catch. Since you're just
+describing what you want, it's a
+
+524
+00:09:46,790 --> 00:09:46,800
+describing what you want, it's a
+ 
+
+525
+00:09:46,800 --> 00:09:48,790
+describing what you want, it's a
+request, not a setting. Some things will
+
+526
+00:09:48,790 --> 00:09:48,800
+request, not a setting. Some things will
+ 
+
+527
+00:09:48,800 --> 00:09:50,830
+request, not a setting. Some things will
+hold while others won't. The lens is the
+
+528
+00:09:50,830 --> 00:09:50,840
+hold while others won't. The lens is the
+ 
+
+529
+00:09:50,840 --> 00:09:52,870
+hold while others won't. The lens is the
+hardest one to pull off. For example,
+
+530
+00:09:52,870 --> 00:09:52,880
+hardest one to pull off. For example,
+ 
+
+531
+00:09:52,880 --> 00:09:54,750
+hardest one to pull off. For example,
+with the second generation of the car
+
+532
+00:09:54,750 --> 00:09:54,760
+with the second generation of the car
+ 
+
+533
+00:09:54,760 --> 00:09:56,590
+with the second generation of the car
+video, it's a lot closer in and it
+
+534
+00:09:56,590 --> 00:09:56,600
+video, it's a lot closer in and it
+ 
+
+535
+00:09:56,600 --> 00:09:58,510
+video, it's a lot closer in and it
+doesn't give that zoomed out feeling the
+
+536
+00:09:58,510 --> 00:09:58,520
+doesn't give that zoomed out feeling the
+ 
+
+537
+00:09:58,520 --> 00:10:00,550
+doesn't give that zoomed out feeling the
+first one did. Or in the second boxer
+
+538
+00:10:00,550 --> 00:10:00,560
+first one did. Or in the second boxer
+ 
+
+539
+00:10:00,560 --> 00:10:02,750
+first one did. Or in the second boxer
+video, the camera angle is now slightly
+
+540
+00:10:02,750 --> 00:10:02,760
+video, the camera angle is now slightly
+ 
+
+541
+00:10:02,760 --> 00:10:04,670
+video, the camera angle is now slightly
+above his shoulders, not below. The
+
+542
+00:10:04,670 --> 00:10:04,680
+above his shoulders, not below. The
+ 
+
+543
+00:10:04,680 --> 00:10:06,390
+above his shoulders, not below. The
+coffee one is still the most accurate
+
+544
+00:10:06,390 --> 00:10:06,400
+coffee one is still the most accurate
+ 
+
+545
+00:10:06,400 --> 00:10:08,350
+coffee one is still the most accurate
+one and it maintains that locked wide
+
+546
+00:10:08,350 --> 00:10:08,360
+one and it maintains that locked wide
+ 
+
+547
+00:10:08,360 --> 00:10:10,590
+one and it maintains that locked wide
+shot in both videos. This is the level
+
+548
+00:10:10,590 --> 00:10:10,600
+shot in both videos. This is the level
+ 
+
+549
+00:10:10,600 --> 00:10:12,350
+shot in both videos. This is the level
+where you start understanding the core
+
+550
+00:10:12,350 --> 00:10:12,360
+where you start understanding the core
+ 
+
+551
+00:10:12,360 --> 00:10:14,510
+where you start understanding the core
+values of prompting and it's the start
+
+552
+00:10:14,510 --> 00:10:14,520
+values of prompting and it's the start
+ 
+
+553
+00:10:14,520 --> 00:10:16,470
+values of prompting and it's the start
+of being advanced. But that gap between
+
+554
+00:10:16,470 --> 00:10:16,480
+of being advanced. But that gap between
+ 
+
+555
+00:10:16,480 --> 00:10:18,270
+of being advanced. But that gap between
+the shot you asked for and the shot you
+
+556
+00:10:18,270 --> 00:10:18,280
+the shot you asked for and the shot you
+ 
+
+557
+00:10:18,280 --> 00:10:20,150
+the shot you asked for and the shot you
+got back is the whole ceiling of this
+
+558
+00:10:20,150 --> 00:10:20,160
+got back is the whole ceiling of this
+ 
+
+559
+00:10:20,160 --> 00:10:21,750
+got back is the whole ceiling of this
+stage. But there's a way to actually
+
+560
+00:10:21,750 --> 00:10:21,760
+stage. But there's a way to actually
+ 
+
+561
+00:10:21,760 --> 00:10:23,830
+stage. But there's a way to actually
+control [music] the camera a lot better,
+
+562
+00:10:23,830 --> 00:10:23,840
+control [music] the camera a lot better,
+ 
+
+563
+00:10:23,840 --> 00:10:25,990
+control [music] the camera a lot better,
+as well as create multi-shot videos from
+
+564
+00:10:25,990 --> 00:10:26,000
+as well as create multi-shot videos from
+ 
+
+565
+00:10:26,000 --> 00:10:27,750
+as well as create multi-shot videos from
+just one prompt, which is what Seed ends
+
+566
+00:10:27,750 --> 00:10:27,760
+just one prompt, which is what Seed ends
+ 
+
+567
+00:10:27,760 --> 00:10:29,710
+just one prompt, which is what Seed ends
+2 is made for, instead of being locked
+
+568
+00:10:29,710 --> 00:10:29,720
+2 is made for, instead of being locked
+ 
+
+569
+00:10:29,720 --> 00:10:31,310
+2 is made for, instead of being locked
+in a single shot. And here we're
+
+570
+00:10:31,310 --> 00:10:31,320
+in a single shot. And here we're
+ 
+
+571
+00:10:31,320 --> 00:10:33,150
+in a single shot. And here we're
+starting to reach the pro levels where
+
+572
+00:10:33,150 --> 00:10:33,160
+starting to reach the pro levels where
+ 
+
+573
+00:10:33,160 --> 00:10:35,190
+starting to reach the pro levels where
+we control every single shot inside the
+
+574
+00:10:35,190 --> 00:10:35,200
+we control every single shot inside the
+ 
+
+575
+00:10:35,200 --> 00:10:36,790
+we control every single shot inside the
+prompt. So, you go from directing a
+
+576
+00:10:36,790 --> 00:10:36,800
+prompt. So, you go from directing a
+ 
+
+577
+00:10:36,800 --> 00:10:38,510
+prompt. So, you go from directing a
+single scene to directing a whole
+
+578
+00:10:38,510 --> 00:10:38,520
+single scene to directing a whole
+ 
+
+579
+00:10:38,520 --> 00:10:40,510
+single scene to directing a whole
+sequence in one generation. And there's
+
+580
+00:10:40,510 --> 00:10:40,520
+sequence in one generation. And there's
+ 
+
+581
+00:10:40,520 --> 00:10:42,350
+sequence in one generation. And there's
+a lot of new things at this level. The
+
+582
+00:10:42,350 --> 00:10:42,360
+a lot of new things at this level. The
+ 
+
+583
+00:10:42,360 --> 00:10:44,270
+a lot of new things at this level. The
+biggest one is the structure itself.
+
+584
+00:10:44,270 --> 00:10:44,280
+biggest one is the structure itself.
+ 
+
+585
+00:10:44,280 --> 00:10:45,950
+biggest one is the structure itself.
+Instead of one flowing paragraph, you
+
+586
+00:10:45,950 --> 00:10:45,960
+Instead of one flowing paragraph, you
+ 
+
+587
+00:10:45,960 --> 00:10:47,990
+Instead of one flowing paragraph, you
+break the prompt into named blocks, the
+
+588
+00:10:47,990 --> 00:10:48,000
+break the prompt into named blocks, the
+ 
+
+589
+00:10:48,000 --> 00:10:50,230
+break the prompt into named blocks, the
+subject, the location, the light, the
+
+590
+00:10:50,230 --> 00:10:50,240
+subject, the location, the light, the
+ 
+
+591
+00:10:50,240 --> 00:10:52,430
+subject, the location, the light, the
+camera, the movement, and the audio,
+
+592
+00:10:52,430 --> 00:10:52,440
+camera, the movement, and the audio,
+ 
+
+593
+00:10:52,440 --> 00:10:54,590
+camera, the movement, and the audio,
+each on its own line, so the model never
+
+594
+00:10:54,590 --> 00:10:54,600
+each on its own line, so the model never
+ 
+
+595
+00:10:54,600 --> 00:10:56,670
+each on its own line, so the model never
+has to guess how they fit together. Then
+
+596
+00:10:56,670 --> 00:10:56,680
+has to guess how they fit together. Then
+ 
+
+597
+00:10:56,680 --> 00:10:58,270
+has to guess how they fit together. Then
+there's timestamps where you stop
+
+598
+00:10:58,270 --> 00:10:58,280
+there's timestamps where you stop
+ 
+
+599
+00:10:58,280 --> 00:11:00,350
+there's timestamps where you stop
+describing what happens and start saying
+
+600
+00:11:00,350 --> 00:11:00,360
+describing what happens and start saying
+ 
+
+601
+00:11:00,360 --> 00:11:02,390
+describing what happens and start saying
+exactly when it happens, second by
+
+602
+00:11:02,390 --> 00:11:02,400
+exactly when it happens, second by
+ 
+
+603
+00:11:02,400 --> 00:11:04,470
+exactly when it happens, second by
+second, and that is the single biggest
+
+604
+00:11:04,470 --> 00:11:04,480
+second, and that is the single biggest
+ 
+
+605
+00:11:04,480 --> 00:11:06,350
+second, and that is the single biggest
+jump in this whole video. I also
+
+606
+00:11:06,350 --> 00:11:06,360
+jump in this whole video. I also
+ 
+
+607
+00:11:06,360 --> 00:11:08,030
+jump in this whole video. I also
+mentioned before that you get multiple
+
+608
+00:11:08,030 --> 00:11:08,040
+mentioned before that you get multiple
+ 
+
+609
+00:11:08,040 --> 00:11:10,230
+mentioned before that you get multiple
+shots inside one prompt. Now, with
+
+610
+00:11:10,230 --> 00:11:10,240
+shots inside one prompt. Now, with
+ 
+
+611
+00:11:10,240 --> 00:11:12,110
+shots inside one prompt. Now, with
+intentional cuts that you place yourself
+
+612
+00:11:12,110 --> 00:11:12,120
+intentional cuts that you place yourself
+ 
+
+613
+00:11:12,120 --> 00:11:13,950
+intentional cuts that you place yourself
+instead of the random ones the model
+
+614
+00:11:13,950 --> 00:11:13,960
+instead of the random ones the model
+ 
+
+615
+00:11:13,960 --> 00:11:16,110
+instead of the random ones the model
+threw in back at level one. Then there
+
+616
+00:11:16,110 --> 00:11:16,120
+threw in back at level one. Then there
+ 
+
+617
+00:11:16,120 --> 00:11:18,150
+threw in back at level one. Then there
+are the locks, a subject lock that pins
+
+618
+00:11:18,150 --> 00:11:18,160
+are the locks, a subject lock that pins
+ 
+
+619
+00:11:18,160 --> 00:11:20,510
+are the locks, a subject lock that pins
+down exactly who your character is, and
+
+620
+00:11:20,510 --> 00:11:20,520
+down exactly who your character is, and
+ 
+
+621
+00:11:20,520 --> 00:11:22,230
+down exactly who your character is, and
+cross frame rules that spell out what
+
+622
+00:11:22,230 --> 00:11:22,240
+cross frame rules that spell out what
+ 
+
+623
+00:11:22,240 --> 00:11:24,472
+cross frame rules that spell out what
+has to stay the same across every cut.
+
+624
+00:11:24,472 --> 00:11:24,482
+has to stay the same across every cut.
+ 
+
+625
+00:11:24,482 --> 00:11:26,030
+has to stay the same across every cut.
+[music] And finally, the negative
+
+626
+00:11:26,030 --> 00:11:26,040
+[music] And finally, the negative
+ 
+
+627
+00:11:26,040 --> 00:11:27,670
+[music] And finally, the negative
+prompt, which is just a list of
+
+628
+00:11:27,670 --> 00:11:27,680
+prompt, which is just a list of
+ 
+
+629
+00:11:27,680 --> 00:11:29,670
+prompt, which is just a list of
+everything you want the model to avoid.
+
+630
+00:11:29,670 --> 00:11:29,680
+everything you want the model to avoid.
+ 
+
+631
+00:11:29,680 --> 00:11:31,670
+everything you want the model to avoid.
+And most people skip this completely.
+
+632
+00:11:31,670 --> 00:11:31,680
+And most people skip this completely.
+ 
+
+633
+00:11:31,680 --> 00:11:33,750
+And most people skip this completely.
+And since these are full sequences now,
+
+634
+00:11:33,750 --> 00:11:33,760
+And since these are full sequences now,
+ 
+
+635
+00:11:33,760 --> 00:11:35,430
+And since these are full sequences now,
+instead of single shots, I'll bump the
+
+636
+00:11:35,430 --> 00:11:35,440
+instead of single shots, I'll bump the
+ 
+
+637
+00:11:35,440 --> 00:11:37,310
+instead of single shots, I'll bump the
+duration up so there's room for every
+
+638
+00:11:37,310 --> 00:11:37,320
+duration up so there's room for every
+ 
+
+639
+00:11:37,320 --> 00:11:39,390
+duration up so there's room for every
+cut. So, let me go through each one. For
+
+640
+00:11:39,390 --> 00:11:39,400
+cut. So, let me go through each one. For
+ 
+
+641
+00:11:39,400 --> 00:11:41,350
+cut. So, let me go through each one. For
+the boxer, I'll build the whole thing as
+
+642
+00:11:41,350 --> 00:11:41,360
+the boxer, I'll build the whole thing as
+ 
+
+643
+00:11:41,360 --> 00:11:43,430
+the boxer, I'll build the whole thing as
+a shot list with three shots on one
+
+644
+00:11:43,430 --> 00:11:43,440
+a shot list with three shots on one
+ 
+
+645
+00:11:43,440 --> 00:11:45,590
+a shot list with three shots on one
+continuous walk and the location change
+
+646
+00:11:45,590 --> 00:11:45,600
+continuous walk and the location change
+ 
+
+647
+00:11:45,600 --> 00:11:47,430
+continuous walk and the location change
+on the final cut where he enters the
+
+648
+00:11:47,430 --> 00:11:47,440
+on the final cut where he enters the
+ 
+
+649
+00:11:47,440 --> 00:11:48,708
+on the final cut where he enters the
+arena.
+
+650
+00:11:48,708 --> 00:11:48,718
+arena.
+ 
+
+651
+00:11:48,718 --> 00:11:57,990
+arena.
+>> [panting]
+
+652
+00:11:57,990 --> 00:11:58,000
+
+ 
+
+653
+00:11:58,000 --> 00:11:59,790
+
+>> And when it generates, it actually pulls
+
+654
+00:11:59,790 --> 00:11:59,800
+>> And when it generates, it actually pulls
+ 
+
+655
+00:11:59,800 --> 00:12:02,070
+>> And when it generates, it actually pulls
+it off. The cut lands exactly where I
+
+656
+00:12:02,070 --> 00:12:02,080
+it off. The cut lands exactly where I
+ 
+
+657
+00:12:02,080 --> 00:12:04,350
+it off. The cut lands exactly where I
+timed it and the whole location switches
+
+658
+00:12:04,350 --> 00:12:04,360
+timed it and the whole location switches
+ 
+
+659
+00:12:04,360 --> 00:12:06,590
+timed it and the whole location switches
+from the tunnel to the arena on that one
+
+660
+00:12:06,590 --> 00:12:06,600
+from the tunnel to the arena on that one
+ 
+
+661
+00:12:06,600 --> 00:12:07,870
+from the tunnel to the arena on that one
+frame, which is something you could
+
+662
+00:12:07,870 --> 00:12:07,880
+frame, which is something you could
+ 
+
+663
+00:12:07,880 --> 00:12:10,110
+frame, which is something you could
+never do with a single paragraph. The
+
+664
+00:12:10,110 --> 00:12:10,120
+never do with a single paragraph. The
+ 
+
+665
+00:12:10,120 --> 00:12:12,590
+never do with a single paragraph. The
+Tokyo one is all about timing dialogue.
+
+666
+00:12:12,590 --> 00:12:12,600
+Tokyo one is all about timing dialogue.
+ 
+
+667
+00:12:12,600 --> 00:12:14,470
+Tokyo one is all about timing dialogue.
+So, I'll give the two businessmen a line
+
+668
+00:12:14,470 --> 00:12:14,480
+So, I'll give the two businessmen a line
+ 
+
+669
+00:12:14,480 --> 00:12:16,630
+So, I'll give the two businessmen a line
+each in Japanese. And I timed them down
+
+670
+00:12:16,630 --> 00:12:16,640
+each in Japanese. And I timed them down
+ 
+
+671
+00:12:16,640 --> 00:12:18,910
+each in Japanese. And I timed them down
+to the exact second. One speaking around
+
+672
+00:12:18,910 --> 00:12:18,920
+to the exact second. One speaking around
+ 
+
+673
+00:12:18,920 --> 00:12:20,910
+to the exact second. One speaking around
+7 seconds in and the other answering
+
+674
+00:12:20,910 --> 00:12:20,920
+7 seconds in and the other answering
+ 
+
+675
+00:12:20,920 --> 00:12:22,630
+7 seconds in and the other answering
+right after. So, it feels like a real
+
+676
+00:12:22,630 --> 00:12:22,640
+right after. So, it feels like a real
+ 
+
+677
+00:12:22,640 --> 00:12:24,270
+right after. So, it feels like a real
+conversation. I'll also lock their
+
+678
+00:12:24,270 --> 00:12:24,280
+conversation. I'll also lock their
+ 
+
+679
+00:12:24,280 --> 00:12:26,230
+conversation. I'll also lock their
+positions so one stays on the left of
+
+680
+00:12:26,230 --> 00:12:26,240
+positions so one stays on the left of
+ 
+
+681
+00:12:26,240 --> 00:12:28,030
+positions so one stays on the left of
+the frame and the other on the right the
+
+682
+00:12:28,030 --> 00:12:28,040
+the frame and the other on the right the
+ 
+
+683
+00:12:28,040 --> 00:12:41,030
+the frame and the other on the right the
+whole way through.
+
+684
+00:12:41,030 --> 00:12:41,040
+
+ 
+
+685
+00:12:41,040 --> 00:12:42,670
+
+And it comes back with both of them
+
+686
+00:12:42,670 --> 00:12:42,680
+And it comes back with both of them
+ 
+
+687
+00:12:42,680 --> 00:12:44,870
+And it comes back with both of them
+talking right on the timing that I set
+
+688
+00:12:44,870 --> 00:12:44,880
+talking right on the timing that I set
+ 
+
+689
+00:12:44,880 --> 00:12:46,630
+talking right on the timing that I set
+and holding their spots across every
+
+690
+00:12:46,630 --> 00:12:46,640
+and holding their spots across every
+ 
+
+691
+00:12:46,640 --> 00:12:48,470
+and holding their spots across every
+cut, which is the kind of control you
+
+692
+00:12:48,470 --> 00:12:48,480
+cut, which is the kind of control you
+ 
+
+693
+00:12:48,480 --> 00:12:50,870
+cut, which is the kind of control you
+just can't get by describing it loosely.
+
+694
+00:12:50,870 --> 00:12:50,880
+just can't get by describing it loosely.
+ 
+
+695
+00:12:50,880 --> 00:12:52,870
+just can't get by describing it loosely.
+The car is where I'll get specific with
+
+696
+00:12:52,870 --> 00:12:52,880
+The car is where I'll get specific with
+ 
+
+697
+00:12:52,880 --> 00:12:54,630
+The car is where I'll get specific with
+the speed. I'll write a ramp into the
+
+698
+00:12:54,630 --> 00:12:54,640
+the speed. I'll write a ramp into the
+ 
+
+699
+00:12:54,640 --> 00:12:56,310
+the speed. I'll write a ramp into the
+middle of the shot so the second it
+
+700
+00:12:56,310 --> 00:12:56,320
+middle of the shot so the second it
+ 
+
+701
+00:12:56,320 --> 00:12:58,230
+middle of the shot so the second it
+breaks traction, the whole thing drops
+
+702
+00:12:58,230 --> 00:12:58,240
+breaks traction, the whole thing drops
+ 
+
+703
+00:12:58,240 --> 00:13:00,470
+breaks traction, the whole thing drops
+into slow motion and then snaps back to
+
+704
+00:13:00,470 --> 00:13:00,480
+into slow motion and then snaps back to
+ 
+
+705
+00:13:00,480 --> 00:13:02,750
+into slow motion and then snaps back to
+full speed for that cinematic effect.
+
+706
+00:13:02,750 --> 00:13:02,760
+full speed for that cinematic effect.
+ 
+
+707
+00:13:02,760 --> 00:13:04,750
+full speed for that cinematic effect.
+I'll also specify that the audio should
+
+708
+00:13:04,750 --> 00:13:04,760
+I'll also specify that the audio should
+ 
+
+709
+00:13:04,760 --> 00:13:06,670
+I'll also specify that the audio should
+follow the car so the engine note
+
+710
+00:13:06,670 --> 00:13:06,680
+follow the car so the engine note
+ 
+
+711
+00:13:06,680 --> 00:13:08,550
+follow the car so the engine note
+stretches out low through the slow part
+
+712
+00:13:08,550 --> 00:13:08,560
+stretches out low through the slow part
+ 
+
+713
+00:13:08,560 --> 00:13:20,590
+stretches out low through the slow part
+and goes back up when the speed returns.
+
+714
+00:13:20,590 --> 00:13:20,600
+
+ 
+
+715
+00:13:20,600 --> 00:13:21,829
+
+Woo!
+
+716
+00:13:21,829 --> 00:13:21,839
+Woo!
+ 
+
+717
+00:13:21,839 --> 00:13:22,910
+Woo!
+That was pretty close.
+
+718
+00:13:22,910 --> 00:13:22,920
+That was pretty close.
+ 
+
+719
+00:13:22,920 --> 00:13:24,870
+That was pretty close.
+>> And that's exactly what I get. The slow
+
+720
+00:13:24,870 --> 00:13:24,880
+>> And that's exactly what I get. The slow
+ 
+
+721
+00:13:24,880 --> 00:13:26,910
+>> And that's exactly what I get. The slow
+motion hits right on the slide and the
+
+722
+00:13:26,910 --> 00:13:26,920
+motion hits right on the slide and the
+ 
+
+723
+00:13:26,920 --> 00:13:28,950
+motion hits right on the slide and the
+sound stretches right along with it,
+
+724
+00:13:28,950 --> 00:13:28,960
+sound stretches right along with it,
+ 
+
+725
+00:13:28,960 --> 00:13:30,510
+sound stretches right along with it,
+which is what really sells it. And the
+
+726
+00:13:30,510 --> 00:13:30,520
+which is what really sells it. And the
+ 
+
+727
+00:13:30,520 --> 00:13:32,590
+which is what really sells it. And the
+coffee one is the most complicated yet
+
+728
+00:13:32,590 --> 00:13:32,600
+coffee one is the most complicated yet
+ 
+
+729
+00:13:32,600 --> 00:13:34,870
+coffee one is the most complicated yet
+because I'm building five shots in 15
+
+730
+00:13:34,870 --> 00:13:34,880
+because I'm building five shots in 15
+ 
+
+731
+00:13:34,880 --> 00:13:36,670
+because I'm building five shots in 15
+seconds. The main anchor will be the
+
+732
+00:13:36,670 --> 00:13:36,680
+seconds. The main anchor will be the
+ 
+
+733
+00:13:36,680 --> 00:13:38,070
+seconds. The main anchor will be the
+toaster, which will work like a
+
+734
+00:13:38,070 --> 00:13:38,080
+toaster, which will work like a
+ 
+
+735
+00:13:38,080 --> 00:13:39,990
+toaster, which will work like a
+countdown. The bread goes in at zero
+
+736
+00:13:39,990 --> 00:13:40,000
+countdown. The bread goes in at zero
+ 
+
+737
+00:13:40,000 --> 00:13:42,430
+countdown. The bread goes in at zero
+seconds and pops back out at 15. I'll
+
+738
+00:13:42,430 --> 00:13:42,440
+seconds and pops back out at 15. I'll
+ 
+
+739
+00:13:42,440 --> 00:13:44,830
+seconds and pops back out at 15. I'll
+also specify that I want the last cut to
+
+740
+00:13:44,830 --> 00:13:44,840
+also specify that I want the last cut to
+ 
+
+741
+00:13:44,840 --> 00:14:02,150
+also specify that I want the last cut to
+focus on the toast instead of the woman.
+
+742
+00:14:02,150 --> 00:14:02,160
+
+ 
+
+743
+00:14:02,160 --> 00:14:04,510
+
+And it nails it. All five cuts are timed
+
+744
+00:14:04,510 --> 00:14:04,520
+And it nails it. All five cuts are timed
+ 
+
+745
+00:14:04,520 --> 00:14:06,230
+And it nails it. All five cuts are timed
+correctly, and the little radio in the
+
+746
+00:14:06,230 --> 00:14:06,240
+correctly, and the little radio in the
+ 
+
+747
+00:14:06,240 --> 00:14:08,270
+correctly, and the little radio in the
+kitchen keeps playing the same song
+
+748
+00:14:08,270 --> 00:14:08,280
+kitchen keeps playing the same song
+ 
+
+749
+00:14:08,280 --> 00:14:10,030
+kitchen keeps playing the same song
+straight through every single cut
+
+750
+00:14:10,030 --> 00:14:10,040
+straight through every single cut
+ 
+
+751
+00:14:10,040 --> 00:14:12,070
+straight through every single cut
+without ever restarting. Every one of
+
+752
+00:14:12,070 --> 00:14:12,080
+without ever restarting. Every one of
+ 
+
+753
+00:14:12,080 --> 00:14:13,910
+without ever restarting. Every one of
+these does exactly what I structured it
+
+754
+00:14:13,910 --> 00:14:13,920
+these does exactly what I structured it
+ 
+
+755
+00:14:13,920 --> 00:14:15,870
+these does exactly what I structured it
+to do. The cuts, the timing, the
+
+756
+00:14:15,870 --> 00:14:15,880
+to do. The cuts, the timing, the
+ 
+
+757
+00:14:15,880 --> 00:14:18,230
+to do. The cuts, the timing, the
+dialogue, the slow motion, all of it
+
+758
+00:14:18,230 --> 00:14:18,240
+dialogue, the slow motion, all of it
+ 
+
+759
+00:14:18,240 --> 00:14:19,230
+dialogue, the slow motion, all of it
+lands perfectly. [music]
+
+760
+00:14:19,230 --> 00:14:19,240
+lands perfectly. [music]
+ 
+
+761
+00:14:19,240 --> 00:14:21,270
+lands perfectly. [music]
+And if we test them and run them again,
+
+762
+00:14:21,270 --> 00:14:21,280
+And if we test them and run them again,
+ 
+
+763
+00:14:21,280 --> 00:14:22,950
+And if we test them and run them again,
+you'll notice that they're the closest
+
+764
+00:14:22,950 --> 00:14:22,960
+you'll notice that they're the closest
+ 
+
+765
+00:14:22,960 --> 00:14:25,110
+you'll notice that they're the closest
+ones yet. If you actually structure your
+
+766
+00:14:25,110 --> 00:14:25,120
+ones yet. If you actually structure your
+ 
+
+767
+00:14:25,120 --> 00:14:26,550
+ones yet. If you actually structure your
+prompts [music] like this, you direct
+
+768
+00:14:26,550 --> 00:14:26,560
+prompts [music] like this, you direct
+ 
+
+769
+00:14:26,560 --> 00:14:28,630
+prompts [music] like this, you direct
+every shot so it's hard for the model to
+
+770
+00:14:28,630 --> 00:14:28,640
+every shot so it's hard for the model to
+ 
+
+771
+00:14:28,640 --> 00:14:29,910
+every shot so it's hard for the model to
+come up with something totally
+
+772
+00:14:29,910 --> 00:14:29,920
+come up with something totally
+ 
+
+773
+00:14:29,920 --> 00:14:31,630
+come up with something totally
+different. But you're probably thinking
+
+774
+00:14:31,630 --> 00:14:31,640
+different. But you're probably thinking
+ 
+
+775
+00:14:31,640 --> 00:14:33,310
+different. But you're probably thinking
+that learning to write your prompts like
+
+776
+00:14:33,310 --> 00:14:33,320
+that learning to write your prompts like
+ 
+
+777
+00:14:33,320 --> 00:14:35,350
+that learning to write your prompts like
+that is a totally new skill set, and
+
+778
+00:14:35,350 --> 00:14:35,360
+that is a totally new skill set, and
+ 
+
+779
+00:14:35,360 --> 00:14:37,430
+that is a totally new skill set, and
+it's going to take hours to learn. The
+
+780
+00:14:37,430 --> 00:14:37,440
+it's going to take hours to learn. The
+ 
+
+781
+00:14:37,440 --> 00:14:39,190
+it's going to take hours to learn. The
+good news is you don't [music] have to.
+
+782
+00:14:39,190 --> 00:14:39,200
+good news is you don't [music] have to.
+ 
+
+783
+00:14:39,200 --> 00:14:40,829
+good news is you don't [music] have to.
+That's because there's a tool that does
+
+784
+00:14:40,829 --> 00:14:40,839
+That's because there's a tool that does
+ 
+
+785
+00:14:40,839 --> 00:14:42,790
+That's because there's a tool that does
+all of this structuring for you. It's
+
+786
+00:14:42,790 --> 00:14:42,800
+all of this structuring for you. It's
+ 
+
+787
+00:14:42,800 --> 00:14:45,030
+all of this structuring for you. It's
+called video prompt.studio, and I've
+
+788
+00:14:45,030 --> 00:14:45,040
+called video prompt.studio, and I've
+ 
+
+789
+00:14:45,040 --> 00:14:46,590
+called video prompt.studio, and I've
+left a link for it in the description
+
+790
+00:14:46,590 --> 00:14:46,600
+left a link for it in the description
+ 
+
+791
+00:14:46,600 --> 00:14:48,350
+left a link for it in the description
+below. The whole thing is basically
+
+792
+00:14:48,350 --> 00:14:48,360
+below. The whole thing is basically
+ 
+
+793
+00:14:48,360 --> 00:14:50,350
+below. The whole thing is basically
+three steps. First, you paste in your
+
+794
+00:14:50,350 --> 00:14:50,360
+three steps. First, you paste in your
+ 
+
+795
+00:14:50,360 --> 00:14:51,910
+three steps. First, you paste in your
+base prompt, which is just a plain
+
+796
+00:14:51,910 --> 00:14:51,920
+base prompt, which is just a plain
+ 
+
+797
+00:14:51,920 --> 00:14:53,750
+base prompt, which is just a plain
+description of what you want. But here's
+
+798
+00:14:53,750 --> 00:14:53,760
+description of what you want. But here's
+ 
+
+799
+00:14:53,760 --> 00:14:55,750
+description of what you want. But here's
+the part people miss. The better your
+
+800
+00:14:55,750 --> 00:14:55,760
+the part people miss. The better your
+ 
+
+801
+00:14:55,760 --> 00:14:57,910
+the part people miss. The better your
+base prompt is, the better the result
+
+802
+00:14:57,910 --> 00:14:57,920
+base prompt is, the better the result
+ 
+
+803
+00:14:57,920 --> 00:14:59,590
+base prompt is, the better the result
+you get back. It will work with one
+
+804
+00:14:59,590 --> 00:14:59,600
+you get back. It will work with one
+ 
+
+805
+00:14:59,600 --> 00:15:01,870
+you get back. It will work with one
+sentence bases, but it'll be even better
+
+806
+00:15:01,870 --> 00:15:01,880
+sentence bases, but it'll be even better
+ 
+
+807
+00:15:01,880 --> 00:15:03,750
+sentence bases, but it'll be even better
+if you explain what you want in each
+
+808
+00:15:03,750 --> 00:15:03,760
+if you explain what you want in each
+ 
+
+809
+00:15:03,760 --> 00:15:05,750
+if you explain what you want in each
+scene. So I'll break my idea into three
+
+810
+00:15:05,750 --> 00:15:05,760
+scene. So I'll break my idea into three
+ 
+
+811
+00:15:05,760 --> 00:15:07,829
+scene. So I'll break my idea into three
+shots based on the Tokyo scene from
+
+812
+00:15:07,829 --> 00:15:07,839
+shots based on the Tokyo scene from
+ 
+
+813
+00:15:07,839 --> 00:15:09,990
+shots based on the Tokyo scene from
+before. Then it hands me back the full
+
+814
+00:15:09,990 --> 00:15:10,000
+before. Then it hands me back the full
+ 
+
+815
+00:15:10,000 --> 00:15:11,950
+before. Then it hands me back the full
+structured version with every single
+
+816
+00:15:11,950 --> 00:15:11,960
+structured version with every single
+ 
+
+817
+00:15:11,960 --> 00:15:13,790
+structured version with every single
+field filled in. The subject, the
+
+818
+00:15:13,790 --> 00:15:13,800
+field filled in. The subject, the
+ 
+
+819
+00:15:13,800 --> 00:15:15,990
+field filled in. The subject, the
+camera, the lighting, all of it laid
+
+820
+00:15:15,990 --> 00:15:16,000
+camera, the lighting, all of it laid
+ 
+
+821
+00:15:16,000 --> 00:15:17,750
+camera, the lighting, all of it laid
+out, so you don't have to do anything
+
+822
+00:15:17,750 --> 00:15:17,760
+out, so you don't have to do anything
+ 
+
+823
+00:15:17,760 --> 00:15:19,990
+out, so you don't have to do anything
+manually. But as good as it is, it's not
+
+824
+00:15:19,990 --> 00:15:20,000
+manually. But as good as it is, it's not
+ 
+
+825
+00:15:20,000 --> 00:15:21,829
+manually. But as good as it is, it's not
+perfect. What this tool does is
+
+826
+00:15:21,829 --> 00:15:21,839
+perfect. What this tool does is
+ 
+
+827
+00:15:21,839 --> 00:15:23,750
+perfect. What this tool does is
+structure your base prompt. It doesn't
+
+828
+00:15:23,750 --> 00:15:23,760
+structure your base prompt. It doesn't
+ 
+
+829
+00:15:23,760 --> 00:15:25,150
+structure your base prompt. It doesn't
+come up with parts that you haven't
+
+830
+00:15:25,150 --> 00:15:25,160
+come up with parts that you haven't
+ 
+
+831
+00:15:25,160 --> 00:15:27,150
+come up with parts that you haven't
+mentioned, so things like the dialogue
+
+832
+00:15:27,150 --> 00:15:27,160
+mentioned, so things like the dialogue
+ 
+
+833
+00:15:27,160 --> 00:15:29,110
+mentioned, so things like the dialogue
+or the position locks aren't present.
+
+834
+00:15:29,110 --> 00:15:29,120
+or the position locks aren't present.
+ 
+
+835
+00:15:29,120 --> 00:15:30,630
+or the position locks aren't present.
+So, if you just take what it gives you
+
+836
+00:15:30,630 --> 00:15:30,640
+So, if you just take what it gives you
+ 
+
+837
+00:15:30,640 --> 00:15:32,310
+So, if you just take what it gives you
+and generate, you're right back at level
+
+838
+00:15:32,310 --> 00:15:32,320
+and generate, you're right back at level
+ 
+
+839
+00:15:32,320 --> 00:15:33,950
+and generate, you're right back at level
+one where you're letting the model fill
+
+840
+00:15:33,950 --> 00:15:33,960
+one where you're letting the model fill
+ 
+
+841
+00:15:33,960 --> 00:15:35,790
+one where you're letting the model fill
+in everything you left out. That's why
+
+842
+00:15:35,790 --> 00:15:35,800
+in everything you left out. That's why
+ 
+
+843
+00:15:35,800 --> 00:15:37,630
+in everything you left out. That's why
+you still have to go in and fix those
+
+844
+00:15:37,630 --> 00:15:37,640
+you still have to go in and fix those
+ 
+
+845
+00:15:37,640 --> 00:15:39,630
+you still have to go in and fix those
+parts yourself, which is what keeps you
+
+846
+00:15:39,630 --> 00:15:39,640
+parts yourself, which is what keeps you
+ 
+
+847
+00:15:39,640 --> 00:15:41,670
+parts yourself, which is what keeps you
+the one in control. The tool gives you a
+
+848
+00:15:41,670 --> 00:15:41,680
+the one in control. The tool gives you a
+ 
+
+849
+00:15:41,680 --> 00:15:43,750
+the one in control. The tool gives you a
+huge head start and it saves you hours
+
+850
+00:15:43,750 --> 00:15:43,760
+huge head start and it saves you hours
+ 
+
+851
+00:15:43,760 --> 00:15:45,230
+huge head start and it saves you hours
+of typing, but it doesn't do the
+
+852
+00:15:45,230 --> 00:15:45,240
+of typing, but it doesn't do the
+ 
+
+853
+00:15:45,240 --> 00:15:46,910
+of typing, but it doesn't do the
+thinking for you. So, I'll add my
+
+854
+00:15:46,910 --> 00:15:46,920
+thinking for you. So, I'll add my
+ 
+
+855
+00:15:46,920 --> 00:15:48,550
+thinking for you. So, I'll add my
+dialogue back in, tighten up the
+
+856
+00:15:48,550 --> 00:15:48,560
+dialogue back in, tighten up the
+ 
+
+857
+00:15:48,560 --> 00:15:50,670
+dialogue back in, tighten up the
+continuity between the shots, and finish
+
+858
+00:15:50,670 --> 00:15:50,680
+continuity between the shots, and finish
+ 
+
+859
+00:15:50,680 --> 00:16:04,590
+continuity between the shots, and finish
+the prompt straight in Scene dance.
+
+860
+00:16:04,590 --> 00:16:04,600
+
+ 
+
+861
+00:16:04,600 --> 00:16:06,190
+
+And it comes back even better than
+
+862
+00:16:06,190 --> 00:16:06,200
+And it comes back even better than
+ 
+
+863
+00:16:06,200 --> 00:16:08,110
+And it comes back even better than
+before with a structure similar to what
+
+864
+00:16:08,110 --> 00:16:08,120
+before with a structure similar to what
+ 
+
+865
+00:16:08,120 --> 00:16:10,630
+before with a structure similar to what
+I wrote by hand, except this time I got
+
+866
+00:16:10,630 --> 00:16:10,640
+I wrote by hand, except this time I got
+ 
+
+867
+00:16:10,640 --> 00:16:12,790
+I wrote by hand, except this time I got
+there in a fraction of the effort. This
+
+868
+00:16:12,790 --> 00:16:12,800
+there in a fraction of the effort. This
+ 
+
+869
+00:16:12,800 --> 00:16:14,510
+there in a fraction of the effort. This
+tool will make your workflow a lot
+
+870
+00:16:14,510 --> 00:16:14,520
+tool will make your workflow a lot
+ 
+
+871
+00:16:14,520 --> 00:16:16,630
+tool will make your workflow a lot
+faster while still keeping your videos
+
+872
+00:16:16,630 --> 00:16:16,640
+faster while still keeping your videos
+ 
+
+873
+00:16:16,640 --> 00:16:18,230
+faster while still keeping your videos
+looking professional. But, there is one
+
+874
+00:16:18,230 --> 00:16:18,240
+looking professional. But, there is one
+ 
+
+875
+00:16:18,240 --> 00:16:20,070
+looking professional. But, there is one
+main issue at this level, and that is
+
+876
+00:16:20,070 --> 00:16:20,080
+main issue at this level, and that is
+ 
+
+877
+00:16:20,080 --> 00:16:22,550
+main issue at this level, and that is
+character consistency. Because even with
+
+878
+00:16:22,550 --> 00:16:22,560
+character consistency. Because even with
+ 
+
+879
+00:16:22,560 --> 00:16:24,190
+character consistency. Because even with
+the cleanest structured prompt, you
+
+880
+00:16:24,190 --> 00:16:24,200
+the cleanest structured prompt, you
+ 
+
+881
+00:16:24,200 --> 00:16:25,910
+the cleanest structured prompt, you
+can't actually control how a character
+
+882
+00:16:25,910 --> 00:16:25,920
+can't actually control how a character
+ 
+
+883
+00:16:25,920 --> 00:16:27,990
+can't actually control how a character
+looks. So, the moment the video cuts,
+
+884
+00:16:27,990 --> 00:16:28,000
+looks. So, the moment the video cuts,
+ 
+
+885
+00:16:28,000 --> 00:16:30,030
+looks. So, the moment the video cuts,
+their appearance changes. It's most
+
+886
+00:16:30,030 --> 00:16:30,040
+their appearance changes. It's most
+ 
+
+887
+00:16:30,040 --> 00:16:31,870
+their appearance changes. It's most
+obvious on the boxer where his face
+
+888
+00:16:31,870 --> 00:16:31,880
+obvious on the boxer where his face
+ 
+
+889
+00:16:31,880 --> 00:16:33,750
+obvious on the boxer where his face
+shifts a little every single time the
+
+890
+00:16:33,750 --> 00:16:33,760
+shifts a little every single time the
+ 
+
+891
+00:16:33,760 --> 00:16:35,829
+shifts a little every single time the
+shot cuts. So, it's still never quite
+
+892
+00:16:35,829 --> 00:16:35,839
+shot cuts. So, it's still never quite
+ 
+
+893
+00:16:35,839 --> 00:16:38,030
+shot cuts. So, it's still never quite
+the same guy twice. And taking control
+
+894
+00:16:38,030 --> 00:16:38,040
+the same guy twice. And taking control
+ 
+
+895
+00:16:38,040 --> 00:16:39,710
+the same guy twice. And taking control
+of that one last thing so that you
+
+896
+00:16:39,710 --> 00:16:39,720
+of that one last thing so that you
+ 
+
+897
+00:16:39,720 --> 00:16:41,710
+of that one last thing so that you
+direct the entire project is what the
+
+898
+00:16:41,710 --> 00:16:41,720
+direct the entire project is what the
+ 
+
+899
+00:16:41,720 --> 00:16:44,070
+direct the entire project is what the
+final level is all about. This is how
+
+900
+00:16:44,070 --> 00:16:44,080
+final level is all about. This is how
+ 
+
+901
+00:16:44,080 --> 00:16:46,070
+final level is all about. This is how
+the pros actually prompt their AI
+
+902
+00:16:46,070 --> 00:16:46,080
+the pros actually prompt their AI
+ 
+
+903
+00:16:46,080 --> 00:16:48,190
+the pros actually prompt their AI
+videos. And we'll start with locking in
+
+904
+00:16:48,190 --> 00:16:48,200
+videos. And we'll start with locking in
+ 
+
+905
+00:16:48,200 --> 00:16:49,829
+videos. And we'll start with locking in
+our characters so that they look the
+
+906
+00:16:49,829 --> 00:16:49,839
+our characters so that they look the
+ 
+
+907
+00:16:49,839 --> 00:16:52,150
+our characters so that they look the
+same in every single shot, no matter how
+
+908
+00:16:52,150 --> 00:16:52,160
+same in every single shot, no matter how
+ 
+
+909
+00:16:52,160 --> 00:16:54,070
+same in every single shot, no matter how
+many times the video cuts or we
+
+910
+00:16:54,070 --> 00:16:54,080
+many times the video cuts or we
+ 
+
+911
+00:16:54,080 --> 00:16:55,870
+many times the video cuts or we
+regenerate. And the reason character
+
+912
+00:16:55,870 --> 00:16:55,880
+regenerate. And the reason character
+ 
+
+913
+00:16:55,880 --> 00:16:58,150
+regenerate. And the reason character
+consistency kept breaking comes down to
+
+914
+00:16:58,150 --> 00:16:58,160
+consistency kept breaking comes down to
+ 
+
+915
+00:16:58,160 --> 00:17:00,270
+consistency kept breaking comes down to
+one thing. Every level up to now, you've
+
+916
+00:17:00,270 --> 00:17:00,280
+one thing. Every level up to now, you've
+ 
+
+917
+00:17:00,280 --> 00:17:02,190
+one thing. Every level up to now, you've
+been describing a character type and the
+
+918
+00:17:02,190 --> 00:17:02,200
+been describing a character type and the
+ 
+
+919
+00:17:02,200 --> 00:17:04,309
+been describing a character type and the
+model just built someone who fits that
+
+920
+00:17:04,309 --> 00:17:04,319
+model just built someone who fits that
+ 
+
+921
+00:17:04,319 --> 00:17:05,829
+model just built someone who fits that
+description, which ends up being a
+
+922
+00:17:05,829 --> 00:17:05,839
+description, which ends up being a
+ 
+
+923
+00:17:05,839 --> 00:17:07,910
+description, which ends up being a
+slightly different person every single
+
+924
+00:17:07,910 --> 00:17:07,920
+slightly different person every single
+ 
+
+925
+00:17:07,920 --> 00:17:09,790
+slightly different person every single
+time. Level five is where you stop
+
+926
+00:17:09,790 --> 00:17:09,800
+time. Level five is where you stop
+ 
+
+927
+00:17:09,800 --> 00:17:11,790
+time. Level five is where you stop
+giving it a description and start giving
+
+928
+00:17:11,790 --> 00:17:11,800
+giving it a description and start giving
+ 
+
+929
+00:17:11,800 --> 00:17:14,230
+giving it a description and start giving
+it an actual instance. To do that, I'm
+
+930
+00:17:14,230 --> 00:17:14,240
+it an actual instance. To do that, I'm
+ 
+
+931
+00:17:14,240 --> 00:17:16,030
+it an actual instance. To do that, I'm
+using a feature in Higgs Field called
+
+932
+00:17:16,030 --> 00:17:16,040
+using a feature in Higgs Field called
+ 
+
+933
+00:17:16,040 --> 00:17:17,590
+using a feature in Higgs Field called
+elements, which lets you save a
+
+934
+00:17:17,590 --> 00:17:17,600
+elements, which lets you save a
+ 
+
+935
+00:17:17,600 --> 00:17:19,829
+elements, which lets you save a
+character or a location once and then
+
+936
+00:17:19,829 --> 00:17:19,839
+character or a location once and then
+ 
+
+937
+00:17:19,839 --> 00:17:22,350
+character or a location once and then
+reuse it in any video just by tagging
+
+938
+00:17:22,350 --> 00:17:22,360
+reuse it in any video just by tagging
+ 
+
+939
+00:17:22,360 --> 00:17:24,230
+reuse it in any video just by tagging
+its name. The first step is to actually
+
+940
+00:17:24,230 --> 00:17:24,240
+its name. The first step is to actually
+ 
+
+941
+00:17:24,240 --> 00:17:25,949
+its name. The first step is to actually
+create your character. So, click on
+
+942
+00:17:25,949 --> 00:17:25,959
+create your character. So, click on
+ 
+
+943
+00:17:25,959 --> 00:17:28,030
+create your character. So, click on
+image from the top navigation bar and
+
+944
+00:17:28,030 --> 00:17:28,040
+image from the top navigation bar and
+ 
+
+945
+00:17:28,040 --> 00:17:30,830
+image from the top navigation bar and
+select GPT image 2 as the model because
+
+946
+00:17:30,830 --> 00:17:30,840
+select GPT image 2 as the model because
+ 
+
+947
+00:17:30,840 --> 00:17:32,670
+select GPT image 2 as the model because
+it's currently one of the best when it
+
+948
+00:17:32,670 --> 00:17:32,680
+it's currently one of the best when it
+ 
+
+949
+00:17:32,680 --> 00:17:34,950
+it's currently one of the best when it
+comes to hyperrealism. Now, instead of
+
+950
+00:17:34,950 --> 00:17:34,960
+comes to hyperrealism. Now, instead of
+ 
+
+951
+00:17:34,960 --> 00:17:36,750
+comes to hyperrealism. Now, instead of
+describing a scene, I'll prompt for a
+
+952
+00:17:36,750 --> 00:17:36,760
+describing a scene, I'll prompt for a
+ 
+
+953
+00:17:36,760 --> 00:17:38,790
+describing a scene, I'll prompt for a
+single character sheet with three panels
+
+954
+00:17:38,790 --> 00:17:38,800
+single character sheet with three panels
+ 
+
+955
+00:17:38,800 --> 00:17:41,110
+single character sheet with three panels
+of the same man. One from the front, one
+
+956
+00:17:41,110 --> 00:17:41,120
+of the same man. One from the front, one
+ 
+
+957
+00:17:41,120 --> 00:17:42,710
+of the same man. One from the front, one
+from the back, and a close-up of his
+
+958
+00:17:42,710 --> 00:17:42,720
+from the back, and a close-up of his
+ 
+
+959
+00:17:42,720 --> 00:17:44,870
+from the back, and a close-up of his
+face all on a plain gray background.
+
+960
+00:17:44,870 --> 00:17:44,880
+face all on a plain gray background.
+ 
+
+961
+00:17:44,880 --> 00:17:47,070
+face all on a plain gray background.
+That plain background actually matters
+
+962
+00:17:47,070 --> 00:17:47,080
+That plain background actually matters
+ 
+
+963
+00:17:47,080 --> 00:17:48,510
+That plain background actually matters
+because the less there is going on
+
+964
+00:17:48,510 --> 00:17:48,520
+because the less there is going on
+ 
+
+965
+00:17:48,520 --> 00:17:50,310
+because the less there is going on
+around him, the easier it is for the
+
+966
+00:17:50,310 --> 00:17:50,320
+around him, the easier it is for the
+ 
+
+967
+00:17:50,320 --> 00:17:52,030
+around him, the easier it is for the
+model to lock his face down. And the
+
+968
+00:17:52,030 --> 00:17:52,040
+model to lock his face down. And the
+ 
+
+969
+00:17:52,040 --> 00:17:54,230
+model to lock his face down. And the
+front panel is headless on purpose. So,
+
+970
+00:17:54,230 --> 00:17:54,240
+front panel is headless on purpose. So,
+ 
+
+971
+00:17:54,240 --> 00:17:56,310
+front panel is headless on purpose. So,
+the only face in the whole sheet is that
+
+972
+00:17:56,310 --> 00:17:56,320
+the only face in the whole sheet is that
+ 
+
+973
+00:17:56,320 --> 00:17:58,190
+the only face in the whole sheet is that
+one clean close-up, which gives the
+
+974
+00:17:58,190 --> 00:17:58,200
+one clean close-up, which gives the
+ 
+
+975
+00:17:58,200 --> 00:18:00,710
+one clean close-up, which gives the
+model a single face to copy instead of
+
+976
+00:18:00,710 --> 00:18:00,720
+model a single face to copy instead of
+ 
+
+977
+00:18:00,720 --> 00:18:02,870
+model a single face to copy instead of
+averaging a few slightly different ones.
+
+978
+00:18:02,870 --> 00:18:02,880
+averaging a few slightly different ones.
+ 
+
+979
+00:18:02,880 --> 00:18:04,710
+averaging a few slightly different ones.
+So, now using that character sheet, I'll
+
+980
+00:18:04,710 --> 00:18:04,720
+So, now using that character sheet, I'll
+ 
+
+981
+00:18:04,720 --> 00:18:06,590
+So, now using that character sheet, I'll
+make three more versions of that same
+
+982
+00:18:06,590 --> 00:18:06,600
+make three more versions of that same
+ 
+
+983
+00:18:06,600 --> 00:18:08,510
+make three more versions of that same
+person in a different outfit. For the
+
+984
+00:18:08,510 --> 00:18:08,520
+person in a different outfit. For the
+ 
+
+985
+00:18:08,520 --> 00:18:10,470
+person in a different outfit. For the
+first one, I want him in a suit. So,
+
+986
+00:18:10,470 --> 00:18:10,480
+first one, I want him in a suit. So,
+ 
+
+987
+00:18:10,480 --> 00:18:12,230
+first one, I want him in a suit. So,
+I'll upload the original character sheet
+
+988
+00:18:12,230 --> 00:18:12,240
+I'll upload the original character sheet
+ 
+
+989
+00:18:12,240 --> 00:18:14,150
+I'll upload the original character sheet
+as a reference and prompt for an outfit
+
+990
+00:18:14,150 --> 00:18:14,160
+as a reference and prompt for an outfit
+ 
+
+991
+00:18:14,160 --> 00:18:16,150
+as a reference and prompt for an outfit
+swap while keeping his facial identity
+
+992
+00:18:16,150 --> 00:18:16,160
+swap while keeping his facial identity
+ 
+
+993
+00:18:16,160 --> 00:18:17,990
+swap while keeping his facial identity
+locked in. He still looks exactly the
+
+994
+00:18:17,990 --> 00:18:18,000
+locked in. He still looks exactly the
+ 
+
+995
+00:18:18,000 --> 00:18:20,150
+locked in. He still looks exactly the
+same, but he's now fully suited up. I'll
+
+996
+00:18:20,150 --> 00:18:20,160
+same, but he's now fully suited up. I'll
+ 
+
+997
+00:18:20,160 --> 00:18:22,110
+same, but he's now fully suited up. I'll
+save him as an element, set the category
+
+998
+00:18:22,110 --> 00:18:22,120
+save him as an element, set the category
+ 
+
+999
+00:18:22,120 --> 00:18:24,350
+save him as an element, set the category
+to character, and name him man suit. And
+
+1000
+00:18:24,350 --> 00:18:24,360
+to character, and name him man suit. And
+ 
+
+1001
+00:18:24,360 --> 00:18:26,230
+to character, and name him man suit. And
+I also made the other two versions the
+
+1002
+00:18:26,230 --> 00:18:26,240
+I also made the other two versions the
+ 
+
+1003
+00:18:26,240 --> 00:18:28,230
+I also made the other two versions the
+exact same way. One where he's wearing
+
+1004
+00:18:28,230 --> 00:18:28,240
+exact same way. One where he's wearing
+ 
+
+1005
+00:18:28,240 --> 00:18:30,350
+exact same way. One where he's wearing
+his boxing outfit and one where he's in
+
+1006
+00:18:30,350 --> 00:18:30,360
+his boxing outfit and one where he's in
+ 
+
+1007
+00:18:30,360 --> 00:18:32,870
+his boxing outfit and one where he's in
+an everyday casual fit. All of these are
+
+1008
+00:18:32,870 --> 00:18:32,880
+an everyday casual fit. All of these are
+ 
+
+1009
+00:18:32,880 --> 00:18:35,110
+an everyday casual fit. All of these are
+saved up and ready to be used. Then,
+
+1010
+00:18:35,110 --> 00:18:35,120
+saved up and ready to be used. Then,
+ 
+
+1011
+00:18:35,120 --> 00:18:36,950
+saved up and ready to be used. Then,
+I'll do the same for the locations. I'll
+
+1012
+00:18:36,950 --> 00:18:36,960
+I'll do the same for the locations. I'll
+ 
+
+1013
+00:18:36,960 --> 00:18:38,990
+I'll do the same for the locations. I'll
+generate each one empty with nobody in
+
+1014
+00:18:38,990 --> 00:18:39,000
+generate each one empty with nobody in
+ 
+
+1015
+00:18:39,000 --> 00:18:41,070
+generate each one empty with nobody in
+it and save them as elements, too. The
+
+1016
+00:18:41,070 --> 00:18:41,080
+it and save them as elements, too. The
+ 
+
+1017
+00:18:41,080 --> 00:18:43,230
+it and save them as elements, too. The
+arena, the Tokyo street, and the car
+
+1018
+00:18:43,230 --> 00:18:43,240
+arena, the Tokyo street, and the car
+ 
+
+1019
+00:18:43,240 --> 00:18:45,270
+arena, the Tokyo street, and the car
+interior. Now, for the actual videos,
+
+1020
+00:18:45,270 --> 00:18:45,280
+interior. Now, for the actual videos,
+ 
+
+1021
+00:18:45,280 --> 00:18:47,710
+interior. Now, for the actual videos,
+I'll switch over to Cinema Studio 3.5.
+
+1022
+00:18:47,710 --> 00:18:47,720
+I'll switch over to Cinema Studio 3.5.
+ 
+
+1023
+00:18:47,720 --> 00:18:49,790
+I'll switch over to Cinema Studio 3.5.
+And this is the real jump at level five
+
+1024
+00:18:49,790 --> 00:18:49,800
+And this is the real jump at level five
+ 
+
+1025
+00:18:49,800 --> 00:18:51,430
+And this is the real jump at level five
+because all that camera and lighting
+
+1026
+00:18:51,430 --> 00:18:51,440
+because all that camera and lighting
+ 
+
+1027
+00:18:51,440 --> 00:18:53,590
+because all that camera and lighting
+control I had to type out by hand back
+
+1028
+00:18:53,590 --> 00:18:53,600
+control I had to type out by hand back
+ 
+
+1029
+00:18:53,600 --> 00:18:55,710
+control I had to type out by hand back
+in level four now lives in panels right
+
+1030
+00:18:55,710 --> 00:18:55,720
+in level four now lives in panels right
+ 
+
+1031
+00:18:55,720 --> 00:18:57,630
+in level four now lives in panels right
+in the interface. And this time, they're
+
+1032
+00:18:57,630 --> 00:18:57,640
+in the interface. And this time, they're
+ 
+
+1033
+00:18:57,640 --> 00:18:59,830
+in the interface. And this time, they're
+actual settings, so the model is forced
+
+1034
+00:18:59,830 --> 00:18:59,840
+actual settings, so the model is forced
+ 
+
+1035
+00:18:59,840 --> 00:19:01,550
+actual settings, so the model is forced
+to generate with these. I'll also
+
+1036
+00:19:01,550 --> 00:19:01,560
+to generate with these. I'll also
+ 
+
+1037
+00:19:01,560 --> 00:19:03,670
+to generate with these. I'll also
+generate everything here in a wider 21
+
+1038
+00:19:03,670 --> 00:19:03,680
+generate everything here in a wider 21
+ 
+
+1039
+00:19:03,680 --> 00:19:06,150
+generate everything here in a wider 21
+by 9 for that proper cinematic look. So,
+
+1040
+00:19:06,150 --> 00:19:06,160
+by 9 for that proper cinematic look. So,
+ 
+
+1041
+00:19:06,160 --> 00:19:08,110
+by 9 for that proper cinematic look. So,
+for the first shot, I'll tag man boxer
+
+1042
+00:19:08,110 --> 00:19:08,120
+for the first shot, I'll tag man boxer
+ 
+
+1043
+00:19:08,120 --> 00:19:09,830
+for the first shot, I'll tag man boxer
+walking through arena aisle, and then
+
+1044
+00:19:09,830 --> 00:19:09,840
+walking through arena aisle, and then
+ 
+
+1045
+00:19:09,840 --> 00:19:12,030
+walking through arena aisle, and then
+I'll set up the panels one by one. First
+
+1046
+00:19:12,030 --> 00:19:12,040
+I'll set up the panels one by one. First
+ 
+
+1047
+00:19:12,040 --> 00:19:14,070
+I'll set up the panels one by one. First
+is the genre, which sets the whole mood
+
+1048
+00:19:14,070 --> 00:19:14,080
+is the genre, which sets the whole mood
+ 
+
+1049
+00:19:14,080 --> 00:19:15,990
+is the genre, which sets the whole mood
+and pacing of the shot. And I'll put it
+
+1050
+00:19:15,990 --> 00:19:16,000
+and pacing of the shot. And I'll put it
+ 
+
+1051
+00:19:16,000 --> 00:19:18,230
+and pacing of the shot. And I'll put it
+on epic so it carries that big dramatic
+
+1052
+00:19:18,230 --> 00:19:18,240
+on epic so it carries that big dramatic
+ 
+
+1053
+00:19:18,240 --> 00:19:20,310
+on epic so it carries that big dramatic
+movie feeling. Then the style, which I
+
+1054
+00:19:20,310 --> 00:19:20,320
+movie feeling. Then the style, which I
+ 
+
+1055
+00:19:20,320 --> 00:19:22,070
+movie feeling. Then the style, which I
+switch to manual so I can write the
+
+1056
+00:19:22,070 --> 00:19:22,080
+switch to manual so I can write the
+ 
+
+1057
+00:19:22,080 --> 00:19:24,070
+switch to manual so I can write the
+lighting myself. A hard white light
+
+1058
+00:19:24,070 --> 00:19:24,080
+lighting myself. A hard white light
+ 
+
+1059
+00:19:24,080 --> 00:19:25,910
+lighting myself. A hard white light
+straight down from overhead with deep
+
+1060
+00:19:25,910 --> 00:19:25,920
+straight down from overhead with deep
+ 
+
+1061
+00:19:25,920 --> 00:19:28,270
+straight down from overhead with deep
+crushed blacks and high contrast because
+
+1062
+00:19:28,270 --> 00:19:28,280
+crushed blacks and high contrast because
+ 
+
+1063
+00:19:28,280 --> 00:19:30,310
+crushed blacks and high contrast because
+that's exactly the look of a real fight
+
+1064
+00:19:30,310 --> 00:19:30,320
+that's exactly the look of a real fight
+ 
+
+1065
+00:19:30,320 --> 00:19:32,110
+that's exactly the look of a real fight
+walkout. Then I open the camera
+
+1066
+00:19:32,110 --> 00:19:32,120
+walkout. Then I open the camera
+ 
+
+1067
+00:19:32,120 --> 00:19:33,510
+walkout. Then I open the camera
+settings, which give me [music] four
+
+1068
+00:19:33,510 --> 00:19:33,520
+settings, which give me [music] four
+ 
+
+1069
+00:19:33,520 --> 00:19:35,590
+settings, which give me [music] four
+separate dials to work with. The camera
+
+1070
+00:19:35,590 --> 00:19:35,600
+separate dials to work with. The camera
+ 
+
+1071
+00:19:35,600 --> 00:19:37,750
+separate dials to work with. The camera
+itself sets the base look, so I'll set
+
+1072
+00:19:37,750 --> 00:19:37,760
+itself sets the base look, so I'll set
+ 
+
+1073
+00:19:37,760 --> 00:19:40,190
+itself sets the base look, so I'll set
+it to fine film for that filmic quality.
+
+1074
+00:19:40,190 --> 00:19:40,200
+it to fine film for that filmic quality.
+ 
+
+1075
+00:19:40,200 --> 00:19:42,110
+it to fine film for that filmic quality.
+The lens controls how sharp everything
+
+1076
+00:19:42,110 --> 00:19:42,120
+The lens controls how sharp everything
+ 
+
+1077
+00:19:42,120 --> 00:19:43,590
+The lens controls how sharp everything
+is and how much the [music] background
+
+1078
+00:19:43,590 --> 00:19:43,600
+is and how much the [music] background
+ 
+
+1079
+00:19:43,600 --> 00:19:45,870
+is and how much the [music] background
+blurs. So I'll put it on anamorphic for
+
+1080
+00:19:45,870 --> 00:19:45,880
+blurs. So I'll put it on anamorphic for
+ 
+
+1081
+00:19:45,880 --> 00:19:47,710
+blurs. So I'll put it on anamorphic for
+that wide cinematic feel. The focal
+
+1082
+00:19:47,710 --> 00:19:47,720
+that wide cinematic feel. The focal
+ 
+
+1083
+00:19:47,720 --> 00:19:49,870
+that wide cinematic feel. The focal
+length is how wide or tight the shot is
+
+1084
+00:19:49,870 --> 00:19:49,880
+length is how wide or tight the shot is
+ 
+
+1085
+00:19:49,880 --> 00:19:52,270
+length is how wide or tight the shot is
+framed and I'll leave it at 50 mm so
+
+1086
+00:19:52,270 --> 00:19:52,280
+framed and I'll leave it at 50 mm so
+ 
+
+1087
+00:19:52,280 --> 00:19:53,790
+framed and I'll leave it at 50 mm so
+he's framed naturally without any
+
+1088
+00:19:53,790 --> 00:19:53,800
+he's framed naturally without any
+ 
+
+1089
+00:19:53,800 --> 00:19:55,710
+he's framed naturally without any
+distortion. And the aperture is how much
+
+1090
+00:19:55,710 --> 00:19:55,720
+distortion. And the aperture is how much
+ 
+
+1091
+00:19:55,720 --> 00:19:57,670
+distortion. And the aperture is how much
+of the scene stays in focus. So I'll
+
+1092
+00:19:57,670 --> 00:19:57,680
+of the scene stays in focus. So I'll
+ 
+
+1093
+00:19:57,680 --> 00:19:59,710
+of the scene stays in focus. So I'll
+keep it at F4 to hold the whole shot
+
+1094
+00:19:59,710 --> 00:19:59,720
+keep it at F4 to hold the whole shot
+ 
+
+1095
+00:19:59,720 --> 00:20:10,030
+keep it at F4 to hold the whole shot
+sharp from front to back.
+
+1096
+00:20:10,030 --> 00:20:10,040
+
+ 
+
+1097
+00:20:10,040 --> 00:20:11,350
+
+>> Time to end it all.
+
+1098
+00:20:11,350 --> 00:20:11,360
+>> Time to end it all.
+ 
+
+1099
+00:20:11,360 --> 00:20:13,270
+>> Time to end it all.
+>> And when it generates, the difference is
+
+1100
+00:20:13,270 --> 00:20:13,280
+>> And when it generates, the difference is
+ 
+
+1101
+00:20:13,280 --> 00:20:15,310
+>> And when it generates, the difference is
+clear. The character remains consistent
+
+1102
+00:20:15,310 --> 00:20:15,320
+clear. The character remains consistent
+ 
+
+1103
+00:20:15,320 --> 00:20:17,430
+clear. The character remains consistent
+throughout, the atmosphere is genuinely
+
+1104
+00:20:17,430 --> 00:20:17,440
+throughout, the atmosphere is genuinely
+ 
+
+1105
+00:20:17,440 --> 00:20:19,310
+throughout, the atmosphere is genuinely
+cinematic, and the whole video looks
+
+1106
+00:20:19,310 --> 00:20:19,320
+cinematic, and the whole video looks
+ 
+
+1107
+00:20:19,320 --> 00:20:21,070
+cinematic, and the whole video looks
+like a scene out of a movie. Then I'll
+
+1108
+00:20:21,070 --> 00:20:21,080
+like a scene out of a movie. Then I'll
+ 
+
+1109
+00:20:21,080 --> 00:20:22,990
+like a scene out of a movie. Then I'll
+take that same person, put him in man
+
+1110
+00:20:22,990 --> 00:20:23,000
+take that same person, put him in man
+ 
+
+1111
+00:20:23,000 --> 00:20:24,950
+take that same person, put him in man
+suit, drop him into Tokyo street, and
+
+1112
+00:20:24,950 --> 00:20:24,960
+suit, drop him into Tokyo street, and
+ 
+
+1113
+00:20:24,960 --> 00:20:27,070
+suit, drop him into Tokyo street, and
+change the panels to match the new mood.
+
+1114
+00:20:27,070 --> 00:20:27,080
+change the panels to match the new mood.
+ 
+
+1115
+00:20:27,080 --> 00:20:28,990
+change the panels to match the new mood.
+I'll set the genre to noir this time,
+
+1116
+00:20:28,990 --> 00:20:29,000
+I'll set the genre to noir this time,
+ 
+
+1117
+00:20:29,000 --> 00:20:30,910
+I'll set the genre to noir this time,
+switch the camera to clean digital for a
+
+1118
+00:20:30,910 --> 00:20:30,920
+switch the camera to clean digital for a
+ 
+
+1119
+00:20:30,920 --> 00:20:32,390
+switch the camera to clean digital for a
+sharper modern look, and open the
+
+1120
+00:20:32,390 --> 00:20:32,400
+sharper modern look, and open the
+ 
+
+1121
+00:20:32,400 --> 00:20:34,870
+sharper modern look, and open the
+aperture right up to F1.4 so the
+
+1122
+00:20:34,870 --> 00:20:34,880
+aperture right up to F1.4 so the
+ 
+
+1123
+00:20:34,880 --> 00:20:44,470
+aperture right up to F1.4 so the
+background blurs out behind him.
+
+1124
+00:20:44,470 --> 00:20:44,480
+
+ 
+
+1125
+00:20:44,480 --> 00:20:46,670
+
+>> It's surely cold today.
+
+1126
+00:20:46,670 --> 00:20:46,680
+>> It's surely cold today.
+ 
+
+1127
+00:20:46,680 --> 00:20:48,590
+>> It's surely cold today.
+>> And it's the same man in a totally
+
+1128
+00:20:48,590 --> 00:20:48,600
+>> And it's the same man in a totally
+ 
+
+1129
+00:20:48,600 --> 00:20:50,430
+>> And it's the same man in a totally
+different scene with his outfit and the
+
+1130
+00:20:50,430 --> 00:20:50,440
+different scene with his outfit and the
+ 
+
+1131
+00:20:50,440 --> 00:20:52,510
+different scene with his outfit and the
+location matching their references. And
+
+1132
+00:20:52,510 --> 00:20:52,520
+location matching their references. And
+ 
+
+1133
+00:20:52,520 --> 00:20:54,390
+location matching their references. And
+for the last one, I'll switch him to man
+
+1134
+00:20:54,390 --> 00:20:54,400
+for the last one, I'll switch him to man
+ 
+
+1135
+00:20:54,400 --> 00:20:56,430
+for the last one, I'll switch him to man
+cool and put him inside car interior
+
+1136
+00:20:56,430 --> 00:20:56,440
+cool and put him inside car interior
+ 
+
+1137
+00:20:56,440 --> 00:20:58,350
+cool and put him inside car interior
+driving through the mountains. Here,
+
+1138
+00:20:58,350 --> 00:20:58,360
+driving through the mountains. Here,
+ 
+
+1139
+00:20:58,360 --> 00:21:00,030
+driving through the mountains. Here,
+I'll set the genre to general, put the
+
+1140
+00:21:00,030 --> 00:21:00,040
+I'll set the genre to general, put the
+ 
+
+1141
+00:21:00,040 --> 00:21:02,310
+I'll set the genre to general, put the
+lens on clinical sharp so every detail
+
+1142
+00:21:02,310 --> 00:21:02,320
+lens on clinical sharp so every detail
+ 
+
+1143
+00:21:02,320 --> 00:21:03,950
+lens on clinical sharp so every detail
+is highlighted, and lock the camera
+
+1144
+00:21:03,950 --> 00:21:03,960
+is highlighted, and lock the camera
+ 
+
+1145
+00:21:03,960 --> 00:21:06,190
+is highlighted, and lock the camera
+completely still so it feels mounted
+
+1146
+00:21:06,190 --> 00:21:06,200
+completely still so it feels mounted
+ 
+
+1147
+00:21:06,200 --> 00:21:14,670
+completely still so it feels mounted
+right there on the dashboard.
+
+1148
+00:21:14,670 --> 00:21:14,680
+
+ 
+
+1149
+00:21:14,680 --> 00:21:17,830
+
+>> Seems like I will be there on time.
+
+1150
+00:21:17,830 --> 00:21:17,840
+>> Seems like I will be there on time.
+ 
+
+1151
+00:21:17,840 --> 00:21:19,830
+>> Seems like I will be there on time.
+>> And again, it's the same person in a
+
+1152
+00:21:19,830 --> 00:21:19,840
+>> And again, it's the same person in a
+ 
+
+1153
+00:21:19,840 --> 00:21:21,830
+>> And again, it's the same person in a
+completely different environment.
+
+1154
+00:21:21,830 --> 00:21:21,840
+completely different environment.
+ 
+
+1155
+00:21:21,840 --> 00:21:23,870
+completely different environment.
+Compare the first boxer video we made
+
+1156
+00:21:23,870 --> 00:21:23,880
+Compare the first boxer video we made
+ 
+
+1157
+00:21:23,880 --> 00:21:25,630
+Compare the first boxer video we made
+with this one, and the difference should
+
+1158
+00:21:25,630 --> 00:21:25,640
+with this one, and the difference should
+ 
+
+1159
+00:21:25,640 --> 00:21:27,510
+with this one, and the difference should
+be clear. That's the level of quality
+
+1160
+00:21:27,510 --> 00:21:27,520
+be clear. That's the level of quality
+ 
+
+1161
+00:21:27,520 --> 00:21:29,270
+be clear. That's the level of quality
+this [music] stage operates at, and the
+
+1162
+00:21:29,270 --> 00:21:29,280
+this [music] stage operates at, and the
+ 
+
+1163
+00:21:29,280 --> 00:21:31,230
+this [music] stage operates at, and the
+whole thing scales. Each level is
+
+1164
+00:21:31,230 --> 00:21:31,240
+whole thing scales. Each level is
+ 
+
+1165
+00:21:31,240 --> 00:21:33,150
+whole thing scales. Each level is
+building on the previous one, so by the
+
+1166
+00:21:33,150 --> 00:21:33,160
+building on the previous one, so by the
+ 
+
+1167
+00:21:33,160 --> 00:21:34,990
+building on the previous one, so by the
+end, you can use all your knowledge
+
+1168
+00:21:34,990 --> 00:21:35,000
+end, you can use all your knowledge
+ 
+
+1169
+00:21:35,000 --> 00:21:36,670
+end, you can use all your knowledge
+along with the best tools to create
+
+1170
+00:21:36,670 --> 00:21:36,680
+along with the best tools to create
+ 
+
+1171
+00:21:36,680 --> 00:21:38,550
+along with the best tools to create
+something truly cinematic. With
+
+1172
+00:21:38,550 --> 00:21:38,560
+something truly cinematic. With
+ 
+
+1173
+00:21:38,560 --> 00:21:40,590
+something truly cinematic. With
+optimized prompting, controlled JSON
+
+1174
+00:21:40,590 --> 00:21:40,600
+optimized prompting, controlled JSON
+ 
+
+1175
+00:21:40,600 --> 00:21:43,070
+optimized prompting, controlled JSON
+format, locked character consistency,
+
+1176
+00:21:43,070 --> 00:21:43,080
+format, locked character consistency,
+ 
+
+1177
+00:21:43,080 --> 00:21:44,670
+format, locked character consistency,
+and the director's controls of Cinema
+
+1178
+00:21:44,670 --> 00:21:44,680
+and the director's controls of Cinema
+ 
+
+1179
+00:21:44,680 --> 00:21:46,510
+and the director's controls of Cinema
+Studio, where everything is set, not
+
+1180
+00:21:46,510 --> 00:21:46,520
+Studio, where everything is set, not
+ 
+
+1181
+00:21:46,520 --> 00:21:48,470
+Studio, where everything is set, not
+only can you create AI videos on a
+
+1182
+00:21:48,470 --> 00:21:48,480
+only can you create AI videos on a
+ 
+
+1183
+00:21:48,480 --> 00:21:50,310
+only can you create AI videos on a
+professional level, but you can do it in
+
+1184
+00:21:50,310 --> 00:21:50,320
+professional level, but you can do it in
+ 
+
+1185
+00:21:50,320 --> 00:21:52,070
+professional level, but you can do it in
+a fraction of the time and create these
+
+1186
+00:21:52,070 --> 00:21:52,080
+a fraction of the time and create these
+ 
+
+1187
+00:21:52,080 --> 00:21:54,030
+a fraction of the time and create these
+at scale. So, if you want to master
+
+1188
+00:21:54,030 --> 00:21:54,040
+at scale. So, if you want to master
+ 
+
+1189
+00:21:54,040 --> 00:21:56,030
+at scale. So, if you want to master
+these five levels and create cinematic
+
+1190
+00:21:56,030 --> 00:21:56,040
+these five levels and create cinematic
+ 
+
+1191
+00:21:56,040 --> 00:21:58,190
+these five levels and create cinematic
+videos like these yourself, use the link
+
+1192
+00:21:58,190 --> 00:21:58,200
+videos like these yourself, use the link
+ 
+
+1193
+00:21:58,200 --> 00:22:00,070
+videos like these yourself, use the link
+in the description to sign up to
+
+1194
+00:22:00,070 --> 00:22:00,080
+in the description to sign up to
+ 
+
+1195
+00:22:00,080 --> 00:22:01,830
+in the description to sign up to
+Higgsfield. Thanks for watching, and
+
+1196
+00:22:01,830 --> 00:22:01,840
+Higgsfield. Thanks for watching, and
+ 
+
+1197
+00:22:01,840 --> 00:22:05,160
+Higgsfield. Thanks for watching, and
+I'll see you in the next one.
+

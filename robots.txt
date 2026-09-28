@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+# N 专题 repos 已 gitignore 不会部署;此行兜底防爬(路径以 Netlify publish=site/ 为根)
+Disallow: /tutorial/N-aixiexiaoshuo/repos/

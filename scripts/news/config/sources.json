@@ -1,0 +1,65 @@
+{
+  "$schema": "新闻源配置文件",
+  "_comment": "每个源独立可启用/禁用。type: rss | json | html | api。fetchIntervalMinutes 调度用。",
+  "global": {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "timeoutMs": 15000,
+    "maxConcurrent": 2,
+    "maxRetries": 1,
+    "retryDelayMs": 2000
+  },
+  "sources": [
+    {
+      "id": "qbitai",
+      "name": "量子位",
+      "type": "rss",
+      "url": "https://www.qbitai.com/feed",
+      "enabled": true,
+      "fetchIntervalMinutes": 120,
+      "defaultCategory": "tech",
+      "language": "zh"
+    },
+    {
+      "id": "36kr",
+      "name": "36氪",
+      "type": "rss",
+      "url": "https://36kr.com/feed",
+      "enabled": true,
+      "fetchIntervalMinutes": 180,
+      "defaultCategory": "business",
+      "language": "zh"
+    },
+    {
+      "id": "weibo-hot",
+      "name": "微博热搜",
+      "type": "json",
+      "url": "https://weibo.com/ajax/side/hotSearch",
+      "enabled": true,
+      "fetchIntervalMinutes": 60,
+      "defaultCategory": "platform",
+      "language": "zh",
+      "_note": "AI/短剧相关热搜过滤后入库"
+    },
+    {
+      "id": "github-trending",
+      "name": "GitHub Trending(AI/视频/短剧)",
+      "type": "html",
+      "url": "https://github.com/trending?since=daily&spoken_language_code=en",
+      "enabled": true,
+      "fetchIntervalMinutes": 240,
+      "defaultCategory": "open-source",
+      "language": "zh",
+      "_note": "只收录与 AI/视频/短剧关键词相关的仓库"
+    },
+    {
+      "id": "tmtpost",
+      "name": "钛媒体",
+      "type": "rss",
+      "url": "https://www.tmtpost.com/rss.xml",
+      "enabled": true,
+      "fetchIntervalMinutes": 180,
+      "defaultCategory": "business",
+      "language": "zh"
+    }
+  ]
+}

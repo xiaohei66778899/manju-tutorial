@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="C-10 多人角色 · 漫剧制作教程站。玉哥整理的 AI 漫剧与短剧制作实用教程，包含步骤、案例和练习。">
+<title>C-10 多人角色 · 漫剧制作教程站</title>
+<link rel="stylesheet" href="../../assets/site.css?v=fix20260927-2215">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg?v=fix20260927-2215">
+<link rel="stylesheet" href="../../assets/tutorial.css?v=fix20260927-2215">
+</head>
+<body>
+<header class="topbar">
+  <div class="logo">🎬 漫剧教程站 <small>v3 · 玉哥</small></div>
+  <nav>
+    <a href="../../index.html">首页</a>
+    <a href="../all-courses.html" class="active">漫剧教程</a>
+    <a href="../../prompts/image-prompts.html">图片作品</a>
+    <a href="../../works/index.html">视频作品</a>
+    <a href="../../prompts/prompts.html">prompt 模板</a>
+    <a href="../../tools/toolkit.html">工具箱</a>
+    <a href="../../qa/troubleshooting.html">问题库</a>
+    <a href="../../news/industry.html">行业新闻</a>
+    </nav>
+  <div class="search"><input type="search" placeholder="🔍 搜…"></div>
+  <button class="theme-toggle" title="深浅主题切换" onclick="document.documentElement.classList.toggle('dark')">🌙</button>
+</header>
+<div class="layout-3col">
+  <aside class="sidebar-left" id="sidebar-left"></aside>
+  <main class="content">
+    <div class="breadcrumb"><a href="../../index.html">首页</a> <span>›</span> <a href="../all-courses.html">C 角色制作</a> <span>›</span> C-10 多人角色</div>
+    <h1>C-10 · 多人角色</h1>
+    <h2 id="sec-1">1. 多人出图 3 挑战</h2>
+    <ul>
+      <li><strong>串脸</strong>:主角脸变反派脸(B-6 / C-16 详细)</li>
+      <li><strong>身体融合</strong>:胳膊融合</li>
+      <li><strong>服装错乱</strong>:主角穿反派衣服</li>
+    </ul>
+
+    <h2 id="sec-2">2. 玉哥 3 方案</h2>
+    <div class="tbl-wrap"><table><thead><tr><th>方案</th><th>学员用</th><th>效果</th></tr></thead><tbody>
+    <tr><td><strong>1. 多 IP-Adapter + Mask</strong></td><td>✅ 80%</td><td>⭐⭐⭐⭐⭐</td></tr>
+    <tr><td><strong>2. 分区域生成</strong></td><td>✅ 15%</td><td>⭐⭐⭐⭐</td></tr>
+    <tr><td><strong>3. 单角色独立 + PS 合成</strong></td><td>应急</td><td>⭐⭐⭐⭐⭐</td></tr>
+    </tbody></table></div>
+
+    <h2 id="sec-3">3. Mask + 多 IP-Adapter SOP</h2>
+    <ol>
+      <li>画布分左右 2 个 Mask(主角 + 反派)</li>
+      <li>IP-Adapter × 2(主角参考 + 反派参考)</li>
+      <li>每个 IP-Adapter 只影响自己区域</li>
+      <li>合并输出</li>
+    </ol>
+    <p class="src">📌 本地工作流有 <strong>IPAdapter Regional</strong> 节点,学员 80% 用这个</p>
+
+    <h2 id="sec-4">4. 多人 prompt 模板</h2>
+    <pre class="codebox"># 龙王 + 王总 同框
+two men facing each other in office,
+on the left: 30 year old man with square face, short black 
+  hair, white shirt and black pants, angry expression,
+on the right: 50 year old fat man with bald head, 
+  black Chinese jacket, sinister smile,
+medium shot, indoor office, dramatic lighting,
+9:16 aspect ratio</pre>
+    <p class="src">📌 用 "on the left / on the right" 区域描述,AI 串脸率降低 60%</p>
+
+    <h2 id="sec-5">5. 站位设计</h2>
+    <div class="tbl-wrap"><table><thead><tr><th>类型</th><th>站位</th></tr></thead><tbody>
+    <tr><td>对峙</strong></td><td>左右 1:1</td></tr>
+    <tr><td>主从</strong></td><td>主角前景大 + 反派背景小</td></tr>
+    <tr><td>群戏</strong></td><td>三角 / 半圆</td></tr>
+    </tbody></table></div>
+
+    <h2 id="sec-6">6. 学完这能做啥</h2>
+    <ul class="checklist"><li>能出多人同框</li><li>会用 IPAdapter Regional</li><li>能避免串脸</li></ul>
+
+    <h2 id="sec-7">7. 玉哥说</h2>
+    <div class="callout warn"><span class="ico">📢</span><p><strong>📢 玉哥说</strong>:<br>
+    1. <strong>Mask + 多 IP-Adapter</strong> · 80% 学员用<br>
+    2. <strong>"on the left/right"</strong> · 串脸率降 60%<br>
+    3. <strong>分区域生成</strong> · 15% 学员用<br>
+    4. <strong>PS 合成</strong> · 应急兜底</p></div>
+
+    <nav class="bottom-nav">
+      <a class="prev" href="C-9.html"><span class="label">← 上一节</span><span class="title">C-9 表情</span></a>
+      <a class="next" href="C-11.html"><span class="label">下一节 →</span><span class="title">C-11 角色一致性</span></a>
+    </nav>
+  </main>
+  <aside class="sidebar-right" id="sidebar-right"></aside>
+</div>
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="扫码关注玉哥">
+      <img class="qr-img" src="../../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../../changelog.html">📅 更新日志</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+<script src="../../assets/tutorial.js?v=fix20260927-2215"></script>
+<script src="../../assets/site-enhance.js?v=fix20260927-2215" defer></script>
+</body>
+</html>

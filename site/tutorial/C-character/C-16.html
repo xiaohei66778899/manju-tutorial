@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="C-16 多角色串脸排查教程：区域遮罩、独立参考图与多人镜头修复方法。">
+<title>C-16 两个角色串脸怎么办 · 漫剧制作教程站</title>
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg?v=fix20260927-2215">
+<link rel="stylesheet" href="../../assets/site.css?v=fix20260927-2215">
+<link rel="stylesheet" href="../../assets/tutorial.css?v=fix20260927-2215">
+</head>
+<body>
+<header class="topbar">
+  <div class="logo">🎬 漫剧教程站 <small>v3 · 玉哥</small></div>
+  <nav>
+    <a href="../../index.html">首页</a>
+    <a href="../all-courses.html" class="active">漫剧教程</a>
+    <a href="../../prompts/image-prompts.html">图片作品</a>
+    <a href="../../works/index.html">视频作品</a>
+    <a href="../../prompts/prompts.html">prompt 模板</a>
+    <a href="../../tools/toolkit.html">工具箱</a>
+    <a href="../../qa/troubleshooting.html">问题库</a>
+    <a href="../../news/industry.html">行业新闻</a>
+  </nav>
+  <div class="search"><input type="search" placeholder="🔍 搜…"></div>
+  <button class="theme-toggle" title="深浅主题切换" onclick="document.documentElement.classList.toggle('dark')">🌙</button>
+</header>
+<div class="layout-3col">
+  <aside class="sidebar-left" id="sidebar-left"></aside>
+  <main class="content">
+    <div class="breadcrumb"><a href="../../index.html">首页</a> <span>›</span> <a href="../all-courses.html">C 角色制作</a> <span>›</span> C-16 串脸怎么办</div>
+    <h1>C-16 · 两个角色串脸怎么办</h1>
+    <h2 id="sec-1">1. 串脸 3 大表现</h2>
+    <ul>
+      <li>主角脸变反派脸</li>
+      <li>两角色都是同一张脸</li>
+      <li>主角消失,只看见反派</li>
+    </ul>
+
+    <h2 id="sec-2">2. 5 大原因</h2>
+    <ol>
+      <li>用单 IP-Adapter 出多人</li>
+      <li>没分区域 Mask</li>
+      <li>两个角色太相似(脸型/服装)</li>
+      <li>参考图权重过低</li>
+      <li>prompt 没说"两个不同男人"</li>
+    </ol>
+
+    <h2 id="sec-3">3. 玉哥 4 步修法</h2>
+    <ol>
+      <li><strong>分区域 Mask</strong>:左右各 1 个 Mask,每个区域独立 IP-Adapter</li>
+      <li><strong>加"两个不同男人"</strong>到 prompt</li>
+      <li><strong>用 "on the left / on the right"</strong> 区分</li>
+      <li><strong>避免相似服装</strong>:主角白衬衫,反派黑西服</li>
+    </ol>
+    <div class="callout tip"><span class="ico">📦</span><p><strong>具体节点实现(IPAdapter Regional / Mask blur)</strong> · 见 <a href="../J-comfyui/ComfyUI漫剧工作流.html">ComfyUI 专题</a></p></div>
+
+    <h2 id="sec-4">4. 兜底:单角色 + PS 合成</h2>
+    <p>15% 学员用兜底法:</p>
+    <ol>
+      <li>主角单独出 1 张(无反派)</li>
+      <li>反派单独出 1 张(无主角)</li>
+      <li>PS 合成 2 张</li>
+      <li>调色统一</li>
+    </ol>
+
+    <h2 id="sec-5">5. 学员验证</h2>
+    <ul>
+      <li>多人镜头串脸率从 30% → 5%(用区域 Mask)</li>
+      <li>PS 合成耗时 ×3(不推荐)</li>
+    </ul>
+
+    <h2 id="sec-6">6. 学完这能做啥</h2>
+    <ul class="checklist"><li>能识别串脸</li><li>能分区域 Mask</li><li>能用 PS 兜底</li></ul>
+
+    <h2 id="sec-7">7. 小结</h2>
+    <div class="callout warn"><span class="ico">📢</span><p><strong>📢 小结</strong>:<br>
+    1. <strong>串脸 = 多人最大坑</strong><br>
+    2. <strong>分区域 Mask</strong> · 80% 学员用<br>
+    3. <strong>"两个不同男人"</strong> · 加 prompt<br>
+    4. <strong>PS 合成</strong> · 兜底但费时</p></div>
+
+    <nav class="bottom-nav">
+      <a class="prev" href="C-15.html"><span class="label">← 上一节</span><span class="title">C-15 角色 LoRA</span></a>
+      <a class="next" href="C-17.html"><span class="label">下一节 →</span><span class="title">C-17 提示词速查</span></a>
+    </nav>
+  </main>
+  <aside class="sidebar-right" id="sidebar-right"></aside>
+</div>
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="后期放公众号二维码">
+      <img class="qr-img" src="../../assets/qr-yuge.png?v=fix20260919-2010" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../../changelog.html">📅 更新日志</a></li>
+      <li><a href="mailto:yuge@local.demo">✉ 联系玉哥</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流 · 京 ICP 备 XXXXXXXX 号(待补)
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+<script src="../../assets/tutorial.js?v=fix20260927-2215"></script>
+<script src="../../assets/site-enhance.js?v=fix20260927-2215" defer></script>
+</body>
+</html>

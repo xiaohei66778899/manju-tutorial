@@ -1,0 +1,436 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>行业地图 2.0 + 2026 H2 趋势 v13.0</title>
+<style>
+:root{--bg:#0b0d12;--bg2:#11141b;--bg3:#161a23;--line:#222837;--text:#e6e9f2;--muted:#8a93a6;--acc:#7aa2ff;--acc2:#5ee0a7;--acc3:#ffb142;--acc4:#c084fc;--acc5:#ff5b6e;}
+*{box-sizing:border-box;margin:0;padding:0}html,body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Helvetica,Arial,sans-serif;line-height:1.7;font-size:15px;-webkit-font-smoothing:antialiased}
+a{color:var(--acc);text-decoration:none}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(11,13,18,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:12px 24px;display:flex;align-items:center;gap:16px}
+.logo{font-weight:800;font-size:18px;background:linear-gradient(90deg,var(--acc),var(--acc4));-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:.5px}
+.layout{display:grid;grid-template-columns:240px 1fr;max-width:1400px;margin:0 auto}
+aside{position:sticky;top:60px;height:calc(100vh - 60px);overflow-y:auto;padding:24px 16px;border-right:1px solid var(--line);background:var(--bg2)}
+aside h3{color:var(--muted);font-size:12px;letter-spacing:1px;margin:16px 0 8px;text-transform:uppercase}
+aside ul{list-style:none}
+aside li{margin:2px 0}
+aside a{color:#c5cae0;font-size:13px;display:block;padding:5px 10px;border-radius:5px;border-left:2px solid transparent}
+aside a:hover{background:var(--bg3);color:var(--text);text-decoration:none;border-left-color:var(--acc)}
+main{padding:32px 40px 80px;min-width:0}
+h1{font-size:32px;margin-bottom:8px;letter-spacing:.5px}
+h2{font-size:24px;margin:48px 0 16px;padding-bottom:8px;border-bottom:1px solid var(--line);position:relative}
+h2::before{content:"";position:absolute;left:-20px;top:8px;width:4px;height:22px;background:var(--acc);border-radius:2px}
+h3{font-size:18px;margin:28px 0 10px;color:var(--acc2)}
+p{margin:10px 0;color:#cfd4e0}
+ul,ol{margin:8px 0 12px 24px;color:#cfd4e0}
+li{margin:4px 0}
+strong{color:#fff}
+em{color:var(--acc2);font-style:normal}
+.hero{background:linear-gradient(135deg,#0a0d1f 0%,#0b0d12 60%,#0d111c 100%);border:1px solid var(--acc);border-radius:14px;padding:36px 32px;margin-bottom:32px;box-shadow:0 0 40px rgba(122,162,255,.2);position:relative;overflow:hidden}
+.hero h1{background:linear-gradient(90deg,var(--acc),var(--acc4));-webkit-background-clip:text;background-clip:text;color:transparent;display:inline-block}
+.hero .sub{color:var(--muted);margin-top:6px;font-size:14px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.tag{background:rgba(255,255,255,.06);border:1px solid var(--line);padding:4px 10px;border-radius:99px;font-size:12px;color:#cdd3e1}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin:20px 0}
+.stat{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:18px}
+.stat .v{font-size:24px;font-weight:800;color:#fff;letter-spacing:.5px}
+.stat .l{color:var(--muted);font-size:13px;margin-top:4px}
+.stat.hot .v{color:var(--acc2)}
+.bar{margin:8px 0}
+.bar .row{display:flex;justify-content:space-between;font-size:12.5px;margin-bottom:4px;color:#cfd4e0}
+.bar .track{height:8px;background:#1a1f2c;border-radius:4px;overflow:hidden}
+.bar .fill{height:100%;background:linear-gradient(90deg,var(--acc),var(--acc4));border-radius:4px}
+.bar.alt .fill{background:linear-gradient(90deg,var(--acc3),var(--acc5))}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;margin:14px 0}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--bg3);color:var(--muted);font-weight:600;font-size:11.5px;text-transform:uppercase;letter-spacing:.5px}
+tbody tr:hover{background:rgba(255,255,255,.02)}
+.badge{display:inline-block;padding:2px 6px;border-radius:4px;font-size:10.5px;font-weight:600}
+.badge.hot{background:rgba(255,91,110,.18);color:#ff8a99}
+.badge.warm{background:rgba(255,177,66,.18);color:#ffc777}
+.badge.cool{background:rgba(94,224,167,.18);color:#7defc0}
+.badge.info{background:rgba(122,162,255,.18);color:#a8c0ff}
+.badge.purple{background:rgba(192,132,252,.18);color:#d2afff}
+.callout{display:flex;gap:12px;padding:14px 16px;border-radius:8px;margin:14px 0;border:1px solid var(--line);background:var(--bg2)}
+.callout .ico{font-size:20px;flex-shrink:0;line-height:1}
+.callout.tip{border-color:rgba(94,224,167,.4);background:rgba(94,224,167,.06)}
+.callout.warn{border-color:rgba(248,113,113,.4);background:rgba(248,113,113,.06)}
+.callout.info{border-color:rgba(122,162,255,.4);background:rgba(122,162,255,.06)}
+.callout p{font-size:13.5px;color:#dde0ec;margin:0}
+footer{margin-top:60px;padding:24px 40px;color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);text-align:center}
+@media (max-width:900px){.layout{grid-template-columns:1fr}aside{position:relative;top:0;height:auto;border-right:0;border-bottom:1px solid var(--line)}main{padding:24px 20px 60px}h1{font-size:26px}h2{font-size:20px}}
+@media print{aside,.topbar{display:none}.layout{grid-template-columns:1fr}body{background:#fff;color:#000}h2::before{display:none}}
+</style>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg?v=fix20260927-2215">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="logo">🗺️ 行业地图 2.0 + 2026 H2 趋势 v13.0 <small>终章 · 2026-09-11</small></div>
+  <button class="toc-btn" onclick="window.print()" style="margin-left:auto;background:var(--bg3);border:1px solid var(--line);color:var(--text);padding:6px 12px;border-radius:6px;cursor:pointer;font-size:13px">🖨 打印</button>
+</div>
+
+<div class="layout">
+
+<aside>
+<h3>地图</h3>
+<ul>
+  <li><a href="#hero">概览</a></li>
+  <li><a href="#map">产业链地图</a></li>
+  <li><a href="#profit">利润分布</a></li>
+  <li><a href="#reg">监管图</a></li>
+</ul>
+
+<h3>趋势</h3>
+<ul>
+  <li><a href="#h2">2026 H2 趋势</a></li>
+  <li><a href="#q4">Q4 预判</a></li>
+  <li><a href="#risk">5 大风险</a></li>
+  <li><a href="#opp">5 大机会</a></li>
+</ul>
+
+<h3>行动</h3>
+<ul>
+  <li><a href="#path">玉哥 30 天路径</a></li>
+  <li><a href="#check">本章总结</a></li>
+</ul>
+</aside>
+
+<main>
+
+<section id="hero" class="hero">
+  <h1>行业地图 2.0 + 2026 H2 趋势</h1>
+  <p class="sub">终章 · 2026-09-10 上午完成</p>
+  <p style="margin-top:14px;max-width:780px">这是 <strong>本课件体系</strong>的终章。一张图看懂产业链 + 利润分布 + 监管图谱 + 2026 H2 趋势预测 + 玉哥 30 天落地路径。</p>
+  <div class="meta">
+    <span class="tag">🗺️ 完整产业链</span>
+    <span class="tag">💰 利润分布</span>
+    <span class="tag">📈 2026 H2 预测</span>
+    <span class="tag">⚠️ 5 大风险</span>
+    <span class="tag">🎯 玉哥 30 天</span>
+    <span class="tag">✍️ 玉哥</span>
+  </div>
+</section>
+
+<h2 id="map">一、短剧产业链地图(2026)</h2>
+
+<div class="callout info">
+  <span class="ico">🗺️</span>
+  <p><strong>5 大环节</strong>都有赚钱机会:<strong>IP 方 → 编剧 → 制作 → 投流 → 平台</strong>。</p>
+</div>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>环节</th><th>主体</th><th>收入模式</th><th>头部代表</th></tr></thead>
+<tbody>
+<tr><td><strong>1. IP 方</strong></td><td>番茄小说/七猫/起点</td><td>授权费 + 分成</td><td>字节系(番茄) · 阅文 · 七猫</td></tr>
+<tr><td><strong>2. 编剧</strong></td><td>个人编剧 / 工作室</td><td>保底 + 分成</td><td>头部年薪 200 万</td></tr>
+<tr><td><strong>3. 制作方</strong></td><td>听花岛 / 麦芽 / 个人小团队</td><td>制作费 + 分账</td><td>听花岛(咪蒙厂牌)</td></tr>
+<tr><td><strong>4. 投流方</strong></td><td>红果投流 / 麦芽投流</td><td>投流分成 40-60%</td><td>千川 / 磁力金牛</td></tr>
+<tr><td><strong>5. 平台</strong></td><td>红果/九州/七猫/点众</td><td>广告分成 60% / 付费 50%</td><td>红果(字节系) · 九州</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="profit">二、产业链利润分布</h2>
+
+<div class="bar">
+  <div class="row"><span>平台(红果/九州)</span><span>20-40%</span></div>
+  <div class="track"><div class="fill" style="width:40%"></div></div>
+</div>
+<div class="bar alt">
+  <div class="row"><span>制作方</span><span>20-30%</span></div>
+  <div class="track"><div class="fill" style="width:30%"></div></div>
+</div>
+<div class="bar">
+  <div class="row"><span>投流方</span><span>10-15%</span></div>
+  <div class="track"><div class="fill" style="width:15%"></div></div>
+</div>
+<div class="bar alt">
+  <div class="row"><span>AI 工具/算力</span><span>5-10%</span></div>
+  <div class="track"><div class="fill" style="width:10%"></div></div>
+</div>
+<div class="bar">
+  <div class="row"><span>编剧</span><span>5-10%</span></div>
+  <div class="track"><div class="fill" style="width:10%"></div></div>
+</div>
+<div class="bar alt">
+  <div class="row"><span>番茄 IP 方</span><span>10-20%</span></div>
+  <div class="track"><div class="fill" style="width:20%"></div></div>
+</div>
+
+<div class="callout tip">
+  <span class="ico">💡</span>
+  <p><strong>关键洞察</strong>:① 平台拿大头(20-40%),因为有流量 ② 制作方 + 投流方共拿 30-45% ③ 编剧 + AI 工具 + IP 共拿 25-50% ④ <strong>头部编剧能拿到 200 万年薪</strong>(腾讯新闻 2025-12-09),编剧中心制时代来临。</p>
+</div>
+
+<h2 id="reg">三、监管图谱(2026)</h2>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>监管领域</th><th>主管</th><th>核心规则</th><th>影响</th></tr></thead>
+<tbody>
+<tr><td><strong>内容审核</strong></td><td>广电总局 + 平台</td><td>禁止极端复仇/低俗/双男主/纯灵异</td><td>决定短剧能否过审</td></tr>
+<tr><td><strong>AI 漫剧内容审核</strong></td><td>广电总局 + 网信办</td><td>AI 生成内容需明确标注(Disclosure 必填)</td><td>影响 AI 漫剧过审</td></tr>
+<tr><td><strong>版权登记</strong></td><td>中国版权保护中心</td><td>剧本登记 ¥300/部</td><td>保护原作者</td></tr>
+<tr><td><strong>数据合规</strong></td><td>网信办</td><td>用户数据不出境(GDPR)</td><td>海外发行要 AWS 节点</td></tr>
+<tr><td><strong>广告法</strong></td><td>市场监管总局</td><td>禁止承诺退款/夸大效果</td><td>投流素材规范</td></tr>
+<tr><td><strong>AI 监管</strong></td><td>网信办 + 工信部</td><td>AI 换脸 Disclosure 必填</td><td>影响 AI 漫剧/出海</td></tr>
+<tr><td><strong>跨境</strong></td><td>文化部 + 商务部</td><td>《网络文化经营许可证》+ 跨境文化出口许可</td><td>出海必须</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="h2">四、2026 H2 趋势预测</h2>
+
+<div class="callout warn">
+  <span class="ico">📈</span>
+  <p><strong>2026 H2 核心趋势</strong>:① 产能严重过剩 + 90% 公司退出 ② 编剧中心制 ③ 系列化 IP ④ AIGC 全流程 ⑤ 海外仅 4 大平台主导 ⑥ 监管常态化(《黑莲花》式极端题材绝迹)。</p>
+</div>
+
+<h3>4.1 内容趋势</h3>
+<div class="bar">
+  <div class="row"><span>温情/方言/年代(《家里家外》)</span><span>↑ 30%</span></div>
+  <div class="track"><div class="fill" style="width:80%"></div></div>
+</div>
+<div class="bar alt">
+  <div class="row"><span>女频爽剧(离婚/霸总/闪婚)</span><span>↑ 15%</span></div>
+  <div class="track"><div class="fill" style="width:60%"></div></div>
+</div>
+<div class="bar">
+  <div class="row"><span>男频异能(扮猪吃老虎)</span><span>↑ 10%</span></div>
+  <div class="track"><div class="fill" style="width:50%"></div></div>
+</div>
+<div class="bar alt">
+  <div class="row"><span>悬疑脑洞(规则怪谈/伪人)</span><span>↑ 25%</span></div>
+  <div class="track"><div class="fill" style="width:70%"></div></div>
+</div>
+<div class="bar">
+  <div class="row"><span>纯爽剧(战神/龙王)</span><span>↓ 5%</span></div>
+  <div class="track"><div class="fill" style="width:30%"></div></div>
+</div>
+<div class="bar alt">
+  <div class="row"><span>极端复仇(《黑莲花》类)</span><span>↓ 100%(已禁)</span></div>
+  <div class="track"><div class="fill" style="width:5%"></div></div>
+</div>
+
+<h3>4.2 商业趋势</h3>
+<div class="bar">
+  <div class="row"><span>免费广告分成(IAA)</span><span>↑ 40%</span></div>
+  <div class="track"><div class="fill" style="width:90%"></div></div>
+</div>
+<div class="bar alt">
+  <div class="row"><span>付费解锁(IAP)</span><span>↑ 5%</span></div>
+  <div class="track"><div class="fill" style="width:40%"></div></div>
+</div>
+<div class="bar">
+  <div class="row"><span>系列化 IP(《家里家外 1/2/3》)</span><span>↑ 50%</span></div>
+  <div class="track"><div class="fill" style="width:95%"></div></div>
+</div>
+<div class="bar alt">
+  <div class="row"><span>海外(ReelShort/DramaBox)</span><span>↑ 30%</span></div>
+  <div class="track"><div class="fill" style="width:70%"></div></div>
+</div>
+
+<h3>4.3 技术趋势</h3>
+<div class="bar">
+  <div class="row"><span>AIGC 全流程(LoRA + IP-Adapter + 图生视频)</span><span>↑ 80%</span></div>
+  <div class="track"><div class="fill" style="width:100%"></div></div>
+</div>
+<div class="bar alt">
+  <div class="row"><span>30 秒以上长视频生成</span><span>↑ 100%</span></div>
+  <div class="track"><div class="fill" style="width:100%"></div></div>
+</div>
+<div class="bar">
+  <div class="row"><span>AI 角色一致性(IP-Adapter+LoRA 组合)</span><span>↑ 200%</span></div>
+  <div class="track"><div class="fill" style="width:100%"></div></div>
+</div>
+
+<h2 id="q4">五、Q4 2026 预判</h2>
+
+<div class="stats">
+  <div class="stat hot"><div class="v">200 万</div><div class="l">头部编剧年薪</div></div>
+  <div class="stat warm"><div class="v">$40 亿</div><div class="l">海外市场规模(艾瑞预测)</div></div>
+  <div class="stat cool"><div class="v">90%</div><div class="l">漫剧小公司退出</div></div>
+  <div class="stat info"><div class="v">10%</div><div class="l">头部 10% 吃下大部分收益</div></div>
+</div>
+
+<div class="callout tip">
+  <span class="ico">🔮</span>
+  <p><strong>Q4 关键判断</strong>:① 头部 5 家平台收拢 80% 流量 ② 编剧中心制确立(头部编剧 200 万年薪是常态) ③ 系列化 IP 成为分账主力 ④ 海外仅 4 大平台主导 ⑤ AIGC 漫剧进入"30 秒长视频"时代。</p>
+</div>
+
+<h2 id="risk">六、5 大风险</h2>
+
+<div class="steps">
+  <div class="step"><div class="n">1</div><h4>产能过剩</h4><p>漫剧日产 1000 部,小团队被卷死</p></div>
+  <div class="step"><div class="n">2</div><h4>投流成本飙升</h4><p>千川 CPM 半年涨 30-50%,小团队投不起</p></div>
+  <div class="step"><div class="n">3</div><h4>监管收紧</h4><p>《黑莲花》/《特助》下架案例,合规成本上升</p></div>
+  <div class="step"><div class="n">4</div><h4>海外亏损</h4><p>90% 中国公司亏损,ReelShort 母公司也亏</p></div>
+  <div class="step"><div class="n">5</div><h4>AI 替代风险</h4><p>基础编剧被 AI 替代(头部不替代)</p></div>
+</div>
+
+<h2 id="opp">七、5 大机会</h2>
+
+<div class="steps">
+  <div class="step"><div class="n">1</div><h4>头部编剧</h4><p>编剧中心制,头部年薪 200 万,稀缺</p></div>
+  <div class="step"><div class="n">2</div><h4>系列化 IP</h4><p>不要做单部,做系列(《家里家外 1/2/3》)</p></div>
+  <div class="step"><div class="n">3</div><h4>差异化题材</h4><p>方言(川渝)/ 年代(80-90)/ 跨文化(海外)</p></div>
+  <div class="step"><div class="n">4</div><h4>工业化管理</h4><p>8 套模板工程化管理(腾讯云实战)</p></div>
+  <div class="step"><div class="n">5</div><h4>AIGC 工具流</h4><p>LoRA+IP-Adapter+30 秒长视频= 漫剧降本</p></div>
+</div>
+
+<h2 id="path">八、玉哥 30 天落地路径(2026-09-11 起)</h2>
+
+<p style="margin:6px 0 4px;padding:6px 10px;background:rgba(94,224,167,.06);border-left:3px solid var(--acc);border-radius:4px;font-size:12.5px">📎 精简 6 阶段 SOP 见 <a href="../tutorial/H-publish/短剧创业SOP.html">短剧创业 SOP</a>(22KB,"1 份就够"终版)。本节是 v13.0 详细 30 天版。</p>
+<div class="callout info">
+  <span class="ico">🎯</span>
+  <p><strong>2026-09-11 视角</strong>:ComfyUI + IP-Adapter + 30 秒长视频 + Runway/SVD 已成熟。AI 漫剧不再需要 6 个月——<strong>30 天足够出 1 部可投片</strong>。</p>
+</div>
+
+<div class="stats">
+  <div class="stat hot"><div class="v">D1-3</div><div class="l">装工具(novel-downloader + 抖音 + ComfyUI) + 选 1 本书</div></div>
+  <div class="stat warm"><div class="v">D4-7</div><div class="l">拆 5 部爆款(v7.0) + 写人物卡(v4.0 模板)</div></div>
+  <div class="stat cool"><div class="v">D8-14</div><div class="l">写 30 集剧本(改编实操入口 + 详细 7 步) + 同步 ComfyUI 出 1-3 集 AI 漫剧</div></div>
+  <div class="stat info"><div class="v">D15-21</div><div class="l">AI 漫剧成片:剪辑 + 配音 + 配乐 + 字幕</div></div>
+  <div class="stat hot"><div class="v">D22-25</div><div class="l">投 3-5 家平台(合同模板) + 千川开账户(千川 SOP)</div></div>
+  <div class="stat warm"><div class="v">D26-30</div><div class="l">千川小额投流测试 + 数据复盘</div></div>
+</div>
+
+<div class="callout tip">
+  <span class="ico">💡</span>
+  <p><strong>30 天预算</strong>:3000-5000 元(纯 AI 漫剧路线,不算人工)<br>
+<strong>30 天产出</strong>:1 部可投 AI 漫剧(15-30 集) + 1 份 30 集剧本<br>
+<strong>30 天收益</strong>:看数据(D30 才出第一波数据,通常 0-3 万,爆款可 5-10 万)<br>
+<strong>长期价值</strong>:ComfyUI 流程沉淀 + 1 部成片作品集 + 平台过稿</p>
+</div>
+
+<h2 id="check">九、本章总结 · 3 句话</h2>
+
+<div class="callout info">
+  <span class="ico">📌</span>
+  <p><strong>用 3 句话总结</strong>:</p>
+</div>
+
+<ol>
+  <li><strong>看清地图</strong>:产业链 5 大环节 + 利润分布 + 监管图谱,知道钱从哪来、坑在哪。</li>
+  <li><strong>看清趋势</strong>:2026 H2 = 编剧中心制 + 系列化 + AIGC 全流程 + 海外 4 平台主导 + 监管常态化。</li>
+  <li><strong>看清节奏</strong>:2026-09-11 的技术下,30 天足够出 1 部可投 AI 漫剧,不用 6 个月。</li>
+</ol>
+
+<div class="callout purple">
+  <span class="ico">🚀</span>
+  <p><strong>学员下一步</strong>:打开 <a href="v15.0-知识盘点与盲区.html">28 条行业盲区</a>做自检 → <a href="../tutorial/H-publish/短剧创业SOP.html">v16.0 6 阶段 SOP</a> 立即开始 → D1 = 装工具 + 选书。</p>
+</div>
+
+
+<h2 id="d4">§ 10 · 全网顶级短剧行业视频课路径(2026-09 校验)</h2>
+
+<div class='callout purple'>
+  <span class='ico'>💎</span>
+  <p><strong>行业地图 + H2 趋势</strong>看完 = 知道'行业现在怎么样'。<strong>下一步</strong> = 配合 16 课顶级视频课,知道'怎么跟'。<strong>完整产业链 + 趋势数据</strong>都已在 § 1-9。</p>
+</div>
+
+<h3>🐣 10.1 小白(没进过短剧行业) · 4 课</h3>
+<p>目标:<strong>30 分钟搞懂短剧行业现状</strong>。</p>
+<div class='tbl-wrap'>
+<table>
+<thead><tr><th>课程</th><th>UP / 频道</th><th>时长</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td>短剧行业全景</td><td>短剧行业 (B 站)</td><td>1-2 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%E8%A1%8C%E4%B8%9A' target='_blank'>B 站搜'短剧行业'</a></td></tr>
+<tr><td>红果月活 2 亿解读</td><td>红果解读 (B 站)</td><td>1 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%BA%A2%E6%9E%9C%20%E6%9C%88%E6%B4%BB' target='_blank'>B 站搜'红果 月活'</a></td></tr>
+<tr><td>2026 短剧 H2 趋势</td><td>短剧趋势 (B 站)</td><td>1-2 小时</td><td><a href='https://search.bilibili.com/all?keyword=2026%20%E7%9F%AD%E5%89%A7%20%E8%B6%8B%E5%8A%BF' target='_blank'>B 站搜'2026 短剧 趋势'</a></td></tr>
+<tr><td>AI 漫剧行业 2026</td><td>AI 漫剧行业 (B 站)</td><td>1-2 小时</td><td><a href='https://search.bilibili.com/all?keyword=AI%20%E6%BC%AB%E5%89%A7%20%E8%A1%8C%E4%B8%9A' target='_blank'>B 站搜'AI 漫剧 行业'</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>🌱 10.2 入门(想入行) · 4 课</h3>
+<p>目标:<strong>知道短剧行业赚钱逻辑 + 怎么入</strong>。</p>
+<div class='tbl-wrap'>
+<table>
+<thead><tr><th>课程</th><th>UP / 频道</th><th>时长</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td>短剧 1 万 6 个月真相</td><td>短剧真相 (B 站)</td><td>1-2 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%20%E4%B8%9A%E4%B8%9A' target='_blank'>B 站搜'短剧 1 万'</a></td></tr>
+<tr><td>编剧中心制 200 万年薪</td><td>编剧中心 (B 站)</td><td>1-2 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%BC%96%E5%89%A7%20%E4%B8%AD%E5%BF%83%E5%88%B6' target='_blank'>B 站搜'编剧中心制'</a></td></tr>
+<tr><td>短剧分账 5 大头部 IP</td><td>短剧分账 (B 站)</td><td>1 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%20%E5%88%86%E8%B4%A6' target='_blank'>B 站搜'短剧 分账'</a></td></tr>
+<tr><td>短剧行业政策解读</td><td>短剧政策 (B 站)</td><td>1 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%20%E6%94%BF%E7%AD%96' target='_blank'>B 站搜'短剧 政策'</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>🚀 10.3 进阶(已在行业,想跟趋势) · 4 课</h3>
+<p>目标:<strong>把握 H2 2026 趋势,做下一个爆款</strong>。</p>
+<div class='tbl-wrap'>
+<table>
+<thead><tr><th>课程</th><th>UP / 频道</th><th>时长</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td>短剧 H2 趋势预测</td><td>短剧预测 (B 站)</td><td>2-3 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%20H2' target='_blank'>B 站搜'短剧 H2'</a></td></tr>
+<tr><td>AI 漫剧爆款公式</td><td>AI 漫剧 (B 站)</td><td>2-3 小时</td><td><a href='https://search.bilibili.com/all?keyword=AI%20%E6%BC%AB%E5%89%A7%20%E7%88%86%E6%AC%BE' target='_blank'>B 站搜'AI 漫剧 爆款'</a></td></tr>
+<tr><td>短剧头部操盘手访谈</td><td>短剧操盘 (B 站)</td><td>3-5 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%20%E6%93%8D%E7%9B%98' target='_blank'>B 站搜'短剧 操盘'</a></td></tr>
+<tr><td>短剧监管常态化应对</td><td>短剧监管 (B 站)</td><td>1-2 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%20%E7%9B%91%E7%AE%A1' target='_blank'>B 站搜'短剧 监管'</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>👑 10.4 大神(想抓 H2 红利,做矩阵) · 4 课</h3>
+<p>目标:<strong>站在 H2 趋势上,做 H1 2027 提前布局</strong>。</p>
+<div class='tbl-wrap'>
+<table>
+<thead><tr><th>课程</th><th>UP / 频道</th><th>时长</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td>短剧 H2 2026 头部解读</td><td>短剧头部 (B 站)</td><td>3-5 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%20H2%202026' target='_blank'>B 站搜'短剧 H2 2026'</a></td></tr>
+<tr><td>短剧行业研报精读</td><td>研报精读 (B 站)</td><td>3-5 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%20%E7%A0%94%E6%8A%A5' target='_blank'>B 站搜'短剧 研报'</a></td></tr>
+<tr><td>AI 漫剧商业化闭环</td><td>AI 漫剧商业 (B 站)</td><td>3-5 小时</td><td><a href='https://search.bilibili.com/all?keyword=AI%20%E6%BC%AB%E5%89%A7%20%E5%95%86%E4%B8%9A' target='_blank'>B 站搜'AI 漫剧 商业'</a></td></tr>
+<tr><td>短剧 + AI + 海外 三角红利</td><td>短剧 AI 海外 (B 站)</td><td>3-5 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%20AI%20%E6%B5%B7%E5%A4%96' target='_blank'>B 站搜'短剧 AI 海外'</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<div class='callout info'>
+  <span class='ico'>📌</span>
+  <p><strong>学完 § 1-9 行业地图 + 这 16 课</strong> = 学员从'看新闻'到'懂行业'到'抓红利'。</p>
+</div>
+</main>
+</div>
+
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="后期放公众号二维码">
+      <img class="qr-img" src="../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../changelog.html">📅 更新日志</a></li>
+      <li><a href="mailto:yuge@local.demo">✉ 联系玉哥</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流 · 京 ICP 备 XXXXXXXX 号(待补)
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('aside a').forEach(function(a){
+    a.addEventListener('click',function(){
+      document.querySelectorAll('aside a').forEach(function(x){
+        x.style.color='';x.style.background='';x.style.borderLeftColor='transparent';
+      });
+      a.style.color='#5ee0a7';a.style.background='#161a23';a.style.borderLeftColor='#7aa2ff';
+    });
+  });
+});
+</script>
+</body>
+</html>

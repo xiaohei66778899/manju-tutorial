@@ -1,0 +1,114 @@
+# ============================================
+# 玉哥漫剧制作教程站 .gitignore
+# ============================================
+
+# === 运行时日志(自动清理) ===
+*.log
+*.log.*
+*.err.log
+*.out.log
+serve.log
+server-*.log
+guard-*.log
+
+# === Python 临时文件 ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+ENV/
+
+# === 操作系统临时文件 ===
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+*.lnk
+*.tmp
+*.swp
+*.bak
+*.backup
+*.old
+
+# === 编辑器临时 ===
+.vscode/
+.idea/
+*.swp
+*~
+
+# === Node 临时 ===
+node_modules/
+.npm/
+.yarn/
+
+# === 临时调试文件 ===
+tmp-*.html
+tmp-*.md
+debug-*.html
+debug-*.png
+scratch-*
+
+# === 用户本地配置 ===
+.env
+.env.local
+.env.*.local
+*.local
+
+# === 服务器生成(非仓库) ===
+.cache/
+.parcel-cache/
+dist/
+build/
+
+# === 项目内部数据(不进公开仓库) ===
+.workbuddy/
+logs/
+_trash-removed/
+
+# === N 专题 GitHub 仓库合集(1.2 GB 本地参考素材) ===
+# 页面零引用(已验证),且含 16 个嵌套 .git 与 >100MB pack 文件
+# 不 git 化 = 部署上线时自然不存在,与 robots.txt 禁爬策略一致
+site/tutorial/N-aixiexiaoshuo/repos/
+
+# === 视频文件全站排除(不在 GitHub 仓库里,Netlify 部署时也排除) ===
+# 视频不进 git = 节省 530 MB(原始 add 大小),避免 GitHub 仓库膨胀
+# 部署后页面视频仍可访问(视频存本地 / 玉哥自维护数据)
+*.mp4
+*.mov
+*.m4v
+
+# === M 专题海外教程视频(2.6 GB)额外文本描述也已排除 ===
+site/tutorial/M-seedance/tutorials/*.mp4
+site/tutorial/M-seedance/workflows/*.mp4
+site/tutorial/M-seedance/official-demos/*.mp4
+
+# === 学员作品视频(works/videos/) ===
+site/works/videos/
+site/tutorial/A-manju-basic/videos/
+
+# === 玉哥私人作品视频备份 ===
+site/tutorial/M-seedance/official-demos/*.txt
+
+# === 根目录开发残留 ===
+1080p
+_bump.py
+_compress_out.txt
+_full_fix.py
+check*.py
+check*.ps1
+tmp-*
+
+# === 玉哥私人资料(不进仓库) ===
+视频直链清单.txt
+_downloads/
+
+# === 飞书脑图归档(不进仓库) ===
+飞书脑图_*/

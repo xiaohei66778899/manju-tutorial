@@ -1,0 +1,9 @@
+来源URL: https://prompthero.com/veo-3-prompts
+作者: PromptHero社区
+日期: 2026（实时页面，2026-09-20访问）
+所用模型: Veo 3
+
+核心内容摘要:
+PromptHero社区Veo 3视频提示词精选5条：卧室时尚镜头（85mm+track shot）、Dolly Zoom眩晕效果、超现实喜剧"裁缝宇宙"（deadpan comedy风格）、AI瑜伽分析Vlog（实时关节追踪叠加层）、HR培训纪录片（coliving空间+小组协作氛围）。总结了Veo 3社区提示词特点：原生音频感知、喜剧超现实风格受欢迎、技术参数明确、Style标签独立分段。
+
+推荐教学点: 适合"Veo 3专项提示词"章节——展示Veo 3特有的音频+画面联合描述能力，以及"deadpan comedy"喜剧风格的提示词写法。

@@ -1,0 +1,560 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="短剧 AI 创作 · 顶级仓库汇总 · 原版 v18.0。玉哥整理的 AI 漫剧与短剧制作实用教程，包含步骤、案例和练习。">
+<title>短剧 AI 创作 · 顶级仓库汇总 · 原版 v18.0</title>
+<style>
+:root{
+  --bg:#fafaff;--bg2:#fff;--bg3:#ECE7FF;--line:#E4E1F4;--text:#1F1A14;--muted:#6F6657;
+  --blue:#635BFF;--blue-soft:#ECE7FF;--blue-deep:#4F46E5;
+  --purple:#8B5CF6;--warm:#FFB142;--danger:#FF5B6E;--success:#10B981;
+  --acc:#635BFF;--acc2:#FFB142;--acc3:#635BFF;--acc4:#FF5B6E;--acc5:#8B5CF6;
+  --shadow:0 6px 18px rgba(244,124,60,.18);
+}
+[data-theme="dark"]{
+  --bg:#0F0F12;--bg2:#17171A;--bg3:#1F1F23;--line:#2D2D33;--text:#E6E9F2;--muted:#8A93A6;
+  --blue:#7B7AFF;--blue-soft:#1F1F2A;--blue-deep:#9B98FF;
+  --purple:#A78BFA;--warm:#FFB142;--danger:#FF7D91;--success:#34D399;
+  --acc:#7B7AFF;--acc2:#FFB142;--acc3:#7B7AFF;--acc4:#FF7D91;--acc5:#A78BFA;
+  --shadow:0 6px 18px rgba(0,0,0,.5);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Helvetica,Arial,sans-serif;line-height:1.7;font-size:15px;-webkit-font-smoothing:antialiased}
+a{color:var(--acc3);text-decoration:none}
+a:hover{text-decoration:underline}
+.topbar{position:sticky;top:0;background:color-mix(in srgb,var(--bg2) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:14px 24px;z-index:50;display:flex;align-items:center;gap:16px}
+.logo{font-weight:800;font-size:18px;background:linear-gradient(90deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.logo small{color:var(--muted);font-weight:400;margin-left:8px;font-size:12px}
+.layout{max-width:1200px;margin:0 auto;padding:32px 28px 60px}
+h1{font-size:30px;margin:0 0 6px}
+.sub{color:var(--muted);font-size:14px;margin-bottom:24px}
+h2{font-size:22px;margin:48px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--line);color:var(--acc);position:relative}
+h2::before{content:"";position:absolute;left:-20px;top:8px;width:4px;height:22px;background:var(--acc);border-radius:2px}
+h3{font-size:17px;margin:24px 0 8px;color:var(--acc2)}
+p{margin:8px 0;color:var(--text)}
+strong{color:var(--text)}
+.repo{background:var(--bg2);border:1px solid var(--line);border-left:3px solid var(--acc3);border-radius:10px;padding:18px 22px;margin:16px 0}
+.repo.head{border-left-color:var(--acc);background:linear-gradient(135deg,rgba(94,224,167,.05),rgba(94,224,167,.01))}
+.repo .name{font-size:18px;font-weight:800;color:var(--text);margin-bottom:4px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.repo .name a{color:var(--text);text-decoration:none}
+.repo .name a:hover{text-decoration:underline}
+.repo .meta{color:var(--muted);font-size:12.5px;margin-bottom:10px;line-height:1.5}
+.repo .desc{color:var(--text);font-size:14px;margin-bottom:8px}
+.tag{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600;margin-left:2px;background:var(--bg3);color:var(--muted);border:1px solid var(--line)}
+.tag.hot{background:rgba(255,91,110,.10);color:var(--danger);border-color:rgba(255,91,110,.3)}
+.tag.star{background:rgba(255,177,66,.10);color:var(--warm);border-color:rgba(255,177,66,.3)}
+.tag.ok{background:rgba(16,185,129,.10);color:var(--success);border-color:rgba(16,185,129,.3)}
+.tag.lic{background:rgba(139,92,246,.10);color:var(--purple);border-color:rgba(139,92,246,.3)}
+.toc{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:16px 20px;margin:24px 0}
+.toc h4{color:var(--muted);font-size:12px;letter-spacing:1px;margin:0 0 10px;text-transform:uppercase}
+.toc ol{margin:0 0 0 24px;color:var(--text);font-size:14px;line-height:1.9}
+.toc a{color:var(--acc3)}
+.tip{padding:12px 16px;border-radius:8px;margin:14px 0;font-size:13.5px;background:rgba(94,224,167,.06);border-left:3px solid var(--acc);color:var(--text)}
+.warn{padding:12px 16px;border-radius:8px;margin:14px 0;font-size:13.5px;background:rgba(255,177,66,.06);border-left:3px solid var(--acc2);color:var(--text)}
+.info{padding:12px 16px;border-radius:8px;margin:14px 0;font-size:13.5px;background:rgba(122,162,255,.06);border-left:3px solid var(--acc3);color:var(--text)}
+.purple{padding:12px 16px;border-radius:8px;margin:14px 0;font-size:13.5px;background:rgba(192,132,252,.06);border-left:3px solid var(--acc5);color:var(--text)}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;margin:14px 0}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th,td{padding:8px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--bg3);color:var(--muted);font-weight:600;font-size:11.5px;text-transform:uppercase;letter-spacing:.5px}
+tbody tr:hover{background:rgba(255,255,255,.02)}
+.pill{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600;background:rgba(244,124,60,.14);color:var(--blue);margin-right:4px}
+.pill.ok{background:rgba(16,185,129,.10);color:var(--success)}
+.pill.warn{background:rgba(255,177,66,.18);color:var(--warm)}
+.template{background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:10px 0;font-family:"JetBrains Mono",Consolas,monospace;font-size:12.5px;color:var(--text);line-height:1.7;white-space:pre-wrap;overflow-x:auto}
+.template .k{color:var(--acc5);font-weight:600}
+.template .v{color:var(--warm)}
+.template .c{color:var(--muted);font-style:italic}
+.copy-hint{font-size:12px;color:var(--muted);margin:4px 0 8px;display:flex;align-items:center;gap:6px}
+.copy-hint::before{content:"📋";font-size:14px}
+.compare{margin:20px 0}
+.compare th:first-child{width:30%}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:16px 0}
+.step{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:16px;position:relative}
+.step .n{position:absolute;top:-10px;left:-10px;width:32px;height:32px;background:linear-gradient(135deg,var(--acc),var(--acc2));color:var(--text);border-radius:50%;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:14px}
+.step h4{color:var(--text);margin:6px 0;font-size:14.5px}
+.step p{font-size:12.5px;color:var(--text);margin:0}
+@media (max-width:768px){.layout{padding:20px 16px}h1{font-size:24px}h2{font-size:18px}.repo{padding:14px 16px}}
+
+/* === 阅读进度条 + sidebar 高亮 === */
+.read-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,var(--blue),var(--purple));z-index:9999;transition:width 80ms ease-out;pointer-events:none}
+.read-progress.show-end{box-shadow:0 1px 8px rgba(139,92,246,.6)}
+aside a.aside-current{color:var(--blue)!important;background:color-mix(in srgb,var(--blue) 12%,var(--bg2))!important;border-left:3px solid var(--blue)!important;font-weight:600}
+aside a.aside-current::before{content:"▸ ";color:var(--blue);font-size:11px;margin-right:2px}
+</style>
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg?v=fix20260927-2215">
+</head>
+<body>
+
+<div class="read-progress" id="readProgress"></div>
+
+<div class="topbar">
+  <div class="logo">📚 短剧 AI 创作 · 顶级仓库汇总 <small>v18.0 原版 · 2026-09-12 重新校验 · 仅保留顶级 4 仓库</small></div>
+  <div style="margin-left:auto;display:flex;gap:8px">
+    <a href="../../index.html" style="background:var(--bg3);border:1px solid var(--line);color:var(--text);padding:5px 12px;border-radius:5px;font-size:12px;text-decoration:none">🏠 返回首页</a>
+    <button id="themeBtn" style="background:var(--bg3);border:1px solid var(--line);color:var(--text);padding:5px 12px;border-radius:5px;cursor:pointer;font-size:12px">🎨 主题</button>
+    <button onclick="window.print()" style="background:var(--bg3);border:1px solid var(--line);color:var(--text);padding:5px 12px;border-radius:5px;cursor:pointer;font-size:12px">🖨 打印</button>
+  </div>
+</div>
+
+<div class="layout">
+
+<h1>📚 短剧 AI 创作 · 顶级仓库汇总</h1>
+<p class="sub">4 个 GitHub 顶级仓库(共 3.4k+ ⭐)· 剧本类排第一 + 提炼可复制 Prompt · 2026-09-12 校验</p>
+
+<div class="purple">
+  <span style="display:flex;align-items:center;gap:8px"><span style="font-size:18px">🎯</span></span>
+  <p style="margin-top:6px"><strong>本节目的</strong>:<strong>让学员 0 基础直接用</strong>。<strong>不</strong>需要会写 prompt → 直接复制下方提炼好的 Prompt → 粘到 Claude/ChatGPT → 跑出剧本/分镜/视频。<strong>所有 Prompt 都经过仓库实测可运行</strong>。</p>
+</div>
+
+<div class="toc">
+<h4>本页目录(按学员使用顺序)</h4>
+<ol>
+  <li><a href="#hero">怎么用(3 步走)</a></li>
+  <li><a href="#r1">① 0xsline/short-drama · 写剧本(566 ⭐ 玉哥首选)</a></li>
+  <li><a href="#r2">② shuyu-labs/BigBanana-AI-Director · 工业级全链路(2.1k ⭐ 最高星)</a></li>
+  <li><a href="#r3">③ Anil-matcha/Micro-Drama-Generator · 视频流水线(486 ⭐)</a></li>
+  <li><a href="#r4">④ A-cat-with-carrots/OnlyShot · 避坑(271 ⭐ 17 失败模式)</a></li>
+  <li><a href="#compare">4 仓库对比(一眼选对)</a></li>
+  <li><a href="#howto">实战路径(3 步跑通第 1 集)</a></li>
+</ol>
+</div>
+
+<h2 id="hero">怎么用:3 步走</h2>
+
+<div class="steps">
+  <div class="step"><div class="n">1</div><h4>复制 Prompt</h4><p>看下方仓库的"提炼 Prompt"块,<strong>整段复制</strong>到剪贴板</p></div>
+  <div class="step"><div class="n">2</div><h4>粘到 AI 工具</h4><p>打开 Claude / ChatGPT / Codex / Gemini,粘上去</p></div>
+  <div class="step"><div class="n">3</div><h4>填你的输入</h4><p>替换 Prompt 末尾的"我的输入"占位符,发送</p></div>
+</div>
+
+<div class="tip">
+  <span class="ico">💡</span>
+  <p><strong>0 基础提示</strong>:① 不知道用哪个 AI 工具 → <strong>推荐 Claude 3.5 Sonnet 或 GPT-4o</strong>(对结构化输出最稳);② 输出不满意 → 改 prompt 里的"我的输入"部分(题材/集数/角色),其他不要动;③ 跑 1 集成功后 → 批量跑全 30 集(改 episode N 数字)。</p>
+</div>
+
+<!-- ============================ 仓库 1: 0xsline ============================ -->
+
+<h2 id="r1">① 0xsline/short-drama · 写剧本(566 ⭐ 玉哥首选)</h2>
+
+<div class="repo head">
+  <div class="name">
+    <a href="https://github.com/0xsline/short-drama" target="_blank" rel="noopener noreferrer">📕 0xsline/short-drama</a>
+    <span class="tag star">⭐ 566</span>
+    <span class="tag lic">MIT</span>
+    <span class="tag ok">玉哥首选(只写剧本)</span>
+  </div>
+  <div class="meta">2026-04-17 更新 · 9 文件 / 2646 行 · 纯 Markdown 零依赖 · 兼容 Claude Code / Codex / Gemini CLI</div>
+  <div class="desc">从选题立项 → 分集撰写 → 质量自检 → 合规审核 → 海外出海的<strong>全流程编剧 Skill</strong>。13 种题材 / 4 层反派 / 5 种钩子 / 4 段节奏 / 付费卡点 / 爽感矩阵 / 双语 / 5 维评分。<strong>提炼的方法论可独立于 Skill 使用</strong>(本节下面有现成 Prompt)。</div>
+</div>
+
+<h3>1.1 8 类爽感(提炼)</h3>
+<p><strong>核心</strong>:爽点本质 = 压抑 → 释放。<strong>没有前期压抑的"爽"是廉价的</strong>。</p>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>#</th><th>类型</th><th>情绪公式</th><th>典型场景</th></tr></thead>
+<tbody>
+<tr><td><span class="pill">1</span></td><td>身份碾压</td><td>轻视 → 蓄力 → 揭露 → 跪地</td><td>亮军衔 / 出示证件 / 一个电话</td></tr>
+<tr><td><span class="pill">2</span></td><td>打脸复仇</td><td>被陷害 → 隐忍 → 反击</td><td>原话奉还 / 证据反杀 / 局中局</td></tr>
+<tr><td><span class="pill">3</span></td><td>逆袭励志</td><td>低谷 → 努力 → 成功</td><td>从外卖员到总裁 / 草根翻身</td></tr>
+<tr><td><span class="pill">4</span></td><td>甜宠撒糖</td><td>误会 → 心动 → 在一起</td><td>霸总独宠 / 萌宝助攻 / 闪婚</td></tr>
+<tr><td><span class="pill">5</span></td><td>虐心纠葛</td><td>相爱 → 阻挠 → 错过</td><td>误会分手 / 家族反对 / 生死别离</td></tr>
+<tr><td><span class="pill">6</span></td><td>悬疑反转</td><td>线索 → 误导 → 真相</td><td>多重身份 / 假死 / 身份揭露</td></tr>
+<tr><td><span class="pill">7</span></td><td>燃爆战斗</td><td>挑衅 → 觉醒 → 碾压</td><td>战神归来 / 都市修仙 / 异能觉醒</td></tr>
+<tr><td><span class="pill">8</span></td><td>搞笑吐槽</td><td>误会 → 反转 → 笑点</td><td>沙雕主角 / 错位喜剧 / 互怼</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>1.2 6 种爆款开场模板</h3>
+<p><strong>核心</strong>:前 5 秒定生死,前 30 秒必须建立核心冲突 + 展示主角处境 + 抛出钩子。<strong>绝对禁止</strong>:大段旁白 / 慢节奏风景 / 角色日常 / 平铺直叙。</p>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>模板</th><th>结构</th><th>适用题材</th></tr></thead>
+<tbody>
+<tr><td>① 直接打脸</td><td>主角被羞辱 → 施辱者嚣张 → 隐忍暗示身份</td><td>战神 / 逆袭 / 家庭伦理</td></tr>
+<tr><td>② 身份反转</td><td>角色 A 轻视 B → 立刻揭露 B 真实身份 → 反差</td><td>霸总 / 萌宝 / 都市情感</td></tr>
+<tr><td>③ 极端困境</td><td>主角绝境 / 死亡边缘 → 转折(重生/穿越) → 二次机会</td><td>重生 / 穿越 / 末日</td></tr>
+<tr><td>④ 倒叙悬念</td><td>从高潮切入 → 闪回原因 → 揭秘凶手</td><td>悬疑 / 探案 / 复仇</td></tr>
+<tr><td>⑤ 强冲突</td><td>开头直接冲突(打斗/对骂) → 揭示原因</td><td>动作 / 战神 / 都市</td></tr>
+<tr><td>⑥ 反差</td><td>展示角色表面身份 → 揭示真实身份/处境</td><td>萌宝 / 闪婚 / 甜宠</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>1.3 5 种钩子套路</h3>
+<p>每集结尾必须有钩子。<strong>占比推荐</strong>:情绪钩 30-40% / 悬念钩 20-30% / 危机钩 10-20% / 信息钩 10-20% / 反转钩 5-15%。</p>
+<ol>
+  <li><strong>悬念钩</strong>:且听下回分解 / 留伏笔</li>
+  <li><strong>反转钩</strong>:最后一句反转(她居然没死 / 原来一切是局)</li>
+  <li><strong>情绪钩</strong>:眼泪掉下 / 拥吻 / 摔东西</li>
+  <li><strong>信息钩</strong>:揭露身份 / 透露关键证据</li>
+  <li><strong>危机钩</strong>:有人敲门 / 死亡倒计时 / 更强敌人出现</li>
+</ol>
+
+<h3>1.4 4 层反派体系</h3>
+<ol>
+  <li><strong>小反派</strong>(前 1/4):日常对抗 / 炮灰</li>
+  <li><strong>中反派</strong>(前 2/3):阶段威胁 / 主要对手</li>
+  <li><strong>大反派</strong>(中后期):核心对抗 / 终极 Boss</li>
+  <li><strong>隐藏反派</strong>(后 1/3):终极反转 / 揭露</li>
+</ol>
+
+<h3>1.5 4 段节奏曲线</h3>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>段落</th><th>占比</th><th>任务</th></tr></thead>
+<tbody>
+<tr><td>起势段</td><td>15%</td><td>建置人物 + 冲突</td></tr>
+<tr><td>攀升段</td><td>30%</td><td>冲突升级 + 爽点密集</td></tr>
+<tr><td>风暴段</td><td>35%</td><td>高潮 + 付费卡点</td></tr>
+<tr><td>决战段</td><td>20%</td><td>决战 + 结局</td></tr>
+</tbody>
+</table>
+</div>
+<p>付费卡点 💰 占比 10-15%。关键剧情集 🔥 占比 25-35%。</p>
+
+<h3>1.6 ⭐ 写剧本 Prompt(完整版 · 0 基础可直接复制)</h3>
+<div class="copy-hint">点击下方代码块右上角复制,粘到 Claude/ChatGPT/Codex</div>
+<div class="template"><span class="k">📋 Prompt · 复制这条给 AI</span>:
+
+你是微短剧编剧,基于 0xsline/short-drama skill 撰写第 N 集剧本。
+
+<span class="k">输出格式</span>:
+
+# 第{N}集:{集标题}
+
+> 本集关键词:{3 个关键词}
+> 本集爽点:{8 类爽感之一,见下}
+> 前情提要:{上一集结尾悬念,1-2 句}
+
+---
+
+## 场次一
+
+**场景:** 内景/外景 · {地点} · 日/夜
+**出场人物:** {人物列表}
+
+△ (全景){场景描写,交代环境}
+△ (中景){人物动作描写}
+
+**{角色名}**({语气/动作指示}):"{台词}"
+
+△ (特写){关键细节描写}
+
+♪ 音乐提示:{音乐氛围描述}
+
+---
+
+> 🎣 本集钩子:{悬念描述}
+> 📺 下集预告:{下一集核心看点}
+
+<span class="k">8 类爽感(本集选其一)</span>:
+1. 身份碾压 / 2. 打脸复仇 / 3. 逆袭励志 / 4. 甜宠撒糖 / 5. 虐心纠葛 / 6. 悬疑反转 / 7. 燃爆战斗 / 8. 搞笑吐槽
+
+<span class="k">质量要求</span>:
+- 800+ 字 / 3-5 个场次
+- 至少 3 种景别(全景/中景/近景/特写)
+- 前 30 秒必须建立冲突+展示主角处境+抛钩子
+- 结尾必须有钩子
+- 心理活动 → 外化为动作/对白
+- 对白 ≤ 20 字/句
+
+<span class="k">我的输入(请替换)</span>:
+- 题材:{你的题材,如"霸总甜宠"}
+- 集数 N:{数字,如"3"}
+- 本集核心爽点:{从 8 类里选,如"身份碾压"}
+- 上一集结尾:{简要,如"反派设下圈套,女主将出席宴会"}
+- 主角设定:{姓名/处境,如"林晚,被陷害入狱,刚出狱"}
+- 反派:{姓名/与主角矛盾,如"继母赵姐,霸占家产 10 年"}
+- 出场人物:{列表,如"林晚,继母,管家老陈"}</div>
+
+<!-- ============================ 仓库 2: BigBanana ============================ -->
+
+<h2 id="r2">② shuyu-labs/BigBanana-AI-Director · 工业级全链路(2.1k ⭐ 最高星)</h2>
+
+<div class="repo head">
+  <div class="name">
+    <a href="https://github.com/shuyu-labs/BigBanana-AI-Director" target="_blank" rel="noopener noreferrer">🍌 shuyu-labs/BigBanana-AI-Director</a>
+    <span class="tag star">⭐ 2.1k</span>
+    <span class="tag lic">CC BY-NC-SA 4.0</span>
+    <span class="tag hot">最高星</span>
+    <span class="tag ok">工业级全链路</span>
+  </div>
+  <div class="meta">2026-09-07 更新 · 工业级一站式 AI 短剧/漫剧/AI 导演平台 · "Script-to-Asset-to-Keyframe" 工业化工作流</div>
+  <div class="desc"><strong>一句话生成完整短剧</strong>,从剧本到成片全自动化。<strong>关键帧驱动</strong>(先画后动:先生成精准起始帧和结束帧,再插值生成视频)。项目级管理:Project → Season → Episode。<strong>5 大阶段</strong>:叙事规划 → 一致性资产 → 镜头制作 → 成片交付 → 提示词管理。<strong>适合</strong>:有团队 + 想要工业化批量产出的学员。</div>
+</div>
+
+<div class="warn">
+  <span class="ico">⚠️</span>
+  <p><strong>License 注意</strong>:CC BY-NC-SA 4.0(<strong>非商业</strong>)。个人学习/非商业用途 OK;商业短剧需联系 antskpro@qq.com 商业授权。<strong>本课件默认学员本地使用,直接借鉴模块 OK</strong>(学员偏好)。</p>
+</div>
+
+<h3>2.1 5 大阶段工作流</h3>
+<div class="steps">
+  <div class="step"><div class="n">1</div><h4>叙事规划</h4><p>输入故事大纲 / 小说片段,AI 拆解出角色/场景/道具/镜头</p></div>
+  <div class="step"><div class="n">2</div><h4>一致性资产</h4><p>角色定妆 + 衣橱系统 + 场景图 + 道具参考,杜绝变形</p></div>
+  <div class="step"><div class="n">3</div><h4>镜头制作</h4><p>首帧/尾帧 + 九宫格分镜 + 双视频链路(I2V + 关键帧插值)</p></div>
+  <div class="step"><div class="n">4</div><h4>成片交付</h4><p>CutOS 粗剪 + 母版导出 + 备份 + Premiere/Resolve 接力</p></div>
+  <div class="step"><div class="n">n</div><h4>提示词管理</h4><p>跨阶段统一检索 + 版本回滚 + 排查</p></div>
+</div>
+
+<h3>2.2 角色一致性 3 大方案(从 BigBanana 提炼)</h3>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>方案</th><th>原理</th><th>效果</th></tr></thead>
+<tbody>
+<tr><td><strong>① 衣橱系统</strong></td><td>同一角色维护多套造型参考,跨集复用</td><td>同一人多套衣服不串戏</td></tr>
+<tr><td><strong>② 角色定妆照</strong></td><td>为每个角色生成多张标准参考图,所有镜头生成时调用</td><td>跨集脸型/发色/体型一致</td></tr>
+<tr><td><strong>③ 资产约束</strong></td><td>所有画面生成严格受角色 + 场景参考图约束</td><td>AI 不"幻觉"出变形</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>2.3 关键帧驱动 vs 传统 T2V(对比)</h3>
+<div class="tbl-wrap compare">
+<table>
+<thead><tr><th>维度</th><th>传统 Text-to-Video</th><th>BigBanana 关键帧驱动</th></tr></thead>
+<tbody>
+<tr><td>起止帧控制</td><td>❌ 不可控</td><td>✅ 精准(先生成,再插值)</td></tr>
+<tr><td>运镜控制</td><td>❌ 难以指定</td><td>✅ 起止帧决定运镜</td></tr>
+<tr><td>角色一致性</td><td>⚠️ 容易变形</td><td>✅ 资产库强约束</td></tr>
+<tr><td>场景连续性</td><td>⚠️ 容易跳戏</td><td>✅ 同一场景图复用</td></tr>
+<tr><td>生产效率</td><td>⚠️ 抽卡试错</td><td>✅ 工业流水线</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>2.4 部署方式(2 选 1)</h3>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>方式</th><th>说明</th><th>适合</th></tr></thead>
+<tbody>
+<tr><td><strong>官方 Docker 镜像</strong>(推荐)</td><td><code>git clone</code> → <code>docker-compose up -d</code> → 浏览器打开 <a href="https://director.tree456.com/" target="_blank" rel="noopener noreferrer">director.tree456.com</a></td><td>绝大多数学员</td></tr>
+<tr><td><strong>在线版</strong>(免安装)</td><td>直接访问 <a href="https://director.tree456.com/" target="_blank" rel="noopener noreferrer">director.tree456.com</a>,浏览器即用</td><td>快速试水 / 不会装 Docker</td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- ============================ 仓库 3: Anil-matcha ============================ -->
+
+<h2 id="r3">③ Anil-matcha/Open-AI-Micro-Drama-Generator · 视频流水线(486 ⭐)</h2>
+
+<div class="repo">
+  <div class="name">
+    <a href="https://github.com/Anil-matcha/Open-AI-Micro-Drama-Generator" target="_blank" rel="noopener noreferrer">🎬 Anil-matcha/Open-AI-Micro-Drama-Generator</a>
+    <span class="tag star">⭐ 486</span>
+    <span class="tag lic">MIT</span>
+    <span class="tag">多 Agent 流水线</span>
+  </div>
+  <div class="meta">2026-08-02 更新 · Next.js + FastAPI · 集成 Seedance 2 / Kling 3.0 / Veo 3.1 / Sora 2</div>
+  <div class="desc">多 Agent 流水线:创意 → 剧本 → 分镜 → 关键帧 → 视频。集成 4 大视频生成模型。<strong>和 0xsline 区别</strong>:0xsline 只写剧本(快);这个从剧本到视频(全链路,慢)。<strong>适合</strong>:想要"一站式"从一句话到成片的学员。</div>
+</div>
+
+<h3>3.1 4 个 AI Agent 接力</h3>
+<div class="steps">
+  <div class="step"><div class="n">1</div><h4>编剧 Agent</h4><p>screenwriter 写分场剧本(分场+台词+情绪)</p></div>
+  <div class="step"><div class="n">2</div><h4>分镜 Agent</h4><p>storyboard 拆镜(每场戏 3-8 镜,景别+运镜)</p></div>
+  <div class="step"><div class="n">3</div><h4>画师 Agent</h4><p>frames 生成关键帧(每镜 1 张主视觉)</p></div>
+  <div class="step"><div class="n">4</div><h4>视频 Agent</h4><p>video 生成视频(每镜 5-15 秒,根据模型)</p></div>
+</div>
+
+<h3>3.2 集成 4 大视频模型</h3>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>模型</th><th>公司</th><th>特长</th><th>价格</th></tr></thead>
+<tbody>
+<tr><td><strong>Seedance 2</strong></td><td>字节跳动</td><td>短剧角色动作</td><td>国内便宜</td></tr>
+<tr><td><strong>Kling 3.0 Pro</strong></td><td>快手</td><td>图生视频,角色动作</td><td>¥66/月起</td></tr>
+<tr><td><strong>Veo 3.1</strong></td><td>Google</td><td>高级图生视频</td><td>$12/月起</td></tr>
+<tr><td><strong>Sora 2</strong></td><td>OpenAI</td><td>长视频 / 复杂运镜</td><td>贵</td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- ============================ 仓库 4: OnlyShot ============================ -->
+
+<h2 id="r4">④ A-cat-with-carrots/OnlyShot · 避坑(271 ⭐ 17 失败模式)</h2>
+
+<div class="repo">
+  <div class="name">
+    <a href="https://github.com/A-cat-with-carrots/OnlyShot" target="_blank" rel="noopener noreferrer">🐱 A-cat-with-carrots/OnlyShot(神仙鱼)</a>
+    <span class="tag star">⭐ 271</span>
+    <span class="tag lic">MIT</span>
+    <span class="tag warn">17 失败模式</span>
+  </div>
+  <div class="meta">2026-07-07 更新 · Python · Claude Skill · 集成即梦 / Seedance</div>
+  <div class="desc">一句话创意 → 5 步产线(剧本/分镜/分镜图/视频/剪辑) → 可发红果/抖音的完整短剧。<strong>17 失败模式沉淀是关键价值</strong>——知道哪里会踩坑,比知道怎么做更重要。<strong>适合</strong>:想避免踩坑的新手 + 想做完整产线但不会写 prompt。</div>
+</div>
+
+<h3>4.1 ⭐ 17 个失败模式(必看 · 避坑)</h3>
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>#</th><th>失败模式</th><th>避坑建议</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>前 3 集节奏拖</td><td>前 3 集必须 5 秒内冲突,30 秒内钩子</td></tr>
+<tr><td>2</td><td>主角太弱</td><td>主角必须有"金手指"或反差</td></tr>
+<tr><td>3</td><td>反派太弱</td><td>反派分层,4 层递进</td></tr>
+<tr><td>4</td><td>钩子太弱</td><td>每集结尾必须有 5 类钩子之一</td></tr>
+<tr><td>5</td><td>画面太乱</td><td>角色一致性参考 + 场景图复用</td></tr>
+<tr><td>6</td><td>字幕太满</td><td>关键台词加粗,情绪词用 emoji</td></tr>
+<tr><td>7</td><td>配音不齐</td><td>11Labs 多语种质量高,魔音工坊中文准</td></tr>
+<tr><td>8</td><td>时长失控</td><td>单集 1-3 分钟,总 30-60 集</td></tr>
+<tr><td>9</td><td>类型不符</td><td>明确 13 类题材,选 1-2 个主类型</td></tr>
+<tr><td>10</td><td>价值观争议</td><td>过合规审查(0xsline 有 /compliance)</td></tr>
+<tr><td>11</td><td>平台不收</td><td>投红果/九州/七猫,看 v3.0 第 15 章</td></tr>
+<tr><td>12</td><td>数据不可信</td><td>用千川/蝉妈妈,别自嗨</td></tr>
+<tr><td>13</td><td>投流无效</td><td>用 v9.0 千川 SOP,小额测试</td></tr>
+<tr><td>14</td><td>复盘不力</td><td>每部做复盘表,留数据</td></tr>
+<tr><td>15</td><td>续作断档</td><td>首部爆款后立刻规划第 2 部</td></tr>
+<tr><td>16</td><td>IP 失效</td><td>用番茄公开榜 + 7 猫/九州多源</td></tr>
+<tr><td>17</td><td>完结过晚</td><td>30-60 集节奏紧凑,别拖到 100 集</td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- ============================ 4 仓库对比 ============================ -->
+
+<h2 id="compare">📊 4 仓库对比(一眼选对)</h2>
+<div class="tbl-wrap compare">
+<table>
+<thead><tr><th>仓库</th><th>⭐</th><th>License</th><th>核心定位</th><th>适合</th></tr></thead>
+<tbody>
+<tr>
+  <td><strong>① 0xsline/short-drama</strong></td>
+  <td>566</td>
+  <td>MIT ✅</td>
+  <td>写剧本全链路(13 题材 / 4 反派 / 5 钩子)</td>
+  <td>✅ <strong>玉哥首选</strong>(只写剧本)</td>
+</tr>
+<tr>
+  <td><strong>② BigBanana-AI-Director</strong></td>
+  <td>2.1k</td>
+  <td>CC BY-NC-SA 4.0 ⚠️</td>
+  <td>工业级一站式(剧本+资产+视频+交付)</td>
+  <td>有团队 + 想要工业化批量产出</td>
+</tr>
+<tr>
+  <td><strong>③ Anil-matcha/Micro-Drama</strong></td>
+  <td>486</td>
+  <td>MIT ✅</td>
+  <td>多 Agent 视频流水线(Seedance/Kling/Veo/Sora)</td>
+  <td>想"一站式"从一句话到成片</td>
+</tr>
+<tr>
+  <td><strong>④ OnlyShot(神仙鱼)</strong></td>
+  <td>271</td>
+  <td>MIT ✅</td>
+  <td>5 步产线 + 17 失败模式</td>
+  <td>想避免踩坑的新手</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!-- ============================ 实战路径 ============================ -->
+
+<h2 id="howto">🎯 实战路径:3 步跑通第 1 集</h2>
+
+<div class="purple">
+  <span class="ico">💎</span>
+  <p><strong>无论你的预算 / 团队 / 周期怎么定</strong>,下面 3 步是通用路径,30 天出 1 部可投 AI 短剧/漫剧。</p>
+</div>
+
+<div class="steps">
+  <div class="step"><div class="n">1</div><h4>第 1-3 天:选书 + 选工具</h4><p>用 <a href="../../legacy/v10.0-番茄IP选书TOP50.html">v10.0</a> 选 1 本番茄 IP,根据预算选 0xsline / BigBanana / Anil-matcha / OnlyShot 之一</p></div>
+  <div class="step"><div class="n">2</div><h4>第 4-14 天:写 30 集剧本</h4><p>复制本页 §1.6 Prompt → 粘到 Claude/ChatGPT → 批量跑 30 集(改 episode N 数字)</p></div>
+  <div class="step"><div class="n">3</div><h4>第 15-30 天:出 AI 漫剧 + 投稿</h4><p>用 BigBanana 或 Anil-matcha 出视频 → 投红果/九州/七猫(见 v3.0 第 15 章 12 家平台)</p></div>
+</div>
+
+<div class="tip">
+  <span class="ico">💡</span>
+  <p><strong>建议路径</strong>(最常用):<br>
+  ① <strong>剧本</strong>用 0xsline(Prompt 复制即用)→ ② <strong>视频</strong>用 BigBanana(关键帧驱动)→ ③ <strong>避坑</strong>看 OnlyShot 17 失败模式 → ④ <strong>投稿</strong>用 v3.0 第 15 章 12 家平台清单。</p>
+</div>
+
+</div>
+
+<div style="margin-top:60px;padding:24px 20px;color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);text-align:center">
+<p>📚 短剧 AI 创作 · 顶级仓库汇总 · 课件中心 · 2026-09-12 重新校验</p>
+<p>4 个 GitHub 顶级仓库(共 3.4k+ ⭐)· 剧本类排第一 · 提炼 Prompt 0 基础可用</p>
+<p style="margin-top:12px;color:var(--muted)">✍️ 整理人:玉哥 · 📧 内部学员版 · 转发请保留作者署名</p>
+</div>
+
+<script>
+(function(){
+  var btn = document.getElementById('themeBtn');
+  var setTheme = function(t){
+    document.documentElement.setAttribute('data-theme', t);
+    try{ localStorage.setItem('airepo:theme', t); }catch(e){}
+    if(btn) btn.textContent = t === 'dark' ? '☀️' : '🎨';
+  };
+  var saved = null;
+  try{ saved = localStorage.getItem('airepo:theme'); }catch(e){}
+  setTheme(saved || 'light');
+  if(btn) btn.addEventListener('click', function(){
+    var cur = document.documentElement.getAttribute('data-theme') || 'light';
+    setTheme(cur === 'light' ? 'dark' : 'light');
+  });
+})();
+(function(){
+  var bar = document.getElementById('readProgress');
+  function update(){
+    if(!bar) return;
+    var doc = document.documentElement, body = document.body;
+    var scrollTop = window.pageYOffset || doc.scrollTop || body.scrollTop || 0;
+    var scrollHeight = Math.max(body.scrollHeight, doc.scrollHeight, body.offsetHeight, doc.offsetHeight, body.clientHeight, doc.clientHeight);
+    var trackable = Math.max(1, scrollHeight - window.innerHeight);
+    var pct = Math.min(100, Math.max(0, scrollTop / trackable * 100));
+    bar.style.width = pct.toFixed(2) + '%';
+    bar.classList.toggle('show-end', pct > 95);
+  }
+  window.addEventListener('scroll', update, {passive:true});
+  window.addEventListener('resize', update);
+  update();
+})();
+(function(){
+  var aside = document.querySelector('aside');
+  if(!aside) return;
+  var linkMap = [];
+  aside.querySelectorAll('a[href^="#"]').forEach(function(a){
+    var id = a.getAttribute('href').slice(1);
+    if(!id) return;
+    var target = document.getElementById(id);
+    if(target) linkMap.push({link: a, target: target});
+  });
+  if(!linkMap.length) return;
+  var current = null;
+  function setActive(link){
+    if(current === link) return;
+    if(current) current.classList.remove('aside-current');
+    if(link){ link.classList.add('aside-current'); current = link; }
+  }
+  function sync(){
+    var offset = 80;
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    var active = null;
+    for(var i = 0; i < linkMap.length; i++){
+      var t = linkMap[i].target;
+      var top = t.getBoundingClientRect().top + scrollTop;
+      if(top - scrollTop <= offset) active = linkMap[i];
+    }
+    if(window.innerHeight + scrollTop >= (document.documentElement.scrollHeight - 4)) active = linkMap[linkMap.length-1];
+    if(active){
+      setActive(active.link);
+      var aRect = active.link.getBoundingClientRect();
+      var asideRect = aside.getBoundingClientRect();
+      if(aRect.top < asideRect.top || aRect.bottom > asideRect.bottom){
+        aside.scrollTo({top: Math.max(0, active.link.offsetTop - 60), behavior: 'smooth'});
+      }
+    }
+  }
+  window.addEventListener('scroll', sync, {passive:true});
+  sync();
+})();
+</script>
+<script src="../../assets/site-enhance.js?v=fix20260927-2215" defer></script>
+</body>
+</html>

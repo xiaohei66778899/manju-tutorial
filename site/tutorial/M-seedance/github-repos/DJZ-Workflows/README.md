@@ -1,0 +1,95 @@
+# DJZ-Workflows
+A comprehensive collection of ComfyUI workflows from @driftjohnson @fivebelowfiveuk
+https://www.youtube.com/watch?v=Ld8FDuBNOWM
+
+## Overview
+This repository contains a vast collection of specialized workflow packs for ComfyUI, covering a wide range of AI image and video generation capabilities:
+
+### Core Workflow Packs
+- **CODA-Cosmos-Pack**: Advanced text-to-video generation workflows
+- **CogVideo**: Suite of CogVideo implementation workflows
+- **cosXL Pack**: SDXL-focused workflows for high-quality image generation
+- **DJZ-3D**: 3D generation workflows (SV3Du, TripoSR, Zero123)
+- **Foda_Flux**: Comprehensive collection including:
+  - ControlNet implementations
+  - Inpainting workflows
+  - IP Adapter integrations
+  - Upscaling and enhancement tools
+  - Scene creation and editing
+  - Training tools
+
+### Video Processing
+- **Donut-Mochi-Video**: Video generation and processing
+- **Hoda-Hunyuan-Video**: Text-to-video and video-to-video workflows
+- **LoopedMotion2**: Animation loop creation tools
+- **Loki-FaceSwap**: Face swapping and manipulation workflows
+
+### Audio Integration
+- **Lyra AudioTools**: Audio processing and integration
+- **MODA-MMaudio-Pack**: Multimodal audio-visual workflows
+- **Roda-AudioReactive-Pack**: Audio-reactive visual generation
+
+### Utility Tools
+- **DJZ-Nodes-Examples**: Extensive collection of utility workflows including:
+  - Video effects (VHS, Kinescope, Technicolor)
+  - Batch processing tools
+  - Prompt manipulation
+  - Image size adjustment
+  - String manipulation tools
+- **MergeTools**: Model merging and comparison workflows
+- **JustUpscalingThings-Pack**: Specialized upscaling workflows
+
+## Installation
+From inside ComfyUI\user\default\workflows:
+```bash
+git clone https://github.com/MushroomFleet/DJZ-Workflows
+```
+
+## Updating
+From inside ComfyUI\user\default\workflows\DJZ-Workflows:
+```bash
+git pull
+```
+
+## Documentation & Tutorials
+Every workflow pack has associated tutorial videos which can be found at:
+https://www.youtube.com/@FiveBelowFiveUK
+
+Most workflows include direct links to either the channel or specific tutorial videos in their notes.
+
+
+## 📚 Citation
+
+### Academic Citation
+
+If you use this codebase in your research or project, please cite:
+
+```bibtex
+@software{djz_workflows,
+  title = {DJZ Workflows: Johnsons collection of maybe 1000+ ComfyUI Workflows, Enjoy},
+  author = {[Drift Johnson]},
+  year = {2025},
+  url = {https://github.com/MushroomFleet/DJZ-Workflows},
+  version = {1.0.0}
+}
+```
+
+### Donate:
+
+[![Ko-Fi](https://cdn.ko-fi.com/cdn/kofi3.png?v=3)](https://ko-fi.com/driftjohnson)
+
+## See Also
+
+- [DJZ-Workflows](https://github.com/MushroomFleet/DJZ-Workflows) — 1000+ ComfyUI workflows
+- [DJZ-Nodes](https://github.com/MushroomFleet/DJZ-Nodes) — Custom ComfyUI nodes
+- [ComfyUI-FLUX2-JSON](https://github.com/MushroomFleet/ComfyUI-FLUX2-JSON) — Flux 2 JSON nodes
+- [djz-Aesthetic-Embeddings](https://github.com/MushroomFleet/djz-Aesthetic-Embeddings) — Aesthetic embeddings
+- [svg-suite](https://github.com/MushroomFleet/svg-suite) — SVG generation toolkit
+
+---
+
+## Support This Project
+
+If you found this useful, please **star the repo** — it helps others discover it!
+
+[![Star on GitHub](https://img.shields.io/github/stars/MushroomFleet/DJZ-Workflows?style=social)](https://github.com/MushroomFleet/DJZ-Workflows)

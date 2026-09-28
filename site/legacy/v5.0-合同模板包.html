@@ -1,0 +1,690 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>短剧合同模板包 · 课件中心</title>
+<style>
+:root{
+  --bg:#0b0d12;--bg2:#11141b;--bg3:#161a23;--line:#222837;--text:#e6e9f2;--muted:#8a93a6;
+  --acc:#5ee0a7;--acc2:#ffb142;--acc3:#7aa2ff;--acc4:#c084fc;--acc5:#ff5b6e;--warn:#f87171;
+  --shadow:0 6px 30px rgba(0,0,0,.45);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Helvetica,Arial,sans-serif;line-height:1.7;font-size:15px;-webkit-font-smoothing:antialiased}
+a{color:var(--acc3);text-decoration:none}
+a:hover{text-decoration:underline}
+code,kbd{background:#1c2030;border:1px solid var(--line);padding:2px 6px;border-radius:4px;font-family:"JetBrains Mono",Consolas,monospace;font-size:13px;color:#ffd6a5}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(11,13,18,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:12px 24px;display:flex;align-items:center;gap:16px}
+.logo{font-weight:800;font-size:18px;background:linear-gradient(90deg,var(--acc),var(--acc4));-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:.5px}
+.logo small{color:var(--muted);font-weight:400;margin-left:8px;font-size:12px}
+.toc-btn{margin-left:auto;background:var(--bg3);border:1px solid var(--line);color:var(--text);padding:6px 12px;border-radius:6px;cursor:pointer;font-size:13px}
+.toc-btn:hover{border-color:var(--acc)}
+.layout{display:grid;grid-template-columns:240px 1fr;max-width:1400px;margin:0 auto}
+aside{position:sticky;top:60px;height:calc(100vh - 60px);overflow-y:auto;padding:24px 16px;border-right:1px solid var(--line);background:var(--bg2)}
+aside h3{color:var(--muted);font-size:12px;letter-spacing:1px;margin:16px 0 8px;text-transform:uppercase}
+aside ul{list-style:none}
+aside li{margin:2px 0}
+aside a{color:#c5cae0;font-size:13px;display:block;padding:5px 10px;border-radius:5px;border-left:2px solid transparent}
+aside a:hover{background:var(--bg3);color:var(--text);text-decoration:none;border-left-color:var(--acc)}
+main{padding:32px 40px 80px;min-width:0}
+h1{font-size:32px;margin-bottom:8px;letter-spacing:.5px}
+h2{font-size:24px;margin:48px 0 16px;padding-bottom:8px;border-bottom:1px solid var(--line);position:relative}
+h2::before{content:"";position:absolute;left:-20px;top:8px;width:4px;height:22px;background:var(--acc);border-radius:2px}
+h3{font-size:18px;margin:28px 0 10px;color:var(--acc)}
+h4{font-size:15.5px;margin:18px 0 8px;color:#d6dbe8}
+p{margin:10px 0;color:#cfd4e0}
+ul,ol{margin:8px 0 12px 24px;color:#cfd4e0}
+li{margin:4px 0}
+strong{color:#fff}
+em{color:var(--acc);font-style:normal}
+blockquote{border-left:3px solid var(--acc);background:var(--bg3);padding:12px 16px;margin:12px 0;border-radius:0 6px 6px 0;color:#dde0ec}
+blockquote p{margin:4px 0}
+.hero{background:linear-gradient(135deg,#0a1a14 0%,#0b0d12 60%,#0d111c 100%);border:1px solid var(--acc);border-radius:14px;padding:36px 32px;margin-bottom:32px;box-shadow:0 0 40px rgba(94,224,167,.2);position:relative;overflow:hidden}
+.hero h1{background:linear-gradient(90deg,var(--acc),var(--acc4));-webkit-background-clip:text;background-clip:text;color:transparent;display:inline-block}
+.hero .sub{color:var(--muted);margin-top:6px;font-size:14px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.tag{background:rgba(255,255,255,.06);border:1px solid var(--line);padding:4px 10px;border-radius:99px;font-size:12px;color:#cdd3e1}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;margin:14px 0}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--bg3);color:var(--muted);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.5px}
+tbody tr:hover{background:rgba(255,255,255,.02)}
+.badge{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600;letter-spacing:.3px}
+.badge.warn{background:rgba(248,113,113,.18);color:#ff8a99}
+.badge.tip{background:rgba(94,224,167,.18);color:#7defc0}
+.badge.info{background:rgba(122,162,255,.18);color:#a8c0ff}
+.badge.purple{background:rgba(192,132,252,.18);color:#d2afff}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:16px 0}
+.step{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:16px;position:relative}
+.step .n{position:absolute;top:-10px;left:-10px;width:32px;height:32px;background:linear-gradient(135deg,var(--acc),var(--acc4));color:#0b0d12;border-radius:50%;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:14px;box-shadow:0 4px 12px rgba(94,224,167,.4)}
+.step h4{color:#fff;margin:6px 0}
+.step p{font-size:13px;color:#b8bfd0}
+.callout{display:flex;gap:12px;padding:14px 16px;border-radius:8px;margin:14px 0;border:1px solid var(--line);background:var(--bg2)}
+.callout .ico{font-size:20px;flex-shrink:0;line-height:1}
+.callout.tip{border-color:rgba(94,224,167,.4);background:rgba(94,224,167,.06)}
+.callout.warn{border-color:rgba(248,113,113,.4);background:rgba(248,113,113,.06)}
+.callout.info{border-color:rgba(122,162,255,.4);background:rgba(122,162,255,.06)}
+.callout.purple{border-color:rgba(192,132,252,.4);background:rgba(192,132,252,.06)}
+.callout p{font-size:13.5px;color:#dde0ec;margin:0}
+.callout strong{color:#fff}
+.template{background:#0d1018;border:1px solid var(--line);border-radius:8px;padding:18px;margin:10px 0;font-family:"JetBrains Mono",Consolas,monospace;font-size:13px;color:#cfd4e0;line-height:1.7;white-space:pre-wrap}
+.template .k{color:var(--acc4);font-weight:600}
+.template .v{color:#ffd6a5}
+.template .c{color:var(--muted);font-style:italic}
+.template .danger{color:#ff5b6e;font-weight:700}
+.template .ok{color:#5ee0a7;font-weight:700}
+.kpi{background:linear-gradient(135deg,rgba(94,224,167,.08),rgba(122,162,255,.05));border:1px solid var(--acc);border-radius:12px;padding:20px;margin:16px 0}
+.kpi h4{color:var(--acc);margin-bottom:10px;font-size:15px}
+footer{margin-top:60px;padding:24px 40px;color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);text-align:center}
+@media (max-width:900px){.layout{grid-template-columns:1fr}aside{position:relative;top:0;height:auto;border-right:0;border-bottom:1px solid var(--line)}main{padding:24px 20px 60px}h1{font-size:26px}h2{font-size:20px}}
+@media print{aside,.topbar{display:none}.layout{grid-template-columns:1fr}body{background:#fff;color:#000}h2::before{display:none}}
+</style>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg?v=fix20260927-2215">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="logo">📑 短剧合同模板包 v5.0 <small>5 大类合同 · 关键条款清单 · 2026-09-09 深夜</small></div>
+  <button class="toc-btn" onclick="window.print()">🖨 打印 / PDF</button>
+</div>
+
+<div class="layout">
+
+<aside>
+<h3>总览</h3>
+<ul>
+  <li><a href="#hero">概览</a></li>
+  <li><a href="#warn">通用警告</a></li>
+</ul>
+
+<h3>5 大合同</h3>
+<ul>
+  <li><a href="#c1">① 剧本版权合同</a></li>
+  <li><a href="#c3">③ 导演/编剧委托</a></li>
+  <li><a href="#c4">④ 投流方合同</a></li>
+  <li><a href="#c5">⑤ 海外发行合同</a></li>
+</ul>
+
+<h3>辅助文件</h3>
+<ul>
+  <li><a href="#aux">⑥ 音乐授权</a></li>
+  <li><a href="#aux2">⑦ 模卡授权</a></li>
+  <li><a href="#aux3">⑧ 保密协议</a></li>
+</ul>
+
+<h3>风险</h3>
+<ul>
+  <li><a href="#trap">5 大常见陷阱条款</a></li>
+  <li><a href="#check">谈判自检</a></li>
+  <li><a href="#law">法律资源</a></li>
+</ul>
+</aside>
+
+<main>
+
+<section id="hero" class="hero">
+  <h1>短剧合同模板包</h1>
+  <p class="sub">5 大类核心合同 + 3 类辅助合同 · 关键条款清单 · 2026-09-09 深夜完成</p>
+  <p style="margin-top:14px;max-width:780px">本包<strong>不是完整合同(那是律师活)</strong>,而是<strong>"必备条款清单+谈判要点+陷阱条款"</strong>。拿这份清单给律师,律师能直接出正式合同。<strong>节省你 50% 律师费</strong>。</p>
+  <div class="meta">
+    <span class="tag">📜 5 大核心合同</span>
+    <span class="tag">📋 3 大辅助合同</span>
+    <span class="tag">⚠️ 5 大陷阱条款</span>
+    <span class="tag">✅ 谈判自检清单</span>
+    <span class="tag">💰 节省 50% 律师费</span>
+    <span class="tag">🔗 法律资源链接</span>
+  </div>
+</section>
+
+<div id="warn" class="callout warn">
+  <span class="ico">⚠️</span>
+  <p><strong>重要免责声明</strong>:本模板包<strong>不是法律意见</strong>,只作内部参考。<strong>最终合同必须经执业律师审核</strong>(尤其涉及金额 &gt; 5 万、跨地区、海外发行)。</p>
+</div>
+
+<h2>一、通用合同框架(5 大类共性)</h2>
+
+<div class="kpi">
+  <h4>📐 5 大类合同的 12 个通用条款</h4>
+<ol>
+  <li><strong>合同主体</strong>:甲乙双方完整信息(公司名/法人/统一社会信用代码/地址)</li>
+  <li><strong>合同标的</strong>:明确"做什么"(剧本/演出/拍摄/发行)</li>
+  <li><strong>期限</strong>:起止时间(尤其海外 IP,建议 5 年起步)</li>
+  <li><strong>地域</strong>:全球/中国/独家/非独家</li>
+  <li><strong>权利范围</strong>:改编/演绎/发行/传播/衍生品/广告植入</li>
+  <li><strong>报酬</strong>:基础报酬 + 分成 + 结算周期 + 税</li>
+  <li><strong>署名</strong>:编剧/导演/演员/原著 怎么署名</li>
+  <li><strong>知识产权</strong>:归属(创作方/委托方/共有)</li>
+  <li><strong>保密义务</strong>:剧本/演员/片酬/数据</li>
+  <li><strong>违约责任</strong>:逾期/质量/泄密/侵权的赔偿</li>
+  <li><strong>争议解决</strong>:仲裁机构(北京仲裁委/中国国际经济贸易仲裁委)</li>
+  <li><strong>其他</strong>:不可抗力/合同变更/通知送达</li>
+</ol>
+</div>
+
+<div class="callout tip">
+  <span class="ico">💡</span>
+  <p><strong>谈判核心原则</strong>:① <strong>报酬 = 基础 + 分成 + 期权</strong>(光给基础=亏)② <strong>地域 = 全球独家 + 期限 = 5 年</strong>(避免"授权范围模糊"被转卖)③ <strong>署名 = 必须白纸黑字</strong>(避免后期被改)④ <strong>争议 = 仲裁优先</strong>(比诉讼快 3 倍)。</p>
+</div>
+
+<!-- ========== 合同 1:剧本版权 ========== -->
+
+<h2 id="c1">① 剧本版权合同 · 关键条款清单</h2>
+
+<div class="callout info">
+  <span class="ico">📝</span>
+  <p>本类合同分两种:<strong>A. 原创剧本《著作权归属合同》</strong>; <strong>B. 改编剧本《IP 授权合同》</strong>(基于番茄小说改编)。</p>
+</div>
+
+<h3>1.A 原创剧本《著作权归属合同》</h3>
+
+<div class="template">
+<span class="c"># 原创剧本《著作权归属合同》关键条款</span>
+
+<span class="k">【1. 合同主体】</span>
+甲方(委托方/制作方):<span class="v">[公司全称]</span>
+乙方(编剧):<span class="v">[真实姓名 + 身份证号]</span>
+
+<span class="k">【2. 标的剧本】</span>
+剧本名:<span class="v">[《XXX》]</span>
+集数:<span class="v">[80 集]</span> 单集时长:<span class="v">[1-3 分钟]</span>
+创作时间:<span class="v">[2026-09-09 至 2026-10-09]</span>
+
+<span class="k">【3. 著作权归属】</span>
+<span class="danger">★ 关键条款</span>
+<span class="ok">优先方案 A</span>:著作权归甲方,乙方保留<strong>署名权</strong>(编剧)+<strong>作品完整权</strong>(不修改原作)
+<span class="ok">次选方案 B</span>:著作权共有,任何一方商用需对方书面同意,收益按 X:Y 分配
+
+<span class="k">【4. 报酬】</span>
+基础报酬:<span class="v">[¥5-20 万]</span>(分 3 期:签约 30% / 交稿 40% / 上线 30%)
+分成:<span class="v">[上线后净收益的 10-20%]</span>
+结算周期:<span class="danger">★ 月结 / 60 天结算(避免 90 天+)</span>
+
+<span class="k">【5. 署名】</span>
+编剧署名位置:<span class="danger">★ 片头 / 海报 / 平台页</span>
+署名形式:<span class="v">[编剧:XXX]</span>(不可省略)
+
+<span class="k">【6. 改编权】</span>
+甲方有<strong>本剧</strong>的拍摄/发行/海外发行/衍生品权利。
+<span class="danger">★ 关键</span>:乙方保留"二次创作"权利(可基于本剧本写续作,但需甲方书面同意出版)
+
+<span class="k">【7. 保密】</span>
+剧本未公开前,乙方不得向第三方披露。
+违约:<span class="v">[违约金 ¥10 万]</span>
+
+<span class="k">【8. 违约责任】</span>
+甲方逾期付款:<span class="v">[每日 0.5% 滞纳金]</span>
+乙方逾期交稿:<span class="v">[每日 0.3% 赔偿,超 15 天甲方可解约]</span>
+乙方抄袭:<span class="danger">[全部报酬退还 + 违约金 ¥50 万 + 法律责任]</span>
+
+<span class="k">【9. 争议解决】</span>
+北京仲裁委员会仲裁
+
+<span class="k">【10. 合同生效】</span>
+双方签字盖章后生效,一式两份
+</div>
+
+<h3>1.B 改编剧本《IP 授权合同》</h3>
+
+<div class="template">
+<span class="c"># 改编《IP 授权合同》关键条款(番茄小说 → 短剧)</span>
+
+<span class="k">【1. 合同主体】</span>
+授权方(番茄 IP):<span class="v">[字节跳动 / 番茄小说运营公司]</span>
+被授权方(制作方):<span class="v">[你的公司]</span>
+原著作权人(小说作者):<span class="v">[作者名]</span>
+
+<span class="k">【2. IP 信息】</span>
+小说名:<span class="v">[《XX》]</span>
+作者:<span class="v">[XXX]</span>
+授权内容:<span class="v">[基于本小说改编为短剧剧本的权利]</span>
+
+<span class="k">【3. 授权范围】</span>
+<span class="danger">★ 关键条款 · 必须明确</span>
+- <span class="v">改编权</span>:可对小说进行增删/调整/重塑
+- <span class="v">摄制权</span>:可拍摄为短剧(集数/时长/平台:红果等)
+- <span class="v">发行权</span>:可在中国大陆 / 全球 发行
+- <span class="v">信息网络传播权</span>:可通过网络平台发布
+- <span class="v">衍生品权</span>:可开发周边/手游/漫画
+- <span class="v">海外发行权</span>:可翻译为外文/授权海外平台
+
+<span class="k">【4. 授权性质】</span>
+<span class="danger">★ 关键</span>:
+- <span class="ok">优选独家</span>:独家授权(同 IP 不能给其他方)
+- <span class="danger">避免非独家</span>:同 IP 多方改编 = 价值被稀释
+
+<span class="k">【5. 授权期限】</span>
+<span class="danger">★ 关键</span>:
+- <span class="ok">建议 5 年</span>(便于系列化+海外发行)
+- <span class="danger">避免 1 年以下</span>(回本周期不够)
+
+<span class="k">【6. 授权费用】</span>
+保底授权费:<span class="v">[¥5-20 万]</span>(一次性)
+分成:<span class="v">[净收益 5-15%]</span>
+结算周期:<span class="danger">★ 60 天结算</span>
+
+<span class="k">【7. 原著署名】</span>
+<span class="danger">★ 关键</span>:原著作者必须在片头/平台页/海报<strong>显著位置</strong>署名
+形式:<span class="v">["原著:XXX"]</span>
+
+<span class="k">【8. 改编署名】</span>
+改编编剧必须在片头署名
+形式:<span class="v">["改编:XXX"]</span>
+
+<span class="k">【9. 内容审核】</span>
+甲方(番茄)对改编剧本有<strong>审核权</strong>
+但<span class="ok">不得无理拒绝</span>(需在 5 个工作日内反馈,逾期视为通过)
+
+<span class="k">【10. 续作权】</span>
+<span class="danger">★ 关键</span>:
+- <span class="ok">优先续作</span>:本剧爆款后,制作方有<strong>续作优先权</strong>(同 IP 续作)
+- 续作费按<strong>市场价 70%</strong>(独家续作的优惠)
+
+<span class="k">【11. 违约责任】</span>
+任何一方违反条款,违约金 ¥50 万起
+争议:北京仲裁委员会
+</div>
+
+<div class="callout tip">
+  <span class="ico">✅</span>
+  <p><strong>谈判要点</strong>:① <strong>原著署名必须保留</strong>(行业惯例) ② <strong>续作权必须锁定</strong>(系列化是 2025 后主流) ③ <strong>审核权不得无理拒绝</strong>(避免无限期拖延) ④ <strong>分成比例 5-15%</strong>(太高的可能是非独家)。</p>
+</div>
+
+<!-- ========== 合同 2:演员 ========== -->
+
+<h2 id="c3">③ 导演/编剧《委托创作合同》关键条款</h2>
+
+<div class="template">
+<span class="c"># 导演/编剧《委托创作合同》关键条款</span>
+
+<span class="k">【1. 合同主体】</span>
+甲方(制作方) 乙方(导演/编剧)
+
+<span class="k">【2. 委托内容】</span>
+- 编剧:为《XX》撰写 80 集短剧剧本
+- 导演:为《XX》提供导演服务
+
+<span class="k">【3. 工作内容】</span>
+编剧:
+- <span class="v">大纲</span>:5-10 页(角色 / 主线 / 副线 / 卡点)
+- <span class="v">人物小传</span>:5-8 个主要人物(300-500 字/个)
+- <span class="v">分集大纲</span>:每集 200-300 字
+- <span class="v">完整剧本</span>:80 集,单集 800-1500 字
+- <span class="v">修改</span>:根据甲方反馈修改 3 轮内免费
+
+导演:
+- <span class="v">分镜表</span>:每集 30-60 个镜头
+- <span class="v">现场执导</span>:拍摄期间驻场
+- <span class="v">后期指导</span>:剪辑/调色/特效指导
+
+<span class="k">【4. 工作时间】</span>
+- 编剧:<span class="v">[30-60 天]</span>
+- 导演:<span class="v">[拍摄前 7 天 + 拍摄期 + 后期 7 天]</span>
+
+<span class="k">【5. 报酬】</span>
+编剧:<span class="v">[¥5-20 万] + [净收益 5-15% 分成]</span>
+导演:<span class="v">[¥1-5 万/部,小剧组 0.5-2 万] + [爆款奖 ¥5-20 万]</span>
+头部编剧/导演:<span class="v">[年薪 100-200 万]</span>(腾讯新闻 2025 数据)
+
+<span class="k">【6. 知识产权】</span>
+<span class="ok">优选</span>:作品完整版权归甲方,乙方保留<strong>署名权</strong>+<strong>作品完整权</strong>
+<span class="danger">避免</span>:乙方"转让全部权利"——连署名权都丢
+
+<span class="k">【7. 署名】</span>
+编剧:<span class="v">["编剧:XXX"]</span>
+导演:<span class="v">["导演:XXX"]</span>
+位置:片头显著位置 / 海报 / 平台页
+
+<span class="k">【8. 保密】</span>
+剧本未公开前,不得对外披露
+违约金 ¥10-50 万
+
+<span class="k">【9. 违约责任】</span>
+逾期交稿:<span class="v">[每日 0.3% 赔偿,超 15 天甲方可解约]</span>
+质量不达标:<span class="v">[3 次修改机会,3 次后不达标可解约但支付 50% 报酬]</span>
+</div>
+
+<!-- ========== 合同 4:投流 ========== -->
+
+<h2 id="c4">④ 投流方《分账合作协议》关键条款</h2>
+
+<div class="template">
+<span class="c"># 投流方《分账合作协议》关键条款</span>
+
+<span class="k">【1. 合同主体】</span>
+甲方(制作方/版权方)
+乙方(投流方/发行方)
+
+<span class="k">【2. 合作内容】</span>
+乙方负责:
+- <span class="v">投流</span>:在巨量千川/磁力金牛/视频号广告等平台投放
+- <span class="v">素材制作</span>:剪辑投流专属素材
+- <span class="v">账户运营</span>:开广告户/充值/优化
+
+甲方提供:
+- <span class="v">短剧成片</span>:
+- <span class="v">授权书</span>:
+- <span class="v">物料</span>:海报/剧照/宣发素材
+
+<span class="k">【3. 投流预算】</span>
+总预算:<span class="v">[¥10-100 万]</span>(根据剧质量)
+分阶段:
+- 冷启动期:<span class="v">[¥1-3 万]</span>(测素材)
+- 放量期:<span class="v">[¥5-20 万]</span>
+- 峰值期:<span class="v">[¥10-50 万]</span>
+
+<span class="k">【4. 成本承担】</span>
+<span class="danger">★ 关键</span>:
+- 投流成本:<span class="danger">[由乙方先行垫付,后期从分账中扣除]</span>
+- 制作成本:<span class="v">[甲方承担]</span>
+- 演员片酬:<span class="v">[甲方承担]</span>
+
+<span class="k">【5. 分账比例】</span>
+<span class="danger">★ 关键</span>:
+投流方:<span class="v">[40-60%]</span>
+制作方:<span class="v">[40-60%]</span>
+编剧/演员(头部):<span class="v">[从制作方 40% 中分]</span>
+
+<span class="k">【6. 结算】</span>
+<span class="danger">★ 关键</span>:
+- 结算周期:<span class="v">[月结 / 60 天结算]</span>
+- 对账机制:<span class="v">[双方共享千川后台数据,共同确认 ROI]</span>
+- 退款机制:<span class="v">[广告退款按比例分摊]</span>
+
+<span class="k">【7. ROI 兜底】</span>
+<span class="ok">建议约定</span>:
+- 若投放期间<strong>整体 ROI < 1.0</strong>(亏本),双方协商是否继续投
+- 若<strong>连续 30 天 ROI < 0.8</strong>,乙方有权停止投放
+- 停止投放后,剩余投流成本由<strong>乙方承担</strong>(不向甲方追讨)
+
+<span class="k">【8. 素材归属】</span>
+<span class="ok">建议</span>:
+- 投流素材著作权归<strong>乙方</strong>(因为乙方出资)
+- 甲方有<strong>本剧使用</strong>权(可在本剧任何投放中使用)
+- 乙方不得将素材用于<strong>其他剧</strong>
+
+<span class="k">【9. 排他性】</span>
+<span class="danger">★ 关键</span>:
+- <span class="ok">优选非独家</span>:本剧可同时授权其他发行方
+- <span class="danger">避免独家</span>:独家 = 投流方拿走全部话语权,甲方议价权归零
+
+<span class="k">【10. 违约责任】</span>
+乙方未按预算投放:<span class="v">[按未投放金额的 10% 赔偿]</span>
+乙方数据造假:<span class="danger">[全部收益归甲方 + 违约金 ¥50 万]</span>
+甲方擅自投放:<span class="v">[按已投放金额的 50% 赔偿乙方]</span>
+</div>
+
+<!-- ========== 合同 5:海外 ========== -->
+
+<h2 id="c5">⑤ 海外发行合同 · 关键条款清单</h2>
+
+<div class="callout info">
+  <span class="ico">🌍</span>
+  <p>海外发行需额外注意:<strong>FTC 合规 + GDPR + 文化适配 + 演员 AI Disclosure</strong>。ReelShort 等平台有强合规要求。</p>
+</div>
+
+<div class="template">
+<span class="c"># 海外发行《本地化合作协议》关键条款</span>
+
+<span class="k">【1. 合同主体】</span>
+中方(国内制作方)
+外方(海外发行方,如 ReelShort / DramaBox)
+
+<span class="k">【2. 发行内容】</span>
+剧名:<span class="v">[《XX》]</span>
+集数:<span class="v">[60-80 集]</span>
+本地化版本:<span class="v">[英 / 西 / 法 / 阿 / 日 / 韩 / ...]</span>
+
+<span class="k">【3. 本地化范围】</span>
+外方负责:
+- <span class="v">翻译</span>:中文 → 目标语言(必须保留情绪)
+- <span class="v">配音</span>:目标语言配音(AI 或真人,$120/分钟)
+- <span class="v">字幕</span>:SRT 英文
+- <span class="v">文化适配</span>:删除/调整文化敏感内容
+- <span class="v">演员本地化</span>:中国面孔 → 欧美/拉美/中东面孔(AI 换脸)
+- <span class="v">算法适配</span>:根据目标平台算法调整
+
+<span class="k">【4. 合规要求】</span>
+<span class="danger">★ 必填 · 不可漏</span>
+- <span class="v">FTC 自动续费提示</span>:符合美国联邦贸易委员会要求
+- <span class="v">GDPR 数据合规</span>:用户数据存 AWS 弗吉尼亚节点(不在中国)
+- <span class="v">AI 合成演员 Disclosure</span>:主演若是 AI 合成,需显著标注"Digital Actor"
+- <span class="v">宗教/政治红线</span>:中东版删教会阴谋;拉美版增加家庭伦理
+- <span class="v">演员非亚裔比例</span>:主演非亚裔 ≥ 70%(ReelShort 要求)
+- <span class="v">ICP 备案</span>:中国境内主体必办《网络文化经营许可证》
+- <span class="v">跨境文化出口许可</span>:中国出海需文化部审批
+
+<span class="k">【5. 发行期限】</span>
+<span class="ok">建议 5 年</span>(ReelShort 经验)
+
+<span class="k">【6. 发行地域】</span>
+- 美国/英国/加拿大/澳大利亚(主要市场)
+- 拉美(西语市场)
+- 东南亚(马来/泰/印尼/越南)
+- 中东(阿拉伯语,需特殊合规)
+
+<span class="k">【7. 报酬】</span>
+合作方式二选一:
+
+<span class="ok">方式 A:版权买断</span>
+- 一次性支付 <span class="v">[¥8-15 万/部]</span>
+- 海外所有收益归外方
+- 中方不再参与分账
+
+<span class="ok">方式 B:联合运营分成</span>
+- 前期投入 <span class="v">[¥3-5 万]</span>(本地化制作费由中方垫付)
+- 后期按月结算,中方拿 <span class="v">[30-50%]</span> 分成
+- 回本周期 <span class="v">[4.2 个月]</span>(ReelShort 经验)
+- ROI <span class="v">[1:2.3]</span>
+
+<span class="k">【8. CPM 收益】</span>
+- 基础播放量结算:<span class="v">$0.04-0.08/千次观看</span>
+- 付费解锁:<span class="v">$0.99/集起</span>,创作者分 <span class="v">[30-50%]</span>(签约等级浮动)
+- 7 天免费试用 + 自动续费会员
+
+<span class="k">【9. 演员授权跨境】</span>
+<span class="danger">★ 关键</span>:
+- 演员肖像权需<strong>跨境</strong>授权(ReelShort 经验)
+- 授权期限 <span class="danger">≥ 5 年</span>(避免衍生品/二创受限)
+- 演员需签<strong>《肖像权全球授权书》</strong>
+
+<span class="k">【10. 备案与许可】</span>
+中方负责:
+- 中国《网络文化经营许可证》
+- 跨境文化出口许可
+- 演员授权 + 版权登记
+- 与外方通过境内代理签约(<span class="danger">不接受个人直接签约</span>)
+
+<span class="k">【11. 争议解决】</span>
+<span class="ok">新加坡国际仲裁中心(SIAC)</span>(跨境首选)
+或香港国际仲裁中心(HKIAC)
+</div>
+
+<div class="callout warn">
+  <span class="ico">⚠️</span>
+  <p><strong>出海 5 大雷区</strong>:① 演员未签跨境授权 → ReelShort 会拒收;② AI 换脸未 Disclosure → 罚款 $5000/部;③ GDPR 不合规 → 全剧下架;④ 文化敏感内容 → 中东拉美下架;⑤ 个人 PayPal 收款 → 资金冻结。</p>
+</div>
+
+<!-- ========== 辅助文件 ========== -->
+
+<h2 id="aux">⑥ 音乐/音效《授权使用合同》</h2>
+
+<div class="template">
+<span class="c"># 音乐/音效《授权使用合同》关键条款</span>
+
+<span class="k">【授权类型】</span>
+- BGM(背景音乐):<span class="v">Suno AI 生成 / 商用音乐库 / 原创</span>
+- 音效:<span class="v">剪映免费库 / 商用音效库 / 原创录音</span>
+- 主题曲:<span class="v">原创 / 改编 / 授权使用</span>
+
+<span class="k">【授权范围】</span>
+信息网络传播权(网络平台)
+<span class="ok">建议</span>:全球 + 5 年
+
+<span class="k">【授权费用】</span>
+商用音乐库:<span class="v">[¥500-5000/部]</span>
+原创音乐(Suno):<span class="v">[免费,只需署名]</span>
+原创音乐(委托):<span class="v">[¥3-10 万/首]</span>
+</div>
+
+<h2 id="aux3">⑧ 员工《保密协议》(NDA)</h2>
+
+<div class="template">
+<span class="c"># 员工/合作方《保密协议》关键条款</span>
+
+<span class="k">【保密内容】</span>
+- 未公开剧本
+- 演员阵容
+- 片酬
+- 投流数据
+- 用户数据
+- 商业秘密
+
+<span class="k">【保密期限】</span>
+<span class="ok">建议</span>:
+- 合同期内 + <span class="danger">合同结束后 3 年</span>
+
+<span class="k">【违约责任】</span>
+违约金:<span class="v">[¥10-100 万]</span>
+情节严重:<span class="danger">[追究法律责任 + 行业禁入]</span>
+</div>
+
+<!-- ========== 陷阱条款 ========== -->
+
+<h2 id="trap">⚠️ 5 大常见陷阱条款 · 必看</h2>
+
+<div class="callout warn">
+  <span class="ico">🚨</span>
+  <p><strong>5 大常见陷阱</strong>——签字前必须看清,必要时请律师审核:</p>
+</div>
+
+<div class="steps">
+  <div class="step"><div class="n">1</div><h4>"全部权利归甲方"</h4><p>陷阱:连署名权、改编权、衍生品权全部归甲方,作者彻底沦为"工具人"。<br><strong>应对</strong>:必须保留署名权 + 作品完整权(原作不能被恶意修改)。</p></div>
+  <div class="step"><div class="n">2</div><h4>"永久独家"</h4><p>陷阱:授权期限写"永久",等于卖身契。<br><strong>应对</strong>:必须限定<strong>5 年 + 自动续约需双方同意</strong>。</p></div>
+  <div class="step"><div class="n">3</div><h4>"甲方可单方面解约"</h4><p>陷阱:甲方想解就解,但乙方不行,严重不平等。<br><strong>应对</strong>:必须<strong>双方解约条件对等</strong>。</p></div>
+  <div class="step"><div class="n">4</div><h4>"数据归甲方"</h4><p>陷阱:所有投流数据、用户数据、收益数据归甲方,乙方无知情权。<br><strong>应对</strong>:必须<strong>双方共享数据</strong> + 月度对账。</p></div>
+  <div class="step"><div class="n">5</div><h4>"巨额违约金"</h4><p>陷阱:乙方违约金 ¥100 万起,甲方违约金 ¥1 万。<br><strong>应对</strong>:必须<strong>双方违约金对等</strong>。</p></div>
+</div>
+
+<!-- ========== 谈判自检 ========== -->
+
+<h2 id="check">谈判自检清单 · 签字前 5 分钟必过</h2>
+
+<div class="template">
+<span class="c"># 合同签字前 · 5 分钟自检</span>
+
+<span class="c"># === 主体审查 ===</span>
+□ 对方公司名/法人/统一社会信用代码 与 工商信息一致?
+□ 对方公司是否真实存在?(查天眼查/启信宝)
+□ 对方是否被列入失信名单?(查中国执行信息公开网)
+
+<span class="c"># === 关键条款审查 ===</span>
+□ <span class="danger">著作权归属</span>:明确归属方,保留署名权
+□ <span class="danger">授权期限</span>:具体年数,避免"永久"
+□ <span class="danger">授权地域</span>:明确范围,避免"全球独家"过度授权
+□ <span class="danger">授权范围</span>:列明具体权利,避免"全部权利"
+□ <span class="danger">报酬</span>:基础 + 分成 + 结算周期,避免"按甲方决定"
+□ <span class="danger">结算周期</span>:月结/60 天结,避免"90 天以上"
+□ <span class="danger">违约责任</span>:双方对等,避免单方面加重
+□ <span class="danger">争议解决</span>:仲裁优先(快),避免"诉讼"慢
+
+<span class="c"># === 隐藏条款审查 ===</span>
+□ 是否含"自动续约"条款?
+□ 是否含"排他"条款?
+□ 是否含"竞业禁止"条款?
+□ 是否含"知识产权转让"条款?
+□ 是否含"肖像权 / 隐私"条款?
+□ 是否含"不可抗力"条款?
+
+<span class="c"># === 数字与公式审查 ===</span>
+□ 数字(金额/期限)是否与谈判一致?
+□ 公式(分成/结算)是否清晰?
+□ 税(个人/公司)由谁承担?
+
+<span class="c"># === 兜底条款 ===</span>
+□ 是否有"合同变更须书面同意"?
+□ 是否有"通知送达地址"?
+□ 是否有"合同份数与生效"?
+□ 是否有"附件清单"(剧本/演员表/物料)?
+
+<span class="c"># === 最终签字前 ===</span>
+□ 自己读一遍(别只看律师意见)
+□ 重要条款手写修改(避免"以最后一份为准"陷阱)
+□ 一式两份,双方各执一份
+□ 加盖公章 / 法人签字
+□ 拍照 / 扫描存档 3 份
+</div>
+
+<!-- ========== 法律资源 ========== -->
+
+<h2 id="law">法律资源链接</h2>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>资源</th><th>用途</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td><strong>中国版权保护中心</strong></td><td>剧本版权登记(¥300/部,20 天取证)</td><td><a href="https://www.ccopyright.com/" target="_blank">ccopyright.com</a></td></tr>
+<tr><td><strong>国家版权局</strong></td><td>著作权登记总入口</td><td><a href="http://www.ncac.gov.cn/" target="_blank">ncac.gov.cn</a></td></tr>
+<tr><td><strong>席德國際法律事務所</strong></td><td>短影劇製作流程中的法律風險(中港台跨境)</td><td><a href="https://www.sidamadeus-law.com/post/【短影劇製作流程中的法律風險：從劇本到上架，每一步都要立契明權】" target="_blank">席德法律事務所</a></td></tr>
+<tr><td><strong>中国电视剧制作产业协会</strong></td><td>行业标准 / 纠纷调解</td><td><a href="https://www.ctpia.com.cn/" target="_blank">ctpia.com.cn</a></td></tr>
+<tr><td><strong>北京仲裁委员会</strong></td><td>短剧合同争议仲裁首选</td><td><a href="https://www.bjac.org.cn/" target="_blank">bjac.org.cn</a></td></tr>
+<tr><td><strong>中国国际经济贸易仲裁委</strong></td><td>涉外合同争议仲裁</td><td><a href="http://www.cietac.org/" target="_blank">cietac.org</a></td></tr>
+<tr><td><strong>新加坡国际仲裁中心(SIAC)</strong></td><td>海外短剧合同跨境仲裁</td><td><a href="https://www.siac.org.sg/" target="_blank">siac.org.sg</a></td></tr>
+<tr><td><strong>中华演员公会</strong></td><td>演员权益保护(2.3 万会员)</td><td>—</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout tip">
+  <span class="ico">💡</span>
+  <p><strong>律师费参考</strong>(2026 行情):① 单份合同起草 ¥1000-3000/份 ② 5 大合同打包 ¥8000-15000 ③ 涉外合同 ¥3000-5000/份 ④ 复杂 IP 改编 ¥5000-10000/份。<strong>本模板包可帮你省 50% 律师费</strong>(律师审核而非起草)。</p>
+</div>
+
+<hr style="margin:40px 0;border:0;border-top:1px solid var(--line)">
+
+<div class="callout info">
+  <span class="ico">📌</span>
+  <p><strong>本章总结</strong>:本包覆盖短剧制作<strong>5 大核心合同 + 3 大辅助合同</strong>,每个合同列出<strong>12+ 关键条款 + 5 大陷阱 + 5 分钟自检</strong>。拿这套给律师,直接出正式合同。<strong>版权登记记得做!</strong>(¥300/部,保护你的心血)</p>
+</div>
+
+</main>
+</div>
+
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="后期放公众号二维码">
+      <img class="qr-img" src="../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../changelog.html">📅 更新日志</a></li>
+      <li><a href="mailto:yuge@local.demo">✉ 联系玉哥</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流 · 京 ICP 备 XXXXXXXX 号(待补)
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('aside a').forEach(function(a){
+    a.addEventListener('click',function(){
+      document.querySelectorAll('aside a').forEach(function(x){
+        x.style.color='';x.style.background='';x.style.borderLeftColor='transparent';
+      });
+      a.style.color='#5ee0a7';a.style.background='#161a23';a.style.borderLeftColor='#5ee0a7';
+    });
+  });
+});
+</script>
+</body>
+</html>

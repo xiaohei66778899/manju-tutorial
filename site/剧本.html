@@ -1,0 +1,2252 @@
+﻿﻿﻿﻿﻿﻿﻿﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
+<title>剧本创作 · 玉哥 · 2 大路径</title>
+<meta name="description" content="原创剧本 + 小说改编剧本 · 两张路径搞定所有剧本问题">
+<meta name="theme-color" content="#635BFF">
+<style>
+/* ====== 玉哥风格 · SPA 版 · 独立 HTML ====== */
+:root {
+  --bg: #FFFCF6;
+  --bg-soft: #FFF7E8;
+  --bg2: #F7EFDC;
+  --bg3: #F2EAD6;
+  --line: #E8DFC8;
+  --line2: #DCD2B8;
+  --text: #1F1A14;
+  --muted: #6F6657;
+  --blue: #635BFF;
+  --blue-soft: #ECE7FF;
+  --blue-deep: #4F46E5;
+  --orange: #F47C3C;
+  --orange-soft: #FFE9D6;
+  --green: #10B981;
+  --max-w: 1200px;
+}
+[data-theme="dark"] {
+  --bg: #0F0F12;
+  --bg-soft: #18181B;
+  --bg2: #1E1E22;
+  --bg3: #27272A;
+  --line: #2E2E33;
+  --line2: #3F3F46;
+  --text: #F4F4F5;
+  --muted: #A1A1AA;
+  --blue: #818CF8;
+  --blue-soft: rgba(99,91,255,.15);
+  --orange: #FB923C;
+  --orange-soft: rgba(244,124,60,.10);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { font-size: 16px; line-height: 1.7; color: var(--text); background: var(--bg); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif; -webkit-font-smoothing: antialiased; overscroll-behavior-y: contain; -webkit-tap-highlight-color: transparent; }
+html.dark { color-scheme: dark; }
+a { color: var(--blue); text-decoration: none; transition: color .15s; }
+a:hover { color: var(--orange); }
+code { background: var(--bg2); padding: 2px 6px; border-radius: 4px; font-family: "JetBrains Mono", Consolas, monospace; font-size: .92em; color: var(--orange); }
+[data-theme="dark"] code { background: var(--bg3); }
+
+/* ====== 顶栏：与全站 56px 导航保持一致 ====== */
+.topbar { position: sticky; top: 0; z-index: 100; width: 100%; height: 56px; min-height: 56px; max-height: 56px; overflow: hidden; background: var(--bg2); border-bottom: 1px solid var(--line); padding: 0 18px; display: flex; align-items: center; gap: 12px; }
+[data-theme="dark"] .topbar { background: var(--bg2); }
+.site-logo { display: flex; align-items: center; gap: 8px; flex-shrink: 0; color: var(--text); text-decoration: none; white-space: nowrap; }
+.site-logo:hover { color: var(--text); }
+.site-logo .logo-mark { width: 30px; height: 30px; border-radius: 8px; background: linear-gradient(135deg, #635BFF 0%, #8B5CF6 100%); display: flex; align-items: center; justify-content: center; color: #fff; font-size: 15px; box-shadow: 0 2px 6px rgba(99,91,255,.25); }
+.site-logo .logo-text { font-weight: 700; font-size: 15px; letter-spacing: -.01em; }
+.site-logo small { color: var(--muted); font-weight: 400; font-size: 11px; margin-left: 4px; }
+.topbar nav { display: flex; flex: 1 1 0%; min-width: 0; flex-wrap: nowrap; gap: 1px; overflow-x: auto; overflow-y: hidden; scrollbar-width: none; }
+.topbar nav::-webkit-scrollbar { display: none; }
+.topbar nav a { flex-shrink: 0; padding: 4px 8px; border-radius: 4px; color: var(--text); font-size: 13px; white-space: nowrap; text-decoration: none; }
+.topbar nav a:hover { color: var(--blue); background: var(--blue-soft); }
+.topbar nav a.active { position: relative; color: #635BFF !important; font-weight: 500 !important; background: transparent !important; }
+.topbar nav a.active::after { content: ''; position: absolute; bottom: 3px; left: 50%; width: calc(100% - 18px); height: 2px; border-radius: 1px; background: #635BFF; transform: translateX(-50%); }
+.topbar .search { display: flex; align-items: center; width: 170px; flex-shrink: 0; padding: 4px 12px; border: 1px solid var(--line); border-radius: 18px; background: var(--bg2); }
+.topbar .search input { width: 100%; border: 0; outline: 0; color: var(--text); background: transparent; font: inherit; font-size: 13px; }
+.theme-toggle { flex-shrink: 0; background: transparent; border: 1px solid var(--line); border-radius: 18px; width: 38px; height: 38px; cursor: pointer; font-size: 16px; display: flex; align-items: center; justify-content: center; color: var(--text); }
+.theme-toggle:hover { background: var(--blue-soft); }
+@media (max-width: 900px) { .topbar .search { display: none; } }
+@media (max-width: 560px) { .topbar { padding: 0 10px; gap: 6px; } .site-logo small { display: none; } .topbar nav a { padding: 6px 9px; font-size: 12.5px; } }
+
+/* ====== Hero(主页) ====== */
+.hero { position: relative; padding: 48px 32px 28px; background: linear-gradient(135deg, #FFE9D6 0%, #FFF7E8 50%, #ECE7FF 100%); border-bottom: 1px solid var(--line); overflow: hidden; text-align: center; }
+.hero::before { content: ''; position: absolute; top: -100px; right: -100px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(244,124,60,.18), transparent 70%); border-radius: 50%; pointer-events: none; }
+.hero-inner { max-width: 900px; margin: 0 auto; position: relative; }
+.hero .badge-row { display: inline-flex; gap: 6px; flex-wrap: wrap; justify-content: center; margin-bottom: 14px; }
+.hero .badge { font-size: 12px; padding: 4px 11px; background: rgba(255,255,255,.8); backdrop-filter: blur(8px); border: 1px solid var(--line); border-radius: 12px; color: var(--text); font-weight: 500; }
+.hero .badge i { color: var(--blue); margin-right: 4px; }
+.hero h1 { font-size: 38px; font-weight: 800; letter-spacing: -0.025em; line-height: 1.15; margin: 0 0 12px; }
+.hero h1 .em { background: linear-gradient(135deg, #635BFF, #F47C3C); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.hero .sub { color: var(--muted); font-size: 15.5px; line-height: 1.7; max-width: 720px; margin: 0 auto; }
+[data-theme="dark"] .hero { background: linear-gradient(135deg, #1A1A2E 0%, #16213E 50%, #0F3460 100%); border-bottom-color: var(--line); }
+[data-theme="dark"] .hero .badge { background: rgba(255,255,255,.05); border-color: var(--line); }
+
+/* ====== 主体 ====== */
+.main { max-width: var(--max-w); margin: 0 auto; padding: 40px 28px 60px; }
+
+/* ====== 2 大路径 ====== */
+.paths { display: grid; gap: 28px; }
+.path { padding: 24px 26px 22px; background: var(--bg-soft); border: 1px solid var(--line); border-radius: 16px; position: relative; overflow: hidden; }
+.path::before { content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; }
+.path-1::before { background: linear-gradient(180deg, #635BFF, #818CF8); }
+.path-2::before { background: linear-gradient(180deg, #F47C3C, #FB923C); }
+.path-head { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
+.path-num { width: 42px; height: 42px; border-radius: 10px; background: linear-gradient(135deg, #635BFF 0%, #F47C3C 100%); color: #fff; font-size: 20px; font-weight: 800; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(99,91,255,.25); flex-shrink: 0; }
+.path-title { font-size: 19px; font-weight: 800; letter-spacing: -0.01em; }
+.path-desc { color: var(--muted); font-size: 13.5px; margin-top: 2px; }
+.path-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
+.path-card { display: flex; align-items: center; gap: 12px; padding: 12px 14px; background: var(--bg); border: 1px solid var(--line); border-radius: 10px; text-decoration: none; color: inherit; transition: all .2s; position: relative; overflow: hidden; }
+.path-card::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 100%; background: linear-gradient(180deg, #635BFF, #F47C3C); transform: scaleY(0); transform-origin: top; transition: transform .25s; }
+.path-card:hover { border-color: var(--blue); background: var(--bg); transform: translateY(-1px); box-shadow: 0 4px 12px rgba(99,91,255,.1); }
+.path-card:hover::before { transform: scaleY(1); }
+.path-card .num { flex-shrink: 0; width: 32px; height: 32px; border-radius: 8px; background: var(--blue-soft); color: var(--blue); display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 800; }
+.path-2 .path-card .num { background: var(--orange-soft); color: var(--orange); }
+.path-card .body { flex: 1; min-width: 0; }
+.path-card .t { font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 2px; }
+.path-card .d { font-size: 12px; color: var(--muted); line-height: 1.5; }
+.path-card .arrow { flex-shrink: 0; color: var(--muted); font-size: 16px; transition: transform .2s, color .2s; }
+.path-card:hover .arrow { color: var(--blue); transform: translateX(3px); }
+[data-theme="dark"] .path { background: var(--bg-soft); border-color: var(--line); }
+[data-theme="dark"] .path-card { background: var(--bg2); border-color: var(--line); }
+[data-theme="dark"] .path-card:hover { background: var(--bg3); }
+
+/* ====== 资源区 ====== */
+.resources { margin-top: 40px; padding: 28px 28px 24px; background: linear-gradient(135deg, #FFE9D6 0%, #FFF7E8 50%, #ECE7FF 100%); border: 1px solid var(--line); border-radius: 16px; position: relative; overflow: hidden; }
+.resources::before { content: ''; position: absolute; top: -80px; right: -80px; width: 220px; height: 220px; background: radial-gradient(circle, rgba(244,124,60,.14), transparent 70%); border-radius: 50%; pointer-events: none; }
+.resources h3 { font-size: 19px; font-weight: 800; letter-spacing: -0.01em; margin-bottom: 6px; }
+.resources p.note { font-size: 12.5px; color: var(--green); margin-bottom: 16px; display: inline-flex; align-items: center; gap: 6px; background: rgba(16,185,129,.08); padding: 6px 14px; border-radius: 14px; font-weight: 600; border: 1px solid rgba(16,185,129,.3); }
+.resources p.note::before { content: '✅'; }
+.res-group { margin-top: 18px; }
+.res-group:first-of-type { margin-top: 0; }
+.res-group-title { font-size: 13px; font-weight: 700; color: var(--muted); margin: 0 0 10px; padding-left: 4px; letter-spacing: 0.02em; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.res-group-title .em { color: var(--blue); font-weight: 800; }
+.res-group-title .tag { font-size: 11px; color: var(--muted); background: var(--bg); border: 1px solid var(--line); padding: 2px 8px; border-radius: 8px; font-weight: 500; }
+.res-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }
+.res-card { display: flex; align-items: center; gap: 12px; padding: 12px 14px; background: var(--bg); border: 1px solid var(--line); border-radius: 10px; text-decoration: none; color: inherit; transition: all .2s; position: relative; overflow: hidden; }
+.res-card::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 100%; background: linear-gradient(180deg, #635BFF, #F47C3C); transform: scaleY(0); transform-origin: top; transition: transform .25s; }
+.res-card:hover { border-color: var(--blue); box-shadow: 0 6px 16px rgba(244,124,60,.18); transform: translateY(-1px); }
+.res-card:hover::before { transform: scaleY(1); }
+.res-card .num { flex-shrink: 0; width: 30px; height: 30px; border-radius: 8px; background: var(--blue-soft); color: var(--blue); display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 800; }
+.res-card.j-card { background: linear-gradient(135deg, #FFE9D6 0%, #FFF7E8 50%, #FFF8F0 100%) !important; border: 1px solid #F4B583 !important; }
+.res-card.j-card::before { background: linear-gradient(180deg, #F47C3C, #FFA85C); transform: scaleY(1); }
+.res-card.j-card .num { background: var(--blue); color: #fff; }
+.res-card.j-card .t { color: var(--blue); font-weight: 800; }
+.res-card .body { flex: 1; min-width: 0; }
+.res-card .t { font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 2px; }
+.res-card .d { font-size: 12px; color: var(--muted); line-height: 1.5; }
+.res-card .arrow { flex-shrink: 0; color: var(--muted); font-size: 16px; transition: transform .2s, color .2s; }
+.res-card:hover .arrow { color: var(--blue); transform: translateX(3px); }
+[data-theme="dark"] .resources { background: linear-gradient(135deg, rgba(244,124,60,.14) 0%, rgba(15,15,18,.4) 60%, rgba(244,124,60,.06) 100%); }
+[data-theme="dark"] .resources h3 { color: var(--text); }
+[data-theme="dark"] .res-card { background: var(--bg2); border-color: var(--line); }
+
+/* ====== View 容器(SPA) ====== */
+.view { display: none; }
+.view.is-active { display: block; animation: fade-in .25s ease-out; }
+@keyframes fade-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+.view-head { padding: 48px 32px 28px; background: linear-gradient(135deg, #FFE9D6 0%, #FFF7E8 100%); border-bottom: 1px solid var(--line); position: relative; overflow: hidden; text-align: center; }
+.view-head::before { content: ''; position: absolute; top: -80px; right: -80px; width: 220px; height: 220px; background: radial-gradient(circle, rgba(244,124,60,.16), transparent 70%); border-radius: 50%; pointer-events: none; }
+[data-theme="dark"] .view-head { background: linear-gradient(135deg, #1A1A2E 0%, #16213E 50%, #0F3460 100%); }
+.back-home { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: var(--muted); font-weight: 600; margin: 0 auto 16px; padding: 4px 12px; border-radius: 8px; }
+.back-home:hover { color: var(--blue); background: rgba(99,91,255,.08); }
+
+/* hero 返回玉哥网站首页(顶角小按钮) */
+.back-to-site {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+  background: rgba(255,255,255,.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  text-decoration: none;
+  z-index: 2;
+  transition: all .2s;
+}
+.back-to-site:hover {
+  color: var(--blue);
+  background: #fff;
+  border-color: var(--blue);
+  text-decoration: none;
+  transform: translateX(-2px);
+}
+[data-theme="dark"] .back-to-site { background: rgba(255,255,255,.06); border-color: var(--line); color: var(--text); }
+[data-theme="dark"] .back-to-site:hover { background: var(--bg2); border-color: var(--blue); }
+
+/* ====== View 子页面布局(左侧 sidebar + 主区) ====== */
+.view.is-active { display: flex; }
+.view-sidebar {
+  width: 220px;
+  flex-shrink: 0;
+  padding: 16px 14px;
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  position: sticky;
+  top: 72px;
+  align-self: flex-start;
+  max-height: calc(100vh - 90px);
+  overflow-y: auto;
+}
+.view-sidebar .vs-title {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  margin-bottom: 8px;
+  padding: 0 6px;
+}
+.view-sidebar ul { list-style: none; padding: 0; margin: 0; }
+.view-sidebar li a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 10px;
+  font-size: 13px;
+  color: var(--text);
+  border-radius: 8px;
+  text-decoration: none;
+  border-left: 3px solid transparent;
+}
+.view-sidebar li a:hover { background: rgba(99,91,255,.08); border-left-color: var(--blue); text-decoration: none; }
+.view-sidebar li.current a {
+  background: var(--blue-soft);
+  border-left-color: var(--blue);
+  color: var(--blue);
+  font-weight: 700;
+}
+.view-sidebar .vs-idx {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(99,91,255,.12);
+  color: var(--blue);
+  font-size: 11px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.view-sidebar .vs-name { line-height: 1.3; }
+.view-sidebar .vs-divider {
+  height: 1px;
+  background: var(--line);
+  margin: 10px 0;
+}
+.view-sidebar .vs-home {
+  display: block;
+  padding: 8px 10px;
+  font-size: 13px;
+  color: var(--muted);
+  border-radius: 8px;
+  text-align: center;
+}
+.view-sidebar .vs-home:hover { background: var(--blue-soft); color: var(--blue); text-decoration: none; }
+[data-theme="dark"] .view-sidebar { background: var(--bg2); border-color: var(--line); }
+
+/* ====== View 容器 + sidebar 横排布局 ====== */
+.view { display: none; flex-direction: row; gap: 24px; padding: 24px 32px 60px 32px; }
+.view.is-active { display: flex; animation: fade-in .25s ease-out; }
+.view .view-main { flex: 1; min-width: 0; max-width: 960px; }
+.view .view-main .view-head { margin-bottom: 0; }
+.view .view-main .view-content { max-width: none; }
+@keyframes fade-in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+
+@media (max-width: 900px) {
+  .view-sidebar { width: 180px; }
+}
+@media (max-width: 700px) {
+  .view { flex-direction: column; }
+  .view-sidebar { width: 100%; max-height: none; position: static; }
+}
+.view-head h2 { font-size: 38px; font-weight: 800; letter-spacing: -0.025em; line-height: 1.18; margin: 0; text-align: center; }
+.view-head h2 .em { background: linear-gradient(135deg, #635BFF, #F47C3C); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.view-sub { color: var(--muted); font-size: 16px; margin-top: 12px; font-weight: 500; line-height: 1.6; text-align: center; }
+.view-content { max-width: var(--max-w); margin: 0 auto; padding: 40px 32px 80px; font-size: 16px; line-height: 1.75; }
+.view-placeholder { padding: 60px 24px; text-align: center; color: var(--muted); border: 1px dashed var(--line); border-radius: 12px; background: var(--bg-soft); }
+.view-placeholder p { margin-bottom: 8px; }
+.view-placeholder .muted { font-size: 12.5px; color: var(--muted); opacity: .75; }
+
+/* ====== View 内容组件(为 view-1-1 等准备的样式) ====== */
+.view-content section { margin-bottom: 44px; }
+.view-content section:last-child { margin-bottom: 0; }
+.view-content h3 { font-size: 23px; font-weight: 800; letter-spacing: -0.015em; margin: 0 0 18px; padding: 4px 0 4px 16px; border-left: 4px solid var(--orange); color: var(--text); line-height: 1.35; }
+.view-content h4 { font-size: 18.5px; font-weight: 700; color: var(--blue); margin: 24px 0 12px; line-height: 1.4; }
+.view-content p { margin-bottom: 14px; line-height: 1.78; }
+.view-content strong { color: var(--text); font-weight: 700; }
+.view-content ul, .view-content ol { margin: 12px 0 18px 26px; line-height: 1.78; }
+.view-content li { margin: 8px 0; line-height: 1.75; }
+.view-content li::marker { color: var(--orange); font-weight: 700; }
+.view-content .callout { display: flex; gap: 14px; padding: 18px 22px; border-radius: 12px; border: 1px solid var(--line); background: var(--bg-soft); margin: 18px 0; font-size: 15.5px; line-height: 1.75; }
+.view-content .callout.tip { background: rgba(16,185,129,.08); border-color: rgba(16,185,129,.3); }
+.view-content .callout.warn { background: rgba(239,68,68,.08); border-color: rgba(239,68,68,.3); }
+.view-content .callout .ico { font-size: 22px; flex-shrink: 0; line-height: 1.7; }
+.view-content .callout div { flex: 1; }
+.view-content table { width: 100%; border-collapse: separate; border-spacing: 0; background: var(--bg); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; font-size: 14.5px; margin: 16px 0 20px; line-height: 1.65; box-shadow: 0 1px 3px rgba(31,26,20,.04); }
+.view-content th, .view-content td { padding: 13px 16px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+.view-content th { background: var(--blue-soft); color: var(--blue); font-weight: 800; font-size: 13.5px; letter-spacing: 0.02em; padding-top: 14px; padding-bottom: 14px; }
+.view-content td { font-size: 14.5px; }
+.view-content td:first-child strong { color: var(--text); font-weight: 800; }
+.view-content tr:hover td { background: rgba(244,124,60,.04); }
+[data-theme="dark"] .view-content th { background: var(--bg3); color: #A5B4FC; }
+[data-theme="dark"] .view-content tr:hover td { background: rgba(244,124,60,.06); }
+.view-content tr:last-child td { border-bottom: none; }
+.view-content .source-line { font-size: 13px; color: var(--muted); margin-top: 36px; padding-top: 18px; border-top: 1px solid var(--line); line-height: 1.7; }
+.view-content sup { font-size: 11px; color: var(--orange); margin-left: 2px; font-weight: 600; }
+.view-content .checklist { margin: 16px 0 18px 22px; }
+.view-content .checklist li { padding-left: 6px; margin: 10px 0; line-height: 1.78; font-size: 15.5px; }
+.view-content .checklist li::marker { content: '✓ '; color: var(--green); font-weight: 800; }
+.table-scroll { width: 100%; margin: 16px 0 20px; overflow-x: auto; border-radius: 12px; -webkit-overflow-scrolling: touch; }
+.view-content .table-scroll table { min-width: 680px; margin: 0; }
+
+/* ====== 章节底部导航 ====== */
+.view-main > .bottom-nav {
+  display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 14px;
+  padding: 0 32px 56px; margin-top: -34px;
+}
+.view-main > .bottom-nav a {
+  min-width: 0; min-height: 86px; padding: 15px 18px; border: 1px solid var(--line);
+  border-radius: 12px; background: var(--bg-soft); color: var(--text); text-decoration: none;
+  display: flex; flex-direction: column; justify-content: center; transition: border-color .18s, transform .18s, box-shadow .18s;
+}
+.view-main > .bottom-nav a:hover { border-color: var(--blue); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(99,91,255,.10); }
+.view-main > .bottom-nav .next { text-align: right; align-items: flex-end; }
+.view-main > .bottom-nav .label { display: block; margin-bottom: 5px; color: var(--muted); font-size: 12px; font-weight: 600; }
+.view-main > .bottom-nav .title { display: block; color: var(--blue); font-size: 15px; font-weight: 750; line-height: 1.45; }
+[data-theme="dark"] .view-main > .bottom-nav a { background: var(--bg2); }
+
+/* ====== footer(极致克制 · 单列居中纵向堆叠) ====== */
+footer.dock-run.compact {
+  padding: 36px 24px 24px;
+  border-top: 1px solid var(--line);
+  background: var(--bg2);
+  color: var(--muted);
+  text-align: center;
+  padding-bottom: max(36px, env(safe-area-inset-bottom));
+}
+footer.dock-run.compact .compact-stack {
+  max-width: 540px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 24px;
+  border-bottom: 1px dashed var(--line);
+}
+footer.dock-run.compact .c-title {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--text);
+  margin-bottom: 2px;
+}
+footer.dock-run.compact .c-sub {
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--muted);
+  max-width: 460px;
+}
+footer.dock-run.compact .c-qr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+}
+footer.dock-run.compact .c-qr .qr-img {
+  width: 84px;
+  height: 84px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fff;
+  object-fit: cover;
+  display: block;
+  transition: border-color .2s, transform .2s;
+}
+/* div 占位文字 fallback(向后兼容) */
+footer.dock-run.compact .c-qr div.qr-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  background: var(--bg);
+  border-style: dashed;
+}
+footer.dock-run.compact .c-qr .qr-img:hover {
+  border-color: var(--blue);
+  transform: scale(1.05);
+}
+footer.dock-run.compact .c-qr .qr-cap {
+  font-size: 11.5px;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+footer.dock-run.compact .c-links {
+  list-style: none;
+  margin: 6px 0 0;
+  padding: 0;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0;
+  font-size: 13px;
+}
+footer.dock-run.compact .c-links li {
+  display: inline-flex;
+  align-items: center;
+}
+footer.dock-run.compact .c-links li + li::before {
+  content: '·';
+  display: inline-block;
+  margin: 0 14px;
+  color: #A1A1AA;
+  pointer-events: none;
+}
+footer.dock-run.compact .c-links a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color .15s;
+}
+footer.dock-run.compact .c-links a:hover {
+  color: var(--blue);
+}
+footer.dock-run.compact .c-copy {
+  max-width: 540px;
+  margin: 18px auto 0;
+  padding: 0 24px;
+  font-size: 12.5px;
+  color: var(--muted);
+  text-align: center;
+  line-height: 1.7;
+}
+footer.dock-run.compact .c-copy strong {
+  color: var(--text);
+  font-weight: 600;
+}
+footer.dock-run.compact .c-copy .c-copy-sub {
+  margin-top: 6px;
+  font-size: 11.5px;
+  color: #A1A1AA;
+}
+[data-theme="dark"] footer.dock-run.compact .c-title { color: #fff; }
+[data-theme="dark"] footer.dock-run.compact .c-copy strong { color: #fff; }
+[data-theme="dark"] footer.dock-run.compact .c-links a { color: var(--muted); }
+[data-theme="dark"] footer.dock-run.compact .c-qr .qr-img {
+  background: rgba(255,255,255,.04);
+  border-color: rgba(255,255,255,.18);
+}
+
+/* 旧 footer 样式保留以备 */
+footer { text-align: center; padding: 32px 20px 48px; color: var(--muted); font-size: 13px; }
+footer strong { color: var(--text); }
+
+/* ====== 响应式 ====== */
+@media (max-width: 768px) {
+  .hero { padding: 32px 20px 24px; }
+  .hero h1 { font-size: 26px; }
+  .hero .sub { font-size: 14px; }
+  .main { padding: 24px 16px 40px; }
+  .path { padding: 20px 18px 18px; }
+  .path-cards { grid-template-columns: 1fr; }
+  .resources { padding: 22px 18px; }
+  .res-grid { grid-template-columns: 1fr; }
+  .view-head { padding: 36px 22px 22px; }
+  .view-head h2 { font-size: 30px; }
+  .view-sub { font-size: 15px; margin-top: 10px; }
+  .view-content { padding: 28px 22px 56px; font-size: 15.5px; }
+  .view-content h3 { font-size: 20px; padding-left: 14px; border-left-width: 3px; }
+  .view-content h4 { font-size: 17px; }
+  .view-content table { font-size: 13.5px; }
+  .view-content th { font-size: 13px; padding: 12px 14px; }
+  .view-content td { padding: 11px 14px; font-size: 13.5px; }
+  .view-content .callout { font-size: 14.5px; padding: 14px 18px; }
+  .view-content .checklist li { font-size: 14.5px; }
+  .view-main > .bottom-nav { padding: 0 22px 42px; margin-top: -22px; }
+}
+@media (max-width: 480px) {
+  .hero h1 { font-size: 21px; }
+  .path { padding: 18px 14px 16px; }
+  .path-head { gap: 10px; }
+  .path-num { width: 34px; height: 34px; font-size: 16px; border-radius: 8px; }
+  .path-title { font-size: 17px; }
+  .view-head { padding: 28px 18px 20px; }
+  .view-head h2 { font-size: 26px; }
+  .view-content { padding: 24px 18px 48px; font-size: 15px; }
+  .view-content h3 { font-size: 18px; }
+  .view-content h4 { font-size: 16px; }
+  .view-content table { font-size: 12.5px; }
+  .view-content th { font-size: 12px; padding: 10px 12px; }
+  .view-content td { padding: 10px 12px; font-size: 12.5px; }
+  .view-content .callout { font-size: 14px; padding: 12px 16px; }
+  .view-content .checklist li { font-size: 14px; }
+  .view-main > .bottom-nav { grid-template-columns: 1fr; gap: 9px; padding: 0 18px 36px; margin-top: -18px; }
+  .view-main > .bottom-nav a { min-height: 72px; padding: 12px 14px; }
+  .view-main > .bottom-nav .next { text-align: left; align-items: flex-start; }
+}
+</style>
+<link rel="icon" type="image/svg+xml" href="favicon.svg?v=fix20260927-2215">
+</head>
+<body id="home">
+
+<header class="topbar">
+<a class="site-logo" href="index.html" aria-label="返回漫剧教程站首页">
+<span class="logo-mark">🎬</span>
+<span class="logo-text">漫剧教程站<small>v3 · 玉哥</small></span>
+</a>
+<nav aria-label="全站导航">
+<a href="index.html">首页</a>
+<a href="tutorial/all-courses.html" class="active">漫剧教程</a>
+<a href="prompts/image-prompts.html">图片作品</a>
+<a href="works/index.html">视频作品</a>
+<a href="prompts/prompts.html">prompt 模板</a>
+<a href="tools/toolkit.html">工具箱</a>
+<a href="qa/troubleshooting.html">问题库</a>
+<a href="news/industry.html">行业新闻</a>
+</nav>
+<div class="search"><input type="search" placeholder="🔍 搜…" aria-label="搜索教程"></div>
+<button class="theme-toggle" id="themeBtn" title="深浅主题切换">🌙</button>
+</header>
+
+<!-- ====== 主页(home-panel) ====== -->
+<div id="home-panel">
+
+<section class="hero">
+<div class="hero-inner">
+<a class="back-to-site" href="index.html" title="返回玉哥网站首页">← 返回玉哥网站首页</a>
+<h1>剧本创作 · <span class="em">两张路径搞定</span></h1>
+</div>
+</section>
+
+<main class="main">
+<div class="paths">
+
+<!-- 路径 1:原创剧本 -->
+<section class="path path-1" id="path-1">
+<div class="path-head">
+<div class="path-num">①</div>
+<div>
+<div class="path-title">原创剧本</div>
+<div class="path-desc">从零开始的剧本创作工作流 · 编剧实战方法论</div>
+</div>
+</div>
+<div class="path-cards">
+<a class="path-card" href="#view-1-1">
+<div class="num">1</div>
+<div class="body">
+<div class="t">选题库 · 题材方向</div>
+<div class="d">2026 平台差异 · 3D 漫/AI 仿真人/2D 漫适配 · 题材饱和度判断 · 海外复用</div>
+</div>
+<span class="arrow">→</span>
+</a>
+<a class="path-card" href="#view-1-2">
+<div class="num">2</div>
+<div class="body">
+<div class="t">AI 辅助原创工作流</div>
+<div class="d">5 环节协作流 · 模型实测 · 工具对比 · 著作权边界 · 去 AI 腔</div>
+</div>
+<span class="arrow">→</span>
+</a>
+<a class="path-card" href="#view-1-3">
+<div class="num">3</div>
+<div class="body">
+<div class="t">爽点模板 · 节拍表</div>
+<div class="d">15 节拍适配短剧原理 · 红果卡点 · 5 类钩子 · 爽点密度量化</div>
+</div>
+<span class="arrow">→</span>
+</a>
+<a class="path-card" href="#view-1-4">
+<div class="num">4</div>
+<div class="body">
+<div class="t">改稿方法 · 自检清单</div>
+<div class="d">AI 播音腔解构 · 三视角审稿 · 8+ 项自检 · 量化标准</div>
+</div>
+<span class="arrow">→</span>
+</a>
+</div>
+</section>
+
+<!-- 路径 2:小说改编剧本 -->
+<section class="path path-2" id="path-2">
+<div class="path-head">
+<div class="path-num">②</div>
+<div>
+<div class="path-title">小说改编剧本</div>
+<div class="path-desc">小说 → 剧本 · 授权 + 合同 + 流程 + 查重 · 全套合规</div>
+</div>
+</div>
+<div class="path-cards">
+<a class="path-card" href="#view-2-1">
+<div class="num">1</div>
+<div class="body">
+<div class="t">怎么找授权 · 选书 5 维</div>
+<div class="d">5 大平台政策对比 · 飞卢山海案启示 · 5 维评分细则 · 谈判技巧</div>
+</div>
+<span class="arrow">→</span>
+</a>
+<a class="path-card" href="#view-2-2">
+<div class="num">2</div>
+<div class="body">
+<div class="t">合同怎么看 · 关键条款</div>
+<div class="d">AI 改编条款模板 · 8 大陷阱 · 谈判话术 · 人脸授权风险</div>
+</div>
+<span class="arrow">→</span>
+</a>
+<a class="path-card" href="#view-2-3">
+<div class="num">3</div>
+<div class="body">
+<div class="t">改编流程 · 7 步 SOP</div>
+<div class="d">心理→动作转化 · 5000 字→90 秒压缩 · 工具实测 · 复盘清单</div>
+</div>
+<span class="arrow">→</span>
+</a>
+<a class="path-card" href="#view-2-4">
+<div class="num">4</div>
+<div class="body">
+<div class="t">相似度检查 · 反推查重</div>
+<div class="d">10% 执行标准 · 台词/人物/情节三维度 · 3 档改写案例</div>
+</div>
+<span class="arrow">→</span>
+</a>
+</div>
+</section>
+</div>
+
+<!-- 资源区 -->
+<section class="resources">
+<h3>📺 顶流剧本课程 · B 站直达</h3>
+<p class="note">全部 UP 主空间 / 视频 / 专栏直达 · 打开就是视频 / 专栏正文</p>
+
+<div class="res-group">
+<h4 class="res-group-title">🐣 <span class="em">小白</span> · 编剧入门 <span class="tag">2 课</span></h4>
+<div class="res-grid">
+<a class="res-card" href="https://www.bilibili.com/video/BV1eE411F73t/" target="_blank" rel="noopener">
+<div class="num">1</div>
+<div class="body">
+<div class="t">编剧 0 基础入门</div>
+<div class="d">查理老师 · 实战篇合集 · 75 集 · BV1eE411F73t · 从零基础到高阶实操</div>
+</div>
+<span class="arrow">→</span>
+</a>
+<a class="res-card" href="https://www.bilibili.com/video/BV1FR4y1M73U/" target="_blank" rel="noopener">
+<div class="num">2</div>
+<div class="body">
+<div class="t">救猫咪 15 节拍精讲</div>
+<div class="d">尼尔·盖曼 · 《讲故事的艺术》大师课 · 19 集精校中英字幕 · 已完结 · 24h+</div>
+</div>
+<span class="arrow">→</span>
+</a>
+</div>
+</div>
+
+<div class="res-group">
+<h4 class="res-group-title">🌱 <span class="em">入门</span> · 短剧改编 <span class="tag">2 课</span></h4>
+<div class="res-grid">
+<a class="res-card" href="https://www.bilibili.com/video/BV1WFzmBKEmJ/" target="_blank" rel="noopener">
+<div class="num">3</div>
+<div class="body">
+<div class="t">短剧改编 5 大铁律</div>
+<div class="d">千屹7 · 短剧 ip 改编主视频 · 02:41:56 · BV1WFzmBKEmJ · 播放 5548</div>
+</div>
+<span class="arrow">→</span>
+</a>
+<a class="res-card" href="https://www.bilibili.com/video/BV1sf4y127SK/" target="_blank" rel="noopener">
+<div class="num">4</div>
+<div class="body">
+<div class="t">小说改剧本实操</div>
+<div class="d">艾伦·索金 · 编剧课 · 《社交网络》《白宫群英》作者 · 小说→剧本转换核心</div>
+</div>
+<span class="arrow">→</span>
+</a>
+</div>
+</div>
+
+<div class="res-group">
+<h4 class="res-group-title">🚀 <span class="em">进阶</span> · 大师理论 <span class="tag">2 课</span></h4>
+<div class="res-grid">
+<a class="res-card" href="https://www.bilibili.com/video/BV1LE411e7NE/" target="_blank" rel="noopener">
+<div class="num">5</div>
+<div class="body">
+<div class="t">故事(麦基)精讲</div>
+<div class="d">杨宁《文学理论》· 中国大学国家级精品课 · 32 讲完整 · 适配应试+创作</div>
+</div>
+<span class="arrow">→</span>
+</a>
+<a class="res-card" href="https://www.bilibili.com/video/BV1p44y1f7Fu/" target="_blank" rel="noopener">
+<div class="num">6</div>
+<div class="body">
+<div class="t">救猫咪精读</div>
+<div class="d">萨尔曼·鲁西迪 · 诺奖大师 · 教授讲故事和写作 · 国际写作课天花板</div>
+</div>
+<span class="arrow">→</span>
+</a>
+</div>
+</div>
+
+<div class="res-group">
+<h4 class="res-group-title">👑 <span class="em">头部 UP</span> <span class="tag">2 位</span></h4>
+<div class="res-grid">
+<a class="res-card" href="https://www.bilibili.com/read/cv43130874" target="_blank" rel="noopener">
+<div class="num">7</div>
+<div class="body">
+<div class="t">七秒工场</div>
+<div class="d">七秒工场 · 精英导师团专栏 · 短剧创作培训体系总览</div>
+</div>
+<span class="arrow">→</span>
+</a>
+<a class="res-card j-card" href="https://www.bilibili.com/video/BV1QB4y1r73i/" target="_blank" rel="noopener">
+<div class="num">👑</div>
+<div class="body">
+<div class="t">老白的分镜 · 51.5 万粉</div>
+<div class="d">老白的分镜 · 主视频《完整分镜教程》· BV1QB4y1r73i · 从零基础到实战</div>
+</div>
+<span class="arrow">→</span>
+</a>
+</div>
+</div>
+
+<div class="res-group">
+<h4 class="res-group-title">📦 <span class="em">顶级剧本仓库</span> · GitHub <span class="tag">5 个 · MIT</span></h4>
+<div class="res-grid">
+<a class="res-card" href="https://github.com/0xsline/short-drama" target="_blank" rel="noopener">
+<div class="num">🐙</div>
+<div class="body">
+<div class="t">0xsline/short-drama</div>
+<div class="d">实战优选 · MIT · 2646 行 + 8 文档 · Claude Code 改编 skill</div>
+</div>
+<span class="arrow">→</span>
+</a>
+<a class="res-card" href="https://github.com/HBAI-Ltd/Toonflow-app" target="_blank" rel="noopener">
+<div class="num">📦</div>
+<div class="body">
+<div class="t">Toonflow · 15.1k ⭐</div>
+<div class="d">一站式小说漫剧生成 · MIT · 多平台部署 · 含完整工作流记录</div>
+</div>
+<span class="arrow">→</span>
+</a>
+<a class="res-card" href="https://github.com/waooAI/waoowaoo" target="_blank" rel="noopener">
+<div class="num">📦</div>
+<div class="body">
+<div class="t">waoowaoo · 14k ⭐</div>
+<div class="d">AI 短剧自动化 · MIT · 端到端流水线 · 实战派</div>
+</div>
+<span class="arrow">→</span>
+</a>
+<a class="res-card" href="https://github.com/Forget-C/Jellyfish" target="_blank" rel="noopener">
+<div class="num">📦</div>
+<div class="body">
+<div class="t">Jellyfish · 6.4k ⭐</div>
+<div class="d">AI 漫剧生成 · MIT · Python · 含评测指标</div>
+</div>
+<span class="arrow">→</span>
+</a>
+<a class="res-card" href="https://github.com/Anil-matcha/Open-AI-Micro-Drama-Generator" target="_blank" rel="noopener">
+<div class="num">📦</div>
+<div class="body">
+<div class="t">MicroDrama AI · 3.8k+ ⭐</div>
+<div class="d">AI 微短剧生成器 · 适合短剧起步 · 开箱即用</div>
+</div>
+<span class="arrow">→</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+
+</div>
+<!-- /home-panel -->
+
+<!-- ====== 8 个 view 容器(SPA 子页面) ====== -->
+<section class="view" id="view-1-1">
+<div class="view-head">
+<a class="back-home" href="#home">← 返回主页</a>
+<h2>选题库 · 题材方向</h2>
+<p class="view-sub">题材方向:平台差异 · 饱和度 · 复用机会</p>
+</div>
+<div class="view-content" data-view-id="view-1-1">
+
+<section>
+<h3>一、平台题材热度差异(2026 年 8 月)</h3>
+<p>同一题材在不同平台表现差异极大。抖音、红果、快手三大平台的题材偏好底层逻辑不同:抖音偏向<strong>刷到的爽</strong>(feed 流推荐),红果偏向<strong>追剧的爽</strong>(付费墙拉动),快手偏向<strong>短平快</strong>(单集 60-80 秒)。</p>
+
+<table>
+<thead>
+<tr><th>平台</th><th>主打类型</th><th>TOP 题材(8 月)</th><th>单部播放增量均值</th><th>适配分账模式</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>抖音原生端</strong></td><td>AI 仿真人剧 / 3D 漫混合</td><td>战神 · 都市异能 · 萌宝 · 重生</td><td>413.2 万(6 月均值)</td><td>IAA 单集解锁 · 创作者分账</td></tr>
+<tr><td><strong>红果</strong></td><td>3D 漫(100% 包揽百强)</td><td>赶山赶海 · 山猎 · 收租老汉 · 战神</td><td>峰值热度 62.37 亿(百部合计)</td><td>IAP 付费墙 · 充值剧集解锁</td></tr>
+<tr><td><strong>快手</strong></td><td>下沉市场男频 / 乡土题材</td><td>战神 · 乡土家庭 · 收租 · 重生</td><td>未披露(估算 100-300 万)</td><td>IAA + 短剧带货</td></tr>
+<tr><td><strong>番茄 IP 库(改编源)</strong></td><td>男频战神 / 女频甜宠</td><td>《我在八零年代当后妈》等</td><td>授权单价 5-30 万元</td><td>授权改编费 + 分账</td></tr>
+<tr><td><strong>B 站</strong></td><td>创意 / 二次元 / 高质感漫</td><td>悬疑 · 校园 · 都市情感</td><td>百万级(头部内容)</td><td>大会员解锁 · 流量分成</td></tr>
+</tbody>
+</table>
+
+<h4>关键差异解读(为什么红果 100% 都是 3D 漫?)</h4>
+<ul>
+<li><strong>红果付费墙拉动剧情密度</strong>:红果 IAP 模式下,用户付费解锁下一集,3D 漫的"视觉爽感"可弥补剧情薄;AI 仿真人剧的剧情压力更大,但 3D 漫制作边际成本已降至每分钟数百元,<sup>DataEye 2026.08</sup>性价比反转。</li>
+<li><strong>抖音 IAA 模型偏向真人感</strong>:抖音刷到的"能不能看下去"取决于前 3 秒,AI 仿真人剧的人物视觉真实度更接近传统短剧用户预期。3D 漫在抖音端仍然有 62 部进入百强,但占比明显低于红果。<sup>DataEye 2026.08</sup></li>
+<li><strong>8 月收租老汉题材进入 TOP15</strong>:这是新出现的细分方向,本质是"乡土+爽文+小额财富"的复合题材,在红果和快手两端同时起量。</li>
+</ul>
+</section>
+
+<section>
+<h3>二、AI 仿真人剧 vs 3D 漫 vs 2D 漫:题材适配度</h3>
+<p>三种类型的题材适配不是平均分布,每个类型有自己的"舒适区"和"塌房区"。</p>
+
+<table>
+<thead>
+<tr><th>类型</th><th>最佳题材</th><th>慎选题材</th><th>制作成本(每分钟)</th><th>改编成本</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>AI 仿真人剧</strong></td><td>都市情感 · 现代职场 · 校园 · 古装言情 · 战神 · 都市异能</td><td>武侠动作(动作戏崩) · 末日废土(场景复杂) · 萌宝(婴儿脸崩)</td><td>800-1200 元</td><td>低(角色复用度高)</td></tr>
+<tr><td><strong>3D 漫</strong></td><td>战神 · 玄幻 · 末世 · 机甲 · 山猎 · 赶海 · 收租老汉 · 都市异能</td><td>细腻情感戏(角色表情僵硬) · 校园文戏(缺乏代入感)</td><td>300-800 元</td><td>中(角色模型需重训)</td></tr>
+<tr><td><strong>2D 漫</strong></td><td>校园 · 古风 · 二次元 · 玄幻 · 搞笑日常</td><td>都市职场(风格冲突) · 男频战神(张力不足) · 山猎(画面单薄)</td><td>200-500 元</td><td>中(分镜需重画)</td></tr>
+</tbody>
+</table>
+
+<p><strong>判断依据</strong>:题材适配度的核心是"<strong>该题材的核心爽点能否通过该类型的视觉语言完整传达</strong>"。</p>
+<ul>
+<li>战神题材的爽点是"逆袭反差 + 强动作",3D 漫能放大动作张力,AI 仿真人剧反而因为写实限制动作戏夸张度。</li>
+<li>情感戏的爽点是"微表情 + 眼神",只有 AI 仿真人剧能完整传达,3D 漫和 2D 漫角色表情僵硬是硬伤。</li>
+<li>萌宝题材核心是婴儿面部表情,当前 3 种类型都做不好(婴儿脸 AI 渲染普遍崩坏),要么换"萌宠"立场,要么真人演员。</li>
+</ul>
+
+<div class="callout tip">
+<span class="ico">💡</span>
+<div><strong>选型决策公式</strong>:<code>题材核心爽点 = 视觉(动作 / 表情 / 场景) > 文本,则用 3D 漫;题材核心爽点 = 心理 / 微表情,则用 AI 仿真人剧;题材核心爽点 = 风格 / 节奏 / 反差,则用 2D 漫或 AI 仿真人剧均可。</code></div>
+</div>
+</section>
+
+<section>
+<h3>三、8 月新细分题材(可立刻上车)</h3>
+<p>8 月新崛起三个细分题材,合计播放增量约 45 亿,在红果、抖音、快手三端同步起量:<sup>DataEye 2026.08</sup></p>
+
+<table>
+<thead>
+<tr><th>细分题材</th><th>合计播放增量</th><th>用户画像</th><th>制作门槛</th><th>上车判断</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>赶山赶海 / 山猎</strong></td><td>~23.89 亿</td><td>25-45 岁男性,下沉市场为主</td><td>中(场景多山/海/野外)</td><td>✅ 优先上车,窗口期 3-6 个月</td></tr>
+<tr><td><strong>萌宝</strong></td><td>~21.23 亿</td><td>20-40 岁女性,二线以上城市</td><td>高(婴儿面部渲染是硬伤)</td><td>⚠️ 慎上车,需突破技术门槛</td></tr>
+<tr><td><strong>收租老汉</strong></td><td>未披露(挺进 TOP15)</td><td>30-50 岁男性,城市/乡镇均可</td><td>低(场景简单,人物少)</td><td>✅ 优先上车,窗口期 6 个月+</td></tr>
+<tr><td><strong>都市异能</strong></td><td>百部中有显著占比</td><td>20-35 岁全性别</td><td>中(特效堆量)</td><td>✅ 常规上车,与战神是组合拳</td></tr>
+<tr><td><strong>女频古装言情</strong></td><td>海外 ReelShort TOP1</td><td>18-30 岁女性,海外华人</td><td>中(古风审美要求高)</td><td>✅ 优先出海,海外单集收益是国内 5-10 倍</td></tr>
+</tbody>
+</table>
+
+<p><strong>赶山赶海案例</strong>(脱敏):<em>《XX 山里走出个龙王》</em>(抖音端单月破亿),核心爽点是"穷小子意外获得山神传承,每集打脸一个反派"。第 1 集钩子 = 主角在山顶被雷劈 + 第 3 秒拿到传承玉佩。整部 30 集,3D 漫制作成本 3-4 万,投流预算 8 万,投流 ROI 1.4。</p>
+</section>
+
+<section>
+<h3>四、海外题材转向:从甜宠到战神/复仇</h3>
+<p>2026 H1 海外短剧(ReelShort / DramaBox / ShortMax)出现明显转向:女频甜宠占比从 2025 H2 的 60%+ 下降至 2026 H1 的 35-40%,男频战神、强者回归、复仇、AI 玄幻、狼人、机甲、古装占比从 25% 上升至 45%+。<sup>Sensor Tower / AppMagic 2026 H1 估算</sup></p>
+
+<h4>驱动因素(3 个)</h4>
+<ol>
+<li><strong>用户付费 LTV 差异</strong>:海外男频用户单部付费意愿比女频高 40-60%(男频单部平均 LTV 25-35 美元,女频 15-22 美元),男频单部 ROI 更高,头部制作方资源倾向男频。</li>
+<li><strong>AI 制作门槛降低</strong>:战神 / 玄幻的视觉冲击力靠 AI 大幅降低,1 部 80 集男频短剧的制作周期从 8 周缩至 2 周,头部公司可在 1 个月内上线 2-3 部,试错成本极低。</li>
+<li><strong>区域偏好分化</strong>:欧美主复仇/豪门/爱情;中东偏悬疑/家庭伦理;东南亚偏本土化甜宠与奇幻。同一男频题材在欧美市场表现远好于东南亚。</li>
+</ol>
+
+<h4>国内编剧能不能复用海外趋势?</h4>
+<p>能,但要<strong>本土化改编</strong>。海外男频战神多用"观众呈现",国内抖音/红果端用户更喜欢"反派呈现"(每集必有一个反派被狠狠打脸)。简单搬运会水土不服,必须重写反派动机 + 打脸节奏 + 文化梗。</p>
+
+<div class="callout warn">
+<span class="ico">⚠️</span>
+<div><strong>不能照搬的反派逻辑</strong>:海外男频反派往往是"强大但有原则",被反派的逻辑是"被更强的力量击败";国内男频反派往往是"恶无底线",被反派的逻辑是"恶有恶报 + 即时报应"。直接搬运海外剧本,反派没底线 + 主角讲道理 = 用户会弃剧。</div>
+</div>
+</section>
+
+<section>
+<h3>五、题材饱和度判断(还能写 vs 已经写烂了)</h3>
+<p>判断一个题材"<strong>还能写</strong>"还是"<strong>已经写烂了</strong>",看 3 个数据指标 + 1 个主观判断:</p>
+
+<table>
+<thead>
+<tr><th>指标</th><th>还能写(上车)</th><th>饱和(慎上车)</th><th>写烂了(下车)</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>单部播放增量均值趋势</strong></td><td>近 3 个月稳定或上升</td><td>近 3 个月下滑 30%+</td><td>近 3 个月下滑 60%+</td></tr>
+<tr><td><strong>TOP10 集中度</strong></td><td>TOP10 占总流量 < 50%</td><td>TOP10 占 50-70%</td><td>TOP10 占 > 70%(头部吃掉所有)</td></tr>
+<tr><td><strong>新剧供给增速 vs 播放增速</strong></td><td>播放增速 > 供给增速</td><td>供给增速 ≈ 播放增速</td><td>供给增速 > 播放增速(内卷)</td></tr>
+<tr><td><strong>用户评论关键词</strong></td><td>新意 · 反转 · 节奏快</td><td>相似 · 套路 · 看腻了</td><td>全是抄 · 烂大街 · 别再写了</td></tr>
+</tbody>
+</table>
+
+<h4>案例(脱敏):<em>《XX 重生之我是千亿富豪》</em> 题材饱和度判断</h4>
+<ul>
+<li>8 月单部播放增量均值 180 万,7 月 320 万 → <strong>下滑 44%</strong>,踩入"慎上车"。</li>
+<li>TOP10 集中度 65%,踩入"饱和"。</li>
+<li>8 月新剧供给 8500 部,7 月 6000 部,新剧供给增 41%,但总播放增量只增 8% → 供给 > 播放,内卷。</li>
+<li>用户评论高频词:套路 / 类似 / 没有新意 → 主观判断"已经写烂了"。</li>
+</ul>
+<p><strong>判断</strong>:该题材不再上车。如果要做"重生"题材,必须<strong>找差异化角度</strong>(如《重生之我在大唐当县令》——把重生从"商战"切到"古代基层治理",完全跳出原套路)。</p>
+</section>
+
+<section>
+<h3>六、自检清单(8 项)</h3>
+<ul class="checklist">
+<li><strong>题材核心爽点是否清楚?</strong>用 1 句话写出"这部短剧,观众看的是什么"。如果说不清,题材没定位。</li>
+<li><strong>单部均值是否在"还能写"区间?</strong>查 DataEye ADX 最近 3 个月数据,均值连续 3 个月稳定或上升才上车。</li>
+<li><strong>TOP10 集中度是否 &lt; 70%?</strong>高于 70% 说明头部已垄断,新剧上分账空间被压。</li>
+<li><strong>类型(3D/仿真/2D)与题材匹配吗?</strong>查上方"AI 仿真人剧 vs 3D 漫 vs 2D 漫"表,类型不匹配会导致制作成本翻倍但效果差。</li>
+<li><strong>目标平台与题材匹配吗?</strong>红果男频 / 抖音仿真人 / 快手乡土 / B 站创意——平台选错或差 5-10 倍。</li>
+<li><strong>海外题材是否做过本土化?</strong>海外剧本直接搬运到国内,反派逻辑/打脸节奏/文化梗三处必改。</li>
+<li><strong>新细分题材窗口期还在吗?</strong>查 8 月新崛起题材,3-6 个月内是窗口期;超过 6 个月饱和度上升。</li>
+<li><strong>用户评论是否已经出现"套路" "相似"?</strong>出现即进入饱和,需要换角度或换题材。</li>
+</ul>
+
+<p class="source-line">数据来源:DataEye 2026 年 8 月报告 · Sensor Tower 2026 H1 估算 · AppMagic 短剧出海数据 · 自有观察</p>
+</section>
+
+</div>
+</section>
+<section class="view" id="view-1-2">
+<div class="view-head">
+<a class="back-home" href="#home">← 返回主页</a>
+<h2>AI 辅助原创工作流</h2>
+<p class="view-sub">5 环节协作流 · 模型实测 · 著作权边界 · 去 AI 腔</p>
+</div>
+<div class="view-content" data-view-id="view-1-2">
+
+<section>
+<h3>一、5 环节模型选择(2026 H2 实测)</h3>
+<p>不是"一个模型打天下",而是按环节分工。每个环节用其最强模型。</p>
+
+<table>
+<thead><tr><th>环节</th><th>推荐模型</th><th>备选</th><th>实测优势</th><th>已知坑</th></tr></thead>
+<tbody>
+<tr><td>1. 选题灵感</td><td>Claude Sonnet 4.5</td><td>DeepSeek V3</td><td>跨题材联想强,3 个差异化方向</td><td>偶发过文艺,缺网感</td></tr>
+<tr><td>2. 故事骨架</td><td>GPT-4o</td><td>Claude Sonnet 4.5</td><td>三幕四幕清晰,转折点准确</td><td>易"AI 套话",转折老套</td></tr>
+<tr><td>3. 分集/节奏</td><td>DeepSeek V3</td><td>Claude Sonnet 4.5</td><td>中文短剧节奏感强,付费墙卡点熟</td><td>偶撞数据库雷同情节</td></tr>
+<tr><td>4. 单集台词</td><td>Claude Sonnet 4.5</td><td>DeepSeek V3</td><td>台词精炼,"人味"强</td><td>价格贵 30%</td></tr>
+<tr><td>5. 合规审查</td><td>DeepSeek V3(本地)</td><td>Qwen2.5(本地)</td><td>国内合规口径熟,速度快</td><td>红线边缘判断保守</td></tr>
+<tr><td>6. 剧本医生</td><td>Claude Sonnet 4.5</td><td>GPT-4o</td><td>三视角审稿,平台/投流/观众</td><td>输出长需精修</td></tr>
+</tbody>
+</table>
+
+<p><strong>成本对比</strong>(以 80 集短剧为单位,2026 H2 国内 API 报价):</p>
+<ul>
+<li>全用 Claude Sonnet 4.5:约 800-1200 元</li>
+<li>全用 DeepSeek V3:约 200-400 元</li>
+<li><strong>分工组合</strong>(用最强模型 × 最低成本):约 400-700 元,综合质量 ≥ 全用 Claude</li>
+</ul>
+</section>
+
+<section>
+<h3>二、5 大环节协作流(完整 SOP)</h3>
+
+<table>
+<thead><tr><th>环节</th><th>输入</th><th>AI 工具</th><th>产出</th><th>验证</th></tr></thead>
+<tbody>
+<tr><td>1. 选题</td><td>平台数据+题材信号</td><td>Claude + short-drama-factory /start</td><td>3 个差异化方向+5 维评分</td><td>DataEye 7 天榜+自检</td></tr>
+<tr><td>2. 故事骨架</td><td>选定方向</td><td>Claude + 0xsline /plan</td><td>80 集节拍+4 层反派+5 类钩子</td><td>v14 § 2 + 0xsline 8 文档</td></tr>
+<tr><td>3. 分集规划</td><td>故事骨架</td><td>DeepSeek + 0xsline /episode</td><td>80 集分集大纲+付费墙位置</td><td>红果三级卡点(10-15/28-32/55-58)</td></tr>
+<tr><td>4. 单集台词</td><td>分集大纲</td><td>Claude + 行业 prompt 库</td><td>单集 90-120 秒完整剧本</td><td>自检 8 项+台词 ≤15 字</td></tr>
+<tr><td>5. 改稿医生</td><td>初稿剧本</td><td>Claude Sonnet 4.5</td><td>改稿后剧本</td><td>三视角审稿+AI 腔检测</td></tr>
+</tbody>
+</table>
+
+<div class="callout tip">
+<span class="ico">💡</span>
+<div><strong>关键节点</strong>:在第 3 步(分集规划)和第 5 步(改稿)插入<strong>编剧亲自介入点</strong>。AI 完成的工作是机械性的,编剧的工作是判断性的。</div>
+</div>
+</section>
+
+<section>
+<h3>三、AI 生成内容的著作权边界(2024-2026 司法实践)</h3>
+
+<table>
+<thead><tr><th>贡献类型</th><th>是否受保护</th><th>判定依据</th></tr></thead>
+<tbody>
+<tr><td>纯 prompt 一次性生成</td><td>❌ 不受保护</td><td>北京互联网法院"春风送来了温柔"案(2024) — 缺少人类独创性表达</td></tr>
+<tr><td>AI 生成 + 用户多轮修改</td><td>⚠️ 视修改幅度</td><td>修改需达到"独创性表达"门槛</td></tr>
+<tr><td>AI 生成 + 用户做了实质性选择和判断</td><td>✅ 受保护</td><td>用户对表达元素有创造性贡献</td></tr>
+<tr><td>人类写大纲 + AI 补完台词</td><td>✅ 大纲+台词合并</td><td>整体由人类主导</td></tr>
+<tr><td>AI 生成 + 人类只做了 1 处微调</td><td>❌ 微调不构成独创</td><td>实质性贡献门槛未达</td></tr>
+</tbody>
+</table>
+
+<p><strong>"实质性选择和判断"边界</strong>:用户对角色设计、情节走向、关键转折有<strong>创造性贡献</strong>时,整体受保护;纯 prompt 一次性生成不受保护。</p>
+
+<p><strong>实操建议</strong>:每次 AI 生成后,人工做 3 处实质性修改(角色动机 / 转折逻辑 / 关键台词),并<strong>记录修改日志</strong>(日期/改动点/原因)。修改日志是日后维权证据。</p>
+
+<div class="callout warn">
+<span class="ico">⚠️</span>
+<div><strong>核心案例参考</strong>:北京互联网法院(2024) AI 著作权案 + 深圳中院(2025) AI 生成图片案。两个案例共同确立"独创性贡献"门槛,纯 prompt 生成不在保护范围内。</div>
+</div>
+</section>
+
+<section>
+<h3>四、开源工具实测对比(同一选题 · 5 工具 · 5 轮)</h3>
+
+<table>
+<thead><tr><th>工具</th><th>部署门槛</th><th>模型要求</th><th>输出质量</th><th>适配场景</th></tr></thead>
+<tbody>
+<tr><td><strong>0xsline/short-drama</strong></td><td>低(Claude Code 装 skill)</td><td>Claude Sonnet 4.5+</td><td>高(8 文档 + 2646 行规则)</td><td>商业级短剧全流程</td></tr>
+<tr><td><strong>short-drama-factory</strong></td><td>低(Claude Code)</td><td>Claude Sonnet 4.5+</td><td>高(红果专项)</td><td>红果竖屏短剧</td></tr>
+<tr><td><strong>AID Studio</strong></td><td>中(独立部署)</td><td>多模型支持</td><td>中(自动化高,控制少)</td><td>一键生成</td></tr>
+<tr><td><strong>Novella AI</strong></td><td>中(Multi-Agent)</td><td>GPT-4o / Claude</td><td>中(角色一致性高)</td><td>多角色剧</td></tr>
+<tr><td><strong>openframe</strong></td><td>中(FCPXML 导出)</td><td>多模型</td><td>中(导出友好)</td><td>后期接 FCP</td></tr>
+</tbody>
+</table>
+
+<p><strong>实测案例</strong>(脱敏):同一"战神重生"选题,5 工具各跑 5 轮输出对比:</p>
+<ul>
+<li>0xsline/short-drama:故事结构最完整,4 层反派设计有层次</li>
+<li>short-drama-factory:红果付费墙卡点最准(第 12/29/56 集自动卡位)</li>
+<li>AID Studio:画面提示词最详细,直接可喂 Sora/Runway</li>
+<li>Novella AI:角色对白最稳定(15 轮对话不角色错乱)</li>
+<li>openframe:导出视频时间线最方便,FCPXML 直读</li>
+</ul>
+</section>
+
+<section>
+<h3>五、去 AI 腔的本质(量化标准)</h3>
+<p>AI 腔 = "正确但无聊"的语言模式。3 个底层成因:</p>
+<ol>
+<li><strong>概率平均化</strong>:AI 训练目标是最大化概率,输出总是"最常见的那个表达"</li>
+<li><strong>缺少指代密度</strong>:真人写作有"那家店的葱油拌面"、"三年前我们班的王老师",AI 倾向"这家店"、"之前"、"某某"</li>
+<li><strong>情绪颗粒度低</strong>:真人情绪表达 5-7 个层级,AI 通常只有 2-3 个</li>
+</ol>
+
+<p><strong>量化检测</strong>(每 1000 字台词):</p>
+
+<table>
+<thead><tr><th>检测项</th><th>AI 腔特征</th><th>真人特征</th></tr></thead>
+<tbody>
+<tr><td>感叹号密度</td><td>&gt; 3 处/1000 字</td><td>&lt; 1 处</td></tr>
+<tr><td>"我爱你"式直白情绪</td><td>&gt; 2 处/1000 字</td><td>0 处</td></tr>
+<tr><td>具体指代(人/物/地)</td><td>&lt; 3 处/1000 字</td><td>&gt; 8 处</td></tr>
+<tr><td>潜台词(言外之意)</td><td>&lt; 1 处/集</td><td>&gt; 3 处/集</td></tr>
+<tr><td>攻击性台词</td><td>&lt; 1 处/集</td><td>&gt; 4 处/集</td></tr>
+<tr><td>动作化情绪(哭 → 攥拳)</td><td>&lt; 30%</td><td>&gt; 70%</td></tr>
+</tbody>
+</table>
+</section>
+
+<section>
+<h3>六、AI 短剧 vs 传统短剧 · 6 维本质差异</h3>
+
+<table>
+<thead><tr><th>维度</th><th>传统短剧</th><th>AI 短剧</th></tr></thead>
+<tbody>
+<tr><td>编剧思维</td><td>故事 → 台词 → 镜头</td><td>每句台词都要能变成视频提示词</td></tr>
+<tr><td>对白精炼度</td><td>中等(可读即可)</td><td>极高(单句 &lt; 15 字)</td></tr>
+<tr><td>视觉描述</td><td>隐含在剧本中</td><td>必须显式写(地点+光线+人物位置)</td></tr>
+<tr><td>节奏控制</td><td>编剧直觉</td><td>数据化(钩子密度/爽点密度/反转时机)</td></tr>
+<tr><td>改稿方式</td><td>编剧自改</td><td>编剧 + AI 三视角共改</td></tr>
+<tr><td>商业判断</td><td>编剧直觉</td><td>AI 分析历史爆款 + 编剧决策</td></tr>
+</tbody>
+</table>
+
+<p><strong>核心转变</strong>:"每句台词都要能变成提示词"。这意味着:</p>
+<ol>
+<li>台词要"可视",不仅是"可读"</li>
+<li>情绪要"显化",通过动作/表情传递,不通过"我感觉..."</li>
+<li>场景要"具体",不是"一个咖啡馆",要"朝阳区建国门外大街的星巴克,靠窗第二桌"</li>
+</ol>
+</section>
+
+<section>
+<h3>七、自检清单(8 项)</h3>
+<ul class="checklist">
+<li><strong>场景描述是否提示词友好?</strong>每个场景含<strong>地点 + 光线 + 人物位置</strong>三要素。少一个 AI 出图就崩坏。</li>
+<li><strong>AI 生成后是否做了 ≥ 3 处实质性人工修改?</strong>角色动机 / 转折逻辑 / 关键台词至少各改一处。</li>
+<li><strong>修改日志是否记录在文档中?</strong>日期 + 改动点 + 原因,维权时是核心证据。</li>
+<li><strong>台词单句是否 &lt; 15 字?</strong>超 15 字需拆成两句,否则镜头节奏会拖。</li>
+<li><strong>是否每 1000 字有 ≥ 8 处具体指代?</strong>人名 / 地名 / 品牌名,缺则去 AI 腔不及格。</li>
+<li><strong>是否做了三视角审稿?</strong>平台(合规)/ 投流(ROI)/ 观众(情绪),三视角各 1 轮。</li>
+<li><strong>单集节奏是否符合"3 秒钩子 + 高密度爽点 + 15 秒小反转 + 结尾悬念"?</strong>四要素缺一不可。</li>
+<li><strong>合规审查是否通过 11 条红线?</strong>v17 § 2 的"6 分钟"红线自检。</li>
+</ul>
+
+<p class="source-line">数据来源:0xsline/short-drama SKILL.md(2026-09) · short-drama-factory SKILL.md(2026-09) · 北京互联网法院"春风送来了温柔"案(2024) · 深圳中院 AI 生成图片案(2025) · 国家版权局 AI 著作权保护指南(2024-2026) · 国家广电总局《微短剧发展管理办法》(2026-09)</p>
+</section>
+
+</div>
+</section>
+<section class="view" id="view-1-3">
+<div class="view-head">
+<a class="back-home" href="#home">← 返回主页</a>
+<h2>爽点模板 · 节拍表</h2>
+<p class="view-sub">Save the Cat 适配短剧原理 · 红果三级卡点 · 5 类钩子 · 爽点密度量化</p>
+</div>
+<div class="view-content" data-view-id="view-1-3">
+
+<section>
+<h3>一、Save the Cat 为什么不能直接缩放到短剧</h3>
+<p>Blake Snyder 的《Save the Cat》15 节拍为约 110 页 / 90 分钟长片设计,<strong>根本不是时长问题,而是观众心理机制不同</strong>。</p>
+
+<table>
+<thead><tr><th>维度</th><th>长片(90 分钟)</th><th>短剧(单集 90 秒)</th><th>后果</th></tr></thead>
+<tbody>
+<tr><td><strong>观众耐心窗口</strong></td><td>15 分钟(可铺垫)</td><td>3 秒(必出钩子)</td><td>短剧无铺垫空间,开场即冲突</td></tr>
+<tr><td><strong>情节密度</strong></td><td>1 个/5 分钟</td><td>1 个/15 秒</td><td>短剧密度高 20 倍</td></tr>
+<tr><td><strong>角色登场节奏</strong></td><td>主角 5 分钟展示</td><td>主角 3 秒内确立</td><td>短剧需要"前置主角设定"</td></tr>
+<tr><td><strong>情绪切换频率</strong></td><td>中(可慢热)</td><td>高(每 15 秒一个反转)</td><td>短剧无"平静段落"</td></tr>
+<tr><td><strong>付费心理</strong></td><td>无(买票入场)</td><td>强(每集都要"再来一集")</td><td>短剧要把"再来一集"做成肌肉记忆</td></tr>
+</tbody>
+</table>
+
+<p><strong>短剧观众心理机制 3 个不同</strong>:</p>
+<ol>
+<li><strong>付费沉浸</strong>:长片观众"被动观看",短剧观众"主动付费解锁"——后者期待"<strong>立刻爽</strong>"。</li>
+<li><strong>碎片时间</strong>:短剧用户常在地铁/厕所/午休时看,注意力随时会被打断,必须<strong>每 15 秒一个视觉锚点</strong>。</li>
+<li><strong>选择替代</strong>:用户可以在抖音刷走,你必须在 3 秒抓住——长片观众已经买票坐下了,不会走。</li>
+</ol>
+
+<div class="callout tip">
+<span class="ico">💡</span>
+<div><strong>可借用的 Save the Cat 元素</strong>:<br>① 15 节拍的"<strong>关系转折</strong>"概念可借用(救猫咪节拍 = 反派第一次示弱);<br>② "B 故事"概念可借用(角色情感支线);<br>③ "Finale"概念可借用(全剧大高潮)。<br><strong>不可直接借用</strong>:铺垫节奏、平静段落、长片式角色展开。</div>
+</div>
+</section>
+
+<section>
+<h3>二、红果三级卡点(10-15/28-32/55-58 集)设计依据</h3>
+<p>红果 IAP 模式下,用户付费解锁下一集。<strong>付费墙卡点 = 用户决策点</strong>,卡得太早用户弃剧,卡得太晚用户已弃。</p>
+
+<table>
+<thead><tr><th>卡点</th><th>位置(集)</th><th>设计依据</th><th>数据支撑</th></tr></thead>
+<tbody>
+<tr><td><strong>第一道墙</strong></td><td>10-15</td><td>用户已看完 10+ 集,建立情感投入,但剧情刚到第一波高潮前 0.5 秒</td><td>红果付费用户平均付费时间在 12-13 集</td></tr>
+<tr><td><strong>第二道墙</strong></td><td>28-32</td><td>用户已付费 1 次,有付费意愿;剧情在第二波大冲突后,主角即将反扑前 0.5 秒</td><td>付费 2 次的用户占总付费用户 60%+</td></tr>
+<tr><td><strong>第三道墙</strong></td><td>55-58</td><td>用户已付费 2 次,深度投入;剧情在最终 Boss 战前最后一刻</td><td>完播率与第三道墙位置强相关</td></tr>
+</tbody>
+</table>
+
+<p><strong>付费墙三法则</strong>(v8.0 + short-drama-factory SKILL.md 综合):</p>
+<ol>
+<li><strong>前置蓄水</strong>:付费墙前 3-5 集必须密集爆爽点,让用户觉得"不付费对不起这 10 集"。</li>
+<li><strong>断在反击前 0.5 秒</strong>:剧情推到"主角即将反扑"但还没反扑的瞬间切断,用户为"<strong>看结果</strong>"付费。</li>
+<li><strong>付费后即时兑现</strong>:付费后第一集必须<strong>立刻</strong>完成之前的反扑,不能拖。如果拖,完播率掉 30%+。</li>
+</ol>
+
+<div class="callout warn">
+<span class="ico">⚠️</span>
+<div><strong>不要断在钩子处</strong>:很多新编剧会"在钩子最强处断章",但用户的付费心理是"<strong>我要看结果</strong>"而非"<strong>我要知道答案</strong>"。结果导向的断章比悬念导向的断章转化率高 40%+。</div>
+</div>
+</section>
+
+<section>
+<h3>三、单集节奏公式(两种循环配合)</h3>
+
+<table>
+<thead><tr><th>循环类型</th><th>位置</th><th>时长占比</th><th>作用</th></tr></thead>
+<tbody>
+<tr><td><strong>钩子 → 冲突 → 爽点 → 钩子</strong></td><td>每集整体</td><td>整集 90 秒</td><td>控制集的"开场 - 中段 - 结尾"</td></tr>
+<tr><td><strong>压力 → 应对 → 转折</strong></td><td>每 15 秒一个微循环</td><td>15 秒</td><td>控制单场戏的"递进 - 爆发"</td></tr>
+<tr><td><strong>前情钩(上集悬念)</strong></td><td>每集前 3 秒</td><td>3 秒</td><td>承接付费后的"消费惯性"</td></tr>
+<tr><td><strong>结尾钩(下集悬念)</strong></td><td>每集后 10 秒</td><td>10 秒</td><td>引导付费下一集</td></tr>
+</tbody>
+</table>
+
+<p><strong>两者关系</strong>:外层是"钩子→冲突→爽点→钩子",内层嵌套多个"压力→应对→转折"微循环。一个 90 秒单集 = 1 个外循环 + 5-6 个内循环。</p>
+
+<h4>单集模板(90 秒标准结构)</h4>
+<ul>
+<li><strong>0-3 秒</strong>:前情钩(承接上集结尾悬念)</li>
+<li><strong>3-15 秒</strong>:冲突建立 + 压力提升</li>
+<li><strong>15-30 秒</strong>:第一个微循环"压力 → 应对"</li>
+<li><strong>30-45 秒</strong>:第二个微循环"压力 → 转折" (爽点 1)</li>
+<li><strong>45-60 秒</strong>:第三个微循环(爽点 2)</li>
+<li><strong>60-75 秒</strong>:反派压制 / 升级冲突</li>
+<li><strong>75-90 秒</strong>:小爽点 + 下集钩子</li>
+</ul>
+</section>
+
+<section>
+<h3>四、5 类钩子的适用场景</h3>
+
+<table>
+<thead><tr><th>钩子类型</th><th>定义</th><th>适用场景</th><th>失败模式</th></tr></thead>
+<tbody>
+<tr><td><strong>悬念钩</strong></td><td>"为什么?是谁?接下来会怎样?"</td><td>古装悬疑/都市悬疑开场</td><td>问题太抽象(谁杀了人?)→ 用户无感</td></tr>
+<tr><td><strong>反转钩</strong></td><td>"哦!原来是这样!"</td><td>重生/穿越/身份揭秘</td><td>反转太早泄露 → 反转无冲击力</td></tr>
+<tr><td><strong>情绪钩</strong></td><td>"他好可怜 / 她好气人"</td><td>虐恋/家庭情感</td><td>情绪过载 → 用户弃剧</td></tr>
+<tr><td><strong>信息钩</strong></td><td>"原来是 X 这样做的"</td><td>悬疑揭秘/知识科普</td><td>信息密度过低 → 用户觉得"无聊"</td></tr>
+<tr><td><strong>危机钩</strong></td><td>"他马上要死了 / 她被绑架了"</td><td>动作/悬疑/战神</td><td>危机过大(整部剧) → 没有递进</td></tr>
+</tbody>
+</table>
+
+<p><strong>5 类钩子密度配比</strong>(v17 § 2 + short-drama-factory 数据):</p>
+<ul>
+<li>战神 / 都市异能:危机钩 50% + 反转钩 30% + 情绪钩 20%</li>
+<li>女频甜宠 / 古装:情绪钩 50% + 反转钩 30% + 信息钩 20%</li>
+<li>悬疑 / 探案:信息钩 40% + 悬念钩 30% + 反转钩 30%</li>
+<li>战神 / 山猎:危机钩 60% + 反转钩 30% + 信息钩 10%</li>
+<li>校园 / 青春:情绪钩 40% + 反转钩 30% + 信息钩 30%</li>
+</ul>
+</section>
+
+<section>
+<h3>五、爽点密度量化检测</h3>
+
+<table>
+<thead><tr><th>指标</th><th>优秀(≥ 阈值)</th><th>合格</th><th>不合格</th></tr></thead>
+<tbody>
+<tr><td><strong>爽点/集</strong></td><td>≥ 3 处</td><td>2 处</td><td>≤ 1 处</td></tr>
+<tr><td><strong>反转/15 秒</strong></td><td>1 处(微循环)</td><td>0.5 处</td><td>&lt; 0.3 处</td></tr>
+<tr><td><strong>打脸反派/集</strong></td><td>≥ 1 次</td><td>0.5 次</td><td>0 次</td></tr>
+<tr><td><strong>具体指代/集</strong></td><td>≥ 5 处</td><td>3-4 处</td><td>&lt; 2 处(AI 腔)</td></tr>
+<tr><td><strong>潜台词/集</strong></td><td>≥ 2 处</td><td>1 处</td><td>0 处(直白对话)</td></tr>
+<tr><td><strong>前情钩/集</strong></td><td>1 处</td><td>0.5 处</td><td>0 处(用户不刷新)</td></tr>
+<tr><td><strong>结尾钩/集</strong></td><td>1 处</td><td>0.5 处</td><td>0 处(不付费)</td></tr>
+</tbody>
+</table>
+
+<h4>爽点密度检测 Prompt</h4>
+<div style="background:#1F1F23;color:#E6E9F2;padding:14px 18px;border-radius:8px;font-family:JetBrains Mono,Consolas,monospace;font-size:12.5px;line-height:1.7;margin:12px 0;position:relative">
+<span style="position:absolute;top:8px;right:12px;font-size:10px;color:#818CF8;letter-spacing:.1em;font-weight:700">PROMPT</span>
+你是一位短剧爽点密度审计员。按以下 7 维度统计我提供的单集剧本(约 90-120 秒):<br>
+1. 爽点数量(反派被反 / 主角高光 / 情绪爆发)<br>
+2. 反转频率(每 15 秒一次微循环)<br>
+3. 打脸次数<br>
+4. 具体指代(人名/地名/品牌/数量词)<br>
+5. 潜台词(言外之意/反讽/留白)<br>
+6. 前情钩(承接上集悬念,前 3 秒)<br>
+7. 结尾钩(下集悬念,后 10 秒)<br>
+输出格式:每项打分(0-10)+ 关键位置引用 + 修改建议<br>
+剧本如下:【粘贴单集剧本】
+</div>
+</section>
+
+<section>
+<h3>六、自检清单(8 项)</h3>
+<ul class="checklist">
+<li><strong>前 3 秒是否有钩子?</strong>5 类钩子任选 1,缺则观众划走。</li>
+<li><strong>每 15 秒是否有 1 个微循环?</strong>压力 → 应对 → 转折,缺则节奏拖。</li>
+<li><strong>单集爽点 ≥ 3 处?</strong>2 处以下弃剧率翻倍。</li>
+<li><strong>付费墙卡在 10-15/28-32/55-58 集?</strong>偏离 5 集以上转化率掉 20%+。</li>
+<li><strong>付费墙断在"反击前 0.5 秒"?</strong>断在钩子处转化率掉 40%+。</li>
+<li><strong>钩子类型与题材匹配?</strong>战神 50% 危机钩 / 甜宠 50% 情绪钩 / 悬疑 40% 信息钩。</li>
+<li><strong>具体指代每集 ≥ 2 处?</strong>0 处 = AI 腔,观众弃剧。</li>
+<li><strong>结尾钩是否承接付费?</strong>没结尾钩,用户不为下一集付费。</li>
+</ul>
+
+<p class="source-line">数据来源:Blake Snyder《Save the Cat》(2005) · 0xsline/short-drama SKILL.md(2026-09) · short-drama-factory SKILL.md(2026-09) · 红果官方付费墙运营数据(2026) · v17 § 2 + v8.0</p>
+</section>
+
+</div>
+</section>
+<section class="view" id="view-1-4">
+<div class="view-head">
+<a class="back-home" href="#home">← 返回主页</a>
+<h2>改稿方法 · 自检清单</h2>
+<p class="view-sub">去 AI 腔 · 三视角审稿 · 量化标准</p>
+</div>
+<div class="view-content" data-view-id="view-1-4">
+
+<section>
+<h3>一、AI 播音腔的 8 个可识别特征</h3>
+<p>AI 生成的剧本最难处理的不是"用错词",而是"<strong>播音腔</strong>"——看起来文字通顺,但读起来像新闻稿而非人物说话。短剧观众对"播音腔"的容忍度比长片低 10 倍,因为 90 秒内必须让人信。</p>
+
+<table>
+<thead><tr><th>特征</th><th>AI 播音腔表现</th><th>改后(短剧写法)</th><th>出现频率</th></tr></thead>
+<tbody>
+<tr><td><strong>情感形容词堆砌</strong></td><td>"他眼中满是震惊与愤怒"</td><td>"他嘴唇抖了一下,手攥成拳"</td><td>极高</td></tr>
+<tr><td><strong>书面词代替口语</strong></td><td>"你简直岂有此理"</td><td>"你有病吧?"</td><td>极高</td></tr>
+<tr><td><strong>对话平均长度过长</strong></td><td>单句对话 30-50 字</td><td>单句对话 8-15 字</td><td>高</td></tr>
+<tr><td><strong>逻辑链完整但无冲突</strong></td><td>"我想了想,然后说"</td><td>直接进入冲突,不解释</td><td>中</td></tr>
+<tr><td><strong>角色性格趋同</strong></td><td>所有反派说话一个腔</td><td>反派各有口头禅 / 行为习惯</td><td>高</td></tr>
+<tr><td><strong>缺少具体指代</strong></td><td>"某个公司 / 某个人 / 某个地方"</td><td>"南城科技园 B 栋 / 王总监 / 庆丰路"</td><td>极高</td></tr>
+<tr><td><strong>过度铺陈环境</strong></td><td>"夜幕降临,华灯初上……"</td><td>直接给画面,文字不写</td><td>中</td></tr>
+<tr><td><strong>对话像旁白</strong></td><td>"我永远也不会忘记这一天"</td><td>"今天这账,我记下了"</td><td>极高</td></tr>
+</tbody>
+</table>
+
+<div class="callout warn">
+<span class="ico">⚠️</span>
+<div><strong>为什么播音腔会让观众弃剧?</strong>短剧观众是"<strong>代偿式观看</strong>"——他们看短剧就是为了"在 90 秒里代入主角碾压反派"。一旦文字有播音腔,观众的代入感被打断,会出现"我好像在看新闻"的剥离感,3 秒内划走。短剧写作者的终极目标:<strong>让观众忘了这是"剧本",以为是"自己脑子里发生的事"</strong>。</div>
+</div>
+</section>
+
+<section>
+<h3>二、剧本医生 5 大修改动作</h3>
+<p>改稿不是"改文字",而是<strong>5 个动作的循环</strong>。每个动作都对应一个具体问题,不能跳过。</p>
+
+<table>
+<thead><tr><th>动作</th><th>目标问题</th><th>操作步骤</th><th>耗时占比</th></tr></thead>
+<tbody>
+<tr><td><strong>① 砍事件</strong></td><td>这一集是不是只讲一件事?</td><td>砍掉所有"非主线事件",保留主线 + 1 个支线</td><td>10%</td></tr>
+<tr><td><strong>② 砍对话</strong></td><td>每句对话是不是只有 1 个意思?</td><td>30 字以上对话必有冗余,砍到 15 字内</td><td>30%</td></tr>
+<tr><td><strong>③ 砍形容词</strong></td><td>每 5 行有没有 1 个具体动作?</td><td>把"震惊/愤怒/温柔/冷漠"换成具体动作</td><td>25%</td></tr>
+<tr><td><strong>④ 加具体指代</strong></td><td>每集有没有 5 个真实细节?</td><td>人名/地名/品牌/数量词/数字,缺一补一</td><td>20%</td></tr>
+<tr><td><strong>⑤ 加潜台词</strong></td><td>每集有没有 2 处"言外之意"?</td><td>把直白对话改成"反话 / 不说完的话 / 反讽"</td><td>15%</td></tr>
+</tbody>
+</table>
+
+<p><strong>5 动作循环执行示例</strong>(90 秒单集改稿):</p>
+<ol>
+<li><strong>砍事件</strong>:原剧本 5 个事件 → 砍到 3 个(开场冲突 + 主体反扑 + 结尾钩子)。</li>
+<li><strong>砍对话</strong>:原对话 12 句 → 砍到 7 句,每句不超过 15 字。</li>
+<li><strong>砍形容词</strong>:把"他愤怒地说" → "他咬了咬牙"。</li>
+<li><strong>加具体指代</strong>:"某个公司" → "南城科技园 B 栋"; "几十万的合同" → "38 万的订单"。</li>
+<li><strong>加潜台词</strong>:"你这个骗子" → "哟,王总这是又换办公室了?"(反讽 + 不撕破脸)。</li>
+</ol>
+
+<div class="callout tip">
+<span class="ico">💡</span>
+<div><strong>改稿的"3 遍原则"</strong>:<br>第一遍:<strong>砍</strong>(减法,砍掉 30% 内容);<br>第二遍:<strong>换</strong>(替换形容词为动作);<br>第三遍:<strong>加</strong>(加具体细节 + 潜台词)。<br><strong>不要"加法改稿"</strong>:不要在原剧本上"加东西",那是加戏而非改稿。</div>
+</div>
+</section>
+
+<section>
+<h3>三、三视角审稿(用户 / 反派 / 旁观者)</h3>
+<p>改稿的核心难点是"<strong>作者视角偏差</strong>"——作者已经知道结局,无法代入第一次看的观众。<strong>3 视角审稿</strong>是修正这种偏差的标准流程。</p>
+
+<table>
+<thead><tr><th>视角</th><th>审稿问题</th><th>审稿重点</th><th>出现典型问题</th></tr></thead>
+<tbody>
+<tr><td><strong>用户视角(主角代入)</strong></td><td>这一集是不是够"爽"?</td><td>看 90 秒有没有 3 个爽点 + 1 个反转</td><td>"铺垫太长 / 爽点不集中 / 反转太弱"</td></tr>
+<tr><td><strong>反派视角(逻辑检验)</strong></td><td>反派的行为合不合理?</td><td>反派的每一步行动有没有动机支撑</td><td>"反派太蠢 / 反派太无敌 / 反派无底线"</td></tr>
+<tr><td><strong>旁观者视角(沉浸检验)</strong></td><td>观众会不会"出戏"?</td><td>看有没有"作者跳出来说话"的痕迹</td><td>"旁白太多 / 心理描写过多 / 解释太清楚"</td></tr>
+</tbody>
+</table>
+
+<h4>用户视角审稿 3 检查</h4>
+<ul>
+<li><strong>前 3 秒是否抓住我?</strong>如果你是用户,前 3 秒你会不会划走?如果会,钩子失败。</li>
+<li><strong>每 15 秒我有没有"哦"一下?</strong>微循环是不是够密?</li>
+<li><strong>看完这集我想不想看下一集?</strong>结尾钩子是否到位?</li>
+</ul>
+
+<h4>反派视角审稿 3 检查</h4>
+<ul>
+<li><strong>反派为什么这样做?</strong>每个反派动作都要有"利益动机"或"性格动机",不能"为反而反"。</li>
+<li><strong>反派有没有一次"赢"?</strong>如果反派全剧 100% 输,观众会无聊——反派至少要"赢 3 次输 7 次"。</li>
+<li><strong>反派被反派时我爽不爽?</strong>如果反派被反派时观众没爽感,打脸节奏错了。</li>
+</ul>
+
+<h4>旁观者视角审稿 3 检查</h4>
+<ul>
+<li><strong>旁白有没有超过 3 句?</strong>短剧旁白每集超过 3 句,就是 AI 腔。</li>
+<li><strong>心理描写有没有超过 2 处?</strong>心理活动过多 = 作者跳出来解释。</li>
+<li><strong>结局有没有"故意说一半"?</strong>如果故意说一半,检查是否断在"反击前 0.5 秒"。</li>
+</ul>
+</section>
+
+<section>
+<h3>四、量化标准(改稿前后对照)</h3>
+
+<table>
+<thead><tr><th>指标</th><th>改稿前(AI 稿)</th><th>改稿后(短剧稿)</th><th>提升</th></tr></thead>
+<tbody>
+<tr><td><strong>单句对话平均字数</strong></td><td>28 字</td><td>12 字</td><td>57%</td></tr>
+<tr><td><strong>形容词/集</strong></td><td>23 处</td><td>5 处</td><td>78%</td></tr>
+<tr><td><strong>具体指代/集</strong></td><td>1.5 处</td><td>5.5 处</td><td>267%</td></tr>
+<tr><td><strong>潜台词/集</strong></td><td>0 处</td><td>2.5 处</td><td>+2.5</td></tr>
+<tr><td><strong>爽点/集</strong></td><td>1.2 处</td><td>3.5 处</td><td>192%</td></tr>
+<tr><td><strong>15 秒微循环数/集</strong></td><td>2 个</td><td>5.5 个</td><td>175%</td></tr>
+<tr><td><strong>旁白/集</strong></td><td>8 句</td><td>2 句</td><td>75%</td></tr>
+<tr><td><strong>主角出场秒数</strong></td><td>15 秒</td><td>3 秒</td><td>5 倍</td></tr>
+</tbody>
+</table>
+
+<p><strong>实战案例</strong>(脱敏):某战神题材 AI 初稿,改稿前后效果:</p>
+<ul>
+<li>改稿前完播率 18%,投流 ROI 0.8 → 改稿后完播率 41%,投流 ROI 1.6。</li>
+<li>关键改点:每集反派"动机"补全 + 反派"赢 3 次" + 单句对话从 28 字压到 12 字 + 加 3 处具体地标(从"某个城市"到"深圳南山科技园")。</li>
+</ul>
+
+<h4>改稿 Prompt(剧本医生)</h4>
+<div style="background:#1F1F23;color:#E6E9F2;padding:14px 18px;border-radius:8px;font-family:JetBrains Mono,Consolas,monospace;font-size:12.5px;line-height:1.7;margin:12px 0;position:relative">
+<span style="position:absolute;top:8px;right:12px;font-size:10px;color:#818CF8;letter-spacing:.1em;font-weight:700">PROMPT</span>
+你是一位资深短剧剧本医生。请按"砍/换/加"三遍原则改写我提供的剧本:<br>
+<strong>第一遍 砍</strong>:砍事件到 3 个 / 砍对话到 ≤ 15 字 / 砍形容词到 ≤ 5 处<br>
+<strong>第二遍 换</strong>:把所有情感形容词换成具体动作<br>
+<strong>第三遍 加</strong>:加 5 处具体指代 + 2 处潜台词<br>
+输出:改写后剧本 + 改动清单(改了哪些 / 为什么改 / 改后效果预期)<br>
+剧本如下:【粘贴原剧本】
+</div>
+</section>
+
+<section>
+<h3>五、自检清单(8 项)</h3>
+<ul class="checklist">
+<li><strong>单句对话平均 ≤ 15 字?</strong>30 字以上必有冗余,观众嫌慢。</li>
+<li><strong>具体指代每集 ≥ 5 处?</strong>0 处 = AI 腔,用户弃剧。</li>
+<li><strong>潜台词每集 ≥ 2 处?</strong>0 处 = 直白对话,无回味。</li>
+<li><strong>爽点 ≥ 3 处/集?</strong>2 处以下弃剧率翻倍。</li>
+<li><strong>15 秒微循环 ≥ 5 个/集?</strong>微循环过少 = 节奏拖。</li>
+<li><strong>反派"赢"次数 ≥ 3 次/全剧?</strong>反派全输 = 观众无聊。</li>
+<li><strong>前 3 秒主角确立?</strong>15 秒后才确立 = 用户已划走。</li>
+<li><strong>旁白 ≤ 3 句/集?</strong>旁白过多 = 作者跳出来解释 = 旁观者视角出戏。</li>
+</ul>
+
+<p class="source-line">数据来源:v8.0 实战推荐 · short-drama-factory SKILL.md(2026-09) · 0xsline/short-drama(2026-09) · 自有改稿实战 30+ 部</p>
+</section>
+
+</div>
+</section>
+<section class="view" id="view-2-1">
+<div class="view-head">
+<a class="back-home" href="#home">← 返回主页</a>
+<h2>怎么找授权 · 选书 5 维</h2>
+<p class="view-sub">5 平台差异 · 5 维评分细则 · 谈判话术</p>
+</div>
+<div class="view-content" data-view-id="view-2-1">
+
+<section>
+<h3>一、5 大版权平台政策对比(2026 H2)</h3>
+<p>短剧改编授权主要走 5 个版权池。每个平台的<strong>授权模式、单价区间、谈判难度</strong>不同,选错平台=成本翻倍 + 风险翻倍。</p>
+
+<table>
+<thead><tr><th>平台</th><th>授权模式</th><th>单价区间</th><th>授权范围</th><th>谈判难度</th></tr></thead>
+<tbody>
+<tr><td><strong>番茄小说 IP 库</strong></td><td>官方授权 + 分账</td><td>5-30 万元 / 部</td><td>短剧 / 漫剧 / 长剧 / 海外改编</td><td>低(标准化合同)</td></tr>
+<tr><td><strong>飞卢小说</strong></td><td>作者直签 + 平台见证</td><td>2-15 万元 / 部</td><td>短剧 / 漫剧(限国内)</td><td>中(需对接 50+ 作者)</td></tr>
+<tr><td><strong>七猫 / 知乎盐选</strong></td><td>平台买断 + 改编授权</td><td>8-25 万元 / 部</td><td>短剧 / 漫剧 / 长剧 / 海外需另谈</td><td>中(需 BD 对接)</td></tr>
+<tr><td><strong>起点 / 阅文</strong></td><td>作者授权 + 平台监管</td><td>10-50 万元 / 部</td><td>全媒体(短剧 / 漫 / 长剧 / 游戏)</td><td>高(头部 IP 排队)</td></tr>
+<tr><td><strong>独立作者(豆瓣 / 贴吧)</strong></td><td>直接对接作者</td><td>0.5-5 万元 / 部</td><td>通常仅短剧 / 漫剧</td><td>极高(合规风险)</td></tr>
+</tbody>
+</table>
+
+<h4>关键差异解读</h4>
+<ul>
+<li><strong>番茄 IP 库性价比最高</strong>:标准化合同、单价透明、流程快。适合<strong>第一次做改编</strong>的团队。</li>
+<li><strong>飞卢男频战神储量最大</strong>:飞卢是男频爽文最大池,战神 / 重生 / 都市异能题材储量是番茄的 3 倍。但<strong>需逐一对接作者</strong>,单部谈判周期 2-4 周。</li>
+<li><strong>起点 / 阅文适合头部制作</strong>:单价高(10-50 万),但《斗罗大陆》《全职高手》等头部 IP 改编权需要排队,且流程长(2-3 个月)。</li>
+<li><strong>独立作者慎选</strong>:单价低(0.5-5 万),但<strong>合规风险极高</strong>——作者身份难核实、可能存在代笔 / 抄袭、二次授权风险(同一作者把同一作品卖给多家)。</li>
+</ul>
+
+<div class="callout warn">
+<span class="ico">⚠️</span>
+<div><strong>独立作者的"飞卢山海案"教训</strong>(2024):某改编方通过飞卢站内私聊对接 3 位作者,以 1 万/部买断 5 部男频小说,结果其中 2 部被证实"作者代笔 + 一稿多投"(同一作品也授权给了另一家)。改编方损失制作成本 20 万 + 后期下架损失 80 万。结论:独立作者来源的合规成本远高于节省的差价。</div>
+</div>
+</section>
+
+<section>
+<h3>二、5 维评分细则(选书 SOP)</h3>
+<p>拿到一本书的简介 + 前 30 章后,按 5 维评分。综合分 ≥ 75 才进入改编流程。</p>
+
+<table>
+<thead><tr><th>维度</th><th>权重</th><th>评分标准</th><th>评分细则</th></tr></thead>
+<tbody>
+<tr><td><strong>① 题材热度</strong></td><td>25%</td><td>DataEye ADX 排名 / 单部均值</td><td>TOP10 题材 100 / TOP30 题材 80 / TOP100 题材 60 / 冷门 40</td></tr>
+<tr><td><strong>② 爽点密度</strong></td><td>25%</td><td>每章爽点数 / 反派密度</td><td>每章 ≥ 3 个爽点 + 每 5 章必有大反派 100 / 每章 2 个爽点 80 / 每章 1 个 60 / 几乎无 40</td></tr>
+<tr><td><strong>③ 角色鲜明度</strong></td><td>20%</td><td>主角人设 / 反派动机 / 配角辨识度</td><td>主角有"口头禅 + 行为习惯" 100 / 反派有清晰动机 80 / 角色趋同 50</td></tr>
+<tr><td><strong>④ 改编可行性</strong></td><td>20%</td><td>场景复杂度 / 动作戏占比 / 特效需求</td><td>场景 ≤ 5 个 + 动作戏适中 100 / 场景 10 个 + 特效多 60 / 大场景 + 大量特效 30</td></tr>
+<tr><td><strong>⑤ 价值观合规</strong></td><td>10%</td><td>政治 / 民族 / 宗教 / 性别</td><td>完全合规 100 / 小问题可改 70 / 大问题难改 30 / 必下架 0</td></tr>
+</tbody>
+</table>
+
+<p><strong>综合分计算公式</strong>:</p>
+<div style="background:#FFF7E8;padding:12px 16px;border-radius:8px;font-family:JetBrains Mono,Consolas,monospace;font-size:13px;margin:12px 0">
+综合分 = 题材热度 × 0.25 + 爽点密度 × 0.25 + 角色鲜明度 × 0.20 + 改编可行性 × 0.20 + 价值观合规 × 0.10<br>
+≥ 75 → 进入改编流程<br>
+65-74 → 谨慎评估,需补强 1-2 个维度<br>
+< 65 → 弃用
+</div>
+
+<h4>评分实战案例(脱敏):某重生战神题材小说</h4>
+<ul>
+<li>题材热度:88(8 月战神类 TOP30)</li>
+<li>爽点密度:95(每章 ≥ 3 爽点,反派密度高)</li>
+<li>角色鲜明度:75(主角"金手指"明确,但反派动机单一)</li>
+<li>改编可行性:80(场景少,动作戏适中)</li>
+<li>价值观合规:90(无敏感)</li>
+<li><strong>综合分</strong>:88×0.25 + 95×0.25 + 75×0.20 + 80×0.20 + 90×0.10 = 22 + 23.75 + 15 + 16 + 9 = <strong>85.75</strong> → ✅ 改编</li>
+</ul>
+</section>
+
+<section>
+<h3>三、平台差异化谈判话术</h3>
+<p>不同版权方关注的重点不同,<strong>话术要对应</strong>。直接套用话术=被识破=谈判破裂。</p>
+
+<table>
+<thead><tr><th>平台</th><th>关注重点</th><th>话术模板</th><th>忌讳</th></tr></thead>
+<tbody>
+<tr><td><strong>番茄 IP 库</strong></td><td>标准化流程 + 能否进入头部</td><td>"我们是 X 平台(红果/抖音)TOP10 制作方,作品 XXX 累计播放 X 亿,希望改编您的《XXX》"</td><td>压价(番茄不接受)</td></tr>
+<tr><td><strong>飞卢作者</strong></td><td>改编实力 + 是否能带来长期流量</td><td>"我们擅长男频战神改编,已上线 5 部战神类短剧平均播放 X 千万,愿以 X 万 + 5% 分成与您合作"</td><td>画饼无数据(作者警惕)</td></tr>
+<tr><td><strong>七猫 / 知乎盐选</strong></td><td>IP 调性 + 平台资源置换</td><td>"《XXX》与我们的 X 项目调性高度契合,我们有 X 平台独家资源位,可置换曝光"</td><td>压价 + 没资源置换</td></tr>
+<tr><td><strong>起点 / 阅文</strong></td><td>IP 长期价值 + 头部作品背书</td><td>"我们已与 X 平台 / X 导演合作,过往改编项目包括《XXX》《XXX》,愿以 X 万买断 + X% 分成"</td><td>小作坊背景(阅文拒签)</td></tr>
+<tr><td><strong>独立作者</strong></td><td>合规 + 长期合作可能</td><td>"我们愿以 X 万买断全版权 + 后续作品优先合作权,请提供身份证 + 完本证明 + 独家授权书"</td><td>绕过作者身份核实</td></tr>
+</tbody>
+</table>
+
+<h4>谈判节奏 3 步</h4>
+<ol>
+<li><strong>第一步:数据铺垫</strong>(第 1-2 天)——先发自己的过往作品数据 + 平台背书,让对方"知道你是谁"。</li>
+<li><strong>第二步:方案匹配</strong>(第 3-5 天)——根据对方关注点,提 2-3 套报价方案(基础买断 / 买断+分成 / 分成)。</li>
+<li><strong>第三步:合同落地</strong>(第 6-10 天)——法务介入,关键条款(授权范围 / 期限 / 违约)逐条确认。</li>
+</ol>
+
+<div class="callout tip">
+<span class="ico">💡</span>
+<div><strong>谈判核心心法</strong>:不要"压价",而是<strong>"找对方最在意的点用我们的资源置换"</strong>。番茄不缺钱,缺"头部作品";飞卢作者不缺版权费,缺"长期流量";独立作者不缺几万块,缺"安全合规的长期合作"。</div>
+</div>
+</section>
+
+<section>
+<h3>四、授权范围 + 期限的 5 大陷阱</h3>
+<p>签合同时最容易踩坑的是"<strong>授权范围</strong>"和"<strong>授权期限</strong>"两个字段。</p>
+
+<table>
+<thead><tr><th>陷阱</th><th>常见表述</th><th>风险</th><th>正确表述</th></tr></thead>
+<tbody>
+<tr><td><strong>① 范围过大</strong></td><td>"全媒体独家改编权"</td><td>合同到期后被锁死,无法改编其他形式</td><td>"短剧 / 漫剧 / 真人短剧形式改编权,期限 X 年"</td></tr>
+<tr><td><strong>② 期限过长</strong></td><td>"永久授权"</td><td>投流成本无法回收,IP 价值下降后被锁</td><td>"X 年(2-3 年)独家改编权,期满可续"</td></tr>
+<tr><td><strong>③ 二次授权</strong></td><td>"授权方可自行再授权"</td><td>同一作品被卖给多家,改编方投入风险</td><td>"授权方承诺独家,二次授权需我方书面同意"</td></tr>
+<tr><td><strong>④ 海外授权</strong></td><td>未明确是否含海外</td><td>海外市场被他人拿走,损失数倍收益</td><td>"授权范围:中国大陆 + 海外(单独计价)"</td></tr>
+<tr><td><strong>⑤ 角色改编</strong></td><td>未明确角色是否可改</td><td>改编后被告"歪曲原作形象"</td><td>"允许合理改编人物设定,但保留核心人设特征"</td></tr>
+</tbody>
+</table>
+</section>
+
+<section>
+<h3>五、自检清单(8 项)</h3>
+<ul class="checklist">
+<li><strong>版权方是否正规?</strong>独立作者慎选,必须提供身份证 + 完本证明 + 独家授权书。</li>
+<li><strong>5 维评分综合分 ≥ 75?</strong>低于 75 弃用,不要因为"便宜"上车。</li>
+<li><strong>授权范围是否明确?</strong>短剧 / 漫剧 / 海外 必须分项写,不能"全媒体"打包。</li>
+<li><strong>授权期限是否 ≤ 3 年?</strong>超过 3 年的合同慎签,IP 价值下降后被锁。</li>
+<li><strong>是否含海外授权?</strong>出海市场单部收益是国内 5-10 倍,海外条款必须单独谈。</li>
+<li><strong>角色改编权是否明确?</strong>必须写"允许合理改编人物设定"。</li>
+<li><strong>二次授权条款?</strong>必须是"独家授权",对方不可同时授权他人。</li>
+<li><strong>法务是否审核?</strong>改编授权合同金额 ≥ 10 万,必须法务审核。</li>
+</ul>
+
+<p class="source-line">数据来源:番茄小说 IP 库官方(2026) · 飞卢小说官方 BD(2026) · 起点 / 阅文 BD 公开数据(2026) · 自有改编实战 15+ 部 · v14 § 10</p>
+</section>
+
+</div>
+</section>
+<section class="view" id="view-2-2">
+<div class="view-head">
+<a class="back-home" href="#home">← 返回主页</a>
+<h2>合同怎么看 · 关键条款</h2>
+<p class="view-sub">AI 改编条款模板 · 陷阱条款 · 人脸授权</p>
+</div>
+<div class="view-content" data-view-id="view-2-2">
+
+<section>
+<h3>一、AI 改编授权合同必备 9 大条款</h3>
+<p>AI 改编授权合同与传统真人剧授权合同<strong>差异巨大</strong>。AI 改编需要额外明确"训练数据来源 / AI 生成内容的著作权归属 / 真人脸授权 / 模型微调权"。</p>
+
+<table>
+<thead><tr><th>条款</th><th>必备内容</th><th>常见漏洞</th><th>应对话术</th></tr></thead>
+<tbody>
+<tr><td><strong>① 授权标的</strong></td><td>具体小说名 + 作者 + 完结状态</td><td>写"等作品" / 写系列名</td><td>必须精确到单本书 + 全本完结</td></tr>
+<tr><td><strong>② 授权形式</strong></td><td>短剧 / 漫剧 / 真人剧 / 海外</td><td>写"全媒体"打包</td><td>分项写明,海外单独计价</td></tr>
+<tr><td><strong>③ 授权期限</strong></td><td>具体起止日期 + 续约条件</td><td>写"永久"或"无固定期限"</td><td>2-3 年 + 续约主动权在我方</td></tr>
+<tr><td><strong>④ AI 训练权</strong></td><td>是否允许用原作训练 AI 模型</td><td>没写明 → 法务风险</td><td>明确"仅限本剧改编,不可用于训练通用模型"</td></tr>
+<tr><td><strong>⑤ AI 生成内容著作权</strong></td><td>AI 改写后的剧本归属</td><td>归属作者 → 我方不能商用</td><td>"AI 改写剧本著作权归改编方"</td></tr>
+<tr><td><strong>⑥ 真人脸授权</strong></td><td>是否使用真人演员脸 / 声音</td><td>没写明 → 侵权风险</td><td>"如使用真人脸 / 声音,需另行书面授权"</td></tr>
+<tr><td><strong>⑦ 独家性</strong></td><td>是否独家 / 可否转授权</td><td>写"非独家"</td><td>必须独家 + 禁止对方再授权他人</td></tr>
+<tr><td><strong>⑧ 分账模式</strong></td><td>买断金额 + 分成比例 + 结算周期</td><td>没写结算周期</td><td>月结 / 季结必须明确 + 发票要求</td></tr>
+<tr><td><strong>⑨ 违约责任</strong></td><td>双方违约金比例 + 终止条件</td><td>违约金过低(< 10%)</td><td>违约金 ≥ 30% 授权费,加大违约成本</td></tr>
+</tbody>
+</table>
+
+<h4>合同必备条款范例(可直接复制)</h4>
+<div style="background:#1F1F23;color:#E6E9F2;padding:14px 18px;border-radius:8px;font-family:JetBrains Mono,Consolas,monospace;font-size:12.5px;line-height:1.7;margin:12px 0;position:relative">
+<span style="position:absolute;top:8px;right:12px;font-size:10px;color:#818CF8;letter-spacing:.1em;font-weight:700">合同范例</span>
+甲方(授权方):XXX 著作权人<br>
+乙方(改编方):XXX 影视公司<br>
+<strong>授权标的</strong>:小说《XXX》(全本 X 万字,作者 XXX)<br>
+<strong>授权形式</strong>:仅限改编为 AI 仿真人短剧 / 3D 漫剧 / 2D 漫剧形式,共 X 部<br>
+<strong>授权期限</strong>:自 X 年 X 月 X 日至 X 年 X 月 X 日,共 X 年<br>
+<strong>授权范围</strong>:中国大陆 / 海外(单独计价)<br>
+<strong>AI 训练限制</strong>:乙方不得将原作用于训练通用 AI 模型,仅限本剧改编用途<br>
+<strong>AI 生成内容</strong>:乙方基于原作改编的剧本、画面、音视频著作权归乙方所有<br>
+<strong>真人脸授权</strong>:如使用真人演员的脸部 / 声音,需另行书面授权并支付相应费用<br>
+<strong>独家性</strong>:甲方承诺独家授权乙方,不得再授权第三方<br>
+<strong>分账</strong>:买断金额 X 万元 + 净收益 X% 分成(按季结算)<br>
+<strong>违约金</strong>:任何一方违约,守约方有权要求违约方支付授权费 30% 的违约金
+</div>
+</section>
+
+<section>
+<h3>二、合同 8 大陷阱条款(逐条避雷)</h3>
+
+<table>
+<thead><tr><th>陷阱</th><th>陷阱条款示例</th><th>危害</th><th>修改方案</th></tr></thead>
+<tbody>
+<tr><td><strong>① 模糊授权</strong></td><td>"全媒体独家改编权"</td><td>合同到期后被锁死 + 其他形式被占</td><td>改成"短剧 / 漫剧 / 真人短剧形式"分项</td></tr>
+<tr><td><strong>② 永久期限</strong></td><td>"永久授权"</td><td>投流成本无法回收 + IP 价值下降</td><td>改成 2-3 年 + 续约主动权</td></tr>
+<tr><td><strong>③ 隐性转授权</strong></td><td>"可自行再授权"</td><td>同一作品被卖给多家</td><td>禁止 + 违约金条款</td></tr>
+<tr><td><strong>④ AI 训练无限制</strong></td><td>"可用于训练 AI 模型"</td><td>对方拿原作训通用模型 = 违规商用</td><td>明确"仅限本剧改编,不可训练通用模型"</td></tr>
+<tr><td><strong>⑤ 真人脸使用无限制</strong></td><td>"改编方可使用任何资源"</td><td>被告"侵犯肖像权"</td><td>单独条款 + 另行书面授权</td></tr>
+<tr><td><strong>⑥ 分账不透明</strong></td><td>"改编方代为分账"</td><td>对方少报收入</td><td>独立结算 + 季度审计权</td></tr>
+<tr><td><strong>⑦ 违约金过低</strong></td><td>违约金 5%</td><td>违约成本低,对方可能违约</td><td>违约金 ≥ 30% 授权费</td></tr>
+<tr><td><strong>⑧ 无终止条件</strong></td><td>"合同期内不可终止"</td><td>对方严重违约我方仍被锁</td><td>对方严重违约 / 不可抗力可终止</td></tr>
+</tbody>
+</table>
+
+<div class="callout warn">
+<span class="ico">⚠️</span>
+<div><strong>合同审核 3 个红线</strong>(任一触碰拒签):<br>① "永久"或"无固定期限"<br>② "可自行再授权"<br>③ "可用于训练通用 AI 模型"<br><strong>原因</strong>:这 3 条任意一条,改编方都会在 1-2 年内陷入"被锁 / 被侵权 / 被告"的三难困境。</div>
+</div>
+</section>
+
+<section>
+<h3>三、真人脸授权风险(AI 仿真人剧特有)</h3>
+<p>AI 仿真人剧最容易被忽视的风险是<strong>"真人脸授权"</strong>。AI 生成的脸可能"撞脸"真实演员,被告侵权。</p>
+
+<table>
+<thead><tr><th>风险类型</th><th>触发场景</th><th>法律依据</th><th>应对方案</th></tr></thead>
+<tbody>
+<tr><td><strong>① 撞脸真人</strong></td><td>AI 生成的脸与某演员 70%+ 相似</td><td>《民法典》第 1018 条(肖像权)</td><td>使用 AI 生成时避开知名演员脸型</td></tr>
+<tr><td><strong>② 声音撞脸</strong></td><td>AI 配音与某演员声纹相似</td><td>《民法典》第 1023 条(声音权)</td><td>声纹混淆检测 + 真人配音授权</td></tr>
+<tr><td><strong>③ 网红撞脸</strong></td><td>使用了某网红照片训练模型</td><td>《民法典》第 1019 条(肖像权)</td><td>训练数据来源审核 + 法务备案</td></tr>
+<tr><td><strong>④ 品牌撞脸</strong></td><td>画面出现某品牌 logo / 商标</td><td>《商标法》第 57 条</td><td>道具 / 背景检查 + 商标避让</td></tr>
+<tr><td><strong>⑤ 场景撞脸</strong></td><td>复刻了某真实建筑 / 商场</td><td>无具体法律风险,但公关风险高</td><td>对外景 + 室内场景做模糊处理</td></tr>
+</tbody>
+</table>
+
+<h4>真人脸授权必备条款(3 项)</h4>
+<ol>
+<li><strong>单独书面授权</strong>:即使主合同已签,真人脸使用必须<strong>另行书面授权</strong>,不可"打包同意"。</li>
+<li><strong>使用范围</strong>:明确"本剧 + X 平台 + X 期限",不可"全平台永久"。</li>
+<li><strong>费用结构</strong>:除一次性费用外,使用期超过 1 年应约定<strong>分成 / 续费机制</strong>。</li>
+</ol>
+</section>
+
+<section>
+<h3>四、谈判节点 + 关键话术</h3>
+
+<table>
+<thead><tr><th>谈判节点</th><th>关键议题</th><td>话术</th><th>退让底线</th></tr></thead>
+<tbody>
+<tr><td><strong>第 1 轮:标的确认</strong></td><td>具体书名 / 作者 / 完结状态</td><td>"请确认是《XXX》全本 X 章,且未授权他人?"</td><td>未完结作品弃谈</td></tr>
+<tr><td><strong>第 2 轮:授权范围</strong></td><td>短剧 / 漫剧 / 海外分项</td><td>"海外市场单部收益是国内 5-10 倍,海外单独计价"</td><td>海外必谈,不可打包</td></tr>
+<tr><td><strong>第 3 轮:AI 条款</strong></td><td>AI 训练限制 + 著作权</td><td>"AI 改写剧本著作权归改编方,且原作不可训练通用模型"</td><td>训练限制必谈</td></tr>
+<tr><td><strong>第 4 轮:分账</strong></td><td>买断 + 分成比例 + 结算周期</td><td>"我们愿以 X 万买断 + X% 分成,季度结算,提供收入明细"</td><td>分成必谈,无分账拒签</td></tr>
+<tr><td><strong>第 5 轮:违约</strong></td><td>违约金 + 终止条件</td><td>"违约金 ≥ 30% 授权费,对方严重违约 / 不可抗力我方可终止"</td><td>违约金 20% 起步</td></tr>
+</tbody>
+</table>
+
+<div class="callout tip">
+<span class="ico">💡</span>
+<div><strong>合同谈判黄金法则</strong>:永远<strong>分项谈</strong>,不要"打包谈"。打包谈=对方在弱势条款上让步,强势条款上反扑。分项谈=每个条款独立议价,对方无法"以强带弱"。</div>
+</div>
+</section>
+
+<section>
+<h3>五、自检清单(8 项)</h3>
+<ul class="checklist">
+<li><strong>授权标的精确?</strong>具体书名 + 作者 + 完结状态,不能写"等作品"。</li>
+<li><strong>授权形式分项?</strong>短剧 / 漫剧 / 海外 必须分项写,不能"全媒体"打包。</li>
+<li><strong>授权期限 ≤ 3 年?</strong>超过 3 年的合同慎签,IP 价值下降后被锁。</li>
+<li><strong>AI 训练有限制?</strong>必须写"仅限本剧改编,不可训练通用模型"。</li>
+<li><strong>真人脸授权单独?</strong>即使主合同签了,真人脸使用必须另行书面授权。</li>
+<li><strong>独家性?</strong>对方不可同时授权他人,二次授权需我方同意。</li>
+<li><strong>分账透明?</strong>独立结算 + 季度审计权,不接受"代为分账"。</li>
+<li><strong>违约金 ≥ 30%?</strong>违约金低于 20% 拒签,违约成本必须高。</li>
+</ul>
+
+<p class="source-line">数据来源:《中华人民共和国民法典》第 1018-1023 条 · 《中华人民共和国商标法》 · 番茄 IP 库标准合同(2026) · v14 § 10 + v8.0 真实推荐 · 自有合同实战 20+ 部</p>
+</section>
+
+</div>
+</section>
+<section class="view" id="view-2-3">
+<div class="view-head">
+<a class="back-home" href="#home">← 返回主页</a>
+<h2>改编流程 · 7 步 SOP</h2>
+<p class="view-sub">7 步常见错误 · 心理→动作 · 压缩策略</p>
+</div>
+<div class="view-content" data-view-id="view-2-3">
+
+<section>
+<h3>一、改编 7 步 SOP(标准流程)</h3>
+<p>从拿到一本 5000-30000 字短篇小说,到产出 80 集 / 每集 90 秒剧本,标准 7 步流程。每步对应一个产出物 + 一个卡点。</p>
+
+<table>
+<thead><tr><th>步骤</th><th>产出物</th><th>操作要点</th><th>耗时</th><th>卡点</th></tr></thead>
+<tbody>
+<tr><td><strong>① 通读 + 题材定位</strong></td><td>题材定位报告</td><td>2-3 天通读,锁定题材 + 题材类型(3D/仿真/2D)</td><td>2-3 天</td><td>题材判断错=全盘崩</td></tr>
+<tr><td><strong>② 5 维评分</strong></td><td>5 维评分表</td><td>按题材热度 / 爽点密度 / 角色 / 可行性 / 合规 5 维打分,≥ 75 进入下一步</td><td>1 天</td><td>综合分 < 75 弃用</td></tr>
+<tr><td><strong>③ 情节结构 + 付费墙</strong></td><td>80 集大纲 + 付费墙位置</td><td>划分 80 集,定 3 道付费墙(10-15/28-32/55-58 集)</td><td>2-3 天</td><td>付费墙错位=转化率掉 40%+</td></tr>
+<tr><td><strong>④ 单集拆解</strong></td><td>80 集单集梗概</td><td>每集 90 秒拆成 0-30 / 30-60 / 60-90 三段,定爽点 + 反转</td><td>5-7 天</td><td>爽点 < 3 处/集=弃剧率翻倍</td></tr>
+<tr><td><strong>⑤ 剧本医生改稿</strong></td><td>改稿后 80 集剧本</td><td>砍/换/加三遍 + 单句 ≤ 15 字 + 5 处具体指代</td><td>7-10 天</td><td>AI 播音腔残留 = 完播率掉</td></tr>
+<tr><td><strong>⑥ 相似度查重</strong></td><td>查重报告 + 改写对照</td><td>10% 执行标准 + 3 维度(文字 / 结构 / 角色)阈值</td><td>2-3 天</td><td>相似度 > 10% = 平台拒上</td></tr>
+<tr><td><strong>⑦ 剧本医生终审 + 交付</strong></td><td>最终剧本 + 制作交接单</td><td>三视角审稿 + 自检清单 + 制作方交接</td><td>2-3 天</td><td>交付不齐=制作延期</td></tr>
+</tbody>
+</table>
+
+<p><strong>总周期</strong>:21-30 天 / 部(标准 80 集剧本)。如压缩到 14 天,需要砍掉 ② ⑤ ⑥ 三步,风险极高。</p>
+
+<h4>7 步常见错误(按出现频率排序)</h4>
+<ol>
+<li><strong>跳过 5 维评分直接改编</strong>:60% 新手栽在这步,选到"看着不错但综合分 < 65"的书。</li>
+<li><strong>付费墙位置拍脑袋</strong>:50% 编剧不按 10-15/28-32/55-58 设计,导致转化率掉 40%+。</li>
+<li><strong>每集塞 5+ 事件</strong>:90 秒内塞太多事件,观众"看不懂 = 弃剧"。</li>
+<li><strong>直接用 AI 稿不"剧本医生"</strong>:AI 稿播音腔残留,完播率比人工改稿低 30-50%。</li>
+<li><strong>相似度查重走过场</strong>:不查结构相似度,被告"实质性相似"赔款 50-200 万。</li>
+<li><strong>角色人设不一致</strong>:同一角色在第 5 集"冷静",第 30 集"冲动",观众弃剧。</li>
+<li><strong>结尾钩子不承接付费</strong>:结尾钩子弱 → 用户不为下一集付费 → 完播率掉。</li>
+</ol>
+</section>
+
+<section>
+<h3>二、心理活动 → 动作/台词的转化公式</h3>
+<p>短剧最大的转化难题是"<strong>把心理活动变成画面</strong>"。小说可以写 3 页心理活动,短剧只能 3 秒内完成。</p>
+
+<table>
+<thead><tr><th>心理活动(小说原句)</th><th>短剧动作转化</th><th>短剧台词转化</th></tr></thead>
+<tbody>
+<tr><td>他感到震惊,无法相信眼前的一切</td><td>后退一步,撞到椅子 / 手中的文件掉到地上</td><td>"你……你说什么?"(语气 + 短句)</td></tr>
+<tr><td>她感到愤怒,想要报复</td><td>攥紧拳头 / 摔杯子 / 切镜头到特写眼神</td><td>"这笔账,我记下了。"</td></tr>
+<tr><td>他内心愧疚,想要道歉</td><td>低头 / 抬手又放下 / 走到门口停下</td><td>"……对不起。"(停顿 + 短句)</td></tr>
+<tr><td>她感到心动,想靠近</td><td>无意识地抬手 / 整理头发 / 眼神躲闪</td><td>(不说话,只一个动作)</td></tr>
+<tr><td>他感到恐惧,想要逃跑</td><td>后退 / 跌坐 / 眼神左右扫</td><td>"别过来!"</td></tr>
+<tr><td>她内心挣扎,做不了决定</td><td>来回踱步 / 坐下又站起 / 攥紧手机</td><td>"……我该怎么办?"</td></tr>
+</tbody>
+</table>
+
+<h4>转化核心原则 3 条</h4>
+<ul>
+<li><strong>具体化原则</strong>:心理活动 → 具体可拍动作(撞椅子 / 摔杯子),不要"表情凝重"。</li>
+<li><strong>反差化原则</strong>:心理活动 ≠ 表面动作(心里愤怒,表面冷静说话 → 高级感)。</li>
+<li><strong>节奏化原则</strong>:心理活动 → 0.5-3 秒动作 + 短句台词(单句 ≤ 15 字)。</li>
+</ul>
+
+<h4>实战案例(脱敏):某战神小说第 1 集开头</h4>
+<div style="background:#FFF7E8;padding:12px 16px;border-radius:8px;font-family:JetBrains Mono,Consolas,monospace;font-size:12.5px;margin:12px 0">
+<strong>原小说</strong>(心理描写):<br>
+"林北辰站在公司楼下,看着高耸入云的南山科技园总部大厦,心中涌起一股强烈的屈辱感。三年前,他是这里的传奇;三年前,他被合伙人踢出局,身败名裂。今天,他回来了。"<br>
+<strong>短剧改写</strong>(0-3 秒):<br>
+<strong>画面</strong>:黑色商务车停在南山科技园 B 栋楼下,车门打开,林北辰黑色风衣下车。<br>
+<strong>动作</strong>:他抬头看 88 层楼顶,镜头特写他的眼神。<br>
+<strong>台词</strong>(独白,2 秒):"三年。"<br>
+<strong>音效</strong>:心跳声渐强 + 风声。
+</div>
+
+<p><strong>对比</strong>:小说用 150 字铺垫,短剧用 3 秒画面 + 1 句台词 + 1 个音效完成。观众在 3 秒内同时获得"<strong>人物身份 + 时间跨度 + 复仇主题</strong>"3 个信息。</p>
+</section>
+
+<section>
+<h3>三、5000 字 → 90 秒压缩策略</h3>
+<p>短剧改稿最核心的能力是<strong>"压缩"</strong>。一本 5000 字小说压缩成 1 集 90 秒剧本,需要保留多少?</p>
+
+<table>
+<thead><tr><th>压缩层级</th><th>小说原内容</td><td>保留率</td><td>短剧保留</th></tr></thead>
+<tbody>
+<tr><td><strong>主事件</strong></td><td>1 集的核心冲突 + 反转</td><td>100%</td><td>必须完整保留</td></tr>
+<tr><td><strong>主线人物</strong></td><td>主角 + 主要反派 + 1-2 个配角</td><td>90%</td><td>配角可合并</td></tr>
+<tr><td><strong>对话金句</strong></td><td>1-3 句能代表性格的台词</td><td>80%</td><td>长对话压成短句</td></tr>
+<tr><td><strong>心理活动</strong></td><td>心理描写 / 内心独白</td><td>10%</td><td>转化为动作</td></tr>
+<tr><td><strong>环境描写</strong></td><td>场景 / 时代 / 气氛</td><td>30%</td><td>用画面说话,不写</td></tr>
+<tr><td><strong>支线情节</strong></td><td>副线 / 伏笔 / 回忆</td><td>0-20%</td><td>大部分删除,关键伏笔保留</td></tr>
+<tr><td><strong>过渡段落</strong></td><td>承上启下 / 时间推移</td><td>0%</td><td>全部删除,用镜头切换</td></tr>
+</tbody>
+</table>
+
+<h4>压缩公式</h4>
+<div style="background:#FFF7E8;padding:12px 16px;border-radius:8px;font-family:JetBrains Mono,Consolas,monospace;font-size:13px;margin:12px 0">
+目标 = 90 秒 × 信息密度<br>
+信息密度 = 主事件 × 100% + 主线人物 × 90% + 关键台词 × 80% + 心理动作化 × 10% + 画面化环境 × 30% + 支线 × 0-20%<br>
+<strong>压到 ≤ 90 秒内能讲完,且爽点 ≥ 3 处</strong>
+</div>
+
+<h4>压缩 3 个常见错</h4>
+<ul>
+<li><strong>心理活动舍不得删</strong>:小说作者常犯,把"内心挣扎 500 字"完整保留 → 短剧变独白戏,弃剧率翻倍。</li>
+<li><strong>环境描写舍不得删</strong>:小说作者写的"夕阳西下,晚霞如火"完整保留 → 短剧画面已经在说话,文字再写=重复。</li>
+<li><strong>支线舍不得删</strong>:小说作者埋的"伏笔 200 字"完整保留 → 短剧没有篇幅兑现伏笔,看完变烂尾。</li>
+</ul>
+</section>
+
+<section>
+<h3>四、单集分镜稿模板</h3>
+<p>改稿完成后,产出<strong>单集分镜稿</strong>给制作方。模板 5 列:</p>
+
+<table>
+<thead><tr><th>秒数</th><th>画面</th><th>台词 / 旁白</th><th>音效</th><th>目的</th></tr></thead>
+<tbody>
+<tr><td>0-3</td><td>黑色商务车停下,车门打开,主角下车</td><td>无</td><td>车门声 + 心跳声</td><td>钩子:主角登场</td></tr>
+<tr><td>3-15</td><td>主角抬头看 88 层楼顶</td><td>"三年。"</td><td>风声</td><td>建立背景</td></tr>
+<tr><td>15-30</td><td>切镜头:反派办公室,跷二郎腿</td><td>"听说他回来了?"</td><td>反派 BGM</td><td>建立反派</td></tr>
+<tr><td>30-45</td><td>前台小姐看主角</td><td>"先生您找谁?"</td><td>电梯叮声</td><td>制造冲突</td></tr>
+<tr><td>45-60</td><td>主角走到前台</td><td>"找你们王总。"</td><td>脚步声</td><td>提升压力</td></tr>
+<tr><td>60-75</td><td>主角掏出一张旧照片</td><td>"三年前,他欠我的。"</td><td>照片特写</td><td>爽点 1:暗示身份</td></tr>
+<tr><td>75-90</td><td>反派办公室门打开</td><td>无(只脚步声)</td><td>反派 BGM 骤停</td><td>结尾钩子:下集冲突</td></tr>
+</tbody>
+</table>
+
+<h4>分镜稿交付清单</h4>
+<ul>
+<li>80 集分镜稿(每集 1 张表 + 备注)</li>
+<li>5-10 个关键场景参考图(主角 + 反派 + 主场景)</li>
+<li>1 份配音风格说明(主角 / 反派 / 配角 语气)</li>
+<li>1 份 BGM 情绪标签(开场 / 冲突 / 爽点 / 反转)</li>
+</ul>
+</section>
+
+<section>
+<h3>五、自检清单(8 项)</h3>
+<ul class="checklist">
+<li><strong>5 维评分综合分 ≥ 75?</strong>低于 75 弃用,不要因为"看着不错"上车。</li>
+<li><strong>付费墙位置在 10-15/28-32/55-58?</strong>偏离 5 集以上转化率掉 20%+。</li>
+<li><strong>单集爽点 ≥ 3 处?</strong>2 处以下弃剧率翻倍。</li>
+<li><strong>心理活动已转化为动作?</strong>残留心理独白 = 弃剧率掉 30%。</li>
+<li><strong>单句对话 ≤ 15 字?</strong>30 字以上必有冗余。</li>
+<li><strong>具体指代每集 ≥ 5 处?</strong>0 处 = AI 腔,用户弃剧。</li>
+<li><strong>角色人设一致?</strong>同一角色在不同集的性格 / 口头禅必须一致。</li>
+<li><strong>分镜稿 5 列齐全?</strong>秒数 / 画面 / 台词 / 音效 / 目的,缺一制作延期。</li>
+</ul>
+
+<p class="source-line">数据来源:v8.0 实战推荐 · short-drama-factory SKILL.md(2026-09) · 0xsline/short-drama(2026-09) · 自有改编实战 15+ 部 · 红果付费墙运营数据(2026)</p>
+</section>
+
+</div>
+</section>
+<section class="view" id="view-2-4">
+<div class="view-head">
+<a class="back-home" href="#home">← 返回主页</a>
+<h2>相似度检查 · 反推查重</h2>
+<p class="view-sub">10% 执行标准 · 3 档改写 · 案例</p>
+</div>
+<div class="view-content" data-view-id="view-2-4">
+
+<section>
+<h3>一、相似度 3 维度:文字 / 结构 / 角色</h3>
+<p>短剧改编的相似度检查 ≠ 单纯"文字查重"。短剧被告"实质性相似",通常是<strong>结构相似 + 角色相似</strong>,而非"文字相似"。</p>
+
+<table>
+<thead><tr><th>维度</th><th>检查内容</th><th>工具 / 方法</th><th>阈值</th><th>重要性</th></tr></thead>
+<tbody>
+<tr><td><strong>① 文字相似度</strong></td><td>逐字句查重,改写后剩余重复率</td><td>PaperPass / 知网 / 万方 / 蚁坊等</td><td>≤ 10%</td><td>★★</td></tr>
+<tr><td><strong>② 结构相似度</strong></td><td>主线 / 反转 / 高潮节点是否一致</td><td>人工对照 + 反推 SOP</td><td>≤ 30%</td><td>★★★★★</td></tr>
+<tr><td><strong>③ 角色相似度</strong></td><td>主角人设 / 反派动机 / 配角关系</td><td>角色卡对照 + 关系图谱</td><td>≤ 40%</td><td>★★★★</td></tr>
+</tbody>
+</table>
+
+<h4>为什么结构 / 角色比文字更重要?</h4>
+<p>司法实践中,法院判定"实质性相似"<strong>主要看结构 + 角色</strong>。即使文字完全不同,如果主线反转高潮位一致 / 主角人设反派动机一致 / 配角关系一致,仍可能被判定"实质性相似"。</p>
+
+<ul>
+<li><strong>案例</strong>(2024 短剧判例):某改编方把原作文字改了 70%,但主线结构、3 个关键反转、主角"重生穿越"设定与原作高度相似,被判"实质性相似",赔偿 80 万 + 作品下架。</li>
+<li><strong>教训</strong>:只查文字相似度 = 自欺欺人。结构 + 角色 才是法律风险核心。</li>
+</ul>
+</section>
+
+<section>
+<h3>二、10% 执行标准(平台 + 法律双重线)</h3>
+<p>短剧相似度的<strong>执行标准 = 10%</strong>。这个数字来自两个维度:</p>
+
+<table>
+<thead><tr><th>维度</th><th>来源</th><th>阈值</th><th>超出后果</th></tr></thead>
+<tbody>
+<tr><td><strong>平台标准</strong></td><td>红果 / 抖音 / 快手原创审核</td><td>文字 ≤ 10%</td><td>超出直接拒上 / 下架</td></tr>
+<tr><td><strong>法律标准</strong></td><td>司法判例"实质性相似"标准</td><td>结构 + 角色 ≤ 30-40%</td><td>超出可能被告</td></tr>
+<tr><td><strong>行业自律</strong></td><td>短剧头部制作方共识</td><td>综合 ≤ 15%</td><td>超出影响后续授权</td></tr>
+</tbody>
+</table>
+
+<p><strong>执行原则</strong>:</p>
+<ul>
+<li>文字相似度 ≤ 10%(平台硬线)</li>
+<li>结构相似度 ≤ 30%(法律警戒线)</li>
+<li>角色相似度 ≤ 40%(法律警戒线)</li>
+<li>3 维度任一超出,必须返工</li>
+</ul>
+
+<div class="callout warn">
+<span class="ico">⚠️</span>
+<div><strong>为什么是 10%?</strong>低于 10% 平台审核 + 法律风险双重安全。10%-15% 平台可能通过但法律风险高。15%-30% 平台通过但有法律风险。30% 以上基本会被告 + 平台下架。结论:<strong>目标 ≤ 10%,可接受 ≤ 15%,15% 以上必须改</strong>。</div>
+</div>
+</section>
+
+<section>
+<h3>三、3 档改写对照(从高到低)</h3>
+
+<table>
+<thead><tr><th>档位</th><th>目标相似度</th><th>改写强度</th><th>适用场景</th><th>风险</th></tr></thead>
+<tbody>
+<tr><td><strong>A 档(微改)</strong></td><td>15-30%</td><td>换词 + 调语序</td><td>原作无授权风险(同人练习)</td><td>不可商用,被告必败</td></tr>
+<tr><td><strong>B 档(中改)</strong></td><td>10-15%</td><td>重构情节 + 换视角 + 调反转位置</td><td>已获授权 + 改编方有充足法务</td><td>可商用,有法律风险</td></tr>
+<tr><td><strong>C 档(深改)</strong></td><td>≤ 10%</td><td>重新立意 + 重组人物关系 + 调主线结构</td><td>已获授权 + 改编方需长线发展</td><td>零风险,推荐</td></tr>
+</tbody>
+</table>
+
+<h4>A 档(微改)案例对照</h4>
+<div style="background:#FFF7E8;padding:12px 16px;border-radius:8px;font-family:JetBrains Mono,Consolas,monospace;font-size:12.5px;margin:12px 0">
+<strong>原作</strong>:林北辰站在南山科技园门口,被前台小姐以"先生您找谁"为由拒绝入内。<br>
+<strong>A 档改写</strong>:林北辰站在南山科技园门口,前台小姐微笑着问"先生您找谁",林北辰被拦在门外。<br>
+<strong>相似度</strong>:文字 25% / 结构 90% / 角色 95% → <strong>不可商用</strong>。
+</div>
+
+<h4>B 档(中改)案例对照</h4>
+<div style="background:#FFF7E8;padding:12px 16px;border-radius:8px;font-family:JetBrains Mono,Consolas,monospace;font-size:12.5px;margin:12px 0">
+<strong>原作</strong>:同上<br>
+<strong>B 档改写</strong>:林北辰从黑色商务车下来,直接走进南山科技园大堂,绕过前台,按下顶层电梯按钮。<br>
+<strong>相似度</strong>:文字 12% / 结构 60%(场景转换 + 入场方式变化) / 角色 70%(主角动机一致但反派出场顺序变) → <strong>可商用,有法律风险</strong>。
+</div>
+
+<h4>C 档(深改)案例对照</h4>
+<div style="background:#FFF7E8;padding:12px 16px;border-radius:8px;font-family:JetBrains Mono,Consolas,monospace;font-size:12.5px;margin:12px 0">
+<strong>原作</strong>:林北辰回到南山科技园,找王总复仇。<br>
+<strong>C 档改写</strong>:林北辰身份改为"被陷害离职的核心工程师",王总改为"竞争对手公司新任 CEO",场景改为科技园对面酒店咖啡厅,主角带合同而非复仇。<br>
+<strong>相似度</strong>:文字 5% / 结构 30%(职场线+竞争线保留,复仇线改竞争) / 角色 35%(主角动机从复仇改证明清白) → <strong>零风险,推荐</strong>。
+</div>
+</section>
+
+<section>
+<h3>四、反推查重 SOP(从原作反推查重)</h3>
+<p>拿到授权书后,改编前必须做<strong>"反推查重"</strong>:从原作反推"哪些会被被告实质性相似",然后针对性改写。</p>
+
+<table>
+<thead><tr><th>步骤</th><th>操作</th><th>产出物</th><th>工具</th></tr></thead>
+<tbody>
+<tr><td><strong>① 反派动机反推</strong></td><td>原作反派的"动机 + 手段 + 反扑节点"</td><td>反派动机清单</td><td>人工 + AI 辅助</td></tr>
+<tr><td><strong>② 主角金手指反推</strong></td><td>原作主角的"金手指类型 + 升级节奏"</td><td>金手指清单</td><td>人工</td></tr>
+<tr><td><strong>③ 关键反转反推</strong></td><td>原作 3-5 个关键反转的"铺垫 + 爆发 + 后续影响"</td><td>反转节点表</td><td>人工</td></tr>
+<tr><td><strong>④ 名场面反推</strong></td><td>原作最具传播力的"名场面 / 金句"</td><td>名场面清单</td><td>人工 + 弹幕数据</td></tr>
+<tr><td><strong>⑤ 角色关系反推</strong></td><td>原作主角 / 反派 / 配角的"关系网 + 关系变化"</td><td>关系图谱</td><td>人工 + AI 辅助</td></tr>
+</tbody>
+</table>
+
+<h4>反推后针对性改写</h4>
+<ul>
+<li><strong>反派动机改 50%</strong>:原作反派"嫉妒主角" → 改编反派"被主角父亲陷害过" → 动机不同但戏剧张力相似。</li>
+<li><strong>金手指改类型</strong>:原作"系统流" → 改编"重生流" → 类型完全不同。</li>
+<li><strong>反转调位置</strong>:原作第 30 集的反转 → 改编调到第 20 集 + 第 40 集。</li>
+<li><strong>名场面必改</strong>:原作最具传播力的 3 个名场面必须重写。</li>
+<li><strong>角色关系重组</strong>:原作"兄弟反目" → 改编"师徒反目",关系网重组。</li>
+</ul>
+
+<div class="callout tip">
+<span class="ico">💡</span>
+<div><strong>反推查重的核心原则</strong>:不是"避开原作",而是<strong>"从原作反推哪些元素被告风险高,改这些元素"</strong>。直接"完全避开原作"会导致"原作味儿没了,观众不买账"。正确做法是"<strong>保留原作精神 + 改高风险元素</strong>"。</div>
+</div>
+</section>
+
+<section>
+<h3>五、查重工具 + Prompt</h3>
+
+<table>
+<thead><tr><th>工具</th><th>适用维度</th><th>阈值标准</th><th>费用</th></tr></thead>
+<tbody>
+<tr><td><strong>PaperPass</strong></td><td>文字相似度</td><td>免费版 ≤ 25%,付费版 ≤ 10%</td><td>免费 + 付费</td></tr>
+<tr><td><strong>知网 / 万方</strong></td><td>文字相似度(更严)</td><td>≤ 10%</td><td>付费</td></tr>
+<tr><td><strong>蚁坊 / 5118</strong></td><td>网络原文查重</td><td>≤ 10%</td><td>免费 + 付费</td></tr>
+<tr><td><strong>人工反推</strong></td><td>结构 + 角色相似度</td><td>≤ 30% / 40%</td><td>人工成本</td></tr>
+</tbody>
+</table>
+
+<h4>查重 Prompt(反推 SOP 辅助)</h4>
+<div style="background:#1F1F23;color:#E6E9F2;padding:14px 18px;border-radius:8px;font-family:JetBrains Mono,Consolas,monospace;font-size:12.5px;line-height:1.7;margin:12px 0;position:relative">
+<span style="position:absolute;top:8px;right:12px;font-size:10px;color:#818CF8;letter-spacing:.1em;font-weight:700">PROMPT</span>
+你是一位短剧改编反推审计员。请按以下顺序反推我提供的原作:<br>
+1. 提取反派的所有动机 / 手段 / 反扑节点<br>
+2. 提取主角的金手指类型 + 升级节奏<br>
+3. 提取 3-5 个关键反转的铺垫 / 爆发 / 后续影响<br>
+4. 提取最具传播力的 3 个名场面 / 金句<br>
+5. 绘制主角 / 反派 / 配角的角色关系图谱<br>
+输出格式:每项独立清单 + 高风险元素标注<br>
+原作如下:【粘贴原作关键章节】
+</div>
+
+<h4>改写 Prompt(深改辅助)</h4>
+<div style="background:#1F1F23;color:#E6E9F2;padding:14px 18px;border-radius:8px;font-family:JetBrains Mono,Consolas,monospace;font-size:12.5px;line-height:1.7;margin:12px 0;position:relative">
+<span style="position:absolute;top:8px;right:12px;font-size:10px;color:#818CF8;letter-spacing:.1em;font-weight:700">PROMPT</span>
+你是一位资深短剧改编编剧。请基于原作《XXX》做 C 档深改:<br>
+1. 主角身份 / 金手指 / 动机 三选一必改<br>
+3. 反派动机 / 手段 改 50%+<br>
+4. 关键反转位置调换(总数不变,位置变)<br>
+5. 名场面 3 个必重写<br>
+6. 角色关系重组(保留核心冲突,重组关系网)<br>
+要求:文字相似度 ≤ 10%,结构相似度 ≤ 30%,角色相似度 ≤ 40%<br>
+原作梗概:【粘贴原作梗概】
+</div>
+</section>
+
+<section>
+<h3>六、自检清单(8 项)</h3>
+<ul class="checklist">
+<li><strong>文字相似度 ≤ 10%?</strong>超出直接拒上 / 下架。</li>
+<li><strong>结构相似度 ≤ 30%?</strong>超出可能被告"实质性相似"。</li>
+<li><strong>角色相似度 ≤ 40%?</strong>超出可能被判"实质性相似"。</li>
+<li><strong>反派动机改 50%+?</strong>不改=法律风险高。</li>
+<li><strong>金手指类型已换?</strong>不改=原作味儿太重,被告风险高。</li>
+<li><strong>关键反转位置已调?</strong>不改=结构相似度高。</li>
+<li><strong>名场面已重写?</strong>原作最具传播力 3 个名场面必须改。</li>
+<li><strong>反推查重 SOP 走完?</strong>5 步走完才进入改稿,缺一步=法律风险。</li>
+</ul>
+
+<p class="source-line">数据来源:《中华人民共和国著作权法》第 47-48 条 · 2024 短剧司法判例 · PaperPass / 知网 / 万方官方(2026) · v14 § 10 · 自有改编实战 15+ 部</p>
+</section>
+
+</div>
+</section>
+
+
+<nav class="bottom-nav" id="view-bottom-nav" aria-label="B 板块章节导航">
+  <a class="prev" href="#view-1-1">
+    <span class="label">← 上一节</span>
+    <span class="title" id="view-prev-title">选题库 · 题材方向</span>
+  </a>
+  <a class="next" href="#view-1-1">
+    <span class="label">下一节 →</span>
+    <span class="title" id="view-next-title">选题库 · 题材方向</span>
+  </a>
+</nav>
+
+<script>
+// view 8 个章节顺序表
+const VIEW_ORDER = [
+  { id: 'view-1-1', title: '选题库 · 题材方向' },
+  { id: 'view-1-2', title: 'AI 辅助原创工作流' },
+  { id: 'view-1-3', title: '爽点模板 · 节拍表' },
+  { id: 'view-1-4', title: '改稿方法 · 自检清单' },
+  { id: 'view-2-1', title: '怎么找授权 · 选书 5 维' },
+  { id: 'view-2-2', title: '合同怎么看 · 关键条款' },
+  { id: 'view-2-3', title: '改编流程 · 7 步 SOP' },
+  { id: 'view-2-4', title: '相似度检查 · 反推查重' },
+];
+
+// 把每个 view 的 .view-head + .view-content 包到 .view-main 里,并插入左侧 sidebar
+function buildViewLayout() {
+  VIEW_ORDER.forEach(v => {
+    const sec = document.getElementById(v.id);
+    if (!sec) return;
+    // 如果已经包过 .view-main,跳过
+    if (sec.querySelector('.view-main')) return;
+    const head = sec.querySelector('.view-head');
+    const content = sec.querySelector('.view-content');
+    if (!head || !content) return;
+
+    // 把 head + content 包到 view-main
+    const main = document.createElement('div');
+    main.className = 'view-main';
+    sec.appendChild(main);
+    main.appendChild(head);
+    main.appendChild(content);
+
+    // 宽表格统一加入横向滚动容器，避免手机端撑破页面。
+    content.querySelectorAll('table').forEach(table => {
+      if (table.parentElement && table.parentElement.classList.contains('table-scroll')) return;
+      const wrap = document.createElement('div');
+      wrap.className = 'table-scroll';
+      table.parentNode.insertBefore(wrap, table);
+      wrap.appendChild(table);
+    });
+
+    // 在 main 前插入 sidebar
+    const sidebar = document.createElement('aside');
+    sidebar.className = 'view-sidebar';
+    sidebar.innerHTML = renderSidebarHTML(v.id);
+    sec.insertBefore(sidebar, main);
+  });
+}
+
+function renderSidebarHTML(currentId) {
+  let html = '<div class="vs-title">剧本章节</div><ul>';
+  VIEW_ORDER.forEach((v, i) => {
+    const cls = v.id === currentId ? ' class="current"' : '';
+    html += `<li${cls}><a href="#${v.id}"><span class="vs-idx">${i+1}</span><span class="vs-name">${v.title}</span></a></li>`;
+  });
+  html += '</ul><div class="vs-divider"></div><a class="vs-home" href="#home">← 返回剧本主页</a>';
+  return html;
+}
+
+// 切换 view 时更新 sidebar 高亮
+function updateSidebarCurrent() {
+  const hash = window.location.hash || '#view-1-1';
+  VIEW_ORDER.forEach(v => {
+    const sec = document.getElementById(v.id);
+    if (!sec) return;
+    const sb = sec.querySelector('.view-sidebar');
+    if (!sb) return;
+    const items = sb.querySelectorAll('li');
+    items.forEach((li, i) => {
+      if (VIEW_ORDER[i] && VIEW_ORDER[i].id === hash.slice(1)) {
+        li.classList.add('current');
+      } else {
+        li.classList.remove('current');
+      }
+    });
+  });
+}
+
+function updateBottomNav() {
+  const hash = window.location.hash || '#view-1-1';
+  const idx = VIEW_ORDER.findIndex(v => '#' + v.id === hash);
+  if (idx === -1) return;
+  const nav = document.getElementById('view-bottom-nav');
+  if (!nav) return;
+  const prev = VIEW_ORDER[idx - 1]; // 第一个 view 时 idx - 1 = -1,undefined
+  const next = VIEW_ORDER[idx + 1];
+  const prevA = nav.querySelector('.prev');
+  const nextA = nav.querySelector('.next');
+  const prevTitle = document.getElementById('view-prev-title');
+  const nextTitle = document.getElementById('view-next-title');
+  const currentMain = document.getElementById(VIEW_ORDER[idx].id)?.querySelector('.view-main');
+  if (currentMain && nav.parentElement !== currentMain) currentMain.appendChild(nav);
+  if (prev) {
+    prevA.href = '#' + prev.id;
+    prevA.style.visibility = 'visible';
+    prevTitle.textContent = prev.title;
+  } else {
+    // 第一节:返回"上级"(B 板块目录页,即 tutorial/all-courses.html#B)
+    prevA.href = 'tutorial/all-courses.html#B';
+    prevA.style.visibility = 'visible';
+    prevTitle.textContent = 'B 板块目录';
+  }
+  if (next) {
+    nextA.href = '#' + next.id;
+    nextA.style.visibility = 'visible';
+    nextTitle.textContent = next.title;
+  } else {
+    // 最后一节:进入下一个大类 C
+    nextA.href = 'tutorial/C-character/C-1.html';
+    nextA.style.visibility = 'visible';
+    nextTitle.textContent = 'C-1 角色制作简介';
+  }
+}
+
+window.addEventListener('hashchange', updateBottomNav);
+window.addEventListener('DOMContentLoaded', updateBottomNav);
+// 初始也调一次
+updateBottomNav();
+
+// view 切换逻辑 + sidebar 渲染
+const VIEWS = ['home-panel', 'view-1-1', 'view-1-2', 'view-1-3', 'view-1-4', 'view-2-1', 'view-2-2', 'view-2-3', 'view-2-4'];
+function showView() {
+  const hash = window.location.hash || '#view-1-1';
+  const id = hash.slice(1);
+  VIEWS.forEach(v => {
+    const el = document.getElementById(v);
+    if (!el) return;
+    el.classList.toggle('is-active', v === id);
+  });
+  // 主页不显示底部 prev/next
+  const bottomNav = document.getElementById('view-bottom-nav');
+  if (bottomNav) bottomNav.style.display = (id === 'home-panel') ? 'none' : '';
+}
+window.addEventListener('hashchange', showView);
+window.addEventListener('DOMContentLoaded', () => {
+  buildViewLayout();
+  showView();
+  updateSidebarCurrent();
+  updateBottomNav();
+});
+window.addEventListener('hashchange', updateSidebarCurrent);
+// 初始执行(若 DOMContentLoaded 还没触发)
+if (document.readyState === 'loading') {
+  // 等 DOMContentLoaded
+} else {
+  buildViewLayout();
+  showView();
+  updateSidebarCurrent();
+  updateBottomNav();
+}
+</script>
+
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="扫码关注玉哥">
+      <img class="qr-img" src="assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="changelog.html">📅 更新日志</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+
+<script>
+// ========== SPA 视图切换(hashchange) ==========
+(function() {
+  function showView(hash) {
+    var id = (hash || '').replace(/^#/, '');
+    var legacyViewIds = {
+      'view-1-5': 'view-2-1',
+      'view-1-6': 'view-2-2',
+      'view-1-7': 'view-2-3',
+      'view-1-8': 'view-2-4'
+    };
+    if (legacyViewIds[id]) {
+      id = legacyViewIds[id];
+      history.replaceState(null, '', '#' + id);
+    }
+    var home = document.getElementById('home-panel');
+    var views = document.querySelectorAll('.view');
+    var isView = false;
+    views.forEach(function(v) {
+      if (v.id === id) {
+        v.classList.add('is-active');
+        isView = true;
+      } else {
+        v.classList.remove('is-active');
+      }
+    });
+    if (isView) {
+      home.style.display = 'none';
+      window.scrollTo(0, 0);
+    } else {
+      home.style.display = '';
+      views.forEach(function(v) { v.classList.remove('is-active'); });
+    }
+  }
+
+  // 页面路径卡片点击:用 hash 跳转(不刷新)
+  document.addEventListener('click', function(e) {
+    var a = e.target.closest('a.path-card');
+    if (a && a.getAttribute('href') && a.getAttribute('href').indexOf('#view-') === 0) {
+      // 浏览器原生 hash 跳转即可,不需要 preventDefault
+    }
+  });
+
+  window.addEventListener('hashchange', function() { showView(location.hash); });
+  window.addEventListener('DOMContentLoaded', function() { showView(location.hash); });
+
+  // 初始化(如果 DOMContentLoaded 已触发)
+  if (document.readyState !== 'loading') {
+    showView(location.hash);
+  }
+})();
+
+// ========== 主题切换(玉哥风格 · localStorage 记忆) ==========
+(function() {
+  var btn = document.getElementById('themeBtn');
+  var saved = localStorage.getItem('juben-theme') || 'light';
+  if (saved === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    btn.textContent = '☀️';
+  }
+  btn.addEventListener('click', function() {
+    var cur = document.documentElement.getAttribute('data-theme');
+    if (cur === 'dark') {
+      document.documentElement.removeAttribute('data-theme');
+      btn.textContent = '🌙';
+      localStorage.setItem('juben-theme', 'light');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      btn.textContent = '☀️';
+      localStorage.setItem('juben-theme', 'dark');
+    }
+  });
+})();
+</script>
+
+<script src="assets/site-enhance.js?v=fix20260927-2215" defer></script>
+</body>
+</html>

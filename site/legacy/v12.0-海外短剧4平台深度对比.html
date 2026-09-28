@@ -1,0 +1,342 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>海外短剧 4 平台深度对比 v12.0</title>
+<style>
+:root{--bg:#0b0d12;--bg2:#11141b;--bg3:#161a23;--line:#222837;--text:#e6e9f2;--muted:#8a93a6;--acc:#5ee0a7;--acc2:#ffb142;--acc3:#7aa2ff;--acc4:#c084fc;--acc5:#ff5b6e;}
+*{box-sizing:border-box;margin:0;padding:0}html,body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Helvetica,Arial,sans-serif;line-height:1.7;font-size:15px;-webkit-font-smoothing:antialiased}
+a{color:var(--acc3);text-decoration:none}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(11,13,18,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:12px 24px;display:flex;align-items:center;gap:16px}
+.logo{font-weight:800;font-size:18px;background:linear-gradient(90deg,var(--acc),var(--acc4));-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:.5px}
+.layout{display:grid;grid-template-columns:240px 1fr;max-width:1400px;margin:0 auto}
+aside{position:sticky;top:60px;height:calc(100vh - 60px);overflow-y:auto;padding:24px 16px;border-right:1px solid var(--line);background:var(--bg2)}
+aside h3{color:var(--muted);font-size:12px;letter-spacing:1px;margin:16px 0 8px;text-transform:uppercase}
+aside ul{list-style:none}
+aside li{margin:2px 0}
+aside a{color:#c5cae0;font-size:13px;display:block;padding:5px 10px;border-radius:5px;border-left:2px solid transparent}
+aside a:hover{background:var(--bg3);color:var(--text);text-decoration:none;border-left-color:var(--acc)}
+main{padding:32px 40px 80px;min-width:0}
+h1{font-size:32px;margin-bottom:8px;letter-spacing:.5px}
+h2{font-size:24px;margin:48px 0 16px;padding-bottom:8px;border-bottom:1px solid var(--line);position:relative}
+h2::before{content:"";position:absolute;left:-20px;top:8px;width:4px;height:22px;background:var(--acc);border-radius:2px}
+h3{font-size:18px;margin:28px 0 10px;color:var(--acc2)}
+p{margin:10px 0;color:#cfd4e0}
+ul,ol{margin:8px 0 12px 24px;color:#cfd4e0}
+li{margin:4px 0}
+strong{color:#fff}
+em{color:var(--acc2);font-style:normal}
+.hero{background:linear-gradient(135deg,#0a1a14 0%,#0b0d12 60%,#0d111c 100%);border:1px solid var(--acc);border-radius:14px;padding:36px 32px;margin-bottom:32px;box-shadow:0 0 40px rgba(94,224,167,.2);position:relative;overflow:hidden}
+.hero h1{background:linear-gradient(90deg,var(--acc),var(--acc4));-webkit-background-clip:text;background-clip:text;color:transparent;display:inline-block}
+.hero .sub{color:var(--muted);margin-top:6px;font-size:14px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.tag{background:rgba(255,255,255,.06);border:1px solid var(--line);padding:4px 10px;border-radius:99px;font-size:12px;color:#cdd3e1}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin:20px 0}
+.stat{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:18px}
+.stat .v{font-size:24px;font-weight:800;color:#fff;letter-spacing:.5px}
+.stat .l{color:var(--muted);font-size:13px;margin-top:4px}
+.stat.hot .v{color:var(--acc)}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;margin:14px 0}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--bg3);color:var(--muted);font-weight:600;font-size:11.5px;text-transform:uppercase;letter-spacing:.5px}
+tbody tr:hover{background:rgba(255,255,255,.02)}
+.badge{display:inline-block;padding:2px 6px;border-radius:4px;font-size:10.5px;font-weight:600}
+.badge.hot{background:rgba(255,91,110,.18);color:#ff8a99}
+.badge.warm{background:rgba(255,177,66,.18);color:#ffc777}
+.badge.cool{background:rgba(94,224,167,.18);color:#7defc0}
+.badge.info{background:rgba(122,162,255,.18);color:#a8c0ff}
+.badge.purple{background:rgba(192,132,252,.18);color:#d2afff}
+.callout{display:flex;gap:12px;padding:14px 16px;border-radius:8px;margin:14px 0;border:1px solid var(--line);background:var(--bg2)}
+.callout .ico{font-size:20px;flex-shrink:0;line-height:1}
+.callout.tip{border-color:rgba(94,224,167,.4);background:rgba(94,224,167,.06)}
+.callout.warn{border-color:rgba(248,113,113,.4);background:rgba(248,113,113,.06)}
+.callout.info{border-color:rgba(122,162,255,.4);background:rgba(122,162,255,.06)}
+.callout p{font-size:13.5px;color:#dde0ec;margin:0}
+.platform-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;margin:14px 0}
+.platform{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:16px}
+.platform .name{font-weight:700;color:#fff;font-size:15px;display:flex;align-items:center;gap:8px}
+.platform .price{color:var(--acc2);font-weight:800;font-size:18px;margin:6px 0}
+.platform .meta{font-size:12.5px;color:var(--muted);line-height:1.6}
+.platform .req{font-size:12.5px;color:#cfd4e0;margin-top:6px}
+footer{margin-top:60px;padding:24px 40px;color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);text-align:center}
+@media (max-width:900px){.layout{grid-template-columns:1fr}aside{position:relative;top:0;height:auto;border-right:0;border-bottom:1px solid var(--line)}main{padding:24px 20px 60px}h1{font-size:26px}h2{font-size:20px}}
+@media print{aside,.topbar{display:none}.layout{grid-template-columns:1fr}body{background:#fff;color:#000}h2::before{display:none}}
+</style>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg?v=fix20260927-2215">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="logo">🌍 海外短剧 4 平台深度对比 v12.0 <small>2026 实时数据 · 2026-09-10</small></div>
+  <button class="toc-btn" onclick="window.print()" style="margin-left:auto;background:var(--bg3);border:1px solid var(--line);color:var(--text);padding:6px 12px;border-radius:6px;cursor:pointer;font-size:13px">🖨 打印</button>
+</div>
+
+<div class="layout">
+
+<aside>
+<h3>总览</h3>
+<ul>
+  <li><a href="#hero">概览</a></li>
+  <li><a href="#data">2026 数据</a></li>
+</ul>
+
+<h3>4 大平台</h3>
+<ul>
+  <li><a href="#reelshort">① ReelShort</a></li>
+  <li><a href="#dramabox">② DramaBox</a></li>
+  <li><a href="#skyreels">③ SkyReels</a></li>
+  <li><a href="#shortmax">④ ShortMax</a></li>
+</ul>
+
+<h3>出海</h3>
+<ul>
+  <li><a href="#localize">本地化</a></li>
+  <li><a href="#comply">合规清单</a></li>
+  <li><a href="#money">资金流</a></li>
+</ul>
+</aside>
+
+<main>
+
+<section id="hero" class="hero">
+  <h1>海外短剧 4 平台深度对比</h1>
+  <p class="sub">2026 实时数据 · 2026-09-10 上午完成</p>
+  <p style="margin-top:14px;max-width:780px">本章深度对比 4 大海外短剧平台(ReelShort / DramaBox / SkyReels / ShortMax)。<strong>所有数据来自 2024-2026 公开报道</strong>。</p>
+  <div class="meta">
+    <span class="tag">🌍 4 大平台</span>
+    <span class="tag">💰 真实数据</span>
+    <span class="tag">🈶 本地化流程</span>
+    <span class="tag">⚖️ 合规清单</span>
+  </div>
+</section>
+
+<h2 id="data">一、2026 海外短剧数据</h2>
+
+<div class="stats">
+  <div class="stat hot"><div class="v">$7 亿</div><div class="l">Q1 2025 中国短剧 App 全球内购</div></div>
+  <div class="stat warm"><div class="v">$40 亿</div><div class="l">2026E 出海市场规模(艾瑞预测)</div></div>
+  <div class="stat cool"><div class="v">30%</div><div class="l">复合年增长率</div></div>
+  <div class="stat info"><div class="v">90%</div><div class="l">海外 Top 20 短剧 App 背后有中国公司</div></div>
+</div>
+
+<div class="callout warn">
+  <span class="ico">⚠️</span>
+  <p><strong>圈内实话</strong>:<strong>短剧出海 90% 的中国公司都亏损</strong>——ReelShort 母公司中文在线财报仍亏损,其他公司更惨。出海<strong>不是"躺赚"</strong>。</p>
+</div>
+
+<h2 id="reelshort">① ReelShort · 鼻祖</h2>
+
+<div class="platform-grid">
+<div class="platform">
+  <div class="name">🌍 ReelShort</div>
+  <div class="star"><span class="badge hot">鼻祖</span></div>
+  <div class="price">$0.04-0.08/千次</div>
+  <div class="meta">2025 全球下载量+70-105% · 美国市场占 38% · 单部剧转化 18% · ARPPU $5.3</div>
+  <div class="req"><b>母公司</b>:中文在线(点众科技)<br><b>打法</b>:真拍+AI 改,精准抓"霸总救妻/重生复仇/豪门联姻"<br><b>本地化</b>:北美+欧洲,试水西班牙语/法语<br><b>合作方式</b>:版权买断 ¥8-15 万/部 或 联合运营分成</div>
+</div>
+</div>
+
+<h3>投稿流程</h3>
+<div class="callout tip">
+  <span class="ico">📋</span>
+  <p><strong>合作方式 2 选 1</strong>:</p>
+</div>
+<ol>
+  <li><strong>版权买断</strong>:一次性 ¥8-15 万/部,海外所有收益归 ReelShort,中方不再参与</li>
+  <li><strong>联合运营</strong>:前期投入 ¥3-5 万(本地化制作费由中方垫付),后期按月结算,中方拿 30-50% 分成,回本 4.2 个月,ROI 1:2.3</li>
+</ol>
+
+<h2 id="dramabox">② DramaBox · 增速王</h2>
+
+<div class="platform-grid">
+<div class="platform">
+  <div class="name">📺 DramaBox</div>
+  <div class="star"><span class="badge warm">增速王</span></div>
+  <div class="price">$0.04-0.06/千次</div>
+  <div class="meta">2025 收入增速超 Netflix · AI 译制忠实拥趸 · 海量快速翻新国内存量剧</div>
+  <div class="req"><b>母公司</b>:独立平台,流量分发基因深<br><b>打法</b>:极致的本地化配音,海外用户极快刷到海量新剧<br><b>特点</b>:订阅粘性强,本地化更新快</div>
+</div>
+</div>
+
+<h2 id="skyreels">③ SkyReels · 黑马</h2>
+
+<div class="platform-grid">
+<div class="platform">
+  <div class="name">🤖 SkyReels</div>
+  <div class="star"><span class="badge purple">黑马</span></div>
+  <div class="price">—</div>
+  <div class="meta">支持 30 秒以上 AIGC 视频生成 · 国内顶尖 AI 独立团队</div>
+  <div class="req"><b>母公司</b>:AI 独立团队<br><b>打法</b>:AIGC 全流程生成,角色形象+场景全部 AI<br><b>意义</b>:迈向"零拍摄成本内容工厂"<br><b>技术亮点</b>:30 秒以上 AI 视频 + 角色一致性</div>
+</div>
+</div>
+
+<h2 id="shortmax">④ ShortMax · 东南亚王</h2>
+
+<div class="platform-grid">
+<div class="platform">
+  <div class="name">🌏 ShortMax</div>
+  <div class="star"><span class="badge info">东南亚王</span></div>
+  <div class="price">—</div>
+  <div class="meta">东南亚多国收入榜前列 · AI 批量化生产 + 广告创意生成</div>
+  <div class="req"><b>母公司</b>:独立团队,专注东南亚新兴市场<br><b>打法</b>:客单价低+流量大,跑上百个剧本找 1% 爆款<br><b>本地化</b>:马来/泰/印尼/越南多语种</div>
+</div>
+</div>
+
+<h2 id="localize">二、AI 译制 · 成本奇迹</h2>
+
+<div class="stats">
+  <div class="stat hot"><div class="v">10×</div><div class="l">传统 7-15 天 → AI 12 小时</div></div>
+  <div class="stat warm"><div class="v">15×</div><div class="l">降价:¥5 万 → ¥3000</div></div>
+  <div class="stat cool"><div class="v">¥50/分</div><div class="l">全流程(翻译+校对+配音)</div></div>
+</div>
+
+<h2 id="comply">三、海外合规清单</h2>
+
+<div class="steps">
+  <div class="step"><div class="n">1</div><h4>ICP 备案</h4><p>中国境内主体必办《网络文化经营许可证》</p></div>
+  <div class="step"><div class="n">2</div><h4>跨境文化出口许可</h4><p>出海需文化部审批</p></div>
+  <div class="step"><div class="n">3</div><h4>FTC 合规(美国)</h4><p>自动续费需明确提示;退款机制透明</p></div>
+  <div class="step"><div class="n">4</div><h4>GDPR(欧盟)</h4><p>用户数据不能存中国服务器,需 AWS 弗吉尼亚节点</p></div>
+  <div class="step"><div class="n">5</div><h4>宗教/政治红线</h4><p>中东/拉美:避免教会阴谋、政治讽刺</p></div>
+  <div class="step"><div class="n">6</div><h4>AI 换脸 Disclosure</h4><p>AI 合成主角需标注"Digital Actor",否则 $5000/部罚款</p></div>
+</div>
+
+<h2 id="money">四、海外 paywall 黄金集数</h2>
+
+<div class="callout tip">
+  <span class="ico">💰</span>
+  <p><strong>实测数据</strong>:海外 paywall 在第 <strong>5、12、20 集</strong> 设置,转化率 <strong>+22%</strong>。<strong>不要第 10 集</strong>(国内思维)——海外用户更"慢热",需要更长铺垫。</p>
+</div>
+
+<h2>五、海外爆款题材 TOP 6</h2>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>题材</th><th>代表剧</th><th>付费转化</th><th>本地化要点</th></tr></thead>
+<tbody>
+<tr><td>霸总救妻</td><td>My Fake Husband</td><td>★★★★★</td><td>欧美元素,非亚裔 ≥70%</td></tr>
+<tr><td>重生复仇</td><td>Revenge of the Ex</td><td>★★★★★</td><td>美式快节奏</td></tr>
+<tr><td>豪门联姻</td><td>The Substitute Bride</td><td>★★★★</td><td>中东:弱化亲密+强家庭</td></tr>
+<tr><td>穿越奇幻</td><td>Time Travel Wife</td><td>★★★★</td><td>欧美高接受度</td></tr>
+<tr><td>AI 换脸剧</td><td>—</td><td>★★★(新兴市场强)</td><td>需 Disclosure 声明</td></tr>
+<tr><td>东南亚本土</td><td>—</td><td>★★★(量取胜)</td><td>泰语/马来语/越南语</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout info">
+  <span class="ico">📌</span>
+  <p><strong>本章总结</strong>:本章对比 4 大海外短剧平台——ReelShort(鼻祖,北美)/ DramaBox(增速王,本地化)/ SkyReels(黑马,AIGC)/ ShortMax(东南亚王)。<strong>90% 中国公司亏损,出海非躺赚</strong>。建议:先做版权买断试水,再考虑联合运营。</p>
+</div>
+
+
+<h2 id="d3">§ 6 · 全网顶级海外短剧视频课路径(2026-09 校验)</h2>
+
+<div class='callout purple'>
+  <span class='ico'>💎</span>
+  <p><strong>海外短剧 90% 学员死 2 个点</strong>:① 不知道 4 平台(ReelShort/DramaBox/SkyReels/ShortMax)各自风格;② 不知道 AI 译制流程。<strong>本章 4 大平台深度对比 + AI 译制 + 合规清单</strong>,<strong>配 16 课顶级视频课</strong>,看完能上手出海。</p>
+</div>
+
+<h3>🐣 6.1 小白(没出过海) · 4 课</h3>
+<p>目标:<strong>30 分钟搞懂海外短剧 4 平台 + 怎么起步</strong>。</p>
+<div class='tbl-wrap'>
+<table>
+<thead><tr><th>课程</th><th>UP / 频道</th><th>时长</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td>海外短剧 4 平台对比</td><td>短剧出海 (B 站)</td><td>1-2 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E6%B5%B7%E5%A4%96%E7%9F%AD%E5%89%A7' target='_blank'>B 站搜'海外短剧'</a></td></tr>
+<tr><td>ReelShort 入门 + 第一集</td><td>ReelShort 出海 (B 站)</td><td>2-3 小时</td><td><a href='https://search.bilibili.com/all?keyword=ReelShort%20%E5%85%A5%E9%97%A8' target='_blank'>B 站搜'ReelShort 入门'</a></td></tr>
+<tr><td>DramaBox 实操教程</td><td>DramaBox 出海 (B 站)</td><td>2 小时</td><td><a href='https://search.bilibili.com/all?keyword=DramaBox' target='_blank'>B 站搜'DramaBox'</a></td></tr>
+<tr><td>短剧出海 1 万到 10 万播放</td><td>海外短剧实操 (B 站)</td><td>2-3 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E5%87%BA%E6%B5%B7%E7%9F%AD%E5%89%A7' target='_blank'>B 站搜'出海短剧'</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>🌱 6.2 入门(想投海外平台) · 4 课</h3>
+<p>目标:<strong>学会 AI 译制 + 投 ReelShort 1 部</strong>。</p>
+<div class='tbl-wrap'>
+<table>
+<thead><tr><th>课程</th><th>UP / 频道</th><th>时长</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td>AI 译制短剧 · 11Labs 多语种</td><td>AI 译制 (B 站)</td><td>2-3 小时</td><td><a href='https://search.bilibili.com/all?keyword=AI%20%E8%AF%91%E5%88%B6%20%E7%9F%AD%E5%89%A7' target='_blank'>B 站搜'AI 译制 短剧'</a></td></tr>
+<tr><td>ReelShort 投流 + 头部操盘</td><td>ReelShort 投流 (B 站)</td><td>3-5 小时</td><td><a href='https://search.bilibili.com/all?keyword=ReelShort%20%E6%8A%95%E6%B5%81' target='_blank'>B 站搜'ReelShort 投流'</a></td></tr>
+<tr><td>DramaBox + 11Labs 配音实战</td><td>11Labs 配音 (B 站)</td><td>2-3 小时</td><td><a href='https://search.bilibili.com/all?keyword=11Labs%20%E9%85%8D%E9%9F%B3' target='_blank'>B 站搜'11Labs 配音'</a></td></tr>
+<tr><td>海外短剧 paywall 设计</td><td>海外 paywall (B 站)</td><td>1-2 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E6%B5%B7%E5%A4%96%20paywall' target='_blank'>B 站搜'海外 paywall'</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>🚀 6.3 进阶(海外已上线,想放量) · 4 课</h3>
+<p>目标:<strong>海外 1 部剧月入 ¥3-5 万</strong>。</p>
+<div class='tbl-wrap'>
+<table>
+<thead><tr><th>课程</th><th>UP / 频道</th><th>时长</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td>海外短剧 SEO + 投流组合</td><td>海外 SEO (B 站)</td><td>3-5 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E6%B5%B7%E5%A4%96%E7%9F%AD%E5%89%A7%20SEO' target='_blank'>B 站搜'海外短剧 SEO'</a></td></tr>
+<tr><td>DramaBox 算法 + 关键集数</td><td>DramaBox 算法 (B 站)</td><td>2-3 小时</td><td><a href='https://search.bilibili.com/all?keyword=DramaBox%20%E7%AE%97%E6%B3%95' target='_blank'>B 站搜'DramaBox 算法'</a></td></tr>
+<tr><td>短剧海外本地化 5 大语言</td><td>短剧本地化 (B 站)</td><td>3-5 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E5%87%BA%E6%B5%B7%20%E6%9C%AC%E5%9C%B0%E5%8C%96' target='_blank'>B 站搜'出海 本地化'</a></td></tr>
+<tr><td>海外 ICP / 合规实操</td><td>出海合规 (B 站)</td><td>2-3 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E5%87%BA%E6%B5%B7%20%E5%90%88%E8%A7%84' target='_blank'>B 站搜'出海 合规'</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>👑 6.4 大神(海外矩阵化,想跨多国) · 4 课</h3>
+<p>目标:<strong>5 国同时跑,月入 ¥10-20 万</strong>。</p>
+<div class='tbl-wrap'>
+<table>
+<thead><tr><th>课程</th><th>UP / 频道</th><th>时长</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td>海外短剧矩阵化 5 国</td><td>海外矩阵 (B 站)</td><td>5-10 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E6%B5%B7%E5%A4%96%E7%9F%AD%E5%89%A7%20%E7%9F%A9%E9%98%B5' target='_blank'>B 站搜'海外短剧 矩阵'</a></td></tr>
+<tr><td>东南亚 / 北美 / 欧洲差异化运营</td><td>海外差异化 (B 站)</td><td>3-5 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E4%B8%9C%E5%8D%97%E4%BA%9A%20%E6%AD%8C%E5%89%A7' target='_blank'>B 站搜'东南亚 歌剧'</a></td></tr>
+<tr><td>海外头部短剧操盘手</td><td>海外操盘手 (B 站)</td><td>3-5 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E6%B5%B7%E5%A4%96%20%E6%93%8D%E7%9B%98' target='_blank'>B 站搜'海外 操盘'</a></td></tr>
+<tr><td>11Labs 高级配音 + 角色声纹</td><td>11Labs 高级 (YouTube)</td><td>1-2 小时</td><td><a href='https://www.youtube.com/results?search_query=ElevenLabs+voice+cloning+short+drama' target='_blank'>YouTube 搜'ElevenLabs voice cloning short drama'</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<div class='callout info'>
+  <span class='ico'>📌</span>
+  <p><strong>学完这页</strong> = 海外短剧从'0 认知'到'矩阵化'全段位。<strong>4 大平台 + 16 课视频课 + AI 译制 + 合规清单</strong> = 出海唯一入口。</p>
+</div>
+</main>
+</div>
+
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="后期放公众号二维码">
+      <img class="qr-img" src="../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../changelog.html">📅 更新日志</a></li>
+      <li><a href="mailto:yuge@local.demo">✉ 联系玉哥</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流 · 京 ICP 备 XXXXXXXX 号(待补)
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('aside a').forEach(function(a){
+    a.addEventListener('click',function(){
+      document.querySelectorAll('aside a').forEach(function(x){
+        x.style.color='';x.style.background='';x.style.borderLeftColor='transparent';
+      });
+      a.style.color='#5ee0a7';a.style.background='#161a23';a.style.borderLeftColor='#5ee0a7';
+    });
+  });
+});
+</script>
+</body>
+</html>

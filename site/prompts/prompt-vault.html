@@ -1,0 +1,1646 @@
+﻿﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
+<meta name="description" content="玉哥漫剧站图片作品集 · AI 漫剧角色 / 场景 / 分镜 prompt 模板">
+<meta name="keywords" content="AI 漫剧, AI 出图, Prompt 模板, 角色设计, 场景设计, 玉哥">
+<meta name="author" content="玉哥">
+<meta property="og:title" content="漫剧教程站 · 玉哥">
+<meta property="og:description" content="玉哥漫剧站图片作品集 · AI 漫剧角色 / 场景 / 分镜 prompt 模板">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="漫剧教程站 · 玉哥">
+<title>玉哥 prompt 模板 · 漫剧制作教程站</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232E6BFF'/%3E%3Cpath d='M8 10h16v2H8zM10 12v10h12V12h-3v6l-3-2-3 2v-6z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap">
+<style>
+:root{
+  --bg:#F6F8FB; --surface:#FFFFFF; --ink:#182A44; --ink2:#5A6B85; --line:#E3E9F3;
+  --blue:#2E6BFF; --blue-ink:#1B4FD8; --blue-bg:#EAF1FF;
+  --amber:#F0A500; --amber-bg:#FEF4E2;
+  --manga:#D6457E; --manga-bg:#FBEDF3;
+  --radius:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font-family:'Noto Sans SC',-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--ink);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+a{color:var(--blue-ink);text-decoration:none}
+button{font-family:inherit}
+.container{max-width:1080px;margin:0 auto;padding:0 20px}
+::selection{background:var(--blue-bg)}
+
+/* ===== 顶部导航 ===== */
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{display:flex;align-items:center;gap:9px;font-weight:900;font-size:17px;color:var(--ink)}
+.brand-mark{width:30px;height:30px;border-radius:8px;background:var(--blue);display:flex;align-items:center;justify-content:center;flex:none}
+.nav-links{display:flex;gap:4px}
+.nav-links a{display:block;padding:7px 13px;border-radius:8px;font-size:14px;color:var(--ink2);font-weight:500}
+.nav-links a:hover{background:var(--blue-bg);color:var(--blue-ink)}
+
+/* ===== Hero ===== */
+.hero{background:linear-gradient(180deg,#EEF4FF 0%,var(--bg) 100%);padding:64px 0 56px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+.hero-tag{display:inline-flex;align-items:center;gap:6px;background:var(--blue-bg);color:var(--blue-ink);font-size:13px;font-weight:700;padding:5px 12px;border-radius:999px;margin-bottom:18px}
+.hero h1{font-size:clamp(30px,4.6vw,46px);line-height:1.22;font-weight:900;letter-spacing:-.5px}
+.hero h1 em{font-style:normal;color:var(--blue)}
+.hero-sub{margin-top:16px;color:var(--ink2);font-size:16px;max-width:520px}
+.hero-cta{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 22px;border-radius:10px;font-size:15px;font-weight:700;border:1px solid transparent;cursor:pointer;transition:transform .15s ease,box-shadow .15s ease}
+.btn:active{transform:translateY(1px)}
+.btn-primary{background:var(--blue);color:#fff}
+.btn-primary:hover{background:var(--blue-ink);box-shadow:0 8px 20px rgba(46,107,255,.25)}
+.btn-ghost{background:var(--surface);color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--blue);color:var(--blue-ink)}
+.hero-badges{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+.badge{font-size:13px;color:var(--ink2);background:var(--surface);border:1px solid var(--line);padding:4px 11px;border-radius:999px}
+.hero-img-wrap{position:relative}
+.hero-img-wrap img{width:100%;border-radius:18px;display:block;border:1px solid var(--line)}
+.hero-img-cap{position:absolute;left:14px;bottom:14px;background:rgba(255,255,255,.94);border:1px solid var(--line);font-size:12px;color:var(--ink2);padding:5px 11px;border-radius:999px}
+
+/* ===== 快速上手 ===== */
+.steps{padding:52px 0 8px}
+.steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
+.step{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.step-num{font-size:13px;font-weight:900;color:var(--blue);letter-spacing:1px}
+.step h3{font-size:16px;margin:8px 0 6px}
+.step p{font-size:14px;color:var(--ink2)}
+
+/* ===== 区块标题 ===== */
+.section-head{margin-bottom:8px}
+.section-head .kicker{font-size:13px;font-weight:700;color:var(--blue);margin-bottom:6px}
+.section-head h2{font-size:clamp(24px,3.4vw,32px);font-weight:900;letter-spacing:-.3px}
+.section-head p{color:var(--ink2);font-size:15px;margin-top:8px;max-width:680px}
+
+/* ===== 提示词库 ===== */
+.library{padding:56px 0 24px}
+.tabbar{display:flex;gap:10px;margin:22px 0 18px;flex-wrap:wrap}
+.tab{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:10px;border:1px solid var(--line);background:var(--surface);font-size:15px;font-weight:700;color:var(--ink2);cursor:pointer}
+.tab .cnt{font-size:12px;background:var(--bg);padding:1px 8px;border-radius:999px;color:var(--ink2)}
+.tab.on{color:#fff;border-color:transparent}
+.tab.on .cnt{background:rgba(255,255,255,.22);color:#fff}
+.tab.drama.on{background:var(--blue)}
+.tab.manga.on{background:var(--manga)}
+.toolbar{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:18px}
+.search-box{flex:1;min-width:220px;position:relative}
+.search-box input{width:100%;padding:11px 16px 11px 42px;border:1px solid var(--line);border-radius:10px;background:var(--surface);font-size:16px;color:var(--ink);outline:none}
+.search-box input:focus{border-color:var(--blue);box-shadow:0 0 0 3px var(--blue-bg)}
+.search-box svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--ink2)}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{padding:7px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);font-size:13px;color:var(--ink2);cursor:pointer}
+.chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.group{margin-bottom:34px}
+.group-head{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.group-thumb{width:72px;height:52px;border-radius:10px;object-fit:cover;border:1px solid var(--line);flex:none}
+.group-head .g-icon{width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;flex:none}
+.group.drama .g-icon{background:var(--blue-bg);color:var(--blue-ink)}
+.group.manga .g-icon{background:var(--manga-bg);color:var(--manga)}
+.group-head h3{font-size:18px;font-weight:900}
+.group-head .g-count{font-size:12px;color:var(--ink2);background:var(--surface);border:1px solid var(--line);padding:2px 9px;border-radius:999px}
+
+.pcard{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:12px;padding:18px 20px;margin-bottom:14px}
+.group.manga .pcard{border-left-color:var(--manga)}
+.pcard-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap}
+.pcard-title{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.cat-tag{font-size:13px;font-weight:700;padding:3px 10px;border-radius:999px}
+.group.drama .cat-tag{background:var(--blue-bg);color:var(--blue-ink)}
+.group.manga .cat-tag{background:var(--manga-bg);color:var(--manga)}
+.pcard h4{font-size:16px;font-weight:700}
+.tool-tag{font-size:13px;color:var(--ink2);background:var(--bg);padding:4px 10px;border-radius:6px;white-space:nowrap}
+.pcard-meta{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.src-link{font-size:12.5px;font-weight:700;color:var(--blue-ink);background:var(--blue-bg);padding:3px 9px;border-radius:6px;white-space:nowrap}
+.src-link:hover{text-decoration:underline}
+.group.common .g-icon{background:var(--amber-bg);color:#8a5b00}
+.group.common .pcard{border-left-color:var(--amber)}
+.group.common .cat-tag{background:var(--amber-bg);color:#8a5b00}
+.group.common .copy-btn{background:var(--amber);color:#5d3d00}
+.group.common .copy-btn:hover{background:#df9300}
+.tab.common.on{background:var(--amber);color:#5d3d00}
+.tab.common.on .cnt{background:rgba(93,61,0,.18);color:#5d3d00}
+.pcard-desc{font-size:14px;color:var(--ink2);margin:8px 0 10px}
+.pcard-text{font-family:'Noto Sans SC','Microsoft YaHei',sans-serif;font-size:13.5px;line-height:1.75;background:#F8FAFF;border:1px solid #E7EDF8;border-radius:10px;padding:14px 16px;white-space:pre-wrap;word-break:break-word;color:#22324F;max-height:280px;overflow:auto}
+.pcard-actions{display:flex;justify-content:space-between;align-items:center;margin-top:12px;gap:10px;flex-wrap:wrap}
+.copy-hint{font-size:13px;color:var(--ink2)}
+.copy-hint code{background:var(--amber-bg);color:#8a5b00;padding:1px 6px;border-radius:5px;font-family:inherit}
+.copy-btn{display:inline-flex;align-items:center;gap:7px;background:var(--blue);color:#fff;border:none;border-radius:9px;padding:9px 18px;font-size:14px;font-weight:700;cursor:pointer;transition:background .15s}
+.copy-btn:hover{background:var(--blue-ink)}
+.group.manga .copy-btn{background:var(--manga)}
+.group.manga .copy-btn:hover{background:#b93366}
+.empty-state{display:none;text-align:center;padding:50px 0;color:var(--ink2);font-size:15px}
+
+/* ===== 组合器 ===== */
+.combiner{padding:56px 0 24px}
+.cb-wrap{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px;margin-top:22px}
+.cb-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-bottom:16px}
+.cb-field label{display:block;font-size:13px;font-weight:700;color:var(--ink2);margin-bottom:6px}
+.cb-field select{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:9px;background:var(--surface);font-size:16px;color:var(--ink);outline:none;cursor:pointer}
+.cb-field select:focus{border-color:var(--blue);box-shadow:0 0 0 3px var(--blue-bg)}
+.cb-output{background:#F8FAFF;border:1px solid #E7EDF8;border-radius:10px;padding:16px;font-size:13.5px;line-height:1.75;white-space:pre-wrap;color:#22324F;min-height:120px;max-height:320px;overflow:auto;margin-bottom:16px}
+.cb-actions{display:flex;gap:10px;flex-wrap:wrap}
+.btn-amber{background:var(--amber);color:#5d3d00}
+.btn-amber:hover{background:#df9300}
+.field-group.hidden{display:none}
+
+/* ===== 工具集合 ===== */
+.tools{padding:56px 0 24px}
+.tools-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:22px}
+.tool-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px;display:flex;flex-direction:column;gap:9px;transition:border-color .15s,transform .15s}
+.tool-card:hover{border-color:var(--blue);transform:translateY(-2px)}
+.tool-icon{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center}
+.tool-card h3{font-size:15px;font-weight:700}
+.tool-card .t-kind{font-size:12px;color:var(--ink2)}
+.tool-card p{font-size:13px;color:var(--ink2);flex:1}
+.tool-card a{margin-top:2px;font-size:13px;font-weight:700}
+.tool-card a:hover{text-decoration:underline}
+.kind-dir{background:#EDF3FF;color:#2E6BFF}
+.kind-video{background:#FFF0E6;color:#E2600C}
+.kind-chat{background:#E9F9F2;color:#0E8A62}
+.kind-edit{background:#F3EEFF;color:#7A3FDD}
+
+/* ===== FAQ ===== */
+.faq{padding:56px 0 24px}
+.faq-list{margin-top:22px;display:grid;gap:10px}
+details{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:0 20px}
+summary{cursor:pointer;padding:16px 0;font-size:15px;font-weight:700;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px}
+summary::-webkit-details-marker{display:none}
+summary .plus{color:var(--blue);font-size:18px;font-weight:900;flex:none;transition:transform .2s}
+details[open] summary .plus{transform:rotate(45deg)}
+details .faq-a{padding:0 0 18px;font-size:14px;color:var(--ink2)}
+
+/* ===== Footer ===== */
+footer{margin-top:56px;border-top:1px solid var(--line);background:var(--surface);padding:26px 0 34px}
+.foot{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;font-size:13px;color:var(--ink2)}
+.foot b{color:var(--ink)}
+
+/* ===== Toast ===== */
+.toast{position:fixed;left:50%;bottom:32px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:11px 22px;border-radius:10px;font-size:14px;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;z-index:99}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* ===== 左侧悬浮目录 ===== */
+.side-nav{display:none;position:fixed;left:14px;top:84px;bottom:24px;width:186px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 12px;overflow-y:auto;z-index:40}
+.side-nav-title{font-size:13px;font-weight:900;color:var(--ink);margin-bottom:10px}
+.sn-group{margin-bottom:10px}
+.sn-group-title{font-size:12px;font-weight:700;color:var(--ink2);margin-bottom:4px;padding:3px 8px;border-radius:6px;cursor:pointer;user-select:none;display:flex;align-items:center;gap:5px}
+.sn-group-title:hover{background:var(--blue-bg);color:var(--ink)}
+.sn-group-title::before{content:'▾';font-size:10px;transition:transform .15s ease;color:var(--ink2)}
+.sn-group.collapsed .sn-group-title::before{transform:rotate(-90deg)}
+.sn-group a{display:block;font-size:12.5px;color:var(--ink2);padding:3px 8px;border-radius:6px;margin-bottom:1px;line-height:1.5}
+.sn-group a:hover{background:var(--blue-bg);color:var(--blue-ink)}
+.sn-group a.on{background:var(--blue);color:#fff;font-weight:700}
+.sn-group.collapsed a{display:none}
+
+/* ===== 响应式 ===== */
+@media (min-width:1360px){
+  .side-nav{display:block}
+  .container{max-width:1080px;margin-left:224px;margin-right:auto}
+  .nav-inner{margin:0 auto}
+  footer .container{margin:0 auto}
+}
+@media (max-width:920px){
+  .hero-grid{grid-template-columns:1fr;gap:26px}
+  .steps-grid{grid-template-columns:1fr}
+  .tools-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (min-width:921px) and (max-width:1180px){
+  .tools-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:560px){
+  .nav-links{display:none}
+  .tools-grid{grid-template-columns:1fr}
+  .pcard-top{flex-direction:column}
+  .cb-row{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== 导航 ===== -->
+<header class="nav">
+  <div class="container nav-inner">
+    <div class="brand">
+      <span class="brand-mark"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M6 7v11a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/></svg></span>
+      AI 短剧漫剧提示词库
+    </div>
+    <nav class="nav-links">
+      <a href="#library">提示词库</a>
+      <a href="#combiner">组合器</a>
+      <a href="#tools">工具集合</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== 左侧悬浮目录 ===== -->
+<aside class="side-nav" id="sideNav" aria-label="页面目录">
+  <div class="side-nav-title">目录</div>
+  <nav>
+    <div class="sn-group collapsed">
+      <div class="sn-group-title">短剧</div>
+      <a href="#d1">D1 四节拍钩子</a>
+      <a href="#d2">D2 剧本三段式</a>
+      <a href="#d5">D5 角色锁定</a>
+      <a href="#d6">D6 F.O.R.M.S</a>
+      <a href="#d7">D7 六板块结构</a>
+      <a href="#d3">D3 相机公式</a>
+      <a href="#d4">D4 相机模式</a>
+      <a href="#d8">D8 电影术语</a>
+      <a href="#d9">D9 统一前置段</a>
+      <a href="#d10">D10 Kling 对口型</a>
+      <a href="#d11">D11 即梦对口型</a>
+      <a href="#d12">D12 Veo 台词</a>
+      <a href="#d13">D13 Veo 音效段</a>
+      <a href="#d14">D14 声音三分法</a>
+      <a href="#d15">D15 即梦 BGM</a>
+      <a href="#d16">D16 色彩配方</a>
+      <a href="#d17">D17 打光词表</a>
+    </div>
+    <div class="sn-group collapsed">
+      <div class="sn-group-title">漫剧</div>
+      <a href="#m1">M1 Niji 画风</a>
+      <a href="#m2">M2 2D 标识符</a>
+      <a href="#m8">M8 防漂移</a>
+      <a href="#m3">M3 角色双锁定</a>
+      <a href="#m4">M4 跨页分镜</a>
+      <a href="#m5">M5 章节分页</a>
+      <a href="#m6">M6 情绪外化</a>
+      <a href="#m7">M7 分镜时间线</a>
+    </div>
+    <div class="sn-group collapsed">
+      <div class="sn-group-title">共性</div>
+      <a href="#u1">U1 文生公式</a>
+      <a href="#u2">U2 图生公式</a>
+      <a href="#u3">U3 负面词</a>
+      <a href="#u4">U4 一致性工作流</a>
+      <a href="#u5">U5 多镜头</a>
+      <a href="#u6">U6 顺序提示</a>
+      <a href="#u7">U7 正向措辞</a>
+    </div>
+  </nav>
+</aside>
+
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="hero-tag"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>面向 AI 短剧 &amp; 漫剧创作者</span>
+      <h1>顶级提示词库，<em>复制即用</em></h1>
+            <div class="hero-cta">
+    <a class="btn btn-primary" href="#library">开始用提示词</a>
+    <a class="btn btn-ghost" href="#combiner">打开组合器</a>
+      </div>
+          </div>
+    <div class="hero-img-wrap">
+      <img src="assets/hero.png" alt="AI 短剧与漫剧创作工作台插画">
+      <span class="hero-img-cap">AI 创作工作台（示意）</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 快速上手 ===== -->
+<section class="steps">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">三步上手</div>
+      <h2>怎么用这份提示词库</h2>
+    </div>
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h3>选择板块</h3>
+        <p>短剧、漫剧、共性三类，按需切换。</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h3>复制提示词</h3>
+        <p>一键复制完整提示词。</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h3>替换变量生成</h3>
+        <p>替换 <code style="background:var(--amber-bg);color:#8a5b00;padding:1px 6px;border-radius:5px">{变量}</code>，粘贴到 AI 工具。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 提示词库 ===== -->
+<section class="library" id="library">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">提示词库</div>
+      <h2>经过市场验证的提示词</h2>
+      <p>32 条均来自官方文档与高星仓库，卡片右上角带来源链接，点开可查证。替换 <code style="background:var(--amber-bg);color:#8a5b00;padding:1px 6px;border-radius:5px">{变量}</code> 即可用。</p>
+    </div>
+
+    <div class="tabbar" role="tablist">
+      <button class="tab drama on" data-tab="drama" type="button">短剧提示词<span class="cnt">17</span></button>
+      <button class="tab manga" data-tab="manga" type="button">漫剧提示词<span class="cnt">8</span></button>
+      <button class="tab common" data-tab="common" type="button">共性顶级<span class="cnt">7</span></button>
+    </div>
+
+    <div class="toolbar">
+      <div class="search-box">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <input id="search" type="text" placeholder="搜索提示词，如：角色、分镜、转场…" autocomplete="off">
+      </div>
+      <div class="chips" id="chips"></div>
+    </div>
+
+    <!-- ===== 短剧板块 ===== -->
+    <div id="group-drama">
+      <div class="group drama">
+        <div class="group-head">
+          <img class="group-thumb" src="assets/drama.png" alt="AI 短剧创作插画">
+          <div>
+            <h3>短剧 · 剧本与结构</h3>
+            <span class="g-count">剧本·角色·分镜·运镜</span>
+          </div>
+        </div>
+
+        <article class="pcard" id="d1" data-cat="剧本结构">
+          <div class="pcard-top">
+            <div class="pcard-title"><span class="cat-tag">剧本结构</span><h4>D1 四节拍钩子框架（冷开场→揭示→反转→掐断）</h4></div>
+            <div class="pcard-meta">
+              <span class="tool-tag">MiniMax H3 · 即梦 · Kling</span>
+              <a class="src-link" href="https://pixo.video/zh/blog/ai-short-drama" target="_blank" rel="noopener">来源</a>
+            </div>
+          </div>
+          <p class="pcard-desc">竖屏短剧前 15 秒留人：四节拍把冲突压缩成镜头清单。</p>
+          <pre class="pcard-text">图片1 锁定女主的脸。图片2 锁定男主的脸。
+9:16 竖屏短剧场景，[场景描述，如"夜晚的豪华现代顶层公寓"]，电影感主光。
+切镜1，中景：[角色A]在[动作，如"玻璃桌前签署一份文件"]，[细节，如"双手微微颤抖"]。
+切镜2，过肩：[角色B]站在[位置]注视，[神情描述]。
+切镜3，[角色A]的特写：[动作，如"她抬起头说"]："[台词]"。
+切镜4，[角色B]的特写：[微表情]。[他/她说]："[台词]"。
+定格在[角色]的眼神上。对白下铺[音乐情绪]，[环境底噪]。
+
+四节拍：冷开场（0-3秒）→ 揭示（3-8秒）→ 反转（8-13秒）→ 掐断（13-15秒）</pre>
+          <div class="pcard-actions">
+            <span class="copy-hint">每镜点名景别；台词逐字写；像测广告一样测钩子</span>
+            <button class="copy-btn" type="button">复制提示词</button>
+          </div>
+        </article>
+
+        <article class="pcard" id="d2" data-cat="剧本结构">
+          <div class="pcard-top">
+            <div class="pcard-title"><span class="cat-tag">剧本结构</span><h4>D2 五种钩子公式 + 八种悬念结尾 + 三段式剧本模板</h4></div>
+            <div class="pcard-meta">
+              <span class="tool-tag">ChatGPT · Claude · Gemini</span>
+              <a class="src-link" href="https://genra.ai/blog/ai-short-drama-script-formula-hooks-cliffhangers" target="_blank" rel="noopener">来源</a>
+            </div>
+          </div>
+          <p class="pcard-desc">批量产出结构化短剧剧本：系列圣经 → 分集大纲 → 单集剧本。</p>
+          <pre class="pcard-text">第一步 — 系列圣经：
+为一个 [类型] 短剧创建系列圣经，共 [集数] 集，包含：
+- 一句话梗概
+- 主角成长弧线
+- 3 个动机清晰的重要配角
+- 5 个主要剧情转折点
+- 驱动每一集的核心冲突
+- 最终结局
+
+第二步 — 分集大纲：
+基于 [系列圣经]，为第 1–10 集列出大纲，每集包含：
+- 开场钩子（第一句台词）
+- 本集核心冲突
+- 悬念结尾（最后一刻的具体画面）
+每集控制在 90 秒以内。
+
+第三步 — 单集剧本：
+为第 [X] 集写完整剧本，要求：
+- 60–90 秒的对白/动作
+- 开场 3 秒抓住注意力的钩子
+- 结尾用悬念清单中的一种：[粘贴悬念类型]
+- 角色不超过 3 个
+- 每句台词推进剧情或揭示人物
+用剧本格式输出，带场景标题。
+
+五种钩子：身份反转 / 绝境开局 / 隐藏身份 / 倒计时 / 震惊性揭示
+八种悬念结尾：身体危险 / 揭示 / 抉择 / 登场 / 背叛 / 倒计时 / 情感告白 / 反转</pre>
+          <div class="pcard-actions">
+            <span class="copy-hint">在解决方案出现之前切；每集 ≤3 角色；悬念类型轮换</span>
+            <button class="copy-btn" type="button">复制提示词</button>
+          </div>
+        </article>
+
+        <article class="pcard" id="d5" data-cat="角色设定">
+          <div class="pcard-top">
+            <div class="pcard-title"><span class="cat-tag">角色设定</span><h4>D5 全局角色锁定 + 8 场景时间码模板（含负向约束）</h4></div>
+            <div class="pcard-meta">
+              <span class="tool-tag">Seedance · Runway · Kling</span>
+              <a class="src-link" href="https://www.bigprompthub.com/character-consistency-video-prompt/" target="_blank" rel="noopener">来源</a>
+            </div>
+          </div>
+          <p class="pcard-desc">角色跨镜头漂移：身份合同锁形象 + 8 场景时间码 + 负向约束。</p>
+          <pre class="pcard-text">全局角色一致性：
+参考角色：
+[年龄与身份]，[发型与颜色]，[瞳色或关键面部特征]，
+[体型]，身穿 [上装]，[下装]，[配饰]，[鞋]。
+在每个场景中保持完全相同的脸、发型、服装、身体比例、颜色和 [画风]。
+
+场景1（0-2秒）— [开场地点]：
+[角色] 坐在/站在 [早晨场景] 中，准备 [主要活动]。
+使用 [时间段]、[房间/环境细节]、电影感灯光、浅景深、缓慢推镜。保持角色身份与 [画风] 一致。
+
+场景2（2-4秒）— [准备特写]：
+[具体动作] 的特写，带有 [情绪]。强调 [布料/手/物品/面部细节]，
+柔和光线，写实质感，电影感景深，平滑手持运镜。
+
+场景3（4-6秒）— [出发转场]：
+角色从 [家/起点] 走向 [目的地]，携带 [主要道具]。
+使用 [室外光线]、[街道/风景细节]、长阴影、电影感跟拍。
+
+场景4（6-8秒）— [路途节拍]：
+角色继续穿过 [路线/环境]，仍携带/使用 [主要道具]。
+加入 [树木/城市/走廊/人群/天气细节]，适当时加轻微镜头光晕，写实运动，平滑跟拍。
+
+场景5（8-10秒）— [主要动作地点]：
+角色在 [主要活动地点] 执行 [主要动作]。
+使用动态跟拍、明快节奏、明亮的电影感灯光、写实运动模糊，保持角色身份一致。
+
+场景6（10-12秒）— [高光动作]：
+角色在 [特定障碍/场景] 上方/穿过/旁边完成 [招牌动作或戏剧性动作]。
+使用戏剧性低角度镜头、[背景细节]、写实物理、电影感慢动作。
+
+场景7（12-14秒）— [情绪远景]：
+角色在 [最终观景处/沉思地点] 停下或伫立，面向 [方向]。
+使用 [天空颜色]、柔和的环境动态、电影感远景、情绪化氛围。
+
+场景8（14-15秒）— [最终特写]：
+角色面部的极特写。展示 [眼神反射或表情细节]、[头发/衣物动态]，
+温暖的电影感光线，浅景深，安静收尾的表情。
+
+风格与输出：
+[画风]，电影感灯光，[主光源质量]，[构图与画幅]，适当时加入体积光或大气纵深，
+平滑运镜，浅景深，写实质感，高级调色，角色身份一致，[输出分辨率与格式]。
+
+负向约束：
+场景之间不得改变脸、发型、服装颜色、身体比例、年龄或主要道具。
+避免多余角色、随机换装、面部特征闪烁、无法辨认的手、物理穿帮、文字叠层、Logo 和水印。</pre>
+          <div class="pcard-actions">
+            <span class="copy-hint">先填身份锁；能传参考图就传；先测第 1/5/8 镜</span>
+            <button class="copy-btn" type="button">复制提示词</button>
+          </div>
+        </article>
+
+        <article class="pcard" id="d6" data-cat="分镜脚本">
+          <div class="pcard-top">
+            <div class="pcard-title"><span class="cat-tag">分镜脚本</span><h4>D6 F.O.R.M.S 长视频框架 + 多镜头配置表 + 对白写法</h4></div>
+            <div class="pcard-meta">
+              <span class="tool-tag">Kling 3.0 / Omni</span>
+              <a class="src-link" href="https://kling.ai/blog/kling-ai-long-video-prompts-10s-script-guide" target="_blank" rel="noopener">来源</a>
+            </div>
+          </div>
+          <p class="pcard-desc">10–15 秒多镜头叙事结构：F.O.R.M.S 五支柱 + 逐镜配置表。</p>
+          <pre class="pcard-text">F.O.R.M.S 框架：
+焦点 = 角色 A 和角色 B
+结果 = 一场关于秘密的对话
+真实感 = 电影级画质，4K 纹理
+运动 = 缓推 + 正反打镜头
+场景 = 别墅室外露台
+
+多镜头配置表（自定义多镜头模式）：
+镜头1 | 欧洲别墅远景定场 | 3 秒
+镜头2 | 女人搅动果汁的特写 | 4 秒
+镜头3 | 男人回应的中景 | 3 秒
+
+对白写法要点：
+写明说话人名字，把每句台词放在说话角色附近。
+用平实文字标注语言、语气、表演方式和相关音效，让多角色场景容易跟上。
+先写动作再写台词（例如：角色先猛拍桌子，再发问）。
+加入呼吸、眨眼等微动作，增强真人感。</pre>
+          <div class="pcard-actions">
+            <span class="copy-hint">先写场景再写动作；对白先写动作再写台词</span>
+            <button class="copy-btn" type="button">复制提示词</button>
+          </div>
+        </article>
+
+        <article class="pcard" id="d7" data-cat="分镜脚本">
+          <div class="pcard-top">
+            <div class="pcard-title"><span class="cat-tag">分镜脚本</span><h4>D7 Seedance Director 六板块即拷提示词结构</h4></div>
+            <div class="pcard-meta">
+              <span class="tool-tag">即梦 Seedance 2.0 / 2.5</span>
+              <a class="src-link" href="https://skillhub.cn/skills/seedance-director" target="_blank" rel="noopener">来源</a>
+            </div>
+          </div>
+          <p class="pcard-desc">分镜、台词、旁白、BGM 与参考图组织成一段完整提示词。</p>
+          <pre class="pcard-text">## 角色 + 参考图
+- 角色A（主角）：@图片1 — [外貌、服装、年龄描述]
+- 角色B（配角）：@图片2 — [外貌、服装描述]
+- 场景参考：@图片3 — [环境描述]
+
+## 背景介绍
+[前情、环境、情绪氛围，交代当前场景的上下文]
+
+## 镜头描述
+镜头1（0-3s）：[景别]，[画面内容]，角色A [动作]，角色A："[台词]"，[运镜]
+镜头2（3-6s）：[景别]，[画面内容]，角色B [动作]，角色B："[台词]"，[运镜]
+
+## 声音设计
+- BGM：[风格/乐器/节奏变化，如"低沉钢琴单音渐入 → 吉他弦乐加入 → 大提琴到达最温暖处"]
+- 环境音：[按时间段标注，如"0-9s 键盘敲击+空调嗡鸣；9-15s 鸟鸣+引擎启动"]
+- 对白/旁白（二选一或混用，必须写完整文案）：
+  - 对白：写在镜头描述中，角色A："完整台词"（即梦自动口型同步）
+  - 旁白：按镜头标注完整旁白文案
+- 音色参考：[音色和语气，如"年轻女声，语气轻松自然" / "音色参考@视频1中的男声"]
+
+## 风格指令
+[统一视觉风格：质感、色调、光线、景深等]
+
+## 禁止项
+禁止出现文字、水印、LOGO
+禁止"后期叠加""后期添加""外部工具处理"等指示
+
+台词密度规则：约 3 字/秒，单句 ≤15 字（最优 8–12 字）；3s 镜头 ≤9 字，5s 镜头 ≤15 字，10s 镜头 ≤30 字。禁止书面语连词（"然而""综上所述"），优先动词和第二人称"你"。</pre>
+          <div class="pcard-actions">
+            <span class="copy-hint">每个角色独立绑一张参考图；对白写在镜头描述里；金句/反转放视频 2/3 处</span>
+            <button class="copy-btn" type="button">复制提示词</button>
+          </div>
+        </article>
+
+        <article class="pcard" id="d3" data-cat="运镜镜头">
+          <div class="pcard-top">
+            <div class="pcard-title"><span class="cat-tag">运镜镜头</span><h4>D3 相机提示词公式 + 三节拍序列（Runway 官方）</h4></div>
+            <div class="pcard-meta">
+              <span class="tool-tag">Runway · Veo · Kling · 即梦</span>
+              <a class="src-link" href="https://runway.com/resources/ai-camera-prompts" target="_blank" rel="noopener">来源</a>
+            </div>
+          </div>
+          <p class="pcard-desc">构图不可控：按公式拼装景别+角度+运动+主体+光线。</p>
+          <pre class="pcard-text">[景别] + [角度] + [运动 + 方向 + 速度] + [主体与动作] + [镜头/质感] + [光线/氛围] + [这个镜头揭示什么]
+
+范例：中景，低角度，4 秒缓慢推镜，侦探在雨中点燃香烟，35mm 镜头浅景深，霓虹倒影。推镜揭示他脸上的紧张。
+
+三节拍序列：
+节拍1 — 定场：远景，高角度，镜头锁定。夜晚，女人背对镜头走进狭窄小巷，沥青路面湿润，一盏钠灯形成朦胧光晕。
+节拍2 — 推近：中景，高角度，6 秒缓慢推近。她身后有人从门廊走出，轻轻跟随。女人停下脚步。
+节拍3 — 揭示：切至极特写，低角度，女人转身面向街灯。她微笑，两颗尖牙在光中闪亮。</pre>
+          <div class="pcard-actions">
+            <span class="copy-hint">运动词配速度/时长；不堆叠运动动词；每节拍单独生成再拼接</span>
+            <button class="copy-btn" type="button">复制提示词</button>
+          </div>
+        </article>
+
+        <article class="pcard" id="d4" data-cat="运镜镜头">
+          <div class="pcard-top">
+            <div class="pcard-title"><span class="cat-tag">运镜镜头</span><h4>D4 四种相机提示词模式（含 Omni 多镜头表）</h4></div>
+            <div class="pcard-meta">
+              <span class="tool-tag">Kling 3.0 / Omni</span>
+              <a class="src-link" href="https://kling.ai/blog/kling-ai-camera-control-video-guide" target="_blank" rel="noopener">来源</a>
+            </div>
+          </div>
+          <p class="pcard-desc">精确控制推、拉、摇、移的官方句式，多镜头逐镜指定。</p>
+          <pre class="pcard-text">模式1 — 主体 + 相机运动 + 目的：
+相机缓慢推近 [主体]，强调 [细节或情绪]。
+例：相机缓慢推近正在摆盘甜点的厨师，强调最后的点缀，写实厨房灯光。
+
+模式2 — 起始帧 + 结束帧：
+从 [特写/全景] 开始，然后 [相机运动]，揭示 [最终画面]。
+例：从表盘特写开始，然后拉远，露出完整手腕和深色影棚背景。
+
+模式3 — 相机运动 + 速度 + 稳定性：
+缓慢、稳定地向左横摇 [场景]，无突然运动。
+
+模式4 — Omni 多镜头分镜表：
+镜头1：远景定场，静态机位。
+镜头2：缓慢推近主体。
+镜头3：俯拍下摇，揭示产品细节。
+镜头4：拉远收尾。</pre>
+          <div class="pcard-actions">
+            <span class="copy-hint">每镜一个主运动；Omni 用分镜表逐镜写</span>
+            <button class="copy-btn" type="button">复制提示词</button>
+          </div>
+        </article>
+
+        <article class="pcard" id="d8" data-cat="运镜镜头">
+          <div class="pcard-top">
+            <div class="pcard-title"><span class="cat-tag">运镜镜头</span><h4>D8 电影级提示词指南：景别情绪 + 运镜 + 动态转场</h4></div>
+            <div class="pcard-meta">
+              <span class="tool-tag">Sora · Runway · Kling · 即梦 · Luma</span>
+              <a class="src-link" href="https://gist.github.com/ruvnet/e20537eb50866b2d837d4d13b066bd88" target="_blank" rel="noopener">来源</a>
+            </div>
+          </div>
+          <p class="pcard-desc">每种景别、运镜对应的叙事情绪，含组合范例与转场。</p>
+          <pre class="pcard-text">景别与叙事情绪：
+特写：以主角面部特写开场，捕捉每一个坚定的微表情。
+过肩：切换到导师观察学徒工作的过肩镜头。
+高角度：用高角度镜头拍摄独自站在空旷田野的英雄，强调其孤立。
+低角度：用低角度镜头表现 CEO 向人群讲话的威压。
+荷兰角：切到巷道的荷兰角镜头，传达迷失与危险感。
+
+运镜与叙事功能：
+向古董音乐盒推近，在它打开时加剧观众的好奇。
+横摇扫过天际线，缓缓揭示隐藏的屋顶花园。
+从大笑的人群甩镜到震惊的评委，强调气氛突变。
+从村庄广场上方摇臂下降，进入市集的喧嚣。
+用稳定器镜头跟拍走廊里的跑者，始终对准他的脸。
+
+组合范例：
+"以主角站在悬崖边的广角过肩镜头开场。缓缓推近，他把手伸向谷底。然后下摇，揭示下方蜿蜒的河流。最后切到他坚定表情的特写，放大每一个细微情绪。"
+
+动态转场：
+用甩镜模糊，将场景无缝过渡到下一地点。
+角色跃过缺口时加入慢动作，强调这一刻的分量。</pre>
+          <div class="pcard-actions">
+            <span class="copy-hint">仰拍=权力，俯拍=脆弱；转场首选甩镜</span>
+            <button class="copy-btn" type="button">复制提示词</button>
+          </div>
+        </article>
+
+        <!-- ===== D9 风格基底 ===== -->
+        <article class="pcard" id="d9" data-cat="风格基底">
+          <div class="pcard-top">
+            <div class="pcard-title"><span class="cat-tag">风格基底</span><h4>D9 全片统一风格前置段四段式模板（实战模板）</h4></div>
+            <div class="pcard-meta">
+              <span class="tool-tag">即梦 · Kling · Veo 通用</span>
+            </div>
+          </div>
+          <p class="pcard-desc">多镜短剧每镜重复写画质风格易跑偏：一次写好前置段，每镜复用。</p>
+          <pre class="pcard-text">【全镜头统一前置段（画质基底，每条开头写一次）】
+8K 超高清，{摄影机型号，如"索尼 FX6"} 实拍，{胶片质感，如"35mm 电影胶片原生颗粒"}，
+{光线基调，如"自然光写实布光"}，零面部噪点，无 CG 塑料感，无 AI 畸变穿模，
+真实人体胸腔呼吸起伏，物理碰撞质感真实，人物站位符合空间逻辑，
+镜头轴线统一不越轴，口型与面部肌肉情绪完全同步。
+
+【人物动作与画面约束段】
+人物动作流畅自然，肢体协调，无畸形无穿模。表情生动，情绪到位，眼神真实。
+{音频约束，如"保留音效，可配 BGM；画面里不要出现任何字幕/标题/水印文字"}。
+
+【场景氛围段（按本片题材替换）】
+{题材类型，如"电影悬疑黑帮片"}，{时间，如"深夜"}，{地点，如"豪华别墅主卧"}，
+{光线设计，如"低照度暖黄床头小台灯，局部柔光，大面积暗部阴影"}，
+{质感细节，如"柔和胶片颗粒，皮肤纹理、{道具细节，如"绷带血渍"}细节拉满"}，
+{景深，如"景深虚化背景"}，{色调对比，如"冷暖弱对比光影"}，
+{情绪氛围，如"压抑悲伤又暗藏复仇张力"}，{整体质感，如"写实真人影视质感"}。
+人物形象与参考图完全统一，站位和背景根据以下分镜生成。
+
+【逐镜分镜表】
+镜头1：{景别，如"近景"} {镜头运动，如"固定"}，{构图，如"过人物1的肩膀拍人物2"}。
+镜头2：{景别} {镜头运动/拍摄方式，如"手持"}。</pre>
+          <div class="pcard-actions">
+            <span class="copy-hint">改新片只换场景段和分镜表，前置段与约束段基本不动</span>
+            <button class="copy-btn" type="button">复制提示词</button>
+          </div>
+        </article>
+
+        <!-- ===== D10 口型台词 ===== -->
+        <article class="pcard" id="d10" data-cat="口型台词">
+          <div class="pcard-top">
+            <div class="pcard-title"><span class="cat-tag">口型台词</span><h4>D10 Kling 3.0 Omni 原生音频对口型写法（官方）</h4></div>
+            <div class="pcard-meta">
+              <span class="tool-tag">Kling 3.0 / Omni</span>
+              <a class="src-link" href="https://kling.ai/blog/kling-video-3-omni-native-lip-sync-audio-guide" target="_blank" rel="noopener">来源</a>
+            </div>
+          </div>
+          <p class="pcard-desc">台词直接写进提示词、用引号，紧跟说话人 + 情绪语气。</p>
+          <pre class="pcard-text">结构：{场景 + 环境声}; {角色} {情绪/语气副词}, "{台词}"; {下一角色} {语气}, "{台词}"
+
+官方原例：
+室内家庭环境，客厅空调轻微底噪，真实日常感；
+母亲轻声惊呼、带着意外的语气，"哇，这个剧情完全没想到。"；
+父亲压低声音、平淡地回应，"是啊，完全没想到，真没想到会这样。"；
+男孩欢快地说，"这是最棒的反转！"；
+女孩兴奋地点头，"我简直不敢相信他们这么做了！"
+
+要点：台词不单独开文本框；人名+语气+引号台词三者紧贴；情绪副词只在对剧情重要时加。</pre>
+          <div class="pcard-actions">
+            <span class="copy-hint">多说话人场景把人名、台词、语气写在同一处，模型据此把口型绑到对应角色</span>
+            <button class="copy-btn" type="button">复制提示词</button>
+          </div>
+        </article>
+
+        <!-- ===== D11 口型台词 ===== -->
+        <article class="pcard" id="d11" data-cat="口型台词">
+          <div class="pcard-top">
+            <div class="pcard-title"><span class="cat-tag">口型台词</span><h4>D11 Seedance 情绪/语调/语速三要素 + 多人对话格式（官方）</h4></div>
+            <div class="pcard-meta">
+              <span class="tool-tag">即梦 Seedance 1.5 Pro</span>
+              <a class="src-link" href="https://docs.byteplus.com/en/docs/ModelArk/2168087" target="_blank" rel="noopener">来源</a>
+            </div>
+          </div>
+          <p class="pcard-desc">要口型逐人对齐，必须先写清每个角色的性别/年龄/服装/动作。</p>
+          <pre class="pcard-text">单人情绪配音（三要素前置）：
+在{calm/gentle/restrained}情绪状态下，用{even/soft/low}语调、{normal/slow/very slow}语速说："{台词}"
+
+官方原例：在平静的情绪状态下，用平稳的语调、正常的语速说："我们先从最重要的事开始。"
+
+多人对话（语言 + 角色分行）：
+{English/中文} dialogue:
+{角色1}: "{台词1}"
+{角色2}: "{台词2}"
+
+方言/多语言：他用粤语说，"你好靓呀，我好中意你呀"
+旁白：生成带旁白的视频：一个低沉平静的男声说，"{台词}"
+
+要点：配音情绪用"情绪状态+语调+语速"三件套，比单独写 sad 更可控。</pre>
+          <div class="pcard-actions">
+            <span class="copy-hint">模型才知道口型长在谁身上——性别年龄服装动作先写死</span>
+            <button class="copy-btn" type="button">复制提示词</button>
+          </div>
+        </article>
+
+        <!-- ===== D12 口型台词 ===== -->
+        <article class="pcard" id="d12" data-cat="口型台词">
+          <div class="pcard-top">
+            <div class="pcard-title"><span class="cat-tag">口型台词</span><h4>D12 Veo 3 双引号台词直接写进提示词（Google DeepMind 官方）</h4></div>
+            <div class="pcard-meta">
+              <span class="tool-tag">Veo 3 / 3.1</span>
+              <a class="src-link" href="https://deepmind.google/models/veo/prompt-guide/" target="_blank" rel="noopener">来源1</a>
+              <a class="src-link" href="https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-veo-3-1" target="_blank" rel="noopener">来源2</a>
+            </div>
+          </div>
+          <p class="pcard-desc">官方约定：英文双引号 = 对白，直接嵌在画面描述后面。</p>
+          <pre class="pcard-text">结构：{镜头/角色/动作}. "{台词}"
+
+DeepMind 官方原例：
+中景框住一位老水手，他的蓝色针织水手帽在眼睛上投下阴影……他一只手握着烟斗，向栏杆外汹涌的灰色大海比划。
+"这海洋，是一种力量，狂野、未驯的力量。它每一道碎浪都令你敬畏。"
+
+Veo 3.1 写法：一位女性说，"我们现在必须离开。"
+
+要点：台词不进单独文本框，模型原生合成对应人声与口型；台词本身就能定全片基调。</pre>
+          <div class="pcard-actions">
+            <span class="copy-hint">双引号即对白，紧跟动作描述之后</span>
+            <button class="copy-btn" type="button">复制提示词</button>
+          </div>
+        </article>
+
+        <!-- ===== D13 声音设计 ===== -->
+        <article class="pcard" id="d13" data-cat="声音设计">
+          <div class="pcard-top">
+            <div class="pcard-title"><span class="cat-tag">声音设计</span><h4>D13 Veo 3 原生音频「Audio 独立段」写法（Google 官方）</h4></div>
+            <div class="pcard-meta">
+              <span class="tool-tag">Veo 3 / 3.1</span>
+              <a class="src-link" href="https://deepmind.google/models/veo/prompt-guide/" target="_blank" rel="noopener">来源</a>
+            </div>
+          </div>
+          <p class="pcard-desc">声音要显式写出来，用拟声+质感词，别指望模型自动补。</p>
+          <pre class="pcard-text">结构：{视觉 + 动作描述}. Audio: {音效/环境声/氛围声描述}
+
+官方原例：
+一张琴键是各种糖果做的键盘。打字时发出甜美清脆的声音。
+Audio: 酥脆、含糖的打字声，开心的咯咯笑。
+
+长片示例把声音写进正文：
+"占主导的声音是强劲未驯引擎震耳欲聋的低吼，变速箱的啸叫，悬挂触底的撞击声……"
+
+要点：句末加 Audio: 单独成段最稳；别只写"热闹咖啡馆"，要写出房间听起来什么样。</pre>
+          <div class="pcard-actions">
+            <span class="copy-hint">用拟声+质感情绪词：crunchy / sugary / deafening / guttural</span>
+            <button class="copy-btn" type="button">复制提示词</button>
+          </div>
+        </article>
+
+        <!-- ===== D14 声音设计 ===== -->
+        <article class="pcard" id="d14" data-cat="声音设计">
+          <div class="pcard-top">
+            <div class="pcard-title"><span class="cat-tag">声音设计</span><h4>D14 Veo 3.1 对白/SFX/环境噪三分法（Google Cloud 官方）</h4></div>
+            <div class="pcard-meta">
+              <span class="tool-tag">Veo 3.1 Vertex AI</span>
+              <a class="src-link" href="https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-veo-3-1" target="_blank" rel="noopener">来源</a>
+            </div>
+          </div>
+          <p class="pcard-desc">用官方前缀区分"动作音效"和"空间底噪"，别混写。</p>
+          <pre class="pcard-text">Dialogue: {角色} says, "{台词}"
+SFX: {具体动作音效，如 thunder cracks in the distance}
+Ambient noise: {一句话背景声景，如 the quiet hum of a starship bridge}
+
+官方三条原例：
+Dialogue: 一位女性说，"我们现在必须离开。"
+SFX: 远处雷声炸裂。
+Ambient noise: 星舰舰桥安静的嗡鸣。
+
+要点：SFX 写清楚动作+质感；Ambient noise 用一句话定义空间声学。</pre>
+          <div class="pcard-actions">
+            <span class="copy-hint">SFX=动作音效，Ambient noise=空间底噪，前缀别混</span>
+            <button class="copy-btn" type="button">复制提示词</button>
+          </div>
+        </article>
+
+        <!-- ===== D15 声音设计 ===== -->
+        <article class="pcard" id="d15" data-cat="声音设计">
+          <div class="pcard-top">
+            <div class="pcard-title"><span class="cat-tag">声音设计</span><h4>D15 Seedance BGM 自动生成 + 复合情绪控制（官方）</h4></div>
+            <div class="pcard-meta">
+              <span class="tool-tag">即梦 Seedance 1.5 Pro</span>
+              <a class="src-link" href="https://docs.byteplus.com/en/docs/ModelArk/2168087" target="_blank" rel="noopener">来源</a>
+            </div>
+          </div>
+          <p class="pcard-desc">BGM 默认自动生成；要掌控就显式写"曲风+乐器+复合情绪"。</p>
+          <pre class="pcard-text">BGM 曲风：配以{交响乐/流行歌曲}作为背景音乐，{充满力量与希望的主题旋律}。
+
+BGM 复合情绪：背景音乐应是{温柔怀旧、悠扬的吉他或钢琴独奏}，带有{淡淡的回忆交织着幸福，温暖中又有一丝对时光流逝的感伤}。
+
+SFX 随画面动作写：窗外雨势渐大，雨滴汇成水流沿玻璃流下……
+
+配音情绪：在{calm}情绪状态下，用{even}语调、{normal}语速说："{台词}"
+
+要点：复合情绪短语（怀旧+幸福+淡淡忧伤）比单一 happy/sad 更贴短剧情绪弧光。</pre>
+          <div class="pcard-actions">
+            <span class="copy-hint">不写 BGM 也会自动配；要定制就写曲风+乐器+复合情绪</span>
+            <button class="copy-btn" type="button">复制提示词</button>
+          </div>
+        </article>
+
+        <!-- ===== D16 色调打光 ===== -->
+        <article class="pcard" id="d16" data-cat="色调打光">
+          <div class="pcard-top">
+            <div class="pcard-title"><span class="cat-tag">色调打光</span><h4>D16 Kling 色彩×情绪五种调色配方（官方）</h4></div>
+            <div class="pcard-meta">
+              <span class="tool-tag">Kling（可迁移其他模型）</span>
+              <a class="src-link" href="https://kling.ai/blog/kling-ai-video-color-prompts-mood-guide" target="_blank" rel="noopener">来源</a>
+            </div>
+          </div>
+          <p class="pcard-desc">主色→光线→镜头写在句首，跨镜头不易偏色；只挑 3–5 个短语。</p>
+          <pre class="pcard-text">推荐语序：主色 → 光线 → 镜头/运动
+
+五种调色配方：
+① 活力暖色：明亮橙红色调、活力氛围、阳光感（+金色高光、高调、微 bloom）→ 健身/励志
+② 专业冷色：企业蓝调色板、干净专业、柔光 → 商务/教育/医疗
+③ 高级单色：优雅黑白、高对比、极简 → 奢侈品/科技
+④ 动态撞色：戏剧性蓝橙对比、电影光（或 大胆紫黄、动态能量）→ 预告片/创意
+⑤ 和谐邻近色：蓝到绿平滑渐变、宁静海洋感（或 暖橙到红过渡、日落氛围）→ 舒缓/治愈
+
+四步写作：基础色族 → 情绪关键词 → 色照明度 → 只放 3–5 个描述元素。</pre>
+          <div class="pcard-actions">
+            <span class="copy-hint">出现偏色别盲目加词，改用参考图锁色，先出 5–10s 色板再延长</span>
+            <button class="copy-btn" type="button">复制提示词</button>
+          </div>
+        </article>
+
+        <!-- ===== D17 色调打光 ===== -->
+        <article class="pcard" id="d17" data-cat="色调打光">
+          <div class="pcard-top">
+            <div class="pcard-title"><span class="cat-tag">色调打光</span><h4>D17 Kling 打光词汇分级 + 题材打光惯例（官方）</h4></div>
+            <div class="pcard-meta">
+              <span class="tool-tag">Kling（可迁移其他模型）</span>
+              <a class="src-link" href="https://kling.ai/blog/professional-ai-video-lighting-techniques-tips" target="_blank" rel="noopener">来源</a>
+            </div>
+          </div>
+          <p class="pcard-desc">句首放一个核心光性词，再依次加修饰/方向/强度；柔光别配硬阴影。</p>
+          <pre class="pcard-text">五级打光写作法：
+1. 核心光性词（句首）：soft/harsh/warm/cool/bright/dim
+2. 描述修饰：柔和电影主光、细轮廓光、低调实用光
+3. 光源方向：侧光/逆光/顶光/底光（精确：从相机左侧打光、逆光轮廓、顶光聚光）
+4. 强度档：subtle/moderate/intense/extreme
+5. 逻辑自洽：柔光别配硬阴影
+
+题材配方：
+黑色电影/黑帮：noir、硬侧光、深重阴影、百叶窗条纹影
+悬疑：冷蓝色调光 + 锐利阴影
+甜宠/爱情：柔和暖光
+
+参考色温：暖≈3200K；中性 3500–4100K；冷 4100–6500K；golden hour≈3500K；烛光≈1800K。</pre>
+          <div class="pcard-actions">
+            <span class="copy-hint">对话戏用三点布光：2:1 比、柔补光、细发丝光</span>
+            <button class="copy-btn" type="button">复制提示词</button>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- ===== 漫剧板块 ===== -->
+    <div id="group-manga" hidden>
+      <div class="group manga">
+        <div class="group-head">
+          <img class="group-thumb" src="assets/manga.png" alt="AI 漫剧创作插画">
+          <div>
+            <h3>漫剧 · 画风与分镜</h3>
+            <span class="g-count">画风·角色·分镜·动态</span>
+          </div>
+        </div>
+
+        <article class="pcard" id="m1" data-cat="画风定义">
+          <div class="pcard-top">
+            <div class="pcard-title"><span class="cat-tag">画风定义</span><h4>M1 Niji 模型族与 --style 风格参数（MJ 官方）</h4></div>
+            <div class="pcard-meta">
+              <span class="tool-tag">Midjourney</span>
+              <a class="src-link" href="https://docs.midjourney.com/docs/style" target="_blank" rel="noopener">来源</a>
+            </div>
+          </div>
+          <p class="pcard-desc">选 Niji 模型系列 + --style 参数，稳定输出二次元画风。</p>
+          <pre class="pcard-text">{subject} --niji 7
+{subject} --niji 5 --style cute
+{subject} --niji 5 --style expressive
+{subject} --niji 5 --style scenic
+{subject} --niji 6 --style raw
+
+说明：--style cute 可爱角色与道具；--style expressive 精致插画感；--style scenic 强化背景与电影感人物时刻；--style raw 降低默认美学、提升提示词控制力。</pre>
+          <div class="pcard-actions">
+            <span class="copy-hint">Niji 7 更字面、可复现角色更准；--style scenic 适合漫剧关键镜头</span>
+            <button class="copy-btn" type="button">复制提示词</button>
+          </div>
+        </article>
+
+        <article class="pcard" id="m2" data-cat="画风定义">
+          <div class="pcard-top">
+            <div class="pcard-title"><span class="cat-tag">画风定义</span><h4>M2 2D 动漫视频风格标识符与层级结构（Kling 官方）</h4></div>
+            <div class="pcard-meta">
+              <span class="tool-tag">可灵 Kling</span>
+              <a class="src-link" href="https://kling.ai/blog/kling-ai-anime-video-prompts" target="_blank" rel="noopener">来源</a>
+            </div>
+          </div>
+          <p class="pcard-desc">图生视频从 2D 漂移成真人：用官方风格标识符锁死画风，层级：视觉方向→角色→环境→镜头。</p>
+          <pre class="pcard-text">干净 2D 动漫线稿，一条狭窄的雨巷，一只暗色鳞甲怪物面对一位穿绯红和服的武士，快速步法，刀刃碰撞迸出火花，低机位跟拍，戏剧性轮廓光
+
+可用风格标识符：干净线稿（clean anime linework）/ 手绘感背景（painterly fantasy background）/ 电影感天光（cinematic sky lighting）/ 平涂插画（flat illustration）/ 水墨（ink and wash）</pre>
+          <div class="pcard-actions">
+            <span class="copy-hint">风格词用正向可见描述；放句首锁基调；过写实就加"可见 2D 特征"而非负面词</span>
+            <button class="copy-btn" type="button">复制提示词</button>
+          </div>
+        </article>
+
+        <article class="pcard" id="m8" data-cat="画风定义">
+          <div class="pcard-top">
+            <div class="pcard-title"><span class="cat-tag">画风定义</span><h4>M8 风格漂移解决方案与资产配置策略（Seedance 官方）</h4></div>
+            <div class="pcard-meta">
+              <span class="tool-tag">即梦 Seedance</span>
+              <a class="src-link" href="https://docs.byteplus.com/fr/docs/ModelArk/2222480" target="_blank" rel="noopener">来源</a>
+            </div>
+          </div>
+          <p class="pcard-desc">风格漂移成真人实拍：加显式风格约束词 + 四类资产（4–5 个为佳）配置。</p>
+          <pre class="pcard-text">加显式风格约束词：
+"2D 日系动漫风格"
+"3D 中国风漫画"
+
+资产配置（4–5 个为佳）：
+1–2 张角色图（面部特写/全身）+ 1 张场景图 + 1 段运镜参考视频 + 1 段音频
+
+约束词模板：
+"不要字幕" / "不要生成 Logo" / "不要生成水印"
+（英文模型可用：keep it subtitle-free / do not generate a logo / do not generate a watermark）
+
+注意：参考图若本身不是目标画风，先转成目标风格（如先用 Seedance 转 2D）再喂入视频生成；资产太多会让模型难以判断主次。</pre>
+          <div class="pcard-actions">
+            <span class="copy-hint">资产四角色：角色锚定/场景定调/运镜参考/节奏氛围；总数 4-5 个不要塞满</span>
+            <button class="copy-btn" type="button">复制提示词</button>
+          </div>
+        </article>
+
+        <article class="pcard" id="m3" data-cat="角色一致性">
+          <div class="pcard-top">
+            <div class="pcard-title"><span class="cat-tag">角色一致性</span><h4>M3 --cref + --cw + --sref 角色/风格双锁定（MJ 官方）</h4></div>
+            <div class="pcard-meta">
+              <span class="tool-tag">Midjourney V6 / Niji 6</span>
+              <a class="src-link" href="https://docs.midjourney.com/docs/character-reference" target="_blank" rel="noopener">来源</a>
+            </div>
+          </div>
+          <p class="pcard-desc">漫剧连载角色漂移：--cref 锁角色 + --sref 锁画风，双锁定批量出分镜。</p>
+          <pre class="pcard-text">illustration of {character} sitting in a cafe --cref {reference_image_url} --cw {0-100} --sref {style_reference_url}
+
+说明：--cref URL 引用角色图；--cw 0 只锁脸，--cw 100（默认）锁脸+发型+服装；--sref URL 锁整体画风；两者可叠加。</pre>
+          <div class="pcard-actions">
+            <span class="copy-hint">参考图选单角色、姿态端正、光线均匀的成图；V7+ 改用 --oref</span>
+            <button class="copy-btn" type="button">复制提示词</button>
+          </div>
+        </article>
+
+        <article class="pcard" id="m4" data-cat="漫画分镜">
+          <div class="pcard-top">
+            <div class="pcard-title"><span class="cat-tag">漫画分镜</span><h4>M4 少年漫画跨页分镜（GitHub 5.5k★ 仓库）</h4></div>
+            <div class="pcard-meta">
+              <span class="tool-tag">GPT Image · 可迁移 MJ/SD</span>
+              <a class="src-link" href="https://github.com/wuyoscar/GPT-Image2-Skill" target="_blank" rel="noopener">来源</a>
+            </div>
+          </div>
+          <p class="pcard-desc">一次生成带分镜格、出血格、效果字的完整漫画跨页，逐格编号 + 位置描述，AI 才不会自由排列。</p>
+          <pre class="pcard-text">黑白少年漫画跨页（横向 16:9 单幅构图，中间带淡淡的书缝线）。高对比墨线 + 网点纸，周刊少年 Jump 篮球漫画传统（井上雄彦《灌篮高手》/ 藤卷忠俊《黑子的篮球》）。
+构图：5 个不规则分镜格 + 一个横跨两页右下方的对角大格，用于高潮扣篮。
+- 左上：主角锐利的眼睛特写，汗珠凝结，发带紧系
+- 中上：坐满人的高中体育馆远景，记分牌显示"42 — 40 · 第4节 0:03"
+- 右上：对手队长震惊的脸，嘴大张
+- 左中：主角双手抓球腾空跃起
+- 中右小格：效果字片假名"バッ"，粗黑体
+- 右下角大格（占两页一半）：主角将球扣入篮筐，篮筐弯曲，巨大的墨笔汉字"決"填满负空间
+美术方向：专业漫画家水准——自信的墨线、戏剧性网点渐变、从扣篮放射的速度线、变化丰富的线条粗细、米白纸纹理带淡淡的页缘阴影。
+对话框故意留空；只显示两个效果字。</pre>
+          <div class="pcard-actions">
+            <span class="copy-hint">必须逐格编号+位置；指定出血大格；对话框留空后期加字</span>
+            <button class="copy-btn" type="button">复制提示词</button>
+          </div>
+        </article>
+
+        <article class="pcard" id="m5" data-cat="漫画分镜">
+          <div class="pcard-top">
+            <div class="pcard-title"><span class="cat-tag">漫画分镜</span><h4>M5 19 话漫画章节 proof sheet 竖版分页（GitHub 5.5k★）</h4></div>
+            <div class="pcard-meta">
+              <span class="tool-tag">GPT Image</span>
+              <a class="src-link" href="https://github.com/wuyoscar/GPT-Image2-Skill" target="_blank" rel="noopener">来源</a>
+            </div>
+          </div>
+          <p class="pcard-desc">整话缩略分页 contact sheet，用于前期分镜规划与剧情节拍核对，竖版 tall 模拟手机漫剧阅读。</p>
+          <pre class="pcard-text">生成一张竖版漫画章节缩略总览图，包含 19 页编号的小型页面，题材为原创少年海盗漫画（不基于任何现有作品）。标题：《潮汐兄弟：星图》。主要角色：鲁恩，开朗的橡皮手臂少年海盗船长，戴稻草色围巾，原创服装；阿什，他使用火焰的哥哥，红色外套、雀斑、平静微笑。均为原创角色，非现有 IP。19 个小页以可读的 contact sheet 排列，每页含 1–3 个漫画格，黑白墨线、网点纸、动感速度线、丰富表情、清晰对话框。完整剧情节拍：1 封面页，兄弟在暴风雨甲板上；2 漂浮港口的重逢；3 发现星形地图；4 外星海兽出现；5 鲁恩开玩笑"冒险先找到了我们！"；6 阿什回应"那我们就一起面对。"；7 敌对天空海盗袭击；8 搞笑做饭场景；9 安静的闪回约定；10 跨页式动作构图压缩进单页；11 地图亮起外星星座；12 船员欢呼；13 反派船长偷走罗盘；14 屋顶风帆追逐；15 阿什用火焰护住鲁恩；16 鲁恩弹簧般挥拳；17 胜利后兄弟大笑；18 悬念：月亮之门打开；19 末页文字"下集：云层之上的岛屿"。对话保持简短、清晰、完整。风格：经典周刊少年漫画能量、原创海盗冒险、温暖的兄弟情，无血腥，无现有版权角色。</pre>
+          <div class="pcard-actions">
+            <span class="copy-hint">用 tall/竖版（2160×3840）；逐页列节拍；标注 original characters 避免 IP 风险</span>
+            <button class="copy-btn" type="button">复制提示词</button>
+          </div>
+        </article>
+
+        <article class="pcard" id="m6" data-cat="表情情绪">
+          <div class="pcard-top">
+            <div class="pcard-title"><span class="cat-tag">表情情绪</span><h4>M6 情绪→身体动作外化对照表（Seedance 官方）</h4></div>
+            <div class="pcard-meta">
+              <span class="tool-tag">即梦 Seedance · MJ/SD 通用</span>
+              <a class="src-link" href="https://docs.byteplus.com/fr/docs/ModelArk/2222480" target="_blank" rel="noopener">来源</a>
+            </div>
+          </div>
+          <p class="pcard-desc">写"非常悲伤"表演不到位？用具体身体细节替换抽象情绪词，表演立刻到位。</p>
+          <pre class="pcard-text">悲伤 → 低头，肩膀微颤，眼眶泛红，手指无意识攥住衣角，眼泪在眼眶打转却不落下
+喜悦 → 嘴角不受控制上扬，眉眼舒展，脚步变轻，不自觉地哼歌，忍不住原地转圈
+紧张/焦虑 → 频繁看表，手指不停敲桌面，呼吸急促，目光闪躲，无意识咬指甲
+愤怒 → 双拳紧握，下颌绷紧，胸口剧烈起伏，眼神如刀，从牙缝里挤出字
+
+使用思路：选 2–3 个外化动作即可，不要堆砌情绪词；配合特写放大情绪。</pre>
+          <div class="pcard-actions">
+            <span class="copy-hint">四个高杠杆部位：手/肩/眼神/呼吸；配特写镜头更有冲击力</span>
+            <button class="copy-btn" type="button">复制提示词</button>
+          </div>
+        </article>
+
+        <article class="pcard" id="m7" data-cat="动态化">
+          <div class="pcard-top">
+            <div class="pcard-title"><span class="cat-tag">动态化</span><h4>M7 分镜时间线公式与动作描述规范（Seedance 官方）</h4></div>
+            <div class="pcard-meta">
+              <span class="tool-tag">即梦 Seedance</span>
+              <a class="src-link" href="https://docs.byteplus.com/fr/docs/ModelArk/2222480" target="_blank" rel="noopener">来源</a>
+            </div>
+          </div>
+          <p class="pcard-desc">静态图"动起来"僵硬、镜头乱切：用时间线组织每镜 = 运镜 + 主体动作 + 空间变化 + 音频。</p>
+          <pre class="pcard-text">高级公式：精确主体 + 动作细节 + 场景/环境 + 光线与色调 + 镜头运动 + 视觉风格 + 画质 + 约束
+
+镜头1：街道小巷侧面镜头；男子开始缓慢奔跑，带着急促的呼吸感。
+镜头2：男子撞翻水果摊；镜头快速晃动，切到男子惊恐面孔的特写。
+镜头3：男子翻过低墙消失；镜头缓缓拉远，定格在空荡荡的街道上。
+
+注意：一次只写一种运镜；动作落到具体身体部位 + 幅度/速度/力度；避免冲刺、大跳、翻滚等高爆发动作，优先慢、柔、连续小动作。</pre>
+          <div class="pcard-actions">
+            <span class="copy-hint">动作间写惯性过渡；单镜只指定 1 种镜头运动，同时推拉摇移会崩图</span>
+            <button class="copy-btn" type="button">复制提示词</button>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- ===== 共性板块 ===== -->
+    <div id="group-common" hidden>
+      <div class="group common">
+        <div class="group-head">
+          <span class="g-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></span>
+          <div>
+            <h3>共性 · 顶级提示词</h3>
+            <span class="g-count">短剧漫剧通用</span>
+          </div>
+        </div>
+
+        <article class="pcard" id="u1" data-cat="通用公式">
+          <div class="pcard-top">
+            <div class="pcard-title"><span class="cat-tag">通用公式</span><h4>U1 文生视频通用结构公式（Runway + 可灵官方）</h4></div>
+            <div class="pcard-meta">
+              <span class="tool-tag">所有文生视频模型</span>
+              <a class="src-link" href="https://academy.runway.com/guides/prompting-guide" target="_blank" rel="noopener">来源1</a>
+              <a class="src-link" href="https://kling.ai/quickstart/text-to-video-prompt-guide" target="_blank" rel="noopener">来源2</a>
+            </div>
+          </div>
+          <p class="pcard-desc">描述词顺序：主体+动作+场景为必需项，镜头语言+光线+氛围为可选增强项。</p>
+          <pre class="pcard-text">Runway 官方结构：
+[镜头] 拍摄 [主体/物体] 在 [环境] 中 [动作]。[补充组件描述]
+
+可灵官方公式：
+提示词 = 主体（主体描述）+ 主体运动 + 场景（场景描述）+（镜头语言 + 光线 + 氛围）可选
+
+中文要点：前三个要素必需，镜头语言、光线、氛围按需增强。</pre>
+          <div class="pcard-actions">
+            <span class="copy-hint">先写必需项再逐步加；短句，每句聚焦一个细节；一句话一个主要动作</span>
+            <button class="copy-btn" type="button">复制提示词</button>
+          </div>
+        </article>
+
+        <article class="pcard" id="u2" data-cat="通用公式">
+          <div class="pcard-top">
+            <div class="pcard-title"><span class="cat-tag">通用公式</span><h4>U2 图生视频专用运动描述公式（Runway 官方）</h4></div>
+            <div class="pcard-meta">
+              <span class="tool-tag">Runway · 可灵 · Luma · 即梦</span>
+              <a class="src-link" href="https://academy.runway.com/guides/prompting-guide" target="_blank" rel="noopener">来源1</a>
+              <a class="src-link" href="https://runway.com/resources/ai-video-prompting-guide" target="_blank" rel="noopener">来源2</a>
+            </div>
+          </div>
+          <p class="pcard-desc">图生视频时重复描述图片已有画面，运动指令被淹没：几乎只写运动。</p>
+          <pre class="pcard-text">相机 [运动描述]，同时主体 [动作]。[补充描述]
+
+四要素公式：[镜头运动] + [场景] + [动作] + [细节]
+
+示例：穿过薄雾森林缓慢前推。古树高耸。红衣身影背对相机走远。阳光穿透树冠。
+
+核心：上传图片后，提示词只描述"将要发生什么"——运动、镜头与时间推进，不再描述图里已有的内容。</pre>
+          <div class="pcard-actions">
+            <span class="copy-hint">开头先写镜头运动帮助构图；一个提示词只选一个主要镜头运动</span>
+            <button class="copy-btn" type="button">复制提示词</button>
+          </div>
+        </article>
+
+        <article class="pcard" id="u3" data-cat="负面词">
+          <div class="pcard-top">
+            <div class="pcard-title"><span class="cat-tag">负面词</span><h4>U3 外科手术式负面提示词法（Hailuo 官方）</h4></div>
+            <div class="pcard-meta">
+              <span class="tool-tag">支持负面词字段的模型</span>
+              <a class="src-link" href="https://hailuoai.video/pages/knowledge/negative-prompts-cinematic-ai-video" target="_blank" rel="noopener">来源</a>
+            </div>
+          </div>
+          <p class="pcard-desc">负面词堆一长串反而破坏一致性：先渲染再观察，只针对一个缺陷精准补刀。</p>
+          <pre class="pcard-text">五步法：初版渲染 → 识别缺陷 → 精准修正 → 运动校准 → 迭代精修
+
+1. 只用正向提示词 + 高质量参考图，生成 4–6 秒初版；
+2. 观察初版，只找出一个最突出的缺陷（抖动/塑料皮肤/过饱和）；
+3. 只添加一个精准负面词：
+   过饱和 → 过饱和、霓虹、高对比（oversaturated, neon, high contrast）
+   塑料质感 → 塑料、反光、人工反射（plastic, shiny, artificial reflections）
+   画面抖动 → 抖动、背景扭曲（jitter, background warping）
+4. 若运动被抑制，移除负面词，改为强化正向运动描述（如把"平移"改为"缓慢、稳定的电影感平移"）。</pre>
+          <div class="pcard-actions">
+            <span class="copy-hint">禁止"厨房水槽式"堆砌负面词；负面词只针对观察到的具体缺陷</span>
+            <button class="copy-btn" type="button">复制提示词</button>
+          </div>
+        </article>
+
+        <article class="pcard" id="u4" data-cat="一致性">
+          <div class="pcard-top">
+            <div class="pcard-title"><span class="cat-tag">一致性</span><h4>U4 参考图驱动的角色/物体一致性工作流（Luma + 可灵官方）</h4></div>
+            <div class="pcard-meta">
+              <span class="tool-tag">Luma · 可灵 Omni · Runway · MJ</span>
+              <a class="src-link" href="https://lumaai-help.freshdesk.com/support/solutions/articles/151000221033-product-item-consistency-secrets-in-dream-machine" target="_blank" rel="noopener">来源1</a>
+              <a class="src-link" href="https://kling.ai/blog/kling-video-3-omni-reference-workflows-multi-element" target="_blank" rel="noopener">来源2</a>
+            </div>
+          </div>
+          <p class="pcard-desc">多镜头角色/产品漂移：干净参考图 + 指令式语言 + 角色描述逐字复制。</p>
+          <pre class="pcard-text">Luma 四步工作流：
+第一步：上传高质量参考图（干净白/中性背景、均匀打光、高分辨率）
+第二步：画幅比例与最终场景一致
+第三步：测试提示词：把这个 [产品] 放在 [台面] 上、位于 [地点] 的画面中央。围绕它缓慢环绕推镜。同一个 [产品]，同形状，同姿态。
+第四步：情境提示词：把这个 [产品] 放入镜头，与 [角色] 在 [场景] 中 [互动]
+
+可灵 Omni 参考元素写法：
+把 @[元素名] 作为角色使用。@[元素名] 在 [场景] 中 [动作描述]。</pre>
+          <div class="pcard-actions">
+            <span class="copy-hint">用指令式语言而非对话式调整；角色描述文字块在所有镜头中逐字复制</span>
+            <button class="copy-btn" type="button">复制提示词</button>
+          </div>
+        </article>
+
+        <article class="pcard" id="u5" data-cat="多镜头">
+          <div class="pcard-top">
+            <div class="pcard-title"><span class="cat-tag">多镜头</span><h4>U5 多镜头分镜连贯叙事结构（可灵官方 + 300+ Sora 提示词）</h4></div>
+            <div class="pcard-meta">
+              <span class="tool-tag">可灵 3.0 · Runway · Sora · Veo 3</span>
+              <a class="src-link" href="https://kling.ai/blog/kling-video-3-omni-reference-workflows-multi-element" target="_blank" rel="noopener">来源1</a>
+              <a class="src-link" href="https://gist.github.com/JacquesGariepy/e9de3b90665fd5781003c012eb7b318c" target="_blank" rel="noopener">来源2</a>
+            </div>
+          </div>
+          <p class="pcard-desc">多个镜头揉成一个混乱画面：逐镜编号 + 电影术语过渡 + 全片共享视觉锚点。</p>
+          <pre class="pcard-text">可灵官方多镜头结构：
+镜头1：远景定场 [建立场景]。 [主体] [动作]。
+镜头2：[细节/角色] 特写。[动作]。[镜头运动]。
+镜头3：[另一角色] 特写。[反应/台词]。
+镜头4：中景展示 [两人/结果]。
+
+社区广泛验证的过渡词模式：
+以 [景别] 的 [主体] 开场。[动作]。
+过渡到 [景别] 的 [主体]。[动作]。
+切到 [景别] 的 [主体]。[动作]。
+以 [景别] 的 [最终画面] 收尾。</pre>
+          <div class="pcard-actions">
+            <span class="copy-hint">总镜头 4–6 个以内；单镜 ≥1 秒；共享同一角色参考图/光线/风格防漂移</span>
+            <button class="copy-btn" type="button">复制提示词</button>
+          </div>
+        </article>
+
+        <article class="pcard" id="u6" data-cat="时间线">
+          <div class="pcard-top">
+            <div class="pcard-title"><span class="cat-tag">时间线</span><h4>U6 顺序提示时间线控制（Runway 官方）</h4></div>
+            <div class="pcard-meta">
+              <span class="tool-tag">Runway · 可灵 · Luma</span>
+              <a class="src-link" href="https://academy.runway.com/guides/prompting-guide" target="_blank" rel="noopener">来源</a>
+            </div>
+          </div>
+          <p class="pcard-desc">单镜头内事件要按先后发生（先走→推门→回头）：用顺序叙事或时间戳精确控制。</p>
+          <pre class="pcard-text">自然语言写法：先发生 X，然后发生 Y。最后发生 Z。
+时间戳写法：[00:01] 发生 X。[00:03] 发生 Y。[00:04] 发生 Z。
+
+长序列延伸法：
+① 生成第一段视频后，把播放头拖到最后一帧；
+② 点击"使用当前帧"作为新的起始图；
+③ 用新提示词继续描述后续动作；
+④ 后期剪辑中拼接两段视频。</pre>
+          <div class="pcard-actions">
+            <span class="copy-hint">避免一个短提示词塞超 3 个事件节点；事件多就分段生成 + 末帧接力</span>
+            <button class="copy-btn" type="button">复制提示词</button>
+          </div>
+        </article>
+
+        <article class="pcard" id="u7" data-cat="通用公式">
+          <div class="pcard-top">
+            <div class="pcard-title"><span class="cat-tag">通用公式</span><h4>U7 正向措辞与单动作约束原则（Runway 官方）</h4></div>
+            <div class="pcard-meta">
+              <span class="tool-tag">所有 AI 视频模型</span>
+              <a class="src-link" href="https://runway.com/resources/ai-video-prompting-guide" target="_blank" rel="noopener">来源1</a>
+              <a class="src-link" href="https://academy.runway.com/guides/prompting-guide" target="_blank" rel="noopener">来源2</a>
+            </div>
+          </div>
+          <p class="pcard-desc">写"不要抖动"反而生成抖动：改成正向描述 + 一条提示词只描述一个主动作。</p>
+          <pre class="pcard-text">正向措辞：描述你想看到的，而不是想避免的。
+✅ "平滑、稳定的相机运动"
+❌ "不要相机抖动"
+
+一条提示词一个动作：
+✅ "女人走向门口"
+❌ "女人走向门口，打开门，穿过门，关上门，走下走廊。"
+
+避免时间引用：不要用"然后""接着""之后"，每条提示词相互独立。
+
+静止镜头强化语句：
+锁定机位保持完全静止。
+主体只做最小幅度的运动。
+连续、无缝的镜头。</pre>
+          <div class="pcard-actions">
+            <span class="copy-hint">多动作场景拆成多个镜头；需要静止画面用正向强化句而非"don't move"</span>
+            <button class="copy-btn" type="button">复制提示词</button>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="empty-state" id="empty-state">没有找到匹配的提示词，换个关键词试试。</div>
+  </div>
+</section>
+
+<!-- ===== 组合器 ===== -->
+<section class="combiner" id="combiner">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">内嵌工具</div>
+      <h2>提示词组合器</h2>
+      <p>选要素，自动拼出完整指令。</p>
+    </div>
+    <div class="cb-wrap">
+      <div class="cb-row">
+        <div class="cb-field">
+          <label for="cb-type">创作类型</label>
+          <select id="cb-type">
+            <option value="drama">AI 短剧</option>
+            <option value="manga">AI 漫剧</option>
+          </select>
+        </div>
+      </div>
+      <div class="field-group" id="cb-drama-fields">
+        <div class="cb-row">
+          <div class="cb-field"><label for="cb-d-topic">题材</label>
+            <select id="cb-d-topic"><option>都市逆袭</option><option>战神赘婿</option><option>甜宠</option><option>悬疑</option><option>穿越</option><option>职场</option></select>
+          </div>
+          <div class="cb-field"><label for="cb-d-char">主角设定</label>
+            <select id="cb-d-char"><option>草根逆袭</option><option>隐藏大佬</option><option>天才少女</option><option>落魄少爷</option><option>重生强者</option></select>
+          </div>
+          <div class="cb-field"><label for="cb-d-emotion">情绪基调</label>
+            <select id="cb-d-emotion"><option>爽</option><option>虐</option><option>甜</option><option>燃</option><option>悬疑</option></select>
+          </div>
+        </div>
+        <div class="cb-row">
+          <div class="cb-field"><label for="cb-d-duration">时长</label>
+            <select id="cb-d-duration"><option>60 秒</option><option>90 秒</option><option>3 分钟</option></select>
+          </div>
+          <div class="cb-field"><label for="cb-d-camera">运镜风格</label>
+            <select id="cb-d-camera"><option>快节奏手持</option><option>电影感慢推</option><option>环绕长镜头</option></select>
+          </div>
+        </div>
+      </div>
+      <div class="field-group hidden" id="cb-manga-fields">
+        <div class="cb-row">
+          <div class="cb-field"><label for="cb-m-style">画风</label>
+            <select id="cb-m-style"><option>国漫新国风</option><option>日漫热血</option><option>韩漫都市</option><option>赛博朋克</option><option>治愈系</option></select>
+          </div>
+          <div class="cb-field"><label for="cb-m-panels">分镜格数</label>
+            <select id="cb-m-panels"><option>4 格</option><option>6 格</option><option>8 格</option></select>
+          </div>
+          <div class="cb-field"><label for="cb-m-emotion">情绪基调</label>
+            <select id="cb-m-emotion"><option>甜</option><option>燃</option><option>悬疑</option><option>搞笑</option><option>治愈</option></select>
+          </div>
+        </div>
+        <div class="cb-row">
+          <div class="cb-field"><label for="cb-m-anim">动态效果</label>
+            <select id="cb-m-anim"><option>静态漫画</option><option>轻微动态</option><option>2.5D 视差</option><option>全动态漫剧</option></select>
+          </div>
+        </div>
+      </div>
+      <div class="cb-output" id="cb-output">点击下方"生成提示词"，这里会自动拼出完整指令。</div>
+      <div class="cb-actions">
+        <button class="btn btn-primary" id="cb-build" type="button">生成提示词</button>
+        <button class="btn btn-amber" id="cb-copy" type="button">复制结果</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 工具集合 ===== -->
+<section class="tools" id="tools">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">工具集合</div>
+      <h2>配套创作工具</h2>
+      <p>与提示词搭配使用的外部工具。</p>
+    </div>
+    <div class="tools-grid">
+      <div class="tool-card">
+        <span class="tool-icon kind-dir"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9"/></svg></span>
+        <h3>AI Gist</h3>
+        <span class="t-kind">提示词管理</span>
+        <p>本地优先的提示词收藏与变量模板复用工具。</p>
+    <a href="https://getaigist.com" target="_blank" rel="noopener">打开工具</a>
+      </div>
+      <div class="tool-card">
+        <span class="tool-icon kind-dir"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></span>
+        <h3>OPS 提示词工作室</h3>
+        <span class="t-kind">提示词管理</span>
+        <p>可视化编辑 MJ / SD 提示词，中文互译与词典管理。</p>
+    <a href="https://moonvy.com/apps/ops/" target="_blank" rel="noopener">打开工具</a>
+      </div>
+      <div class="tool-card">
+        <span class="tool-icon kind-video"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M8 9.5 13 12l-5 2.5z"/></svg></span>
+        <h3>即梦 AI</h3>
+        <span class="t-kind">视频生成</span>
+        <p>图生视频、文生视频，短剧主力工具。</p>
+    <a href="https://jimeng.jianying.com" target="_blank" rel="noopener">打开工具</a>
+      </div>
+      <div class="tool-card">
+        <span class="tool-icon kind-video"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></span>
+        <h3>可灵 AI</h3>
+        <span class="t-kind">视频生成</span>
+        <p>图生视频、首尾帧控制，动态效果稳。</p>
+    <a href="https://klingai.kuaishou.com" target="_blank" rel="noopener">打开工具</a>
+      </div>
+      <div class="tool-card">
+        <span class="tool-icon kind-video"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8h20M2 8v9a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V8M2 8l3-3h14l3 3"/></svg></span>
+        <h3>海螺 AI</h3>
+        <span class="t-kind">视频生成</span>
+        <p>长镜头与物理动态表现突出。</p>
+    <a href="https://hailuoai.com" target="_blank" rel="noopener">打开工具</a>
+      </div>
+      <div class="tool-card">
+        <span class="tool-icon kind-chat"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+        <h3>ChatGPT</h3>
+        <span class="t-kind">对话创作</span>
+        <p>写剧本、拆分镜、改台词。</p>
+    <a href="https://chat.openai.com" target="_blank" rel="noopener">打开工具</a>
+      </div>
+      <div class="tool-card">
+        <span class="tool-icon kind-chat"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a7 7 0 0 0-7 7c0 5 4 8 7 10 3-2 7-5 7-10a7 7 0 0 0-7-7z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+        <h3>Claude</h3>
+        <span class="t-kind">对话创作</span>
+        <p>长文能力强，适合整本剧本与角色一致性维护。</p>
+    <a href="https://claude.ai" target="_blank" rel="noopener">打开工具</a>
+      </div>
+      <div class="tool-card">
+        <span class="tool-icon kind-edit"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m14.5 4.5 5 5L8 21H3v-5Z"/><path d="m12 7 5 5"/></svg></span>
+        <h3>剪映</h3>
+        <span class="t-kind">剪辑成片</span>
+        <p>剪辑、字幕、配乐与封面收尾。</p>
+    <a href="https://www.jianying.com" target="_blank" rel="noopener">打开工具</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">常见问题</div>
+      <h2>使用小贴士</h2>
+    </div>
+    <div class="faq-list">
+      <details>
+        <summary>花括号里的 <code>{变量}</code> 怎么用？<span class="plus">+</span></summary>
+        <div class="faq-a">把 <code>{变量}</code> 替换成具体内容（如 <code>{题材}</code> → "都市逆袭"），再复制使用。</div>
+      </details>
+      <details>
+        <summary>这些提示词用在哪些工具上？<span class="plus">+</span></summary>
+        <div class="faq-a">剧本/台词类给对话模型，画面/视频类给即梦、可灵、海螺，漫画类给 MJ / SD。每条卡片右上角标有适用工具。</div>
+      </details>
+      <details>
+        <summary>生成的角色老是不一致怎么办？<span class="plus">+</span></summary>
+        <div class="faq-a">用"角色一致性"提示词写死细节，或用图生视频首帧/参考图固定同一张角色图。</div>
+      </details>
+      <details>
+        <summary>漫剧怎么"动"起来？<span class="plus">+</span></summary>
+        <div class="faq-a">用"动态化"提示词描述推拉与轻微飘动；最稳是场景分层做 2.5D 视差。</div>
+      </details>
+      <details>
+        <summary>这些提示词靠谱吗？来源能查证吗？<span class="plus">+</span></summary>
+        <div class="faq-a">取自官方文档与高星仓库，卡片右上角"来源"链接可点开验证原文。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container foot">
+    <div><b>AI 短剧漫剧提示词库</b> · 精选提示词持续更新</div>
+    <div>提示词供创作学习使用，生成内容请遵守各平台规则</div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- ===== 交互脚本 ===== -->
+<script>
+(function(){
+  'use strict';
+  var toast = document.getElementById('toast');
+  var toastTimer = null;
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add('show');
+    if(toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('show'); }, 2200);
+  }
+  function copyText(text, okMsg){
+    if(!text) return;
+    function fallback(){
+      var ta = document.createElement('textarea');
+      ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+      document.body.appendChild(ta); ta.select();
+      try{ document.execCommand('copy'); showToast(okMsg || '已复制，去粘贴生成吧'); }
+      catch(e){ showToast('复制失败，请手动选择复制'); }
+      document.body.removeChild(ta);
+    }
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){ showToast(okMsg || '已复制，去粘贴生成吧'); }, fallback);
+    } else { fallback(); }
+  }
+
+  /* 复制按钮 */
+  var copyBtns = document.querySelectorAll('.copy-btn');
+  for(var i=0;i<copyBtns.length;i++){
+    copyBtns[i].addEventListener('click', function(){
+      var card = this.closest('.pcard');
+      var pre = card.querySelector('.pcard-text');
+      copyText(pre.textContent.replace(/\n{2,}/g,'\n').trim());
+    });
+  }
+
+  /* Tab 切换 */
+  var tabs = document.querySelectorAll('.tab');
+  var groupDrama = document.getElementById('group-drama');
+  var groupManga = document.getElementById('group-manga');
+  var groupCommon = document.getElementById('group-common');
+  var chipsBox = document.getElementById('chips');
+  var searchInput = document.getElementById('search');
+  var currentTab = 'drama';
+  var currentChip = 'all';
+  var chipDefs = {
+    drama: ['all','剧本结构','角色设定','分镜脚本','运镜镜头','风格基底','口型台词','声音设计','色调打光'],
+    manga: ['all','画风定义','角色一致性','漫画分镜','表情情绪','动态化'],
+    common: ['all','通用公式','负面词','一致性','多镜头','时间线']
+  };
+
+  function renderChips(){
+    var defs = chipDefs[currentTab];
+    var html = '';
+    for(var i=0;i<defs.length;i++){
+      var label = defs[i] === 'all' ? '全部' : defs[i];
+      html += '<button class="chip' + (defs[i]===currentChip ? ' on':'') + '" data-chip="' + defs[i] + '" type="button">' + label + '</button>';
+    }
+    chipsBox.innerHTML = html;
+    var cs = chipsBox.querySelectorAll('.chip');
+    for(var j=0;j<cs.length;j++){
+      cs[j].addEventListener('click', function(){
+        currentChip = this.getAttribute('data-chip');
+        renderChips(); applyFilter();
+      });
+    }
+  }
+
+  function visibleCards(){
+    var selector = '#group-' + currentTab + ' .pcard';
+    return document.querySelectorAll(selector);
+  }
+
+  function applyFilter(){
+    var kw = searchInput.value.trim().toLowerCase();
+    var cards = visibleCards();
+    var shown = 0;
+    for(var i=0;i<cards.length;i++){
+      var card = cards[i];
+      var cat = card.getAttribute('data-cat');
+      var hit = (currentChip === 'all' || cat === currentChip);
+      if(hit && kw){
+        var txt = card.textContent.toLowerCase();
+        hit = txt.indexOf(kw) !== -1;
+      }
+      card.style.display = hit ? '' : 'none';
+      if(hit) shown++;
+    }
+    document.getElementById('empty-state').style.display = shown ? 'none' : 'block';
+  }
+
+  function switchTab(tab){
+    currentTab = tab; currentChip = 'all';
+    for(var i=0;i<tabs.length;i++){
+      tabs[i].classList.toggle('on', tabs[i].getAttribute('data-tab') === tab);
+    }
+    groupDrama.hidden = tab !== 'drama';
+    groupManga.hidden = tab !== 'manga';
+    groupCommon.hidden = tab !== 'common';
+    searchInput.value = '';
+    renderChips(); applyFilter();
+  }
+  for(var t=0;t<tabs.length;t++){
+    tabs[t].addEventListener('click', function(){ switchTab(this.getAttribute('data-tab')); });
+  }
+  searchInput.addEventListener('input', applyFilter);
+  renderChips(); applyFilter();
+
+  /* 左侧目录：滚动高亮 + 点击定位 */
+  var snLinks = Array.prototype.slice.call(document.querySelectorAll('.side-nav a'));
+  var snGroups = Array.prototype.slice.call(document.querySelectorAll('.sn-group'));
+
+  // 点击分组标题：展开/收起
+  for(var gi=0; gi<snGroups.length; gi++){
+    (function(g){
+      var t = g.querySelector('.sn-group-title');
+      t.addEventListener('click', function(){ g.classList.toggle('collapsed'); });
+    })(snGroups[gi]);
+  }
+
+  function snUpdate(){
+    var cur = null;
+    for(var i=0;i<snLinks.length;i++){
+      var el = document.querySelector(snLinks[i].getAttribute('href'));
+      if(!el || el.closest('[hidden]')) continue;
+      var r = el.getBoundingClientRect();
+      if(r.top <= 150) cur = snLinks[i];
+    }
+    for(var j=0;j<snLinks.length;j++){
+      snLinks[j].classList.toggle('on', snLinks[j] === cur);
+      if(snLinks[j] === cur){
+        var grp = snLinks[j].closest('.sn-group');
+        if(grp) grp.classList.remove('collapsed');
+      }
+    }
+  }
+  window.addEventListener('scroll', function(){ requestAnimationFrame(snUpdate); });
+  window.addEventListener('resize', snUpdate);
+  for(var k=0;k<snLinks.length;k++){
+    snLinks[k].addEventListener('click', function(){
+      var id = this.getAttribute('href').substring(1);
+      var card = document.getElementById(id);
+      var gid = card ? card.closest('[id^="group-"]').id : '';
+      var tab = gid === 'group-manga' ? 'manga' : (gid === 'group-common' ? 'common' : 'drama');
+      if(tab !== currentTab) switchTab(tab);
+      var grp = this.closest('.sn-group');
+      if(grp) grp.classList.remove('collapsed');
+    });
+  }
+  snUpdate();
+
+  /* 组合器 */
+  var cbType = document.getElementById('cb-type');
+  var cbDramaFields = document.getElementById('cb-drama-fields');
+  var cbMangaFields = document.getElementById('cb-manga-fields');
+  var cbOutput = document.getElementById('cb-output');
+  function val(id){ return document.getElementById(id).value; }
+  cbType.addEventListener('change', function(){
+    var isDrama = cbType.value === 'drama';
+    cbDramaFields.classList.toggle('hidden', !isDrama);
+    cbMangaFields.classList.toggle('hidden', isDrama);
+    cbOutput.textContent = '切换类型后，点"生成提示词"拼出完整指令。';
+  });
+
+  document.getElementById('cb-build').addEventListener('click', function(){
+    if(cbType.value === 'drama'){
+      cbOutput.textContent = '请为一部 AI 短剧生成完整创作方案：\n' +
+        '题材：' + val('cb-d-topic') + '；主角设定：' + val('cb-d-char') + '；情绪基调：' + val('cb-d-emotion') + '；目标时长：' + val('cb-d-duration') + '；运镜风格：' + val('cb-d-camera') + '。\n\n' +
+        '要求：\n' +
+        '1. 用爆款短剧结构写出黄金 3 秒钩子、连续爽点和结尾悬念；\n' +
+        '2. 主角形象需跨镜头保持一致，给出可复用的形象描述；\n' +
+        '3. 拆成 8-12 个分镜，每个分镜标明景别与运镜（' + val('cb-d-camera') + '风格）；\n' +
+        '4. 台词口语化、带潜台词，关键处给一句爆点台词；\n' +
+        '5. 输出完整分镜表 + 每镜可用的生成提示词。';
+    } else {
+      cbOutput.textContent = '请为一部 AI 漫剧生成完整创作方案：\n' +
+        '画风：' + val('cb-m-style') + '；分镜格数：' + val('cb-m-panels') + '；情绪基调：' + val('cb-m-emotion') + '；动态效果：' + val('cb-m-anim') + '。\n\n' +
+        '要求：\n' +
+        '1. 输出角色设定卡（发型、瞳色、服装、标志配饰），保证每格一致；\n' +
+        '2. 设计 ' + val('cb-m-panels').replace(' 格','') + ' 格分镜：每格画面内容 + 对话框位置 + 对白/旁白；\n' +
+        '3. 给出画风关键词与配色方案；\n' +
+        '4. 若动态效果不是"静态漫画"，补充运镜与微动效指令（' + val('cb-m-anim') + '）。';
+    }
+  });
+  document.getElementById('cb-copy').addEventListener('click', function(){
+    copyText(cbOutput.textContent, '已复制组合结果');
+  });
+})();
+</script>
+</body>
+</html>

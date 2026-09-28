@@ -1,0 +1,8 @@
+来源URL: https://ai-for-real-life.beehiiv.com/p/i-used-ai-to-make-a-cinematic-video-and-i-m-giving-you-all-the-prompts
+作者: Khalil (AI for Real Life)
+日期: 2025-05-31
+
+核心内容摘要:
+创作者分享了用ChatGPT + Google Veo 3制作电影感短视频的完整工作流，并公开了全部提示词包。核心方法是：用自然语言向ChatGPT描述场景，让LLM生成完整的电影级提示词（含镜头/灯光/角色/美学/对话时间轴），再输入Veo 3生成8秒带音视频的片段。文章展示了同一镜头的"失败版vs成功版"对比——失败版有两个角色+过多细节，成功版简化为单角色+紧凑构图。附带两个系列共7个场景的完整提示词模板。
+
+推荐教学点: 适合"提示词实战案例"章节——作为提示词模板库直接使用，重点讲"LLM辅助写提示词"的工作流，以及"复杂场景拆分"的原则（从失败案例中学到的简化技巧）。

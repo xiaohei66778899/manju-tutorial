@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="F-6 运镜提示词(眼神跟镜头) · 漫剧制作教程站。玉哥整理的 AI 漫剧与短剧制作实用教程，包含步骤、案例和练习。">
+<title>F-6 运镜提示词(眼神跟镜头) · 漫剧制作教程站</title>
+<link rel="stylesheet" href="../../assets/site.css?v=fix20260927-2215">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg?v=fix20260927-2215">
+<link rel="stylesheet" href="../../assets/tutorial.css?v=fix20260927-2215">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="logo">🎬 漫剧教程站 <small>v3 · 玉哥</small></div>
+  <nav>
+    <a href="../../index.html">首页</a>
+    <a href="../all-courses.html" class="active">漫剧教程</a>
+    <a href="../../prompts/image-prompts.html">图片作品</a>
+    <a href="../../works/index.html">视频作品</a>
+    <a href="../../prompts/prompts.html">prompt 模板</a>
+    <a href="../../tools/toolkit.html">工具箱</a>
+    <a href="../../qa/troubleshooting.html">问题库</a>
+    <a href="../../news/industry.html">行业新闻</a>
+    </nav>
+  <div class="search"><input type="search" placeholder="🔍 搜…"></div>
+  <button class="theme-toggle" title="深浅主题切换" onclick="document.documentElement.classList.toggle('dark')">🌙</button>
+</header>
+
+<div class="layout-3col">
+  <aside class="sidebar-left" id="sidebar-left"></aside>
+
+  <main class="content">
+    <div class="breadcrumb">
+      <a href="../../index.html">首页</a> <span>›</span>
+      <a href="../all-courses.html">F AI 视频</a> <span>›</span>
+      F-6 运镜提示词
+    </div>
+
+    <h1>F-6 · 运镜提示词(眼神跟镜头)</h1>
+    <h2 id="sec-1">1. 玉哥 9-08 review 血的教训</h2>
+
+    <div class="example">
+      <span class="label">玉哥校准 · 2026-09-08 review 3 条视频</span>
+      <h4>📹 玉哥看完 3 条 H2.3 6 秒视频反馈</h4>
+      <p>玉哥看完 3 条 6 秒 H2.3 视频后的原话:</p>
+      <blockquote>"02 鲸过天门,人物转头太慢了,定格在头没有自然转动。看的时候感觉人物是僵的,不像在看镜头。"</blockquote>
+      <p>玉哥进一步明确规则:</p>
+      <blockquote>"运镜时人物的眼神,要有那种<strong>你看视频感觉视频里的人物在看你的感觉</strong>。"</blockquote>
+
+      <p><strong>学员小张第 1 版 prompt(失败)</strong>:</p>
+      <pre class="codebox">a woman standing in front of a giant whale flying in the sky, the camera orbits around her, 6 seconds</pre>
+      <p>出图结果:头几乎不动,眼神不跟镜头。玉哥评分 6/10。</p>
+
+      <p><strong>小张第 2 版 prompt(成功)</strong>:</p>
+      <pre class="codebox">a woman standing in front of a giant whale flying through a celestial gate, the camera slowly orbits around her, the woman's eyes follow the camera movement naturally, subtle eye contact with the lens, her head turns smoothly with the camera, 6 seconds</pre>
+      <p>出图结果:头自然转,眼神扫过镜头,代入感强。玉哥评分 9/10。</p>
+
+      <p class="src">📌 <strong>差距</strong>:<strong>加了 3 个眼神相关的词组</strong>(eyes follow the camera / eye contact with the lens / head turns smoothly)。<strong>模型从"运镜中的人偶"变成"运镜中的人"</strong>。</p>
+    </div>
+
+    <h2 id="sec-2">2. 6 大运镜 + 眼神规则对照</h2>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th>运镜</th><th>镜头运动</th><th>学员常用</th><th>眼神规则</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>1. Push-in(推)</strong></td><td>镜头向主体推近</td><td>✅ 高频</td><td><strong>眼神直视镜头,逐步锁定</strong></td></tr>
+          <tr><td><strong>2. Pull-out(拉)</strong></td><td>镜头从主体拉远</td><td>✅ 高频</td><td><strong>眼神从镜头移开,逐渐望远方</strong></td></tr>
+          <tr><td><strong>3. Pan(摇)</strong></td><td>镜头水平方向扫</td><td>✅ 中频</td><td><strong>眼球跟随镜头方向横扫</strong></td></tr>
+          <tr><td><strong>4. Orbit(环绕)</strong></td><td>镜头绕主体转一圈</td><td>✅ 高频(展示)</td><td><strong>眼睛持续锁定镜头,头跟着转</strong></td></tr>
+          <tr><td><strong>5. Crane-up(升降上)</strong></td><td>镜头从低处抬升</td><td>🟡 低频(史诗感)</td><td><strong>眼睛从平视抬起望天/远方</strong></td></tr>
+          <tr><td><strong>6. Crane-down(升降下)</strong></td><td>镜头从高处下降</td><td>🟡 低频(压迫感)</td><td><strong>眼睛从仰望回到平视主体</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout warn">
+      <span class="ico">💡</span>
+      <p><strong>玉哥万能公式</strong>:<strong>运镜动作 + eyes follow / eye contact with camera / head turns smoothly with camera</strong>(三选一,效果递增)。3 个都加 = 玉哥 9-10 分;加 1 个 = 8-9 分;不加 = 6-7 分。</p>
+    </div>
+
+    <h2 id="sec-3">3. 玉哥 5 大运镜 prompt 模板(直接抄)</h2>
+
+    <div class="example">
+      <span class="label">玉哥 5 大模板 · 学员验证 50+ 次</span>
+      <h4>🎬 模板 1:Push-in(推镜,揭示信息)</h4>
+      <pre class="codebox">A [主体] in [场景], the camera slowly pushes in toward the [主体], [主体]'s eyes lock onto the camera with growing intensity, subtle eye contact with the lens, head tilts slightly forward, [情绪] expression, [镜头参数]</pre>
+      <p class="src">📌 <strong>用途</strong>:男主看女主 / 反派亮身份 / 主角坚定决心。<strong>学员使用频率 TOP 3</strong>。</p>
+
+      <h4>🎬 模板 2:Pull-out(拉镜,场景全貌)</h4>
+      <pre class="codebox">A [主体] standing in [场景], the camera slowly pulls back to reveal [场景全貌], [主体]'s eyes gradually shift from the camera to the [远方/天边], gaze drifts into the distance, [情绪] mood, [镜头参数]</pre>
+      <p class="src">📌 <strong>用途</strong>:开场揭示世界 / 结尾留白 / 大场面铺垫。</p>
+
+      <h4>🎬 模板 3:Orbit(环绕,展示人物)</h4>
+      <pre class="codebox">A [主体] in [场景], the camera slowly orbits around the [主体], [主体]'s eyes continuously track the camera movement, head turns smoothly with the camera, full 360-degree eye contact, [情绪] atmosphere, [镜头参数]</pre>
+      <p class="src">📌 <strong>用途</strong>:出场亮相 / 决定瞬间 / 反派亮相。<strong>学员使用频率 TOP 1</strong>(开场 30 秒钩子必备)。</p>
+
+      <h4>🎬 模板 4:Crane-up(抬升,史诗感)</h4>
+      <pre class="codebox">A [主体] in [场景], the camera starts at eye level then slowly cranes upward to reveal [大场面/天/建筑], [主体]'s eyes gradually lift up following the camera rise, gaze drifts from horizon to sky, [情绪] mood, [镜头参数]</pre>
+      <p class="src">📌 <strong>用途</strong>:主角觉醒 / 大战开启 / 故事高潮。<strong>学员用它做"开篇 / 结尾"</strong>。</p>
+
+      <h4>🎬 模板 5:Pan(摇镜,环境叙事)</h4>
+      <pre class="codebox">A [主体] in [场景], the camera pans slowly from [起点] to [终点], [主体]'s eyes follow the camera pan naturally, gaze sweeps across the scene, [情绪] mood, [镜头参数]</pre>
+      <p class="src">📌 <strong>用途</strong>:揭示伏笔(主角看到关键道具) / 环境氛围。</p>
+    </div>
+
+    <h2 id="sec-4">4. 实战:同一画面 3 种 prompt 对比</h2>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th>写法</th><th>prompt</th><th>玉哥评分</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>什么不加</strong></td><td>"a man in office, orbit camera"</td><td>6/10 · 头部不动</td></tr>
+          <tr><td><strong>只加 eyes follow</strong></td><td>"a man in office, orbit camera, eyes follow the camera"</td><td>8/10 · 眼球动了头没动</td></tr>
+          <tr><td><strong>眼睛 + 头部</strong></td><td>"a man in office, orbit camera, eyes follow the camera, head turns smoothly with the camera"</td><td><strong>9/10</strong> · 自然</td></tr>
+          <tr><td><strong>眼睛 + 头部 + 微表情</strong></td><td>"a man in office, orbit camera, eyes follow the camera, head turns smoothly with the camera, subtle smile appears gradually"</td><td><strong>10/10</strong> · 玉哥标准</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout ok">
+      <span class="ico">✅</span>
+      <p><strong>玉哥经验</strong>:<strong>眼睛 + 头部 + 微表情</strong>(3 件)同时加 = 玉哥标准。<strong>仅眼睛</strong> = AI 经常"只眼球动头不动",显得假。<strong>眼睛 + 头部</strong> = 90% 过关。<strong>再加 1 个微表情</strong>(smile / frown / gaze softens) = 满分。</p>
+    </div>
+
+    <h2 id="sec-5">5. 4 大视频模型运镜能力横评</h2>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th>模型</th><th>Push-in</th><th>Orbit</th><th>Crane</th><th>眼神跟随</th><th>学员首选</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Hailuo/可灵 2.x</strong></td><td>⭐⭐⭐⭐⭐</td><td>⭐⭐⭐⭐⭐</td><td>⭐⭐⭐⭐</td><td>⭐⭐⭐⭐⭐</td><td>✅ <strong>首选</strong>(性价比)</td></tr>
+          <tr><td><strong>Sora 2</strong></td><td>⭐⭐⭐⭐⭐</td><td>⭐⭐⭐⭐⭐</td><td>⭐⭐⭐⭐⭐</td><td>⭐⭐⭐⭐</td><td>✅ 次选(质量最高)</td></tr>
+          <tr><td><strong>Runway Gen-4</strong></td><td>⭐⭐⭐⭐</td><td>⭐⭐⭐⭐</td><td>⭐⭐⭐⭐</td><td>⭐⭐⭐⭐</td><td>🟡 平面运镜</td></tr>
+          <tr><td><strong>Veo 3</strong></td><td>⭐⭐⭐⭐⭐</td><td>⭐⭐⭐⭐</td><td>⭐⭐⭐⭐</td><td>⭐⭐⭐</td><td>🟡 中等</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout warn">
+      <span class="ico">⚠️</span>
+      <p><strong>学员 80% 用可灵/Hailuo 跑运镜</strong>:<strong>运镜能力 = Sora 级别</strong>,但价格是 Sora 的 1/10。<strong>眼神跟随</strong>也几乎一致。<strong>首选可灵 / Hailuo,Sora 留给"卡点级"作品</strong>。</p>
+    </div>
+
+    <h2 id="sec-6">6. 数字和时间</h2>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr><th>环节</th><th>耗时</th><th>成本</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>可灵/Hailuo 6s 视频</td><td>3 分钟</td><td>免费 3 条/天</td></tr>
+          <tr><td>Sora 2 6s 视频</td><td>5 分钟</td><td>约 ¥3/条</td></tr>
+          <tr><td>Runway Gen-4 6s</td><td>4 分钟</td><td>$0.5/条</td></tr>
+          <tr><td>1 集 80 镜头</td><td>4 小时</td><td>成本约 ¥200(可灵套餐)</td></tr>
+          <tr><td>眼神修正确率</td><td colspan="2">学员:85%(用本节模板)/ 30%(裸 prompt)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="sec-7">7. 学完这节能做啥</h2>
+
+    <ul class="checklist">
+      <li>知道玉哥 9-08 校准规则:运镜时人物眼神必须跟随</li>
+      <li>能用 5 大运镜模板(push-in / pull-out / orbit / crane / pan)</li>
+      <li>会写"eyes follow + head turns smoothly + 微表情"3 件套</li>
+      <li>知道 4 大视频模型运镜能力排序</li>
+      <li>能用玉哥 5 模板批量生成 80 个镜头提示词</li>
+    </ul>
+
+    <h2 id="sec-8">8. 常见误解</h2>
+
+    <div class="callout bad">
+      <span class="ico">❌</span>
+      <p><strong>"运镜只是'镜头转一下'"</strong> · 错。<strong>运镜 = 镜头 + 人物 + 表情</strong> 3 件联动。<strong>只动镜头不动人物</strong> = 看 MV;3 件联动 = 看漫剧。</p>
+    </div>
+
+    <div class="callout bad">
+      <span class="ico">❌</span>
+      <p><strong>"写眼神提示词 AI 不懂"</strong> · 错。可灵 / Hailuo / Sora <strong>都吃"eyes follow the camera"</strong> 这种英文短语。学员验证 50+ 次,加 1 次眼睛词 = 提升 2-3 分。</p>
+    </div>
+
+    <div class="callout warn">
+      <span class="ico">⚠️</span>
+      <p><strong>"每集都做复杂运镜"</strong> · 错。<strong>1 集 80 镜头只用 3-5 个复杂运镜</strong>(orbit / crane-up),<strong>其余 80% 用静态 + 简单 pan</strong>。<strong>全片复杂运镜 = 视觉疲劳</strong>。</p>
+    </div>
+
+    <div class="callout warn">
+      <span class="ico">⚠️</span>
+      <p><strong>"Sora 比可灵好 10 倍"</strong> · 错。<strong>Sora 在"运镜 + 眼神"上比可灵好 10-15%</strong>,但<strong>价格是 5-10 倍</strong>。<strong>性价比</strong> = 可灵 / Hailuo 是 90% 学员的答案。Sora 留给关键 3-5 镜头。</p>
+    </div>
+
+    <h2 id="sec-9">9. 本节小练习</h2>
+
+    <ol>
+      <li>挑一部你喜欢的电影(漫剧 / 动作 / 爱情都行),截 1 个 push-in 镜头</li>
+      <li>用模板 1 写 1 段 prompt,加 3 件套(眼睛 + 头 + 微表情)</li>
+      <li>挑一个 orbit 镜头(360° 绕人),用模板 3 写</li>
+      <li>挑一个 crane-up 镜头(史诗感抬升),用模板 4 写</li>
+      <li>用可灵 / Hailuo 跑 3 个视频(每个模型 1 条免费额度)</li>
+      <li>对比 3 个出片,看眼神跟镜头的效果差异</li>
+    </ol>
+
+    <h2 id="sec-10">10. 玉哥说</h2>
+
+    <div class="callout warn">
+      <span class="ico">📢</span>
+      <p><strong>📢 玉哥说</strong>:<br>
+      1. <strong>运镜时眼神必须跟随</strong> · 这是 9-08 review 血泪教训,不是装饰<br>
+      2. <strong>3 件套万能公式</strong> · eyes follow + head turns smoothly + 微表情,3 件全加 = 玉哥标准<br>
+      3. <strong>5 大模板</strong> · push-in / pull-out / orbit / crane / pan,直接抄<br>
+      4. <strong>可灵/Hailuo 是性价比之王</strong> · 运镜能力 ≈ Sora,价格 1/10<br>
+      5. <strong>80 镜头只用 3-5 个复杂运镜</strong> · 其余静态 + 简单 pan,避免视觉疲劳</p>
+    </div>
+
+    <nav class="bottom-nav">
+      <a class="prev" href="../E-ai-image/E-20.html">
+        <span class="label">← 上一节</span>
+        <span class="title">E-20 提示词 5 原则</span>
+      </a>
+      <a class="next" href="F-12.html">
+        <span class="label">下一节 →</span>
+        <span class="title">F-12 人物为什么会变形</span>
+      </a>
+    </nav>
+  </main>
+
+  <aside class="sidebar-right" id="sidebar-right"></aside>
+</div>
+
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="扫码关注玉哥">
+      <img class="qr-img" src="../../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../../changelog.html">📅 更新日志</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+
+<script src="../../assets/tutorial.js?v=fix20260927-2215"></script>
+<script src="../../assets/site-enhance.js?v=fix20260927-2215" defer></script>
+</body>
+</html>

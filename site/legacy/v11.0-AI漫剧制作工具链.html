@@ -1,0 +1,425 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI 漫剧制作工具链 v11.0</title>
+<style>
+:root{
+  --bg:#0b0d12;--bg2:#11141b;--bg3:#161a23;--line:#222837;--text:#e6e9f2;--muted:#8a93a6;
+  --acc:#5ee0a7;--acc2:#7aa2ff;--acc3:#ffb142;--acc4:#c084fc;--acc5:#ff5b6e;
+  --shadow:0 6px 30px rgba(0,0,0,.45);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Helvetica,Arial,sans-serif;line-height:1.7;font-size:15px;-webkit-font-smoothing:antialiased}
+a{color:var(--acc2);text-decoration:none}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(11,13,18,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:12px 24px;display:flex;align-items:center;gap:16px}
+.logo{font-weight:800;font-size:18px;background:linear-gradient(90deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:.5px}
+.logo small{color:var(--muted);font-weight:400;margin-left:8px;font-size:12px}
+.toc-btn{margin-left:auto;background:var(--bg3);border:1px solid var(--line);color:var(--text);padding:6px 12px;border-radius:6px;cursor:pointer;font-size:13px}
+.layout{display:grid;grid-template-columns:240px 1fr;max-width:1400px;margin:0 auto}
+aside{position:sticky;top:60px;height:calc(100vh - 60px);overflow-y:auto;padding:24px 16px;border-right:1px solid var(--line);background:var(--bg2)}
+aside h3{color:var(--muted);font-size:12px;letter-spacing:1px;margin:16px 0 8px;text-transform:uppercase}
+aside ul{list-style:none}
+aside li{margin:2px 0}
+aside a{color:#c5cae0;font-size:13px;display:block;padding:5px 10px;border-radius:5px;border-left:2px solid transparent}
+aside a:hover{background:var(--bg3);color:var(--text);text-decoration:none;border-left-color:var(--acc)}
+main{padding:32px 40px 80px;min-width:0}
+h1{font-size:32px;margin-bottom:8px;letter-spacing:.5px}
+h2{font-size:24px;margin:48px 0 16px;padding-bottom:8px;border-bottom:1px solid var(--line);position:relative}
+h2::before{content:"";position:absolute;left:-20px;top:8px;width:4px;height:22px;background:var(--acc);border-radius:2px}
+h3{font-size:18px;margin:28px 0 10px;color:var(--acc)}
+p{margin:10px 0;color:#cfd4e0}
+ul,ol{margin:8px 0 12px 24px;color:#cfd4e0}
+li{margin:4px 0}
+strong{color:#fff}
+em{color:var(--acc);font-style:normal}
+.hero{background:linear-gradient(135deg,#0a0d1f 0%,#0b0d12 60%,#0d111c 100%);border:1px solid var(--acc);border-radius:14px;padding:36px 32px;margin-bottom:32px;box-shadow:0 0 40px rgba(94,224,167,.2);position:relative;overflow:hidden}
+.hero h1{background:linear-gradient(90deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent;display:inline-block}
+.hero .sub{color:var(--muted);margin-top:6px;font-size:14px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.tag{background:rgba(255,255,255,.06);border:1px solid var(--line);padding:4px 10px;border-radius:99px;font-size:12px;color:#cdd3e1}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;margin:14px 0}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--bg3);color:var(--muted);font-weight:600;font-size:11.5px;text-transform:uppercase;letter-spacing:.5px}
+tbody tr:hover{background:rgba(255,255,255,.02)}
+.badge{display:inline-block;padding:2px 6px;border-radius:4px;font-size:10.5px;font-weight:600}
+.badge.hot{background:rgba(255,91,110,.18);color:#ff8a99}
+.badge.warm{background:rgba(255,177,66,.18);color:#ffc777}
+.badge.cool{background:rgba(94,224,167,.18);color:#7defc0}
+.badge.info{background:rgba(122,162,255,.18);color:#a8c0ff}
+.badge.purple{background:rgba(192,132,252,.18);color:#d2afff}
+.callout{display:flex;gap:12px;padding:14px 16px;border-radius:8px;margin:14px 0;border:1px solid var(--line);background:var(--bg2)}
+.callout .ico{font-size:20px;flex-shrink:0;line-height:1}
+.callout.tip{border-color:rgba(94,224,167,.4);background:rgba(94,224,167,.06)}
+.callout.warn{border-color:rgba(248,113,113,.4);background:rgba(248,113,113,.06)}
+.callout.info{border-color:rgba(122,162,255,.4);background:rgba(122,162,255,.06)}
+.callout.purple{border-color:rgba(192,132,252,.4);background:rgba(192,132,252,.06)}
+.callout p{font-size:13.5px;color:#dde0ec;margin:0}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:16px 0}
+.step{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:16px;position:relative}
+.step .n{position:absolute;top:-10px;left:-10px;width:32px;height:32px;background:linear-gradient(135deg,var(--acc),var(--acc2));color:#0b0d12;border-radius:50%;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:14px}
+.step h4{color:#fff;margin:6px 0}
+.step p{font-size:13px;color:#b8bfd0}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin:20px 0}
+.stat{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:18px}
+.stat .v{font-size:24px;font-weight:800;color:#fff;letter-spacing:.5px}
+.stat .l{color:var(--muted);font-size:13px;margin-top:4px}
+.stat.hot .v{color:var(--acc)}
+.stat.warm .v{color:var(--acc3)}
+footer{margin-top:60px;padding:24px 40px;color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);text-align:center}
+@media (max-width:900px){.layout{grid-template-columns:1fr}aside{position:relative;top:0;height:auto;border-right:0;border-bottom:1px solid var(--line)}main{padding:24px 20px 60px}h1{font-size:26px}h2{font-size:20px}}
+@media print{aside,.topbar{display:none}.layout{grid-template-columns:1fr}body{background:#fff;color:#000}h2::before{display:none}}
+</style>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg?v=fix20260927-2215">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="logo">🛠 AI 漫剧制作工具链 v11.0 <small>团队配置 + 工具订阅 + 工作流 · 2026-09-11</small></div>
+  <button class="toc-btn" onclick="window.print()">🖨 打印 / PDF</button>
+</div>
+
+<div class="layout">
+
+<aside>
+<h3>启动</h3>
+<ul>
+  <li><a href="#hero">概览</a></li>
+  <li><a href="#team">1-3 人团队</a></li>
+  <li><a href="#cost">工具月费</a></li>
+</ul>
+
+<h3>制作</h3>
+<ul>
+  <li><a href="#character">角色一致性</a></li>
+  <li><a href="#workflow">7 步工作流</a></li>
+  <li><a href="#post">后期 3 件套</a></li>
+</ul>
+
+<h3>资源</h3>
+<ul>
+  <li><a href="#stack">4 大工具组合</a></li>
+  <li><a href="#deploy">本地 vs 云端</a></li>
+  <li><a href="#monetize">变现路径</a></li>
+</ul>
+</aside>
+
+<main>
+
+<section id="hero" class="hero">
+  <h1>AI 漫剧制作工具链</h1>
+  <p class="sub">原"AI 漫剧制作工具链"已重写 · 1-3 人小团队 + 工具订阅 + 工作流 · 2026-09-11</p>
+  <p style="margin-top:14px;max-width:780px">本章<strong>手把手教你搭 AI 漫剧制作线</strong>——团队岗位 / 工具月费 / 角色一致性 / 7 步工作流 / 后期 3 件套 / 4 大工具组合 / 本地 vs 云端部署 / 5 大变现路径。<strong>全 AI 路线,不需要真人演员/拍摄基地/剧组</strong>。</p>
+  <div class="meta">
+    <span class="tag">👥 1-3 人配置</span>
+    <span class="tag">💰 工具月费 ¥0-3000</span>
+    <span class="tag">🎨 角色一致性 4 方案</span>
+    <span class="tag">🎬 7 步工作流</span>
+    <span class="tag">🔧 4 大工具组合</span>
+    <span class="tag">☁️ 本地 + 云端</span>
+  </div>
+</section>
+
+<h2 id="team">一、1-3 人小团队配置</h2>
+
+<p>AI 漫剧不需要 40-50 人剧组,1-3 人 + 1 台电脑就能开干。<strong>3 种配置</strong>按预算选。</p>
+
+<div class="stats">
+  <div class="stat hot"><div class="v">1 人<small>最低</small></div><div class="l">1 万预算 · 30 天出片</div></div>
+  <div class="stat warm"><div class="v">2 人<small>推荐</small></div><div class="l">3 万预算 · 20 天出片</div></div>
+  <div class="stat cool"><div class="v">3 人<small>矩阵</small></div><div class="l">5 万+ 预算 · 同步做 3 部</div></div>
+</div>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>角色</th><th>1 人配置</th><th>2 人配置</th><th>3 人配置</th></tr></thead>
+<tbody>
+<tr><td><strong>剧本 + 改编</strong></td><td>自己</td><td>编剧(兼职)</td><td>专职编剧</td></tr>
+<tr><td><strong>分镜 + ComfyUI</strong></td><td>自己</td><td>自己(主)</td><td>分镜师</td></tr>
+<tr><td><strong>剪辑 + 配音</strong></td><td>自己</td><td>自己</td><td>后期师</td></tr>
+<tr><td><strong>投流 + 运营</strong></td><td>自己</td><td>对方</td><td>运营师</td></tr>
+<tr><td><strong>总成本/月</strong></td><td>¥500-1000</td><td>¥3000-5000</td><td>¥10000+</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout tip">
+  <span class="ico">💡</span>
+  <p><strong>建议</strong>:1 人配置适合"试水"(1 万预算 30 天出 1 部);2 人配置适合"稳定输出"(月出 1-2 部);3 人配置适合"矩阵化"(月出 3-5 部)。</p>
+</div>
+
+<h2 id="cost">二、AI 工具订阅成本 · 月费表</h2>
+
+<p>2026-09-11 实测月费。<strong>所有链接</strong>见 <a href="v8.0-链接校验与头部UP主.html#tool">补给站 · 工具补给</a>。<strong>推荐 2 套组合</strong>(见下)。</p>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>工具</th><th>免费档</th><th>个人订阅</th><th>团队订阅</th><th>用途</th></tr></thead>
+<tbody>
+<tr><td><strong>ComfyUI(本地)</strong></td><td>¥0(开源)</td><td>¥0(自己跑)</td><td>¥0</td><td>画面生成核心</td></tr>
+<tr><td><strong>SDXL/Stable Diffusion</strong></td><td>¥0</td><td>¥0(本地)</td><td>¥0</td><td>基础模型</td></tr>
+<tr><td><strong>海螺 AI(MiniMax)</strong></td><td>3 条/天</td><td>¥99/月(200 条)</td><td>¥499/月(无限)</td><td>30 秒长视频</td></tr>
+<tr><td><strong>即梦 AI(字节)</strong></td><td>66 积分/天</td><td>¥79/月(1500 积分)</td><td>¥299/月(无限)</td><td>画面 + 短剧角色</td></tr>
+<tr><td><strong>可灵 AI(快手)</strong></td><td>5 积分/天</td><td>¥66/月(800 积分)</td><td>¥199/月(无限)</td><td>角色动作</td></tr>
+<tr><td><strong>Runway Gen-3</strong></td><td>—</td><td>$12/月(625 credits)</td><td>$76/月(2250 credits)</td><td>高级图生视频</td></tr>
+<tr><td><strong>Pika 1.0</strong></td><td>—</td><td>$8/月</td><td>$58/月</td><td>图生视频备选</td></tr>
+<tr><td><strong>ElevenLabs(配音)</strong></td><td>10000 字符/月</td><td>$5/月(30000)</td><td>$22/月(100000)</td><td>多语种 AI 配音</td></tr>
+<tr><td><strong>Suno AI(BGM)</strong></td><td>5 首/天</td><td>$10/月(500 首)</td><td>$30/月(2000 首)</td><td>原创 BGM/主题曲</td></tr>
+<tr><td><strong>ChatGPT/Claude(剧本)</strong></td><td>—</td><td>$20/月</td><td>$60/月(Team)</td><td>剧本拆解 + Prompt</td></tr>
+<tr><td><strong>扣子/Coze(Agent)</strong></td><td>¥0</td><td>¥0(免费版够用)</td><td>¥99/月(企业)</td><td>多 Agent 编排</td></tr>
+<tr><td><strong>剪映/CapCut(剪辑)</strong></td><td>¥0</td><td>¥0(够用)</td><td>¥30/月(会员)</td><td>剪辑 + 字幕</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout warn">
+  <span class="ico">⚠️</span>
+  <p><strong>价格会变</strong>:以上是 2026-09-11 实测月费,AI 工具订阅价格每月调整。<strong>采购前先看官网最新</strong>(各工具 URL 在补给站)。<strong>血泪教训</strong>:ComfyUI 本地部署 ¥0 硬件,但显卡成本 ¥3000-8000 一次性投入,不要被"免费"迷惑。</p>
+</div>
+
+<h2 id="character">三、角色一致性 · 4 大方案</h2>
+
+<p>AI 漫剧最大难点 = <strong>同一个角色在 30 集中长相一致</strong>。4 套方案,按成本递增:</p>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>方案</th><th>原理</th><th>工具</th><th>成本</th><th>效果</th></tr></thead>
+<tbody>
+<tr><td><strong>① IP-Adapter</strong></td><td>用参考图控制角色</td><td>ComfyUI + IP-Adapter</td><td>¥0</td><td>70% 一致(够用)</td></tr>
+<tr><td><strong>② LoRA 训练</strong></td><td>训练 20-50 张图学角色</td><td>ComfyUI + Kohya</td><td>¥0(算力费)</td><td>85% 一致</td></tr>
+<tr><td><strong>③ Reference Only</strong></td><td>多图参考融合</td><td>ComfyUI + ControlNet</td><td>¥0</td><td>80% 一致</td></tr>
+<tr><td><strong>④ 商业 API</strong></td><td>用商业角色 API(2026 新)</td><td>海螺角色 API</td><td>¥99+/月</td><td>95% 一致</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout tip">
+  <span class="ico">💡</span>
+  <p><strong>推荐组合</strong>:① IP-Adapter(主)+ ② LoRA 训练(精修)。先用 IP-Adapter 跑 80% 集数,关键场景(高潮/重场)用 LoRA 精修。详细工作流见 <a href="../tutorial/J-comfyui/ComfyUI漫剧工作流.html">ComfyUI 漫剧工作流</a>。</p>
+</div>
+
+<h2 id="workflow">四、7 步工作流(剧本 → 出片)</h2>
+
+<div class="steps">
+  <div class="step"><div class="n">1</div><h4>选书</h4><p>用 <a href="v10.0-番茄IP选书TOP50.html">番茄 IP TOP50</a> 选 1 本</p></div>
+  <div class="step"><div class="n">2</div><h4>拆解</h4><p>用 ChatGPT 拆 5 部爆款 + 改编 30 集剧本</p></div>
+  <div class="step"><div class="n">3</div><h4>人物卡</h4><p>ComfyUI 文生图,生成 4 个主角立绘</p></div>
+  <div class="step"><div class="n">4</div><h4>分镜</h4><p>用 AI 分镜工具生成 30 集分镜(每集 8-12 镜)</p></div>
+  <div class="step"><div class="n">5</div><h4>画面</h4><p>ComfyUI 出 240-360 张关键帧</p></div>
+  <div class="step"><div class="n">6</div><h4>视频</div><h4>海螺/可灵/Runway 出 30 秒长视频</p></div>
+  <div class="step"><div class="n">7</div><h4>后期</h4><p>剪映 + ElevenLabs 配音 + Suno BGM + 字幕</p></div>
+</div>
+
+<div class="callout info">
+  <span class="ico">⏱️</span>
+  <p><strong>实测时间</strong>:1 人配置 → 30 天出 30 集 AI 漫剧(D1-3 选书,D4-7 拆解,D8-14 写剧本+分镜,D15-21 画面+视频,D22-25 后期,D26-30 投稿)。<strong>详情见 <a href="../tutorial/H-publish/短剧创业SOP.html">短剧创业 SOP 30 天路径</a></strong>。</p>
+</div>
+
+<h2 id="post">五、后期 3 件套(剪辑 + 配音 + 字幕)</h2>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>环节</th><th>工具</th><th>成本</th><th>关键点</th></tr></thead>
+<tbody>
+<tr><td><strong>剪辑</strong></td><td>剪映/CapCut</td><td>¥0</td><td>卡点 + 转场 + 节奏</td></tr>
+<tr><td><strong>配音</strong></td><td>ElevenLabs(海外)/ 魔音工坊(国内)</td><td>$5-22/月</td><td>11Labs 多语种质量高,魔音工坊中文更准</td></tr>
+<tr><td><strong>字幕</strong></td><td>剪映自动字幕 + 手动校</td><td>¥0</td><td>关键台词加粗,情绪词用 emoji 标注</td></tr>
+<tr><td><strong>BGM</strong></td><td>Suno AI / 海螺 music</td><td>¥0-99/月</td><td>高潮用激昂,日常用轻柔</td></tr>
+<tr><td><strong>特效</strong></td><td>剪映自带 + 抖音模板</td><td>¥0</td><td>不超过 5%,多了显廉价</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout warn">
+  <span class="ico">⚠️</span>
+  <p><strong>避坑</strong>:① <strong>不要过度剪辑</strong>——AI 漫剧看剧情不靠花活;② <strong>不要用海外音乐</strong>——版权风险,2024 下架《黑莲花》就有这个原因;③ <strong>字幕别全大写</strong>——读者累。</p>
+</div>
+
+<h2 id="stack">六、4 大工具组合(按预算选)</h2>
+
+<p>2026-09-11 实测。<strong>第 1 套最推荐</strong>(¥99 月费,出 1 部 AI 漫剧 ≈ ¥200 总成本)。</p>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>组合</th><th>月费</th><th>工具</th><th>适合</th></tr></thead>
+<tbody>
+<tr><td><strong>① 极简版</strong> ⭐推荐</td><td>¥99</td><td>海螺 AI 200 条 + 剪映 + 魔音工坊</td><td>1 人试水</td></tr>
+<tr><td><strong>② 平衡版</strong></td><td>¥300</td><td>海螺 + 即梦 + 可灵 + 11Labs + Suno</td><td>2 人稳定出片</td></tr>
+<tr><td><strong>③ 精品版</strong></td><td>¥1000+</td><td>Runway $76 + 11Labs $22 + ChatGPT $20 + 海螺团队</td><td>3 人矩阵化</td></tr>
+<tr><td><strong>④ 极客版</strong></td><td>¥0 + 硬件</td><td>ComfyUI 本地 + 显卡 ¥5000-8000 + 全部开源</td><td>长期投入</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout tip">
+  <span class="ico">💡</span>
+  <p><strong>建议路径</strong>:从 ① 极简版(¥99)起步 → 跑通 1 部 → 升级到 ② 平衡版(¥300)→ 出 3-5 部稳定后 → 看是否需要 ③ 精品版 或 ④ 极客版(自己部署 ComfyUI)。</p>
+</div>
+
+<h2 id="deploy">七、本地 vs 云端部署</h2>
+
+<p>ComfyUI 既可以本地电脑跑,也可以用云 GPU。<strong>2 选 1</strong>:</p>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>方案</th><th>硬件成本</th><th>月费</th><th>速度</th><th>隐私</th><th>适合</th></tr></thead>
+<tbody>
+<tr><td><strong>本地部署</strong></td><td>¥5000-8000 显卡</td><td>¥0</td><td>快(取决于显卡)</td><td>高(本地)</td><td>长期投入 / 矩阵化</td></tr>
+<tr><td><strong>云端 GPU</strong></td><td>¥0</td><td>¥200-1000/月</td><td>中(看排队)</td><td>中(平台可见)</td><td>短期试水 / 1-2 部</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout info">
+  <span class="ico">☁️</span>
+  <p><strong>云端推荐</strong>:AutoDL(便宜)/ 揽梦星云(国产)/ 矩池云(国际)。<strong>本地推荐</strong>:RTX 3060 12G(¥2000 入门)/ RTX 4070Ti 12G(¥4500 主流)/ RTX 4090 24G(¥12000 顶级)。<strong>1 万预算 1 人配置</strong>:建议云端,不要硬件投入。</p>
+</div>
+
+<h2 id="monetize">八、5 大变现路径</h2>
+
+<p>AI 漫剧 5 大变现,按难度递增:</p>
+
+<div class="tbl-wrap">
+<table>
+<thead><tr><th>路径</th><th>难度</th><th>周期</th><th>收益</th><th>适合</th></tr></thead>
+<tbody>
+<tr><td><strong>① 平台分账</strong></td><td>低</td><td>30-60 天</td><td>1-10 万/部</td><td>新手首选</td></tr>
+<tr><td><strong>② 商单/接单</strong></td><td>中</td><td>立即</td><td>¥200-2000/集</td><td>有作品集</td></tr>
+<tr><td><strong>③ 培训卖课</strong></td><td>中</td><td>3-6 月</td><td>¥999-19800/学员</td><td>技术+表达力</td></tr>
+<tr><td><strong>④ IP 矩阵化</strong></td><td>高</td><td>6-12 月</td><td>10-100 万/年</td><td>有 3 部以上爆款</td></tr>
+<tr><td><strong>⑤ 出海译制</strong></td><td>高</td><td>6-12 月</td><td>美区 $5-50/部</td><td>ComfyUI 流程成熟</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout purple">
+  <span class="ico">💎</span>
+  <p><strong>2026-09-11 现实</strong>:① 平台分账 <strong>90% 学员首选</strong>(<a href="v5.0-合同模板包.html">合同模板</a>);② 商单 <strong>技术好立即有</strong>(参考 v6.0 作品集);③ 培训卖课 <strong>最赚钱但最看表达</strong>(参考 <a href="v8.0-链接校验与头部UP主.html#course">补给站 · 课程补给</a>)。</p>
+</div>
+
+<h2>九、5 大入门资源</h2>
+
+<div class="steps">
+  <div class="step"><div class="n">1</div><h4>ComfyUI 官方</h4><p>GitHub 看 README + 100+ 示例</p></div>
+  <div class="step"><div class="n">2</div><h4>B 站七秒工场</h4><p>免费 ComfyUI + 短剧制作教程</p></div>
+  <div class="step"><div class="n">3</div><h4>v6.0 ComfyUI 工作流</h4><p>本课件的 ComfyUI 漫剧工作流 16 章</p></div>
+  <div class="step"><div class="n">4</div><h4>v18.0 AI 仓库汇总</h4><p>GitHub 4 高星仓库(0xsline/short-drama 等)</p></div>
+  <div class="step"><div class="n">5</div><h4>v8.0 补给站</h4><p>师傅 + 课程 + 工具 + 验真</p></div>
+</div>
+
+<div class="callout info">
+  <span class="ico">📌</span>
+  <p><strong>本章总结</strong>:本章从 0 教你搭 AI 漫剧制作线——<strong>1-3 人小团队 + 工具月费 ¥0-3000 + 角色一致性 4 方案 + 7 步工作流 + 后期 3 件套 + 4 大工具组合 + 本地 vs 云端 + 5 大变现</strong>。<strong>重点:AI 路线不需要演员/基地/剧组,1-3 人 + 1 台电脑 = 30 天出 1 部可投 AI 漫剧</strong>。</p>
+</div>
+
+
+<h2 id="d4">§ 10 · 全网顶级 AI 漫剧视频课路径(2026-09 校验)</h2>
+
+<div class='callout purple'>
+  <span class='ico'>💎</span>
+  <p><strong>AI 漫剧必须配合视频课学</strong>。本章精选<strong>全网最顶级免费 AI 漫剧/ComfyUI 视频课</strong>,按 4 段路径排列。<strong>学员按自己段位挑课</strong>,不要全看。<strong>完整 ComfyUI 教程见 <a href='../tutorial/J-comfyui/ComfyUI漫剧工作流.html'>v6.0 ComfyUI 工作流</a></strong>。</p>
+</div>
+
+<h3>🐣 10.1 小白(从没装过 ComfyUI) · 4 课</h3>
+<p>目标:<strong>30 分钟装好,跑出第 1 张图</strong>。</p>
+<div class='tbl-wrap'>
+<table>
+<thead><tr><th>课程</th><th>UP / 频道</th><th>时长</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td>ComfyUI 入门教程</td><td>NENLY 同学 (B 站)</td><td>1-2 小时</td><td><a href='https://www.bilibili.com/video/BV1D7421N7xN/' target='_blank'>BV1D7421N7xN</a></td></tr>
+<tr><td>ComfyUI 零基础入门全解</td><td>秋叶 aaaki (B 站)</td><td>3-4 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%A7%8B%E5%8F%B6%20ComfyUI%20%E9%9B%B6%E5%9F%BA%E7%A1%80' target='_blank'>B 站搜'秋叶 ComfyUI 零基础'</a></td></tr>
+<tr><td>ComfyUI 官方桌面端安装</td><td>AI 小王子 Jay (B 站)</td><td>1 集</td><td><a href='https://search.bilibili.com/all?keyword=Jay%20ComfyUI%20%E5%AE%98%E6%96%B9%E6%A1%8C%E9%9D%A2%E7%AB%AF' target='_blank'>B 站搜'Jay ComfyUI 桌面端'</a></td></tr>
+<tr><td>ComfyUI Crash Course For Beginners</td><td>developedbyed (YouTube, 933K subs)</td><td>30 分钟</td><td><a href='https://www.youtube.com/results?search_query=developedbyed+comfyui+crash+course' target='_blank'>YouTube 搜'developedbyed comfyui'</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>🌱 10.2 入门(会文生图,想做视频) · 4 课</h3>
+<p>目标:<strong>做出第 1 部 10 秒 AI 漫剧短片</strong>。</p>
+<div class='tbl-wrap'>
+<table>
+<thead><tr><th>课程</th><th>UP / 频道</th><th>时长</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td>ComfyUI 自定义节点的秘密</td><td>NENLY 同学 (B 站)</td><td>1 小时</td><td><a href='https://www.bilibili.com/video/BV1pZ421b7t7/' target='_blank'>BV1pZ421b7t7</a></td></tr>
+<tr><td>AI 漫剧制作系列</td><td>B 站 · AI 漫剧合集</td><td>3-5 小时</td><td><a href='https://search.bilibili.com/all?keyword=AI%20%E6%BC%AB%E5%89%A7' target='_blank'>B 站搜'AI 漫剧'</a></td></tr>
+<tr><td>ComfyUI With Flux.1 安装</td><td>Next Tech and AI (YouTube, 33K views)</td><td>38 分钟</td><td><a href='https://www.youtube.com/results?search_query=ComfyUI+Flux.1+installation' target='_blank'>YouTube 搜'ComfyUI Flux installation'</a></td></tr>
+<tr><td>即梦 AI · 短剧角色生成</td><td>即梦官方 (B 站)</td><td>1-2 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E5%8D%B3%E6%A2%A6%20%E7%9F%AD%E5%89%A7%E8%A7%92%E8%89%B2' target='_blank'>B 站搜'即梦 短剧角色'</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>🚀 10.3 进阶(熟练,想跨集角色一致) · 4 课</h3>
+<p>目标:<strong>做 1 部 30 集 AI 漫剧,角色跨集一致</strong>。</p>
+<div class='tbl-wrap'>
+<table>
+<thead><tr><th>课程</th><th>UP / 频道</th><th>时长</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td>ComfyUI 影视级工作流</td><td>CG 艺术家联盟 (腾讯课堂)</td><td>8-12 小时</td><td><a href='https://ke.qq.com/course/package/CG' target='_blank'>腾讯课堂搜'ComfyUI 影视级'</a></td></tr>
+<tr><td>LoRA 训练:数据集 + 训练器 + 参数</td><td>AI 小王子 Jay (B 站)</td><td>3 集</td><td><a href='https://search.bilibili.com/all?keyword=Jay%20ComfyUI%20LoRA%20%E8%AE%AD%E7%BB%83' target='_blank'>B 站搜'Jay LoRA 训练'</a></td></tr>
+<tr><td>Master ControlNet FLUX & SDXL</td><td>Next Tech and AI (YouTube)</td><td>25 分钟</td><td><a href='https://www.youtube.com/results?search_query=Master+ControlNet+FLUX+SDXL+ComfyUI' target='_blank'>YouTube 搜'Master ControlNet FLUX'</a></td></tr>
+<tr><td>IP-Adapter Face Swap & ControlNet</td><td>JarvisLabs AI (YouTube)</td><td>16 分钟</td><td><a href='https://www.youtube.com/results?search_query=IP-Adapter+Face+Swap+ComfyUI' target='_blank'>YouTube 搜'IP-Adapter Face Swap'</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>👑 10.4 大神(矩阵化 / 长视频) · 4 课</h3>
+<p>目标:<strong>工业化批量产出 30 秒+ 长视频</strong>。</p>
+<div class='tbl-wrap'>
+<table>
+<thead><tr><th>课程</th><th>UP / 频道</th><th>时长</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td>AI 小王子 Jay · 77 课系统课</td><td>AI 小王子 Jay (B 站)</td><td>77 集</td><td><a href='https://search.bilibili.com/all?keyword=AI%E5%B0%8F%E7%8E%8B%E5%AD%90%20Jay%20ComfyUI' target='_blank'>B 站搜'AI 小王子 Jay ComfyUI'</a></td></tr>
+<tr><td>Mastering ComfyUI: Embedding & LoRA</td><td>DreamingAI (YouTube, 65K views)</td><td>1 小时</td><td><a href='https://www.youtube.com/results?search_query=DreamingAI+Mastering+ComfyUI' target='_blank'>YouTube 搜'DreamingAI ComfyUI LoRA'</a></td></tr>
+<tr><td>From  to  E-commerce (ComfyUI)</td><td>AI Jason (YouTube, 67K views)</td><td>28 分钟</td><td><a href='https://www.youtube.com/results?search_query=AI+Jason+ComfyUI' target='_blank'>YouTube 搜'AI Jason ComfyUI'</a></td></tr>
+<tr><td>LTX 2.3 4K 50fps ComfyUI</td><td>Tensor Alchemist (YouTube, 99K views)</td><td>12 分钟</td><td><a href='https://www.youtube.com/results?search_query=Tensor+Alchemist+LTX+ComfyUI' target='_blank'>YouTube 搜'Tensor Alchemist LTX'</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<div class='callout info'>
+  <span class='ico'>📌</span>
+  <p><strong>学完这页 + v6.0 ComfyUI 教程</strong> = AI 漫剧工具学习唯一入口。<strong>16 课顶级视频课 + 12 工具月费表 + 9 章工作流</strong> = 全网最完整'AI 漫剧工具链'地图。</p>
+</div>
+</main>
+</div>
+
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="后期放公众号二维码">
+      <img class="qr-img" src="../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../changelog.html">📅 更新日志</a></li>
+      <li><a href="mailto:yuge@local.demo">✉ 联系玉哥</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流 · 京 ICP 备 XXXXXXXX 号(待补)
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('aside a').forEach(function(a){
+    a.addEventListener('click',function(){
+      document.querySelectorAll('aside a').forEach(function(x){
+        x.style.color='';x.style.background='';x.style.borderLeftColor='transparent';
+      });
+      a.style.color='#5ee0a7';a.style.background='#161a23';a.style.borderLeftColor='#5ee0a7';
+    });
+  });
+});
+</script>
+</body>
+</html>

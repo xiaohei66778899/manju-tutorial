@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>小说改剧本实操 + 课程包 v17.0</title>
+<style>
+:root{--bg:#0b0d12;--bg2:#11141b;--line:#222837;--text:#e6e9f2;--muted:#8a93a6;--acc:#5ee0a7;--acc2:#ffb142;--acc3:#7aa2ff;--acc4:#ff5b6e;--acc5:#c084fc}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);color:var(--text);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.7;font-size:14.5px}
+.topbar{position:sticky;top:0;background:rgba(11,13,18,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:10px 20px;z-index:50}
+.logo{font-weight:800;font-size:16px;background:linear-gradient(90deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.layout{display:grid;grid-template-columns:200px 1fr;max-width:1200px;margin:0 auto}
+aside{position:sticky;top:60px;height:calc(100vh - 60px);overflow-y:auto;padding:24px 12px;border-right:1px solid var(--line);background:var(--bg2)}
+aside h3{color:var(--muted);font-size:11px;letter-spacing:1px;margin:16px 0 6px;text-transform:uppercase;padding-left:10px}
+aside ul{list-style:none}
+aside li{margin:1px 0}
+aside a{color:#c5cae0;font-size:13px;display:block;padding:5px 10px;border-radius:5px;border-left:2px solid transparent}
+aside a:hover{background:var(--bg3);color:#fff;text-decoration:none;border-left-color:var(--acc)}
+main{padding:24px 36px 60px;min-width:0}
+h1{font-size:24px;margin:0 0 16px}
+h2{font-size:18px;margin:36px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--line);color:var(--acc)}
+h2::before{content:"";display:inline-block;width:3px;height:14px;background:var(--acc);margin-right:8px;vertical-align:-2px;border-radius:2px}
+h3{font-size:14.5px;margin:18px 0 6px;color:var(--acc2)}
+p{margin:6px 0;color:#cfd4e0}
+strong{color:#fff}
+em{color:var(--acc2);font-style:normal}
+ul,ol{margin:4px 0 8px 22px;color:#cfd4e0}
+li{margin:2px 0}
+.link-card{background:var(--bg2);border:1px solid var(--line);border-left:3px solid var(--acc3);border-radius:6px;padding:8px 12px;margin:6px 0;font-size:13px}
+.link-card a{color:var(--acc3);text-decoration:none;font-weight:600}
+.link-card a:hover{text-decoration:underline}
+.link-card .src{color:var(--muted);font-size:11.5px;margin-top:2px}
+.link-card .note{color:#cfd4e0;margin-top:3px;font-size:12.5px}
+.template{background:#0d1018;border:1px solid var(--line);border-radius:6px;padding:10px 12px;margin:6px 0;font-family:"JetBrains Mono",Consolas,monospace;font-size:12px;color:#d2d6e0;line-height:1.65;white-space:pre-wrap;overflow-x:auto}
+.template .k{color:var(--acc4);font-weight:600}
+.template .v{color:#ffd6a5}
+.template .c{color:var(--muted);font-style:italic}
+.template .ok{color:var(--acc);font-weight:700}
+.template .bad{color:var(--acc4);font-weight:700}
+.scene{background:#0d1018;border:1px solid var(--line);border-left:3px solid var(--acc);border-radius:6px;padding:10px 14px;margin:8px 0;font-size:13px;color:#d2d6e0;line-height:1.7;white-space:pre-wrap}
+.scene .lbl{color:var(--acc);font-weight:700;font-size:11.5px;letter-spacing:1px;margin-bottom:3px;display:block}
+.scene .src{color:var(--muted);font-size:11.5px;margin-top:5px;display:block}
+table{width:100%;border-collapse:collapse;margin:8px 0;font-size:12.5px}
+th,td{padding:6px 10px;text-align:left;border-bottom:1px solid var(--line)}
+th{color:var(--acc);font-weight:700;background:var(--bg2)}
+.badge{display:inline-block;padding:1px 7px;border-radius:4px;font-size:10.5px;font-weight:600;background:rgba(122,162,255,.18);color:#a8c0ff;margin-left:6px}
+.badge.free{background:rgba(94,224,167,.18);color:#a8e6c8}
+.badge.paid{background:rgba(255,177,66,.18);color:#ffd6a5}
+.badge.book{background:rgba(192,132,252,.18);color:#d4b8ff}
+@media(max-width:900px){.layout{grid-template-columns:1fr}aside{position:relative;top:0;height:auto;border-right:0;border-bottom:1px solid var(--line)}main{padding:20px 18px 50px}}
+</style>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg?v=fix20260927-2215">
+</head>
+<body>
+<div class="topbar"><div class="logo">小说改剧本实操 + 课程包 v17.0</div></div>
+<div class="layout">
+<aside>
+<h3>资源</h3>
+<ul>
+<li><a href="#s1-1">免费文章</a></li>
+<li><a href="#s1-2">免费视频</a></li>
+<li><a href="#s1-3">付费课</a></li>
+<li><a href="#s1-4">书</a></li>
+</ul>
+<h3>方法</h3>
+<ul>
+<li><a href="#s2">5 步工程化</a></li>
+<li><a href="#s3">真实示范</a></li>
+<li><a href="#s4">曹剑公式</a></li>
+</ul>
+<h3>实操</h3>
+<ul>
+<li><a href="#s5">上手路径</a></li>
+<li><a href="#s6">30 分钟</a></li>
+</ul>
+</aside>
+<main>
+<h1>小说改剧本实操 + 课程包</h1>
+<p style="color:var(--muted);font-size:12.5px;margin:0 0 18px;padding:8px 12px;border-left:2px solid var(--acc);background:var(--bg2);border-radius:0 6px 6px 0">📎 <strong style="color:var(--acc)">配套</strong>本文件是实操入口版(17KB)。详细 7 步流程 + 20 坑 + 30 项自检见 <a href="v14.0-小说改剧本实操全攻略.html">小说改剧本实操全攻略</a>(39KB)。</p>
+
+<h2 id="s1-1">配套资源(直链版)</h2>
+
+<div class="link-card">
+<a href="https://www.sheratonhq.com/news/75229" target="_blank">网络小说改编短视频剧本:工程化转换指南</a>
+<div class="src">sheratonhq.com</div>
+<div class="note">5 步法来源。读完这 1 篇 = 掌握 50% 改编能力,内容已合并到下面 §2 5 步法。</div>
+</div>
+
+<div class="link-card">
+<a href="https://space.bilibili.com/221524811" target="_blank">查理老师的编剧课(B 站)</a>
+<div class="src">B 站 · 33.8 万粉丝 · 700+ 视频</div>
+<div class="note">短剧编剧教学头部 UP 主。系统课 + 爆款拉片 + AI 辅助 + 合规创作。<strong>直链主页,点进去看免费合集</strong>。</div>
+</div>
+
+<div class="link-card">
+<a href="https://www.bilibili.com/video/BV1QB4y1r73i" target="_blank">老白的分镜(完整分镜教程合集)</a>
+<div class="src">B 站 · 51.5 万粉丝 · 148 视频</div>
+<div class="note">分镜教学头部 UP 主(漫剧必需)。免费教程 + 训练营。<strong>点进去是合集,看完所有分镜基础课</strong>。</div>
+</div>
+
+<div class="link-card">
+<a href="https://search.douban.com/book/subject_search?search_text=%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E7%9F%AD%E5%89%A7%E5%88%9B%E4%BD%9C" target="_blank">从零开始学短剧创作(孙文琴/爱丽丝,北大出版社 2025)</a>
+<div class="src">ISBN 978-7-301-35996-9 · 京东/当当 35-50 元</div>
+<div class="note">唯一一本专门讲短剧剧本的书。题材/格式/节奏/爆点/人物/大纲/开头/付费点/分集台词/拉片全涵盖。<strong>点豆瓣搜索结果,跳到购买页</strong>。</div>
+</div>
+
+<p style="color:var(--muted);font-size:12.5px;margin-top:8px">📌 其他资源(曹剑讲座/梨花颜编剧亲述/番茄漫剧保姆级)在主课件"视频课程专区"有完整索引。</p>
+
+<h2 id="s2">6 步专业编剧流程(基于 0xsline/short-drama 改造)</h2>
+<p>基于 GitHub 顶级仓库 <a href="https://github.com/0xsline/short-drama" target="_blank">0xsline/short-drama</a>(MIT 协议,9 文件 2646 行,2026-07 更新)。<strong>复制以下 6 步 Prompt 到任何 LLM(Claude/ChatGPT/DeepSeek)即可直接用</strong>。</p>
+<div style="margin:8px 0;padding:8px 12px;background:rgba(122,162,255,.06);border-left:3px solid var(--acc);border-radius:4px;font-size:12.5px">
+  <strong>💡 用法</strong>:① 复制命令全文(含 Prompt)→ ② 粘贴到 Claude/ChatGPT 对话 → ③ 按 AI 追问输入你的题材/小说 → ④ AI 给你结果。命令顺序: <code>/start</code> → <code>/plan</code> → <code>/characters</code> → <code>/outline</code> → <code>/episode N</code> → <code>/review N</code>。
+</div>
+
+<h3>第 1 步 · /start(选题立项)</h3>
+<div class="template"><span class="k">📋 复制这条 Prompt 给 AI</span>:
+你是一位专业的微短剧编剧,精通短视频爆款创作方法论。
+
+请引导我从选题到完稿,完成一部 50-100 集的完整微短剧。
+
+<span class="k">先问我以下配置</span>:
+1. 题材(从 13 种里选,可叠加 2 种): 霸道总裁 / 甜宠 / 复仇 / 穿越 / 重生 / 悬疑 / 宫斗 / 都市 / 玄幻 / 末日 / 校园 / 职场 / 古装言情
+2. 目标受众: 男频 / 女频 / 全年龄
+3. 故事基调: 爽燃 / 甜虐 / 搞笑 / 暗黑 / 温情
+4. 结局类型: 大团圆 / 开放式 / 反转式 / 悲剧
+5. 集数规模: 50-60 紧凑 / 60-80 标准 / 80-100 长线
+6. 输出语言: 中文 / English
+
+输出格式:
+# 创作方向确认
+- 题材组合: {题材}
+- 目标受众 / 基调 / 结局: ...
+- 集数: 集
+- 输出模式: 国内 / overseas
+
+确认后保存到 .drama-state.json,提示进入 /plan。</div>
+
+<h3>第 2 步 · /plan(创作方案)</h3>
+<div class="template"><span class="k">📋 Prompt</span>:
+基于上面 /start 的配置,生成完整的故事骨架 creative-plan.md,包含 8 个核心板块:
+
+1. <span class="k">剧名备选</span>(3 个,每附一句话说明)
+2. <span class="k">时空背景</span>: 时代 / 地点 / 社会环境 / 阶层关系
+3. <span class="k">一句话故事线</span> + 核心冲突
+4. <span class="k">三幕结构</span>:
+   - 第一幕(建置):集数范围 / 核心事件 / 人物建立
+   - 第二幕(对抗):冲突升级 / 转折点
+   - 第三幕(高潮):终极对决 / 结局
+5. <span class="k">全剧节奏波形</span>(文字描述):标注高潮点 / 低谷点 / 付费卡点
+6. <span class="k">付费卡点</span>:具体集数 + 卡点类型 + 悬念设计(占比 10-15%)
+7. <span class="k">爽点矩阵</span>:8 类爽感(打脸 / 逆袭 / 甜宠 / 虐心 / 悬疑 / 燃 / 搞笑 / 感动)按题材配比
+8. <span class="k">结局设计</span>:主线 + 感情线 + 伏笔回收</div>
+
+<h3>第 3 步 · /characters(角色设计)</h3>
+<div class="template"><span class="k">📋 Prompt</span>:
+基于 /plan 的故事骨架,生成完整角色体系 characters.md:
+
+1. <span class="k">主要角色档案</span>(每个角色):
+   - 姓名 / 年龄 / 外貌(2-3 句)
+   - 性格关键词(3-5 个)
+   - 公开身份 vs 真实身份
+   - 核心动机
+   - 最大冲突点
+   - 爽点功能(在故事中承担什么爽点)
+   - 口头禅
+
+2. <span class="k">角色关系图</span>(Mermaid 格式)
+
+3. <span class="k">角色弧线</span>:从第 1 集到最后一集的变化轨迹
+
+4. <span class="k">感情线</span>:男女主关系发展关键节点(集数标注)
+
+5. <span class="k">四层反派体系</span>:
+   - 第 1 层:小反派(前期炮灰)
+   - 第 2 层:中反派(中期主要对手)
+   - 第 3 层:大反派(终极 Boss)
+   - 第 4 层:隐藏反派(反转用)
+
+6. <span class="k">关键互动场景预设</span>:第一次冲突 / 身份揭露 / 感情转折 / 终极对决</div>
+
+<h3>第 4 步 · /outline(分集目录)</h3>
+<div class="template"><span class="k">📋 Prompt</span>:
+基于 /characters,生成分集目录 episode-directory.md。每集 1 行,共 50-100 集:
+
+第{N}集:{集标题} —— {核心冲突或爽点一句话描述} {标记}
+
+<span class="k">标记</span>:
+- 🔥 关键剧情集(重大转折/高潮/揭秘)
+- 💰 付费卡点集(设计悬念,引导付费)
+- 无标记 = 常规推进
+
+<span class="k">硬性要求</span>:
+- 前 10 集 ≥ 3 个 🔥 和 2 个 💰
+- 全剧 🔥 占比 25-35%
+- 全剧 💰 占比 10-15%
+- 钩子类型分布:情绪钩 30-40% / 悬念钩 20-30% / 危机钩 10-20% / 信息钩 10-20% / 反转钩 5-15%
+
+生成后提示用户先通读目录确认节奏再开始 /episode 1。</div>
+
+<h3>第 5 步 · /episode {N}(分集撰写,最关键)</h3>
+<div class="template"><span class="k">📋 Prompt</span>:
+基于前 4 步结果,撰写第 N 集完整剧本,保存到 episodes/ep{NNN}.md。
+
+<span class="k">单集剧本格式</span>:
+
+# 第{N}集:{集标题}
+
+> 本集关键词:{3 个关键词}
+> 本集爽点:{爽点类型}
+> 前情提要:{上一集结尾悬念,1-2 句}
+
+---
+
+## 场次一
+
+**场景:** 内景/外景 · {地点} · 日/夜
+**出场人物:** {人物列表}
+
+△ (全景){场景描写,交代环境}
+△ (中景){人物动作描写}
+
+**{角色名}**({语气/动作指示}):"{台词}"
+
+△ (特写){关键细节描写}
+
+♪ 音乐提示:{音乐氛围描述}
+
+---
+
+## 场次二...
+## 场次三...
+
+---
+
+> 🎣 本集钩子:{悬念描述}
+> 📺 下集预告:{下一集核心看点,1 句}
+
+<span class="k">质量要求</span>:
+- 每集 3-5 个场次,800+ 字(中文)/ 600+ words(English)
+- 景别至少 3 种(全景/中景/近景/特写)
+- 台词带语气或动作指示
+- 每集结尾必须有悬念钩子
+- 第 1 集必须在前 30 秒抓住观众
+- 付费卡点集结尾必须制造强悬念
+
+<span class="k">支持格式</span>: /episode 1 单集 / /episode 5-8 批量 / /episode next 续写</div>
+
+<h3>第 6 步 · /review {N}(质量审查,5 维评分)</h3>
+<div class="template"><span class="k">📋 Prompt</span>:
+对第 N 集进行质量审查,保存到 reviews/ep{NNN}-review.md。
+
+<span class="k">5 维评分(每项 1-10 分)</span>:
+
+| 维度 | 检查内容 |
+|---|---|
+| 节奏 | 开场是否够快、有无拖沓段落、紧张-舒缓交替 |
+| 爽点 | 数量 / 强度 / 类型多样性 |
+| 台词 | 有无废话 / 角色区分度 / 口语化 |
+| 格式 | 场景头 / 景别 / 音乐提示 / 标记 |
+| 连贯性 | 前后集矛盾 / 角色一致 / 伏笔延续 |
+
+<span class="k">评级</span>: 45-50 优秀 / 35-44 良好 / 25-34 及格 / 25- 不合格
+
+<span class="k">输出格式</span>:
+# 质量自检报告 - 第{N}集
+## 评分
+| 维度 | 得分 | 说明 |
+| 总分 | X/50 |
+## 问题清单
+1. [严重/建议] {问题} → {建议}
+## 修改建议
+{按优先级排列}</div>
+
+<h3>完整工作流(复制这一段给 AI 当指令)</h3>
+<div class="template"><span class="k">📋 一条龙 Prompt(粘到 Claude/ChatGPT,完整走 6 步)</span>:
+你是微短剧编剧,严格按以下 6 步流程帮我创作:
+
+1. /start:问 6 个配置(题材 / 受众 / 基调 / 结局 / 集数 / 语言)
+2. /plan:输出 creative-plan.md(8 块)
+3. /characters:输出 characters.md(角色 + 4 层反派)
+4. /outline:输出 episode-directory.md(分集目录 + 标记)
+5. /episode N:输出 ep{NNN}.md(剧本,800+ 字)
+6. /review N:输出 5 维质量评分
+
+每步完成后等我确认再进入下一步。
+
+我的输入:{题材=复仇, 受众=女频, 基调=爽燃, 结局=大团圆, 集数=60, 语言=中文}
+我的小说/创意:{粘贴你的小说开篇 1 章或 1 句话创意}</div>
+
+<h3>§2 总结 · 与 §1 5 步法对比</h3>
+<table>
+<thead><tr><th>维度</th><th>§1 5 步(基础)</th><th>§2 6 步(顶级)</th></tr></thead>
+<tbody>
+<tr><td>来源</td><td>sheratonhq 工程化指南</td><td>0xsline/short-drama MIT</td></tr>
+<tr><td>流程</td><td>拆解→标记→爽点→删减→转写</td><td>选题→方案→角色→目录→分集→审查</td></tr>
+<tr><td>质量评分</td><td>无</td><td>5 维 / 50 分 / 4 档评级</td></tr>
+<tr><td>付费卡点</td><td>提了 1 次</td><td>10-15% 全局规划</td></tr>
+<tr><td>反派体系</td><td>无</td><td>4 层(小/中/大/隐藏)</td></tr>
+<tr><td>钩子类型</td><td>12 种(我列的)</td><td>5 种 + 占比推荐</td></tr>
+<tr><td>合规审查</td><td>无</td><td>独立 /compliance 命令</td></tr>
+<tr><td>实战成熟度</td><td>单篇教程</td><td>完整工业级 skill(2646 行)</td></tr>
+</tbody>
+</table>
+<p style="font-size:12.5px"><strong>推荐</strong>:<strong>§2 6 步流程可完全替代 §1 5 步法</strong>。如果你用 Claude/Codex,直接 <code>git clone https://github.com/0xsline/short-drama.git ~/.claude/skills/short-drama</code> 后,任何对话输入 <code>/start</code> 即可用完整 skill(2646 行规则 + 8 个参考文档)。</p>
+
+<h2 id="s3">真实改编示范(通用爽文开篇)</h2>
+<p style="color:var(--muted);font-size:12.5px">来源:sheratonhq.com 工程化指南示范段(非《我不是戏神》实际内容,套用模板改你自己的书)。</p>
+
+<h3>3.1 原文(180 字,典型水文)</h3>
+<div class="scene">
+<span class="lbl">林凡 废柴逆袭开篇</span>
+林凡攥紧了拳头,指甲深深掐进了掌心,传来一阵刺痛。他心中涌起滔天的怒火与不甘:"三年了,我为家族付出一切,如今只因一次失败就要将我像野狗一样赶出去吗?" 他想起这三年来日夜修炼,却因资质平平而进展缓慢,那些冷眼和嘲笑如同冰锥刺在他的心上。夜空中的星星冷冷地闪烁着,仿佛也在嘲笑着他的无能。
+<span class="src">心理 60% · 环境 20% · 动作 20%</span>
+</div>
+
+<h3>3.2 拆解</h3>
+<div class="template"><span class="k">动作</span>: 攥紧拳头,指甲掐进掌心  <span class="ok">→ 保留</span>
+<span class="k">心理</span>: 怒火与不甘的内心独白  <span class="bad">→ 外化为台词</span>
+<span class="k">回忆</span>: 三年付出/资质/冷眼  <span class="bad">→ 删(前置或后叙)</span>
+<span class="k">环境</span>: 夜空星星隐喻  <span class="c">→ 简化为"夜"</span></div>
+
+<h3>3.3 改编后(500 字剧本,60-90s)</h3>
+<div class="scene">
+<span class="lbl">短剧第 1 集 · 林家议事厅 → 林家庭院</span>
+【0-3s】特写:一份"驱逐令"被拍在檀木桌上。
+【3-10s】林家众长老围坐,面色冷漠。林凡站在厅中,单薄身影与森严大厅形成对比。
+【10-15s】二长老(冷笑):"林凡,家族不养废人。即日起搬出内院,去杂物房吧。"
+【15-25s】林凡身体一震,抬头,眼神从难以置信变为屈辱。
+【25-30s】林凡(低声):"…是。" 转身离开,拳头在袖中紧握。
+【30-40s】镜头跟随他走出议事厅,刺眼阳光让他眯了下眼。厅内传来隐约讥笑声。
+【40-90s】场景:林家庭院 - 夜 - 外
+林凡独自站在院中,身体微微颤抖。他紧紧攥着拳头,指甲深深陷入掌心。
+林凡(低声,充满不甘):"三年…就换来这个下场。"
+他猛地抬头望向漆黑的夜空,眼中闪过一抹倔强与恨意。
+【结尾钩子 5s】院外传来脚步声。林凡警觉回头。【镜头定格双眸特写】黑屏字幕:"他不知道,今夜,戒指会苏醒。"
+<span class="src">动作 60% · 对白 40% · 心理 0% · 环境 0%</span>
+</div>
+
+<h3>3.4 关键转换对照</h3>
+<table>
+<thead><tr><th>类型</th><th>原文</th><th>剧本</th></tr></thead>
+<tbody>
+<tr><td>心理独白</td><td>"三年了,我为家族付出…"</td><td>"三年…就换来这个下场。"(压缩 90%)</td></tr>
+<tr><td>回忆背景</td><td>日夜修炼/资质/冷眼</td><td>全部删除(留给后续集数)</td></tr>
+<tr><td>环境隐喻</td><td>星星嘲笑他无能</td><td>"漆黑的夜空"(只保留场景)</td></tr>
+<tr><td>结尾钩子</td><td>(无)</td><td>脚步声 + 戒指苏醒字幕</td></tr>
+</tbody>
+</table>
+<p><strong>关键洞察</strong>:短剧剧本里所有心理活动必须外化为"动作 + 表演提示 + 短对白"。这就是"删 70% 留 10% 加 20%"的真实含义。</p>
+
+<h2 id="s4">曹剑公式 · 黄金 1 分钟</h2>
+<p style="color:var(--muted);font-size:12.5px">来源:中国电视艺术家协会副会长曹剑 2026 讲座。</p>
+
+<h3>4.1 单集 60 秒节奏</h3>
+<div class="template"><span class="k">0-5s</span>   <span class="v">冲突前置</span>          <span class="c"># 3 秒抓人</span>
+<span class="k">5-30s</span>  <span class="v">身份反转/关键信息揭示</span>  <span class="c"># 30 秒立人物</span>
+<span class="k">30-60s</span> <span class="v">爽点/情绪高潮</span>       <span class="c"># 60 秒给结果</span>
+<span class="k">60s</span>    <span class="v">首尾双钩子</span>          <span class="c"># 锁观众看下一集</span></div>
+
+<h3>4.2 1-3-10-16 标准化拆解(整剧)</h3>
+<ul>
+<li><strong>1 句话</strong>:提炼核心卖点(编辑 10 秒看懂)</li>
+<li><strong>3 个核心爆点</strong>:第 1/2/3 个付费点(把控流量节奏)</li>
+<li><strong>10 集为单元</strong>:每 10 集 1 个情绪循环递进</li>
+<li><strong>16 节拍</strong>:单集按 60 秒节奏(0/5/30/60 + 8 个中间点)</li>
+</ul>
+
+<h3>4.3 12 种结尾钩子套路(选 3-4 种轮换)</h3>
+<ol>
+<li>身份揭露(他是 XXX 的儿子)</li>
+<li>死亡倒计时(还剩 3 天)</li>
+<li>悬念反转(她居然没死)</li>
+<li>神物觉醒(戒指亮了)</li>
+<li>反派升级(更强的来了)</li>
+<li>真相大白(原来一切都是局)</li>
+<li>危险逼近(有人敲门)</li>
+<li>时空转换(3 年后)</li>
+<li>情感爆发(他哭了)</li>
+<li>误会加深(她以为他出轨)</li>
+<li>贵人出现(老人出手)</li>
+<li>选项悬念(她选 A 还是 B)</li>
+</ol>
+
+<h3>4.4 60-90 秒 1 个爆点(梨花颜)</h3>
+<p>500 字/集,1-2 分钟。30 集剧本至少 20-30 个明确标注的爆点。</p>
+
+<h2 id="s5">实操路径</h2>
+
+<h3>5.1 改《我不是戏神》开篇 5 步</h3>
+<ol>
+<li>用 novel-downloader 下载原书(D1 任务)</li>
+<li>读完第 1 章(~3000 字,15 分钟)</li>
+<li>用 §2 方法做拆解 + 5 色标记</li>
+<li>套用 §4 黄金 1 分钟改写成 500 字剧本</li>
+<li>对照 §3 林家议事厅示范(心理 0% / 动作 60% / 对白 40%)</li>
+</ol>
+
+<h3>5.2 第 1 集自检清单</h3>
+<div class="template"><span class="k">3 秒钩子</span>     开篇 3 秒有冲突/悬念/情绪炸弹?
+<span class="k">30 秒立人</span>    第 1 角色前 30 秒交代目标+障碍?
+<span class="k">60 秒爽点</span>    第 1 集里有 1 个明确爽点/虐点?
+<span class="k">结尾钩子</span>     从 §4.3 12 种钩子里挑 1 个?
+<span class="k">心理清零</span>     "他想/她感到"出现 0 次?
+<span class="k">对白长度</span>     单句 ≤ 20 字,平均 ≤ 12 字?
+<span class="k">环境瘦身</span>     心理/环境/水文 ≤ 5%?</div>
+
+<h3>5.3 30 集整体规划</h3>
+<table>
+<thead><tr><th>集数</th><th>节奏任务</th><th>公式</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>立人物 + 3 秒钩子</td><td>黄金 1 分钟</td></tr>
+<tr><td>2-5</td><td>第 1 爽点 + 钩子循环</td><td>60-90s 1 爆点</td></tr>
+<tr><td>6-10</td><td>第 1 付费点(转折)</td><td>10 集 1 循环</td></tr>
+<tr><td>11-15</td><td>升级反派 + 新爽点</td><td>60-90s 1 爆点</td></tr>
+<tr><td>16-20</td><td>第 2 付费点(中高潮)</td><td>3 核心爆点</td></tr>
+<tr><td>21-25</td><td>主冲突 + 终极铺垫</td><td>10 集 1 循环</td></tr>
+<tr><td>26-30</td><td>大结局 + 续作钩子</td><td>1 句话 + 续作钩子</td></tr>
+</tbody>
+</table>
+
+<h2 id="s6">30 分钟上手(今天就动手)</h2>
+<ol>
+<li><strong>10 分钟</strong>:读 §1.1 sheratonhq 那篇(核心参考)</li>
+<li><strong>10 分钟</strong>:读完《我不是戏神》第 1 章</li>
+<li><strong>10 分钟</strong>:按 §2 5 步法做拆解 + 5 色标记 + 改写第 1 集</li>
+</ol>
+<p>完成后回 Mavis 这,对 §5.2 自检清单 + 给修改建议。</p>
+
+
+<h2 id="d4">§ 10 · 全网顶级编剧视频课路径(2026-09 校验)</h2>
+
+<div class='callout purple'>
+  <span class='ico'>💎</span>
+  <p><strong>小说改剧本</strong> = 编剧技能。<strong>本章 6 步改稿流程 + 16 课顶级编剧视频课</strong> = 学员从'没写过剧本'到'月入 1-3 万'完整路径。<strong>完整编剧圣经见 <a href='v14.0-小说改剧本实操全攻略.html'>v14.0 小说改剧本实操全攻略</a></strong>。</p>
+</div>
+
+<h3>🐣 10.1 小白(从没写过剧本) · 4 课</h3>
+<p>目标:<strong>看完能写出 800-1500 字短剧剧本</strong>。</p>
+<div class='tbl-wrap'>
+<table>
+<thead><tr><th>课程</th><th>UP / 频道</th><th>时长</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td>编剧 0 基础入门</td><td>编剧 0 基础 (B 站)</td><td>3-5 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%BC%96%E5%89%A7%E5%85%A5%E9%97%A8' target='_blank'>B 站搜'编剧入门'</a></td></tr>
+<tr><td>短剧编剧 0 基础</td><td>短剧编剧 (B 站)</td><td>2-3 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%E7%BC%96%E5%89%A7' target='_blank'>B 站搜'短剧编剧'</a></td></tr>
+<tr><td>救猫咪 15 节拍精讲</td><td>编剧之友 (B 站)</td><td>1-2 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E6%95%91%E7%8C%AB%E5%92%AA' target='_blank'>B 站搜'救猫咪 15 节拍'</a></td></tr>
+<tr><td>剧本格式精讲</td><td>编剧理论 (B 站)</td><td>1 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E5%89%A7%E6%9C%AC%E6%A0%BC%E5%BC%8F' target='_blank'>B 站搜'剧本格式'</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>🌱 10.2 入门(会写剧本,想批量) · 4 课</h3>
+<p>目标:<strong>30 天出 1 部可投剧本</strong>。</p>
+<div class='tbl-wrap'>
+<table>
+<thead><tr><th>课程</th><th>UP / 频道</th><th>时长</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td>小说改剧本实操</td><td>短剧改编实战 (B 站)</td><td>3-5 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E5%B0%8F%E8%AF%B4%E6%94%B9%E5%89%A7%E6%9C%AC' target='_blank'>B 站搜'小说改剧本'</a></td></tr>
+<tr><td>短剧改编 5 大铁律</td><td>短剧拉片 (B 站)</td><td>1-2 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%9F%AD%E5%89%A7%E6%94%B9%E7%BC%96' target='_blank'>B 站搜'短剧改编'</a></td></tr>
+<tr><td>30 集短剧大纲写法</td><td>短剧编剧 (B 站)</td><td>2 小时</td><td><a href='https://search.bilibili.com/all?keyword=30%E9%9B%86%E5%A4%A7%E7%BA%B2' target='_blank'>B 站搜'30 集大纲'</a></td></tr>
+<tr><td>爆款短剧拆解</td><td>短剧拆解 (B 站)</td><td>2-3 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%88%86%E6%AC%BE%E7%9F%AD%E5%89%A7%E6%8B%86%E8%A7%A3' target='_blank'>B 站搜'爆款短剧拆解'</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>🚀 10.3 进阶(成熟编剧,想做爆款) · 4 课</h3>
+<p>目标:<strong>写出'爆款'级别剧本</strong>。</p>
+<div class='tbl-wrap'>
+<table>
+<thead><tr><th>课程</th><th>UP / 频道</th><th>时长</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td>救猫咪精读</td><td>编剧理论 (B 站)</td><td>5-8 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E6%95%91%E7%8C%AB%E5%92%AA%E7%B2%BE%E8%AF%BB' target='_blank'>B 站搜'救猫咪精读'</a></td></tr>
+<tr><td>故事(麦基)精讲</td><td>编剧理论 (B 站)</td><td>5-10 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E8%B0%A2%E9%9C%80%E5%BA%93%E6%95%85%E4%BA%8B' target='_blank'>B 站搜'麦基 故事'</a></td></tr>
+<tr><td>英雄之旅 12 阶段</td><td>编剧理论 (B 站)</td><td>2-3 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E8%8B%B1%E9%9B%84%E4%B9%8B%E6%97%85' target='_blank'>B 站搜'英雄之旅'</a></td></tr>
+<tr><td>故事解剖(Truby)</td><td>编剧理论 (B 站)</td><td>3-5 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E6%95%85%E4%BA%8B%E8%A7%A3%E5%89%96' target='_blank'>B 站搜'故事解剖'</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>👑 10.4 大神(顶级编剧 / 想出书) · 4 课</h3>
+<p>目标:<strong>从'接单'到'开山立派'</strong>。</p>
+<div class='tbl-wrap'>
+<table>
+<thead><tr><th>课程</th><th>UP / 频道</th><th>时长</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td>许鞍华讲编剧</td><td>许鞍华 (B 站)</td><td>10+ 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E8%AE%B8%E9%9E%91%E5%8D%8E%E7%BC%96%E5%89%A7' target='_blank'>B 站搜'许鞍华编剧'</a></td></tr>
+<tr><td>中戏公开课编剧</td><td>中戏公开课 (B 站)</td><td>20+ 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E4%B8%AD%E5%A4%AE%E6%88%8F%E5%89%A7%E5%AD%A6%E9%99%A2%E7%BC%96%E5%89%A7' target='_blank'>B 站搜'中戏 编剧'</a></td></tr>
+<tr><td>短剧编剧中心制实战</td><td>短剧编剧中心 (B 站)</td><td>5-10 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E7%BC%96%E5%89%A7%E4%B8%AD%E5%BF%83%E5%88%B6' target='_blank'>B 站搜'编剧中心制'</a></td></tr>
+<tr><td>中央戏剧学院 · 电影编剧</td><td>北电中戏 (B 站)</td><td>10+ 小时</td><td><a href='https://search.bilibili.com/all?keyword=%E5%8C%97%E7%94%B5%E7%BC%96%E5%89%A7' target='_blank'>B 站搜'北电编剧'</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<div class='callout info'>
+  <span class='ico'>📌</span>
+  <p><strong>学完这页 + v14.0 编剧圣经</strong> = 编剧学习唯一入口。<strong>16 课顶级视频课 + 6 步改稿流程 + 课程包</strong> = 学员从'不会写'到'月入 1-3 万'完整地图。</p>
+</div>
+</main>
+</div>
+<div style="margin-top:60px;padding:24px 20px;color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);text-align:center"><p>✍️ 整理人:玉哥 · 📧 内部学员版 · 转发请保留作者署名</p></div>
+</body>
+</html>

@@ -1,0 +1,392 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
+<meta name="description" content="作品墙 · 玉哥学员 + 9 月最新 AI 短剧/漫剧">
+<meta property="og:title" content="作品墙 · 漫剧制作教程站">
+<meta property="og:description" content="作品墙 · 玉哥学员 + 9 月最新 AI 短剧/漫剧">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="漫剧教程站 · 玉哥">
+<title>作品墙 · 漫剧制作教程站</title>
+<link rel="stylesheet" href="../assets/site.css?v=fix20260927-2215">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg?v=fix20260927-2215">
+<link rel="stylesheet" href="../assets/page.css?v=fix20260927-2215">
+<style>
+.works-hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 84% 10%, rgba(244,124,60,.20), transparent 28%),
+    radial-gradient(circle at 68% 125%, rgba(99,91,255,.16), transparent 38%),
+    linear-gradient(135deg, #FFF1DF 0%, #FFF8F0 45%, #ECE7FF 100%);
+  color: var(--text);
+  padding: 42px 46px;
+  text-align: left;
+  border: 1px solid #E8DCCB;
+  border-radius: 18px;
+  margin: 0 0 24px;
+  box-shadow: 0 12px 32px rgba(244,124,60,.08);
+}
+.works-hero::after { content: '▶'; position: absolute; right: 56px; top: 50%; transform: translateY(-50%); width: 112px; height: 112px; display: grid; place-items: center; border-radius: 50%; color: rgba(99,91,255,.20); background: rgba(255,255,255,.42); border: 1px solid rgba(99,91,255,.12); font-size: 38px; padding-left: 6px; }
+.works-hero .eyebrow { display: inline-block; margin-bottom: 8px; color: #F47C3C; font-size: 11px; font-weight: 800; letter-spacing: .14em; }
+.works-hero h1 { position: relative; z-index: 1; color: var(--text); font-size: 34px; margin: 0 0 7px; letter-spacing: -.025em; }
+.works-hero p { position: relative; z-index: 1; color: var(--muted); margin: 0; font-size: 14px; }
+[data-theme="dark"] .works-hero { background: radial-gradient(circle at 84% 10%, rgba(244,124,60,.16), transparent 28%), linear-gradient(135deg, #18181B, #211D36); border-color: var(--line); }
+[data-theme="dark"] .works-hero::after { background: rgba(39,39,42,.62); border-color: var(--line); }
+
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  margin: 16px 0 32px;
+}
+
+.work-card {
+  background: #000;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.work-card video {
+  width: 100%;
+  height: 200px;
+  display: block;
+  background: #000;
+}
+.work-card .title {
+  padding: 10px 14px;
+  background: #fff;
+  font-weight: 600;
+  color: var(--text);
+  font-size: 14px;
+}
+
+.work-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  z-index: 200;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.work-modal.show { display: flex; }
+.work-modal .modal-body {
+  background: #000;
+  border-radius: 12px;
+  max-width: 900px;
+  width: 100%;
+  position: relative;
+}
+.work-modal video {
+  width: 100%;
+  max-height: 80vh;
+  display: block;
+}
+.work-modal .close {
+  position: absolute;
+  top: -36px;
+  right: 0;
+  font-size: 32px;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  background: transparent;
+}
+
+@media (max-width: 600px) {
+  .works-grid { grid-template-columns: 1fr; }
+  .works-hero { padding: 30px 24px; border-radius: 14px; }
+  .works-hero h1 { font-size: 27px; }
+  .works-hero::after { right: 18px; width: 78px; height: 78px; font-size: 28px; }
+}
+</style>
+</head><body>
+
+<header class="topbar">
+  <div class="logo">🎬 漫剧教程站 <small>v3 · 玉哥</small></div>
+  <nav>
+    <a href="../index.html">首页</a>
+    <a href="../tutorial/all-courses.html">漫剧教程</a>
+    <a href="../prompts/image-prompts.html">图片作品</a>
+    <a href="index.html" class="active">视频作品</a>
+    <a href="../prompts/prompts.html">prompt 模板</a>
+    <a href="../tools/toolkit.html">工具箱</a>
+    <a href="../qa/troubleshooting.html">问题库</a>
+    <a href="../news/industry.html">行业新闻</a>
+  </nav>
+  <div class="search"><input type="search" placeholder="🔍 搜教程 / 工具 / Prompt…"></div>
+  <button class="theme-toggle" id="yugeThemeBtn" title="深浅主题切换" aria-label="切换深浅主题">🌙</button>
+</header>
+
+<main class="page" style="max-width: 1280px;">
+  <div class="works-hero">
+    <span class="eyebrow">AI VIDEO SHOWCASE</span>
+    <h1>视频作品</h1>
+    <p>精选 AI 短剧与漫剧片段</p>
+  </div>
+
+  <div class="works-grid">
+
+    <div class="work-card" onclick="playVideo('videos/9月10日春庭.mp4', '春庭')">
+      <video preload="none" muted playsinline>
+        <source src="videos/9月10日春庭.mp4?v=1815-c" type="video/mp4">
+      </video>
+      <div class="title">🌸 春庭</div>
+    </div>
+
+    <div class="work-card" onclick="playVideo('videos/A1九歌楚神.mp4', '九歌·楚神')">
+      <video preload="none" muted playsinline>
+        <source src="videos/A1九歌楚神.mp4?v=1815-c" type="video/mp4">
+      </video>
+      <div class="title">🏯 九歌·楚神</div>
+    </div>
+
+    <div class="work-card" onclick="playVideo('videos/A2中国古建巨构.mov', '中国古建巨构')">
+      <video preload="none" muted playsinline>
+        <source src="videos/A2中国古建巨构.mov?v=1815-c" type="video/mp4">
+      </video>
+      <div class="title">🏯 中国古建巨构</div>
+    </div>
+
+    <div class="work-card" onclick="playVideo('videos/学员1.mp4', '学员习作 1')">
+      <video preload="none" muted playsinline>
+        <source src="videos/学员1.mp4?v=1815-c" type="video/mp4">
+      </video>
+      <div class="title">📚 学员习作 1</div>
+    </div>
+
+    <div class="work-card" onclick="playVideo('videos/学员2.mp4', '学员习作 2')">
+      <video preload="none" muted playsinline>
+        <source src="videos/学员2.mp4?v=1815-c" type="video/mp4">
+      </video>
+      <div class="title">📚 学员习作 2</div>
+    </div>
+
+    <div class="work-card" onclick="playVideo('videos/学员作品.mp4', '学员作品')">
+      <video preload="none" muted playsinline>
+        <source src="videos/学员作品.mp4?v=1815-c" type="video/mp4">
+      </video>
+      <div class="title">🎬 学员作品</div>
+    </div>
+
+    <div class="work-card" onclick="playVideo('videos/学员3.mp4', '学员习作 3')">
+      <video preload="none" muted playsinline>
+        <source src="videos/学员3.mp4?v=1815-c" type="video/mp4">
+      </video>
+      <div class="title">📚 学员习作 3</div>
+    </div>
+
+    <div class="work-card" onclick="playVideo('videos/学员4.mp4', '学员习作 4')">
+      <video preload="none" muted playsinline>
+        <source src="videos/学员4.mp4?v=1815-c" type="video/mp4">
+      </video>
+      <div class="title">📚 学员习作 4</div>
+    </div>
+
+    <div class="work-card" onclick="playVideo('videos/学员5.mp4', '学员习作 5')">
+      <video preload="none" muted playsinline>
+        <source src="videos/学员5.mp4?v=1815-c" type="video/mp4">
+      </video>
+      <div class="title">📚 学员习作 5</div>
+    </div>
+
+    <div class="work-card" onclick="playVideo('videos/学员6.mp4', '学员习作 6')">
+      <video preload="none" muted playsinline>
+        <source src="videos/学员6.mp4?v=1815-c" type="video/mp4">
+      </video>
+      <div class="title">📚 学员习作 6</div>
+    </div>
+
+    <div class="work-card" onclick="playVideo('videos/学员7.mp4', '学员习作 7')">
+      <video preload="none" muted playsinline>
+        <source src="videos/学员7.mp4?v=1815-c" type="video/mp4">
+      </video>
+      <div class="title">📚 学员习作 7</div>
+    </div>
+
+    <div class="work-card" onclick="playVideo('videos/学员8.mp4', '学员习作 8')">
+      <video preload="none" muted playsinline>
+        <source src="videos/学员8.mp4?v=1815-c" type="video/mp4">
+      </video>
+      <div class="title">📚 学员习作 8</div>
+    </div>
+
+    <div class="work-card" onclick="playVideo('videos/学员9.mp4', '学员习作 9')">
+      <video preload="none" muted playsinline>
+        <source src="videos/学员9.mp4?v=1815-c" type="video/mp4">
+      </video>
+      <div class="title">📚 学员习作 9</div>
+    </div>
+
+    <div class="work-card" onclick="playVideo('videos/external/hf-veo3-00000001.mp4', '恐龙大战纽约中央公园 · veo3')">
+      <video preload="none" muted playsinline>
+        <source src="videos/external/hf-veo3-00000001.mp4?v=1815-c" type="video/mp4">
+      </video>
+      <div class="title">🦖 恐龙大战纽约中央公园 · veo3</div>
+    </div>
+
+    <div class="work-card" onclick="playVideo('videos/external/hf-veo3-00000002.mp4', '半人马手机头 vs 电脑头 · veo3')">
+      <video preload="none" muted playsinline>
+        <source src="videos/external/hf-veo3-00000002.mp4?v=1815-c" type="video/mp4">
+      </video>
+      <div class="title">👾 半人马手机头 vs 电脑头 · veo3</div>
+    </div>
+
+    <div class="work-card" onclick="playVideo('videos/external/hf-veo3-00000003.mp4', '塞尔达传说被鸡群攻击 · veo3')">
+      <video preload="none" muted playsinline>
+        <source src="videos/external/hf-veo3-00000003.mp4?v=1815-c" type="video/mp4">
+      </video>
+      <div class="title">🗡 塞尔达传说被鸡群攻击 · veo3</div>
+    </div>
+
+    <div class="work-card" onclick="playVideo('videos/external/hf-veo3-00000004.mp4', '鸟撞穿墙爆炸 · veo3')">
+      <video preload="none" muted playsinline>
+        <source src="videos/external/hf-veo3-00000004.mp4?v=1815-c" type="video/mp4">
+      </video>
+      <div class="title">🦜 鸟撞穿墙爆炸 · veo3</div>
+    </div>
+
+    <div class="work-card" onclick="playVideo('videos/external/hf-veo3-00000005.mp4', '脚踩豆子特写 · veo3')">
+      <video preload="none" muted playsinline>
+        <source src="videos/external/hf-veo3-00000005.mp4?v=1815-c" type="video/mp4">
+      </video>
+      <div class="title">🌱 脚踩豆子特写 · veo3</div>
+    </div>
+
+    <div class="work-card" onclick="playVideo('videos/external/hf-veo3-00000009.mp4', '跳舞的牛 · veo3')">
+      <video preload="none" muted playsinline>
+        <source src="videos/external/hf-veo3-00000009.mp4?v=1815-c" type="video/mp4">
+      </video>
+      <div class="title">🐄 跳舞的牛 · veo3</div>
+    </div>
+
+    <div class="work-card" onclick="playVideo('videos/external/hf-veo3-00000019.mp4', '黄金时刻草地小屋 · veo3')">
+      <video preload="none" muted playsinline>
+        <source src="videos/external/hf-veo3-00000019.mp4?v=1815-c" type="video/mp4">
+      </video>
+      <div class="title">🏡 黄金时刻草地小屋 · veo3</div>
+    </div>
+
+    <div class="work-card" onclick="playVideo('videos/external/hf-veo3-00000099.mp4', 'veo3 demo #99')">
+      <video preload="none" muted playsinline>
+        <source src="videos/external/hf-veo3-00000099.mp4?v=1815-c" type="video/mp4">
+      </video>
+      <div class="title">🎞 veo3 demo #99</div>
+    </div>
+
+    <div class="work-card" onclick="playVideo('videos/external/hf-veo3-00000199.mp4', 'veo3 demo #199')">
+      <video preload="none" muted playsinline>
+        <source src="videos/external/hf-veo3-00000199.mp4?v=1815-c" type="video/mp4">
+      </video>
+      <div class="title">🎞 veo3 demo #199</div>
+    </div>
+
+    <div class="work-card" onclick="playVideo('videos/external/hf-veo3-00000299.mp4', 'veo3 demo #299')">
+      <video preload="none" muted playsinline>
+        <source src="videos/external/hf-veo3-00000299.mp4?v=1815-c" type="video/mp4">
+      </video>
+      <div class="title">🎞 veo3 demo #299</div>
+    </div>
+
+    <div class="work-card" onclick="playVideo('videos/external/hf-veo3-00000399.mp4', 'veo3 demo #399')">
+      <video preload="none" muted playsinline>
+        <source src="videos/external/hf-veo3-00000399.mp4?v=1815-c" type="video/mp4">
+      </video>
+      <div class="title">🎞 veo3 demo #399</div>
+    </div>
+
+    <div class="work-card" onclick="playVideo('videos/external/hf-veo3-00000499.mp4', 'veo3 demo #499')">
+      <video preload="none" muted playsinline>
+        <source src="videos/external/hf-veo3-00000499.mp4?v=1815-c" type="video/mp4">
+      </video>
+      <div class="title">🎞 veo3 demo #499</div>
+    </div>
+
+    <div class="work-card" onclick="playVideo('videos/external/hf-veo3-00000799.mp4', 'veo3 demo #799')">
+      <video preload="none" muted playsinline>
+        <source src="videos/external/hf-veo3-00000799.mp4?v=1815-c" type="video/mp4">
+      </video>
+      <div class="title">🎞 veo3 demo #799</div>
+    </div>
+
+    <div class="work-card" onclick="playVideo('videos/external/hf-veo3-00000899.mp4', 'veo3 demo #899')">
+      <video preload="none" muted playsinline>
+        <source src="videos/external/hf-veo3-00000899.mp4?v=1815-c" type="video/mp4">
+      </video>
+      <div class="title">🎞 veo3 demo #899</div>
+    </div>
+
+    <div class="work-card" onclick="playVideo('videos/external/hf-veo3-00000999.mp4', 'veo3 demo #999')">
+      <video preload="none" muted playsinline>
+        <source src="videos/external/hf-veo3-00000999.mp4?v=1815-c" type="video/mp4">
+      </video>
+      <div class="title">🎞 veo3 demo #999</div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="dock-run compact">
+  <div class="compact-stack">
+
+    <div class="c-title">玉哥漫剧教程</div>
+    <div class="c-sub">玉哥带你从 0 做出一部能上线的漫剧</div>
+
+    <div class="c-qr" title="扫码关注玉哥">
+      <img class="qr-img" src="../assets/qr-yuge.png?v=fix20260924-1900" alt="扫码关注玉哥" loading="lazy">
+      <div class="qr-cap">扫码关注玉哥</div>
+    </div>
+
+    <ul class="c-links">
+      <li><a href="../index.html">首页</a></li>
+      <li>·</li>
+      <li><a href="../tutorial/all-courses.html">漫剧教程</a></li>
+      <li>·</li>
+      <li><a href="index.html">视频作品</a></li>
+      <li>·</li>
+      <li><a href="../prompts/prompts.html">prompt 模板</a></li>
+      <li>·</li>
+      <li><a href="../tools/toolkit.html">工具箱</a></li>
+      <li>·</li>
+      <li><a href="../changelog.html">更新日志</a></li>
+    </ul>
+
+  </div>
+
+  <div class="c-copy">
+    © 2026 <strong>玉哥</strong> · 仅供学习交流
+    <div class="c-copy-sub">教程内容 + AI 辅助编排</div>
+  </div>
+</footer>
+
+<div id="video-modal" class="work-modal" onclick="closeModal()">
+  <div class="modal-body">
+    <button class="close" onclick="closeModal()">×</button>
+    <video id="modal-video" controls autoplay>
+      <source src="" type="video/mp4">
+    </video>
+  </div>
+</div>
+
+<script src="../assets/site-enhance.js?v=fix20260927-2215" defer></script>
+<script>
+function playVideo(src, title) {
+  const modal = document.getElementById('video-modal');
+  const video = document.getElementById('modal-video');
+  video.querySelector('source').src = src;
+  video.load();
+  video.play();
+  modal.classList.add('show');
+}
+function closeModal() {
+  const modal = document.getElementById('video-modal');
+  const video = document.getElementById('modal-video');
+  video.pause();
+  modal.classList.remove('show');
+}
+</script>
+
+</body></html>

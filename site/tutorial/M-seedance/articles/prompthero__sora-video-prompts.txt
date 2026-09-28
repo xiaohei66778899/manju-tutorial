@@ -1,0 +1,9 @@
+来源URL: https://prompthero.com/sora-prompts
+作者: PromptHero社区
+日期: 2026（实时页面，2026-09-20访问）
+所用模型: Sora
+
+核心内容摘要:
+PromptHero社区Sora提示词精选4条：2015年代lo-fi iPhone自拍（刻意描述grainy/off-center/motion-blurred等"不完美"质感）、随手拍参考图保持（"Don't alter her face"）、京都动画风格商店（Studio Ghibli/Miyazaki/AKIRA风格引用）、海滩宽角人像。总结了Sora社区特点："不完美感"美学流行、导演/工作室风格引用丰富、参考图保持句式、页面混合图像和视频提示词需筛选。
+
+推荐教学点: 适合"Sora专项提示词"章节——重点讲"刻意追求不完美感"的vlog美学，以及风格标签中导演/工作室引用的用法。

@@ -1,0 +1,2575 @@
+1
+00:00:00,080 --> 00:00:01,750
+
+If you ever wondered how creators are
+
+2
+00:00:01,750 --> 00:00:01,760
+If you ever wondered how creators are
+ 
+
+3
+00:00:01,760 --> 00:00:04,150
+If you ever wondered how creators are
+making ads that look like $100,000
+
+4
+00:00:04,150 --> 00:00:04,160
+making ads that look like $100,000
+ 
+
+5
+00:00:04,160 --> 00:00:05,829
+making ads that look like $100,000
+productions, well, let me be the one to
+
+6
+00:00:05,829 --> 00:00:05,839
+productions, well, let me be the one to
+ 
+
+7
+00:00:05,839 --> 00:00:08,310
+productions, well, let me be the one to
+tell you that it's all done using AI.
+
+8
+00:00:08,310 --> 00:00:08,320
+tell you that it's all done using AI.
+ 
+
+9
+00:00:08,320 --> 00:00:09,350
+tell you that it's all done using AI.
+And you're not going to believe me when
+
+10
+00:00:09,350 --> 00:00:09,360
+And you're not going to believe me when
+ 
+
+11
+00:00:09,360 --> 00:00:11,589
+And you're not going to believe me when
+I say this, but these videos use just
+
+12
+00:00:11,589 --> 00:00:11,599
+I say this, but these videos use just
+ 
+
+13
+00:00:11,599 --> 00:00:14,150
+I say this, but these videos use just
+one tool and one text prompt to do it.
+
+14
+00:00:14,150 --> 00:00:14,160
+one tool and one text prompt to do it.
+ 
+
+15
+00:00:14,160 --> 00:00:15,270
+one tool and one text prompt to do it.
+Now, right off the bat, we've got some
+
+16
+00:00:15,270 --> 00:00:15,280
+Now, right off the bat, we've got some
+ 
+
+17
+00:00:15,280 --> 00:00:16,950
+Now, right off the bat, we've got some
+really creative ads to show you. So, you
+
+18
+00:00:16,950 --> 00:00:16,960
+really creative ads to show you. So, you
+ 
+
+19
+00:00:16,960 --> 00:00:18,550
+really creative ads to show you. So, you
+can start visualizing how you can use
+
+20
+00:00:18,550 --> 00:00:18,560
+can start visualizing how you can use
+ 
+
+21
+00:00:18,560 --> 00:00:20,790
+can start visualizing how you can use
+this for your brand. And it's incredibly
+
+22
+00:00:20,790 --> 00:00:20,800
+this for your brand. And it's incredibly
+ 
+
+23
+00:00:20,800 --> 00:00:23,830
+this for your brand. And it's incredibly
+easy to do and customize, just like this
+
+24
+00:00:23,830 --> 00:00:23,840
+easy to do and customize, just like this
+ 
+
+25
+00:00:23,840 --> 00:00:26,870
+easy to do and customize, just like this
+insane Tesla video. And again, we also
+
+26
+00:00:26,870 --> 00:00:26,880
+insane Tesla video. And again, we also
+ 
+
+27
+00:00:26,880 --> 00:00:29,029
+insane Tesla video. And again, we also
+have this really funny Uber Eats one
+
+28
+00:00:29,029 --> 00:00:29,039
+have this really funny Uber Eats one
+ 
+
+29
+00:00:29,039 --> 00:00:31,830
+have this really funny Uber Eats one
+made by Mentor over on Twitter. Check
+
+30
+00:00:31,830 --> 00:00:31,840
+made by Mentor over on Twitter. Check
+ 
+
+31
+00:00:31,840 --> 00:00:32,310
+made by Mentor over on Twitter. Check
+this out.
+
+32
+00:00:32,310 --> 00:00:32,320
+this out.
+ 
+
+33
+00:00:32,320 --> 00:00:34,229
+this out.
+>> But yo, what if you want some real earth
+
+34
+00:00:34,229 --> 00:00:34,239
+>> But yo, what if you want some real earth
+ 
+
+35
+00:00:34,239 --> 00:00:36,069
+>> But yo, what if you want some real earth
+food, though? That's when you hit up
+
+36
+00:00:36,069 --> 00:00:36,079
+food, though? That's when you hit up
+ 
+
+37
+00:00:36,079 --> 00:00:39,110
+food, though? That's when you hit up
+Uber Eats, my guy. Pizza, burgers,
+
+38
+00:00:39,110 --> 00:00:39,120
+Uber Eats, my guy. Pizza, burgers,
+ 
+
+39
+00:00:39,120 --> 00:00:39,670
+Uber Eats, my guy. Pizza, burgers,
+sushi.
+
+40
+00:00:39,670 --> 00:00:39,680
+sushi.
+ 
+
+41
+00:00:39,680 --> 00:00:40,709
+sushi.
+>> Now, in this video, I'm going to give
+
+42
+00:00:40,709 --> 00:00:40,719
+>> Now, in this video, I'm going to give
+ 
+
+43
+00:00:40,719 --> 00:00:42,790
+>> Now, in this video, I'm going to give
+you a few real world use cases so you
+
+44
+00:00:42,790 --> 00:00:42,800
+you a few real world use cases so you
+ 
+
+45
+00:00:42,800 --> 00:00:44,310
+you a few real world use cases so you
+can start visualizing how you can create
+
+46
+00:00:44,310 --> 00:00:44,320
+can start visualizing how you can create
+ 
+
+47
+00:00:44,320 --> 00:00:46,150
+can start visualizing how you can create
+your very own. I'm then going to explain
+
+48
+00:00:46,150 --> 00:00:46,160
+your very own. I'm then going to explain
+ 
+
+49
+00:00:46,160 --> 00:00:48,229
+your very own. I'm then going to explain
+the entire process to create these
+
+50
+00:00:48,229 --> 00:00:48,239
+the entire process to create these
+ 
+
+51
+00:00:48,239 --> 00:00:49,510
+the entire process to create these
+prompts. And then we're actually going
+
+52
+00:00:49,510 --> 00:00:49,520
+prompts. And then we're actually going
+ 
+
+53
+00:00:49,520 --> 00:00:51,430
+prompts. And then we're actually going
+to go ahead and create these videos.
+
+54
+00:00:51,430 --> 00:00:51,440
+to go ahead and create these videos.
+ 
+
+55
+00:00:51,440 --> 00:00:52,709
+to go ahead and create these videos.
+Now, we're going to be using my own
+
+56
+00:00:52,709 --> 00:00:52,719
+Now, we're going to be using my own
+ 
+
+57
+00:00:52,719 --> 00:00:54,630
+Now, we're going to be using my own
+custom workflow to customize these
+
+58
+00:00:54,630 --> 00:00:54,640
+custom workflow to customize these
+ 
+
+59
+00:00:54,640 --> 00:00:56,790
+custom workflow to customize these
+prompts. so you can create exactly what
+
+60
+00:00:56,790 --> 00:00:56,800
+prompts. so you can create exactly what
+ 
+
+61
+00:00:56,800 --> 00:00:58,229
+prompts. so you can create exactly what
+you want. And I'm also going to give you
+
+62
+00:00:58,229 --> 00:00:58,239
+you want. And I'm also going to give you
+ 
+
+63
+00:00:58,239 --> 00:01:00,310
+you want. And I'm also going to give you
+access to 10 different prompts that you
+
+64
+00:01:00,310 --> 00:01:00,320
+access to 10 different prompts that you
+ 
+
+65
+00:01:00,320 --> 00:01:01,830
+access to 10 different prompts that you
+can use right away to create some of
+
+66
+00:01:01,830 --> 00:01:01,840
+can use right away to create some of
+ 
+
+67
+00:01:01,840 --> 00:01:03,990
+can use right away to create some of
+these videos. So, be sure to stay tuned
+
+68
+00:01:03,990 --> 00:01:04,000
+these videos. So, be sure to stay tuned
+ 
+
+69
+00:01:04,000 --> 00:01:05,990
+these videos. So, be sure to stay tuned
+for that. Now, before we jump into all
+
+70
+00:01:05,990 --> 00:01:06,000
+for that. Now, before we jump into all
+ 
+
+71
+00:01:06,000 --> 00:01:07,590
+for that. Now, before we jump into all
+of it, if you're new to AI and want to
+
+72
+00:01:07,590 --> 00:01:07,600
+of it, if you're new to AI and want to
+ 
+
+73
+00:01:07,600 --> 00:01:09,190
+of it, if you're new to AI and want to
+actually learn how to use all the best
+
+74
+00:01:09,190 --> 00:01:09,200
+actually learn how to use all the best
+ 
+
+75
+00:01:09,200 --> 00:01:11,190
+actually learn how to use all the best
+AI tools to create content for yourself
+
+76
+00:01:11,190 --> 00:01:11,200
+AI tools to create content for yourself
+ 
+
+77
+00:01:11,200 --> 00:01:13,190
+AI tools to create content for yourself
+or even your brand, or you just want to
+
+78
+00:01:13,190 --> 00:01:13,200
+or even your brand, or you just want to
+ 
+
+79
+00:01:13,200 --> 00:01:14,870
+or even your brand, or you just want to
+stay ahead of the curve, then make sure
+
+80
+00:01:14,870 --> 00:01:14,880
+stay ahead of the curve, then make sure
+ 
+
+81
+00:01:14,880 --> 00:01:17,590
+stay ahead of the curve, then make sure
+to check out my AI community down below.
+
+82
+00:01:17,590 --> 00:01:17,600
+to check out my AI community down below.
+ 
+
+83
+00:01:17,600 --> 00:01:19,030
+to check out my AI community down below.
+But all that said and done, let's go
+
+84
+00:01:19,030 --> 00:01:19,040
+But all that said and done, let's go
+ 
+
+85
+00:01:19,040 --> 00:01:21,270
+But all that said and done, let's go
+ahead and jump right into it. So, just
+
+86
+00:01:21,270 --> 00:01:21,280
+ahead and jump right into it. So, just
+ 
+
+87
+00:01:21,280 --> 00:01:22,950
+ahead and jump right into it. So, just
+to simplify things, I found this really
+
+88
+00:01:22,950 --> 00:01:22,960
+to simplify things, I found this really
+ 
+
+89
+00:01:22,960 --> 00:01:24,870
+to simplify things, I found this really
+cool thread on Twitter which gives a
+
+90
+00:01:24,870 --> 00:01:24,880
+cool thread on Twitter which gives a
+ 
+
+91
+00:01:24,880 --> 00:01:26,149
+cool thread on Twitter which gives a
+bunch of different examples that you can
+
+92
+00:01:26,149 --> 00:01:26,159
+bunch of different examples that you can
+ 
+
+93
+00:01:26,159 --> 00:01:27,590
+bunch of different examples that you can
+go ahead and look through. We also leave
+
+94
+00:01:27,590 --> 00:01:27,600
+go ahead and look through. We also leave
+ 
+
+95
+00:01:27,600 --> 00:01:29,109
+go ahead and look through. We also leave
+a link to this in the description if you
+
+96
+00:01:29,109 --> 00:01:29,119
+a link to this in the description if you
+ 
+
+97
+00:01:29,119 --> 00:01:30,469
+a link to this in the description if you
+want to check it out. But if we go ahead
+
+98
+00:01:30,469 --> 00:01:30,479
+want to check it out. But if we go ahead
+ 
+
+99
+00:01:30,479 --> 00:01:31,670
+want to check it out. But if we go ahead
+and click play, you can see we've got
+
+100
+00:01:31,670 --> 00:01:31,680
+and click play, you can see we've got
+ 
+
+101
+00:01:31,680 --> 00:01:33,190
+and click play, you can see we've got
+two examples right here. We've got the
+
+102
+00:01:33,190 --> 00:01:33,200
+two examples right here. We've got the
+ 
+
+103
+00:01:33,200 --> 00:01:34,870
+two examples right here. We've got the
+Tesla one and then we've got the Apple
+
+104
+00:01:34,870 --> 00:01:34,880
+Tesla one and then we've got the Apple
+ 
+
+105
+00:01:34,880 --> 00:01:36,230
+Tesla one and then we've got the Apple
+Watch one. And you can see that they
+
+106
+00:01:36,230 --> 00:01:36,240
+Watch one. And you can see that they
+ 
+
+107
+00:01:36,240 --> 00:01:37,910
+Watch one. And you can see that they
+just look immaculate. Like they look
+
+108
+00:01:37,910 --> 00:01:37,920
+just look immaculate. Like they look
+ 
+
+109
+00:01:37,920 --> 00:01:40,469
+just look immaculate. Like they look
+like real CGI VFX videos, which would
+
+110
+00:01:40,469 --> 00:01:40,479
+like real CGI VFX videos, which would
+ 
+
+111
+00:01:40,479 --> 00:01:43,109
+like real CGI VFX videos, which would
+literally cost $100,000. If you go ahead
+
+112
+00:01:43,109 --> 00:01:43,119
+literally cost $100,000. If you go ahead
+ 
+
+113
+00:01:43,119 --> 00:01:44,550
+literally cost $100,000. If you go ahead
+and scroll down a little bit, we've got
+
+114
+00:01:44,550 --> 00:01:44,560
+and scroll down a little bit, we've got
+ 
+
+115
+00:01:44,560 --> 00:01:46,710
+and scroll down a little bit, we've got
+another Tesla one, and this one just
+
+116
+00:01:46,710 --> 00:01:46,720
+another Tesla one, and this one just
+ 
+
+117
+00:01:46,720 --> 00:01:48,230
+another Tesla one, and this one just
+looks like a showroom. It looks
+
+118
+00:01:48,230 --> 00:01:48,240
+looks like a showroom. It looks
+ 
+
+119
+00:01:48,240 --> 00:01:50,469
+looks like a showroom. It looks
+absolutely amazing. But if we go ahead
+
+120
+00:01:50,469 --> 00:01:50,479
+absolutely amazing. But if we go ahead
+ 
+
+121
+00:01:50,479 --> 00:01:51,990
+absolutely amazing. But if we go ahead
+and scroll down a little bit further,
+
+122
+00:01:51,990 --> 00:01:52,000
+and scroll down a little bit further,
+ 
+
+123
+00:01:52,000 --> 00:01:53,350
+and scroll down a little bit further,
+you can start to see that we're getting
+
+124
+00:01:53,350 --> 00:01:53,360
+you can start to see that we're getting
+ 
+
+125
+00:01:53,360 --> 00:01:55,510
+you can start to see that we're getting
+the Jason prompts that we talked about.
+
+126
+00:01:55,510 --> 00:01:55,520
+the Jason prompts that we talked about.
+ 
+
+127
+00:01:55,520 --> 00:01:57,670
+the Jason prompts that we talked about.
+So this is a Pepsi ad and you can kind
+
+128
+00:01:57,670 --> 00:01:57,680
+So this is a Pepsi ad and you can kind
+ 
+
+129
+00:01:57,680 --> 00:01:59,429
+So this is a Pepsi ad and you can kind
+of imagine this being shown at like the
+
+130
+00:01:59,429 --> 00:01:59,439
+of imagine this being shown at like the
+ 
+
+131
+00:01:59,439 --> 00:02:01,429
+of imagine this being shown at like the
+Super Bowl or something. It looks really
+
+132
+00:02:01,429 --> 00:02:01,439
+Super Bowl or something. It looks really
+ 
+
+133
+00:02:01,439 --> 00:02:03,190
+Super Bowl or something. It looks really
+good. Then we've got another Apple Watch
+
+134
+00:02:03,190 --> 00:02:03,200
+good. Then we've got another Apple Watch
+ 
+
+135
+00:02:03,200 --> 00:02:04,870
+good. Then we've got another Apple Watch
+one and you can see that it's using the
+
+136
+00:02:04,870 --> 00:02:04,880
+one and you can see that it's using the
+ 
+
+137
+00:02:04,880 --> 00:02:07,910
+one and you can see that it's using the
+logo and the actual Apple Watch itself
+
+138
+00:02:07,910 --> 00:02:07,920
+logo and the actual Apple Watch itself
+ 
+
+139
+00:02:07,920 --> 00:02:09,830
+logo and the actual Apple Watch itself
+looks like the real Apple Watch, which
+
+140
+00:02:09,830 --> 00:02:09,840
+looks like the real Apple Watch, which
+ 
+
+141
+00:02:09,840 --> 00:02:11,510
+looks like the real Apple Watch, which
+is absolutely crazy. And this isn't done
+
+142
+00:02:11,510 --> 00:02:11,520
+is absolutely crazy. And this isn't done
+ 
+
+143
+00:02:11,520 --> 00:02:14,309
+is absolutely crazy. And this isn't done
+by using any images. It's all done using
+
+144
+00:02:14,309 --> 00:02:14,319
+by using any images. It's all done using
+ 
+
+145
+00:02:14,319 --> 00:02:16,390
+by using any images. It's all done using
+JSON prompts, which you can see looks
+
+146
+00:02:16,390 --> 00:02:16,400
+JSON prompts, which you can see looks
+ 
+
+147
+00:02:16,400 --> 00:02:19,110
+JSON prompts, which you can see looks
+like this. And as you can tell, it looks
+
+148
+00:02:19,110 --> 00:02:19,120
+like this. And as you can tell, it looks
+ 
+
+149
+00:02:19,120 --> 00:02:20,869
+like this. And as you can tell, it looks
+pretty complicated, but trust me, I'm
+
+150
+00:02:20,869 --> 00:02:20,879
+pretty complicated, but trust me, I'm
+ 
+
+151
+00:02:20,879 --> 00:02:22,710
+pretty complicated, but trust me, I'm
+gonna explain what this is, and it's
+
+152
+00:02:22,710 --> 00:02:22,720
+gonna explain what this is, and it's
+ 
+
+153
+00:02:22,720 --> 00:02:24,229
+gonna explain what this is, and it's
+going to simplify it for you so much
+
+154
+00:02:24,229 --> 00:02:24,239
+going to simplify it for you so much
+ 
+
+155
+00:02:24,239 --> 00:02:25,589
+going to simplify it for you so much
+more, and you're gonna be like, "Oh,
+
+156
+00:02:25,589 --> 00:02:25,599
+more, and you're gonna be like, "Oh,
+ 
+
+157
+00:02:25,599 --> 00:02:27,110
+more, and you're gonna be like, "Oh,
+that's not hard at all." To finish off,
+
+158
+00:02:27,110 --> 00:02:27,120
+that's not hard at all." To finish off,
+ 
+
+159
+00:02:27,120 --> 00:02:29,190
+that's not hard at all." To finish off,
+I wanted to show you this Dior one. It
+
+160
+00:02:29,190 --> 00:02:29,200
+I wanted to show you this Dior one. It
+ 
+
+161
+00:02:29,200 --> 00:02:31,030
+I wanted to show you this Dior one. It
+looks really cool. Obviously, Dior is a
+
+162
+00:02:31,030 --> 00:02:31,040
+looks really cool. Obviously, Dior is a
+ 
+
+163
+00:02:31,040 --> 00:02:33,190
+looks really cool. Obviously, Dior is a
+perfume, and it has all of the flower
+
+164
+00:02:33,190 --> 00:02:33,200
+perfume, and it has all of the flower
+ 
+
+165
+00:02:33,200 --> 00:02:35,750
+perfume, and it has all of the flower
+scents and etc. It just looks really,
+
+166
+00:02:35,750 --> 00:02:35,760
+scents and etc. It just looks really,
+ 
+
+167
+00:02:35,760 --> 00:02:37,190
+scents and etc. It just looks really,
+really good. So, I wanted to show you
+
+168
+00:02:37,190 --> 00:02:37,200
+really good. So, I wanted to show you
+ 
+
+169
+00:02:37,200 --> 00:02:38,869
+really good. So, I wanted to show you
+some of these use cases so you can start
+
+170
+00:02:38,869 --> 00:02:38,879
+some of these use cases so you can start
+ 
+
+171
+00:02:38,879 --> 00:02:41,270
+some of these use cases so you can start
+to imagine how you can incorporate your
+
+172
+00:02:41,270 --> 00:02:41,280
+to imagine how you can incorporate your
+ 
+
+173
+00:02:41,280 --> 00:02:42,869
+to imagine how you can incorporate your
+own products when it comes to creating
+
+174
+00:02:42,869 --> 00:02:42,879
+own products when it comes to creating
+ 
+
+175
+00:02:42,879 --> 00:02:44,390
+own products when it comes to creating
+ads like this. Now in order to create
+
+176
+00:02:44,390 --> 00:02:44,400
+ads like this. Now in order to create
+ 
+
+177
+00:02:44,400 --> 00:02:46,070
+ads like this. Now in order to create
+these videos you can of course use
+
+178
+00:02:46,070 --> 00:02:46,080
+these videos you can of course use
+ 
+
+179
+00:02:46,080 --> 00:02:48,150
+these videos you can of course use
+native text prompting but to get the
+
+180
+00:02:48,150 --> 00:02:48,160
+native text prompting but to get the
+ 
+
+181
+00:02:48,160 --> 00:02:49,990
+native text prompting but to get the
+best results and what all these creators
+
+182
+00:02:49,990 --> 00:02:50,000
+best results and what all these creators
+ 
+
+183
+00:02:50,000 --> 00:02:51,830
+best results and what all these creators
+using is something called JSON
+
+184
+00:02:51,830 --> 00:02:51,840
+using is something called JSON
+ 
+
+185
+00:02:51,840 --> 00:02:53,910
+using is something called JSON
+prompting. Now JSON prompting is a
+
+186
+00:02:53,910 --> 00:02:53,920
+prompting. Now JSON prompting is a
+ 
+
+187
+00:02:53,920 --> 00:02:56,070
+prompting. Now JSON prompting is a
+method of structurizing your prompts
+
+188
+00:02:56,070 --> 00:02:56,080
+method of structurizing your prompts
+ 
+
+189
+00:02:56,080 --> 00:02:58,710
+method of structurizing your prompts
+using a JSON format which basically just
+
+190
+00:02:58,710 --> 00:02:58,720
+using a JSON format which basically just
+ 
+
+191
+00:02:58,720 --> 00:03:01,589
+using a JSON format which basically just
+defines your roles and instructions. So
+
+192
+00:03:01,589 --> 00:03:01,599
+defines your roles and instructions. So
+ 
+
+193
+00:03:01,599 --> 00:03:04,869
+defines your roles and instructions. So
+it kind of makes the AI analyze this
+
+194
+00:03:04,869 --> 00:03:04,879
+it kind of makes the AI analyze this
+ 
+
+195
+00:03:04,879 --> 00:03:07,910
+it kind of makes the AI analyze this
+text and it uses readable tokens. So it
+
+196
+00:03:07,910 --> 00:03:07,920
+text and it uses readable tokens. So it
+ 
+
+197
+00:03:07,920 --> 00:03:09,750
+text and it uses readable tokens. So it
+makes it easier for the AI to understand
+
+198
+00:03:09,750 --> 00:03:09,760
+makes it easier for the AI to understand
+ 
+
+199
+00:03:09,760 --> 00:03:12,149
+makes it easier for the AI to understand
+exactly what you want without using any
+
+200
+00:03:12,149 --> 00:03:12,159
+exactly what you want without using any
+ 
+
+201
+00:03:12,159 --> 00:03:14,710
+exactly what you want without using any
+fluff words like and also add the
+
+202
+00:03:14,710 --> 00:03:14,720
+fluff words like and also add the
+ 
+
+203
+00:03:14,720 --> 00:03:18,070
+fluff words like and also add the
+environment to this um and do this but
+
+204
+00:03:18,070 --> 00:03:18,080
+environment to this um and do this but
+ 
+
+205
+00:03:18,080 --> 00:03:20,309
+environment to this um and do this but
+don't do this etc etc. So you kind of
+
+206
+00:03:20,309 --> 00:03:20,319
+don't do this etc etc. So you kind of
+ 
+
+207
+00:03:20,319 --> 00:03:22,390
+don't do this etc etc. So you kind of
+get the point. So to give you a good
+
+208
+00:03:22,390 --> 00:03:22,400
+get the point. So to give you a good
+ 
+
+209
+00:03:22,400 --> 00:03:24,869
+get the point. So to give you a good
+example of what a text prompt would look
+
+210
+00:03:24,869 --> 00:03:24,879
+example of what a text prompt would look
+ 
+
+211
+00:03:24,879 --> 00:03:27,030
+example of what a text prompt would look
+like in VO and adjacent prompt I
+
+212
+00:03:27,030 --> 00:03:27,040
+like in VO and adjacent prompt I
+ 
+
+213
+00:03:27,040 --> 00:03:28,790
+like in VO and adjacent prompt I
+actually found a really great example
+
+214
+00:03:28,790 --> 00:03:28,800
+actually found a really great example
+ 
+
+215
+00:03:28,800 --> 00:03:31,509
+actually found a really great example
+from Tim Simmons. So shout out to him.
+
+216
+00:03:31,509 --> 00:03:31,519
+from Tim Simmons. So shout out to him.
+ 
+
+217
+00:03:31,519 --> 00:03:33,990
+from Tim Simmons. So shout out to him.
+So first up we have a video which uses
+
+218
+00:03:33,990 --> 00:03:34,000
+So first up we have a video which uses
+ 
+
+219
+00:03:34,000 --> 00:03:35,990
+So first up we have a video which uses
+just text prompts. So let's go ahead and
+
+220
+00:03:35,990 --> 00:03:36,000
+just text prompts. So let's go ahead and
+ 
+
+221
+00:03:36,000 --> 00:03:39,589
+just text prompts. So let's go ahead and
+play that. She left me. But I'll have my
+
+222
+00:03:39,589 --> 00:03:39,599
+play that. She left me. But I'll have my
+ 
+
+223
+00:03:39,599 --> 00:03:42,149
+play that. She left me. But I'll have my
+revenge. I'm going to find that man in a
+
+224
+00:03:42,149 --> 00:03:42,159
+revenge. I'm going to find that man in a
+ 
+
+225
+00:03:42,159 --> 00:03:44,149
+revenge. I'm going to find that man in a
+blue business suit and make him pay.
+
+226
+00:03:44,149 --> 00:03:44,159
+blue business suit and make him pay.
+ 
+
+227
+00:03:44,159 --> 00:03:46,149
+blue business suit and make him pay.
+>> Now, as you just saw, the video does
+
+228
+00:03:46,149 --> 00:03:46,159
+>> Now, as you just saw, the video does
+ 
+
+229
+00:03:46,159 --> 00:03:47,990
+>> Now, as you just saw, the video does
+look really good. Don't get me wrong,
+
+230
+00:03:47,990 --> 00:03:48,000
+look really good. Don't get me wrong,
+ 
+
+231
+00:03:48,000 --> 00:03:49,350
+look really good. Don't get me wrong,
+but it definitely doesn't live up to
+
+232
+00:03:49,350 --> 00:03:49,360
+but it definitely doesn't live up to
+ 
+
+233
+00:03:49,360 --> 00:03:51,190
+but it definitely doesn't live up to
+that cinematic style that I showed you
+
+234
+00:03:51,190 --> 00:03:51,200
+that cinematic style that I showed you
+ 
+
+235
+00:03:51,200 --> 00:03:53,270
+that cinematic style that I showed you
+at the start of this video. So, now
+
+236
+00:03:53,270 --> 00:03:53,280
+at the start of this video. So, now
+ 
+
+237
+00:03:53,280 --> 00:03:56,309
+at the start of this video. So, now
+let's go ahead and play a video using
+
+238
+00:03:56,309 --> 00:03:56,319
+let's go ahead and play a video using
+ 
+
+239
+00:03:56,319 --> 00:03:57,350
+let's go ahead and play a video using
+Jason prompting.
+
+240
+00:03:57,350 --> 00:03:57,360
+Jason prompting.
+ 
+
+241
+00:03:57,360 --> 00:04:01,429
+Jason prompting.
+>> She left me, but I'll have my revenge.
+
+242
+00:04:01,429 --> 00:04:01,439
+>> She left me, but I'll have my revenge.
+ 
+
+243
+00:04:01,439 --> 00:04:03,110
+>> She left me, but I'll have my revenge.
+I'm going to find that man in a blue
+
+244
+00:04:03,110 --> 00:04:03,120
+I'm going to find that man in a blue
+ 
+
+245
+00:04:03,120 --> 00:04:05,429
+I'm going to find that man in a blue
+business suit and make him pay. Now, as
+
+246
+00:04:05,429 --> 00:04:05,439
+business suit and make him pay. Now, as
+ 
+
+247
+00:04:05,439 --> 00:04:07,589
+business suit and make him pay. Now, as
+you can see, that looks way better. And
+
+248
+00:04:07,589 --> 00:04:07,599
+you can see, that looks way better. And
+ 
+
+249
+00:04:07,599 --> 00:04:09,030
+you can see, that looks way better. And
+I'm going to go ahead and put both
+
+250
+00:04:09,030 --> 00:04:09,040
+I'm going to go ahead and put both
+ 
+
+251
+00:04:09,040 --> 00:04:11,350
+I'm going to go ahead and put both
+videos side by side, so you can compare
+
+252
+00:04:11,350 --> 00:04:11,360
+videos side by side, so you can compare
+ 
+
+253
+00:04:11,360 --> 00:04:13,750
+videos side by side, so you can compare
+them visually together. But right off
+
+254
+00:04:13,750 --> 00:04:13,760
+them visually together. But right off
+ 
+
+255
+00:04:13,760 --> 00:04:15,750
+them visually together. But right off
+the bat, you can see that the Jason
+
+256
+00:04:15,750 --> 00:04:15,760
+the bat, you can see that the Jason
+ 
+
+257
+00:04:15,760 --> 00:04:17,830
+the bat, you can see that the Jason
+prompting just looks way more cinematic
+
+258
+00:04:17,830 --> 00:04:17,840
+prompting just looks way more cinematic
+ 
+
+259
+00:04:17,840 --> 00:04:19,430
+prompting just looks way more cinematic
+and actually something like you would
+
+260
+00:04:19,430 --> 00:04:19,440
+and actually something like you would
+ 
+
+261
+00:04:19,440 --> 00:04:21,670
+and actually something like you would
+see in a real ad. So, now that you have
+
+262
+00:04:21,670 --> 00:04:21,680
+see in a real ad. So, now that you have
+ 
+
+263
+00:04:21,680 --> 00:04:23,510
+see in a real ad. So, now that you have
+a basic understanding of what Jason
+
+264
+00:04:23,510 --> 00:04:23,520
+a basic understanding of what Jason
+ 
+
+265
+00:04:23,520 --> 00:04:24,950
+a basic understanding of what Jason
+prompting is, I'm going to go ahead and
+
+266
+00:04:24,950 --> 00:04:24,960
+prompting is, I'm going to go ahead and
+ 
+
+267
+00:04:24,960 --> 00:04:26,230
+prompting is, I'm going to go ahead and
+show you how you can create your very
+
+268
+00:04:26,230 --> 00:04:26,240
+show you how you can create your very
+ 
+
+269
+00:04:26,240 --> 00:04:29,189
+show you how you can create your very
+own super easily using this method. So,
+
+270
+00:04:29,189 --> 00:04:29,199
+own super easily using this method. So,
+ 
+
+271
+00:04:29,199 --> 00:04:30,950
+own super easily using this method. So,
+I put together a resource that you can
+
+272
+00:04:30,950 --> 00:04:30,960
+I put together a resource that you can
+ 
+
+273
+00:04:30,960 --> 00:04:33,189
+I put together a resource that you can
+get in the description down below. And
+
+274
+00:04:33,189 --> 00:04:33,199
+get in the description down below. And
+ 
+
+275
+00:04:33,199 --> 00:04:35,350
+get in the description down below. And
+if you're using Chat GPT or Gemini, you
+
+276
+00:04:35,350 --> 00:04:35,360
+if you're using Chat GPT or Gemini, you
+ 
+
+277
+00:04:35,360 --> 00:04:37,830
+if you're using Chat GPT or Gemini, you
+can create dedicated gems or projects.
+
+278
+00:04:37,830 --> 00:04:37,840
+can create dedicated gems or projects.
+ 
+
+279
+00:04:37,840 --> 00:04:39,830
+can create dedicated gems or projects.
+So you can create your prompts in
+
+280
+00:04:39,830 --> 00:04:39,840
+So you can create your prompts in
+ 
+
+281
+00:04:39,840 --> 00:04:41,990
+So you can create your prompts in
+literally 5 seconds. I'm not even
+
+282
+00:04:41,990 --> 00:04:42,000
+literally 5 seconds. I'm not even
+ 
+
+283
+00:04:42,000 --> 00:04:43,670
+literally 5 seconds. I'm not even
+joking. So I'm going to be using Chat
+
+284
+00:04:43,670 --> 00:04:43,680
+joking. So I'm going to be using Chat
+ 
+
+285
+00:04:43,680 --> 00:04:45,990
+joking. So I'm going to be using Chat
+GPT. And if you've got a subscription,
+
+286
+00:04:45,990 --> 00:04:46,000
+GPT. And if you've got a subscription,
+ 
+
+287
+00:04:46,000 --> 00:04:47,749
+GPT. And if you've got a subscription,
+you can go ahead and create projects. I
+
+288
+00:04:47,749 --> 00:04:47,759
+you can go ahead and create projects. I
+ 
+
+289
+00:04:47,759 --> 00:04:49,270
+you can go ahead and create projects. I
+definitely recommend you do this because
+
+290
+00:04:49,270 --> 00:04:49,280
+definitely recommend you do this because
+ 
+
+291
+00:04:49,280 --> 00:04:52,150
+definitely recommend you do this because
+it'll make your workflow so much easier.
+
+292
+00:04:52,150 --> 00:04:52,160
+it'll make your workflow so much easier.
+ 
+
+293
+00:04:52,160 --> 00:04:53,670
+it'll make your workflow so much easier.
+So here you can see that we have
+
+294
+00:04:53,670 --> 00:04:53,680
+So here you can see that we have
+ 
+
+295
+00:04:53,680 --> 00:04:55,430
+So here you can see that we have
+instructions and project files. So
+
+296
+00:04:55,430 --> 00:04:55,440
+instructions and project files. So
+ 
+
+297
+00:04:55,440 --> 00:04:57,510
+instructions and project files. So
+basically, whenever you prompt anything
+
+298
+00:04:57,510 --> 00:04:57,520
+basically, whenever you prompt anything
+ 
+
+299
+00:04:57,520 --> 00:04:59,189
+basically, whenever you prompt anything
+inside of here, it's basically going to
+
+300
+00:04:59,189 --> 00:04:59,199
+inside of here, it's basically going to
+ 
+
+301
+00:04:59,199 --> 00:05:00,550
+inside of here, it's basically going to
+take your instructions and your project
+
+302
+00:05:00,550 --> 00:05:00,560
+take your instructions and your project
+ 
+
+303
+00:05:00,560 --> 00:05:01,830
+take your instructions and your project
+files. And the instructions look
+
+304
+00:05:01,830 --> 00:05:01,840
+files. And the instructions look
+ 
+
+305
+00:05:01,840 --> 00:05:03,590
+files. And the instructions look
+something like this. And then the file
+
+306
+00:05:03,590 --> 00:05:03,600
+something like this. And then the file
+ 
+
+307
+00:05:03,600 --> 00:05:06,070
+something like this. And then the file
+is basically a file with a bunch of JSON
+
+308
+00:05:06,070 --> 00:05:06,080
+is basically a file with a bunch of JSON
+ 
+
+309
+00:05:06,080 --> 00:05:07,990
+is basically a file with a bunch of JSON
+examples which is going to take as
+
+310
+00:05:07,990 --> 00:05:08,000
+examples which is going to take as
+ 
+
+311
+00:05:08,000 --> 00:05:10,629
+examples which is going to take as
+reference to create our prompts. So if I
+
+312
+00:05:10,629 --> 00:05:10,639
+reference to create our prompts. So if I
+ 
+
+313
+00:05:10,639 --> 00:05:13,990
+reference to create our prompts. So if I
+go ahead and ask chat GPT create a JSON
+
+314
+00:05:13,990 --> 00:05:14,000
+go ahead and ask chat GPT create a JSON
+ 
+
+315
+00:05:14,000 --> 00:05:16,550
+go ahead and ask chat GPT create a JSON
+prompt for a Tesla ad, you'll see that
+
+316
+00:05:16,550 --> 00:05:16,560
+prompt for a Tesla ad, you'll see that
+ 
+
+317
+00:05:16,560 --> 00:05:18,390
+prompt for a Tesla ad, you'll see that
+it then puts our text. And then if we go
+
+318
+00:05:18,390 --> 00:05:18,400
+it then puts our text. And then if we go
+ 
+
+319
+00:05:18,400 --> 00:05:20,150
+it then puts our text. And then if we go
+ahead and hit generate, you're going to
+
+320
+00:05:20,150 --> 00:05:20,160
+ahead and hit generate, you're going to
+ 
+
+321
+00:05:20,160 --> 00:05:22,310
+ahead and hit generate, you're going to
+see that it spits out a perfectly
+
+322
+00:05:22,310 --> 00:05:22,320
+see that it spits out a perfectly
+ 
+
+323
+00:05:22,320 --> 00:05:24,469
+see that it spits out a perfectly
+crafted JSON prompt. So all you have to
+
+324
+00:05:24,469 --> 00:05:24,479
+crafted JSON prompt. So all you have to
+ 
+
+325
+00:05:24,479 --> 00:05:26,310
+crafted JSON prompt. So all you have to
+do is basically just prompt it what you
+
+326
+00:05:26,310 --> 00:05:26,320
+do is basically just prompt it what you
+ 
+
+327
+00:05:26,320 --> 00:05:28,070
+do is basically just prompt it what you
+want. And if you have a product of your
+
+328
+00:05:28,070 --> 00:05:28,080
+want. And if you have a product of your
+ 
+
+329
+00:05:28,080 --> 00:05:30,310
+want. And if you have a product of your
+image, you can add your own image and
+
+330
+00:05:30,310 --> 00:05:30,320
+image, you can add your own image and
+ 
+
+331
+00:05:30,320 --> 00:05:33,189
+image, you can add your own image and
+say this is a product of my image. It
+
+332
+00:05:33,189 --> 00:05:33,199
+say this is a product of my image. It
+ 
+
+333
+00:05:33,199 --> 00:05:35,670
+say this is a product of my image. It
+basically does XY Z. Can you go ahead
+
+334
+00:05:35,670 --> 00:05:35,680
+basically does XY Z. Can you go ahead
+ 
+
+335
+00:05:35,680 --> 00:05:37,670
+basically does XY Z. Can you go ahead
+and create a JSON prompt? If you have an
+
+336
+00:05:37,670 --> 00:05:37,680
+and create a JSON prompt? If you have an
+ 
+
+337
+00:05:37,680 --> 00:05:39,749
+and create a JSON prompt? If you have an
+idea of what you want, you could say I
+
+338
+00:05:39,749 --> 00:05:39,759
+idea of what you want, you could say I
+ 
+
+339
+00:05:39,759 --> 00:05:41,590
+idea of what you want, you could say I
+want the let's say it's a bottle of
+
+340
+00:05:41,590 --> 00:05:41,600
+want the let's say it's a bottle of
+ 
+
+341
+00:05:41,600 --> 00:05:43,909
+want the let's say it's a bottle of
+shampoo. I want the shampoo to start
+
+342
+00:05:43,909 --> 00:05:43,919
+shampoo. I want the shampoo to start
+ 
+
+343
+00:05:43,919 --> 00:05:47,350
+shampoo. I want the shampoo to start
+hovering in the bathroom and then I
+
+344
+00:05:47,350 --> 00:05:47,360
+hovering in the bathroom and then I
+ 
+
+345
+00:05:47,360 --> 00:05:48,790
+hovering in the bathroom and then I
+don't know, you just tell it what you
+
+346
+00:05:48,790 --> 00:05:48,800
+don't know, you just tell it what you
+ 
+
+347
+00:05:48,800 --> 00:05:50,390
+don't know, you just tell it what you
+want and it will do it. But here you can
+
+348
+00:05:50,390 --> 00:05:50,400
+want and it will do it. But here you can
+ 
+
+349
+00:05:50,400 --> 00:05:51,990
+want and it will do it. But here you can
+see we have our JSON prompt. So it's
+
+350
+00:05:51,990 --> 00:05:52,000
+see we have our JSON prompt. So it's
+ 
+
+351
+00:05:52,000 --> 00:05:54,150
+see we have our JSON prompt. So it's
+been perfectly crafted. So once you have
+
+352
+00:05:54,150 --> 00:05:54,160
+been perfectly crafted. So once you have
+ 
+
+353
+00:05:54,160 --> 00:05:55,909
+been perfectly crafted. So once you have
+that, you want to go ahead and click on
+
+354
+00:05:55,909 --> 00:05:55,919
+that, you want to go ahead and click on
+ 
+
+355
+00:05:55,919 --> 00:05:57,189
+that, you want to go ahead and click on
+copy. And now we're going to go ahead
+
+356
+00:05:57,189 --> 00:05:57,199
+copy. And now we're going to go ahead
+ 
+
+357
+00:05:57,199 --> 00:05:58,870
+copy. And now we're going to go ahead
+and create our video. So you want to
+
+358
+00:05:58,870 --> 00:05:58,880
+and create our video. So you want to
+ 
+
+359
+00:05:58,880 --> 00:06:00,230
+and create our video. So you want to
+start off by heading over to
+
+360
+00:06:00,230 --> 00:06:00,240
+start off by heading over to
+ 
+
+361
+00:06:00,240 --> 00:06:01,909
+start off by heading over to
+flow.google. This is going to give us
+
+362
+00:06:01,909 --> 00:06:01,919
+flow.google. This is going to give us
+ 
+
+363
+00:06:01,919 --> 00:06:04,309
+flow.google. This is going to give us
+access to voree. Now if you don't have
+
+364
+00:06:04,309 --> 00:06:04,319
+access to voree. Now if you don't have
+ 
+
+365
+00:06:04,319 --> 00:06:06,230
+access to voree. Now if you don't have
+access to this, it is a paid tool. I'm
+
+366
+00:06:06,230 --> 00:06:06,240
+access to this, it is a paid tool. I'm
+ 
+
+367
+00:06:06,240 --> 00:06:07,189
+access to this, it is a paid tool. I'm
+going to quickly show you how you can
+
+368
+00:06:07,189 --> 00:06:07,199
+going to quickly show you how you can
+ 
+
+369
+00:06:07,199 --> 00:06:09,110
+going to quickly show you how you can
+get it for completely free. So go ahead
+
+370
+00:06:09,110 --> 00:06:09,120
+get it for completely free. So go ahead
+ 
+
+371
+00:06:09,120 --> 00:06:10,870
+get it for completely free. So go ahead
+and open up a new tab and then just type
+
+372
+00:06:10,870 --> 00:06:10,880
+and open up a new tab and then just type
+ 
+
+373
+00:06:10,880 --> 00:06:14,950
+and open up a new tab and then just type
+in Gemini AI Pro. And then you want to
+
+374
+00:06:14,950 --> 00:06:14,960
+in Gemini AI Pro. And then you want to
+ 
+
+375
+00:06:14,960 --> 00:06:15,909
+in Gemini AI Pro. And then you want to
+make sure you're clicking on this
+
+376
+00:06:15,909 --> 00:06:15,919
+make sure you're clicking on this
+ 
+
+377
+00:06:15,919 --> 00:06:18,150
+make sure you're clicking on this
+Gemini. Google and make sure it goes to
+
+378
+00:06:18,150 --> 00:06:18,160
+Gemini. Google and make sure it goes to
+ 
+
+379
+00:06:18,160 --> 00:06:20,230
+Gemini. Google and make sure it goes to
+subscriptions. And then here you can see
+
+380
+00:06:20,230 --> 00:06:20,240
+subscriptions. And then here you can see
+ 
+
+381
+00:06:20,240 --> 00:06:22,150
+subscriptions. And then here you can see
+if you scroll down you have access to
+
+382
+00:06:22,150 --> 00:06:22,160
+if you scroll down you have access to
+ 
+
+383
+00:06:22,160 --> 00:06:24,629
+if you scroll down you have access to
+Google AI pro for completely free for 1
+
+384
+00:06:24,629 --> 00:06:24,639
+Google AI pro for completely free for 1
+ 
+
+385
+00:06:24,639 --> 00:06:26,070
+Google AI pro for completely free for 1
+month. And they've just recently added
+
+386
+00:06:26,070 --> 00:06:26,080
+month. And they've just recently added
+ 
+
+387
+00:06:26,080 --> 00:06:28,150
+month. And they've just recently added
+Flow which gives you access to VO free.
+
+388
+00:06:28,150 --> 00:06:28,160
+Flow which gives you access to VO free.
+ 
+
+389
+00:06:28,160 --> 00:06:30,070
+Flow which gives you access to VO free.
+Now you get a,000 credits using this
+
+390
+00:06:30,070 --> 00:06:30,080
+Now you get a,000 credits using this
+ 
+
+391
+00:06:30,080 --> 00:06:32,309
+Now you get a,000 credits using this
+plan. It's free. So what this means is
+
+392
+00:06:32,309 --> 00:06:32,319
+plan. It's free. So what this means is
+ 
+
+393
+00:06:32,319 --> 00:06:34,230
+plan. It's free. So what this means is
+you can generate 10 videos in high
+
+394
+00:06:34,230 --> 00:06:34,240
+you can generate 10 videos in high
+ 
+
+395
+00:06:34,240 --> 00:06:36,790
+you can generate 10 videos in high
+quality or you can generate over I think
+
+396
+00:06:36,790 --> 00:06:36,800
+quality or you can generate over I think
+ 
+
+397
+00:06:36,800 --> 00:06:38,550
+quality or you can generate over I think
+100 or a,000 videos. I'm not entirely
+
+398
+00:06:38,550 --> 00:06:38,560
+100 or a,000 videos. I'm not entirely
+ 
+
+399
+00:06:38,560 --> 00:06:40,710
+100 or a,000 videos. I'm not entirely
+sure. It uses 20 credits um using the
+
+400
+00:06:40,710 --> 00:06:40,720
+sure. It uses 20 credits um using the
+ 
+
+401
+00:06:40,720 --> 00:06:43,510
+sure. It uses 20 credits um using the
+slow mode which is 720p. So once you've
+
+402
+00:06:43,510 --> 00:06:43,520
+slow mode which is 720p. So once you've
+ 
+
+403
+00:06:43,520 --> 00:06:45,350
+slow mode which is 720p. So once you've
+gone ahead and gotten access come back
+
+404
+00:06:45,350 --> 00:06:45,360
+gone ahead and gotten access come back
+ 
+
+405
+00:06:45,360 --> 00:06:48,230
+gone ahead and gotten access come back
+to flow, click on create with flow. Then
+
+406
+00:06:48,230 --> 00:06:48,240
+to flow, click on create with flow. Then
+ 
+
+407
+00:06:48,240 --> 00:06:49,909
+to flow, click on create with flow. Then
+you're going to come on this page right
+
+408
+00:06:49,909 --> 00:06:49,919
+you're going to come on this page right
+ 
+
+409
+00:06:49,919 --> 00:06:52,230
+you're going to come on this page right
+here. It's as simple as clicking new
+
+410
+00:06:52,230 --> 00:06:52,240
+here. It's as simple as clicking new
+ 
+
+411
+00:06:52,240 --> 00:06:54,309
+here. It's as simple as clicking new
+project. And then if you've copied your
+
+412
+00:06:54,309 --> 00:06:54,319
+project. And then if you've copied your
+ 
+
+413
+00:06:54,319 --> 00:06:56,230
+project. And then if you've copied your
+prompt, go ahead and paste it in just
+
+414
+00:06:56,230 --> 00:06:56,240
+prompt, go ahead and paste it in just
+ 
+
+415
+00:06:56,240 --> 00:06:58,550
+prompt, go ahead and paste it in just
+like that. Now, quickly before you hit
+
+416
+00:06:58,550 --> 00:06:58,560
+like that. Now, quickly before you hit
+ 
+
+417
+00:06:58,560 --> 00:07:01,510
+like that. Now, quickly before you hit
+generate, make sure you're using V3 fast
+
+418
+00:07:01,510 --> 00:07:01,520
+generate, make sure you're using V3 fast
+ 
+
+419
+00:07:01,520 --> 00:07:04,070
+generate, make sure you're using V3 fast
+because this uses only 20 credits. The
+
+420
+00:07:04,070 --> 00:07:04,080
+because this uses only 20 credits. The
+ 
+
+421
+00:07:04,080 --> 00:07:06,950
+because this uses only 20 credits. The
+downside is it's 720p. So to access
+
+422
+00:07:06,950 --> 00:07:06,960
+downside is it's 720p. So to access
+ 
+
+423
+00:07:06,960 --> 00:07:09,670
+downside is it's 720p. So to access
+this, go to settings, go to models, and
+
+424
+00:07:09,670 --> 00:07:09,680
+this, go to settings, go to models, and
+ 
+
+425
+00:07:09,680 --> 00:07:13,350
+this, go to settings, go to models, and
+then use V3 fast, not V2 because V2 will
+
+426
+00:07:13,350 --> 00:07:13,360
+then use V3 fast, not V2 because V2 will
+ 
+
+427
+00:07:13,360 --> 00:07:15,670
+then use V3 fast, not V2 because V2 will
+not generate audio, but V3 will. If you
+
+428
+00:07:15,670 --> 00:07:15,680
+not generate audio, but V3 will. If you
+ 
+
+429
+00:07:15,680 --> 00:07:17,189
+not generate audio, but V3 will. If you
+do want a high quality one, then use the
+
+430
+00:07:17,189 --> 00:07:17,199
+do want a high quality one, then use the
+ 
+
+431
+00:07:17,199 --> 00:07:18,629
+do want a high quality one, then use the
+quality setting here. Just make sure
+
+432
+00:07:18,629 --> 00:07:18,639
+quality setting here. Just make sure
+ 
+
+433
+00:07:18,639 --> 00:07:20,790
+quality setting here. Just make sure
+it's the one that says beta audio. Then,
+
+434
+00:07:20,790 --> 00:07:20,800
+it's the one that says beta audio. Then,
+ 
+
+435
+00:07:20,800 --> 00:07:22,629
+it's the one that says beta audio. Then,
+if you want to maximize on your credits
+
+436
+00:07:22,629 --> 00:07:22,639
+if you want to maximize on your credits
+ 
+
+437
+00:07:22,639 --> 00:07:24,230
+if you want to maximize on your credits
+and not spend too many, change your
+
+438
+00:07:24,230 --> 00:07:24,240
+and not spend too many, change your
+ 
+
+439
+00:07:24,240 --> 00:07:25,670
+and not spend too many, change your
+output to one. We're just going to go
+
+440
+00:07:25,670 --> 00:07:25,680
+output to one. We're just going to go
+ 
+
+441
+00:07:25,680 --> 00:07:27,510
+output to one. We're just going to go
+ahead and click two because it only cost
+
+442
+00:07:27,510 --> 00:07:27,520
+ahead and click two because it only cost
+ 
+
+443
+00:07:27,520 --> 00:07:29,909
+ahead and click two because it only cost
+20 credits and we're on the ultra plan,
+
+444
+00:07:29,909 --> 00:07:29,919
+20 credits and we're on the ultra plan,
+ 
+
+445
+00:07:29,919 --> 00:07:32,070
+20 credits and we're on the ultra plan,
+so we've got a bunch of credits. Now, if
+
+446
+00:07:32,070 --> 00:07:32,080
+so we've got a bunch of credits. Now, if
+ 
+
+447
+00:07:32,080 --> 00:07:33,589
+so we've got a bunch of credits. Now, if
+we go ahead and hit generate, you'll see
+
+448
+00:07:33,589 --> 00:07:33,599
+we go ahead and hit generate, you'll see
+ 
+
+449
+00:07:33,599 --> 00:07:35,029
+we go ahead and hit generate, you'll see
+that the videos are going to start
+
+450
+00:07:35,029 --> 00:07:35,039
+that the videos are going to start
+ 
+
+451
+00:07:35,039 --> 00:07:36,950
+that the videos are going to start
+loading. So, let's go ahead and skip
+
+452
+00:07:36,950 --> 00:07:36,960
+loading. So, let's go ahead and skip
+ 
+
+453
+00:07:36,960 --> 00:07:46,710
+loading. So, let's go ahead and skip
+forward so I can show you these videos.
+
+454
+00:07:46,710 --> 00:07:46,720
+
+ 
+
+455
+00:07:46,720 --> 00:07:48,710
+
+And as you saw, that looks amazing. We
+
+456
+00:07:48,710 --> 00:07:48,720
+And as you saw, that looks amazing. We
+ 
+
+457
+00:07:48,720 --> 00:07:50,790
+And as you saw, that looks amazing. We
+basically gave it a simple prompt and it
+
+458
+00:07:50,790 --> 00:07:50,800
+basically gave it a simple prompt and it
+ 
+
+459
+00:07:50,800 --> 00:07:52,790
+basically gave it a simple prompt and it
+created all of this, which is absolutely
+
+460
+00:07:52,790 --> 00:07:52,800
+created all of this, which is absolutely
+ 
+
+461
+00:07:52,800 --> 00:07:54,710
+created all of this, which is absolutely
+mind-blowing. If you think back to 2022
+
+462
+00:07:54,710 --> 00:07:54,720
+mind-blowing. If you think back to 2022
+ 
+
+463
+00:07:54,720 --> 00:07:56,150
+mind-blowing. If you think back to 2022
+when we were getting videos that look
+
+464
+00:07:56,150 --> 00:07:56,160
+when we were getting videos that look
+ 
+
+465
+00:07:56,160 --> 00:07:58,550
+when we were getting videos that look
+like this, and now we're in 2025 and
+
+466
+00:07:58,550 --> 00:07:58,560
+like this, and now we're in 2025 and
+ 
+
+467
+00:07:58,560 --> 00:08:00,950
+like this, and now we're in 2025 and
+we're getting full-blown $100,000
+
+468
+00:08:00,950 --> 00:08:00,960
+we're getting full-blown $100,000
+ 
+
+469
+00:08:00,960 --> 00:08:03,670
+we're getting full-blown $100,000
+productions using a simple prompt, you
+
+470
+00:08:03,670 --> 00:08:03,680
+productions using a simple prompt, you
+ 
+
+471
+00:08:03,680 --> 00:08:05,110
+productions using a simple prompt, you
+will not believe me. Now, of course, if
+
+472
+00:08:05,110 --> 00:08:05,120
+will not believe me. Now, of course, if
+ 
+
+473
+00:08:05,120 --> 00:08:06,629
+will not believe me. Now, of course, if
+you're using the fast mode, I said it's
+
+474
+00:08:06,629 --> 00:08:06,639
+you're using the fast mode, I said it's
+ 
+
+475
+00:08:06,639 --> 00:08:08,710
+you're using the fast mode, I said it's
+720p video, but the upside is you can
+
+476
+00:08:08,710 --> 00:08:08,720
+720p video, but the upside is you can
+ 
+
+477
+00:08:08,720 --> 00:08:10,469
+720p video, but the upside is you can
+actually go ahead and click on download,
+
+478
+00:08:10,469 --> 00:08:10,479
+actually go ahead and click on download,
+ 
+
+479
+00:08:10,479 --> 00:08:12,469
+actually go ahead and click on download,
+and then you can upscale it to 1080p.
+
+480
+00:08:12,469 --> 00:08:12,479
+and then you can upscale it to 1080p.
+ 
+
+481
+00:08:12,479 --> 00:08:14,230
+and then you can upscale it to 1080p.
+And of course, if you have access to a
+
+482
+00:08:14,230 --> 00:08:14,240
+And of course, if you have access to a
+ 
+
+483
+00:08:14,240 --> 00:08:16,550
+And of course, if you have access to a
+video upscaler or a third party one, you
+
+484
+00:08:16,550 --> 00:08:16,560
+video upscaler or a third party one, you
+ 
+
+485
+00:08:16,560 --> 00:08:18,790
+video upscaler or a third party one, you
+can upscale that over to 4K. So, then
+
+486
+00:08:18,790 --> 00:08:18,800
+can upscale that over to 4K. So, then
+ 
+
+487
+00:08:18,800 --> 00:08:20,790
+can upscale that over to 4K. So, then
+you get even higher quality. Now, if you
+
+488
+00:08:20,790 --> 00:08:20,800
+you get even higher quality. Now, if you
+ 
+
+489
+00:08:20,800 --> 00:08:22,790
+you get even higher quality. Now, if you
+want to start creating videos right away
+
+490
+00:08:22,790 --> 00:08:22,800
+want to start creating videos right away
+ 
+
+491
+00:08:22,800 --> 00:08:24,150
+want to start creating videos right away
+and you don't want to go ahead and use a
+
+492
+00:08:24,150 --> 00:08:24,160
+and you don't want to go ahead and use a
+ 
+
+493
+00:08:24,160 --> 00:08:26,150
+and you don't want to go ahead and use a
+chat GPT workflow, what we're going to
+
+494
+00:08:26,150 --> 00:08:26,160
+chat GPT workflow, what we're going to
+ 
+
+495
+00:08:26,160 --> 00:08:27,990
+chat GPT workflow, what we're going to
+do is in the description down below,
+
+496
+00:08:27,990 --> 00:08:28,000
+do is in the description down below,
+ 
+
+497
+00:08:28,000 --> 00:08:29,589
+do is in the description down below,
+there'll be a Google Docs link, which
+
+498
+00:08:29,589 --> 00:08:29,599
+there'll be a Google Docs link, which
+ 
+
+499
+00:08:29,599 --> 00:08:31,589
+there'll be a Google Docs link, which
+gives you access to 10 different prompts
+
+500
+00:08:31,589 --> 00:08:31,599
+gives you access to 10 different prompts
+ 
+
+501
+00:08:31,599 --> 00:08:32,949
+gives you access to 10 different prompts
+so you can start creating videos like
+
+502
+00:08:32,949 --> 00:08:32,959
+so you can start creating videos like
+ 
+
+503
+00:08:32,959 --> 00:08:34,709
+so you can start creating videos like
+these right away. Now, if you found this
+
+504
+00:08:34,709 --> 00:08:34,719
+these right away. Now, if you found this
+ 
+
+505
+00:08:34,719 --> 00:08:36,790
+these right away. Now, if you found this
+video helpful, then be sure to like and
+
+506
+00:08:36,790 --> 00:08:36,800
+video helpful, then be sure to like and
+ 
+
+507
+00:08:36,800 --> 00:08:39,269
+video helpful, then be sure to like and
+subscribe for more awesome AI updates.
+
+508
+00:08:39,269 --> 00:08:39,279
+subscribe for more awesome AI updates.
+ 
+
+509
+00:08:39,279 --> 00:08:40,550
+subscribe for more awesome AI updates.
+And again, if you want to learn how to
+
+510
+00:08:40,550 --> 00:08:40,560
+And again, if you want to learn how to
+ 
+
+511
+00:08:40,560 --> 00:08:42,469
+And again, if you want to learn how to
+master all the best AI tools, then be
+
+512
+00:08:42,469 --> 00:08:42,479
+master all the best AI tools, then be
+ 
+
+513
+00:08:42,479 --> 00:08:44,870
+master all the best AI tools, then be
+sure to check out the private community
+
+514
+00:08:44,870 --> 00:08:44,880
+sure to check out the private community
+ 
+
+515
+00:08:44,880 --> 00:08:48,560
+sure to check out the private community
+down below. I'll see you in the next
+

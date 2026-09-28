@@ -1,0 +1,1625 @@
+1
+00:00:00,000 --> 00:00:01,590
+
+In this video, I'm going to show you how
+
+2
+00:00:01,590 --> 00:00:01,600
+In this video, I'm going to show you how
+ 
+
+3
+00:00:01,600 --> 00:00:08,950
+In this video, I'm going to show you how
+to use the C6 2.5 long video mode.
+
+4
+00:00:08,950 --> 00:00:08,960
+
+ 
+
+5
+00:00:08,960 --> 00:00:10,310
+
+>> Hi.
+
+6
+00:00:10,310 --> 00:00:10,320
+>> Hi.
+ 
+
+7
+00:00:10,320 --> 00:00:12,070
+>> Hi.
+>> Hey. Hi.
+
+8
+00:00:12,070 --> 00:00:12,080
+>> Hey. Hi.
+ 
+
+9
+00:00:12,080 --> 00:00:16,430
+>> Hey. Hi.
+Sorry. Our car died a couple miles down.
+
+10
+00:00:16,430 --> 00:00:16,440
+Sorry. Our car died a couple miles down.
+ 
+
+11
+00:00:16,440 --> 00:00:17,590
+Sorry. Our car died a couple miles down.
+>> It's just
+
+12
+00:00:17,590 --> 00:00:17,600
+>> It's just
+ 
+
+13
+00:00:17,600 --> 00:00:19,190
+>> It's just
+I'm out here on my own.
+
+14
+00:00:19,190 --> 00:00:19,200
+I'm out here on my own.
+ 
+
+15
+00:00:19,200 --> 00:00:22,390
+I'm out here on my own.
+>> Right. No, yeah. Totally get it.
+
+16
+00:00:22,390 --> 00:00:22,400
+>> Right. No, yeah. Totally get it.
+ 
+
+17
+00:00:22,400 --> 00:00:24,630
+>> Right. No, yeah. Totally get it.
+>> You guys aren't like serial killers, are
+
+18
+00:00:24,630 --> 00:00:24,640
+>> You guys aren't like serial killers, are
+ 
+
+19
+00:00:24,640 --> 00:00:25,430
+>> You guys aren't like serial killers, are
+you?
+
+20
+00:00:25,430 --> 00:00:25,440
+you?
+ 
+
+21
+00:00:25,440 --> 00:00:28,030
+you?
+>> Left the ax in the car.
+
+22
+00:00:28,030 --> 00:00:28,040
+>> Left the ax in the car.
+ 
+
+23
+00:00:28,040 --> 00:00:29,670
+>> Left the ax in the car.
+>> God. Okay.
+
+24
+00:00:29,670 --> 00:00:29,680
+>> God. Okay.
+ 
+
+25
+00:00:29,680 --> 00:00:32,710
+>> God. Okay.
+Come in.
+
+26
+00:00:32,710 --> 00:00:32,720
+
+ 
+
+27
+00:00:32,720 --> 00:00:35,350
+
+>> This is Thank you, really. You saved us
+
+28
+00:00:35,350 --> 00:00:35,360
+>> This is Thank you, really. You saved us
+ 
+
+29
+00:00:35,360 --> 00:00:36,510
+>> This is Thank you, really. You saved us
+out there.
+
+30
+00:00:36,510 --> 00:00:36,520
+out there.
+ 
+
+31
+00:00:36,520 --> 00:00:37,990
+out there.
+>> Glad it was my porch. There's nobody
+
+32
+00:00:37,990 --> 00:00:38,000
+>> Glad it was my porch. There's nobody
+ 
+
+33
+00:00:38,000 --> 00:00:39,790
+>> Glad it was my porch. There's nobody
+else's for miles.
+
+34
+00:00:39,790 --> 00:00:39,800
+else's for miles.
+ 
+
+35
+00:00:39,800 --> 00:00:41,550
+else's for miles.
+>> You live up here alone?
+
+36
+00:00:41,550 --> 00:00:41,560
+>> You live up here alone?
+ 
+
+37
+00:00:41,560 --> 00:00:43,870
+>> You live up here alone?
+>> With my grandma. It's her house.
+
+38
+00:00:43,870 --> 00:00:43,880
+>> With my grandma. It's her house.
+ 
+
+39
+00:00:43,880 --> 00:00:45,030
+>> With my grandma. It's her house.
+>> Is she home?
+
+40
+00:00:45,030 --> 00:00:45,040
+>> Is she home?
+ 
+
+41
+00:00:45,040 --> 00:00:48,150
+>> Is she home?
+>> No. Hospital.
+
+42
+00:00:48,150 --> 00:00:48,160
+>> No. Hospital.
+ 
+
+43
+00:00:48,160 --> 00:00:50,230
+>> No. Hospital.
+Is she okay?
+
+44
+00:00:50,230 --> 00:00:50,240
+Is she okay?
+ 
+
+45
+00:00:50,240 --> 00:00:53,870
+Is she okay?
+She has good days.
+
+46
+00:00:53,870 --> 00:00:53,880
+
+ 
+
+47
+00:00:53,880 --> 00:00:55,030
+
+So,
+
+48
+00:00:55,030 --> 00:00:55,040
+So,
+ 
+
+49
+00:00:55,040 --> 00:00:56,470
+So,
+are you two a thing?
+
+50
+00:00:56,470 --> 00:00:56,480
+are you two a thing?
+ 
+
+51
+00:00:56,480 --> 00:00:58,550
+are you two a thing?
+>> Us? No. No way.
+
+52
+00:00:58,550 --> 00:00:58,560
+>> Us? No. No way.
+ 
+
+53
+00:00:58,560 --> 00:00:59,910
+>> Us? No. No way.
+>> Just friends.
+
+54
+00:00:59,910 --> 00:00:59,920
+>> Just friends.
+ 
+
+55
+00:00:59,920 --> 00:01:01,510
+>> Just friends.
+Good to know. It gets incredibly quiet
+
+56
+00:01:01,510 --> 00:01:01,520
+Good to know. It gets incredibly quiet
+ 
+
+57
+00:01:01,520 --> 00:01:02,910
+Good to know. It gets incredibly quiet
+out here. Sometimes you just need
+
+58
+00:01:02,910 --> 00:01:02,920
+out here. Sometimes you just need
+ 
+
+59
+00:01:02,920 --> 00:01:03,590
+out here. Sometimes you just need
+company.
+
+60
+00:01:03,590 --> 00:01:03,600
+company.
+ 
+
+61
+00:01:03,600 --> 00:01:05,189
+company.
+>> Well, we're glad we found this place. We
+
+62
+00:01:05,189 --> 00:01:05,199
+>> Well, we're glad we found this place. We
+ 
+
+63
+00:01:05,199 --> 00:01:12,430
+>> Well, we're glad we found this place. We
+would have frozen out there.
+
+64
+00:01:12,430 --> 00:01:12,440
+
+ 
+
+65
+00:01:12,440 --> 00:01:15,270
+
+This is Thank you, really. You saved us
+
+66
+00:01:15,270 --> 00:01:15,280
+This is Thank you, really. You saved us
+ 
+
+67
+00:01:15,280 --> 00:01:16,630
+This is Thank you, really. You saved us
+out there.
+
+68
+00:01:16,630 --> 00:01:16,640
+out there.
+ 
+
+69
+00:01:16,640 --> 00:01:18,150
+out there.
+>> Glad it was my porch. There's nobody
+
+70
+00:01:18,150 --> 00:01:18,160
+>> Glad it was my porch. There's nobody
+ 
+
+71
+00:01:18,160 --> 00:01:20,710
+>> Glad it was my porch. There's nobody
+else's for miles.
+
+72
+00:01:20,710 --> 00:01:20,720
+else's for miles.
+ 
+
+73
+00:01:20,720 --> 00:01:23,030
+else's for miles.
+>> You live up here alone?
+
+74
+00:01:23,030 --> 00:01:23,040
+>> You live up here alone?
+ 
+
+75
+00:01:23,040 --> 00:01:26,390
+>> You live up here alone?
+>> With my grandpa. It's her house.
+
+76
+00:01:26,390 --> 00:01:26,400
+>> With my grandpa. It's her house.
+ 
+
+77
+00:01:26,400 --> 00:01:28,550
+>> With my grandpa. It's her house.
+>> Is she home?
+
+78
+00:01:28,550 --> 00:01:28,560
+>> Is she home?
+ 
+
+79
+00:01:28,560 --> 00:01:32,630
+>> Is she home?
+>> No. Hospital.
+
+80
+00:01:32,630 --> 00:01:32,640
+
+ 
+
+81
+00:01:32,640 --> 00:01:35,030
+
+Is she okay?
+
+82
+00:01:35,030 --> 00:01:35,040
+Is she okay?
+ 
+
+83
+00:01:35,040 --> 00:01:37,830
+Is she okay?
+She has good days.
+
+84
+00:01:37,830 --> 00:01:37,840
+She has good days.
+ 
+
+85
+00:01:37,840 --> 00:01:38,950
+She has good days.
+So,
+
+86
+00:01:38,950 --> 00:01:38,960
+So,
+ 
+
+87
+00:01:38,960 --> 00:01:40,950
+So,
+are you two a thing?
+
+88
+00:01:40,950 --> 00:01:40,960
+are you two a thing?
+ 
+
+89
+00:01:40,960 --> 00:01:43,990
+are you two a thing?
+>> Us? No. No way.
+
+90
+00:01:43,990 --> 00:01:44,000
+>> Us? No. No way.
+ 
+
+91
+00:01:44,000 --> 00:01:46,030
+>> Us? No. No way.
+>> Just friends.
+
+92
+00:01:46,030 --> 00:01:46,040
+>> Just friends.
+ 
+
+93
+00:01:46,040 --> 00:01:47,550
+>> Just friends.
+>> I lost my license, so she's been helping
+
+94
+00:01:47,550 --> 00:01:47,560
+>> I lost my license, so she's been helping
+ 
+
+95
+00:01:47,560 --> 00:01:49,270
+>> I lost my license, so she's been helping
+me out. Long story, boring one. She
+
+96
+00:01:49,270 --> 00:01:49,280
+me out. Long story, boring one. She
+ 
+
+97
+00:01:49,280 --> 00:01:51,270
+me out. Long story, boring one. She
+drives, I ride shotgun and pay for gas.
+
+98
+00:01:51,270 --> 00:01:51,280
+drives, I ride shotgun and pay for gas.
+ 
+
+99
+00:01:51,280 --> 00:01:53,510
+drives, I ride shotgun and pay for gas.
+>> He doesn't pay for gas.
+
+100
+00:01:53,510 --> 00:01:53,520
+>> He doesn't pay for gas.
+ 
+
+101
+00:01:53,520 --> 00:02:04,230
+>> He doesn't pay for gas.
+>> I emotionally pay for gas.
+
+102
+00:02:04,230 --> 00:02:04,240
+
+ 
+
+103
+00:02:04,240 --> 00:02:06,150
+
+>> Where's your bathroom? Down the hall on
+
+104
+00:02:06,150 --> 00:02:06,160
+>> Where's your bathroom? Down the hall on
+ 
+
+105
+00:02:06,160 --> 00:02:07,750
+>> Where's your bathroom? Down the hall on
+the right. Door sticks, you have to lift
+
+106
+00:02:07,750 --> 00:02:07,760
+the right. Door sticks, you have to lift
+ 
+
+107
+00:02:07,760 --> 00:02:09,230
+the right. Door sticks, you have to lift
+the handle up while you push. Don't ask
+
+108
+00:02:09,230 --> 00:02:09,240
+the handle up while you push. Don't ask
+ 
+
+109
+00:02:09,240 --> 00:02:10,310
+the handle up while you push. Don't ask
+me why.
+
+110
+00:02:10,310 --> 00:02:10,320
+me why.
+ 
+
+111
+00:02:10,320 --> 00:02:11,870
+me why.
+>> So, as you can see, we're here in
+
+112
+00:02:11,870 --> 00:02:11,880
+>> So, as you can see, we're here in
+ 
+
+113
+00:02:11,880 --> 00:02:13,870
+>> So, as you can see, we're here in
+Dreamina's website. Now, as far as I
+
+114
+00:02:13,870 --> 00:02:13,880
+Dreamina's website. Now, as far as I
+ 
+
+115
+00:02:13,880 --> 00:02:16,150
+Dreamina's website. Now, as far as I
+know, this is exclusive to Dreamina
+
+116
+00:02:16,150 --> 00:02:16,160
+know, this is exclusive to Dreamina
+ 
+
+117
+00:02:16,160 --> 00:02:18,830
+know, this is exclusive to Dreamina
+only. If you try this with CapCut,
+
+118
+00:02:18,830 --> 00:02:18,840
+only. If you try this with CapCut,
+ 
+
+119
+00:02:18,840 --> 00:02:20,150
+only. If you try this with CapCut,
+CapCut's actually going to give you
+
+120
+00:02:20,150 --> 00:02:20,160
+CapCut's actually going to give you
+ 
+
+121
+00:02:20,160 --> 00:02:22,750
+CapCut's actually going to give you
+multiple clips instead of just one video
+
+122
+00:02:22,750 --> 00:02:22,760
+multiple clips instead of just one video
+ 
+
+123
+00:02:22,760 --> 00:02:25,270
+multiple clips instead of just one video
+clip, like it would here in Dreamina.
+
+124
+00:02:25,270 --> 00:02:25,280
+clip, like it would here in Dreamina.
+ 
+
+125
+00:02:25,280 --> 00:02:27,030
+clip, like it would here in Dreamina.
+Now, to use it, it's very simple. Just
+
+126
+00:02:27,030 --> 00:02:27,040
+Now, to use it, it's very simple. Just
+ 
+
+127
+00:02:27,040 --> 00:02:28,710
+Now, to use it, it's very simple. Just
+go to AI video,
+
+128
+00:02:28,710 --> 00:02:28,720
+go to AI video,
+ 
+
+129
+00:02:28,720 --> 00:02:31,590
+go to AI video,
+change it to Dreamina Sea Dance 2.5, and
+
+130
+00:02:31,590 --> 00:02:31,600
+change it to Dreamina Sea Dance 2.5, and
+ 
+
+131
+00:02:31,600 --> 00:02:34,510
+change it to Dreamina Sea Dance 2.5, and
+down here, you will see long video. What
+
+132
+00:02:34,510 --> 00:02:34,520
+down here, you will see long video. What
+ 
+
+133
+00:02:34,520 --> 00:02:36,550
+down here, you will see long video. What
+that's going to do now is open up this
+
+134
+00:02:36,550 --> 00:02:36,560
+that's going to do now is open up this
+ 
+
+135
+00:02:36,560 --> 00:02:38,350
+that's going to do now is open up this
+new option. What this is going to allow
+
+136
+00:02:38,350 --> 00:02:38,360
+new option. What this is going to allow
+ 
+
+137
+00:02:38,360 --> 00:02:40,790
+new option. What this is going to allow
+you to do now is select a duration that
+
+138
+00:02:40,790 --> 00:02:40,800
+you to do now is select a duration that
+ 
+
+139
+00:02:40,800 --> 00:02:43,350
+you to do now is select a duration that
+goes past 30 seconds. Now, as you can
+
+140
+00:02:43,350 --> 00:02:43,360
+goes past 30 seconds. Now, as you can
+ 
+
+141
+00:02:43,360 --> 00:02:45,430
+goes past 30 seconds. Now, as you can
+see, 39,420
+
+142
+00:02:45,430 --> 00:02:45,440
+see, 39,420
+ 
+
+143
+00:02:45,440 --> 00:02:47,310
+see, 39,420
+credits is how much it's going to cost
+
+144
+00:02:47,310 --> 00:02:47,320
+credits is how much it's going to cost
+ 
+
+145
+00:02:47,320 --> 00:02:51,270
+credits is how much it's going to cost
+for me to generate a 1 3-minute video.
+
+146
+00:02:51,270 --> 00:02:51,280
+for me to generate a 1 3-minute video.
+ 
+
+147
+00:02:51,280 --> 00:02:53,270
+for me to generate a 1 3-minute video.
+I'll put the actual conversion in the
+
+148
+00:02:53,270 --> 00:02:53,280
+I'll put the actual conversion in the
+ 
+
+149
+00:02:53,280 --> 00:02:54,870
+I'll put the actual conversion in the
+pinned comments below, so you can check
+
+150
+00:02:54,870 --> 00:02:54,880
+pinned comments below, so you can check
+ 
+
+151
+00:02:54,880 --> 00:02:57,350
+pinned comments below, so you can check
+out how much that is in US dollars. Now,
+
+152
+00:02:57,350 --> 00:02:57,360
+out how much that is in US dollars. Now,
+ 
+
+153
+00:02:57,360 --> 00:02:59,190
+out how much that is in US dollars. Now,
+currently, I was not able to do the
+
+154
+00:02:59,190 --> 00:02:59,200
+currently, I was not able to do the
+ 
+
+155
+00:02:59,200 --> 00:03:01,750
+currently, I was not able to do the
+whole full 3 minutes. I tried 30
+
+156
+00:03:01,750 --> 00:03:01,760
+whole full 3 minutes. I tried 30
+ 
+
+157
+00:03:01,760 --> 00:03:04,390
+whole full 3 minutes. I tried 30
+seconds, 45 seconds, and then a 1 full
+
+158
+00:03:04,390 --> 00:03:04,400
+seconds, 45 seconds, and then a 1 full
+ 
+
+159
+00:03:04,400 --> 00:03:07,350
+seconds, 45 seconds, and then a 1 full
+minute. I am going to keep trying, but I
+
+160
+00:03:07,350 --> 00:03:07,360
+minute. I am going to keep trying, but I
+ 
+
+161
+00:03:07,360 --> 00:03:09,550
+minute. I am going to keep trying, but I
+keep getting an error whenever I try to
+
+162
+00:03:09,550 --> 00:03:09,560
+keep getting an error whenever I try to
+ 
+
+163
+00:03:09,560 --> 00:03:11,509
+keep getting an error whenever I try to
+do the 3 minutes. I tried it for like 5
+
+164
+00:03:11,509 --> 00:03:11,519
+do the 3 minutes. I tried it for like 5
+ 
+
+165
+00:03:11,519 --> 00:03:13,790
+do the 3 minutes. I tried it for like 5
+hours yesterday. Now, that said, one of
+
+166
+00:03:13,790 --> 00:03:13,800
+hours yesterday. Now, that said, one of
+ 
+
+167
+00:03:13,800 --> 00:03:15,030
+hours yesterday. Now, that said, one of
+the things you're going to run into when
+
+168
+00:03:15,030 --> 00:03:15,040
+the things you're going to run into when
+ 
+
+169
+00:03:15,040 --> 00:03:16,910
+the things you're going to run into when
+you're trying to do a full 1 minute 3
+
+170
+00:03:16,910 --> 00:03:16,920
+you're trying to do a full 1 minute 3
+ 
+
+171
+00:03:16,920 --> 00:03:19,910
+you're trying to do a full 1 minute 3
+minute is that you will hit that 5,000
+
+172
+00:03:19,910 --> 00:03:19,920
+minute is that you will hit that 5,000
+ 
+
+173
+00:03:19,920 --> 00:03:23,390
+minute is that you will hit that 5,000
+character limit in Dreamina. For the 1
+
+174
+00:03:23,390 --> 00:03:23,400
+character limit in Dreamina. For the 1
+ 
+
+175
+00:03:23,400 --> 00:03:24,710
+character limit in Dreamina. For the 1
+minute, actually, I had to use the
+
+176
+00:03:24,710 --> 00:03:24,720
+minute, actually, I had to use the
+ 
+
+177
+00:03:24,720 --> 00:03:26,790
+minute, actually, I had to use the
+oldest trick which is converting
+
+178
+00:03:26,790 --> 00:03:26,800
+oldest trick which is converting
+ 
+
+179
+00:03:26,800 --> 00:03:29,110
+oldest trick which is converting
+everything to Chinese to shrink the
+
+180
+00:03:29,110 --> 00:03:29,120
+everything to Chinese to shrink the
+ 
+
+181
+00:03:29,120 --> 00:03:32,190
+everything to Chinese to shrink the
+prompt, but if we're talking 3 minutes
+
+182
+00:03:32,190 --> 00:03:32,200
+prompt, but if we're talking 3 minutes
+ 
+
+183
+00:03:32,200 --> 00:03:35,870
+prompt, but if we're talking 3 minutes
+with dialogue, that 5,000 characters is
+
+184
+00:03:35,870 --> 00:03:35,880
+with dialogue, that 5,000 characters is
+ 
+
+185
+00:03:35,880 --> 00:03:37,790
+with dialogue, that 5,000 characters is
+just not going to do it.
+
+186
+00:03:37,790 --> 00:03:37,800
+just not going to do it.
+ 
+
+187
+00:03:37,800 --> 00:03:38,949
+just not going to do it.
+All right, so let's talk about this real
+
+188
+00:03:38,949 --> 00:03:38,959
+All right, so let's talk about this real
+ 
+
+189
+00:03:38,959 --> 00:03:41,150
+All right, so let's talk about this real
+quick. From my experience right now
+
+190
+00:03:41,150 --> 00:03:41,160
+quick. From my experience right now
+ 
+
+191
+00:03:41,160 --> 00:03:43,590
+quick. From my experience right now
+testing this out, you're not going to
+
+192
+00:03:43,590 --> 00:03:43,600
+testing this out, you're not going to
+ 
+
+193
+00:03:43,600 --> 00:03:46,430
+testing this out, you're not going to
+get a fully
+
+194
+00:03:46,430 --> 00:03:46,440
+get a fully
+ 
+
+195
+00:03:46,440 --> 00:03:48,070
+get a fully
+continuous
+
+196
+00:03:48,070 --> 00:03:48,080
+continuous
+ 
+
+197
+00:03:48,080 --> 00:03:51,550
+continuous
+45 seconds, 1 minute, 3 minute clip.
+
+198
+00:03:51,550 --> 00:03:51,560
+45 seconds, 1 minute, 3 minute clip.
+ 
+
+199
+00:03:51,560 --> 00:03:53,910
+45 seconds, 1 minute, 3 minute clip.
+There's going to be cuts in there, and
+
+200
+00:03:53,910 --> 00:03:53,920
+There's going to be cuts in there, and
+ 
+
+201
+00:03:53,920 --> 00:03:56,070
+There's going to be cuts in there, and
+I'm sure you probably heard it, but if
+
+202
+00:03:56,070 --> 00:03:56,080
+I'm sure you probably heard it, but if
+ 
+
+203
+00:03:56,080 --> 00:03:58,590
+I'm sure you probably heard it, but if
+you didn't, check this out.
+
+204
+00:03:58,590 --> 00:03:58,600
+you didn't, check this out.
+ 
+
+205
+00:03:58,600 --> 00:04:00,230
+you didn't, check this out.
+>> Is she okay?
+
+206
+00:04:00,230 --> 00:04:00,240
+>> Is she okay?
+ 
+
+207
+00:04:00,240 --> 00:04:02,270
+>> Is she okay?
+>> See that? You hear that stop there?
+
+208
+00:04:02,270 --> 00:04:02,280
+>> See that? You hear that stop there?
+ 
+
+209
+00:04:02,280 --> 00:04:04,310
+>> See that? You hear that stop there?
+Actually, if you open up the
+
+210
+00:04:04,310 --> 00:04:04,320
+Actually, if you open up the
+ 
+
+211
+00:04:04,320 --> 00:04:06,230
+Actually, if you open up the
+if you open it up,
+
+212
+00:04:06,230 --> 00:04:06,240
+if you open it up,
+ 
+
+213
+00:04:06,240 --> 00:04:07,550
+if you open it up,
+>> Is she okay?
+
+214
+00:04:07,550 --> 00:04:07,560
+>> Is she okay?
+ 
+
+215
+00:04:07,560 --> 00:04:09,270
+>> Is she okay?
+>> Right here.
+
+216
+00:04:09,270 --> 00:04:09,280
+>> Right here.
+ 
+
+217
+00:04:09,280 --> 00:04:11,230
+>> Right here.
+This is where that stopped. You can hear
+
+218
+00:04:11,230 --> 00:04:11,240
+This is where that stopped. You can hear
+ 
+
+219
+00:04:11,240 --> 00:04:13,590
+This is where that stopped. You can hear
+it click. So, it's not really like one
+
+220
+00:04:13,590 --> 00:04:13,600
+it click. So, it's not really like one
+ 
+
+221
+00:04:13,600 --> 00:04:17,190
+it click. So, it's not really like one
+continuous it does click. Additionally,
+
+222
+00:04:17,190 --> 00:04:17,200
+continuous it does click. Additionally,
+ 
+
+223
+00:04:17,200 --> 00:04:19,990
+continuous it does click. Additionally,
+similar to the extend function in 2.0,
+
+224
+00:04:19,990 --> 00:04:20,000
+similar to the extend function in 2.0,
+ 
+
+225
+00:04:20,000 --> 00:04:23,030
+similar to the extend function in 2.0,
+it does degrade image just a little bit.
+
+226
+00:04:23,030 --> 00:04:23,040
+it does degrade image just a little bit.
+ 
+
+227
+00:04:23,040 --> 00:04:26,390
+it does degrade image just a little bit.
+Now, it's it's not as bad as 2.0's
+
+228
+00:04:26,390 --> 00:04:26,400
+Now, it's it's not as bad as 2.0's
+ 
+
+229
+00:04:26,400 --> 00:04:28,190
+Now, it's it's not as bad as 2.0's
+extend function, I don't think, up to 1
+
+230
+00:04:28,190 --> 00:04:28,200
+extend function, I don't think, up to 1
+ 
+
+231
+00:04:28,200 --> 00:04:30,990
+extend function, I don't think, up to 1
+minute, but it does degrade it just just
+
+232
+00:04:30,990 --> 00:04:31,000
+minute, but it does degrade it just just
+ 
+
+233
+00:04:31,000 --> 00:04:32,830
+minute, but it does degrade it just just
+a little bit, ever so slightly. All
+
+234
+00:04:32,830 --> 00:04:32,840
+a little bit, ever so slightly. All
+ 
+
+235
+00:04:32,840 --> 00:04:35,270
+a little bit, ever so slightly. All
+right, so this is the 1-minute one, and
+
+236
+00:04:35,270 --> 00:04:35,280
+right, so this is the 1-minute one, and
+ 
+
+237
+00:04:35,280 --> 00:04:36,950
+right, so this is the 1-minute one, and
+again, you're going to be able to tell
+
+238
+00:04:36,950 --> 00:04:36,960
+again, you're going to be able to tell
+ 
+
+239
+00:04:36,960 --> 00:04:39,790
+again, you're going to be able to tell
+where the cut is around 30 seconds.
+
+240
+00:04:39,790 --> 00:04:39,800
+where the cut is around 30 seconds.
+ 
+
+241
+00:04:39,800 --> 00:04:42,830
+where the cut is around 30 seconds.
+And the trick part is this had a lot of
+
+242
+00:04:42,830 --> 00:04:42,840
+And the trick part is this had a lot of
+ 
+
+243
+00:04:42,840 --> 00:04:44,750
+And the trick part is this had a lot of
+dialogue in it, right? I filled it up up
+
+244
+00:04:44,750 --> 00:04:44,760
+dialogue in it, right? I filled it up up
+ 
+
+245
+00:04:44,760 --> 00:04:47,150
+dialogue in it, right? I filled it up up
+to 1 minute from my script, so it was
+
+246
+00:04:47,150 --> 00:04:47,160
+to 1 minute from my script, so it was
+ 
+
+247
+00:04:47,160 --> 00:04:49,870
+to 1 minute from my script, so it was
+basically doing the pace for me of the
+
+248
+00:04:49,870 --> 00:04:49,880
+basically doing the pace for me of the
+ 
+
+249
+00:04:49,880 --> 00:04:52,630
+basically doing the pace for me of the
+cut conversation, but what I noticed is
+
+250
+00:04:52,630 --> 00:04:52,640
+cut conversation, but what I noticed is
+ 
+
+251
+00:04:52,640 --> 00:04:53,750
+cut conversation, but what I noticed is
+that
+
+252
+00:04:53,750 --> 00:04:53,760
+that
+ 
+
+253
+00:04:53,760 --> 00:04:56,470
+that
+it was kind of speeding up,
+
+254
+00:04:56,470 --> 00:04:56,480
+it was kind of speeding up,
+ 
+
+255
+00:04:56,480 --> 00:04:58,710
+it was kind of speeding up,
+and then get to the 30 second,
+
+256
+00:04:58,710 --> 00:04:58,720
+and then get to the 30 second,
+ 
+
+257
+00:04:58,720 --> 00:05:00,470
+and then get to the 30 second,
+and then there's a little bit of pauses
+
+258
+00:05:00,470 --> 00:05:00,480
+and then there's a little bit of pauses
+ 
+
+259
+00:05:00,480 --> 00:05:02,630
+and then there's a little bit of pauses
+towards the end, there's a big pause.
+
+260
+00:05:02,630 --> 00:05:02,640
+towards the end, there's a big pause.
+ 
+
+261
+00:05:02,640 --> 00:05:05,870
+towards the end, there's a big pause.
+So, it was directing the pacing for me.
+
+262
+00:05:05,870 --> 00:05:05,880
+So, it was directing the pacing for me.
+ 
+
+263
+00:05:05,880 --> 00:05:07,630
+So, it was directing the pacing for me.
+So, what I'm trying to say is if you
+
+264
+00:05:07,630 --> 00:05:07,640
+So, what I'm trying to say is if you
+ 
+
+265
+00:05:07,640 --> 00:05:10,430
+So, what I'm trying to say is if you
+want to direct your pace of the
+
+266
+00:05:10,430 --> 00:05:10,440
+want to direct your pace of the
+ 
+
+267
+00:05:10,440 --> 00:05:11,950
+want to direct your pace of the
+dialogue,
+
+268
+00:05:11,950 --> 00:05:11,960
+dialogue,
+ 
+
+269
+00:05:11,960 --> 00:05:13,750
+dialogue,
+if you're very picky with how you want
+
+270
+00:05:13,750 --> 00:05:13,760
+if you're very picky with how you want
+ 
+
+271
+00:05:13,760 --> 00:05:16,350
+if you're very picky with how you want
+it paced, you're going to have to be
+
+272
+00:05:16,350 --> 00:05:16,360
+it paced, you're going to have to be
+ 
+
+273
+00:05:16,360 --> 00:05:18,470
+it paced, you're going to have to be
+very careful with this
+
+274
+00:05:18,470 --> 00:05:18,480
+very careful with this
+ 
+
+275
+00:05:18,480 --> 00:05:21,510
+very careful with this
+because when using the long video mode,
+
+276
+00:05:21,510 --> 00:05:21,520
+because when using the long video mode,
+ 
+
+277
+00:05:21,520 --> 00:05:24,510
+because when using the long video mode,
+it basically decides for you.
+
+278
+00:05:24,510 --> 00:05:24,520
+it basically decides for you.
+ 
+
+279
+00:05:24,520 --> 00:05:27,550
+it basically decides for you.
+Yes, you can timestamp it if you want,
+
+280
+00:05:27,550 --> 00:05:27,560
+Yes, you can timestamp it if you want,
+ 
+
+281
+00:05:27,560 --> 00:05:30,030
+Yes, you can timestamp it if you want,
+but I do not suggest doing that because
+
+282
+00:05:30,030 --> 00:05:30,040
+but I do not suggest doing that because
+ 
+
+283
+00:05:30,040 --> 00:05:33,430
+but I do not suggest doing that because
+the pacing gets even worse. So, will I
+
+284
+00:05:33,430 --> 00:05:33,440
+the pacing gets even worse. So, will I
+ 
+
+285
+00:05:33,440 --> 00:05:35,950
+the pacing gets even worse. So, will I
+be using this tool?
+
+286
+00:05:35,950 --> 00:05:35,960
+be using this tool?
+ 
+
+287
+00:05:35,960 --> 00:05:38,230
+be using this tool?
+I think in certain scenarios,
+
+288
+00:05:38,230 --> 00:05:38,240
+I think in certain scenarios,
+ 
+
+289
+00:05:38,240 --> 00:05:41,110
+I think in certain scenarios,
+absolutely. I think it's super helpful.
+
+290
+00:05:41,110 --> 00:05:41,120
+absolutely. I think it's super helpful.
+ 
+
+291
+00:05:41,120 --> 00:05:44,630
+absolutely. I think it's super helpful.
+It's much easier than my workaround on
+
+292
+00:05:44,630 --> 00:05:44,640
+It's much easier than my workaround on
+ 
+
+293
+00:05:44,640 --> 00:05:47,470
+It's much easier than my workaround on
+getting a 30 45 to a minute clip, I can
+
+294
+00:05:47,470 --> 00:05:47,480
+getting a 30 45 to a minute clip, I can
+ 
+
+295
+00:05:47,480 --> 00:05:49,150
+getting a 30 45 to a minute clip, I can
+tell you that right now, because there's
+
+296
+00:05:49,150 --> 00:05:49,160
+tell you that right now, because there's
+ 
+
+297
+00:05:49,160 --> 00:05:51,310
+tell you that right now, because there's
+really no manual work to it. See that
+
+298
+00:05:51,310 --> 00:05:51,320
+really no manual work to it. See that
+ 
+
+299
+00:05:51,320 --> 00:05:53,550
+really no manual work to it. See that
+2.5 and Germaine is doing all the work.
+
+300
+00:05:53,550 --> 00:05:53,560
+2.5 and Germaine is doing all the work.
+ 
+
+301
+00:05:53,560 --> 00:05:57,030
+2.5 and Germaine is doing all the work.
+So, yes, it is still in beta.
+
+302
+00:05:57,030 --> 00:05:57,040
+So, yes, it is still in beta.
+ 
+
+303
+00:05:57,040 --> 00:05:59,910
+So, yes, it is still in beta.
+One day, hopefully, we can actually get
+
+304
+00:05:59,910 --> 00:05:59,920
+One day, hopefully, we can actually get
+ 
+
+305
+00:05:59,920 --> 00:06:02,670
+One day, hopefully, we can actually get
+this to work for the entire 1 minute and
+
+306
+00:06:02,670 --> 00:06:02,680
+this to work for the entire 1 minute and
+ 
+
+307
+00:06:02,680 --> 00:06:04,390
+this to work for the entire 1 minute and
+there's no dropping quality and it's one
+
+308
+00:06:04,390 --> 00:06:04,400
+there's no dropping quality and it's one
+ 
+
+309
+00:06:04,400 --> 00:06:06,710
+there's no dropping quality and it's one
+continuous motion. All right, so with
+
+310
+00:06:06,710 --> 00:06:06,720
+continuous motion. All right, so with
+ 
+
+311
+00:06:06,720 --> 00:06:07,630
+continuous motion. All right, so with
+that said, that's pretty much it for
+
+312
+00:06:07,630 --> 00:06:07,640
+that said, that's pretty much it for
+ 
+
+313
+00:06:07,640 --> 00:06:09,110
+that said, that's pretty much it for
+this video. I hope you all learned
+
+314
+00:06:09,110 --> 00:06:09,120
+this video. I hope you all learned
+ 
+
+315
+00:06:09,120 --> 00:06:10,790
+this video. I hope you all learned
+something new today. If you haven't done
+
+316
+00:06:10,790 --> 00:06:10,800
+something new today. If you haven't done
+ 
+
+317
+00:06:10,800 --> 00:06:12,550
+something new today. If you haven't done
+so, go ahead and like and comment to
+
+318
+00:06:12,550 --> 00:06:12,560
+so, go ahead and like and comment to
+ 
+
+319
+00:06:12,560 --> 00:06:15,030
+so, go ahead and like and comment to
+help me with the SEO algorithm. Uh with
+
+320
+00:06:15,030 --> 00:06:15,040
+help me with the SEO algorithm. Uh with
+ 
+
+321
+00:06:15,040 --> 00:06:16,910
+help me with the SEO algorithm. Uh with
+that said, I'll see you all in the next
+
+322
+00:06:16,910 --> 00:06:16,920
+that said, I'll see you all in the next
+ 
+
+323
+00:06:16,920 --> 00:06:21,204
+that said, I'll see you all in the next
+one. Peace out.
+
+324
+00:06:21,204 --> 00:06:21,214
+
+ 
+
+325
+00:06:21,214 --> 00:06:23,234
+
+>> [music]
+
