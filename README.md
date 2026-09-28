@@ -57,12 +57,16 @@
 
 | 渠道 | 入口 |
 |---|---|
-| 🌐 **官方网站** | **[manju.tuanpiao.work](https://manju.tuanpiao.work)** |
-| 📺 **B 站 / 抖音 / 小红书** | 搜索「**玉哥漫剧**」 |
-| 💬 **学员交流群** | 扫码加入(见官网 footer 二维码) |
+| 🌐 **官方网站** | [**manju.tuanpiao.work**](https://manju.tuanpiao.work) |
+| 📺 **B 站 / 抖音 / 小红书** | 搜索「**玉哥**」 |
+| 💬 **学员交流群** | 扫下方二维码 |
 | 📧 **商务合作** | `yuge@manju.local` |
 
-> 💡 完整联系方式在 **官网 footer**(`site/assets/qr-yuge.png`)
+### 📱 玉哥二维码
+
+![玉哥联系方式二维码](site/assets/qr-yuge.png)
+
+> 扫码加玉哥好友 / 进学员群 / 看公众号
 
 ---
 
