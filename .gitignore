@@ -117,3 +117,10 @@ _downloads/
 # deploy/ 是玉哥自己写的反向代理配置,含 manju.tuanpiao.work + /var/www/manju/current
 # + /etc/letsencrypt 路径,GitHub 公开仓库不能暴露
 deploy/
+
+# === 项目内部文档(只本地用,不进 GitHub 仓库) ===
+# 保留本地作为 AI agent 协作规范 + 项目记忆,但 GitHub 公开仓库不展示
+PLAN.md
+AGENTS.md
+OUTPUT_INDEX.md
+CODEX_AUDIT_PROMPT.md
