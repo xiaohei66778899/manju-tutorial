@@ -8,7 +8,7 @@
 
 ## 这是什么
 
-一个**菜鸟教程风格的漫剧制作教学站**。学员从打开网站到做出 1 部能赚钱的 AI 漫剧,每一步都有教程、工具、实例、练习。
+一个**玉哥风格的漫剧制作教学站**。学员从打开网站到做出 1 部能赚钱的 AI 漫剧,每一步都有教程、工具、实例、练习。
 
 ## 核心数据(2026-09-24 现状)
 
@@ -17,7 +17,7 @@
 - **顶栏 8 入口**(首页 / 教程 / 学习路径 / 实例 / 模板 / 工具 / 问题 / 商业化)
 - **四库并列**:教程库 / 实例库 / 工具与模板库 / 参考手册
 - **玉哥口吻**:📢 玉哥说 / 玉哥口吻 / 玉哥整理
-- **菜鸟教程骨架**:左侧目录 + 中间内容 + 底部 1 篇/下 1 篇
+- **玉哥骨架**:左侧目录 + 中间内容 + 底部 1 篇/下 1 篇
 - **本地预览端口:18080**(多线程 no-cache server)
 - **缓存策略**:`?v=fix20260924-1900`(每次更新全站 cache-bust)
 - **部署**:Netlify(publish = site/,含 `netlify.toml` `.nojekyll` `robots.txt`)
@@ -58,7 +58,7 @@
 ├─ .gitignore                 ← Git 忽略规则
 │
 ├─ site/                      ← ⭐ 主交付物(225 HTML · Netlify publish 目录)
-│  ├─ index.html              ← 首页(RUNOOB 风)
+│  ├─ index.html              ← 首页(玉哥暖色风)
 │  ├─ 404.html                ← 404 fallback(玉哥暖色卡)
 │  ├─ changelog.html / learning-path.html / tutorial-template.html
 │  ├─ assets/                 ← site.css / site-enhance.js / tutorial.js / 图片
@@ -104,10 +104,22 @@
 
 ## 参考
 
-- **菜鸟教程**(信息架构):https://www.runoob.com/
 - **鱼皮 Vibe Coding 教程**(开发方法):https://ai.codefather.cn/vibe
 - **legacy/ 11 份老 HTML**(v4 ~ v17,内容源)
 - **AGENTS.md**(项目规范 · 设计决策)
+
+---
+
+## 📮 联系玉哥
+
+| 渠道 | 入口 |
+|---|---|
+| 🌐 官方网站 | **manju.tuanpiao.work** |
+| 📺 B 站 / 抖音 / 小红书 | 搜索「**玉哥漫剧**」 |
+| 💬 学员交流群 | 扫码加入(见网站 footer 二维码) |
+| 📧 商务合作 | `yuge@manju.local`(占位,请替换) |
+
+> 📌 想看完整联系方式,打开网站 footer 区域(`site/assets/qr-yuge.png`)
 
 ---
 

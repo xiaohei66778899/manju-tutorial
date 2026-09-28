@@ -19,7 +19,7 @@ This workspace is a static HTML knowledge site for a Chinese AI short-drama tuto
 - This project is primarily static HTML/CSS. There is no build step, package manager, or automated test suite.
 - Prefer editing existing HTML pages directly. When creating a new tutorial page, match the structure and tone of `site/tutorial-template.html`.
 - Keep the site fully local and dependency-free. Do not add external JS/CSS unless explicitly requested.
-- Use Chinese content and keep the existing “玉哥” / “菜鸟教程” style unless the task says otherwise.
+- Use Chinese content and keep the existing “玉哥” style unless the task says otherwise.
 - Keep navigation and page layout consistent with the existing site. Major structure includes:
   - top navigation bar
   - left-side section directory
