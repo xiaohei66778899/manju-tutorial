@@ -60,7 +60,6 @@
 | 🌐 **官方网站** | [**manju.tuanpiao.work**](https://manju.tuanpiao.work) |
 | 📺 **B 站 / 抖音 / 小红书** | 搜索「**玉哥**」 |
 | 💬 **学员交流群** | 扫下方二维码 |
-| 📧 **商务合作** | `yuge@manju.local` |
 
 ### 📱 玉哥二维码
 
